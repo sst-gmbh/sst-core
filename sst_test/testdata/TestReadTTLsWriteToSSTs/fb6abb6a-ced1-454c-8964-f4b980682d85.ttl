@@ -1,0 +1,13 @@
+@prefix lci:	<http://ontology.semanticstep.net/lci#> .
+@prefix sso:	<http://ontology.semanticstep.net/sso#> .
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:	<http://www.w3.org/2002/07/owl#> .
+@prefix :	<urn:uuid:fb6abb6a-ced1-454c-8964-f4b980682d85#> .
+@prefix ns3:	<urn:uuid:aec28ed6-fa13-4061-b220-4ab2bdc6bc73#> .
+
+<urn:uuid:fb6abb6a-ced1-454c-8964-f4b980682d85>	a	owl:Ontology ;
+	owl:imports	<urn:uuid:aec28ed6-fa13-4061-b220-4ab2bdc6bc73> .
+:a7a6caa1-a3bc-4bfc-a1fa-b520f1bff35e	a	sso:ShapeFeatureDefinition ;
+	rdfs:label	"Size 12 Contact for MIL-DTL-38999 or SAE-AS29600 series A" ;
+	ns3:84865a29-3282-4b9e-bb14-0d44e5d6e9c0	"Size 12 Contact for MIL-DTL-38999 or SAE-AS29600 series A" .

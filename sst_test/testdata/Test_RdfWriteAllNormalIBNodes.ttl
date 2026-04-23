@@ -1,0 +1,36 @@
+@prefix color:	<http://ontology.semanticstep.net/color#> .
+@prefix countrycodes:	<http://ontology.semanticstep.net/countrycodes#> .
+@prefix currencycodes:	<http://ontology.semanticstep.net/currencycodes#> .
+@prefix eed:	<http://ontology.semanticstep.net/eed#> .
+@prefix lci:	<http://ontology.semanticstep.net/lci#> .
+@prefix qau:	<http://ontology.semanticstep.net/qau#> .
+@prefix rep:	<http://ontology.semanticstep.net/rep#> .
+@prefix ssmeta:	<http://ontology.semanticstep.net/ssmeta#> .
+@prefix sso:	<http://ontology.semanticstep.net/sso#> .
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:	<http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:	<http://www.w3.org/2002/07/owl#> .
+@prefix skos:	<http://www.w3.org/2004/02/skos/core#> .
+@prefix :	<urn:uuid:c1efcf54-3e8e-4cc7-a7d1-82a9f613a361#> .
+
+<urn:uuid:c1efcf54-3e8e-4cc7-a7d1-82a9f613a361>	a	owl:Ontology .
+:Adam	a	lci:Person .
+:DCT	a	lci:Organization .
+:Jane	a	lci:Person ;
+	:liveIn	countrycodes:cn ;
+	:workFor	[
+	a	lci:Organization ;
+	rdfs:label	"ECT"
+] .
+:John	a	lci:Person ;
+	:hasFriend	( :Jane :Adam :Oliver ) ;
+	:workFor	:DCT .
+:Oliver	a	lci:Person .
+:hasFriend	a	rdf:Property .
+:liveIn	a	rdf:Property .
+:white	a	rep:ColourRGB ;
+	rep:rgb	( 255 255 255 ) .
+:workFor	a	rdf:Property ;
+	rdfs:domain	lci:Person ;
+	rdfs:range	lci:Organization .

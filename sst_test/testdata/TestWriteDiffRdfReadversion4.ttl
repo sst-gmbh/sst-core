@@ -1,0 +1,18 @@
+@prefix sso:	<http://ontology.semanticstep.net/sso#> .
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:	<http://www.w3.org/2002/07/owl#> .
+@prefix lci:   <http://ontology.semanticstep.net/lci#> .
+@prefix qau:	<http://ontology.semanticstep.net/qau#> .
+@prefix :	<urn:uuid:c1efcf54-3e8e-4cc7-a7d1-82a9f613a361#> .
+
+<urn:uuid:c1efcf54-3e8e-4cc7-a7d1-82a9f613a361>	a	owl:Ontology .
+
+:uuid1 
+    rdf:type lci:Individual ;
+    sso:occurrenceQuantity _:b6 .
+:uuid2 
+    rdf:type lci:Individual ;
+    sso:occurrenceQuantity _:b6 .
+ _:b6
+    rdf:type qau:Length ; 
+    qau:metre 7.0 .

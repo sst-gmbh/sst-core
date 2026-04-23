@@ -1,0 +1,68 @@
+@prefix lci:	<http://ontology.semanticstep.net/lci#> .
+@prefix sso:	<http://ontology.semanticstep.net/sso#> .
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:	<http://www.w3.org/2002/07/owl#> .
+@prefix :	<urn:uuid:fa33ec5c-2ce1-47a4-9676-ffec196b046b#> .
+@prefix ns7:	<urn:uuid:55bb223f-acee-4ca3-a753-fe99daba16f7#> .
+@prefix ns4:	<urn:uuid:7d906134-deb3-4765-aed4-f5e0e4b2fee9#> .
+@prefix ns3:	<urn:uuid:732db40f-68f7-4777-94cf-4021dc406d9b#> .
+@prefix ns6:	<urn:uuid:fb6abb6a-ced1-454c-8964-f4b980682d85#> .
+@prefix ns5:	<urn:uuid:aec28ed6-fa13-4061-b220-4ab2bdc6bc73#> .
+@prefix ns2:	<urn:uuid:4f91a7c1-1c30-473f-a058-39306f54e5e6#> .
+
+<urn:uuid:fa33ec5c-2ce1-47a4-9676-ffec196b046b>	a	owl:Ontology ;
+	owl:imports	<urn:uuid:4f91a7c1-1c30-473f-a058-39306f54e5e6> ,
+			<urn:uuid:732db40f-68f7-4777-94cf-4021dc406d9b> ,
+			<urn:uuid:7d906134-deb3-4765-aed4-f5e0e4b2fee9> ,
+			<urn:uuid:aec28ed6-fa13-4061-b220-4ab2bdc6bc73> ,
+			<urn:uuid:fb6abb6a-ced1-454c-8964-f4b980682d85> .
+:1a803b26-0337-4abc-9ff6-5793995d4c8c	a	sso:PartFeature ,
+			ns7:b66dadb2-e2c7-4369-bedf-06cd1f5a0ebf ;
+	lci:isDefinedBy	ns4:681f0d7e-3092-4607-a21b-098a7563d451 ;
+	sso:id	"A" .
+:272abab5-3667-4a6c-8049-0df488ce54ba	a	sso:PartFeature ,
+			ns7:b66dadb2-e2c7-4369-bedf-06cd1f5a0ebf ;
+	lci:isDefinedBy	ns3:fe3815ce-4052-422e-8ee3-6218dd9b0e28 ;
+	sso:id	"B" .
+:39d8ea1f-62b1-47f1-b302-039e012a588e	a	sso:PartFeature ,
+			ns7:b66dadb2-e2c7-4369-bedf-06cd1f5a0ebf ;
+	lci:isDefinedBy	ns6:a7a6caa1-a3bc-4bfc-a1fa-b520f1bff35e ;
+	sso:id	"3" .
+:9a64bd6e-b81c-4b36-8d80-c78e64329bc5	a	sso:PartFeature ,
+			ns7:b66dadb2-e2c7-4369-bedf-06cd1f5a0ebf ;
+	lci:isDefinedBy	ns4:681f0d7e-3092-4607-a21b-098a7563d451 ;
+	sso:id	"H" .
+:a2359f09-1ee3-403c-84d3-3849949b810f	a	sso:ShapeFeatureDefinition ,
+			ns7:674feb32-b71b-4201-95a6-8c98bd0e787b ;
+	lci:hasFeature	:1a803b26-0337-4abc-9ff6-5793995d4c8c ,
+			:272abab5-3667-4a6c-8049-0df488ce54ba ,
+			:39d8ea1f-62b1-47f1-b302-039e012a588e ,
+			:9a64bd6e-b81c-4b36-8d80-c78e64329bc5 ,
+			:a88f622e-1567-4236-a626-bd8d4b299e14 ,
+			:c8cc0ed7-1030-42a8-9c1a-b7ec707d26a9 ,
+			:ca68ddd9-fde8-4d8e-b863-d79766d288e5 ,
+			:d6f8460f-07cc-498a-a632-907f23e5fd3f ,
+			:ec8c5b50-a4ea-4e64-b3d3-2a45299fba3c ;
+	ns7:1abe88cd-0c5d-4a82-98bf-2970da34d344	false ;
+	ns7:6de6cd28-10f7-4023-9535-c25ece824666	false ;
+	ns5:84865a29-3282-4b9e-bb14-0d44e5d6e9c0	"25-20" .
+:a88f622e-1567-4236-a626-bd8d4b299e14	a	sso:PartFeature ,
+			ns7:b66dadb2-e2c7-4369-bedf-06cd1f5a0ebf ;
+	lci:isDefinedBy	ns4:681f0d7e-3092-4607-a21b-098a7563d451 ;
+	sso:id	"K" .
+:c8cc0ed7-1030-42a8-9c1a-b7ec707d26a9	a	sso:PartFeature ,
+			ns7:b66dadb2-e2c7-4369-bedf-06cd1f5a0ebf ;
+	lci:isDefinedBy	ns2:c03f0529-c873-40e9-bd26-d1bec9dd37dd ;
+	sso:id	"C" .
+:ca68ddd9-fde8-4d8e-b863-d79766d288e5	a	sso:PartFeature ,
+			ns7:b66dadb2-e2c7-4369-bedf-06cd1f5a0ebf ;
+	lci:isDefinedBy	ns6:a7a6caa1-a3bc-4bfc-a1fa-b520f1bff35e ;
+	sso:id	"5" .
+:d6f8460f-07cc-498a-a632-907f23e5fd3f	a	sso:PartFeature ,
+			ns7:b66dadb2-e2c7-4369-bedf-06cd1f5a0ebf ;
+	lci:isDefinedBy	ns2:c03f0529-c873-40e9-bd26-d1bec9dd37dd ;
+	sso:id	"D" .
+:ec8c5b50-a4ea-4e64-b3d3-2a45299fba3c	a	sso:PartFeature ,
+			ns7:b66dadb2-e2c7-4369-bedf-06cd1f5a0ebf ;
+	lci:isDefinedBy	ns6:a7a6caa1-a3bc-4bfc-a1fa-b520f1bff35e ;
+	sso:id	"2" .

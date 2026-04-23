@@ -1,0 +1,18 @@
+@prefix lci:	<http://ontology.semanticstep.net/lci#> .
+@prefix sso:	<http://ontology.semanticstep.net/sso#> .
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:	<http://www.w3.org/2002/07/owl#> .
+@prefix :	<urn:uuid:aec28ed6-fa13-4061-b220-4ab2bdc6bc73#> .
+@prefix ns3:	<urn:uuid:3e61b50d-8a14-4bf8-8bdb-1a84ca27ea8c#> .
+@prefix ns2:	<urn:uuid:56a62282-d984-48c3-ba1f-98c23f67fa48#> .
+
+<urn:uuid:aec28ed6-fa13-4061-b220-4ab2bdc6bc73>	a	owl:Ontology ;
+	owl:imports	<urn:uuid:56a62282-d984-48c3-ba1f-98c23f67fa48> .
+:84865a29-3282-4b9e-bb14-0d44e5d6e9c0	a	owl:DatatypeProperty ;
+	sso:idOwner	:fdea1e5e-3b1e-4d12-ab71-0f858128a8f8 ;
+	rdfs:subPropertyOf	sso:id .
+:fdea1e5e-3b1e-4d12-ab71-0f858128a8f8	a	lci:InformationObject ,
+			ns3:e5dcc897-f7a9-4413-8d66-0e1e6bca6401 ;
+	rdfs:comment	"INSERT ARRANGEMENTS FOR MIL-DTL-38999, MIL-DTL-27599, AND SAE-AS29600 SERIES A ELECTRICAL CIRCULAR CONNECTORS" ;
+	ns2:f07d725b-6ac8-472e-87ac-bdf6fb3fe50a	"MIL-STD-1560" .

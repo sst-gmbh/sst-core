@@ -1,0 +1,23 @@
+@prefix color:	<http://ontology.semanticstep.net/color#> .
+@prefix countrycodes:	<http://ontology.semanticstep.net/countrycodes#> .
+@prefix currencycodes:	<http://ontology.semanticstep.net/currencycodes#> .
+@prefix eed:	<http://ontology.semanticstep.net/eed#> .
+@prefix lci:	<http://ontology.semanticstep.net/lci#> .
+@prefix qau:	<http://ontology.semanticstep.net/qau#> .
+@prefix rep:	<http://ontology.semanticstep.net/rep#> .
+@prefix ssmeta:	<http://ontology.semanticstep.net/ssmeta#> .
+@prefix sso:	<http://ontology.semanticstep.net/sso#> .
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:	<http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:	<http://www.w3.org/2002/07/owl#> .
+@prefix skos:	<http://www.w3.org/2004/02/skos/core#> .
+@prefix :	<urn:uuid:bb835cfc-9d03-4126-bdd6-1c170c64441b#> .
+
+<urn:uuid:bb835cfc-9d03-4126-bdd6-1c170c64441b>	a	owl:Ontology ;
+	owl:versionInfo	"final"@en ;
+	owl:imports	<urn:uuid:e5001b9f-6f86-42bb-bcbc-74390430f57e> .
+:3959c97a-1a9e-4275-baf6-befd6a14e2b0	a	lci:Individual .
+:main	a	lci:Individual ;
+	lci:hasPart	:3959c97a-1a9e-4275-baf6-befd6a14e2b0 ;
+	rdfs:label	"hello world" .

@@ -1,0 +1,13 @@
+@prefix test: <http://example.com/ontology/test#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+test:t1 a test:nothing .
+
+test:t11 rdfs:subClassOf test:t1 .
+
+test:t111 rdfs:subClassOf test:t11 .
+
+test:t2 a owl:Class .
+
+test:t3 a test:nothing .

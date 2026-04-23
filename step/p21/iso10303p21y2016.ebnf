@@ -1,0 +1,160 @@
+//(* ISO 10303-21:2016 *)
+
+//(* Table 1 — WSN defining subsets of the basic alphabet *)
+
+space    = " " .
+
+digit    = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7"
+         | "8" | "9" .
+
+lower    = "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h"
+         | "i" | "j" | "k" | "l" | "m" | "n" | "o" | "p"
+         | "q" | "r" | "s" | "t" | "u" | "v" | "w" | "x"
+         | "y" | "z" .
+
+upper    = "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H"
+         | "I" | "J" | "K" | "L" | "M" | "N" | "O" | "P"
+         | "Q" | "R" | "S" | "T" | "U" | "V" | "W" | "X"
+         | "Y" | "Z" | "_" .
+
+special  = "!" | """" | "*" | "$" | "%" | "&" | "." | "#"
+	 | "+" | ","  | "-" | "(" | ")" | "?" | "/" | ":"
+	 | ";" | "<"  | "=" | ">" | "@" | "[" | "]" | "{"
+	 | "|" | "}"  | "^" | "`" | "~" .
+
+hex = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" |
+      "8" | "9" | "A" | "B" | "C" | "D" | "E" | "F" .
+
+reverse_solidus  = "\\" .
+
+apostrophe = "'" .
+
+latin_codepoint = space | digit | lower | upper | special
+          | reverse_solidus | apostrophe .
+
+
+high_codepoint	= . //# (U+0080 to U+10FFFF)
+
+//(*  PRINT CONTROL DIRECTIVES:
+// 
+// "\N\" new line
+// "\F\" form feed *)
+
+//(* Table 2 — WSN of token definitions *)
+
+KEYWORD           = user_defined_keyword | standard_keyword .
+
+user_defined_keyword = "!" upper { upper | digit } .
+
+standard_keyword  = upper { upper | digit } .
+
+sign              = "+" | "-" .
+
+integer           = [ sign ] digit { digit } .
+
+real              = [ sign ] digit { digit } "." { digit }
+                    [ "E" [ sign ] digit { digit } ] .
+
+hex_one = hex hex .
+
+hex_two = hex_one hex_one .
+
+hex_four = hex_two hex_two .
+
+page = reverse_solidus "S" reverse_solidus latin_codepoint .
+
+alphabet = reverse_solidus "P" upper reverse_solidus .
+
+end_extended = reverse_solidus "X0" reverse_solidus .
+
+extended2 = reverse_solidus "X2" reverse_solidus hex_two { hex_two } end_extended .
+
+extended4 = reverse_solidus "X4" reverse_solidus hex_four { hex_four } end_extended .
+
+arbitrary = reverse_solidus "X" reverse_solidus hex_one .
+
+control_directive = page | alphabet | extended2 | extended4 | arbitrary .
+
+string            = "'" { special | digit | space | lower | upper |
+                    high_codepoint |
+                    apostrophe apostrophe |
+                    reverse_solidus reverse_solidus |
+                    control_directive } "'" .
+
+entity_instance_name      = "#" ( digit ) { digit } .
+
+value_instance_name       = "@" ( digit ) { digit } .
+
+constant_entity_name      = "#" ( upper ) { upper | digit } .
+
+constant_value_name       = "@" ( upper ) { upper | digit } .
+
+LHS_OCCURRENCE_NAME       = ( entity_instance_name | value_instance_name ) .
+
+RHS_OCCURRENCE_NAME       = ( entity_instance_name | value_instance_name |
+                              constant_entity_name | constant_value_name) .
+
+uri_fragment_identifier = ( latin_codepoint ) { latin_codepoint } .
+
+anchor_name       = "<" uri_fragment_identifier ">" .
+
+tag_name          = ( upper | lower) { upper | lower | digit } .
+
+universal_resource_identifier = ( latin_codepoint ) { latin_codepoint } .
+
+resource          = "<" universal_resource_identifier ">" .
+
+enumeration       = "." upper { upper | digit } "." .
+
+binary            = """" ( "0" | "1" | "2" | "3" ) { hex } """" .
+
+base64            = .
+
+signature_content = base64 .
+
+//(* Table 3 — WSN of token definitions *)
+
+EXCHANGE_FILE      = "ISO-10303-21;"
+                     HEADER_SECTION [ ANCHOR_SECTION ]
+                     [ REFERENCE_SECTION ] { DATA_SECTION }
+                     "END-ISO-10303-21;" { SIGNATURE_SECTION } .
+
+HEADER_SECTION     = "HEADER;"
+                     HEADER_ENTITY HEADER_ENTITY HEADER_ENTITY
+                     [HEADER_ENTITY_LIST]
+                     "ENDSEC;" .
+HEADER_ENTITY_LIST = HEADER_ENTITY { HEADER_ENTITY } .
+HEADER_ENTITY      = KEYWORD  "(" [ PARAMETER_LIST ] ")" ";" .
+
+PARAMETER_LIST     = PARAMETER { "," PARAMETER } .
+PARAMETER          = TYPED_PARAMETER  |
+                     UNTYPED_PARAMETER | OMITTED_PARAMETER  .
+TYPED_PARAMETER    = KEYWORD "(" PARAMETER ")" .
+UNTYPED_PARAMETER  = "$" | integer | real | string | RHS_OCCURRENCE_NAME
+                     | enumeration | binary | LIST .
+OMITTED_PARAMETER  = "*" .
+LIST               = "(" [ PARAMETER { "," PARAMETER } ] ")" .
+
+ANCHOR_SECTION     = "ANCHOR;" ANCHOR_LIST "ENDSEC;" .
+ANCHOR_LIST        = { ANCHOR } .
+ANCHOR             = anchor_name "=" ANCHOR_ITEM { ANCHOR_TAG } ";" .
+ANCHOR_ITEM        = "$" | integer | real | string | enumeration | binary
+                     | RHS_OCCURRENCE_NAME | resource | ANCHOR_ITEM_LIST .
+ANCHOR_ITEM_LIST   = "(" [ ANCHOR_ITEM { "," ANCHOR_ITEM } ] ")" .
+ANCHOR_TAG         = "{" tag_name ":" ANCHOR_ITEM "}" .
+
+REFERENCE_SECTION  = "REFERENCE;" REFERENCE_LIST "ENDSEC;" .
+REFERENCE_LIST     = { REFERENCE } .
+REFERENCE          = LHS_OCCURRENCE_NAME "=" resource ";" .
+
+DATA_SECTION       = "DATA" [ "(" PARAMETER_LIST ")" ] ";"
+                     ENTITY_INSTANCE_LIST "ENDSEC;" .
+ENTITY_INSTANCE_LIST = { ENTITY_INSTANCE } .
+ENTITY_INSTANCE    = SIMPLE_ENTITY_INSTANCE | COMPLEX_ENTITY_INSTANCE .
+SIMPLE_ENTITY_INSTANCE  = entity_instance_name "=" SIMPLE_RECORD ";" .
+COMPLEX_ENTITY_INSTANCE = entity_instance_name "=" SUBSUPER_RECORD ";" .
+SIMPLE_RECORD      = KEYWORD "(" [ PARAMETER_LIST ] ")" .
+SUBSUPER_RECORD    = "(" SIMPLE_RECORD_LIST ")" .
+SIMPLE_RECORD_LIST = SIMPLE_RECORD { SIMPLE_RECORD } .
+
+SIGNATURE_SECTION  = "SIGNATURE" signature_content "ENDSEC;" .

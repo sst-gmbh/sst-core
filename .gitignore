@@ -1,0 +1,10 @@
+.vscode/
+.idea/
+helloworldwrite.ttl
+helloworldwrite.sst
+.DS_Store
+Makefile
+
+cli/sst
+
+cli/testfile

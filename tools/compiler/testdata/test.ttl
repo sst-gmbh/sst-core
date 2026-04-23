@@ -1,0 +1,138 @@
+# This file defines a modified and reduced version of lci as defined in ISO/TS 15926-12:2018
+# Several higher level abstraction concepts are removed, but otherwise all statements are kept in their order
+
+####   How to name this new thing? ###
+# the initial prefix was "ss" or "sso" that stands for "Semantic Step Ontology"; do we really want to bound to step?
+# the namespace "ect" is an abbreviation for EpiCorTec that stands for "Epistle Core Technology"; maybe the new trademark?
+# note: the namespace "eco" is used for Evidence & Conclusion Ontology  https://www.ebi.ac.uk/ols/ontologies/eco
+
+
+# @prefix lci:   <http://standards.iso.org/iso/15926/ontology/life-cycle-integration/> .  # original from ISO/TS 15926-12:2018
+@prefix lci:   <https://semanticstep.net/ontology/lci#> .                                  # the one to be used for SST
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+# Major difference to ISO/TS 15926-12:2018
+# - FunctionalPhysicalObject is not used. A function is a conceptual non-physical thing on a design-level that might be related to a physical thing
+
+<https://semanticstep.net/ontology/lci>
+        rdf:type     owl:Ontology ;
+        owl:versionInfo "0.01" .
+
+#############  SST management, not part of ISO/TS 15926-12:2018 ###################
+
+# need to state which objects are defined
+
+# used to define the "root object" that are decribed in an ontology
+# supporting a "closed world" assumption
+lci:isOwnedByOntology
+      rdf:type owl:ObjectProperty , owl:InverseFunctionalProperty ;
+      rdfs:domain lci:Thing ;
+      rdfs:range owl:Ontology .  # the TTL file that owns the domain object
+
+# needed for external DB set-up
+# partOf would be a sub-property of this
+lci:isOwnedBy
+      rdf:type owl:ObjectProperty , owl:FunctionalProperty ;
+      rdfs:domain lci:Individual ;
+      rdfs:range lci:Individual .
+
+lci:isDefinedBy
+      rdf:type owl:ObjectProperty , owl:FunctionalProperty ;
+      rdfs:domain lci:Individual ;
+      rdfs:range lci:Individual .
+
+#############  Top Level ###################
+
+# OK
+lci:Thing
+      rdf:type owl:Class ;
+      rdfs:subClassOf owl:Thing ;
+      owl:disjointUnionOf (lci:Individual lci:AbstractObject) .
+
+# OK
+lci:Individual
+      rdf:type owl:Class ;
+      rdfs:subClassOf lci:Thing ;
+      owl:disjointUnionOf (lci:ActualIndividual lci:Non-actualIndividual) ,
+                          (lci:ArrangedIndividual lci:Non-arrangedIndividual) .
+lci:AbstractObject
+      rdf:type owl:Class ;
+      rdfs:subClassOf lci:Thing .
+
+#############  Top Individuals ###################
+
+# OK
+lci:ArrangedIndividual
+      rdf:type owl:Class ;
+      rdfs:subClassOf lci:Individual ;
+      owl:disjointWith lci:Non-arrangedIndividual .
+lci:Non-arrangedIndividual
+      rdf:type owl:Class ;
+      rdfs:subClassOf lci:Individual .
+
+# OK
+lci:ActualIndividual
+      rdf:type owl:Class ;
+      rdfs:subClassOf lci:Individual ;
+      owl:disjointWith lci:Non-actualIndividual .
+lci:Non-actualIndividual
+      rdf:type owl:Class ;
+      rdfs:subClassOf lci:Individual .
+
+# OK
+lci:WholeLifeIndividual
+      rdf:type owl:Class ;
+      rdfs:subClassOf lci:Individual ;
+      owl:disjointWith lci:Non-wholeLifeIndividual .
+lci:Non-wholeLifeIndividual
+      rdf:type owl:Class ;
+      rdfs:subClassOf lci:Individual .
+
+lci:PhysicalObject
+      rdf:type owl:Class ;
+      rdfs:subClassOf lci:Individual .
+
+lci:Activity
+      rdf:type owl:Class ;
+      rdfs:subClassOf lci:Individual .
+
+# ?? Difference to PointInTime
+lci:Event
+      rdf:type owl:Class ;
+      rdfs:subClassOf lci:Individual .
+
+# ???, Modified
+lci:PointOrPeriodInTime
+      rdf:type owl:Class ;
+      rdfs:subClassOf lci:Event . # or Individual ?????????????????
+lci:PointInTime
+      rdf:type owl:Class ;
+      rdfs:subClassOf lci:PointOrPeriodInTime ;
+      owl:disjointWith lci:PeriodInTime .
+lci:PeriodInTime
+      rdf:type owl:Class ;
+      rdfs:subClassOf lci:PointOrPeriodInTime .
+
+# ???, Modified
+lci:PointOrRegionInSpace
+      rdf:type owl:Class ;
+      rdfs:subClassOf lci:Individual .
+lci:PointInSpace
+      rdf:type owl:Class ;
+      rdfs:subClassOf lci:PointOrRegionInSpace ;
+      owl:disjointWith lci:RegionInSpace .
+lci:RegionInSpace
+      rdf:type owl:Class ;
+      rdfs:subClassOf lci:PointOrRegionInSpace .
+
+# ??
+lci:InformationObject
+      rdf:type owl:Class ;
+      rdfs:subClassOf lci:Individual .
+
+
+
+#############  Top PhysicalObjects  ###################

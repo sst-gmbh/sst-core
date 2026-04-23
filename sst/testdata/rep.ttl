@@ -1,0 +1,23 @@
+@prefix :      <http://ontology.semanticstep.net/rep#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix lci:   <http://ontology.semanticstep.net/lci#> .
+@prefix ssmeta:   <http://ontology.semanticstep.net/ssmeta#> .
+@prefix sso:   <http://ontology.semanticstep.net/sso#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+
+<http://ontology.semanticstep.net/rep>
+        rdf:type     owl:Ontology ;
+        owl:imports   <http://ontology.semanticstep.net/lci> ;
+        owl:versionInfo "0.01" .
+
+:itemIdentifiedRepresentationUsage
+	ssmeta:stepImEntityMap "item_identified_representation_usage" ;
+	ssmeta:stepImEntityMap "draughting_model_item_association" ;
+	a owl:ObjectProperty ;
+	rdfs:domain  lci:Individual ;
+	rdfs:range :RepresentationItem ;  # either a single one, or a set or a collection / list
+	ssmeta:stepImMapAttributeOrder ( rdfs:label rdfs:comment rdf:nil rdfs:domain rdfs:range ) .

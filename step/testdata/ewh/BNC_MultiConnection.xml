@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ // Copyright Semantic STEP Technology GmbH, Germany & DCT Co., Ltd. Tianjin, China
+-->
+
+<!--<cmn:Uos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cmn="http://standards.iso.org/iso/ts/10303/-3000/-ed-1/tech/xml-schema/common" xmlns:n0="http://standards.iso.org/iso/ts/10303/-3001/-ed-1/tech/xml-schema/bo_model" xsi:schemaLocation="http://standards.iso.org/iso/ts/10303/-3001/-ed-1/tech/xml-schema/bo_model file:///C:/Users/st22077/Desktop/En%20cours%20AP242%20ed2/xsd/Core_Model_manual_modification.xsd">-->
+<n0:Uos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cmn="http://standards.iso.org/iso/ts/10303/-3000/-ed-1/tech/xml-schema/common" xmlns:n0="http://standards.iso.org/iso/ts/10303/-4442/-ed-1/tech/xml-schema/domain_model" xsi:schemaLocation="http://standards.iso.org/iso/ts/10303/-4442/-ed-1/tech/xml-schema/domain_model DomainModel.xsd">
+	<Header/>
+	<DataContainer xsi:type="n0:AP242DataContainer">
+		<!--CONTEXT-->
+		<ViewContext uid="_100101">
+			<ApplicationDomain>
+				<ProxyString>wiring harness assembly 3D design</ProxyString>
+			</ApplicationDomain>
+			<LifeCycleStage>
+				<ProxyString>design</ProxyString>
+			</LifeCycleStage>
+		</ViewContext>
+		<ViewContext uid="_100102">
+			<ApplicationDomain>
+				<ProxyString>electrical design</ProxyString>
+			</ApplicationDomain>
+			<LifeCycleStage>
+				<ProxyString>design</ProxyString>
+			</LifeCycleStage>
+		</ViewContext>
+		<ViewContext uid="_100103">
+			<ApplicationDomain>
+				<ProxyString>mechanical design</ProxyString>
+			</ApplicationDomain>
+			<LifeCycleStage>
+				<ProxyString>design</ProxyString>
+			</LifeCycleStage>
+		</ViewContext>
+		<ViewContext uid="_100104">
+			<ApplicationDomain>
+				<ProxyString>wiring harness segment topology</ProxyString>
+			</ApplicationDomain>
+			<LifeCycleStage>
+				<ProxyString>design</ProxyString>
+			</LifeCycleStage>
+		</ViewContext>
+		<ViewContext uid="_100105">
+			<ApplicationDomain>
+				<ProxyString>wire and part list with connectivity</ProxyString>
+			</ApplicationDomain>
+			<LifeCycleStage>
+				<ProxyString>design</ProxyString>
+			</LifeCycleStage>
+		</ViewContext>
+
+		<PropertyDefinition uid="_100202">
+			<Id id="red"/>
+			<PropertyType>
+				<ClassString>wire colour-based identification code</ClassString>
+			</PropertyType>
+		</PropertyDefinition>
+		<PropertyDefinition uid="_100203">
+			<Id id="green"/>
+			<PropertyType>
+				<ClassString>wire colour-based identification code</ClassString>
+			</PropertyType>
+		</PropertyDefinition>
+
+		<Unit uid="_100301">
+			<Name>
+				<ClassString>metre</ClassString>
+			</Name>
+			<Quantity>
+				<ClassString>length</ClassString>
+			</Quantity>
+		</Unit>
+
+		<Organization uid="_100400">
+			<Id id="http://www.te.com"/>
+			<Name>
+				<CharacterString>TE Connectivity Ltd</CharacterString>
+			</Name>
+			<OrganizationTypes>
+				<ClassString>company</ClassString>
+			</OrganizationTypes>
+		</Organization>
+		<Organization uid="_100410">
+			<Id id="http://www.souriau.com"/>
+			<Name>
+				<CharacterString>SOURIAU</CharacterString>
+			</Name>
+			<OrganizationTypes>
+				<ClassString>company</ClassString>
+			</OrganizationTypes>
+		</Organization>
+		<Organization uid="_100420">
+			<Id id="http://www.shrinkflexthailand.com"/>
+			<Name>
+				<CharacterString>Shrinkflex (Thailand) Co., Ltd</CharacterString>
+			</Name>
+			<OrganizationTypes>
+				<ClassString>company</ClassString>
+			</OrganizationTypes>
+		</Organization>
+		<Organization uid="_100430">
+			<Id id="IEC"/>
+			<Name>
+				<CharacterString>International Electrotechnical Commission</CharacterString>
+			</Name>
+		</Organization>
+
+		
+		<!--**********ShapeFeatureDefinition for single wire ends (in a cable) *****************-->
+		<ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_555003">
+			<Name>
+				<CharacterString>RG-58/U cable core</CharacterString>
+			</Name>
+			<ShapeFeatureType>wire_profile</ShapeFeatureType>
+		</ShapeFeatureDefinition>
+		<ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_555004">
+			<Name>
+				<CharacterString>RG-58/U cable shield</CharacterString>
+			</Name>
+			<ShapeFeatureType>wire_profile</ShapeFeatureType>
+		</ShapeFeatureDefinition>
+
+		<!--**********ShapeFeatureDefinition for single contacts *****************-->
+		<ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_555013">
+			<Name>
+				<CharacterString>RG-58 receptacle core</CharacterString>
+			</Name>
+			<ShapeFeatureType>contact_barrel</ShapeFeatureType>
+			<ShapeFeatureDefinitionRelationship xsi:type="n0:ContactFeatureDefinitionFitRelationship" uid="_555016">
+				<Related uidRef="_555003"/>
+			</ShapeFeatureDefinitionRelationship>
+		</ShapeFeatureDefinition>
+		<ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_555014">
+			<Name>
+				<CharacterString>RG-58 receptacle shield</CharacterString>
+			</Name>
+			<ShapeFeatureType>contact_barrel</ShapeFeatureType>
+			<ShapeFeatureDefinitionRelationship xsi:type="n0:ContactFeatureDefinitionFitRelationship" uid="_555017">
+				<Related uidRef="_555004"/>
+			</ShapeFeatureDefinitionRelationship>
+		</ShapeFeatureDefinition>
+
+
+		<!--**********ShapeFeatureDefinition for coax cable ends (terminals) *****************-->
+		<!-- https://en.wikipedia.org/wiki/RG-58 -->
+		<ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_555000">
+			<Name>
+				<CharacterString>RG-58/U cable terminals</CharacterString>
+			</Name>
+			<ShapeElement xsi:type="n0:ShapeFeatureDefinitionOccurrenceElement" uid="_555001">
+				<Id id="signal"/>
+				<Definition uidRef="_555003"/>
+			</ShapeElement>
+			<ShapeElement xsi:type="n0:ShapeFeatureDefinitionOccurrenceElement" uid="_555002">
+				<Id id="shield"/>
+				<Definition uidRef="_555004"/>
+			</ShapeElement>
+			<ShapeFeatureType>wire_profile</ShapeFeatureType>
+		</ShapeFeatureDefinition>
+
+		<!--**********ShapeFeatureDefinition for coax cable receptacle *****************-->
+		<!-- https://en.wikipedia.org/wiki/RG-58 -->
+		<ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_555010">
+			<Name>
+				<CharacterString>RG-58 receptacle terminals</CharacterString>
+			</Name>
+			<ShapeElement xsi:type="n0:ShapeFeatureDefinitionOccurrenceElement" uid="_555011">
+				<Id id="signal"/>
+				<ShapeElementRelationship  xsi:type="n0:ShapeFeatureDefinitionOccurrenceElementRelationship" uid="_555018">
+					<Related uidRef="_555001"/>
+					<ParentRelationship uidRef="_555015"></ParentRelationship>
+					<Definition uidRef="_555016"/>
+				</ShapeElementRelationship>
+				<Definition uidRef="_555013"/>
+			</ShapeElement>
+			<ShapeElement xsi:type="n0:ShapeFeatureDefinitionOccurrenceElement" uid="_555012">
+				<Id id="shield"/>
+				<ShapeElementRelationship  xsi:type="n0:ShapeFeatureDefinitionOccurrenceElementRelationship" uid="_555019">
+					<Related uidRef="_555002"/>
+					<ParentRelationship uidRef="_555015"></ParentRelationship>
+					<Definition uidRef="_555017"/>
+				</ShapeElementRelationship>
+				<Definition uidRef="_555014"/>
+			</ShapeElement>
+			<ShapeFeatureType>contact_barrel</ShapeFeatureType>
+			<ShapeFeatureDefinitionRelationship xsi:type="n0:ContactFeatureDefinitionFitRelationship" uid="_555015">
+				<Related uidRef="_555000"/>
+			</ShapeFeatureDefinitionRelationship>
+		</ShapeFeatureDefinition>
+
+		<!--**********ShapeFeatureDefinition for BNC 50 Ohm single contacts *****************-->
+		<ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_555103">
+			<Name>
+				<CharacterString>BNC 50 Ohm male core</CharacterString>
+			</Name>
+			<ShapeFeatureType>plug_profile</ShapeFeatureType>
+		</ShapeFeatureDefinition>
+		<ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_555113">
+			<Name>
+				<CharacterString>BNC 50 Ohm female core</CharacterString>
+			</Name>
+			<ShapeFeatureType>socket_profile</ShapeFeatureType>
+			<ShapeFeatureDefinitionRelationship xsi:type="n0:ContactFeatureDefinitionFitRelationship" uid="_555116">
+				<Related uidRef="_555103"/>
+			</ShapeFeatureDefinitionRelationship>
+		</ShapeFeatureDefinition>
+
+		<ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_555104">
+			<Name>
+				<CharacterString>BNC 50 Ohm male shield</CharacterString>
+			</Name>
+			<ShapeFeatureType>plug_profile</ShapeFeatureType>
+		</ShapeFeatureDefinition>
+		<ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_555114">
+			<Name>
+				<CharacterString>BNC 50 Ohm female shield</CharacterString>
+			</Name>
+			<ShapeFeatureType>socket_profile</ShapeFeatureType>
+			<ShapeFeatureDefinitionRelationship xsi:type="n0:ContactFeatureDefinitionFitRelationship" uid="_555117">
+				<Related uidRef="_555104"/>
+			</ShapeFeatureDefinitionRelationship>
+		</ShapeFeatureDefinition>
+
+		<!--**********ShapeFeatureDefinition for BNC 50 Ohm male *****************-->
+		<!-- https://en.wikipedia.org/wiki/RG-58 -->
+		<ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_555100">
+			<Name>
+				<CharacterString>BNC 50 Ohm male</CharacterString>
+			</Name>
+			<ShapeElement xsi:type="n0:ShapeFeatureDefinitionOccurrenceElement" uid="_555101">
+				<Id id="signal"/>
+				<Definition uidRef="_555103"/>
+			</ShapeElement>
+			<ShapeElement xsi:type="n0:ShapeFeatureDefinitionOccurrenceElement" uid="_555102">
+				<Id id="shield"/>
+				<Definition uidRef="_555104"/>
+			</ShapeElement>
+			<ShapeFeatureType>plug_profile</ShapeFeatureType>
+		</ShapeFeatureDefinition>
+
+		<!--**********ShapeFeatureDefinition for BNC 50 Ohm female *****************-->
+		<!-- https://en.wikipedia.org/wiki/RG-58 -->
+		<ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_555110">
+			<Name>
+				<CharacterString>BNC 50 Ohm female</CharacterString>
+			</Name>
+			<ShapeElement xsi:type="n0:ShapeFeatureDefinitionOccurrenceElement" uid="_555111">
+				<Id id="signal"/>
+				<ShapeElementRelationship  xsi:type="n0:ShapeFeatureDefinitionOccurrenceElementRelationship" uid="_555118">
+					<Related uidRef="_555101"/>
+					<ParentRelationship uidRef="_555116"></ParentRelationship>
+				</ShapeElementRelationship>
+				<Definition uidRef="_555113"/>
+			</ShapeElement>
+			<ShapeElement xsi:type="n0:ShapeFeatureDefinitionOccurrenceElement" uid="_555112">
+				<Id id="shield"/>
+				<ShapeElementRelationship  xsi:type="n0:ShapeFeatureDefinitionOccurrenceElementRelationship" uid="_555119">
+					<Related uidRef="_555102"/>
+					<ParentRelationship uidRef="_555117"></ParentRelationship>
+				</ShapeElementRelationship>
+				<Definition uidRef="_555114"/>
+			</ShapeElement>
+			<ShapeFeatureType>socket_profile</ShapeFeatureType>
+			<ShapeFeatureDefinitionRelationship xsi:type="n0:ContactFeatureDefinitionFitRelationship" uid="_555115">
+				<Related uidRef="_555100"/>
+			</ShapeFeatureDefinitionRelationship>
+		</ShapeFeatureDefinition>
+
+		<Part uid="_102000"> <!-- RG 58 cable -->
+			<Id id="RG 58"/>
+			<Name>
+				<CharacterString>RG 58</CharacterString>
+			</Name>
+			<PartTypes>
+				<PartCategoryEnum>cable</PartCategoryEnum>
+				<PartCategoryEnum>raw_material_by_length</PartCategoryEnum>
+			</PartTypes>
+			<Versions>
+				<PartVersion uid="_102001">
+					<Id id="Version 1"/>
+					<Views>
+						<PartView uid="_102002">
+							<InitialContext uidRef="_100102"/>
+							<Occurrence xsi:type="n0:CableOccurrence" uid="_202006">
+								<Id id="cable0"/>
+								<ShapeElement xsi:type="n0:CableOccurrenceTerminalLocationGroup" uid="_202010">
+									<Name>
+										<CharacterString>end a</CharacterString>
+									</Name>
+									<ShapeElement xsi:type="n0:CableOccurrenceTerminal" uid="_202013">
+										<Definition uidRef="_555000"/>
+										<AssociatedTransportFeature uidRef="_202001"/>
+									</ShapeElement>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:CableOccurrenceTerminalLocationGroup" uid="_202020">
+									<Name>
+										<CharacterString>end b</CharacterString>
+									</Name>
+									<ShapeElement xsi:type="n0:CableOccurrenceTerminal" uid="_202023">
+										<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_202024">
+											<Definition uidRef="_555001"/>
+										</ShapeElement>
+										<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_202025">
+											<Definition uidRef="_555002"/>
+										</ShapeElement>
+										<Definition uidRef="_555000"/>
+										<AssociatedTransportFeature uidRef="_202001"/>
+									</ShapeElement>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:WireOccurrenceIdentification" uid="_202001">
+									<Id id="Signal"/>
+									<Code uidRef="_100202"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:WireOccurrenceIdentification" uid="_202002">
+									<Id id="gnd"/>
+									<Code uidRef="_100203"/>
+								</ShapeElement>
+								<Quantity xsi:type="n0:NumericalValue" uid="_202008">
+									<Unit uidRef="_100301"/>
+									<ValueComponent>4.45</ValueComponent>
+								</Quantity>
+							</Occurrence>
+						</PartView>
+					</Views>
+				</PartVersion>
+			</Versions>
+		</Part>
+
+		<Part uid="_133000"><!-- RG-58 Coax connector -->
+			<Id id="8660-2485"/>
+			<Name>
+				<CharacterString>RG-58 Coax connector</CharacterString>
+			</Name>
+			<PartTypes>
+				<PartCategoryEnum>discrete</PartCategoryEnum>
+				<PartCategoryEnum>connector_contact</PartCategoryEnum>
+			</PartTypes>
+			<Versions>
+				<PartVersion uid="_133001">
+					<Id id="Version 1"/>
+					<Views>
+						<PartView uid="_133002">
+							<InitialContext uidRef="_100102"/>
+							<Occurrence xsi:type="n0:SingleOccurrence" uid="_213100">
+								<Id id="coax1"/>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_213101">
+									<Definition uidRef="_133003"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_213102">
+									<Definition uidRef="_133004"/>
+								</ShapeElement>
+							</Occurrence>
+							<Occurrence xsi:type="n0:SingleOccurrence" uid="_213200">
+								<Id id="coax2"/>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_213201">
+									<Definition uidRef="_133003"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_213202">
+									<Definition uidRef="_133004"/>
+								</ShapeElement>
+							</Occurrence>
+							<ShapeElement xsi:type="n0:PartTerminal" uid="_133003">
+								<Id id="interface terminals"/>
+								<PartDefinition uidRef="_555100"/>
+								<IntendedJointType>
+									<TerminalJointTypeEnum>pin_terminal</TerminalJointTypeEnum>
+								</IntendedJointType>
+								<InterfaceOrJoinTerminal>interface_terminal</InterfaceOrJoinTerminal>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartTerminal" uid="_133004">
+								<Id id="join terminals"/>
+								<PartDefinition uidRef="_555010"/>
+								<IntendedJointType>
+									<TerminalJointTypeEnum>crimp_terminal</TerminalJointTypeEnum>
+								</IntendedJointType>
+								<InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+							</ShapeElement>
+						</PartView>
+					</Views>
+				</PartVersion>
+			</Versions>
+		</Part>
+
+		<Part uid="_134000"><!-- BNC Tee Connector -->
+			<Id id="xxx"/>
+			<Name>
+				<CharacterString>BNC Tee Connector</CharacterString>
+			</Name>
+			<PartTypes>
+				<PartCategoryEnum>discrete</PartCategoryEnum>
+				<PartCategoryEnum>connector_contact</PartCategoryEnum>
+			</PartTypes>
+			<Versions>
+				<PartVersion uid="_134001">
+					<Id id="Version 1"/>
+					<Views>
+						<PartView uid="_134002">
+							<InitialContext uidRef="_100102"/>
+							<Occurrence xsi:type="n0:SingleOccurrence" uid="_234100">
+								<Id id="coax1"/>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_234101">
+									<Definition uidRef="_134003"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_234102">
+									<Definition uidRef="_134004"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_234103">
+									<Definition uidRef="_134005"/>
+								</ShapeElement>
+							</Occurrence>
+							<Occurrence xsi:type="n0:SingleOccurrence" uid="_234200">
+								<Id id="coax2"/>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_234201">
+									<Definition uidRef="_134003"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_234202">
+									<Definition uidRef="_134004"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_234203">
+									<Definition uidRef="_134005"/>
+								</ShapeElement>
+							</Occurrence>
+							<ShapeElement xsi:type="n0:PartTerminal" uid="_134003">
+								<Id id="female 1"/>
+								<PartDefinition uidRef="_555110"/>
+								<IntendedJointType>
+									<TerminalJointTypeEnum>pin_terminal</TerminalJointTypeEnum>
+								</IntendedJointType>
+								<InterfaceOrJoinTerminal>interface_terminal</InterfaceOrJoinTerminal>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartTerminal" uid="_134004">
+								<Id id="female 2"/>
+								<PartDefinition uidRef="_555110"/>
+								<IntendedJointType>
+									<TerminalJointTypeEnum>pin_terminal</TerminalJointTypeEnum>
+								</IntendedJointType>
+								<InterfaceOrJoinTerminal>interface_terminal</InterfaceOrJoinTerminal>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartTerminal" uid="_134005">
+								<Id id="male 1"/>
+								<PartDefinition uidRef="_555100"/>
+								<IntendedJointType>
+									<TerminalJointTypeEnum>pin_terminal</TerminalJointTypeEnum>
+								</IntendedJointType>
+								<InterfaceOrJoinTerminal>interface_terminal</InterfaceOrJoinTerminal>
+							</ShapeElement>
+						</PartView>
+					</Views>
+				</PartVersion>
+			</Versions>
+		</Part>
+
+		<Part uid="_135000"><!-- BNC Cable -->
+			<Id id="xxx"/>
+			<Name>
+				<CharacterString>BNC Cable</CharacterString>
+			</Name>
+			<PartTypes>
+				<PartCategoryEnum>discrete</PartCategoryEnum>
+				<PartCategoryEnum>assembly</PartCategoryEnum>
+			</PartTypes>
+			<Versions>
+				<PartVersion uid="_135001">
+					<Id id="Version 1"/>
+					<Views>
+						<PartView xsi:type="n0:AssemblyDefinition" uid="_135002">
+							<InitialContext uidRef="_100102"/>
+							<Occurrence xsi:type="n0:SingleOccurrence" uid="_235100">
+								<Id id="cable1"/>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_235101">
+									<Definition uidRef="_135003"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_235102">
+									<Definition uidRef="_135004"/>
+								</ShapeElement>
+							</Occurrence>
+							<Occurrence xsi:type="n0:SingleOccurrence" uid="_235200">
+								<Id id="cable2"/>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_235201">
+									<Definition uidRef="_135003"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_235202">
+									<Definition uidRef="_135004"/>
+								</ShapeElement>
+							</Occurrence>
+							<ShapeElement xsi:type="n0:PartTerminal" uid="_135003">
+								<Id id="female 1"/>
+								<PartDefinition uidRef="_555110"/>
+								<IntendedJointType>
+									<TerminalJointTypeEnum>pin_terminal</TerminalJointTypeEnum>
+								</IntendedJointType>
+								<InterfaceOrJoinTerminal>interface_terminal</InterfaceOrJoinTerminal>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartTerminal" uid="_135004">
+								<Id id="female 2"/>
+								<PartDefinition uidRef="_555110"/>
+								<IntendedJointType>
+									<TerminalJointTypeEnum>pin_terminal</TerminalJointTypeEnum>
+								</IntendedJointType>
+								<InterfaceOrJoinTerminal>interface_terminal</InterfaceOrJoinTerminal>
+							</ShapeElement>
+						</PartView>
+					</Views>
+				</PartVersion>
+			</Versions>
+		</Part>
+		
+		<Part uid="_521000"> <!-- BNC-Assembly -->
+			<Id id="BNC-Assembly"/>
+			<Name>
+				<CharacterString>BNC-Assembly</CharacterString>
+			</Name>
+			<PartTypes>
+				<PartCategoryEnum>assembly</PartCategoryEnum>
+			</PartTypes>
+			<Versions>
+				<PartVersion uid="_521001">
+					<Id></Id>
+					<Views>
+						<PartView xsi:type="n0:AssemblyDefinition" uid="_521002">
+							<AdditionalContexts>
+								<ViewContext uidRef="_100104"/>
+								<ViewContext uidRef="_100105"/>
+							</AdditionalContexts>
+							<InitialContext uidRef="_100102"/>
+
+							<!--  -->							
+							<ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_521010">
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_521110">
+									<Related uidRef="_235102"/> <!-- cable1/T2  -->
+									<RelationType><ClassString></ClassString></RelationType>
+								</ShapeElementRelationship>
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_521210">
+									<Related uidRef="_234101"/> <!-- tee1/T1 -->
+									<RelationType><ClassString></ClassString></RelationType>
+								</ShapeElementRelationship>
+							</ShapeElement>							
+							<ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_521011">
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_521111">
+									<Related uidRef="_234102"/> <!-- tee1/T2  -->
+									<RelationType><ClassString></ClassString></RelationType>
+								</ShapeElementRelationship>
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_521211">
+									<Related uidRef="_235202"/> <!-- cable2/T1 -->
+									<RelationType><ClassString></ClassString></RelationType>
+								</ShapeElementRelationship>
+								<JointType>crimped_connection</JointType>
+							</ShapeElement>	
+							<!--  -->						
+							<ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_521012">
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_521112">
+									<Related uidRef="_234103"/> <!-- tee1/T3  -->
+									<RelationType><ClassString></ClassString></RelationType>
+								</ShapeElementRelationship>
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_521212">
+									<Related uidRef="_234201"/> <!-- tee2/T1 -->
+									<RelationType><ClassString></ClassString></RelationType>
+								</ShapeElementRelationship>
+								<JointType>screwed_connection</JointType>
+							</ShapeElement>						
+							<ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_521013">
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_521113">
+									<Related uidRef="_234202"/> <!-- tee2/T2  -->
+									<RelationType><ClassString></ClassString></RelationType>
+								</ShapeElementRelationship>
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_521213">
+									<Related uidRef="_235202"/> <!-- cable2/T2 -->
+									<RelationType><ClassString></ClassString></RelationType>
+								</ShapeElementRelationship>
+								<JointType>screwed_connection</JointType>
+							</ShapeElement>	
+							
+							<ViewOccurrenceRelationship uid="_515021" xsi:type="n0:NextAssemblyOccurrenceUsage">
+								<Related uidRef="_235100"/> <!--SingleOccurrence cable1 -->
+								<RelationType>
+								  <ClassString>next assembly occurrence</ClassString>
+								</RelationType>
+							</ViewOccurrenceRelationship>
+							<ViewOccurrenceRelationship uid="_515022" xsi:type="n0:NextAssemblyOccurrenceUsage">
+								<Related uidRef="_235200"/> <!--SingleOccurrence cable2 -->
+								<RelationType>
+								  <ClassString>next assembly occurrence</ClassString>
+								</RelationType>
+							</ViewOccurrenceRelationship>
+							<ViewOccurrenceRelationship uid="_515023" xsi:type="n0:NextAssemblyOccurrenceUsage">
+								<Related uidRef="_234100"/> <!--SingleOccurrence tee1 -->
+								<RelationType>
+								  <ClassString>next assembly occurrence</ClassString>
+								</RelationType>
+							</ViewOccurrenceRelationship>
+							<ViewOccurrenceRelationship uid="_515024" xsi:type="n0:NextAssemblyOccurrenceUsage">
+								<Related uidRef="_234200"/> <!--SingleOccurrence tee2 -->
+								<RelationType>
+								  <ClassString>next assembly occurrence</ClassString>
+								</RelationType>
+							</ViewOccurrenceRelationship>
+						</PartView>
+					</Views>
+				</PartVersion>
+			</Versions>
+		</Part>
+
+
+	</DataContainer>
+</n0:Uos>

@@ -1,0 +1,1222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<n0:Uos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cmn="http://standards.iso.org/iso/ts/10303/-3000/-ed-1/tech/xml-schema/common" xmlns:n0="http://standards.iso.org/iso/ts/10303/-4442/-ed-1/tech/xml-schema/domain_model" xsi:schemaLocation="http://standards.iso.org/iso/ts/10303/-4442/-ed-1/tech/xml-schema/domain_model DomainModel.xsd">
+    <Header></Header>
+    <DataContainer xsi:type="n0:AP242DataContainer">
+        <ViewContext uid="_1582cb9b-855f-460c-b1a0-68a21adb5b33">
+            <ApplicationDomain>
+                <PredefinedApplicationDomainEnum>electrical</PredefinedApplicationDomainEnum>
+            </ApplicationDomain>
+            <LifeCycleStage>
+                <ProxyString>Design</ProxyString>
+            </LifeCycleStage>
+        </ViewContext>
+        <Unit uid="_aa9217c1-9f26-4304-9c01-dbf021173447">
+            <Name>
+                <ClassString>milli metre</ClassString>
+            </Name>
+            <Quantity>
+                <ClassString>length</ClassString>
+            </Quantity>
+        </Unit>
+        <Unit uid="_c72125b9-2943-4bf7-b0a8-879c2507073a">
+            <Name>
+                <ClassString>square milli metre</ClassString>
+            </Name>
+            <Quantity>
+                <ClassString>length</ClassString>
+            </Quantity>
+        </Unit>
+        <Unit uid="_7fdb376d-8ff1-4d5f-940d-4bdef15cee41">
+            <Name>
+                <ClassString>metre</ClassString>
+            </Name>
+            <Quantity>
+                <ClassString>length</ClassString>
+            </Quantity>
+        </Unit>
+        <FormatProperty uid="_37641ab5-3acd-4d11-8729-537908fa706e">
+            <DataFormat>
+                <ClassString>ISO 10303-214</ClassString>
+            </DataFormat>
+        </FormatProperty>
+        <Part uid="_e587ee91-4f74-442c-b5c7-4e1df7535f21">
+            <Id id="Nut-Bolt Assembly"></Id>
+            <Name>
+                <CharacterString>Nut-Bolt Assembly</CharacterString>
+            </Name>
+            <PartTypes>
+                <PartCategoryEnum>assembly</PartCategoryEnum>
+            </PartTypes>
+            <Versions>
+                <PartVersion uid="_549144b3-fc3e-4bf1-9cf5-f5f2fad9e570">
+                    <Id></Id>
+                    <Views>
+                        <PartView uid="_2fca5049-6e2c-4916-80e4-045910562d46">
+                            <DefiningGeometry uidRef="_2c9c06c0-8c68-4545-8658-5c0461e84cb0"></DefiningGeometry>
+                            <InitialContext uidRef="default_electrical_design_view_context"></InitialContext>
+                            <Occurrence xsi:type="n0:SingleOccurrence" uid="_1816cd0f-84e9-4cbc-a8ae-711f43827095">
+                                <Id id="-&gt; Nut-Bolt Assembly"></Id>
+                            </Occurrence>
+                            <Occurrence xsi:type="n0:SingleOccurrence" uid="_c79b28e7-adf3-4e66-9601-2805e1abd83a">
+                                <Id id="-&gt; Nut-Bolt Assembly"></Id>
+                            </Occurrence>
+                            <Occurrence xsi:type="n0:SingleOccurrence" uid="_df06231e-83ea-41eb-8648-0d47476d285a">
+                                <Id id="-&gt; Nut-Bolt Assembly"></Id>
+                            </Occurrence>
+                            <ViewOccurrenceRelationship xsi:type="n0:NextAssemblyOccurrenceUsage" uid="_92554af4-9b93-49f6-b3a7-8e231646cf13">
+                                <Related uidRef="_ff96a2a0-1e4b-4d1b-9343-dde2c7f644d4"></Related>
+                                <RelationType>
+                                    <ClassString>next assembly occurrence</ClassString>
+                                </RelationType>
+                                <Placement>
+                                    <GeometricRepresentationRelationship uidRef="_67fe9f14-1bfa-4457-80af-eb80b8b464e8"></GeometricRepresentationRelationship>
+                                </Placement>
+                            </ViewOccurrenceRelationship>
+                            <ViewOccurrenceRelationship xsi:type="n0:NextAssemblyOccurrenceUsage" uid="_fef3ae39-6bec-460f-807d-5ace0e404cd3">
+                                <Related uidRef="_a7a473a2-9ef5-4117-87bb-8d9d658efaf1"></Related>
+                                <RelationType>
+                                    <ClassString>next assembly occurrence</ClassString>
+                                </RelationType>
+                                <Placement>
+                                    <GeometricRepresentationRelationship uidRef="_dccc1055-aafa-4d84-b1ac-1db3e99c6c81"></GeometricRepresentationRelationship>
+                                </Placement>
+                            </ViewOccurrenceRelationship>
+                        </PartView>
+                    </Views>
+                </PartVersion>
+            </Versions>
+        </Part>
+        <Part uid="_0af6229c-6bfc-4d43-9003-a90323ae5652">
+            <Id id="Bolt"></Id>
+            <Name>
+                <CharacterString>Bolt</CharacterString>
+            </Name>
+            <PartTypes>
+                <PartCategoryEnum>assembly</PartCategoryEnum>
+            </PartTypes>
+            <Versions>
+                <PartVersion uid="_dffaea16-53c1-497c-98c6-38f46e25d0be">
+                    <Id></Id>
+                    <Views>
+                        <PartView uid="_1fc86e9f-468e-41e5-be97-f893a65dbc07">
+                            <DefiningGeometry uidRef="_ead5f0ef-9114-4c1f-b8ec-3339eadd7ac3"></DefiningGeometry>
+                            <InitialContext uidRef="default_electrical_design_view_context"></InitialContext>
+                            <Occurrence xsi:type="n0:SingleOccurrence" uid="_a7a473a2-9ef5-4117-87bb-8d9d658efaf1">
+                                <Id id="-&gt; Bolt"></Id>
+                            </Occurrence>
+                        </PartView>
+                    </Views>
+                </PartVersion>
+            </Versions>
+        </Part>
+        <Part uid="_776f2cae-5124-4224-9d20-f7e933f6b509">
+            <Id id="L-Bracket Assembly"></Id>
+            <Name>
+                <CharacterString>L-Bracket Assembly</CharacterString>
+            </Name>
+            <PartTypes>
+                <PartCategoryEnum>assembly</PartCategoryEnum>
+            </PartTypes>
+            <Versions>
+                <PartVersion uid="_4502a372-221a-450d-86cf-80e34ec24c7b">
+                    <Id></Id>
+                    <Views>
+                        <PartView uid="_5ae02e23-6909-46df-bc80-7b517752b410">
+                            <DefiningGeometry uidRef="_4f4b5635-3381-4bb4-9a56-75a963aada22"></DefiningGeometry>
+                            <InitialContext uidRef="default_electrical_design_view_context"></InitialContext>
+                            <Occurrence xsi:type="n0:SingleOccurrence" uid="_7c46f72d-e00a-422e-aa4d-9a6b4d193117">
+                                <Id id="-&gt; L-Bracket Assembly"></Id>
+                            </Occurrence>
+                            <Occurrence xsi:type="n0:SingleOccurrence" uid="_e47ae04e-2667-47c1-88aa-4ab4e1d221a7">
+                                <Id id="-&gt; L-Bracket Assembly"></Id>
+                            </Occurrence>
+                            <ViewOccurrenceRelationship xsi:type="n0:NextAssemblyOccurrenceUsage" uid="_606f6656-6912-4656-95b4-5c4d0b1e1fa6">
+                                <Related uidRef="_455a73b2-3370-4291-9c0f-89da3cdd534b"></Related>
+                                <RelationType>
+                                    <ClassString>next assembly occurrence</ClassString>
+                                </RelationType>
+                                <Placement>
+                                    <GeometricRepresentationRelationship uidRef="_6d8150eb-c9f6-467c-86c5-45b9621e0f0f"></GeometricRepresentationRelationship>
+                                </Placement>
+                            </ViewOccurrenceRelationship>
+                            <ViewOccurrenceRelationship xsi:type="n0:NextAssemblyOccurrenceUsage" uid="_9b7fbb57-a9cc-4d42-a39e-a11097c611fa">
+                                <Related uidRef="_df06231e-83ea-41eb-8648-0d47476d285a"></Related>
+                                <RelationType>
+                                    <ClassString>next assembly occurrence</ClassString>
+                                </RelationType>
+                                <Placement>
+                                    <GeometricRepresentationRelationship uidRef="_f9fd7fc2-674a-4997-a7c0-6a93c76f8337"></GeometricRepresentationRelationship>
+                                </Placement>
+                            </ViewOccurrenceRelationship>
+                            <ViewOccurrenceRelationship xsi:type="n0:NextAssemblyOccurrenceUsage" uid="_b8a63408-75aa-4b44-939a-4bfc86be0149">
+                                <Related uidRef="_c79b28e7-adf3-4e66-9601-2805e1abd83a"></Related>
+                                <RelationType>
+                                    <ClassString>next assembly occurrence</ClassString>
+                                </RelationType>
+                                <Placement>
+                                    <GeometricRepresentationRelationship uidRef="_b9a41907-694c-4958-ba4a-62dee2d4d557"></GeometricRepresentationRelationship>
+                                </Placement>
+                            </ViewOccurrenceRelationship>
+                            <ViewOccurrenceRelationship xsi:type="n0:NextAssemblyOccurrenceUsage" uid="_c71e574e-59ac-4ea0-894c-8b0b919eb073">
+                                <Related uidRef="_1816cd0f-84e9-4cbc-a8ae-711f43827095"></Related>
+                                <RelationType>
+                                    <ClassString>next assembly occurrence</ClassString>
+                                </RelationType>
+                                <Placement>
+                                    <GeometricRepresentationRelationship uidRef="_a44c31b6-9ea3-46c1-84eb-7296d1b76a14"></GeometricRepresentationRelationship>
+                                </Placement>
+                            </ViewOccurrenceRelationship>
+                        </PartView>
+                    </Views>
+                </PartVersion>
+            </Versions>
+        </Part>
+        <Part uid="_4a6a97bb-0709-48ce-bffe-40a10400dfd4">
+            <Id id="Nut"></Id>
+            <Name>
+                <CharacterString>Nut</CharacterString>
+            </Name>
+            <PartTypes>
+                <PartCategoryEnum>assembly</PartCategoryEnum>
+            </PartTypes>
+            <Versions>
+                <PartVersion uid="_f58a58a2-a748-46fa-846a-15451100f229">
+                    <Id></Id>
+                    <Views>
+                        <PartView uid="_304496eb-4358-4fd3-a6fd-553fd5608900">
+                            <DefiningGeometry uidRef="_64b20f68-d08c-4c29-8a9c-750eae9e5c37"></DefiningGeometry>
+                            <InitialContext uidRef="default_electrical_design_view_context"></InitialContext>
+                            <Occurrence xsi:type="n0:SingleOccurrence" uid="_06530f36-f334-409b-87a4-abeeb62a00ab">
+                                <Id id="-&gt; Nut"></Id>
+                            </Occurrence>
+                            <Occurrence xsi:type="n0:SingleOccurrence" uid="_4264382a-dafb-454e-9286-ceebbc166f8c">
+                                <Id id="-&gt; Nut"></Id>
+                            </Occurrence>
+                            <Occurrence xsi:type="n0:SingleOccurrence" uid="_ff96a2a0-1e4b-4d1b-9343-dde2c7f644d4">
+                                <Id id="-&gt; Nut"></Id>
+                            </Occurrence>
+                        </PartView>
+                    </Views>
+                </PartVersion>
+            </Versions>
+        </Part>
+        <Part uid="_21dd7883-015b-47a8-8456-19f840748879">
+            <Id id="Rod"></Id>
+            <Name>
+                <CharacterString>Rod</CharacterString>
+            </Name>
+            <PartTypes>
+                <PartCategoryEnum>assembly</PartCategoryEnum>
+            </PartTypes>
+            <Versions>
+                <PartVersion uid="_b7f16825-4f8b-4ec4-81b8-71b8528d6167">
+                    <Id></Id>
+                    <Views>
+                        <PartView uid="_e455f7a3-16ff-46aa-85c5-b2a5a6a34a7c">
+                            <DefiningGeometry uidRef="_882c2a54-9248-422e-bed2-2f41bc4ae6af"></DefiningGeometry>
+                            <InitialContext uidRef="default_electrical_design_view_context"></InitialContext>
+                            <Occurrence xsi:type="n0:SingleOccurrence" uid="_4bcd7932-0252-44e7-803d-8f6e56e8b4db">
+                                <Id id="-&gt; Rod"></Id>
+                            </Occurrence>
+                        </PartView>
+                    </Views>
+                </PartVersion>
+            </Versions>
+        </Part>
+        <Part uid="_6c2e7f38-49fd-4d51-ac55-d817b53a86d0">
+            <Id id="Plate"></Id>
+            <Name>
+                <CharacterString>Plate</CharacterString>
+            </Name>
+            <PartTypes>
+                <PartCategoryEnum>assembly</PartCategoryEnum>
+            </PartTypes>
+            <Versions>
+                <PartVersion uid="_4155ee4e-b514-4582-9459-122eb7c9cab1">
+                    <Id></Id>
+                    <Views>
+                        <PartView uid="_67401d3a-8ade-4c8e-852e-ad5ee3df8530">
+                            <DefiningGeometry uidRef="_70104160-3f42-4712-8ac2-1b83441bb815"></DefiningGeometry>
+                            <InitialContext uidRef="default_electrical_design_view_context"></InitialContext>
+                            <Occurrence xsi:type="n0:SingleOccurrence" uid="_b19bdf90-b08e-4c7e-ad34-9f0cdf439899">
+                                <Id id="-&gt; Plate"></Id>
+                            </Occurrence>
+                        </PartView>
+                    </Views>
+                </PartVersion>
+            </Versions>
+        </Part>
+        <Part uid="_80a7d5fb-19a4-440a-a9e3-a7e829e077ea">
+            <Id id="Assembly AS1"></Id>
+            <Name>
+                <CharacterString>Assembly AS1</CharacterString>
+            </Name>
+            <PartTypes>
+                <PartCategoryEnum>assembly</PartCategoryEnum>
+            </PartTypes>
+            <Versions>
+                <PartVersion uid="_92eb7359-04dc-4535-b16d-ad7ec2c3c5bd">
+                    <Id></Id>
+                    <Views>
+                        <PartView uid="_00cd24cb-d7ac-44e2-8694-bceaa4af46c2">
+                            <DefiningGeometry uidRef="_a1adf962-5969-4c9c-8dbc-1ee6de6f2e87"></DefiningGeometry>
+                            <InitialContext uidRef="default_electrical_design_view_context"></InitialContext>
+                            <ViewOccurrenceRelationship xsi:type="n0:NextAssemblyOccurrenceUsage" uid="_7873a6d0-9c1e-4dc6-bc03-d36b151df8f0">
+                                <Related uidRef="_1c728630-464f-471d-8ccb-f8b1ff58b3e2"></Related>
+                                <RelationType>
+                                    <ClassString>next assembly occurrence</ClassString>
+                                </RelationType>
+                                <Placement>
+                                    <GeometricRepresentationRelationship uidRef="_e2d41b94-aeac-49df-88ec-2790a2d092ce"></GeometricRepresentationRelationship>
+                                </Placement>
+                            </ViewOccurrenceRelationship>
+                            <ViewOccurrenceRelationship xsi:type="n0:NextAssemblyOccurrenceUsage" uid="_9a74d798-5822-4c9f-aff5-3854742378e2">
+                                <Related uidRef="_b19bdf90-b08e-4c7e-ad34-9f0cdf439899"></Related>
+                                <RelationType>
+                                    <ClassString>next assembly occurrence</ClassString>
+                                </RelationType>
+                                <Placement>
+                                    <GeometricRepresentationRelationship uidRef="_40578dee-aeb0-4c9b-802a-af252aeab687"></GeometricRepresentationRelationship>
+                                </Placement>
+                            </ViewOccurrenceRelationship>
+                            <ViewOccurrenceRelationship xsi:type="n0:NextAssemblyOccurrenceUsage" uid="_b29fae2b-243c-461e-8d71-1869635d6e38">
+                                <Related uidRef="_7c46f72d-e00a-422e-aa4d-9a6b4d193117"></Related>
+                                <RelationType>
+                                    <ClassString>next assembly occurrence</ClassString>
+                                </RelationType>
+                                <Placement>
+                                    <GeometricRepresentationRelationship uidRef="_5c2f1a85-eaf1-4b41-84df-4dcac754a014"></GeometricRepresentationRelationship>
+                                </Placement>
+                            </ViewOccurrenceRelationship>
+                            <ViewOccurrenceRelationship xsi:type="n0:NextAssemblyOccurrenceUsage" uid="_eaa1033d-1af8-499b-affb-3e7dea9ff822">
+                                <Related uidRef="_e47ae04e-2667-47c1-88aa-4ab4e1d221a7"></Related>
+                                <RelationType>
+                                    <ClassString>next assembly occurrence</ClassString>
+                                </RelationType>
+                                <Placement>
+                                    <GeometricRepresentationRelationship uidRef="_42693edb-2542-4141-a54d-74d20e1714ac"></GeometricRepresentationRelationship>
+                                </Placement>
+                            </ViewOccurrenceRelationship>
+                        </PartView>
+                    </Views>
+                </PartVersion>
+            </Versions>
+        </Part>
+        <Part uid="_b03adbe5-20b3-46bc-80d5-934dd825841c">
+            <Id id="Rod Assembly"></Id>
+            <Name>
+                <CharacterString>Rod Assembly</CharacterString>
+            </Name>
+            <PartTypes>
+                <PartCategoryEnum>assembly</PartCategoryEnum>
+            </PartTypes>
+            <Versions>
+                <PartVersion uid="_aea25436-d09c-4dab-8835-77d4d8c5b94e">
+                    <Id></Id>
+                    <Views>
+                        <PartView uid="_c2ec96e2-1c67-4d92-b9e2-4a3a11a2b996">
+                            <DefiningGeometry uidRef="_bdd930d7-a968-461f-b137-f123b6a44ee1"></DefiningGeometry>
+                            <InitialContext uidRef="default_electrical_design_view_context"></InitialContext>
+                            <Occurrence xsi:type="n0:SingleOccurrence" uid="_1c728630-464f-471d-8ccb-f8b1ff58b3e2">
+                                <Id id="-&gt; Rod Assembly"></Id>
+                            </Occurrence>
+                            <ViewOccurrenceRelationship xsi:type="n0:NextAssemblyOccurrenceUsage" uid="_14b1e56b-8ca1-445f-aba9-a812e894c97f">
+                                <Related uidRef="_4bcd7932-0252-44e7-803d-8f6e56e8b4db"></Related>
+                                <RelationType>
+                                    <ClassString>next assembly occurrence</ClassString>
+                                </RelationType>
+                                <Placement>
+                                    <GeometricRepresentationRelationship uidRef="_8704de83-e0fa-45fc-9b28-eb02019c1641"></GeometricRepresentationRelationship>
+                                </Placement>
+                            </ViewOccurrenceRelationship>
+                            <ViewOccurrenceRelationship xsi:type="n0:NextAssemblyOccurrenceUsage" uid="_8dcaa843-ad12-40e4-be66-5f2148a8425c">
+                                <Related uidRef="_06530f36-f334-409b-87a4-abeeb62a00ab"></Related>
+                                <RelationType>
+                                    <ClassString>next assembly occurrence</ClassString>
+                                </RelationType>
+                                <Placement>
+                                    <GeometricRepresentationRelationship uidRef="_b7f63a44-f14d-4078-81ac-c7c8b663f083"></GeometricRepresentationRelationship>
+                                </Placement>
+                            </ViewOccurrenceRelationship>
+                            <ViewOccurrenceRelationship xsi:type="n0:NextAssemblyOccurrenceUsage" uid="_f6cfa8ae-bc39-4246-a726-4d67f8b86965">
+                                <Related uidRef="_4264382a-dafb-454e-9286-ceebbc166f8c"></Related>
+                                <RelationType>
+                                    <ClassString>next assembly occurrence</ClassString>
+                                </RelationType>
+                                <Placement>
+                                    <GeometricRepresentationRelationship uidRef="_6d2be7fb-45f2-4b73-b076-dc6dd948ea5a"></GeometricRepresentationRelationship>
+                                </Placement>
+                            </ViewOccurrenceRelationship>
+                        </PartView>
+                    </Views>
+                </PartVersion>
+            </Versions>
+        </Part>
+        <Part uid="_ce40142f-10bc-43da-92f7-5942998fe87b">
+            <Id id="L-Bracket"></Id>
+            <Name>
+                <CharacterString>L-Bracket</CharacterString>
+            </Name>
+            <PartTypes>
+                <PartCategoryEnum>assembly</PartCategoryEnum>
+            </PartTypes>
+            <Versions>
+                <PartVersion uid="_b4be1328-a8fe-49ff-a062-99b4c4f38bea">
+                    <Id></Id>
+                    <Views>
+                        <PartView uid="_0f517323-0776-4b63-a57a-1af283fe9db9">
+                            <DefiningGeometry uidRef="_0946da96-74fb-4171-a60e-32924f9880ad"></DefiningGeometry>
+                            <InitialContext uidRef="default_electrical_design_view_context"></InitialContext>
+                            <Occurrence xsi:type="n0:SingleOccurrence" uid="_455a73b2-3370-4291-9c0f-89da3cdd534b">
+                                <Id id="-&gt; L-Bracket"></Id>
+                            </Occurrence>
+                        </PartView>
+                    </Views>
+                </PartVersion>
+            </Versions>
+        </Part>
+        <RepresentationContext xsi:type="n0:GeometricCoordinateSpace" uid="_470a03a8-30e7-4347-81ee-dc33d4df3768">
+            <Id id="Context #1"></Id>
+            <Representations>
+                <Representation xsi:type="n0:ComposedGeometricModel" uid="_178e5117-9162-4d0c-b66f-66662e1efed5">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_a72b6de7-973e-4283-ac1d-53852acc5d76"></RepresentationItem>
+                    </Items>
+                </Representation>
+                <Representation xsi:type="n0:Representation" uid="_563a9099-11a9-4aa4-b23d-45a99c662c94">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_7f486576-7f2b-4cd1-9ceb-f81a21ac1f79"></RepresentationItem>
+                    </Items>
+                </Representation>
+                <Representation xsi:type="n0:ExternalAdvancedBrepShapeRepresentation" uid="_70104160-3f42-4712-8ac2-1b83441bb815">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_5b8853e6-e0d1-426f-86dd-ebd1c114ba45"></RepresentationItem>
+                        <RepresentationItem uidRef="_a72b6de7-973e-4283-ac1d-53852acc5d76"></RepresentationItem>
+                    </Items>
+                    <ExternalFile uidRef="_decd7fba-67d8-4a1f-ac4d-66795f760886"></ExternalFile>
+                </Representation>
+                <Representation xsi:type="n0:Representation" uid="_83f3ad13-ea31-4a1c-85ba-1cb9c1dfd256">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_980a7de9-69d2-4ff4-bf25-e3adedaa9aa1"></RepresentationItem>
+                    </Items>
+                </Representation>
+                <Representation xsi:type="n0:Representation" uid="_9d00d87b-98c2-4306-b2c7-cec458a70848">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_b5f0105c-6906-4083-8981-b5c42ef56cf3"></RepresentationItem>
+                    </Items>
+                </Representation>
+            </Representations>
+            <Items>
+                <RepresentationItem xsi:type="n0:ManifoldSolidBrep" uid="_a72b6de7-973e-4283-ac1d-53852acc5d76"></RepresentationItem>
+                <RepresentationItem xsi:type="n0:MeasureRepresentationItem" uid="_7f486576-7f2b-4cd1-9ceb-f81a21ac1f79">
+                    <Name>
+                        <CharacterString>volume measure</CharacterString>
+                    </Name>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:AxisPlacement" uid="_5b8853e6-e0d1-426f-86dd-ebd1c114ba45">
+                    <Axis>0 0 1</Axis>
+                    <Position>0 0 0</Position>
+                    <RefDirection>1 0 -0</RefDirection>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:MeasureRepresentationItem" uid="_980a7de9-69d2-4ff4-bf25-e3adedaa9aa1">
+                    <Name>
+                        <CharacterString>surface area measure</CharacterString>
+                    </Name>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:CartesianPoint" uid="_b5f0105c-6906-4083-8981-b5c42ef56cf3">
+                    <Name>
+                        <CharacterString>centre point</CharacterString>
+                    </Name>
+                    <Coordinates>90.000022363584 75.00001863632 9.999995030315</Coordinates>
+                </RepresentationItem>
+            </Items>
+            <DimensionCount>3</DimensionCount>
+        </RepresentationContext>
+        <RepresentationContext xsi:type="n0:GeometricCoordinateSpace" uid="_532d2394-6b07-4e42-aec3-4d602772d064">
+            <Id id="Context #1"></Id>
+            <Representations>
+                <Representation xsi:type="n0:Representation" uid="_2caf32a6-1f29-47e9-ac45-a40d68769856">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_7d3cd290-89df-4e5e-8785-860c66bd8693"></RepresentationItem>
+                    </Items>
+                </Representation>
+                <Representation xsi:type="n0:Representation" uid="_3cfae54e-9632-435e-b251-c298e71899fb">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_944a2e7b-394b-4843-b3b0-7507ce94aaa8"></RepresentationItem>
+                    </Items>
+                </Representation>
+                <Representation xsi:type="n0:Representation" uid="_3e537194-4d76-4319-b7d4-1364e33ae693">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_1a51364d-4bc8-4010-8c35-871c46b46880"></RepresentationItem>
+                    </Items>
+                </Representation>
+                <Representation xsi:type="n0:ComposedGeometricModel" uid="_4f4b5635-3381-4bb4-9a56-75a963aada22">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_5b8853e6-e0d1-426f-86dd-ebd1c114ba45"></RepresentationItem>
+                        <RepresentationItem uidRef="_7f94d55f-9654-4dd1-9120-f6033dc94f54"></RepresentationItem>
+                        <RepresentationItem uidRef="_a8539cd6-faed-4ff4-a8e0-269490afc53d"></RepresentationItem>
+                        <RepresentationItem uidRef="_a4be676f-7770-4d17-86f9-839d20297ad1"></RepresentationItem>
+                        <RepresentationItem uidRef="_cc7da414-b228-458d-8c08-0e4a33e44f8b"></RepresentationItem>
+                    </Items>
+                    <RepresentationRelationship xsi:type="n0:GeometricRepresentationRelationshipWithPlacementTransformation" uid="_6d8150eb-c9f6-467c-86c5-45b9621e0f0f">
+                        <Definitional>false</Definitional>
+                        <Related uidRef="_0946da96-74fb-4171-a60e-32924f9880ad"></Related>
+                        <Origin uidRef="_7f94d55f-9654-4dd1-9120-f6033dc94f54"></Origin>
+                        <Target uidRef="_5b8853e6-e0d1-426f-86dd-ebd1c114ba45"></Target>
+                    </RepresentationRelationship>
+                    <RepresentationRelationship xsi:type="n0:GeometricRepresentationRelationshipWithPlacementTransformation" uid="_a44c31b6-9ea3-46c1-84eb-7296d1b76a14">
+                        <Definitional>false</Definitional>
+                        <Related uidRef="_2c9c06c0-8c68-4545-8658-5c0461e84cb0"></Related>
+                        <Origin uidRef="_cc7da414-b228-458d-8c08-0e4a33e44f8b"></Origin>
+                        <Target uidRef="_5b8853e6-e0d1-426f-86dd-ebd1c114ba45"></Target>
+                    </RepresentationRelationship>
+                    <RepresentationRelationship xsi:type="n0:GeometricRepresentationRelationshipWithPlacementTransformation" uid="_b9a41907-694c-4958-ba4a-62dee2d4d557">
+                        <Definitional>false</Definitional>
+                        <Related uidRef="_2c9c06c0-8c68-4545-8658-5c0461e84cb0"></Related>
+                        <Origin uidRef="_a8539cd6-faed-4ff4-a8e0-269490afc53d"></Origin>
+                        <Target uidRef="_5b8853e6-e0d1-426f-86dd-ebd1c114ba45"></Target>
+                    </RepresentationRelationship>
+                    <RepresentationRelationship xsi:type="n0:GeometricRepresentationRelationshipWithPlacementTransformation" uid="_f9fd7fc2-674a-4997-a7c0-6a93c76f8337">
+                        <Definitional>false</Definitional>
+                        <Related uidRef="_2c9c06c0-8c68-4545-8658-5c0461e84cb0"></Related>
+                        <Origin uidRef="_a4be676f-7770-4d17-86f9-839d20297ad1"></Origin>
+                        <Target uidRef="_5b8853e6-e0d1-426f-86dd-ebd1c114ba45"></Target>
+                    </RepresentationRelationship>
+                </Representation>
+                <Representation xsi:type="n0:Representation" uid="_7586138f-1289-4f3c-ae44-4e38f7e3aa9b">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_fa3f1bd2-4f5c-4492-9ac8-a50356343030"></RepresentationItem>
+                    </Items>
+                </Representation>
+                <Representation xsi:type="n0:Representation" uid="_8df0126d-8364-4efa-8635-7dfddc131c4d">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_4e02f060-1270-4a8f-8624-c1d40ceb50e1"></RepresentationItem>
+                    </Items>
+                </Representation>
+                <Representation xsi:type="n0:Representation" uid="_9d90a80a-68e0-4bf0-9f17-2d113d6ffa0b">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_5953fcef-f03f-42c0-8b75-6812c5d26283"></RepresentationItem>
+                    </Items>
+                </Representation>
+                <Representation xsi:type="n0:Representation" uid="_cc82c044-1705-4f3a-9145-72334115736c">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_19f881d5-87ab-4ffd-b256-ec9482843cda"></RepresentationItem>
+                    </Items>
+                </Representation>
+            </Representations>
+            <Items>
+                <RepresentationItem xsi:type="n0:MeasureRepresentationItem" uid="_7d3cd290-89df-4e5e-8785-860c66bd8693">
+                    <Name>
+                        <CharacterString>surface area measure</CharacterString>
+                    </Name>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:CartesianPoint" uid="_944a2e7b-394b-4843-b3b0-7507ce94aaa8">
+                    <Name>
+                        <CharacterString>centre point</CharacterString>
+                    </Name>
+                    <Coordinates>42.500080480004 -62.99027375333 -6.954807536908</Coordinates>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:MeasureRepresentationItem" uid="_1a51364d-4bc8-4010-8c35-871c46b46880">
+                    <Name>
+                        <CharacterString>volume measure</CharacterString>
+                    </Name>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:AxisPlacement" uid="_5b8853e6-e0d1-426f-86dd-ebd1c114ba45">
+                    <Axis>0 0 1</Axis>
+                    <Position>0 0 0</Position>
+                    <RefDirection>1 0 -0</RefDirection>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:AxisPlacement" uid="_7f94d55f-9654-4dd1-9120-f6033dc94f54">
+                    <Axis>0 -1 -1.035e-13</Axis>
+                    <Position>0 0 0</Position>
+                    <RefDirection>1 0 0</RefDirection>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:AxisPlacement" uid="_a8539cd6-faed-4ff4-a8e0-269490afc53d">
+                    <Axis>0 0 1</Axis>
+                    <Position>50 -27.00961894 0</Position>
+                    <RefDirection>1 0 0</RefDirection>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:AxisPlacement" uid="_a4be676f-7770-4d17-86f9-839d20297ad1">
+                    <Axis>0 0 1</Axis>
+                    <Position>50 -52.99038106 0</Position>
+                    <RefDirection>1 0 0</RefDirection>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:AxisPlacement" uid="_cc7da414-b228-458d-8c08-0e4a33e44f8b">
+                    <Axis>0 0 1</Axis>
+                    <Position>27.5 -40 0</Position>
+                    <RefDirection>1 0 0</RefDirection>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:CartesianPoint" uid="_fa3f1bd2-4f5c-4492-9ac8-a50356343030">
+                    <Name>
+                        <CharacterString>centre point</CharacterString>
+                    </Name>
+                    <Coordinates>16.776129528539 -49.99996289787 17.299222664596</Coordinates>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:CartesianPoint" uid="_4e02f060-1270-4a8f-8624-c1d40ceb50e1">
+                    <Name>
+                        <CharacterString>centre point</CharacterString>
+                    </Name>
+                    <Coordinates>42.500080480004 -37.00951163333 -6.954807536908</Coordinates>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:CartesianPoint" uid="_5953fcef-f03f-42c0-8b75-6812c5d26283">
+                    <Name>
+                        <CharacterString>centre point</CharacterString>
+                    </Name>
+                    <Coordinates>14.594551117313 -50.00002268598 20.202730963559</Coordinates>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:CartesianPoint" uid="_19f881d5-87ab-4ffd-b256-ec9482843cda">
+                    <Name>
+                        <CharacterString>centre point</CharacterString>
+                    </Name>
+                    <Coordinates>20.000080480004 -49.99989269333 -6.954807536908</Coordinates>
+                </RepresentationItem>
+            </Items>
+            <DimensionCount>3</DimensionCount>
+        </RepresentationContext>
+        <RepresentationContext xsi:type="n0:GeometricCoordinateSpace" uid="_4d49d592-d63f-4802-bf03-5366f88182d9">
+            <Id id="Context #1"></Id>
+            <Representations>
+                <Representation xsi:type="n0:Representation" uid="_1b564136-f77a-45e1-bf0e-0389a6dfb0d0">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_3f8d39cd-560e-415c-85c5-ad3bc1d81bef"></RepresentationItem>
+                    </Items>
+                </Representation>
+                <Representation xsi:type="n0:ComposedGeometricModel" uid="_356683eb-a13a-41c5-bf4c-81db0676fab5">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_d882d575-208d-4f9f-a59d-2be89f0f5021"></RepresentationItem>
+                    </Items>
+                </Representation>
+                <Representation xsi:type="n0:ExternalAdvancedBrepShapeRepresentation" uid="_882c2a54-9248-422e-bed2-2f41bc4ae6af">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_5b8853e6-e0d1-426f-86dd-ebd1c114ba45"></RepresentationItem>
+                        <RepresentationItem uidRef="_d882d575-208d-4f9f-a59d-2be89f0f5021"></RepresentationItem>
+                    </Items>
+                    <ExternalFile uidRef="_ceb7e928-d351-4e88-bc70-18d3bb4bde43"></ExternalFile>
+                </Representation>
+                <Representation xsi:type="n0:Representation" uid="_95622e41-7070-4d05-ae09-f9b4678a6bc8">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_b6c7225a-f948-44ae-95c3-f94a0f6b075d"></RepresentationItem>
+                    </Items>
+                </Representation>
+                <Representation xsi:type="n0:Representation" uid="_bf87f413-e9df-456c-abbb-aa5db8027f65">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_ca62530d-b946-4a7e-a79e-9a2e85f22218"></RepresentationItem>
+                    </Items>
+                </Representation>
+            </Representations>
+            <Items>
+                <RepresentationItem xsi:type="n0:CartesianPoint" uid="_3f8d39cd-560e-415c-85c5-ad3bc1d81bef">
+                    <Name>
+                        <CharacterString>centre point</CharacterString>
+                    </Name>
+                    <Coordinates>8.81407047622e-19 -4.631759312751e-16 100.00279756382</Coordinates>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:ManifoldSolidBrep" uid="_d882d575-208d-4f9f-a59d-2be89f0f5021"></RepresentationItem>
+                <RepresentationItem xsi:type="n0:AxisPlacement" uid="_5b8853e6-e0d1-426f-86dd-ebd1c114ba45">
+                    <Axis>0 0 1</Axis>
+                    <Position>0 0 0</Position>
+                    <RefDirection>1 0 -0</RefDirection>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:MeasureRepresentationItem" uid="_b6c7225a-f948-44ae-95c3-f94a0f6b075d">
+                    <Name>
+                        <CharacterString>volume measure</CharacterString>
+                    </Name>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:MeasureRepresentationItem" uid="_ca62530d-b946-4a7e-a79e-9a2e85f22218">
+                    <Name>
+                        <CharacterString>surface area measure</CharacterString>
+                    </Name>
+                </RepresentationItem>
+            </Items>
+            <DimensionCount>3</DimensionCount>
+        </RepresentationContext>
+        <RepresentationContext xsi:type="n0:GeometricCoordinateSpace" uid="_32a6d0c3-ef9b-4111-bb33-8f039649042d">
+            <Id id="Context #1"></Id>
+            <Representations>
+                <Representation xsi:type="n0:Representation" uid="_2a2db012-c627-47d6-93f7-ed373079b5e0">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_99bd1710-0d15-4ec4-9604-078642374d86"></RepresentationItem>
+                    </Items>
+                </Representation>
+                <Representation xsi:type="n0:ExternalAdvancedBrepShapeRepresentation" uid="_64b20f68-d08c-4c29-8a9c-750eae9e5c37">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_5b8853e6-e0d1-426f-86dd-ebd1c114ba45"></RepresentationItem>
+                        <RepresentationItem uidRef="_81901182-d6de-493d-b727-664a599cd2f6"></RepresentationItem>
+                    </Items>
+                    <ExternalFile uidRef="_3efb0ca3-aa8f-48f5-954a-2984016e00f6"></ExternalFile>
+                </Representation>
+                <Representation xsi:type="n0:Representation" uid="_a40c1e34-2b24-46f4-8bd4-677aed3ad835">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_5c98a9a9-f5f3-4c5c-9729-f4fbaf75e06a"></RepresentationItem>
+                    </Items>
+                </Representation>
+                <Representation xsi:type="n0:ComposedGeometricModel" uid="_d5772215-3775-4c75-a6e9-062a732a4b53">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_81901182-d6de-493d-b727-664a599cd2f6"></RepresentationItem>
+                    </Items>
+                </Representation>
+                <Representation xsi:type="n0:Representation" uid="_f5ce15ef-5808-4643-92db-7a98d5a68460">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_9e7e3363-9352-48c3-9a68-ac6c0fbdc83d"></RepresentationItem>
+                    </Items>
+                </Representation>
+            </Representations>
+            <Items>
+                <RepresentationItem xsi:type="n0:MeasureRepresentationItem" uid="_99bd1710-0d15-4ec4-9604-078642374d86">
+                    <Name>
+                        <CharacterString>surface area measure</CharacterString>
+                    </Name>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:AxisPlacement" uid="_5b8853e6-e0d1-426f-86dd-ebd1c114ba45">
+                    <Axis>0 0 1</Axis>
+                    <Position>0 0 0</Position>
+                    <RefDirection>1 0 -0</RefDirection>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:ManifoldSolidBrep" uid="_81901182-d6de-493d-b727-664a599cd2f6"></RepresentationItem>
+                <RepresentationItem xsi:type="n0:CartesianPoint" uid="_5c98a9a9-f5f3-4c5c-9729-f4fbaf75e06a">
+                    <Name>
+                        <CharacterString>centre point</CharacterString>
+                    </Name>
+                    <Coordinates>10.000049610905 7.500037208179 1.499985116728</Coordinates>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:MeasureRepresentationItem" uid="_9e7e3363-9352-48c3-9a68-ac6c0fbdc83d">
+                    <Name>
+                        <CharacterString>volume measure</CharacterString>
+                    </Name>
+                </RepresentationItem>
+            </Items>
+            <DimensionCount>3</DimensionCount>
+        </RepresentationContext>
+        <RepresentationContext xsi:type="n0:GeometricCoordinateSpace" uid="_ff5019e2-fec4-4d45-af41-4a2469ab7637">
+            <Id id="Context #1"></Id>
+            <Representations>
+                <Representation xsi:type="n0:Representation" uid="_04e1ffaf-7a58-458e-8e12-bab7943d6dca">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_cca3e8fa-6c29-4c2e-bd4e-b7bbd57f3e34"></RepresentationItem>
+                    </Items>
+                </Representation>
+                <Representation xsi:type="n0:Representation" uid="_1aaf6859-f1f2-49a5-8eb4-6adf5b1edbba">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_431e92e0-4828-45cb-a6d2-fb522c218d15"></RepresentationItem>
+                    </Items>
+                </Representation>
+                <Representation xsi:type="n0:Representation" uid="_1abc4cac-17d9-4a55-94c6-e6bed24b5603">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_adc881e1-4627-457f-94f1-72d45957a9a9"></RepresentationItem>
+                    </Items>
+                </Representation>
+                <Representation xsi:type="n0:Representation" uid="_36091dc7-1f7a-4429-b2c0-ada95e3d3514">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_c1f37bb1-f43f-433c-aace-7ae48233605b"></RepresentationItem>
+                    </Items>
+                </Representation>
+                <Representation xsi:type="n0:Representation" uid="_93887d6b-6967-4196-905e-ca87a2b90a6a">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_2881d2c9-a18d-4c13-ab23-6fbf9ff4bc5b"></RepresentationItem>
+                    </Items>
+                </Representation>
+                <Representation xsi:type="n0:ComposedGeometricModel" uid="_a1adf962-5969-4c9c-8dbc-1ee6de6f2e87">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_5b8853e6-e0d1-426f-86dd-ebd1c114ba45"></RepresentationItem>
+                        <RepresentationItem uidRef="_641f212f-55d2-49a7-86f3-52674121d9e7"></RepresentationItem>
+                        <RepresentationItem uidRef="_f01de56b-369a-421f-89af-c952d36fa110"></RepresentationItem>
+                        <RepresentationItem uidRef="_5d77e254-3536-499a-9ab9-6e66fa20dbbe"></RepresentationItem>
+                        <RepresentationItem uidRef="_48294a03-c17b-46be-bd9f-c5c740e83484"></RepresentationItem>
+                    </Items>
+                    <RepresentationRelationship xsi:type="n0:GeometricRepresentationRelationshipWithPlacementTransformation" uid="_40578dee-aeb0-4c9b-802a-af252aeab687">
+                        <Definitional>false</Definitional>
+                        <Related uidRef="_70104160-3f42-4712-8ac2-1b83441bb815"></Related>
+                        <Origin uidRef="_f01de56b-369a-421f-89af-c952d36fa110"></Origin>
+                        <Target uidRef="_5b8853e6-e0d1-426f-86dd-ebd1c114ba45"></Target>
+                    </RepresentationRelationship>
+                    <RepresentationRelationship xsi:type="n0:GeometricRepresentationRelationshipWithPlacementTransformation" uid="_42693edb-2542-4141-a54d-74d20e1714ac">
+                        <Definitional>false</Definitional>
+                        <Related uidRef="_4f4b5635-3381-4bb4-9a56-75a963aada22"></Related>
+                        <Origin uidRef="_5d77e254-3536-499a-9ab9-6e66fa20dbbe"></Origin>
+                        <Target uidRef="_5b8853e6-e0d1-426f-86dd-ebd1c114ba45"></Target>
+                    </RepresentationRelationship>
+                    <RepresentationRelationship xsi:type="n0:GeometricRepresentationRelationshipWithPlacementTransformation" uid="_5c2f1a85-eaf1-4b41-84df-4dcac754a014">
+                        <Definitional>false</Definitional>
+                        <Related uidRef="_4f4b5635-3381-4bb4-9a56-75a963aada22"></Related>
+                        <Origin uidRef="_641f212f-55d2-49a7-86f3-52674121d9e7"></Origin>
+                        <Target uidRef="_5b8853e6-e0d1-426f-86dd-ebd1c114ba45"></Target>
+                    </RepresentationRelationship>
+                    <RepresentationRelationship xsi:type="n0:GeometricRepresentationRelationshipWithPlacementTransformation" uid="_e2d41b94-aeac-49df-88ec-2790a2d092ce">
+                        <Definitional>false</Definitional>
+                        <Related uidRef="_bdd930d7-a968-461f-b137-f123b6a44ee1"></Related>
+                        <Origin uidRef="_48294a03-c17b-46be-bd9f-c5c740e83484"></Origin>
+                        <Target uidRef="_5b8853e6-e0d1-426f-86dd-ebd1c114ba45"></Target>
+                    </RepresentationRelationship>
+                </Representation>
+                <Representation xsi:type="n0:Representation" uid="_d6ec69de-498d-4457-8d0d-a3cc7a136925">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_7c5d0161-af22-45e8-8726-a0ad4e97445f"></RepresentationItem>
+                    </Items>
+                </Representation>
+                <Representation xsi:type="n0:Representation" uid="_f243f426-c769-4ab7-97c3-5f960e274556">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_f097b369-afa9-4071-b3e5-7bc6d1b4d2f8"></RepresentationItem>
+                    </Items>
+                </Representation>
+            </Representations>
+            <Items>
+                <RepresentationItem xsi:type="n0:CartesianPoint" uid="_cca3e8fa-6c29-4c2e-bd4e-b7bbd57f3e34">
+                    <Name>
+                        <CharacterString>centre point</CharacterString>
+                    </Name>
+                    <Coordinates>90.000022363584 75.00001863632 9.999995030315</Coordinates>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:MeasureRepresentationItem" uid="_431e92e0-4828-45cb-a6d2-fb522c218d15">
+                    <Name>
+                        <CharacterString>surface area measure</CharacterString>
+                    </Name>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:CartesianPoint" uid="_adc881e1-4627-457f-94f1-72d45957a9a9">
+                    <Name>
+                        <CharacterString>centre point</CharacterString>
+                    </Name>
+                    <Coordinates>90.002502004487 75 59.99999999999</Coordinates>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:MeasureRepresentationItem" uid="_c1f37bb1-f43f-433c-aace-7ae48233605b">
+                    <Name>
+                        <CharacterString>volume measure</CharacterString>
+                    </Name>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:CartesianPoint" uid="_2881d2c9-a18d-4c13-ab23-6fbf9ff4bc5b">
+                    <Name>
+                        <CharacterString>centre point</CharacterString>
+                    </Name>
+                    <Coordinates>158.22387047145 74.999962897872 37.299222664596</Coordinates>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:AxisPlacement" uid="_5b8853e6-e0d1-426f-86dd-ebd1c114ba45">
+                    <Axis>0 0 1</Axis>
+                    <Position>0 0 0</Position>
+                    <RefDirection>1 0 -0</RefDirection>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:AxisPlacement" uid="_641f212f-55d2-49a7-86f3-52674121d9e7">
+                    <Axis>0 0 1</Axis>
+                    <Position>175 25 20</Position>
+                    <RefDirection>-1 -2.069e-13 0</RefDirection>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:AxisPlacement" uid="_f01de56b-369a-421f-89af-c952d36fa110">
+                    <Axis>0 0 1</Axis>
+                    <Position>0 0 0</Position>
+                    <RefDirection>1 0 0</RefDirection>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:AxisPlacement" uid="_5d77e254-3536-499a-9ab9-6e66fa20dbbe">
+                    <Axis>0 0 1</Axis>
+                    <Position>5 125 20</Position>
+                    <RefDirection>1 0 0</RefDirection>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:AxisPlacement" uid="_48294a03-c17b-46be-bd9f-c5c740e83484">
+                    <Axis>1 0 -1.035e-13</Axis>
+                    <Position>-10 75 60</Position>
+                    <RefDirection>-1.035e-13 0 -1</RefDirection>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:CartesianPoint" uid="_7c5d0161-af22-45e8-8726-a0ad4e97445f">
+                    <Name>
+                        <CharacterString>centre point</CharacterString>
+                    </Name>
+                    <Coordinates>21.776129528539 75.000037102124 37.299222664596</Coordinates>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:CartesianPoint" uid="_f097b369-afa9-4071-b3e5-7bc6d1b4d2f8">
+                    <Name>
+                        <CharacterString>centre point</CharacterString>
+                    </Name>
+                    <Coordinates>90.000038994712 74.999976234565 18.859500190803</Coordinates>
+                </RepresentationItem>
+            </Items>
+            <DimensionCount>3</DimensionCount>
+        </RepresentationContext>
+        <RepresentationContext xsi:type="n0:GeometricCoordinateSpace" uid="_e021044e-fbe2-48ee-bee5-23de98e44c2b">
+            <Id id="Context #1"></Id>
+            <Representations>
+                <Representation xsi:type="n0:Representation" uid="_0c5e3892-00f8-4338-97f4-b2eb5cc46cd1">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_0e0d98a5-fd3e-4a4b-b9c7-2b1b04fb8ee0"></RepresentationItem>
+                    </Items>
+                </Representation>
+                <Representation xsi:type="n0:ComposedGeometricModel" uid="_2c9c06c0-8c68-4545-8658-5c0461e84cb0">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_5b8853e6-e0d1-426f-86dd-ebd1c114ba45"></RepresentationItem>
+                        <RepresentationItem uidRef="_1f1eb765-47ed-48e4-812d-864ec8a54050"></RepresentationItem>
+                        <RepresentationItem uidRef="_39f53b63-f0c5-40ac-a326-367583515aae"></RepresentationItem>
+                    </Items>
+                    <RepresentationRelationship xsi:type="n0:GeometricRepresentationRelationshipWithPlacementTransformation" uid="_67fe9f14-1bfa-4457-80af-eb80b8b464e8">
+                        <Definitional>false</Definitional>
+                        <Related uidRef="_64b20f68-d08c-4c29-8a9c-750eae9e5c37"></Related>
+                        <Origin uidRef="_1f1eb765-47ed-48e4-812d-864ec8a54050"></Origin>
+                        <Target uidRef="_5b8853e6-e0d1-426f-86dd-ebd1c114ba45"></Target>
+                    </RepresentationRelationship>
+                    <RepresentationRelationship xsi:type="n0:GeometricRepresentationRelationshipWithPlacementTransformation" uid="_dccc1055-aafa-4d84-b1ac-1db3e99c6c81">
+                        <Definitional>false</Definitional>
+                        <Related uidRef="_ead5f0ef-9114-4c1f-b8ec-3339eadd7ac3"></Related>
+                        <Origin uidRef="_39f53b63-f0c5-40ac-a326-367583515aae"></Origin>
+                        <Target uidRef="_5b8853e6-e0d1-426f-86dd-ebd1c114ba45"></Target>
+                    </RepresentationRelationship>
+                </Representation>
+                <Representation xsi:type="n0:Representation" uid="_59ebef43-2313-4f70-b039-c822e4b0b8b1">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_902d3339-3039-46bb-89db-a108d7fb4ddf"></RepresentationItem>
+                    </Items>
+                </Representation>
+                <Representation xsi:type="n0:Representation" uid="_8b74838b-c52e-49ab-9a89-c65deffa8138">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_09bd4a7d-b982-4d9b-9b21-9aa92aaa12e7"></RepresentationItem>
+                    </Items>
+                </Representation>
+                <Representation xsi:type="n0:Representation" uid="_dc40b4fa-16a3-4260-ae63-7454945c0b91">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_3ef51575-6c6c-4dd7-b15c-f01d75c983f3"></RepresentationItem>
+                    </Items>
+                </Representation>
+                <Representation xsi:type="n0:Representation" uid="_eb739966-d425-48a8-940a-ed94e644cf53">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_80bb3786-8480-4b99-be91-1c41b1ede3f9"></RepresentationItem>
+                    </Items>
+                </Representation>
+            </Representations>
+            <Items>
+                <RepresentationItem xsi:type="n0:CartesianPoint" uid="_0e0d98a5-fd3e-4a4b-b9c7-2b1b04fb8ee0">
+                    <Name>
+                        <CharacterString>centre point</CharacterString>
+                    </Name>
+                    <Coordinates>-7.500049610904 -9.999962791819 -21.49998511672</Coordinates>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:AxisPlacement" uid="_5b8853e6-e0d1-426f-86dd-ebd1c114ba45">
+                    <Axis>0 0 1</Axis>
+                    <Position>0 0 0</Position>
+                    <RefDirection>1 0 -0</RefDirection>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:AxisPlacement" uid="_1f1eb765-47ed-48e4-812d-864ec8a54050">
+                    <Axis>0 2.069e-13 -1</Axis>
+                    <Position>2.5 -17.5 -20</Position>
+                    <RefDirection>-1 2.069e-13 4.280761e-26</RefDirection>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:AxisPlacement" uid="_39f53b63-f0c5-40ac-a326-367583515aae">
+                    <Axis>2.069e-13 0 -1</Axis>
+                    <Position>-7.5 -10 13</Position>
+                    <RefDirection>-1.035e-13 -1 -2.141415e-26</RefDirection>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:MeasureRepresentationItem" uid="_902d3339-3039-46bb-89db-a108d7fb4ddf">
+                    <Name>
+                        <CharacterString>surface area measure</CharacterString>
+                    </Name>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:MeasureRepresentationItem" uid="_09bd4a7d-b982-4d9b-9b21-9aa92aaa12e7">
+                    <Name>
+                        <CharacterString>volume measure</CharacterString>
+                    </Name>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:CartesianPoint" uid="_3ef51575-6c6c-4dd7-b15c-f01d75c983f3">
+                    <Name>
+                        <CharacterString>centre point</CharacterString>
+                    </Name>
+                    <Coordinates>-7.499999999996 -10 -3.936056605824</Coordinates>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:CartesianPoint" uid="_80bb3786-8480-4b99-be91-1c41b1ede3f9">
+                    <Name>
+                        <CharacterString>centre point</CharacterString>
+                    </Name>
+                    <Coordinates>-7.499919519996 -9.999892693332 -6.954807536908</Coordinates>
+                </RepresentationItem>
+            </Items>
+            <DimensionCount>3</DimensionCount>
+        </RepresentationContext>
+        <RepresentationContext xsi:type="n0:GeometricCoordinateSpace" uid="_f169975a-683d-4933-9219-7e1690ea6cac">
+            <Id id="Context #1"></Id>
+            <Representations>
+                <Representation xsi:type="n0:ComposedGeometricModel" uid="_00d9315a-9b12-4f41-ae6c-877bbb9e2fd9">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_a7ad856b-7f99-4fb7-97ae-58975833243b"></RepresentationItem>
+                    </Items>
+                </Representation>
+                <Representation xsi:type="n0:Representation" uid="_247aa874-4d90-4ec2-884b-a380cc0c03fe">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_b329b3fb-1afe-489e-9a78-86fae88ed066"></RepresentationItem>
+                    </Items>
+                </Representation>
+                <Representation xsi:type="n0:Representation" uid="_a28db020-e4c6-446a-bf39-0aa520a327ef">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_aed3e2d0-fec0-4fbc-8b19-7ee40b93523e"></RepresentationItem>
+                    </Items>
+                </Representation>
+                <Representation xsi:type="n0:Representation" uid="_cb467cbe-38af-44ee-98fd-efec982e88f0">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_9a324af3-0170-45cb-93a3-4af92ce5660b"></RepresentationItem>
+                    </Items>
+                </Representation>
+                <Representation xsi:type="n0:ExternalAdvancedBrepShapeRepresentation" uid="_ead5f0ef-9114-4c1f-b8ec-3339eadd7ac3">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_5b8853e6-e0d1-426f-86dd-ebd1c114ba45"></RepresentationItem>
+                        <RepresentationItem uidRef="_a7ad856b-7f99-4fb7-97ae-58975833243b"></RepresentationItem>
+                    </Items>
+                    <ExternalFile uidRef="_e0828564-e11d-47c9-a44b-411c05dc1d4d"></ExternalFile>
+                </Representation>
+            </Representations>
+            <Items>
+                <RepresentationItem xsi:type="n0:ManifoldSolidBrep" uid="_a7ad856b-7f99-4fb7-97ae-58975833243b"></RepresentationItem>
+                <RepresentationItem xsi:type="n0:MeasureRepresentationItem" uid="_b329b3fb-1afe-489e-9a78-86fae88ed066">
+                    <Name>
+                        <CharacterString>volume measure</CharacterString>
+                    </Name>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:MeasureRepresentationItem" uid="_aed3e2d0-fec0-4fbc-8b19-7ee40b93523e">
+                    <Name>
+                        <CharacterString>surface area measure</CharacterString>
+                    </Name>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:CartesianPoint" uid="_9a324af3-0170-45cb-93a3-4af92ce5660b">
+                    <Name>
+                        <CharacterString>centre point</CharacterString>
+                    </Name>
+                    <Coordinates>1.61434002474e-17 0 16.936056605824</Coordinates>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:AxisPlacement" uid="_5b8853e6-e0d1-426f-86dd-ebd1c114ba45">
+                    <Axis>0 0 1</Axis>
+                    <Position>0 0 0</Position>
+                    <RefDirection>1 0 -0</RefDirection>
+                </RepresentationItem>
+            </Items>
+            <DimensionCount>3</DimensionCount>
+        </RepresentationContext>
+        <RepresentationContext xsi:type="n0:GeometricCoordinateSpace" uid="_edf46972-a2cb-4312-a53f-5779483ff76e">
+            <Id id="Context #1"></Id>
+            <Representations>
+                <Representation xsi:type="n0:Representation" uid="_038c7679-6b55-4d8c-8977-580fec49c14f">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_520862fa-791c-4c23-ae5c-ef339952c23b"></RepresentationItem>
+                    </Items>
+                </Representation>
+                <Representation xsi:type="n0:ExternalAdvancedBrepShapeRepresentation" uid="_0946da96-74fb-4171-a60e-32924f9880ad">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_5b8853e6-e0d1-426f-86dd-ebd1c114ba45"></RepresentationItem>
+                        <RepresentationItem uidRef="_aca64252-cf4d-4e0e-8e53-0d432b5b56ae"></RepresentationItem>
+                    </Items>
+                    <ExternalFile uidRef="_b4dbd3f3-df89-4e2e-bb0b-f9dac8b14559"></ExternalFile>
+                </Representation>
+                <Representation xsi:type="n0:Representation" uid="_289f6e93-bc17-4abd-b806-03974dd6eaa6">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_362de293-00ef-4734-b403-3df7b6845156"></RepresentationItem>
+                    </Items>
+                </Representation>
+                <Representation xsi:type="n0:Representation" uid="_b10fa122-95a3-4f30-be90-474142bfcd06">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_b7d04a48-1560-4763-8dcc-3f4c2c76e640"></RepresentationItem>
+                    </Items>
+                </Representation>
+                <Representation xsi:type="n0:ComposedGeometricModel" uid="_d8794ccc-475c-4eec-9534-4deb53e29bf9">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_aca64252-cf4d-4e0e-8e53-0d432b5b56ae"></RepresentationItem>
+                    </Items>
+                </Representation>
+            </Representations>
+            <Items>
+                <RepresentationItem xsi:type="n0:MeasureRepresentationItem" uid="_520862fa-791c-4c23-ae5c-ef339952c23b">
+                    <Name>
+                        <CharacterString>volume measure</CharacterString>
+                    </Name>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:AxisPlacement" uid="_5b8853e6-e0d1-426f-86dd-ebd1c114ba45">
+                    <Axis>0 0 1</Axis>
+                    <Position>0 0 0</Position>
+                    <RefDirection>1 0 -0</RefDirection>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:ManifoldSolidBrep" uid="_aca64252-cf4d-4e0e-8e53-0d432b5b56ae"></RepresentationItem>
+                <RepresentationItem xsi:type="n0:MeasureRepresentationItem" uid="_362de293-00ef-4734-b403-3df7b6845156">
+                    <Name>
+                        <CharacterString>surface area measure</CharacterString>
+                    </Name>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:CartesianPoint" uid="_b7d04a48-1560-4763-8dcc-3f4c2c76e640">
+                    <Name>
+                        <CharacterString>centre point</CharacterString>
+                    </Name>
+                    <Coordinates>14.594551117313 20.202730963564 50.000022685985</Coordinates>
+                </RepresentationItem>
+            </Items>
+            <DimensionCount>3</DimensionCount>
+        </RepresentationContext>
+        <RepresentationContext xsi:type="n0:GeometricCoordinateSpace" uid="_3434e37d-2299-4d02-8536-093a0fe4b1b4">
+            <Id id="Context #1"></Id>
+            <Representations>
+                <Representation xsi:type="n0:Representation" uid="_1400e876-9878-437a-a553-55ed26d6ee0a">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_b4bf2ad7-25c7-4fb0-9df0-a718abb6997c"></RepresentationItem>
+                    </Items>
+                </Representation>
+                <Representation xsi:type="n0:Representation" uid="_1d40fc26-58b2-44d2-900e-4edf99d76828">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_b9bcecdd-2b12-4c9b-bf86-f7ae2479b416"></RepresentationItem>
+                    </Items>
+                </Representation>
+                <Representation xsi:type="n0:Representation" uid="_4406d99b-5997-4009-a10f-0ce05806451d">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_2ed82c83-62bf-4f00-a09b-a227dc0a88fd"></RepresentationItem>
+                    </Items>
+                </Representation>
+                <Representation xsi:type="n0:Representation" uid="_7e1ce9e2-4dfc-4b64-af33-4e33a17d96a2">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_36d857ed-3979-4dc5-96c6-a8afa164d24e"></RepresentationItem>
+                    </Items>
+                </Representation>
+                <Representation xsi:type="n0:Representation" uid="_ba01a069-119c-4f86-9165-82885ba7a623">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_38ca24c7-4495-4ef9-a49f-bdedb24ee49b"></RepresentationItem>
+                    </Items>
+                </Representation>
+                <Representation xsi:type="n0:ComposedGeometricModel" uid="_bdd930d7-a968-461f-b137-f123b6a44ee1">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_5b8853e6-e0d1-426f-86dd-ebd1c114ba45"></RepresentationItem>
+                        <RepresentationItem uidRef="_911611bc-a449-4dd4-8ebc-17492eabbb60"></RepresentationItem>
+                        <RepresentationItem uidRef="_74c22568-5ede-478f-b8a7-476110333e31"></RepresentationItem>
+                        <RepresentationItem uidRef="_495e55ba-b3e7-41c0-840b-be5ae7acd13e"></RepresentationItem>
+                    </Items>
+                    <RepresentationRelationship xsi:type="n0:GeometricRepresentationRelationshipWithPlacementTransformation" uid="_6d2be7fb-45f2-4b73-b076-dc6dd948ea5a">
+                        <Definitional>false</Definitional>
+                        <Related uidRef="_64b20f68-d08c-4c29-8a9c-750eae9e5c37"></Related>
+                        <Origin uidRef="_74c22568-5ede-478f-b8a7-476110333e31"></Origin>
+                        <Target uidRef="_5b8853e6-e0d1-426f-86dd-ebd1c114ba45"></Target>
+                    </RepresentationRelationship>
+                    <RepresentationRelationship xsi:type="n0:GeometricRepresentationRelationshipWithPlacementTransformation" uid="_8704de83-e0fa-45fc-9b28-eb02019c1641">
+                        <Definitional>false</Definitional>
+                        <Related uidRef="_882c2a54-9248-422e-bed2-2f41bc4ae6af"></Related>
+                        <Origin uidRef="_911611bc-a449-4dd4-8ebc-17492eabbb60"></Origin>
+                        <Target uidRef="_5b8853e6-e0d1-426f-86dd-ebd1c114ba45"></Target>
+                    </RepresentationRelationship>
+                    <RepresentationRelationship xsi:type="n0:GeometricRepresentationRelationshipWithPlacementTransformation" uid="_b7f63a44-f14d-4078-81ac-c7c8b663f083">
+                        <Definitional>false</Definitional>
+                        <Related uidRef="_64b20f68-d08c-4c29-8a9c-750eae9e5c37"></Related>
+                        <Origin uidRef="_495e55ba-b3e7-41c0-840b-be5ae7acd13e"></Origin>
+                        <Target uidRef="_5b8853e6-e0d1-426f-86dd-ebd1c114ba45"></Target>
+                    </RepresentationRelationship>
+                </Representation>
+                <Representation xsi:type="n0:Representation" uid="_be9a0714-ee16-48dc-bcad-b48c556a99b7">
+                    <Id></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_3e146f72-f745-4bc7-8ba8-8045dfb1935c"></RepresentationItem>
+                    </Items>
+                </Representation>
+            </Representations>
+            <Items>
+                <RepresentationItem xsi:type="n0:MeasureRepresentationItem" uid="_b4bf2ad7-25c7-4fb0-9df0-a718abb6997c">
+                    <Name>
+                        <CharacterString>surface area measure</CharacterString>
+                    </Name>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:CartesianPoint" uid="_b9bcecdd-2b12-4c9b-bf86-f7ae2479b416">
+                    <Name>
+                        <CharacterString>centre point</CharacterString>
+                    </Name>
+                    <Coordinates>8.81407047622e-19 -4.631759312751e-16 100.00279756382</Coordinates>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:CartesianPoint" uid="_2ed82c83-62bf-4f00-a09b-a227dc0a88fd">
+                    <Name>
+                        <CharacterString>centre point</CharacterString>
+                    </Name>
+                    <Coordinates>4.961090516176e-05 3.720817887842e-05 13.499985116728</Coordinates>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:CartesianPoint" uid="_36d857ed-3979-4dc5-96c6-a8afa164d24e">
+                    <Name>
+                        <CharacterString>centre point</CharacterString>
+                    </Name>
+                    <Coordinates>-8.127652436909e-17 -6.455848500994e-16 100.00250200448</Coordinates>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:MeasureRepresentationItem" uid="_38ca24c7-4495-4ef9-a49f-bdedb24ee49b">
+                    <Name>
+                        <CharacterString>volume measure</CharacterString>
+                    </Name>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:AxisPlacement" uid="_5b8853e6-e0d1-426f-86dd-ebd1c114ba45">
+                    <Axis>0 0 1</Axis>
+                    <Position>0 0 0</Position>
+                    <RefDirection>1 0 -0</RefDirection>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:AxisPlacement" uid="_911611bc-a449-4dd4-8ebc-17492eabbb60">
+                    <Axis>0 0 1</Axis>
+                    <Position>0 0 0</Position>
+                    <RefDirection>1 0 0</RefDirection>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:AxisPlacement" uid="_74c22568-5ede-478f-b8a7-476110333e31">
+                    <Axis>0 0 1</Axis>
+                    <Position>-10 -7.5 12</Position>
+                    <RefDirection>1 0 0</RefDirection>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:AxisPlacement" uid="_495e55ba-b3e7-41c0-840b-be5ae7acd13e">
+                    <Axis>0 0 1</Axis>
+                    <Position>-10 -7.5 185</Position>
+                    <RefDirection>1 0 0</RefDirection>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:CartesianPoint" uid="_3e146f72-f745-4bc7-8ba8-8045dfb1935c">
+                    <Name>
+                        <CharacterString>centre point</CharacterString>
+                    </Name>
+                    <Coordinates>4.961090516176e-05 3.720817887842e-05 186.49998511672</Coordinates>
+                </RepresentationItem>
+            </Items>
+            <DimensionCount>3</DimensionCount>
+        </RepresentationContext>
+        <File uid="_b4dbd3f3-df89-4e2e-bb0b-f9dac8b14559" xsi:type="n0:DigitalFile">
+            <FileFormat uidRef="_37641ab5-3acd-4d11-8729-537908fa706e"></FileFormat>
+            <FileLocations>
+                <FileLocationIdentification uid="_4bde0494-f2a9-49ab-a706-0937c8b40a04">
+                    <SourceId>step-output.stp</SourceId>
+                    <SourceType>file</SourceType>
+                </FileLocationIdentification>
+            </FileLocations>
+        </File>
+    </DataContainer>
+</n0:Uos>

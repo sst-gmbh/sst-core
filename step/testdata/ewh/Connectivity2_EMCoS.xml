@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ // Copyright Semantic STEP Technology GmbH, Germany & DCT Co., Ltd. Tianjin, China
+-->
+
+<n0:Uos xmlns:n0="http://standards.iso.org/iso/ts/10303/-4442/-ed-1/tech/xml-schema/domain_model" xmlns:cmn="http://standards.iso.org/iso/ts/10303/-3000/-ed-1/tech/xml-schema/common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://standards.iso.org/iso/ts/10303/-4442/-ed-1/tech/xml-schema/domain_model DomainModel.xsd">
+   <Header>
+      <Name>STEP AP242 WH generator</Name>
+      <TimeStamp>2021-03-15T00:00:00</TimeStamp>
+      <Organization>
+         <Name>EMCoS LLC.</Name>
+      </Organization>
+      <PreprocessorVersion>2.0</PreprocessorVersion>
+   </Header>
+   <DataContainer xsi:type="n0:AP242DataContainer">
+      <ViewContext uid="vc_1">
+         <ApplicationDomain>
+            <PredefinedApplicationDomainEnum>electrical</PredefinedApplicationDomainEnum>
+         </ApplicationDomain>
+         <LifeCycleStage>
+            <ProxyString>design</ProxyString>
+         </LifeCycleStage>
+      </ViewContext>
+      <Unit uid="u_1">
+         <Name>
+            <ClassString>metre</ClassString>
+         </Name>
+         <Quantity>
+            <ClassString>length</ClassString>
+         </Quantity>
+      </Unit>
+      <Organization uid="org_3">
+         <Id id="Deutch Company Ltd"/>
+         <Name>
+            <CharacterString>Deutch Company Ltd</CharacterString>
+         </Name>
+         <OrganizationTypes>
+            <ClassString>company</ClassString>
+         </OrganizationTypes>
+      </Organization>
+      <Organization uid="org_2">
+         <Id id="MIL standard Receptacle(similar to Lug)"/>
+         <Name>
+            <CharacterString>MIL standard Receptacle(similar to Lug)</CharacterString>
+         </Name>
+         <OrganizationTypes>
+            <ClassString>company</ClassString>
+         </OrganizationTypes>
+      </Organization>
+      <Organization uid="org_1">
+         <Id id="BELDEN"/>
+         <Name>
+            <CharacterString>BELDEN</CharacterString>
+         </Name>
+         <OrganizationTypes>
+            <ClassString>company</ClassString>
+         </OrganizationTypes>
+      </Organization>
+      <PropertyDefinition uid="pr_def_2" xsi:type="n0:WireColourBasedIdentificationCode">
+         <Id id="white"/>
+         <PropertyType>
+            <ClassString>wire colour-based identification code</ClassString>
+         </PropertyType>
+      </PropertyDefinition>
+      <PropertyDefinition uid="pr_def_1" xsi:type="n0:WireColourBasedIdentificationCode">
+         <Id id="black"/>
+         <PropertyType>
+            <ClassString>wire colour-based identification code</ClassString>
+         </PropertyType>
+      </PropertyDefinition>
+      <Class uid="cl_2">
+         <Id/>
+         <Source>
+            <Identifier id="Standard RCA connector" idRoleRef="cl_1" uid="cl_2_i"/>
+         </Source>
+      </Class>
+      <Class uid="cl_1">
+         <Id id="identification information"/>
+      </Class>
+      <Part uid="prt_7">
+         <Id id="Part_H1"/>
+         <Name>
+            <CharacterString>EWH Test-Case Connectivity1</CharacterString>
+         </Name>
+         <PartTypes>
+            <PartCategoryEnum>wiring_harness</PartCategoryEnum>
+         </PartTypes>
+         <Versions>
+            <PartVersion uid="prt_7_prt_ver_1">
+               <Id id=""/>
+               <Views>
+                  <PartView uid="prt_7_prt_ver_1_prt_view_1" xsi:type="n0:WiringHarnessAssemblyDesign">
+                     <InitialContext uidRef="vc_1"/>
+                     <ShapeElement uid="jnt_7_sh_el_1" xsi:type="n0:AssemblyShapeJoint">
+                        <ShapeElementRelationship uid="jnt_7_2_sh_rel_1" xsi:type="n0:AssemblyShapeJointItemRelationship">
+                           <Related uidRef="cont_sh_el_2"/>
+                        </ShapeElementRelationship>
+                        <ShapeElementRelationship uid="jnt_7_1_sh_rel_1" xsi:type="n0:AssemblyShapeJointItemRelationship">
+                           <Related uidRef="cont_sh_el_4"/>
+                        </ShapeElementRelationship>
+                        <JointType>snap_connection</JointType>
+                     </ShapeElement>
+                     <ShapeElement uid="jnt_6_sh_el_1" xsi:type="n0:AssemblyShapeJoint">
+                        <ShapeElementRelationship uid="jnt_6_2_sh_rel_1" xsi:type="n0:AssemblyShapeJointItemRelationship">
+                           <Related uidRef="cont_sh_el_1"/>
+                        </ShapeElementRelationship>
+                        <ShapeElementRelationship uid="jnt_6_1_sh_rel_1" xsi:type="n0:AssemblyShapeJointItemRelationship">
+                           <Related uidRef="cont_sh_el_3"/>
+                        </ShapeElementRelationship>
+                        <JointType>snap_connection</JointType>
+                     </ShapeElement>
+                     <ShapeElement uid="jnt_5_sh_el_1" xsi:type="n0:AssemblyShapeJoint">
+                        <ShapeElementRelationship uid="jnt_5_2_sh_rel_1" xsi:type="n0:AssemblyShapeJointItemRelationship">
+                           <Related uidRef="sh_el_2"/>
+                        </ShapeElementRelationship>
+                        <ShapeElementRelationship uid="jnt_5_1_sh_rel_1" xsi:type="n0:AssemblyShapeJointItemRelationship">
+                           <Related uidRef="term_sh_el_9"/>
+                        </ShapeElementRelationship>
+                        <JointType>crimped_connection</JointType>
+                     </ShapeElement>
+                     <ShapeElement uid="jnt_4_sh_el_1" xsi:type="n0:AssemblyShapeJoint">
+                        <ShapeElementRelationship uid="jnt_4_2_sh_rel_1" xsi:type="n0:AssemblyShapeJointItemRelationship">
+                           <Related uidRef="sh_el_4"/>
+                        </ShapeElementRelationship>
+                        <ShapeElementRelationship uid="jnt_4_1_sh_rel_1" xsi:type="n0:AssemblyShapeJointItemRelationship">
+                           <Related uidRef="term_sh_el_11"/>
+                        </ShapeElementRelationship>
+                        <JointType>crimped_connection</JointType>
+                     </ShapeElement>
+                     <ShapeElement uid="jnt_3_sh_el_1" xsi:type="n0:AssemblyShapeJoint">
+                        <ShapeElementRelationship uid="jnt_3_2_sh_rel_1" xsi:type="n0:AssemblyShapeJointItemRelationship">
+                           <Related uidRef="sh_el_6"/>
+                        </ShapeElementRelationship>
+                        <ShapeElementRelationship uid="jnt_3_1_sh_rel_1" xsi:type="n0:AssemblyShapeJointItemRelationship">
+                           <Related uidRef="term_sh_el_10"/>
+                        </ShapeElementRelationship>
+                        <JointType>crimped_connection</JointType>
+                     </ShapeElement>
+                     <ShapeElement uid="jnt_2_sh_el_1" xsi:type="n0:AssemblyShapeJoint">
+                        <ShapeElementRelationship uid="jnt_2_3_sh_rel_1" xsi:type="n0:AssemblyShapeJointItemRelationship">
+                           <Related uidRef="sh_el_1"/>
+                        </ShapeElementRelationship>
+                        <ShapeElementRelationship uid="jnt_2_2_sh_rel_1" xsi:type="n0:AssemblyShapeJointItemRelationship">
+                           <Related uidRef="sh_el_3"/>
+                        </ShapeElementRelationship>
+                        <ShapeElementRelationship uid="jnt_2_1_sh_rel_1" xsi:type="n0:AssemblyShapeJointItemRelationship">
+                           <Related uidRef="term_sh_el_8"/>
+                        </ShapeElementRelationship>
+                        <JointType>crimped_connection</JointType>
+                     </ShapeElement>
+                     <ShapeElement uid="jnt_1_sh_el_1" xsi:type="n0:AssemblyShapeJoint">
+                        <ShapeElementRelationship uid="jnt_1_2_sh_rel_1" xsi:type="n0:AssemblyShapeJointItemRelationship">
+                           <Related uidRef="sh_el_5"/>
+                        </ShapeElementRelationship>
+                        <ShapeElementRelationship uid="jnt_1_1_sh_rel_1" xsi:type="n0:AssemblyShapeJointItemRelationship">
+                           <Related uidRef="term_sh_el_7"/>
+                        </ShapeElementRelationship>
+                        <JointType>crimped_connection</JointType>
+                     </ShapeElement>
+                     <ViewOccurrenceRelationship uid="or_7" xsi:type="n0:NextAssemblyOccurrenceUsage">
+                        <Related uidRef="occ_7"/>
+                        <RelationType>
+                           <ClassString>next assembly occurrence</ClassString>
+                        </RelationType>
+                     </ViewOccurrenceRelationship>
+                     <ViewOccurrenceRelationship uid="or_6" xsi:type="n0:NextAssemblyOccurrenceUsage">
+                        <Related uidRef="occ_6"/>
+                        <RelationType>
+                           <ClassString>next assembly occurrence</ClassString>
+                        </RelationType>
+                     </ViewOccurrenceRelationship>
+                     <ViewOccurrenceRelationship uid="or_5" xsi:type="n0:NextAssemblyOccurrenceUsage">
+                        <Related uidRef="occ_5"/>
+                        <RelationType>
+                           <ClassString>next assembly occurrence</ClassString>
+                        </RelationType>
+                     </ViewOccurrenceRelationship>
+                     <ViewOccurrenceRelationship uid="or_4" xsi:type="n0:NextAssemblyOccurrenceUsage">
+                        <Related uidRef="occ_4"/>
+                        <RelationType>
+                           <ClassString>next assembly occurrence</ClassString>
+                        </RelationType>
+                     </ViewOccurrenceRelationship>
+                     <ViewOccurrenceRelationship uid="or_3" xsi:type="n0:NextAssemblyOccurrenceUsage">
+                        <Related uidRef="occ_3"/>
+                        <RelationType>
+                           <ClassString>next assembly occurrence</ClassString>
+                        </RelationType>
+                     </ViewOccurrenceRelationship>
+                     <ViewOccurrenceRelationship uid="or_2" xsi:type="n0:NextAssemblyOccurrenceUsage">
+                        <Related uidRef="occ_2"/>
+                        <RelationType>
+                           <ClassString>next assembly occurrence</ClassString>
+                        </RelationType>
+                     </ViewOccurrenceRelationship>
+                     <ViewOccurrenceRelationship uid="or_1" xsi:type="n0:NextAssemblyOccurrenceUsage">
+                        <Related uidRef="occ_1"/>
+                        <RelationType>
+                           <ClassString>next assembly occurrence</ClassString>
+                        </RelationType>
+                     </ViewOccurrenceRelationship>
+                  </PartView>
+               </Views>
+            </PartVersion>
+         </Versions>
+      </Part>
+      <Part uid="prt_6">
+         <Id>
+            <Identifier id="6860-201-20278" idContextRef="org_3" idRoleRef="cl_1" uid="cmp_6860-201-20278"/>
+         </Id>
+         <Name>
+            <CharacterString>6860-201-20278</CharacterString>
+         </Name>
+         <PartTypes>
+            <PartCategoryEnum>connector_contact</PartCategoryEnum>
+            <PartCategoryEnum>discrete</PartCategoryEnum>
+         </PartTypes>
+         <Versions>
+            <PartVersion uid="prt_6_prt_ver_1">
+               <Id id="Version 1"/>
+               <Views>
+                  <PartView uid="prt_6_prt_ver_1_prt_view_1">
+                     <InitialContext uidRef="vc_1"/>
+                     <Occurrence uid="occ_7" xsi:type="n0:SingleOccurrence">
+                        <Id id="P-CONN01-02"/>
+                        <ShapeElement uid="cont_sh_el_4" xsi:type="n0:OccurrenceContactFeature">
+                           <Definition uidRef="prt_6_prt_ver_1_prt_view_1_c_sh_el_1"/>
+                        </ShapeElement>
+                        <ShapeElement uid="term_sh_el_11" xsi:type="n0:OccurrenceTerminal">
+                           <Definition uidRef="prt_6_prt_ver_1_prt_view_1_t_sh_el_1"/>
+                        </ShapeElement>
+                     </Occurrence>
+                     <Occurrence uid="occ_6" xsi:type="n0:SingleOccurrence">
+                        <Id id="P-CONN01-01"/>
+                        <ShapeElement uid="cont_sh_el_3" xsi:type="n0:OccurrenceContactFeature">
+                           <Definition uidRef="prt_6_prt_ver_1_prt_view_1_c_sh_el_1"/>
+                        </ShapeElement>
+                        <ShapeElement uid="term_sh_el_10" xsi:type="n0:OccurrenceTerminal">
+                           <Definition uidRef="prt_6_prt_ver_1_prt_view_1_t_sh_el_1"/>
+                        </ShapeElement>
+                     </Occurrence>
+                     <ShapeElement uid="prt_6_prt_ver_1_prt_view_1_c_sh_el_1" xsi:type="n0:PartContactFeature">
+                        <Id id="o"/>
+                        <PartDefinition uidRef="shfd_2"/>
+                     </ShapeElement>
+                     <ShapeElement uid="prt_6_prt_ver_1_prt_view_1_t_sh_el_1" xsi:type="n0:PartTerminal">
+                        <Id id="j"/>
+                        <DomainType>electrical</DomainType>
+                        <InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+                     </ShapeElement>
+                  </PartView>
+               </Views>
+            </PartVersion>
+         </Versions>
+      </Part>
+      <Part uid="prt_5">
+         <Id>
+            <Identifier id="IMC16-2002X" idContextRef="org_3" idRoleRef="cl_1" uid="cmp_IMC16-2002X"/>
+         </Id>
+         <Name>
+            <CharacterString>IMC16-2002X</CharacterString>
+         </Name>
+         <PartTypes>
+            <PartCategoryEnum>connector</PartCategoryEnum>
+            <PartCategoryEnum>discrete</PartCategoryEnum>
+         </PartTypes>
+         <Versions>
+            <PartVersion uid="prt_5_prt_ver_1">
+               <Id id="Version 1"/>
+               <Views>
+                  <PartView uid="prt_5_prt_ver_1_prt_view_1">
+                     <InitialContext uidRef="vc_1"/>
+                     <Occurrence uid="occ_5" xsi:type="n0:SingleOccurrence">
+                        <Id id="P-CONN01"/>
+                        <ShapeElement uid="cont_sh_el_2" xsi:type="n0:OccurrenceContactFeature">
+                           <Definition uidRef="prt_5_prt_ver_1_prt_view_1_c_sh_el_2"/>
+                        </ShapeElement>
+                        <ShapeElement uid="cont_sh_el_1" xsi:type="n0:OccurrenceContactFeature">
+                           <Definition uidRef="prt_5_prt_ver_1_prt_view_1_c_sh_el_1"/>
+                        </ShapeElement>
+                     </Occurrence>
+                     <ShapeElement uid="prt_5_prt_ver_1_prt_view_1_c_sh_el_2" xsi:type="n0:PartContactFeature">
+                        <Id id="2"/>
+                        <PartDefinition uidRef="shfd_1"/>
+                     </ShapeElement>
+                     <ShapeElement uid="prt_5_prt_ver_1_prt_view_1_c_sh_el_1" xsi:type="n0:PartContactFeature">
+                        <Id id="1"/>
+                        <PartDefinition uidRef="shfd_1"/>
+                     </ShapeElement>
+                  </PartView>
+               </Views>
+            </PartVersion>
+         </Versions>
+      </Part>
+      <Part uid="prt_4">
+         <Id>
+            <Identifier id="RCA123" idContextRef="cl_2_i" idRoleRef="cl_1" uid="cmp_RCA123"/>
+         </Id>
+         <Name>
+            <CharacterString>RCA123</CharacterString>
+         </Name>
+         <PartTypes>
+            <PartCategoryEnum>connector</PartCategoryEnum>
+            <PartCategoryEnum>discrete</PartCategoryEnum>
+         </PartTypes>
+         <Versions>
+            <PartVersion uid="prt_4_prt_ver_1">
+               <Id id="Version 1"/>
+               <Views>
+                  <PartView uid="prt_4_prt_ver_1_prt_view_1">
+                     <InitialContext uidRef="vc_1"/>
+                     <Occurrence uid="occ_3" xsi:type="n0:SingleOccurrence">
+                        <Id id="PLUG01"/>
+                        <ShapeElement uid="term_sh_el_8" xsi:type="n0:OccurrenceTerminal">
+                           <Definition uidRef="prt_4_prt_ver_1_prt_view_1_t_sh_el_2"/>
+                        </ShapeElement>
+                        <ShapeElement uid="term_sh_el_7" xsi:type="n0:OccurrenceTerminal">
+                           <Definition uidRef="prt_4_prt_ver_1_prt_view_1_t_sh_el_1"/>
+                        </ShapeElement>
+                     </Occurrence>
+                     <ShapeElement uid="prt_4_prt_ver_1_prt_view_1_t_sh_el_2" xsi:type="n0:PartTerminal">
+                        <Id id="1"/>
+                        <DomainType>electrical</DomainType>
+                        <InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+                     </ShapeElement>
+                     <ShapeElement uid="prt_4_prt_ver_1_prt_view_1_t_sh_el_1" xsi:type="n0:PartTerminal">
+                        <Id id="0"/>
+                        <DomainType>electrical</DomainType>
+                        <InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+                     </ShapeElement>
+                  </PartView>
+               </Views>
+            </PartVersion>
+         </Versions>
+      </Part>
+      <Part uid="prt_3">
+         <Id>
+            <Identifier id="640903-1" idContextRef="org_2" idRoleRef="cl_1" uid="cmp_640903-1"/>
+         </Id>
+         <Name>
+            <CharacterString>640903-1</CharacterString>
+         </Name>
+         <PartTypes>
+            <PartCategoryEnum>terminal_lug</PartCategoryEnum>
+            <PartCategoryEnum>discrete</PartCategoryEnum>
+         </PartTypes>
+         <Versions>
+            <PartVersion uid="prt_3_prt_ver_1">
+               <Id id="Version 1"/>
+               <Views>
+                  <PartView uid="prt_3_prt_ver_1_prt_view_1">
+                     <InitialContext uidRef="vc_1"/>
+                     <Occurrence uid="occ_4" xsi:type="n0:SingleOccurrence">
+                        <Id id="LUG01"/>
+                        <ShapeElement uid="term_sh_el_9" xsi:type="n0:OccurrenceTerminal">
+                           <Definition uidRef="prt_3_prt_ver_1_prt_view_1_t_sh_el_1"/>
+                        </ShapeElement>
+                     </Occurrence>
+                     <ShapeElement uid="prt_3_prt_ver_1_prt_view_1_t_sh_el_1" xsi:type="n0:PartTerminal">
+                        <Id id="1"/>
+                        <DomainType>electrical</DomainType>
+                        <InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+                     </ShapeElement>
+                  </PartView>
+               </Views>
+            </PartVersion>
+         </Versions>
+      </Part>
+      <Part uid="prt_2">
+         <Id>
+            <Identifier id="9962 009100" idContextRef="org_1" idRoleRef="cl_1" uid="cmp_9962_009100"/>
+         </Id>
+         <Name>
+            <CharacterString>9962 009100</CharacterString>
+         </Name>
+         <PartTypes>
+            <PartCategoryEnum>cable</PartCategoryEnum>
+            <PartCategoryEnum>raw_material_by_length</PartCategoryEnum>
+         </PartTypes>
+         <Versions>
+            <PartVersion uid="prt_2_prt_ver_1">
+               <Id id="Version 1"/>
+               <Views>
+                  <PartView uid="prt_2_prt_ver_1_prt_view_1">
+                     <InitialContext uidRef="vc_1"/>
+                     <Occurrence uid="occ_2" xsi:type="n0:CableOccurrence">
+                        <Id id="CABLE01"/>
+                        <ShapeElement uid="occ_2_End_sh_el_1" xsi:type="n0:CableOccurrenceTerminalLocationGroup">
+                           <Name>
+                              <CharacterString>end b</CharacterString>
+                           </Name>
+                           <ShapeElement uid="sh_el_6" xsi:type="n0:CableOccurrenceTerminal">
+                              <Definition uidRef="occ_2_clr_sh_el_2"/>
+                           </ShapeElement>
+                           <ShapeElement uid="sh_el_4" xsi:type="n0:CableOccurrenceTerminal">
+                              <Definition uidRef="occ_2_clr_sh_el_1"/>
+                           </ShapeElement>
+                        </ShapeElement>
+                        <ShapeElement uid="occ_2_Start_sh_el_1" xsi:type="n0:CableOccurrenceTerminalLocationGroup">
+                           <Name>
+                              <CharacterString>end a</CharacterString>
+                           </Name>
+                           <ShapeElement uid="sh_el_5" xsi:type="n0:CableOccurrenceTerminal">
+                              <Definition uidRef="occ_2_clr_sh_el_2"/>
+                           </ShapeElement>
+                           <ShapeElement uid="sh_el_3" xsi:type="n0:CableOccurrenceTerminal">
+                              <Definition uidRef="occ_2_clr_sh_el_1"/>
+                           </ShapeElement>
+                        </ShapeElement>
+                        <ShapeElement uid="occ_2_clr_sh_el_1" xsi:type="n0:WireOccurrenceIdentification">
+                           <Id id="CABLE01-BLK"/>
+                           <Code uidRef="pr_def_1"/>
+                        </ShapeElement>
+                        <ShapeElement uid="occ_2_clr_sh_el_2" xsi:type="n0:WireOccurrenceIdentification">
+                           <Id id="CABLE01-WHT"/>
+                           <Code uidRef="pr_def_2"/>
+                        </ShapeElement>
+                        <Quantity uid="occ_2_q" xsi:type="n0:NumericalValue">
+                           <Unit uidRef="u_1"/>
+                           <ValueComponent>1.8</ValueComponent>
+                        </Quantity>
+                     </Occurrence>
+                  </PartView>
+               </Views>
+            </PartVersion>
+         </Versions>
+      </Part>
+      <Part uid="prt_1">
+         <Id>
+            <Identifier id="83027 001100" idContextRef="org_1" idRoleRef="cl_1" uid="cmp_83027_001100"/>
+         </Id>
+         <Name>
+            <CharacterString>83027 001100</CharacterString>
+         </Name>
+         <PartTypes>
+            <PartCategoryEnum>wire</PartCategoryEnum>
+            <PartCategoryEnum>raw_material_by_length</PartCategoryEnum>
+         </PartTypes>
+         <Versions>
+            <PartVersion uid="prt_1_prt_ver_1">
+               <Id id="Version 1"/>
+               <Views>
+                  <PartView uid="prt_1_prt_ver_1_prt_view_1">
+                     <InitialContext uidRef="vc_1"/>
+                     <Occurrence uid="occ_1" xsi:type="n0:WireOccurrence">
+                        <Id id="WIRE01"/>
+                        <ShapeElement uid="sh_el_2" xsi:type="n0:WireOccurrenceTerminal">
+                           <Name>
+                              <CharacterString>end b</CharacterString>
+                           </Name>
+                           <Definition uidRef="occ_1_clr_sh_el_1"/>
+                        </ShapeElement>
+                        <ShapeElement uid="sh_el_1" xsi:type="n0:WireOccurrenceTerminal">
+                           <Name>
+                              <CharacterString>end a</CharacterString>
+                           </Name>
+                           <Definition uidRef="occ_1_clr_sh_el_1"/>
+                        </ShapeElement>
+                        <ShapeElement uid="occ_1_clr_sh_el_1" xsi:type="n0:WireOccurrenceIdentification">
+                           <Id id="WIRE01"/>
+                           <Code uidRef="pr_def_1"/>
+                        </ShapeElement>
+                        <Quantity uid="occ_1_q" xsi:type="n0:NumericalValue">
+                           <Unit uidRef="u_1"/>
+                           <ValueComponent>3.5</ValueComponent>
+                        </Quantity>
+                     </Occurrence>
+                  </PartView>
+               </Views>
+            </PartVersion>
+         </Versions>
+      </Part>
+      <ShapeFeatureDefinition uid="shfd_2" xsi:type="n0:ContactFeatureDefinition">
+         <Name>
+            <CharacterString>Deutsch IMC Series Size 20 pin</CharacterString>
+         </Name>
+         <ShapeFeatureType>contact_profile</ShapeFeatureType>
+      </ShapeFeatureDefinition>
+      <ShapeFeatureDefinition uid="shfd_1" xsi:type="n0:ContactFeatureDefinition">
+         <Name>
+            <CharacterString>Deutsch IMC Series Size 20 cavity</CharacterString>
+         </Name>
+         <ShapeFeatureType>cavity_profile</ShapeFeatureType>
+      </ShapeFeatureDefinition>
+   </DataContainer>
+</n0:Uos>

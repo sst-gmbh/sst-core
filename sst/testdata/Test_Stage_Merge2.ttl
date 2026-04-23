@@ -1,0 +1,18 @@
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:	<http://www.w3.org/2002/07/owl#> .
+@prefix lci:    <http://ontology.semanticstep.net/lci#> .
+@prefix exp:    <http:example.com#> .
+@prefix :	    <urn:uuid:c1efcf54-3e8e-4cc7-a7d1-82a9f613a362#> .
+
+<urn:uuid:c1efcf54-3e8e-4cc7-a7d1-82a9f613a362>	a	owl:Ontology .
+
+:John   a   lci:Person .
+
+:Linda  a   lci:Person .
+
+:Comp1  a  lci:Organization ;
+  exp:employees ( :John :Linda ) ;  # TermCollection
+  exp:strings ( "st1" "st2" ) ;         # LiteralCollection
+  lci:hasPart [     # Blank Node
+      a  lci:Organization ;
+      lci:integerAsLiteral 14 ]. 
