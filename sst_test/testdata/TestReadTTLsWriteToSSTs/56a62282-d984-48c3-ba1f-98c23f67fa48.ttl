@@ -1,0 +1,16 @@
+@prefix lci:	<http://ontology.semanticstep.net/lci#> .
+@prefix sso:	<http://ontology.semanticstep.net/sso#> .
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:	<http://www.w3.org/2002/07/owl#> .
+@prefix :	<urn:uuid:56a62282-d984-48c3-ba1f-98c23f67fa48#> .
+@prefix ns4:	<urn:uuid:4fb0f6a1-60d8-42e8-bb0f-224745621d98#> .
+
+<urn:uuid:56a62282-d984-48c3-ba1f-98c23f67fa48>	a	owl:Ontology .
+:aea9c9d1-5726-41e9-9761-d1ea4b410d61	a	lci:Organization ,
+			ns4:7f1d70b4-b228-4fbc-a0fd-08783c6dd016 ;
+	sso:id	"MIL-DSA-US" ;
+	rdfs:comment	"Combined US military organizations" .
+:f07d725b-6ac8-472e-87ac-bdf6fb3fe50a	a	owl:ObjectProperty ;
+	sso:idOwner	:aea9c9d1-5726-41e9-9761-d1ea4b410d61 ;
+	rdfs:subPropertyOf	sso:id .

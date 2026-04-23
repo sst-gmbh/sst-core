@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ // Copyright Semantic STEP Technology GmbH, Germany & DCT Co., Ltd. Tianjin, China
+-->
+
+<n0:Uos xmlns:n0="http://standards.iso.org/iso/ts/10303/-4442/-ed-1/tech/xml-schema/domain_model" xmlns:cmn="http://standards.iso.org/iso/ts/10303/-3000/-ed-1/tech/xml-schema/common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://standards.iso.org/iso/ts/10303/-4442/-ed-1/tech/xml-schema/domain_model DomainModel.xsd">
+   <Header>
+      <Name>STEP AP242 WH generator</Name>
+      <TimeStamp>2021-03-15T00:00:00</TimeStamp>
+      <Organization>
+         <Name>EMCoS LLC.</Name>
+      </Organization>
+      <PreprocessorVersion>2.0</PreprocessorVersion>
+   </Header>
+   <DataContainer xsi:type="n0:AP242DataContainer">
+      <ViewContext uid="vc_1">
+         <ApplicationDomain>
+            <PredefinedApplicationDomainEnum>electrical</PredefinedApplicationDomainEnum>
+         </ApplicationDomain>
+         <LifeCycleStage>
+            <ProxyString>design</ProxyString>
+         </LifeCycleStage>
+      </ViewContext>
+      <Unit uid="u_1">
+         <Name>
+            <ClassString>metre</ClassString>
+         </Name>
+         <Quantity>
+            <ClassString>length</ClassString>
+         </Quantity>
+      </Unit>
+      <Class uid="cl_1">
+         <Id id="identification information"/>
+      </Class>
+      <Part uid="prt_6">
+         <Id id="Part_H1"/>
+         <Name>
+            <CharacterString>EWH Test-Case Topology2</CharacterString>
+         </Name>
+         <PartTypes>
+            <PartCategoryEnum>wiring_harness</PartCategoryEnum>
+         </PartTypes>
+         <Versions>
+            <PartVersion uid="prt_6_prt_ver_1">
+               <Id id=""/>
+               <Views>
+                  <PartView uid="prt_6_prt_ver_1_prt_view_1" xsi:type="n0:WiringHarnessAssemblyDesign">
+                     <InitialContext uidRef="vc_1"/>
+                     <ViewOccurrenceRelationship uid="or_7" xsi:type="n0:NextAssemblyOccurrenceUsage">
+                        <Related uidRef="occ_7"/>
+                        <RelationType>
+                           <ClassString>next assembly occurrence</ClassString>
+                        </RelationType>
+                        <Placement>
+                           <GeometryToTopologyModelAssociation uidRef="rep_rel_7"/>
+                        </Placement>
+                     </ViewOccurrenceRelationship>
+                     <ViewOccurrenceRelationship uid="or_6" xsi:type="n0:NextAssemblyOccurrenceUsage">
+                        <Related uidRef="occ_6"/>
+                        <RelationType>
+                           <ClassString>next assembly occurrence</ClassString>
+                        </RelationType>
+                        <Placement>
+                           <GeometryToTopologyModelAssociation uidRef="rep_rel_6"/>
+                        </Placement>
+                     </ViewOccurrenceRelationship>
+                     <ViewOccurrenceRelationship uid="or_5" xsi:type="n0:NextAssemblyOccurrenceUsage">
+                        <Related uidRef="occ_5"/>
+                        <RelationType>
+                           <ClassString>next assembly occurrence</ClassString>
+                        </RelationType>
+                        <Placement>
+                           <GeometryToTopologyModelAssociation uidRef="rep_rel_5"/>
+                        </Placement>
+                     </ViewOccurrenceRelationship>
+                     <ViewOccurrenceRelationship uid="or_4" xsi:type="n0:NextAssemblyOccurrenceUsage">
+                        <Related uidRef="occ_4"/>
+                        <RelationType>
+                           <ClassString>next assembly occurrence</ClassString>
+                        </RelationType>
+                        <Placement>
+                           <GeometryToTopologyModelAssociation uidRef="rep_rel_4"/>
+                        </Placement>
+                     </ViewOccurrenceRelationship>
+                     <ViewOccurrenceRelationship uid="or_3" xsi:type="n0:NextAssemblyOccurrenceUsage">
+                        <Related uidRef="occ_3"/>
+                        <RelationType>
+                           <ClassString>next assembly occurrence</ClassString>
+                        </RelationType>
+                        <Placement>
+                           <GeometryToTopologyModelAssociation uidRef="rep_rel_3"/>
+                        </Placement>
+                     </ViewOccurrenceRelationship>
+                     <ViewOccurrenceRelationship uid="or_2" xsi:type="n0:NextAssemblyOccurrenceUsage">
+                        <Related uidRef="occ_2"/>
+                        <RelationType>
+                           <ClassString>next assembly occurrence</ClassString>
+                        </RelationType>
+                        <Placement>
+                           <GeometryToTopologyModelAssociation uidRef="rep_rel_2"/>
+                        </Placement>
+                     </ViewOccurrenceRelationship>
+                     <ViewOccurrenceRelationship uid="or_1" xsi:type="n0:NextAssemblyOccurrenceUsage">
+                        <Related uidRef="occ_1"/>
+                        <RelationType>
+                           <ClassString>next assembly occurrence</ClassString>
+                        </RelationType>
+                        <Placement>
+                           <GeometryToTopologyModelAssociation uidRef="rep_rel_1"/>
+                        </Placement>
+                     </ViewOccurrenceRelationship>
+                     <Topology uidRef="rep_6"/>
+                  </PartView>
+               </Views>
+            </PartVersion>
+         </Versions>
+      </Part>
+      <Part uid="prt_5">
+         <Id id="Protection-E"/>
+         <Name>
+            <CharacterString>Protection-E</CharacterString>
+         </Name>
+         <PartTypes>
+            <PartCategoryEnum>protective_covering</PartCategoryEnum>
+            <PartCategoryEnum>raw_material_by_length</PartCategoryEnum>
+         </PartTypes>
+         <Versions>
+            <PartVersion uid="prt_5_prt_ver_1">
+               <Id id="Version 1"/>
+               <Views>
+                  <PartView uid="prt_5_prt_ver_1_prt_view_1">
+                     <DefiningGeometry uidRef="rep_5"/>
+                     <InitialContext uidRef="vc_1"/>
+                     <Occurrence uid="occ_7" xsi:type="n0:QuantifiedOccurrence">
+                        <Id id="wrap1"/>
+                        <Quantity uid="occ_7_q" xsi:type="n0:NumericalValue">
+                           <Unit uidRef="u_1"/>
+                           <ValueComponent>1.2</ValueComponent>
+                        </Quantity>
+                     </Occurrence>
+                  </PartView>
+               </Views>
+            </PartVersion>
+         </Versions>
+      </Part>
+      <Part uid="prt_4">
+         <Id id="Connector-A"/>
+         <Name>
+            <CharacterString>Connector-A</CharacterString>
+         </Name>
+         <PartTypes>
+            <PartCategoryEnum>connector</PartCategoryEnum>
+            <PartCategoryEnum>discrete</PartCategoryEnum>
+         </PartTypes>
+         <Versions>
+            <PartVersion uid="prt_4_prt_ver_1">
+               <Id id="Version 1"/>
+               <Views>
+                  <PartView uid="prt_4_prt_ver_1_prt_view_1">
+                     <DefiningGeometry uidRef="rep_4"/>
+                     <InitialContext uidRef="vc_1"/>
+                     <Occurrence uid="occ_4" xsi:type="n0:SingleOccurrence">
+                        <Id id="J2"/>
+                     </Occurrence>
+                     <Occurrence uid="occ_3" xsi:type="n0:SingleOccurrence">
+                        <Id id="J1"/>
+                     </Occurrence>
+                  </PartView>
+               </Views>
+            </PartVersion>
+         </Versions>
+      </Part>
+      <Part uid="prt_3">
+         <Id id="Lug-B"/>
+         <Name>
+            <CharacterString>Lug-B</CharacterString>
+         </Name>
+         <PartTypes>
+            <PartCategoryEnum>terminal_lug</PartCategoryEnum>
+            <PartCategoryEnum>discrete</PartCategoryEnum>
+         </PartTypes>
+         <Versions>
+            <PartVersion uid="prt_3_prt_ver_1">
+               <Id id="Version 1"/>
+               <Views>
+                  <PartView uid="prt_3_prt_ver_1_prt_view_1">
+                     <DefiningGeometry uidRef="rep_3"/>
+                     <InitialContext uidRef="vc_1"/>
+                     <Occurrence uid="occ_6" xsi:type="n0:SingleOccurrence">
+                        <Id id="J4"/>
+                     </Occurrence>
+                     <Occurrence uid="occ_5" xsi:type="n0:SingleOccurrence">
+                        <Id id="J3"/>
+                     </Occurrence>
+                  </PartView>
+               </Views>
+            </PartVersion>
+         </Versions>
+      </Part>
+      <Part uid="prt_2">
+         <Id id="Cable-D"/>
+         <Name>
+            <CharacterString>Cable-D</CharacterString>
+         </Name>
+         <PartTypes>
+            <PartCategoryEnum>cable</PartCategoryEnum>
+            <PartCategoryEnum>raw_material_by_length</PartCategoryEnum>
+         </PartTypes>
+         <Versions>
+            <PartVersion uid="prt_2_prt_ver_1">
+               <Id id="Version 1"/>
+               <Views>
+                  <PartView uid="prt_2_prt_ver_1_prt_view_1">
+                     <DefiningGeometry uidRef="rep_2"/>
+                     <InitialContext uidRef="vc_1"/>
+                     <Occurrence uid="occ_2" xsi:type="n0:CableOccurrence">
+                        <Id id="W3"/>
+                        <Quantity uid="occ_2_q" xsi:type="n0:NumericalValue">
+                           <Unit uidRef="u_1"/>
+                           <ValueComponent>1.8</ValueComponent>
+                        </Quantity>
+                     </Occurrence>
+                  </PartView>
+               </Views>
+            </PartVersion>
+         </Versions>
+      </Part>
+      <Part uid="prt_1">
+         <Id id="Wire-C"/>
+         <Name>
+            <CharacterString>Wire-C</CharacterString>
+         </Name>
+         <PartTypes>
+            <PartCategoryEnum>wire</PartCategoryEnum>
+            <PartCategoryEnum>raw_material_by_length</PartCategoryEnum>
+         </PartTypes>
+         <Versions>
+            <PartVersion uid="prt_1_prt_ver_1">
+               <Id id="Version 1"/>
+               <Views>
+                  <PartView uid="prt_1_prt_ver_1_prt_view_1">
+                     <DefiningGeometry uidRef="rep_1"/>
+                     <InitialContext uidRef="vc_1"/>
+                     <Occurrence uid="occ_1" xsi:type="n0:WireOccurrence">
+                        <Id id="W1"/>
+                        <Quantity uid="occ_1_q" xsi:type="n0:NumericalValue">
+                           <Unit uidRef="u_1"/>
+                           <ValueComponent>3.5</ValueComponent>
+                        </Quantity>
+                     </Occurrence>
+                  </PartView>
+               </Views>
+            </PartVersion>
+         </Versions>
+      </Part>
+      <RepresentationContext uid="rep_c_6" xsi:type="n0:GeometricCoordinateSpace">
+         <Id/>
+         <Units>
+            <Unit uidRef="u_1"/>
+         </Units>
+         <Representations>
+            <Representation uid="rep_6" xsi:type="n0:EdgeBasedTopologicalRepresentationWithLengthConstraint">
+               <Id id="Topological representation of H1 harness"/>
+               <Items>
+                  <RepresentationItem uidRef="ce_rep_it_1"/>
+                  <RepresentationItem uidRef="pt_rep_it_1"/>
+                  <RepresentationItem uidRef="pt_rep_it_2"/>
+                  <RepresentationItem uidRef="pt_rep_it_3"/>
+               </Items>
+               <RepresentationRelationship uid="rep_rel_7" xsi:type="n0:GeometryToTopologyModelAssociation">
+                  <Definitional>false</Definitional>
+                  <Related uidRef="rep_5"/>
+                  <Origin>
+                     <AxisPlacement uidRef="ap_rep_it_5"/>
+                  </Origin>
+                  <Target>
+                     <Path uidRef="pt_rep_it_3"/>
+                  </Target>
+               </RepresentationRelationship>
+               <RepresentationRelationship uid="rep_rel_6" xsi:type="n0:GeometryToTopologyModelAssociation">
+                  <Definitional>false</Definitional>
+                  <Related uidRef="rep_3"/>
+                  <Origin>
+                     <AxisPlacement uidRef="ap_rep_it_3"/>
+                  </Origin>
+                  <Target>
+                     <Vertex uidRef="vp_rep_it_16"/>
+                  </Target>
+               </RepresentationRelationship>
+               <RepresentationRelationship uid="rep_rel_5" xsi:type="n0:GeometryToTopologyModelAssociation">
+                  <Definitional>false</Definitional>
+                  <Related uidRef="rep_3"/>
+                  <Origin>
+                     <AxisPlacement uidRef="ap_rep_it_3"/>
+                  </Origin>
+                  <Target>
+                     <Vertex uidRef="vp_rep_it_6"/>
+                  </Target>
+               </RepresentationRelationship>
+               <RepresentationRelationship uid="rep_rel_4" xsi:type="n0:GeometryToTopologyModelAssociation">
+                  <Definitional>false</Definitional>
+                  <Related uidRef="rep_4"/>
+                  <Origin>
+                     <AxisPlacement uidRef="ap_rep_it_4"/>
+                  </Origin>
+                  <Target>
+                     <Vertex uidRef="vp_rep_it_14"/>
+                  </Target>
+               </RepresentationRelationship>
+               <RepresentationRelationship uid="rep_rel_3" xsi:type="n0:GeometryToTopologyModelAssociation">
+                  <Definitional>false</Definitional>
+                  <Related uidRef="rep_4"/>
+                  <Origin>
+                     <AxisPlacement uidRef="ap_rep_it_4"/>
+                  </Origin>
+                  <Target>
+                     <Vertex uidRef="vp_rep_it_2"/>
+                  </Target>
+               </RepresentationRelationship>
+               <RepresentationRelationship uid="rep_rel_2" xsi:type="n0:GeometryToTopologyModelAssociation">
+                  <Definitional>false</Definitional>
+                  <Related uidRef="rep_2"/>
+                  <Origin>
+                     <AxisPlacement uidRef="ap_rep_it_2"/>
+                  </Origin>
+                  <Target>
+                     <Path uidRef="pt_rep_it_2"/>
+                  </Target>
+               </RepresentationRelationship>
+               <RepresentationRelationship uid="rep_rel_1" xsi:type="n0:GeometryToTopologyModelAssociation">
+                  <Definitional>false</Definitional>
+                  <Related uidRef="rep_1"/>
+                  <Origin>
+                     <AxisPlacement uidRef="ap_rep_it_1"/>
+                  </Origin>
+                  <Target>
+                     <Path uidRef="pt_rep_it_1"/>
+                  </Target>
+               </RepresentationRelationship>
+            </Representation>
+         </Representations>
+         <Items>
+            <RepresentationItem uid="ce_rep_it_1" xsi:type="n0:ConnectedEdgeSet">
+               <ConnectedEdges>
+                  <Edge uidRef="rep_it_2"/>
+                  <Edge uidRef="rep_it_4"/>
+                  <Edge uidRef="rep_it_8"/>
+                  <Edge uidRef="rep_it_12"/>
+                  <Edge uidRef="rep_it_14"/>
+               </ConnectedEdges>
+            </RepresentationItem>
+            <RepresentationItem uid="rep_it_14" xsi:type="n0:EdgeBoundedCurveWithLength">
+               <Name>
+                  <CharacterString>S5</CharacterString>
+               </Name>
+               <EdgeEnd uidRef="vp_rep_it_10"/>
+               <EdgeStart uidRef="vp_rep_it_16"/>
+               <EdgeGeometry uidRef="sub_rep_it_13"/>
+               <SameSense>true</SameSense>
+            </RepresentationItem>
+            <RepresentationItem uid="vp_rep_it_16" xsi:type="n0:VertexPoint">
+               <Name>
+                  <CharacterString>N6</CharacterString>
+               </Name>
+               <VertexGeometry uidRef="p_rep_it_15"/>
+            </RepresentationItem>
+            <RepresentationItem uid="p_rep_it_15" xsi:type="n0:Point"/>
+            <RepresentationItem uid="sub_rep_it_13" xsi:type="n0:BoundedCurveWithLength">
+               <CurveLength>8.0</CurveLength>
+            </RepresentationItem>
+            <RepresentationItem uid="rep_it_12" xsi:type="n0:EdgeBoundedCurveWithLength">
+               <Name>
+                  <CharacterString>S4</CharacterString>
+               </Name>
+               <EdgeEnd uidRef="vp_rep_it_10"/>
+               <EdgeStart uidRef="vp_rep_it_14"/>
+               <EdgeGeometry uidRef="sub_rep_it_11"/>
+               <SameSense>true</SameSense>
+            </RepresentationItem>
+            <RepresentationItem uid="vp_rep_it_14" xsi:type="n0:VertexPoint">
+               <Name>
+                  <CharacterString>N5</CharacterString>
+               </Name>
+               <VertexGeometry uidRef="p_rep_it_13"/>
+            </RepresentationItem>
+            <RepresentationItem uid="p_rep_it_13" xsi:type="n0:Point"/>
+            <RepresentationItem uid="sub_rep_it_11" xsi:type="n0:BoundedCurveWithLength">
+               <CurveLength>8.0</CurveLength>
+            </RepresentationItem>
+            <RepresentationItem uid="rep_it_10" xsi:type="n0:SubEdge">
+               <Name>
+                  <CharacterString>S3_1</CharacterString>
+               </Name>
+               <EdgeEnd uidRef="vp_rep_it_12"/>
+               <EdgeStart uidRef="vp_rep_it_4"/>
+               <ParentEdge uidRef="rep_it_8"/>
+            </RepresentationItem>
+            <RepresentationItem uid="rep_it_9" xsi:type="n0:SubEdge">
+               <Name>
+                  <CharacterString>S3_2</CharacterString>
+               </Name>
+               <EdgeEnd uidRef="vp_rep_it_12"/>
+               <EdgeStart uidRef="vp_rep_it_10"/>
+               <ParentEdge uidRef="rep_it_8"/>
+            </RepresentationItem>
+            <RepresentationItem uid="vp_rep_it_12" xsi:type="n0:VertexPoint">
+               <Name>
+                  <CharacterString>N8</CharacterString>
+               </Name>
+               <VertexGeometry uidRef="pc_rep_it_11"/>
+            </RepresentationItem>
+            <RepresentationItem uid="pc_rep_it_11" xsi:type="n0:PointOnCurve">
+               <BasicCurve uidRef="sub_rep_it_7"/>
+               <Parameter>3</Parameter>
+            </RepresentationItem>
+            <RepresentationItem uid="rep_it_8" xsi:type="n0:EdgeBoundedCurveWithLength">
+               <Name>
+                  <CharacterString>S3</CharacterString>
+               </Name>
+               <EdgeEnd uidRef="vp_rep_it_4"/>
+               <EdgeStart uidRef="vp_rep_it_10"/>
+               <EdgeGeometry uidRef="sub_rep_it_7"/>
+               <SameSense>true</SameSense>
+            </RepresentationItem>
+            <RepresentationItem uid="vp_rep_it_10" xsi:type="n0:VertexPoint">
+               <Name>
+                  <CharacterString>N4</CharacterString>
+               </Name>
+               <VertexGeometry uidRef="p_rep_it_9"/>
+            </RepresentationItem>
+            <RepresentationItem uid="p_rep_it_9" xsi:type="n0:Point"/>
+            <RepresentationItem uid="sub_rep_it_7" xsi:type="n0:BoundedCurveWithLength">
+               <CurveLength>6.0</CurveLength>
+            </RepresentationItem>
+            <RepresentationItem uid="rep_it_6" xsi:type="n0:SubEdge">
+               <Name>
+                  <CharacterString>S2_2</CharacterString>
+               </Name>
+               <EdgeEnd uidRef="vp_rep_it_8"/>
+               <EdgeStart uidRef="vp_rep_it_4"/>
+               <ParentEdge uidRef="rep_it_4"/>
+            </RepresentationItem>
+            <RepresentationItem uid="rep_it_5" xsi:type="n0:SubEdge">
+               <Name>
+                  <CharacterString>S2_1</CharacterString>
+               </Name>
+               <EdgeEnd uidRef="vp_rep_it_8"/>
+               <EdgeStart uidRef="vp_rep_it_6"/>
+               <ParentEdge uidRef="rep_it_4"/>
+            </RepresentationItem>
+            <RepresentationItem uid="vp_rep_it_8" xsi:type="n0:VertexPoint">
+               <Name>
+                  <CharacterString>N7</CharacterString>
+               </Name>
+               <VertexGeometry uidRef="pc_rep_it_7"/>
+            </RepresentationItem>
+            <RepresentationItem uid="pc_rep_it_7" xsi:type="n0:PointOnCurve">
+               <BasicCurve uidRef="sub_rep_it_3"/>
+               <Parameter>2</Parameter>
+            </RepresentationItem>
+            <RepresentationItem uid="rep_it_4" xsi:type="n0:EdgeBoundedCurveWithLength">
+               <Name>
+                  <CharacterString>S2</CharacterString>
+               </Name>
+               <EdgeEnd uidRef="vp_rep_it_4"/>
+               <EdgeStart uidRef="vp_rep_it_6"/>
+               <EdgeGeometry uidRef="sub_rep_it_3"/>
+               <SameSense>true</SameSense>
+            </RepresentationItem>
+            <RepresentationItem uid="vp_rep_it_6" xsi:type="n0:VertexPoint">
+               <Name>
+                  <CharacterString>N2</CharacterString>
+               </Name>
+               <VertexGeometry uidRef="p_rep_it_5"/>
+            </RepresentationItem>
+            <RepresentationItem uid="p_rep_it_5" xsi:type="n0:Point"/>
+            <RepresentationItem uid="sub_rep_it_3" xsi:type="n0:BoundedCurveWithLength">
+               <CurveLength>4.0</CurveLength>
+            </RepresentationItem>
+            <RepresentationItem uid="rep_it_2" xsi:type="n0:EdgeBoundedCurveWithLength">
+               <Name>
+                  <CharacterString>S1</CharacterString>
+               </Name>
+               <EdgeEnd uidRef="vp_rep_it_2"/>
+               <EdgeStart uidRef="vp_rep_it_4"/>
+               <EdgeGeometry uidRef="sub_rep_it_1"/>
+               <SameSense>true</SameSense>
+            </RepresentationItem>
+            <RepresentationItem uid="vp_rep_it_4" xsi:type="n0:VertexPoint">
+               <Name>
+                  <CharacterString>N3</CharacterString>
+               </Name>
+               <VertexGeometry uidRef="p_rep_it_3"/>
+            </RepresentationItem>
+            <RepresentationItem uid="p_rep_it_3" xsi:type="n0:Point"/>
+            <RepresentationItem uid="vp_rep_it_2" xsi:type="n0:VertexPoint">
+               <Name>
+                  <CharacterString>N1</CharacterString>
+               </Name>
+               <VertexGeometry uidRef="p_rep_it_1"/>
+            </RepresentationItem>
+            <RepresentationItem uid="p_rep_it_1" xsi:type="n0:Point"/>
+            <RepresentationItem uid="sub_rep_it_1" xsi:type="n0:BoundedCurveWithLength">
+               <CurveLength>2.0</CurveLength>
+            </RepresentationItem>
+            <RepresentationItem uid="pt_rep_it_1" xsi:type="n0:Path">
+               <Name>
+                  <CharacterString>P1</CharacterString>
+               </Name>
+               <EdgeList>
+                  <Edge uidRef="rep_it_2"/>
+                  <Edge uidRef="rep_it_8"/>
+                  <Edge uidRef="rep_it_12"/>
+               </EdgeList>
+               <OrientationList>
+                  <Boolean>true</Boolean>
+                  <Boolean>true</Boolean>
+                  <Boolean>true</Boolean>
+               </OrientationList>
+            </RepresentationItem>
+            <RepresentationItem uid="pt_rep_it_2" xsi:type="n0:Path">
+               <Name>
+                  <CharacterString>P2</CharacterString>
+               </Name>
+               <EdgeList>
+                  <Edge uidRef="rep_it_4"/>
+                  <Edge uidRef="rep_it_8"/>
+                  <Edge uidRef="rep_it_14"/>
+               </EdgeList>
+               <OrientationList>
+                  <Boolean>false</Boolean>
+                  <Boolean>true</Boolean>
+                  <Boolean>true</Boolean>
+               </OrientationList>
+            </RepresentationItem>
+            <RepresentationItem uid="pt_rep_it_3" xsi:type="n0:Path">
+               <Name>
+                  <CharacterString>P3</CharacterString>
+               </Name>
+               <EdgeList>
+                  <Edge uidRef="rep_it_6"/>
+                  <Edge uidRef="rep_it_10"/>
+               </EdgeList>
+               <OrientationList>
+                  <Boolean>true</Boolean>
+                  <Boolean>false</Boolean>
+               </OrientationList>
+            </RepresentationItem>
+         </Items>
+         <DimensionCount>1</DimensionCount>
+      </RepresentationContext>
+      <RepresentationContext uid="rep_c_5" xsi:type="n0:GeometricCoordinateSpace">
+         <Id id="Protection-E_geo"/>
+         <Units>
+            <Unit uidRef="u_1"/>
+         </Units>
+         <Representations>
+            <Representation uid="rep_5" xsi:type="n0:GeometricModel">
+               <Id id="Protection-E_geo"/>
+               <Items>
+                  <RepresentationItem uidRef="ap_rep_it_5"/>
+               </Items>
+            </Representation>
+         </Representations>
+         <Items>
+            <RepresentationItem uid="ap_rep_it_5" xsi:type="n0:AxisPlacement">
+               <Position>0.0 0.0</Position>
+            </RepresentationItem>
+         </Items>
+         <DimensionCount>2</DimensionCount>
+      </RepresentationContext>
+      <RepresentationContext uid="rep_c_4" xsi:type="n0:GeometricCoordinateSpace">
+         <Id id="Connector-A_geo"/>
+         <Units>
+            <Unit uidRef="u_1"/>
+         </Units>
+         <Representations>
+            <Representation uid="rep_4" xsi:type="n0:GeometricModel">
+               <Id id="Connector-A_geo"/>
+               <Items>
+                  <RepresentationItem uidRef="ap_rep_it_4"/>
+               </Items>
+            </Representation>
+         </Representations>
+         <Items>
+            <RepresentationItem uid="ap_rep_it_4" xsi:type="n0:AxisPlacement">
+               <Position>0.0 0.0 0.0</Position>
+            </RepresentationItem>
+         </Items>
+         <DimensionCount>3</DimensionCount>
+      </RepresentationContext>
+      <RepresentationContext uid="rep_c_3" xsi:type="n0:GeometricCoordinateSpace">
+         <Id id="Lug-B_geo"/>
+         <Units>
+            <Unit uidRef="u_1"/>
+         </Units>
+         <Representations>
+            <Representation uid="rep_3" xsi:type="n0:GeometricModel">
+               <Id id="Lug-B_geo"/>
+               <Items>
+                  <RepresentationItem uidRef="ap_rep_it_3"/>
+               </Items>
+            </Representation>
+         </Representations>
+         <Items>
+            <RepresentationItem uid="ap_rep_it_3" xsi:type="n0:AxisPlacement">
+               <Position>0.0 0.0 0.0</Position>
+            </RepresentationItem>
+         </Items>
+         <DimensionCount>3</DimensionCount>
+      </RepresentationContext>
+      <RepresentationContext uid="rep_c_2" xsi:type="n0:GeometricCoordinateSpace">
+         <Id id="Cable-D_geo"/>
+         <Units>
+            <Unit uidRef="u_1"/>
+         </Units>
+         <Representations>
+            <Representation uid="rep_2" xsi:type="n0:GeometricModel">
+               <Id id="Cable-D_geo"/>
+               <Items>
+                  <RepresentationItem uidRef="ap_rep_it_2"/>
+               </Items>
+            </Representation>
+         </Representations>
+         <Items>
+            <RepresentationItem uid="ap_rep_it_2" xsi:type="n0:AxisPlacement">
+               <Position>0.0 0.0</Position>
+            </RepresentationItem>
+         </Items>
+         <DimensionCount>2</DimensionCount>
+      </RepresentationContext>
+      <RepresentationContext uid="rep_c_1" xsi:type="n0:GeometricCoordinateSpace">
+         <Id id="Wire-C_geo"/>
+         <Units>
+            <Unit uidRef="u_1"/>
+         </Units>
+         <Representations>
+            <Representation uid="rep_1" xsi:type="n0:GeometricModel">
+               <Id id="Wire-C_geo"/>
+               <Items>
+                  <RepresentationItem uidRef="ap_rep_it_1"/>
+               </Items>
+            </Representation>
+         </Representations>
+         <Items>
+            <RepresentationItem uid="ap_rep_it_1" xsi:type="n0:AxisPlacement">
+               <Position>0.0 0.0</Position>
+            </RepresentationItem>
+         </Items>
+         <DimensionCount>2</DimensionCount>
+      </RepresentationContext>
+   </DataContainer>
+</n0:Uos>

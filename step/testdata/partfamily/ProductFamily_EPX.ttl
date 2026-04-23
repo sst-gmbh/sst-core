@@ -1,0 +1,1697 @@
+@prefix sso:   <http://ontology.semanticstep.net/sso#> .
+@prefix lci:   <http://ontology.semanticstep.net/lci#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix ssmeta:   <http://ontology.semanticstep.net/ssmeta#> .
+@prefix :	<urn:uuid:e8831ac1-58f4-4986-a13d-75950288583d#> .
+
+@prefix ns1:	<urn:uuid:5678#> . # equivalent to <urn:uuid:9978>, needs to be merged 
+
+<urn:uuid:e8831ac1-58f4-4986-a13d-75950288583d>
+	rdf:type owl:Ontology .
+
+#=== Organization NG
+# ns1:uuid1
+#     rdf:type lci:Organization ;
+#     sso:label "Radiall"
+#     sso:id "Radiall" ;
+#     sso:cageId "SCR93" .
+# ns1:uuid2 
+#     rdf:type owl:DatatypeProperty ;
+#     rdfs:subPropertyOf sso:id ;
+#     sso:idOwner ns1:uuid1 .
+
+#=== ProductFamily NG
+:uuid10
+	rdf:type sso:ProductFamily ;
+#	ns1:uuid2 "EPX" .
+	rdfs:label "EPX" .
+:uuid11 
+	rdf:type owl:DatatypeProperty ;
+	rdfs:subPropertyOf sso:id ;
+	sso:idOwner :uuid10 .
+
+# Inserts / HOW TO ORDER EPX® INSERTS, page 1-11
+:uuid1000
+	rdf:type owl:Class , sso:ProductClass , :uuid10 ;
+	rdfs:subClassOf sso:PartCategory_connector_insert ;
+	sso:id  "EPX" ;  # no scope
+	rdfs:label "EPX inserts" ;
+	sso:membersHaveMandatorySpecificationItemCategory :uuid1100 , :uuid1200 , :uuid1300 , :uuid1600 , :uuid1700 ;
+	sso:membersHaveOptionalSpecificationItemCategory :uuid1800 ;
+	sso:codeSequence ("EPX" :uuid1100 :uuid1200 :uuid1300 :uuid1600 :uuid1700 :uuid1800 )  .
+# ---
+:uuid1100
+	rdf:type owl:Class , sso:SpecificationItemCategoryExclusive , :uuid10 ;
+	rdfs:label "Insert Sizes" . ## ?? maybe ID ??
+:uuid1101
+	rdf:type sso:SpecificationItem , :uuid1100 ;
+	sso:id "A" ;
+	rdfs:label "Insert Size EPXA" ;
+	rdfs:comment "for EPXA housing" .
+:uuid1102
+	rdf:type sso:SpecificationItem , :uuid1100 ;
+	sso:id "B" ;
+	rdfs:label "Insert Size EPXB" ;
+	rdfs:comment "for EPXB1, EPXB2, EPXB3 or EPXB4 housing" .
+# ---
+:uuid1200
+	rdf:type owl:Class , sso:SpecificationItemCategoryExclusive , :uuid10 ;
+	rdfs:label "Environmental Types (Class)" .
+:uuid1201
+	rdf:type sso:SpecificationItem , :uuid1200 ;
+	sso:id "E" ;
+	rdfs:label "Environmental" .
+:uuid1202
+	rdf:type sso:SpecificationItem , :uuid1200 ;
+	sso:id "N" ;
+	rdfs:label "Non-environmental (no rear grommet, no interfacial seal)" .
+:uuid1203
+	rdf:type sso:SpecificationItem , :uuid1200 ;
+	sso:id "H" ;
+	rdfs:label "Non-environmental with a rear grommet, available for pin insert only (recommended for crimp contacts)" .
+:uuid1204
+	rdf:type sso:SpecificationItem , :uuid1200 ;
+	sso:id "T" ;
+	rdfs:label "Non-environmental with an interfacial seal, available for pin insert only (recommended for PC tail contacts)" .
+:uuid1205
+	rdf:type sso:SpecificationItem , :uuid1200 ;
+	sso:id "B" ;
+	rdfs:label "Bulkhead insert with interfacial seal and a Bulkhead rear grommet, available for pin insert only" .
+:uuid1210
+	rdf:type owl:Class , sso:SpecificationItemCategoryExclusive , :uuid10 ;
+	rdfs:subClassOf :uuid1200 ;
+	rdfs:label "Environmental Types (Class) w/o Bulkhead" ;
+	owl:equivalentClass  [ rdf:type   owl:Class;
+		owl:oneOf  ( :uuid1201 :uuid1202 :uuid1203 :uuid1204 ) ] .
+# ---
+:uuid1300
+	rdf:type owl:Class , sso:SpecificationItemCategoryExclusive , :uuid10 , ssmeta:AbstractClass ;
+	rdfs:label "EPX Insert arrangements" ;
+	owl:unionOf ( :uuid1400 :uuid1500 ) .
+# ---
+:uuid1400
+	rdf:type owl:Class , sso:SpecificationItemCategoryExclusive , :uuid10  ;
+	rdfs:label "EPXA Insert arrangements" .
+:uuid1401
+	rdf:type sso:SpecificationItem , :uuid1400 ;
+	sso:id "00" ;
+	rdfs:label "no contacts" .
+:uuid1402
+	rdf:type sso:SpecificationItem , :uuid1400 ;
+	sso:id "1C1" ;
+	rdfs:label "1 coax/triax size 5 contact" .
+:uuid1403
+	rdf:type sso:SpecificationItem , :uuid1400 ;
+	sso:id "1P1" ;
+	rdfs:label "1 power size 5 contact" .
+:uuid1404
+	rdf:type sso:SpecificationItem , :uuid1400 ;
+	sso:id "04" ;
+	rdfs:label "2 power/coax size 15/16 and 2 power/coax size 12 contacts" .
+:uuid1405
+	rdf:type sso:SpecificationItem , :uuid1400 ;
+	sso:id "09" ;
+	rdfs:label "3 power size 20 and 6 power/coax size 15/16 contacts" .
+:uuid1406
+	rdf:type sso:SpecificationItem , :uuid1400 ;
+	sso:id "14" ;
+	rdfs:label "14 power size 20 contacts" .
+:uuid1407
+	rdf:type sso:SpecificationItem , :uuid1400 ;
+	sso:id "14M" ;
+	rdfs:label "8 signal size 22, 3 power size 20 and 3 power/coax size 15/16 contacts" .
+:uuid1408
+	rdf:type sso:SpecificationItem , :uuid1400 ;
+	sso:id "17" ;
+	rdfs:label "12 signal size 22 and 5 power size 20 contacts" .
+:uuid1409
+	rdf:type sso:SpecificationItem , :uuid1400 ;
+	sso:id "20" ;
+	rdfs:label "20 signal size 22 contacts" .
+# ---
+:uuid1500
+	rdf:type owl:Class , sso:SpecificationItemCategory , :uuid10 ;
+	rdfs:label "EPXB Insert arrangements" .
+:uuid1501
+	rdf:type sso:SpecificationItem , :uuid1500 ;
+	sso:id "00" ; # ?? conflict with "0" of EPXA type insert
+	rdfs:label "no contacts" .
+:uuid1502
+	rdf:type sso:SpecificationItem , :uuid1500 ;
+	sso:id "C3" ; 
+	rdfs:label "3 coay/triax size 5 contacts" .
+:uuid1503
+	rdf:type sso:SpecificationItem , :uuid1500 ;
+	sso:id "P3" ; 
+	rdfs:label "3 power size 5 contacts" .
+:uuid1504
+	rdf:type sso:SpecificationItem , :uuid1500 ;
+	sso:id "3Q3" ;
+	rdfs:label "3 quadrax/twinax size 8 contacts" .
+:uuid1505
+	rdf:type sso:SpecificationItem , :uuid1500 ;
+	sso:id "06" ; 
+	rdfs:label "6 power/coax size 12 contacts" .
+:uuid1506
+	rdf:type sso:SpecificationItem , :uuid1500 ;
+	sso:id "10Q2" ; 
+	rdfs:label "8 power size 20 and 2 quadrax/twinax size 8 contacts" .
+:uuid1507
+	rdf:type sso:SpecificationItem , :uuid1500 ;
+	sso:id "12F6" ; 
+	rdfs:label "6 Luxcis fiber optic and 6 Power in fibre optic cavity" .
+:uuid1508
+	rdf:type sso:SpecificationItem , :uuid1500 ;
+	sso:id "F12C" ; 
+	rdfs:label "12 Luxcis fiber optic contacts" .
+:uuid1509
+	rdf:type sso:SpecificationItem , :uuid1500 ;
+	sso:id "13C1" ; 
+	rdfs:label "6 power size 20, 4 power/coax size 15/16, 2 power/coax size 12 and 1 coax/triax size 5 contacts" .
+:uuid1510
+	rdf:type sso:SpecificationItem , :uuid1500 ;
+	sso:id "13P1" ; 
+	rdfs:label "6 power size 20, 4 power/coax size 15/16, 2 power/coax size 12 and 1 power size 5 contacts" .
+:uuid1511
+	rdf:type sso:SpecificationItem , :uuid1500 ;
+	sso:id "14" ; 
+	rdfs:label "14 power/coax size 15/16 contacts" .
+:uuid1512
+	rdf:type sso:SpecificationItem , :uuid1500 ;
+	sso:id "17" ; 
+	rdfs:label "14 power size 20 and 3 power/coax size 12 contacts" .
+:uuid1513
+	rdf:type sso:SpecificationItem , :uuid1500 ;
+	sso:id "20C1" ; 
+	rdfs:label "19 power size 20 and 1 coax/triax size 5 contacts" .
+:uuid1514
+	rdf:type sso:SpecificationItem , :uuid1500 ;
+	sso:id "20P1" ; 
+	rdfs:label "19 power size 20 and 1 power size 5 contacts" .
+:uuid1515
+	rdf:type sso:SpecificationItem , :uuid1500 ;
+	sso:id "22" ; 
+	rdfs:label "16 power size 20 and 6 power/coax size 15/16 contacts" .
+:uuid1516
+	rdf:type sso:SpecificationItem , :uuid1500 ;
+	sso:id "22V" ; 
+	rdfs:label "16 power size 20 and 6 power/coax size 15/16 contacts" .
+:uuid1517
+	rdf:type sso:SpecificationItem , :uuid1500 ;
+	sso:id "25P1" ; 
+	rdfs:label "24 signal size 22 and 1 power size 8 contacts" .
+:uuid1518
+	rdf:type sso:SpecificationItem , :uuid1500 ;
+	sso:id "25Q1" ; 
+	rdfs:label "24 signal size 22 and 1 quadrax/twinax size 8 contacts" .
+:uuid1519
+	rdf:type sso:SpecificationItem , :uuid1500 ;
+	sso:id "28" ; 
+	rdfs:label "22 signal size 22 and 6 power/coax size 15/16 contacts" .
+:uuid1520
+	rdf:type sso:SpecificationItem , :uuid1500 ;
+	sso:id "30" ; 
+	rdfs:label "30 power size 20 contacts" .
+:uuid1521
+	rdf:type sso:SpecificationItem , :uuid1500 ;
+	sso:id "34" ; 
+	rdfs:label "18 signal size 22 and 16 power size 20 contacts" .
+:uuid1522
+	rdf:type sso:SpecificationItem , :uuid1500 ;
+	sso:id "40" ; 
+	rdfs:label "40 signal size 22 contacts" .
+:uuid1523
+	rdf:type sso:SpecificationItem , :uuid1500 ;
+	sso:id "48" ; 
+	rdfs:label "48 signal size 22 contacts" .
+# ---
+:uuid1600
+	rdf:type owl:Class , sso:SpecificationItemCategoryExclusive , :uuid10 ;
+	rdfs:label "Insert / Contact Types" .
+:uuid1601
+	rdf:type sso:SpecificationItem , :uuid1600 ;
+	sso:id "P" ;
+	rdfs:label "Pin" .
+:uuid1602
+	rdf:type sso:SpecificationItem , :uuid1600 ;
+	sso:id "S" ;
+	rdfs:label "Socket" .
+# ---
+:uuid1700
+	rdf:type owl:Class , sso:SpecificationItemCategoryExclusive , :uuid10 ;
+	rdfs:label "Insert Keyings" .
+:uuid1701
+	rdf:type sso:SpecificationItem , :uuid1700 ;
+	sso:id "A" ;
+	rdfs:label "Keying A" .
+:uuid1702
+	rdf:type sso:SpecificationItem , :uuid1700 ;
+	sso:id "B" ;
+	rdfs:label "Keying B" .
+# ---
+:uuid1800
+	rdf:type owl:Class , sso:SpecificationItemCategory , :uuid10 ;
+	rdfs:label "Contactc included" ;
+	rdfs:comment "if missing insert delivered without contacts" .
+:uuid1801
+	rdf:type sso:SpecificationItem , :uuid1800 ;
+	sso:id "S" ;
+	rdfs:label "Signal and power contacts are delivered with inserts but are uninstalled" .
+# --- Example
+:uuid1901
+	rdf:type sso:ProductConfiguration , :uuid1000 ;  # maybe better to name this sso:PartSpecification
+	sso:id "EPXBE3Q3SA" ;
+	sso:definingSpecificationItem :uuid1102 , :uuid1201, :uuid1504 , :uuid1602 , :uuid1701 .
+
+# Disconnect Application / HOW TO ORDER EPXA1 & EPXB1 SHELL, page 1-26
+:uuid2000
+	rdf:type owl:Class , sso:ProductClass , :uuid10 ;
+	rdfs:subClassOf sso:PartCategory_connector_housing ;
+	rdfs:label "EPXA1 & EPXB1 shells" ;
+	sso:membersHaveMandatorySpecificationItemCategory :uuid2100 , :uuid2200 , :uuid2300, :uuid2400 , :uuid2500 , :uuid2600 ;
+#	sso:membersHaveOptionalSpecificationItemCategory :uuid2300 ;
+	sso:codeSequence ("EPX" :uuid2100 :uuid2200 :uuid2300 :uuid2400 :uuid2500 :uuid2600 )  .
+# ---
+:uuid2100
+	rdf:type owl:Class , sso:SpecificationItemCategoryExclusive , :uuid10 ;
+	rdfs:label "Shell Sizes" .
+:uuid2101
+	rdf:type sso:SpecificationItem , :uuid2100 ;
+	sso:id "A1" ;
+	rdfs:label "Single small cavity shell" .
+:uuid2102
+	rdf:type sso:SpecificationItem , :uuid2100 ;
+	sso:id "B1" ;
+	rdfs:label "Single large cavity shell" .
+# ---
+:uuid2200
+	rdf:type owl:Class , sso:SpecificationItemCategoryExclusive , :uuid10 ;
+	rdfs:label "Shell Styles" .
+:uuid2201
+	rdf:type sso:SpecificationItem , :uuid2200 ;
+	sso:id "P" ;
+	rdfs:label "Plug" .
+:uuid2202
+	rdf:type sso:SpecificationItem , :uuid2200 ;
+	sso:id "R" ;
+	rdfs:label "Receptacle" .
+:uuid2203
+	rdf:type sso:SpecificationItem , :uuid2200 ;
+	sso:id "W" ;
+	rdfs:label "Plug with ground block" .
+:uuid2204
+	rdf:type sso:SpecificationItem , :uuid2200 ;
+	sso:id "Z" ;
+	rdfs:label "Receptacle with ground block" .
+# ---
+:uuid2210
+	rdf:type owl:Class , sso:SpecificationItemCategoryExclusive , :uuid10 ;
+	rdfs:label "Shell Styles" .
+# ---
+:uuid2300
+	rdf:type owl:Class , sso:SpecificationItemCategoryExclusive , :uuid10 ;
+	rdfs:label "Shell Mounting Options" .
+:uuid2301
+	rdf:type sso:SpecificationItem , :uuid2300 ;
+	sso:id "B" ;
+	rdfs:label "Plug without mounting holes" .
+:uuid2302
+	rdf:type sso:SpecificationItem , :uuid2300 ;
+	sso:id "M" ;
+	rdfs:label "Receptacle with two mounting holes, 6-32 UNC for rear panel" .
+# ---
+:uuid2400
+	rdf:type owl:Class , sso:SpecificationItemCategoryExclusive , :uuid10 ;
+	rdfs:label "Locking Devices" .
+:uuid2401
+	rdf:type sso:SpecificationItem , :uuid2400 ;
+	sso:id "0" ;
+	rdfs:label "Quarter-turn fastener" .
+# ---
+:uuid2500
+	rdf:type owl:Class , sso:SpecificationItemCategoryExclusive , :uuid10 ;
+	rdfs:label "Polarization Codes" .
+:uuid2501
+	rdf:type sso:SpecificationItem , :uuid2500 ;
+	sso:id "4" ;
+	rdfs:label "Shell delivered with polarizing hardware unassembled" .
+:uuid2502
+	rdf:type sso:SpecificationItem , :uuid2500 ;
+	sso:id "5" ;
+	rdfs:label "Shell delivered with no polarizing hardware" .
+# ---
+:uuid2600
+	rdf:type owl:Class , sso:SpecificationItemCategoryExclusive , :uuid10 ;
+	rdfs:label "Shell Classes" .
+:uuid2601
+	rdf:type sso:SpecificationItem , :uuid2600 ;
+	sso:id "M" ;
+	rdfs:label "Nickel-plated composite for EPXB1" .
+:uuid2602
+	rdf:type sso:SpecificationItem , :uuid2600 ;
+	sso:id "K" ;
+	rdfs:label "Nickel-plated aluminium for EPXB1 (mateable with version M composite shell)" .
+:uuid2603
+	rdf:type sso:SpecificationItem , :uuid2600 ;
+	sso:id "N" ;
+	rdfs:label "Nickel-plated aluminium for EPXA1" .
+# --- Example EPXB1PB04M: https://www.digikey.com/en/products/detail/radiall-usa-inc/EPXA1PB05N/14667782
+:uuid1900 
+	rdf:type sso:ProductConfiguration , :uuid2100 ; 
+	sso:id "EPXA1PB05N" ;
+	sso:definingSpecificationItem :uuid2101 , :uuid2201, :uuid2301 , :uuid2401 , :uuid2502 , :uuid2603 .
+
+
+# Disconnect Application / HOW TO ORDER EPXA & EPXB1 ASSEMBLY KIT, page 1-27
+:uuid3000
+	rdf:type owl:Class , sso:ProductClass , :uuid10 ;
+	rdfs:subClassOf sso:PartCategory_connector_kit ;
+	rdfs:label "EPXA & EPXB1 assembly kit" ;
+	sso:membersHaveMandatorySpecificationItemCategory :uuid2100 , :uuid2200 , :uuid2300, :uuid2500 , :uuid2600 ,  :uuid10400 ;
+#	sso:membersHaveOptionalSpecificationItemCategory :uuid2300 ;
+	sso:codeSequence ("EPX" :uuid2100 :uuid2200 :uuid2500 :uuid2600 :uuid1210 :uuid1300 :uuid10400  )  .
+# ---
+:uuid3100
+	rdf:type owl:Class , sso:SpecificationItemCategoryExclusive , :uuid10 ;
+	rdfs:label "Contact TerminationClasses" .
+:uuid3100
+	rdf:type sso:SpecificationItem , :uuid3100 ;
+	sso:id "M" ;
+	rdfs:label "Nickel-plated composite for EPXB1" .
+
+# Disconnect Application / HOW TO ORDER EPXB2 SHELL, page 1-38
+:uuid4000
+	rdf:type owl:Class , sso:ProductClass , :uuid10 ;
+	rdfs:subClassOf sso:PartCategory_connector_housing ;
+	rdfs:label "EPXB2 shells" .
+#	sso:membersHaveMandatorySpecificationItemCategory :uuid1100 , :uuid1200 , :uuid1300 , :uuid1600 , :uuid1700 ;
+#	sso:membersHaveOptionalSpecificationItemCategory :uuid1800 .
+
+:uuid5000
+	rdf:type owl:Class , sso:ProductClass , :uuid10 ;
+	rdfs:subClassOf sso:PartCategory_connector_kit ;
+	rdfs:label "EPXB2 Assembly Kits" .
+#	sso:membersHaveMandatorySpecificationItemCategory :uuid1100 , :uuid1200 , :uuid1300 , :uuid1600 , :uuid1700 ;
+#	sso:membersHaveOptionalSpecificationItemCategory :uuid1800 .
+
+:uuid6000
+	rdf:type owl:Class , sso:ProductClass , :uuid10 ;
+	rdfs:subClassOf sso:PartCategory_connector_housing ;
+	rdfs:label "EPXB1, B2, B3 & B4 shells" .
+#	sso:membersHaveMandatorySpecificationItemCategory :uuid1100 , :uuid1200 , :uuid1300 , :uuid1600 , :uuid1700 ;
+#	sso:membersHaveOptionalSpecificationItemCategory :uuid1800 .
+
+:uuid7000
+	rdf:type owl:Class , sso:ProductClass , :uuid10 ;
+	rdfs:subClassOf sso:PartCategory_connector_kit ;
+	rdfs:label "EPXB1, B2, B3 & B4 assembly kits" .
+#	sso:membersHaveMandatorySpecificationItemCategory :uuid1100 , :uuid1200 , :uuid1300 , :uuid1600 , :uuid1700 ;
+#	sso:membersHaveOptionalSpecificationItemCategory :uuid1800 .
+
+:uuid8000
+	rdf:type owl:Class , sso:ProductClass , :uuid10 ;
+	rdfs:subClassOf sso:PartCategory_connector_housing ;
+	rdfs:label "EPXB2 LRU shells" .
+#	sso:membersHaveMandatorySpecificationItemCategory :uuid1100 , :uuid1200 , :uuid1300 , :uuid1600 , :uuid1700 ;
+#	sso:membersHaveOptionalSpecificationItemCategory :uuid1800 .
+
+:uuid9000
+	rdf:type owl:Class , sso:ProductClass , :uuid10 ;
+	rdfs:subClassOf sso:PartCategory_connector_kit ;
+	rdfs:label "EPXB2 LRU assembly kits" .
+#	sso:membersHaveMandatorySpecificationItemCategory :uuid1100 , :uuid1200 , :uuid1300 , :uuid1600 , :uuid1700 ;
+#	sso:membersHaveOptionalSpecificationItemCategory :uuid1800 .
+
+
+:uuid10000
+	rdf:type owl:Class , sso:ProductClass , :uuid10 ;
+	rdfs:label "EPX Contacts" ;
+	owl:unionOf ( :uuid11000 :uuid12000 :uuid13000 :uuid14000 :uuid15000 :uuid16000 :uuid17000 :uuid18000 :uuid20000 :uuid21000 ) .
+
+:uuid10100
+	rdf:type owl:Class , sso:SpecificationItemCategoryExclusive , :uuid10 ;
+	rdfs:label "Contact Sizes" .
+:uuid10101
+	rdf:type sso:SpecificationItem , :uuid10100 ;
+	sso:id "22" .
+:uuid10102
+	rdf:type sso:SpecificationItem , :uuid10100 ;
+	sso:id "20" .
+:uuid10103
+	rdf:type sso:SpecificationItem , :uuid10100 ;
+	sso:id "16" .
+:uuid10104
+	rdf:type sso:SpecificationItem , :uuid10100 ;
+	sso:id "12" .
+:uuid10105
+	rdf:type sso:SpecificationItem , :uuid10100 ;
+	sso:id "8" .
+:uuid10106
+	rdf:type sso:SpecificationItem , :uuid10100 ;
+	sso:id "5" .
+
+:uuid10200
+	rdf:type owl:Class , sso:SpecificationItemCategoryExclusive , :uuid10 ;
+	rdfs:label "Wire Size" .
+:uuid10201
+	rdf:type sso:SpecificationItem , :uuid10200 ;
+	sso:id "26" .
+:uuid10202
+	rdf:type sso:SpecificationItem , :uuid10200 ;
+	sso:id "24" .
+:uuid10203
+	rdf:type sso:SpecificationItem , :uuid10200 ;
+	sso:id "22" .
+:uuid10204
+	rdf:type sso:SpecificationItem , :uuid10200 ;
+	sso:id "20" .
+:uuid10205
+	rdf:type sso:SpecificationItem , :uuid10200 ;
+	sso:id "18" .
+:uuid10206
+	rdf:type sso:SpecificationItem , :uuid10200 ;
+	sso:id "16" .
+:uuid10207
+	rdf:type sso:SpecificationItem , :uuid10200 ;
+	sso:id "14" .
+:uuid10208
+	rdf:type sso:SpecificationItem , :uuid10200 ;
+	sso:id "12" .
+:uuid10209
+	rdf:type sso:SpecificationItem , :uuid10200 ;
+	sso:id "10" .
+:uuid10210
+	rdf:type sso:SpecificationItem , :uuid10200 ;
+	sso:id "8" .
+
+## Contacts termination types combined from:
+# - Contacts / SIGNAL PC TAIL CONTACTS, page 1-21
+# - Contacts / QUADRAX SIZE 8 PC TAIL CONTACTS, page 1-22
+:uuid10300
+	rdf:type owl:Class , sso:SpecificationItemCategoryExclusive , :uuid10 ;
+	rdfs:label "Contact Terminations with PC tail, crimp or without contacts" .
+:uuid10301
+	rdf:type sso:SpecificationItem , :uuid10300 ;
+	sso:id "RA" ;
+	rdfs:label "Pure-tin, PC tail length A" .
+:uuid10302
+	rdf:type sso:SpecificationItem , :uuid10300 ;
+	sso:id "YA" ;
+	rdfs:label "Tin lead, PC tail length A" .
+:uuid10303
+	rdf:type sso:SpecificationItem , :uuid10300 ;
+	sso:id "ZA" ;
+	rdfs:label "Gold, PC tail length A" .
+:uuid10304
+	rdf:type sso:SpecificationItem , :uuid10300 ;
+	sso:id "RB" ;
+	rdfs:label "Pure-tin, PC tail length B" .
+:uuid10305
+	rdf:type sso:SpecificationItem , :uuid10300 ;
+	sso:id "YB" ;
+	rdfs:label "Tin lead, PC tail length B" .
+:uuid10306
+	rdf:type sso:SpecificationItem , :uuid10300 ;
+	sso:id "ZB" ;
+	rdfs:label "Gold, PC tail length B" .
+:uuid10307
+	rdf:type sso:SpecificationItem , :uuid10300 ;
+	sso:id "RC" ;
+	rdfs:label "Pure-tin, PC tail length C" .
+:uuid10308
+	rdf:type sso:SpecificationItem , :uuid10300 ;
+	sso:id "YC" ;
+	rdfs:label "Tin lead, PC tail length C" .
+:uuid10309
+	rdf:type sso:SpecificationItem , :uuid10300 ;
+	sso:id "ZC" ;
+	rdfs:label "Gold, PC tail length C" .
+:uuid10310
+	rdf:type sso:SpecificationItem , :uuid10300 ;
+	sso:id "RD" ;
+	rdfs:label "Pure-tin, PC tail length D" .
+:uuid10311
+	rdf:type sso:SpecificationItem , :uuid10300 ;
+	sso:id "YD" ;
+	rdfs:label "Tin lead, PC tail length D" .
+:uuid10312
+	rdf:type sso:SpecificationItem , :uuid10300 ;
+	sso:id "ZD" ;
+	rdfs:label "Gold, PC tail length D" .
+:uuid10321
+	rdf:type sso:SpecificationItem , :uuid10300 ;
+	sso:id "XS" ;
+	rdfs:label "Socket insert without contacts" .
+:uuid10322
+	rdf:type sso:SpecificationItem , :uuid10300 ;
+	sso:id "XP" ;
+	rdfs:label "Pin insert without contacts" .
+:uuid10323
+	rdf:type sso:SpecificationItem , :uuid10300 ;
+	sso:id "SS" ;
+	rdfs:label "Socket insert with crimp contacts" .
+:uuid10324
+	rdf:type sso:SpecificationItem , :uuid10300 ;
+	sso:id "SP" ;
+	rdfs:label "Pin insert with crimp contacts" .
+## PC-Tail contact terminations as used for:
+# - Contacts / SIGNAL PC TAIL CONTACTS, page 1-21
+# - Contacts / QUADRAX SIZE 8 PC TAIL CONTACTS, page 1-22
+:uuid10391
+	rdf:type owl:Class , sso:SpecificationItemCategoryExclusive , :uuid10 ;
+	rdfs:subClassOf :uuid10310 ;
+	rdfs:label "PC Tail Contacts" ; # exclude crim and no contacts
+	owl:equivalentClass  [ rdf:type   owl:Class;
+		owl:oneOf  ( :uuid10301 :uuid10302 :uuid10303 :uuid10304 :uuid10305 
+		             :uuid10306 :uuid10307 :uuid10308 :uuid10309 :uuid10310
+		             :uuid10311 :uuid10312 ) ] .
+# ---
+:uuid10392
+	rdf:type owl:Class , sso:SpecificationItemCategoryExclusive , :uuid10 ;
+	rdfs:subClassOf :uuid10310 ;
+	rdfs:label "Contact Terminations for Kits" ; # RA, YA, ZA + XS, XP, SS, SP
+	owl:equivalentClass  [ rdf:type   owl:Class;
+		owl:oneOf  ( :uuid10301 :uuid10302 :uuid10303 :uuid10321 :uuid10322 :uuid10323 :uuid10324 ) ] .
+
+
+# Contacts / SIGNAL & POWER CRIMP CONTACTS, page 1-15
+:uuid11000
+	rdf:type owl:Class , sso:ProductClass , :uuid10 ;
+	rdfs:subClassOf sso:PartCategory_connector_contact ;
+	rdfs:label "Signal & power crimp contacts" .
+:uuid11001
+	rdf:type sso:ProductConfiguration , :uuid11000 ; 
+	sso:id "617200" ;
+	sso:definingSpecificationItem :uuid10101 , :uuid1611 .
+:uuid11002
+	rdf:type sso:ProductConfiguration , :uuid11000 ; 
+	sso:id "617300" ;
+	sso:definingSpecificationItem :uuid10101 , :uuid1612 .
+:uuid11003
+	rdf:type sso:ProductConfiguration , :uuid11000 ; 
+	sso:id "617221" ;
+	sso:definingSpecificationItem :uuid10102 , :uuid1611 .
+:uuid11004
+	rdf:type sso:ProductConfiguration , :uuid11000 ; 
+	sso:id "617320" ;
+	sso:definingSpecificationItem :uuid10102 , :uuid1612 .
+:uuid11005
+	rdf:type sso:ProductConfiguration , :uuid11000 ; 
+	sso:id "617240" ;
+	sso:definingSpecificationItem :uuid10103 , :uuid1611 .
+:uuid11006
+	rdf:type sso:ProductConfiguration , :uuid11000 ; 
+	sso:id "617340" ;
+	sso:definingSpecificationItem :uuid10103 , :uuid1612 .
+:uuid11007
+	rdf:type sso:ProductConfiguration , :uuid11000 ; 
+	sso:id "617221050" ;
+	sso:definingSpecificationItem :uuid10103 , :uuid1611 .
+:uuid11008
+	rdf:type sso:ProductConfiguration , :uuid11000 ; 
+	sso:id "617235003" ;
+	sso:definingSpecificationItem :uuid10103 , :uuid1611 .
+:uuid11009
+	rdf:type sso:ProductConfiguration , :uuid11000 ; 
+	sso:id "617250" ;
+	sso:definingSpecificationItem :uuid10104 , :uuid1611 .
+:uuid11010
+	rdf:type sso:ProductConfiguration , :uuid11000 ; 
+	sso:id "617350" ;
+	sso:definingSpecificationItem :uuid10104 , :uuid1612 .
+:uuid11011
+	rdf:type sso:ProductConfiguration , :uuid11000 ; 
+	sso:id "617291007" ;
+	sso:definingSpecificationItem :uuid10105 , :uuid1611 .
+:uuid11012
+	rdf:type sso:ProductConfiguration , :uuid11000 ; 
+	sso:id "617291002" ;
+	sso:definingSpecificationItem :uuid10105 , :uuid1611 .
+:uuid11013
+	rdf:type sso:ProductConfiguration , :uuid11000 ; 
+	sso:id "617391008" ;
+	sso:definingSpecificationItem :uuid10105 , :uuid1612 .
+:uuid11014
+	rdf:type sso:ProductConfiguration , :uuid11000 ; 
+	sso:id "617391002" ;
+	sso:definingSpecificationItem :uuid10105 , :uuid1612 .
+:uuid11015
+	rdf:type sso:ProductConfiguration , :uuid11000 ; 
+	sso:id "617280003" ;
+	sso:definingSpecificationItem :uuid10106 , :uuid1611 .
+:uuid11016
+	rdf:type sso:ProductConfiguration , :uuid11000 ; 
+	sso:id "617280004" ;
+	sso:definingSpecificationItem :uuid10106 , :uuid1611 .
+:uuid11017
+	rdf:type sso:ProductConfiguration , :uuid11000 ; 
+	sso:id "617280" ;
+	sso:definingSpecificationItem :uuid10106 , :uuid1611 .
+:uuid11018
+	rdf:type sso:ProductConfiguration , :uuid11000 ; 
+	sso:id "617390003" ;
+	sso:definingSpecificationItem :uuid10106 , :uuid1612 .
+:uuid11019
+	rdf:type sso:ProductConfiguration , :uuid11000 ; 
+	sso:id "617390004" ;
+	sso:definingSpecificationItem :uuid10106 , :uuid1612 .
+:uuid11020
+	rdf:type sso:ProductConfiguration , :uuid11000 ; 
+	sso:id "617390" ;
+	sso:definingSpecificationItem :uuid10106 , :uuid1612 .
+:uuid11021
+	rdf:type sso:ProductConfiguration , :uuid11000 ; 
+	sso:id "617260002" ;
+	sso:definingSpecificationItem :uuid10106 , :uuid1611 .
+:uuid11022
+	rdf:type sso:ProductConfiguration , :uuid11000 ; 
+	sso:id "617260001" ;
+	sso:definingSpecificationItem :uuid10106 , :uuid1611 .
+:uuid11023
+	rdf:type sso:ProductConfiguration , :uuid11000 ; 
+	sso:id "617370005" ;
+	sso:definingSpecificationItem :uuid10106 , :uuid1612 .
+:uuid11024
+	rdf:type sso:ProductConfiguration , :uuid11000 ; 
+	sso:id "617370001" ;
+	sso:definingSpecificationItem :uuid10106 , :uuid1612 .
+
+# Contacts / OVERSIZED & REDUCED CRIMP BARREL CONTACTS, page 1-16
+:uuid12000
+	rdf:type owl:Class , sso:ProductClass , :uuid10 ;
+	rdfs:subClassOf sso:PartCategory_connector_contact ;
+	rdfs:label "Oversized & reduced crimp barrel contacts" .
+
+# Contacts / COAXIAL CRIMP CONTACTS, page 1-17
+:uuid13000
+	rdf:type owl:Class , sso:ProductClass , :uuid10 ;
+	rdfs:subClassOf sso:PartCategory_connector_contact ;
+	rdfs:label "Coaxial crimp contacts" .
+
+# Contacts / TWINAX & TRIAX CRIMP CONTACTS, page 1-18
+:uuid14000
+	rdf:type owl:Class , sso:ProductClass , :uuid10 ;
+	rdfs:subClassOf sso:PartCategory_connector_contact ;
+	rdfs:label "Twinax & Triax crimp contacs" .
+
+# Contacts / TWINAX & TRIAX CRIMP CONTACTS, page 1-19
+:uuid15000
+	rdf:type owl:Class , sso:ProductClass , :uuid10 ;
+	rdfs:subClassOf sso:PartCategory_connector_contact ;
+	rdfs:label "Quadrax & BMA crimp contacts" .
+
+# Contacts / LUXCIS® FIBER OPTIC CONTACTS, page 1-20
+:uuid16000
+	rdf:type owl:Class , sso:ProductClass , :uuid10 ;
+	rdfs:subClassOf sso:PartCategory_connector_contact ;
+	rdfs:label "LUXCIS fiber optic contacts" .
+
+# Contacts / SIGNAL PC TAIL CONTACTS, page 1-21
+:uuid17000
+	rdf:type owl:Class , sso:ProductClass , :uuid10 ;
+	rdfs:subClassOf sso:PartCategory_connector_contact ;
+	rdfs:label "Signal PC tail contacts" ;
+	sso:membersHaveMandatorySpecificationItemCategory 
+		:uuid10100 , # Contact Sizes: 22, 20, 16, 12, 8, 5
+		:uuid1600 , # Insert / Contact Types: P, S
+		:uuid10391 . # PC Tail Contacts: RA, YA, ZA, RB, YB, ZB, RC, YC, ZC, RD, YD, ZD
+# -- Size 22
+:uuid17001
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617205510" ;
+	sso:definingSpecificationItem :uuid10301 , :uuid1601, :uuid10101 . # RA, P, 22
+:uuid17002
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617305500" ;
+	sso:definingSpecificationItem :uuid10301 , :uuid1602, :uuid10101 . # RA, S, 22
+:uuid17003
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617205010" ;
+	sso:definingSpecificationItem :uuid10302 , :uuid1601, :uuid10101 . # YA, P, 22
+:uuid17004
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617305" ;
+	sso:definingSpecificationItem :uuid10302 , :uuid1602, :uuid10101 . # YA, S, 22
+:uuid17005
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617205710" ;
+	sso:definingSpecificationItem :uuid10303 , :uuid1601, :uuid10101 . # ZA, P, 22
+:uuid17006
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617305700" ;
+	sso:definingSpecificationItem :uuid10303 , :uuid1602, :uuid10101 . # ZA, S, 22
+:uuid17007
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617205501" ;
+	sso:definingSpecificationItem :uuid10304 , :uuid1601, :uuid10101 . # RB, P, 22
+:uuid17008
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617305501" ;
+	sso:definingSpecificationItem :uuid10304 , :uuid1602, :uuid10101 . # RB, S, 22
+:uuid17009
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617205001" ;
+	sso:definingSpecificationItem :uuid10305 , :uuid1601, :uuid10101 . # YB, P, 22
+:uuid17010
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617305001" ;
+	sso:definingSpecificationItem :uuid10305 , :uuid1602, :uuid10101 . # YB, S, 22
+:uuid17011
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617205701" ;
+	sso:definingSpecificationItem :uuid10306 , :uuid1601, :uuid10101 . # ZB, P, 22
+:uuid17012
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617305701" ;
+	sso:definingSpecificationItem :uuid10306 , :uuid1602, :uuid10101 . # ZB, S, 22
+:uuid17013
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617205515" ;
+	sso:definingSpecificationItem :uuid10307 , :uuid1601, :uuid10101 . # RC, P, 22
+:uuid17014
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617305508" ;
+	sso:definingSpecificationItem :uuid10307 , :uuid1602, :uuid10101 . # RC, S, 22
+:uuid17015
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617205015" ;
+	sso:definingSpecificationItem :uuid10308 , :uuid1601, :uuid10101 . # YC, P, 22
+:uuid17016
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617305008" ;
+	sso:definingSpecificationItem :uuid10308 , :uuid1602, :uuid10101 . # YC, S, 22
+:uuid17017
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617205715" ;
+	sso:definingSpecificationItem :uuid10309 , :uuid1601, :uuid10101 . # ZC, P, 22
+:uuid17018
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617305708" ;
+	sso:definingSpecificationItem :uuid10309 , :uuid1602, :uuid10101 . # ZC, S, 22
+:uuid17019
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617205509" ;
+	sso:definingSpecificationItem :uuid10310 , :uuid1601, :uuid10101 . # RD, P, 22
+:uuid17020
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617305502" ;
+	sso:definingSpecificationItem :uuid10310 , :uuid1602, :uuid10101 . # RD, S, 22
+:uuid17021
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617205009" ;
+	sso:definingSpecificationItem :uuid10311 , :uuid1602, :uuid10101 . # YD, P, 22
+:uuid17022
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617305002" ;
+	sso:definingSpecificationItem :uuid10311 , :uuid1601, :uuid10101 . # YD, S, 22
+:uuid17023
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617205709" ;
+	sso:definingSpecificationItem :uuid10312 , :uuid1602, :uuid10101 . # ZD, P, 22
+:uuid17024
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617305702" ;
+	sso:definingSpecificationItem :uuid10312 , :uuid1601, :uuid10101 . # ZD, S, 22
+# -- Size 20
+:uuid17101
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617222514" ;
+	sso:definingSpecificationItem :uuid10301 , :uuid1601, :uuid10102 . # RA, P, 20
+:uuid17102
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617322505" ;
+	sso:definingSpecificationItem :uuid10301 , :uuid1602, :uuid10102 . # RA, S, 20
+:uuid17103
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617222014" ;
+	sso:definingSpecificationItem :uuid10302 , :uuid1601, :uuid10102 . # YA, P, 20
+:uuid17104
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617322005" ;
+	sso:definingSpecificationItem :uuid10302 , :uuid1602, :uuid10102 . # YA, S, 20
+:uuid17105
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617222714" ;
+	sso:definingSpecificationItem :uuid10303 , :uuid1601, :uuid10102 . # ZA, P, 20
+:uuid17106
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617322705" ;
+	sso:definingSpecificationItem :uuid10303 , :uuid1602, :uuid10102 . # ZA, S, 20
+:uuid17107
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617222512" ;
+	sso:definingSpecificationItem :uuid10304 , :uuid1601, :uuid10102 . # RB, P, 20
+:uuid17108
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617322506" ;
+	sso:definingSpecificationItem :uuid10304 , :uuid1602, :uuid10102 . # RB, S, 20
+:uuid17109
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617222012" ;
+	sso:definingSpecificationItem :uuid10305 , :uuid1601, :uuid10102 . # YB, P, 20
+:uuid17110
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617322006" ;
+	sso:definingSpecificationItem :uuid10305 , :uuid1602, :uuid10102 . # YB, S, 20
+:uuid17111
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617222712" ;
+	sso:definingSpecificationItem :uuid10306 , :uuid1601, :uuid10102 . # ZB, P, 20
+:uuid17112
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617322706" ;
+	sso:definingSpecificationItem :uuid10306 , :uuid1602, :uuid10102 . # ZB, S, 20
+:uuid17113
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617222513" ;
+	sso:definingSpecificationItem :uuid10307 , :uuid1601, :uuid10102 . # RC, P, 20
+:uuid17114
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617322507" ;
+	sso:definingSpecificationItem :uuid10307 , :uuid1602, :uuid10102 . # RC, S, 20
+:uuid17115
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617222013" ;
+	sso:definingSpecificationItem :uuid10308 , :uuid1601, :uuid10102 . # YC, P, 20
+:uuid17116
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617322007" ;
+	sso:definingSpecificationItem :uuid10308 , :uuid1602, :uuid10102 . # YC, S, 20
+:uuid17117
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617222713" ;
+	sso:definingSpecificationItem :uuid10309 , :uuid1601, :uuid10102 . # ZC, P, 20
+:uuid17118
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617322707" ;
+	sso:definingSpecificationItem :uuid10309 , :uuid1602, :uuid10102 . # ZC, S, 20
+:uuid17119
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617222510" ;
+	sso:definingSpecificationItem :uuid10310 , :uuid1601, :uuid10102 . # RD, P, 20
+:uuid17120
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617322509" ;
+	sso:definingSpecificationItem :uuid10310 , :uuid1602, :uuid10102 . # RD, S, 20
+:uuid17121
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617222010" ;
+	sso:definingSpecificationItem :uuid10311 , :uuid1602, :uuid10102 . # YD, P, 20
+:uuid17122
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617322009" ;
+	sso:definingSpecificationItem :uuiduuid1031110101 , :uuid1601, :uuid10102 . # YD, S, 20
+:uuid17123
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617222710" ;
+	sso:definingSpecificationItem :uuid10312 , :uuid1602, :uuid10102 . # ZD, P, 20
+:uuid17124
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617322709" ;
+	sso:definingSpecificationItem :uuid10312 , :uuid1601, :uuid10102 . # ZD, S, 20
+# -- Size 16
+:uuid17201
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617242510" ;
+	sso:definingSpecificationItem :uuid10301 , :uuid1601, :uuid10103 . # RA, P, 16
+:uuid17202
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617342510" ;
+	sso:definingSpecificationItem :uuid10301 , :uuid1602, :uuid10103 . # RA, S, 16
+:uuid17203
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617242010" ;
+	sso:definingSpecificationItem :uuid10302 , :uuid1601, :uuid10103 . # YA, P, 16
+:uuid17204
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617342010" ;
+	sso:definingSpecificationItem :uuid10302 , :uuid1602, :uuid10103 . # YA, S, 16
+:uuid17205
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617242710" ;
+	sso:definingSpecificationItem :uuid10303 , :uuid1601, :uuid10103 . # ZA, P, 16
+:uuid17206
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617342710" ;
+	sso:definingSpecificationItem :uuid10303 , :uuid1602, :uuid10103 . # ZA, S, 16
+:uuid17207
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617242508" ;
+	sso:definingSpecificationItem :uuid10304 , :uuid1601, :uuid10103 . # RB, P, 16
+:uuid17208
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617342511" ;
+	sso:definingSpecificationItem :uuid10304 , :uuid1602, :uuid10103 . # RB, S, 16
+:uuid17209
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617242008" ;
+	sso:definingSpecificationItem :uuid10305 , :uuid1601, :uuid10103 . # YB, P, 16
+:uuid17210
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617342011" ;
+	sso:definingSpecificationItem :uuid10305 , :uuid1602, :uuid10103 . # YB, S, 16
+:uuid17211
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617242708" ;
+	sso:definingSpecificationItem :uuid10306 , :uuid1601, :uuid10103 . # ZB, P, 16
+:uuid17212
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617342711" ;
+	sso:definingSpecificationItem :uuid10306 , :uuid1602, :uuid10103 . # ZB, S, 16
+:uuid17213
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617242517" ;
+	sso:definingSpecificationItem :uuid10307 , :uuid1601, :uuid10103 . # RC, P, 16
+:uuid17214
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617342513" ;
+	sso:definingSpecificationItem :uuid10307 , :uuid1602, :uuid10103 . # RC, S, 16
+:uuid17215
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617242017" ;
+	sso:definingSpecificationItem :uuid10308 , :uuid1601, :uuid10103 . # YC, P, 16
+:uuid17216
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617342013" ;
+	sso:definingSpecificationItem :uuid10308 , :uuid1602, :uuid10103 . # YC, S, 16
+:uuid17217
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617242717" ;
+	sso:definingSpecificationItem :uuid10309 , :uuid1601, :uuid10103 . # ZC, P, 16
+:uuid17218
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617342713" ;
+	sso:definingSpecificationItem :uuid10309 , :uuid1602, :uuid10103 . # ZC, S, 16
+:uuid17219
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617242509" ;
+	sso:definingSpecificationItem :uuid10310 , :uuid1601, :uuid10103 . # RD, P, 16
+:uuid17220
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617342515" ;
+	sso:definingSpecificationItem :uuid10310 , :uuid1602, :uuid10103 . # RD, S, 16
+:uuid17221
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617242009" ;
+	sso:definingSpecificationItem :uuid10311 , :uuid1602, :uuid10103 . # YD, P, 16
+:uuid17222
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617342015" ;
+	sso:definingSpecificationItem :uuid10311 , :uuid1601, :uuid10103 . # YD, S, 16
+:uuid17223
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617242709" ;
+	sso:definingSpecificationItem :uuid10312 , :uuid1602, :uuid10103 . # ZD, P, 16
+:uuid17224
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617342715" ;
+	sso:definingSpecificationItem :uuid10312 , :uuid1601, :uuid10103 . # ZD, S, 16
+# -- Size 12
+:uuid17301
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617259505" ;
+	sso:definingSpecificationItem :uuid10301 , :uuid1601, :uuid10104 . # RA, P, 12
+:uuid17302
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617359505" ;
+	sso:definingSpecificationItem :uuid10301 , :uuid1602, :uuid10104 . # RA, S, 12
+:uuid17303
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617259005" ;
+	sso:definingSpecificationItem :uuid10302 , :uuid1601, :uuid10104 . # YA, P, 12
+:uuid17304
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617359005" ;
+	sso:definingSpecificationItem :uuid10302 , :uuid1602, :uuid10104 . # YA, S, 12
+:uuid17305
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617259705" ;
+	sso:definingSpecificationItem :uuid10303 , :uuid1601, :uuid10104 . # ZA, P, 12
+:uuid17306
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617359705" ;
+	sso:definingSpecificationItem :uuid10303 , :uuid1602, :uuid10104 . # ZA, S, 12
+:uuid17307
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617259506" ;
+	sso:definingSpecificationItem :uuid10304 , :uuid1601, :uuid10104 . # RB, P, 12
+:uuid17308
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617359506" ;
+	sso:definingSpecificationItem :uuid10304 , :uuid1602, :uuid10104 . # RB, S, 12
+:uuid17309
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617259006" ;
+	sso:definingSpecificationItem :uuid10305 , :uuid1601, :uuid10104 . # YB, P, 12
+:uuid17310
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617359006" ;
+	sso:definingSpecificationItem :uuid10305 , :uuid1602, :uuid10104 . # YB, S, 12
+:uuid17311
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617259706" ;
+	sso:definingSpecificationItem :uuid10306 , :uuid1601, :uuid10104 . # ZB, P, 12
+:uuid17312
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617359706" ;
+	sso:definingSpecificationItem :uuid10306 , :uuid1602, :uuid10104 . # ZB, S, 12
+:uuid17313
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617259503" ;
+	sso:definingSpecificationItem :uuid10307 , :uuid1601, :uuid10104 . # RC, P, 12
+:uuid17314
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617359503" ;
+	sso:definingSpecificationItem :uuid10307 , :uuid1602, :uuid10104 . # RC, S, 12
+:uuid17315
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617259003" ;
+	sso:definingSpecificationItem :uuid10308 , :uuid1601, :uuid10104 . # YC, P, 12
+:uuid17316
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617359003" ;
+	sso:definingSpecificationItem :uuid10308 , :uuid1602, :uuid10104 . # YC, S, 12
+:uuid17317
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617259703" ;
+	sso:definingSpecificationItem :uuid10309 , :uuid1601, :uuid10104 . # ZC, P, 12
+:uuid17318
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617359703" ;
+	sso:definingSpecificationItem :uuid10309 , :uuid1602, :uuid10104 . # ZC, S, 12
+:uuid17319
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617259507" ;
+	sso:definingSpecificationItem :uuid10310 , :uuid1601, :uuid10104 . # RD, P, 12
+:uuid17320
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617359507" ;
+	sso:definingSpecificationItem :uuid10310 , :uuid1602, :uuid10104 . # RD, S, 12
+:uuid17321
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617259007" ;
+	sso:definingSpecificationItem :uuid10311 , :uuid1602, :uuid10104 . # YD, P, 12
+:uuid17322
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617359007" ;
+	sso:definingSpecificationItem :uuid10311 , :uuid1601, :uuid10104 . # YD, S, 12
+:uuid17323
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617259707" ;
+	sso:definingSpecificationItem :uuid10312 , :uuid1602, :uuid10104 . # ZD, P, 12
+:uuid17324
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617359707" ;
+	sso:definingSpecificationItem :uuid10312 , :uuid1601, :uuid10104 . # ZD, S, 12
+# -- Size 8
+:uuid17401
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617291501" ;
+	sso:definingSpecificationItem :uuid10301 , :uuid1601, :uuid10105 . # RA, P, 8
+:uuid17402
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617391501" ;
+	sso:definingSpecificationItem :uuid10301 , :uuid1602, :uuid10105 . # RA, S, 8
+:uuid17403
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617291001" ;
+	sso:definingSpecificationItem :uuid10302 , :uuid1601, :uuid10105 . # YA, P, 8
+:uuid17404
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617391001" ;
+	sso:definingSpecificationItem :uuid10302 , :uuid1602, :uuid10105 . # YA, S, 8
+:uuid17405
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617291701" ;
+	sso:definingSpecificationItem :uuid10303 , :uuid1601, :uuid10105 . # ZA, P, 8
+:uuid17406
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617391701" ;
+	sso:definingSpecificationItem :uuid10303 , :uuid1602, :uuid10105 . # ZA, S, 8
+:uuid17407
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617291503" ;
+	sso:definingSpecificationItem :uuid10304 , :uuid1601, :uuid10105 . # RB, P, 8
+:uuid17408
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617391503" ;
+	sso:definingSpecificationItem :uuid10304 , :uuid1602, :uuid10105 . # RB, S, 8
+:uuid17409
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617291003" ;
+	sso:definingSpecificationItem :uuid10305 , :uuid1601, :uuid10105 . # YB, P, 8
+:uuid17410
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617391003" ;
+	sso:definingSpecificationItem :uuid10305 , :uuid1602, :uuid10105 . # YB, S, 8
+:uuid17411
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617291703" ;
+	sso:definingSpecificationItem :uuid10306 , :uuid1601, :uuid10105 . # ZB, P, 8
+:uuid17412
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617391703" ;
+	sso:definingSpecificationItem :uuid10306 , :uuid1602, :uuid10105 . # ZB, S, 8
+:uuid17413
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617291504" ;
+	sso:definingSpecificationItem :uuid10307 , :uuid1601, :uuid10105 . # RC, P, 8
+:uuid17414
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617391504" ;
+	sso:definingSpecificationItem :uuid10307 , :uuid1602, :uuid10105 . # RC, S, 8
+:uuid17415
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617291004" ;
+	sso:definingSpecificationItem :uuid10308 , :uuid1601, :uuid10105 . # YC, P, 8
+:uuid17416
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617391004" ;
+	sso:definingSpecificationItem :uuid10308 , :uuid1602, :uuid10105 . # YC, S, 8
+:uuid17417
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617291704" ;
+	sso:definingSpecificationItem :uuid10309 , :uuid1601, :uuid10105 . # ZC, P, 8
+:uuid17418
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617391704" ;
+	sso:definingSpecificationItem :uuid10309 , :uuid1602, :uuid10105 . # ZC, S, 8
+:uuid17419
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617291505" ;
+	sso:definingSpecificationItem :uuid10310 , :uuid1601, :uuid10105 . # RD, P, 8
+:uuid17420
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617391505" ;
+	sso:definingSpecificationItem :uuid10310 , :uuid1602, :uuid10105 . # RD, S, 8
+:uuid17421
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617291005" ;
+	sso:definingSpecificationItem :uuid10311 , :uuid1602, :uuid10105 . # YD, P, 8
+:uuid17422
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617391005" ;
+	sso:definingSpecificationItem :uuid10311 , :uuid1601, :uuid10105 . # YD, S, 8
+:uuid17423
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617291705" ;
+	sso:definingSpecificationItem :uuid10312 , :uuid1602, :uuid10105 . # ZD, P, 8
+:uuid17424
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617391705" ;
+	sso:definingSpecificationItem :uuid10312 , :uuid1601, :uuid10105 . # ZD, S, 8
+# -- Size 5
+:uuid17501
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617289506" ;
+	sso:definingSpecificationItem :uuid10301 , :uuid1601, :uuid10106 . # RA, P, 5
+:uuid17502
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617389506" ;
+	sso:definingSpecificationItem :uuid10301 , :uuid1602, :uuid10106 . # RA, S, 5
+:uuid17503
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617289006" ;
+	sso:definingSpecificationItem :uuid10302 , :uuid1601, :uuid10106 . # YA, P, 5
+:uuid17504
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617389006" ;
+	sso:definingSpecificationItem :uuid10302 , :uuid1602, :uuid10106 . # YA, S, 5
+:uuid17505
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617289706" ;
+	sso:definingSpecificationItem :uuid10303 , :uuid1601, :uuid10106 . # ZA, P, 5
+:uuid17506
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617389706" ;
+	sso:definingSpecificationItem :uuid10303 , :uuid1602, :uuid10106 . # ZA, S, 5
+:uuid17507
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617289504" ;
+	sso:definingSpecificationItem :uuid10304 , :uuid1601, :uuid10106 . # RB, P, 5
+:uuid17508
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617389504" ;
+	sso:definingSpecificationItem :uuid10304 , :uuid1602, :uuid10106 . # RB, S, 5
+:uuid17509
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617289004" ;
+	sso:definingSpecificationItem :uuid10305 , :uuid1601, :uuid10106 . # YB, P, 5
+:uuid17510
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617389004" ;
+	sso:definingSpecificationItem :uuid10305 , :uuid1602, :uuid10106 . # YB, S, 5
+:uuid17511
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617289704" ;
+	sso:definingSpecificationItem :uuid10306 , :uuid1601, :uuid10106 . # ZB, P, 5
+:uuid17512
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617389704" ;
+	sso:definingSpecificationItem :uuid10306 , :uuid1602, :uuid10106 . # ZB, S, 5
+:uuid17513
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617289503" ;
+	sso:definingSpecificationItem :uuid10307 , :uuid1601, :uuid10106 . # RC, P, 5
+:uuid17514
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617389503" ;
+	sso:definingSpecificationItem :uuid10307 , :uuid1602, :uuid10106 . # RC, S, 5
+:uuid17515
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617289003" ;
+	sso:definingSpecificationItem :uuid10308 , :uuid1601, :uuid10106 . # YC, P, 5
+:uuid17516
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "" ;
+	sso:definingSpecificationItem :uuid10308 , :uuid1602, :uuid10106 . # YC, S, 5
+:uuid17517
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "" ;
+	sso:definingSpecificationItem :uuid10309 , :uuid1601, :uuid10106 . # ZC, P, 5
+:uuid17518
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617389003" ; 
+	sso:definingSpecificationItem :uuid10309 , :uuid1602, :uuid10106 . # ZC, S, 5
+:uuid17519
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617289507" ;
+	sso:definingSpecificationItem :uuid10310 , :uuid1601, :uuid10106 . # RD, P, 5
+:uuid17520
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617389507" ;
+	sso:definingSpecificationItem :uuid10310 , :uuid1602, :uuid10106 . # RD, S, 5
+:uuid17521
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617289007" ;
+	sso:definingSpecificationItem :uuid10311 , :uuid1602, :uuid10106 . # YD, P, 5
+:uuid17522
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617389007" ;
+	sso:definingSpecificationItem :uuid10311 , :uuid1601, :uuid10106 . # YD, S, 5
+:uuid17523
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617289707" ;
+	sso:definingSpecificationItem :uuid10312 , :uuid1602, :uuid10106 . # ZD, P, 5
+:uuid17524
+	rdf:type sso:ProductConfiguration , :uuid17000 , sso:PartCategory_connector_contact ; 
+	sso:id "617389707" ;
+	sso:definingSpecificationItem :uuid10312 , :uuid1601, :uuid10106 . # ZD, S, 5
+# -- 
+
+# Contacts / QUADRAX SIZE 8 PC TAIL CONTACTS, page 1-22
+:uuid18000
+	rdf:type owl:Class , sso:ProductClass , :uuid10 ;
+	rdfs:subClassOf sso:PartCategory_connector_contact ;
+	rdfs:label "Quadrax size 8 PC tail contacts" .
+
+# Contacts / FILLER PLUGS, page 1-23
+:uuid20000
+	rdf:type owl:Class , sso:ProductClass , :uuid10 ;
+	rdfs:subClassOf sso:PartCategory_cavity_plug ;
+	rdfs:label "Filler plugs" .
+:uuid20001
+	rdf:type sso:ProductConfiguration , :uuid20000 , sso:PartCategory_cavity_plug ; 
+	sso:id "620920" ;
+	sso:definingSpecificationItem :uuid10101 .
+:uuid20002
+	rdf:type sso:ProductConfiguration , :uuid20000 , sso:PartCategory_cavity_plug ; 
+	sso:id "610941" ;
+	sso:definingSpecificationItem :uuid10102 .
+:uuid20003
+	rdf:type sso:ProductConfiguration , :uuid20000 , sso:PartCategory_cavity_plug ; 
+	sso:id "620922" ;
+	sso:definingSpecificationItem :uuid10103 .
+:uuid20004
+	rdf:type sso:ProductConfiguration , :uuid20000 , sso:PartCategory_cavity_plug ; 
+	sso:id "F718211200" ;
+	sso:definingSpecificationItem :uuid10103 .
+:uuid20005
+	rdf:type sso:ProductConfiguration , :uuid20000 , sso:PartCategory_cavity_plug ; 
+	sso:id "620923" ;
+	sso:definingSpecificationItem :uuid10104 .
+:uuid20006
+	rdf:type sso:ProductConfiguration , :uuid20000 , sso:PartCategory_cavity_plug ; 
+	sso:id "619953" ;
+	sso:definingSpecificationItem :uuid10105 .
+:uuid20007
+	rdf:type sso:ProductConfiguration , :uuid20000 , sso:PartCategory_cavity_plug ; 
+	sso:id "619950" ;
+	sso:definingSpecificationItem :uuid10105 .
+:uuid20008
+	rdf:type sso:ProductConfiguration , :uuid20000 , sso:PartCategory_cavity_plug ; 
+	sso:id "617930" ;
+	sso:definingSpecificationItem  .
+:uuid20009
+	rdf:type sso:ProductConfiguration , :uuid20000 , sso:PartCategory_cavity_plug ; 
+	sso:id "617931" ;
+	sso:definingSpecificationItem :uuid10106 .
+
+# Contacts / SEALING PLUGS, page 1-23
+:uuid21000
+	rdf:type owl:Class , sso:ProductClass , :uuid10 ;
+	rdfs:subClassOf sso:PartCategory_cavity_plug ;
+	rdfs:label "Sealing plugs" .
+:uuid21001
+	rdf:type sso:ProductConfiguration , :uuid21000 , sso:PartCategory_cavity_plug ; 
+	sso:id "616910" ;
+	sso:definingSpecificationItem :uuid10101 .
+:uuid21002
+	rdf:type sso:ProductConfiguration , :uuid21000 , sso:PartCategory_cavity_plug ; 
+	sso:id "616911" ;
+	sso:definingSpecificationItem :uuid10102 .
+:uuid21003
+	rdf:type sso:ProductConfiguration , :uuid21000 , sso:PartCategory_cavity_plug ; 
+	sso:id "616912" ;
+	sso:definingSpecificationItem :uuid10103 .
+:uuid21004
+	rdf:type sso:ProductConfiguration , :uuid21000 , sso:PartCategory_cavity_plug ; 
+	sso:id "F718211200" ;
+	sso:definingSpecificationItem :uuid10103 .
+:uuid21005
+	rdf:type sso:ProductConfiguration , :uuid21000 , sso:PartCategory_cavity_plug ; 
+	sso:id "616913" ;
+	sso:definingSpecificationItem :uuid10104 .
+:uuid21006
+	rdf:type sso:ProductConfiguration , :uuid21000 , sso:PartCategory_cavity_plug ; 
+	sso:id "618915" ;
+	sso:definingSpecificationItem :uuid10105 .
+:uuid21007
+	rdf:type sso:ProductConfiguration , :uuid21000 , sso:PartCategory_cavity_plug ; 
+	sso:id "616914013" ;
+	sso:definingSpecificationItem :uuid10106 .
+
+# Disconnect Application / EPXA1 & EPXB1 SPARE PARTS / SPARE PARTS & DUST CAPS, page 1-32
+:uuid31000
+	rdf:type owl:Class , sso:ProductClass , :uuid10 ;
+	rdfs:label "EPXA spare parts & dust caps" .
+:uuid31001
+	rdf:type sso:ProductConfiguration , :uuid31000 ; 
+	sso:id "617980032" ;
+	rdfs:label "Polarization Kit for Plug Connector" .
+:uuid31002
+	rdf:type sso:ProductConfiguration , :uuid31000 ; 
+	sso:id "617980033" ;
+	rdfs:label "Polarization Kit for Receptacle Connector" .
+:uuid31003
+	rdf:type sso:ProductConfiguration , :uuid31000 ; 
+	sso:id "617954006" ;
+	rdfs:label "Dust Cap for Plug Shell (Pink Color)" .
+:uuid31004
+	rdf:type sso:ProductConfiguration , :uuid31000 ; 
+	sso:id "617954007" ;
+	rdfs:label "Dust Cap for Receptacle Shell (Pink Color)" .
+:uuid31005
+	rdf:type sso:ProductConfiguration , :uuid31000 ; 
+	sso:id "617954044" ;
+	rdfs:label "ESD Dust Cap for Plug Shell (Black Color)" .
+:uuid31006
+	rdf:type sso:ProductConfiguration , :uuid31000 ; 
+	sso:id "617954045" ;
+	rdfs:label "ESD Dust Cap for Receptacle Shell (Black Color)" .
+:uuid31007
+	rdf:type sso:ProductConfiguration , :uuid31000 ; 
+	sso:id "617929033" ;
+	rdfs:label "Sealing Inserts for Fly Away Applications: Mateable with Pin Insert" .
+:uuid31008
+	rdf:type sso:ProductConfiguration , :uuid31000 ; 
+	sso:id "617929032" ;
+	rdfs:label "Sealing Inserts for Fly Away Applications: Mateable with Socket Insert" .
+# ---
+:uuid32000
+	rdf:type sso:ProductClass , :uuid10 ;
+	rdfs:label "EPXB1 spare parts & dust caps" .
+:uuid32001
+	rdf:type sso:ProductConfiguration , :uuid31000 ; 
+	sso:id "617980030" ;
+	rdfs:label "Polarization Post" .
+:uuid32002
+	rdf:type sso:ProductConfiguration , :uuid31000 ; 
+	sso:id "617980031" ;
+	rdfs:label "Polarization Key" .
+:uuid32003
+	rdf:type sso:ProductConfiguration , :uuid31000 ; 
+	sso:id "617954008" ;
+	rdfs:label "Dust Cap for Plug Shell (Pink Color)" .
+:uuid32004
+	rdf:type sso:ProductConfiguration , :uuid31000 ; 
+	sso:id "617954009" ;
+	rdfs:label "Dust Cap for Receptacle Shell (Pink Color)" .
+:uuid32005
+	rdf:type sso:ProductConfiguration , :uuid31000 ; 
+	sso:id "617954034" ;
+	rdfs:label "ESD Dust Cap for Plug Shell (Black Color)" .
+:uuid32006
+	rdf:type sso:ProductConfiguration , :uuid31000 ; 
+	sso:id "617954028" ;
+	rdfs:label "ESD Dust Cap for Receptacle Shell (Black Color)" .
+:uuid32007
+	rdf:type sso:ProductConfiguration , :uuid31000 ; 
+	sso:id "617929023" ;
+	rdfs:label "Sealing Inserts for Fly Away Applications: Mateable with Pin Insert" .
+:uuid32008
+	rdf:type sso:ProductConfiguration , :uuid31000 ; 
+	sso:id "617929022" ;
+	rdfs:label "Sealing Inserts for Fly Away Applications: Mateable with Socket Insert" .
+
+# Disconnect Application / EPXA1 & EPXB1 ACCESSORIES / STRAIN RELIEFS & EMI BACKSHELLS, page 1-33
+:uuid33000
+	rdf:type sso:ProductClass , :uuid10 ;
+	rdfs:label "EPXA1 Accessories, Strain Reliefs & EMI Backshells" .
+:uuid33001
+	rdf:type sso:ProductConfiguration , :uuid33000 ; 
+	sso:id "617921030" ;
+	rdfs:label "Straight Strain Relief (Composite)" .
+:uuid33002
+	rdf:type sso:ProductConfiguration , :uuid33000 ; 
+	sso:id "617921032" ;
+	rdfs:label "45� Strain Relief (Composite)" .
+# ---
+:uuid34000
+	rdf:type sso:ProductClass , :uuid10 ;
+	rdfs:label "EPXB1 Accessories, Strain Reliefs & EMI Backshells" .
+:uuid34001
+	rdf:type sso:ProductConfiguration , :uuid34000 ; 
+	sso:id "617921029" ;
+	rdfs:label "Straight Strain Relief (Composite)" .
+:uuid34002
+	rdf:type sso:ProductConfiguration , :uuid34000 ; 
+	sso:id "617921031" ;
+	rdfs:label "45� Strain Relief (Composite)" .
+:uuid34003
+	rdf:type sso:ProductConfiguration , :uuid34000 ; 
+	sso:id "617924016" ;
+	rdfs:label "Straight EMI Backshell (Nickel-Plated Aluminium)" .
+:uuid34004
+	rdf:type sso:ProductConfiguration , :uuid34000 ; 
+	sso:id "617928002" ;
+	rdfs:label "Straight EMI Backshell (Nickel-Plated Composite)" .
+:uuid34005
+	rdf:type sso:ProductConfiguration , :uuid34000 ; 
+	sso:id "617921044" ;
+	rdfs:label "Fiber Optic Backshell (Composite)" .
+
+# Disconnect Application / EPXB2 POLARIZATION CODE, page 1-40
+:uuid35000
+	rdf:type sso:ProductClass , :uuid10 ;
+	rdfs:label "EPXB2 polarization codes" .
+:uuid35001
+	rdf:type sso:ProductConfiguration , :uuid35000 , :uuid36000 ; 
+	sso:id "617980029" ;
+	rdfs:label "Jacknut, keying A/B/C/D/E/F, Standard" .
+:uuid35002
+	rdf:type sso:ProductConfiguration , :uuid35000 , :uuid36000 ; 
+	sso:id "617980028" ;
+	rdfs:label "Jacknut, keying N/R/W/X/Y/Z, Standard" .
+:uuid35003
+	rdf:type sso:ProductConfiguration , :uuid35000 , :uuid36000 ; 
+	sso:id "617980022" ;
+	rdfs:label "Jacknut, keying Universal, Standard" .
+:uuid35004
+	rdf:type sso:ProductConfiguration , :uuid35000 , :uuid36000 ; 
+	sso:id "617980012" ;
+	rdfs:label "Jackscrew, keying A/B/C/D/E/F, Standard" .
+:uuid35005
+	rdf:type sso:ProductConfiguration , :uuid35000 , :uuid36000 ; 
+	sso:id "617980013" ;
+	rdfs:label "Jackscrew, keying N/R/W/X/Y/Z, Standard" .
+:uuid35006
+	rdf:type sso:ProductConfiguration , :uuid35000 , :uuid36000 ; 
+	sso:id "617980023" ;
+	rdfs:label "Jackscrew, keying Universal, Standard" .
+:uuid35007
+	rdf:type sso:ProductConfiguration , :uuid35000 , :uuid36000 ; 
+	sso:id "617980066" ;
+	rdfs:label "Jacknut, keying A/B/C/D/E/F, Bulkhead" .
+:uuid35008
+	rdf:type sso:ProductConfiguration , :uuid35000 , :uuid36000 ; 
+	sso:id "617980067" ;
+	rdfs:label "Jacknut, keying N/R/W/X/Y/Z, Bulkhead" .
+
+# Rack & Panel Application / EPXB2 ACCESSORIES, page 1-46
+:uuid36000
+	rdf:type sso:ProductClass , :uuid10 ;
+	rdfs:label "EPXB2 Accessories" .
+:uuid36001
+	rdf:type sso:ProductConfiguration , :uuid36000 ; 
+	sso:id "617922007" ;
+	rdfs:label "Straight Strain Relief (Composite)" .
+:uuid36002
+	rdf:type sso:ProductConfiguration , :uuid36000 ; 
+	sso:id "617922014" ;
+	rdfs:label "Straight Strain Relief for Fiber Optic Cable (Anodized Aluminium)" .
+:uuid36003
+	rdf:type sso:ProductConfiguration , :uuid36000 , sso:PartCategory_backshell ; 
+	sso:id "617928100" ;
+	rdfs:label "Straight EMI Backshell (Nickel-Plated Composite)" .
+:uuid36004
+	rdf:type sso:ProductConfiguration , :uuid36000 , sso:PartCategory_backshell ; 
+	sso:id "617925069" ;
+	rdfs:label "Short Straight EMI Backshell (Nickel-Plated Composite)" .
+:uuid36005
+	rdf:type sso:ProductConfiguration , :uuid36000 , sso:PartCategory_backshell ; 
+	sso:id "617925052" ;
+	rdfs:label "EMI Backshell for Braid Shield Termination (Nickel-Plated Aluminium)" .
+:uuid36006
+	rdf:type sso:ProductConfiguration , :uuid36000 , sso:PartCategory_backshell ; 
+	sso:id "617925054" ;
+	rdfs:label "EMI Backshell For Screened Twisted Pair Cables (Nickel-Plated Aluminium)" .
+:uuid36007
+	rdf:type sso:ProductConfiguration , :uuid36000 , sso:PartCategory_backshell ; 
+	sso:id "617925056" ;
+	rdfs:label "Backshell for Large Sized Wire Harnesses (Nickel-Plated Aluminium)" .
+:uuid36008
+	rdf:type sso:ProductConfiguration , :uuid36000 , sso:PartCategory_backshell ; 
+	sso:id "617925018" ;
+	rdfs:label "EMI Backshell for iEPX Connectors (Composite)" .
+:uuid36009
+	rdf:type sso:ProductConfiguration , :uuid36000 , sso:PartCategory_backshell ; 
+	sso:id "617922029" ;
+	rdfs:label "Fiber Optic Backshell (Composite)" .
+:uuid36010
+	rdf:type sso:ProductConfiguration , :uuid36000 , sso:PartCategory_backshell; 
+	sso:id "617954101" ;
+	rdfs:label "Grounding Spring (For EPXB2 Aluminium Only)" .
+
+# Rack & Panel Application / DISCONNECT TOOLS, page 1-48
+:uuid37000
+	rdf:type sso:ProductClass , :uuid10 ;
+	rdfs:subClassOf sso:PartCategory_tool ;
+	rdfs:label "Disconnect Tools" .
+:uuid37001
+	rdf:type sso:ProductConfiguration , :uuid37000 ; 
+	sso:id "282664" ;
+	rdfs:label "1/4 in. Hex. Screwdriver Bit to Affix the Nut of the Jackscrew or the Jacknut to the EPXB2 Accessories" .
+:uuid37002
+	rdf:type sso:ProductConfiguration , :uuid37000 ; 
+	sso:id "282665" ;
+	rdfs:label "Spigot Wrench to Affix the Nut of the Jackscrew or the Jacknut to the EPXB2 Accessories" .
+:uuid37003
+	rdf:type sso:ProductConfiguration , :uuid37000 ; 
+	sso:id "282666" ;
+	rdfs:label "Allen Wrench for 1/4 turn Fasterner (3/32 in.)" .
+:uuid37004
+	rdf:type sso:ProductConfiguration , :uuid37000 ; 
+	sso:id "282666002" ;
+	rdfs:label "Allen Wrench for Rear Accessories (5/64 in.)" .
+:uuid37005
+	rdf:type sso:ProductConfiguration , :uuid37000 ; 
+	sso:id "282666001" ;
+	rdfs:label "Allen Wrench for Jackscrew (9/64 in.)" .
+:uuid37006
+	rdf:type sso:ProductConfiguration , :uuid37000 ; 
+	sso:id "282521002" ;
+	rdfs:label "Insert Extraction Tool" .
+:uuid37007
+	rdf:type sso:ProductConfiguration , :uuid37000 ; 
+	sso:id "282521004" ;
+	rdfs:label "Right Angle Insert Extraction Tool" .
+:uuid37008
+	rdf:type sso:ProductConfiguration , :uuid37000 ; 
+	sso:id "282521007" ;
+	rdfs:label "Bulkhead Insert Extraction Tool" .
+:uuid37009
+	rdf:type sso:ProductConfiguration , :uuid37000 ; 
+	sso:id "282521005" ;
+	rdfs:label "Insert Extraction Tool" .
+:uuid37010
+	rdf:type sso:ProductConfiguration , :uuid37000 ; 
+	sso:id "617954020" ;
+	rdfs:label "Plastic Box to Protect Wired Inserts during Handling" .
+:uuid37011
+	rdf:type sso:ProductConfiguration , :uuid37000 ; 
+	sso:id "F780855000" ;
+	rdfs:label "Hexagonal Key 2 mm (5/64 in.) Flats for Sleeve Holder Removal" .
+:uuid37012
+	rdf:type sso:ProductConfiguration , :uuid37000 ; 
+	sso:id "282668001" ;
+	rdfs:label "Tweezers to Change Polarizing Posts and Keys" .
+
+# Rack & Panel Application / RACK & PANEL ACCESSORIES, page 1-59
+:uuid38000
+	rdf:type sso:ProductClass , :uuid10 ;
+	rdfs:label "Rack & Panel Accessories" .
+:uuid38001
+	rdf:type sso:ProductConfiguration , :uuid38000 ; 
+	sso:id "617925073" ;
+	rdfs:label "EMI Backshell for Receptacle Only (Aluminium, Nickel-Plated)" .
+:uuid38002
+	rdf:type sso:ProductConfiguration , :uuid38000 ; 
+	sso:id "617922022" ;
+	rdfs:label "Straight Strain Relief for Receptacle Only (Composite)" .
+:uuid38003
+	rdf:type sso:ProductConfiguration , :uuid38000 , sso:PartCategory_end_cap ; 
+	sso:id "617954002" ;
+	rdfs:label "Dust Cap for Plug Shell (Pink Color)" .
+:uuid38004
+	rdf:type sso:ProductConfiguration , :uuid38000 , sso:PartCategory_end_cap ; 
+	sso:id "617954003" ;
+	rdfs:label "Dust Cap for Receptacle Shell (Pink Color)" .
+:uuid38005
+	rdf:type sso:ProductConfiguration , :uuid38000 , sso:PartCategory_end_cap ; 
+	sso:id "617954004" ;
+	rdfs:label "ESD Dust Cap Plug Shell (Black Color)" .
+:uuid38006
+	rdf:type sso:ProductConfiguration , :uuid38000 , sso:PartCategory_end_cap ; 
+	sso:id "617954005" ;
+	rdfs:label "ESD Dust Cap Receptacle Shell (Black Color)" .
+:uuid38007
+	rdf:type sso:ProductConfiguration , :uuid38000 ; 
+	sso:id "617980052" ;
+	rdfs:label "Coding Pin" .
+:uuid38008
+	rdf:type sso:ProductConfiguration , :uuid38000 ; 
+	sso:id "617980030" ;
+	rdfs:label "Polarization Post" .
+:uuid38009
+	rdf:type sso:ProductConfiguration , :uuid38000 ; 
+	sso:id "617980031" ;
+	rdfs:label "Polarization Key" .
+
+# Rack & Panel Application / RACK & PANEL TOOLS, page 1-60
+:uuid39000
+	rdf:type sso:ProductClass , :uuid10 ; # issue, need to be a simple class of Parts, not a ProductClass
+	rdfs:subClassOf sso:PartCategory_tool ;
+	rdfs:label "Rack & Panel Tools" .
+:uuid39001
+	rdf:type sso:ProductConfiguration , :uuid39000 ; 
+	sso:id "282521002" ;
+	rdfs:label "Insert Extraction Tool" .
+:uuid39002
+	rdf:type sso:ProductConfiguration , :uuid39000 ; 
+	sso:id "282521004" ;
+	rdfs:label "Right Angle Insert Extraction Tool" .
+:uuid39003
+	rdf:type sso:ProductConfiguration , :uuid39000 ; 
+	sso:id "617954020" ;
+	rdfs:label "Plastic Box to Protect Wired Inserts During Handling" .
+:uuid39004
+	rdf:type sso:ProductConfiguration , :uuid39000 ; 
+	sso:id "F780855000" ;
+	rdfs:label "Hexagonal Hey 2 mm (5/64 in.) Flats for Sleeve Holder Removal" .
+
+# ISSUES
+# Jacknut 617980029 / 617980029 conflict on A-F / N-Z 

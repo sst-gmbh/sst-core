@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ // Copyright Semantic STEP Technology GmbH, Germany & DCT Co., Ltd. Tianjin, China
+-->
+
+<n0:Uos xmlns:n0="http://standards.iso.org/iso/ts/10303/-4442/-ed-1/tech/xml-schema/domain_model" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://standards.iso.org/iso/ts/10303/-4442/-ed-1/tech/xml-schema/domain_model DomainModel.xsd">
+   <Header>
+      <Name>STEP AP242 WH generator</Name>
+      <TimeStamp>2021-03-15T00:00:00</TimeStamp>
+      <Organization>
+         <Name>EMCoS LLC.</Name>
+      </Organization>
+      <PreprocessorVersion>2.0</PreprocessorVersion>
+   </Header>
+   <DataContainer xsi:type="n0:AP242DataContainer">
+      <ViewContext uid="vc_1">
+         <ApplicationDomain>
+            <PredefinedApplicationDomainEnum>electrical</PredefinedApplicationDomainEnum>
+         </ApplicationDomain>
+         <LifeCycleStage>
+            <ProxyString>design</ProxyString>
+         </LifeCycleStage>
+      </ViewContext>
+      <Unit uid="u_1">
+         <Name>
+            <ClassString>metre</ClassString>
+         </Name>
+         <Quantity>
+            <ClassString>length</ClassString>
+         </Quantity>
+      </Unit>
+      <Class uid="cl_1">
+         <Id id="identification information"/>
+      </Class>
+      <Part uid="prt_5">
+         <Id id="Part_H1"/>
+         <Name>
+            <CharacterString>EWH Test-CaseAssembly1</CharacterString>
+         </Name>
+         <PartTypes>
+            <PartCategoryEnum>wiring_harness</PartCategoryEnum>
+         </PartTypes>
+         <Versions>
+            <PartVersion uid="prt_5_prt_ver_1">
+               <Id id=""/>
+               <Views>
+                  <PartView uid="prt_5_prt_ver_1_prt_view_1" xsi:type="n0:WiringHarnessAssemblyDesign">
+                     <InitialContext uidRef="vc_1"/>
+                     <ViewOccurrenceRelationship uid="or_8" xsi:type="n0:NextAssemblyOccurrenceUsage">
+                        <Related uidRef="occ_8"/>
+                        <RelationType>
+                           <ClassString>next assembly occurrence</ClassString>
+                        </RelationType>
+                     </ViewOccurrenceRelationship>
+                     <ViewOccurrenceRelationship uid="or_7" xsi:type="n0:NextAssemblyOccurrenceUsage">
+                        <Related uidRef="occ_7"/>
+                        <RelationType>
+                           <ClassString>next assembly occurrence</ClassString>
+                        </RelationType>
+                     </ViewOccurrenceRelationship>
+                     <ViewOccurrenceRelationship uid="or_6" xsi:type="n0:NextAssemblyOccurrenceUsage">
+                        <Related uidRef="occ_6"/>
+                        <RelationType>
+                           <ClassString>next assembly occurrence</ClassString>
+                        </RelationType>
+                     </ViewOccurrenceRelationship>
+                     <ViewOccurrenceRelationship uid="or_5" xsi:type="n0:NextAssemblyOccurrenceUsage">
+                        <Related uidRef="occ_5"/>
+                        <RelationType>
+                           <ClassString>next assembly occurrence</ClassString>
+                        </RelationType>
+                     </ViewOccurrenceRelationship>
+                     <ViewOccurrenceRelationship uid="or_4" xsi:type="n0:NextAssemblyOccurrenceUsage">
+                        <Related uidRef="occ_4"/>
+                        <RelationType>
+                           <ClassString>next assembly occurrence</ClassString>
+                        </RelationType>
+                     </ViewOccurrenceRelationship>
+                     <ViewOccurrenceRelationship uid="or_3" xsi:type="n0:NextAssemblyOccurrenceUsage">
+                        <Related uidRef="occ_3"/>
+                        <RelationType>
+                           <ClassString>next assembly occurrence</ClassString>
+                        </RelationType>
+                     </ViewOccurrenceRelationship>
+                     <ViewOccurrenceRelationship uid="or_2" xsi:type="n0:NextAssemblyOccurrenceUsage">
+                        <Related uidRef="occ_2"/>
+                        <RelationType>
+                           <ClassString>next assembly occurrence</ClassString>
+                        </RelationType>
+                     </ViewOccurrenceRelationship>
+                     <ViewOccurrenceRelationship uid="or_1" xsi:type="n0:NextAssemblyOccurrenceUsage">
+                        <Related uidRef="occ_1"/>
+                        <RelationType>
+                           <ClassString>next assembly occurrence</ClassString>
+                        </RelationType>
+                     </ViewOccurrenceRelationship>
+                  </PartView>
+               </Views>
+            </PartVersion>
+         </Versions>
+      </Part>
+      <Part uid="prt_4">
+         <Id id="Connector-A"/>
+         <Name>
+            <CharacterString>Connector-A</CharacterString>
+         </Name>
+         <PartTypes>
+            <PartCategoryEnum>connector</PartCategoryEnum>
+            <PartCategoryEnum>discrete</PartCategoryEnum>
+         </PartTypes>
+         <Versions>
+            <PartVersion uid="prt_4_prt_ver_1">
+               <Id id="Version 1"/>
+               <Views>
+                  <PartView uid="prt_4_prt_ver_1_prt_view_1">
+                     <InitialContext uidRef="vc_1"/>
+                     <Occurrence uid="occ_6" xsi:type="n0:SingleOccurrence">
+                        <Id id="J2"/>
+                     </Occurrence>
+                     <Occurrence uid="occ_5" xsi:type="n0:SingleOccurrence">
+                        <Id id="J1"/>
+                     </Occurrence>
+                  </PartView>
+               </Views>
+            </PartVersion>
+         </Versions>
+      </Part>
+      <Part uid="prt_3">
+         <Id id="Lug-B"/>
+         <Name>
+            <CharacterString>Lug-B</CharacterString>
+         </Name>
+         <PartTypes>
+            <PartCategoryEnum>terminal_lug</PartCategoryEnum>
+            <PartCategoryEnum>discrete</PartCategoryEnum>
+         </PartTypes>
+         <Versions>
+            <PartVersion uid="prt_3_prt_ver_1">
+               <Id id="Version 1"/>
+               <Views>
+                  <PartView uid="prt_3_prt_ver_1_prt_view_1">
+                     <InitialContext uidRef="vc_1"/>
+                     <Occurrence uid="occ_8" xsi:type="n0:SingleOccurrence">
+                        <Id id="J4"/>
+                     </Occurrence>
+                     <Occurrence uid="occ_7" xsi:type="n0:SingleOccurrence">
+                        <Id id="J3"/>
+                     </Occurrence>
+                  </PartView>
+               </Views>
+            </PartVersion>
+         </Versions>
+      </Part>
+      <Part uid="prt_2">
+         <Id id="Cable-D"/>
+         <Name>
+            <CharacterString>Cable-D</CharacterString>
+         </Name>
+         <PartTypes>
+            <PartCategoryEnum>cable</PartCategoryEnum>
+            <PartCategoryEnum>raw_material_by_length</PartCategoryEnum>
+         </PartTypes>
+         <Versions>
+            <PartVersion uid="prt_2_prt_ver_1">
+               <Id id="Version 1"/>
+               <Views>
+                  <PartView uid="prt_2_prt_ver_1_prt_view_1">
+                     <InitialContext uidRef="vc_1"/>
+                     <Occurrence uid="occ_4" xsi:type="n0:CableOccurrence">
+                        <Id id="W4"/>
+                        <Quantity uid="occ_4_q" xsi:type="n0:NumericalValue">
+                           <Unit uidRef="u_1"/>
+                           <ValueComponent>7.2</ValueComponent>
+                        </Quantity>
+                     </Occurrence>
+                     <Occurrence uid="occ_3" xsi:type="n0:CableOccurrence">
+                        <Id id="W3"/>
+                        <Quantity uid="occ_3_q" xsi:type="n0:NumericalValue">
+                           <Unit uidRef="u_1"/>
+                           <ValueComponent>1.8</ValueComponent>
+                        </Quantity>
+                     </Occurrence>
+                  </PartView>
+               </Views>
+            </PartVersion>
+         </Versions>
+      </Part>
+      <Part uid="prt_1">
+         <Id id="Wire-C"/>
+         <Name>
+            <CharacterString>Wire-C</CharacterString>
+         </Name>
+         <PartTypes>
+            <PartCategoryEnum>wire</PartCategoryEnum>
+            <PartCategoryEnum>raw_material_by_length</PartCategoryEnum>
+         </PartTypes>
+         <Versions>
+            <PartVersion uid="prt_1_prt_ver_1">
+               <Id id="Version 1"/>
+               <Views>
+                  <PartView uid="prt_1_prt_ver_1_prt_view_1">
+                     <InitialContext uidRef="vc_1"/>
+                     <Occurrence uid="occ_2" xsi:type="n0:WireOccurrence">
+                        <Id id="W2"/>
+                        <Quantity uid="occ_2_q" xsi:type="n0:NumericalValue">
+                           <Unit uidRef="u_1"/>
+                           <ValueComponent>2.7</ValueComponent>
+                        </Quantity>
+                     </Occurrence>
+                     <Occurrence uid="occ_1" xsi:type="n0:WireOccurrence">
+                        <Id id="W1"/>
+                        <Quantity uid="occ_1_q" xsi:type="n0:NumericalValue">
+                           <Unit uidRef="u_1"/>
+                           <ValueComponent>3.5</ValueComponent>
+                        </Quantity>
+                     </Occurrence>
+                  </PartView>
+               </Views>
+            </PartVersion>
+         </Versions>
+      </Part>
+   </DataContainer>
+</n0:Uos>

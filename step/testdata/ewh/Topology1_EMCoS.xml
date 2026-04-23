@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ // Copyright Semantic STEP Technology GmbH, Germany & DCT Co., Ltd. Tianjin, China
+-->
+
+<n0:Uos xmlns:n0="http://standards.iso.org/iso/ts/10303/-4442/-ed-1/tech/xml-schema/domain_model" xmlns:cmn="http://standards.iso.org/iso/ts/10303/-3000/-ed-1/tech/xml-schema/common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://standards.iso.org/iso/ts/10303/-4442/-ed-1/tech/xml-schema/domain_model DomainModel.xsd">
+   <Header>
+      <Name>STEP AP242 WH generator</Name>
+      <TimeStamp>2021-03-15T00:00:00</TimeStamp>
+      <Organization>
+         <Name>EMCoS LLC.</Name>
+      </Organization>
+      <PreprocessorVersion>2.0</PreprocessorVersion>
+   </Header>
+   <DataContainer xsi:type="n0:AP242DataContainer">
+      <ViewContext uid="vc_1">
+         <ApplicationDomain>
+            <PredefinedApplicationDomainEnum>electrical</PredefinedApplicationDomainEnum>
+         </ApplicationDomain>
+         <LifeCycleStage>
+            <ProxyString>design</ProxyString>
+         </LifeCycleStage>
+      </ViewContext>
+      <Unit uid="u_1">
+         <Name>
+            <ClassString>metre</ClassString>
+         </Name>
+         <Quantity>
+            <ClassString>length</ClassString>
+         </Quantity>
+      </Unit>
+      <Class uid="cl_1">
+         <Id id="identification information"/>
+      </Class>
+      <Part uid="prt_1">
+         <Id id="Part_H1"/>
+         <Name>
+            <CharacterString>EWH Test-Case Topology1</CharacterString>
+         </Name>
+         <PartTypes>
+            <PartCategoryEnum>wiring_harness</PartCategoryEnum>
+         </PartTypes>
+         <Versions>
+            <PartVersion uid="prt_1_prt_ver_1">
+               <Id id=""/>
+               <Views>
+                  <PartView uid="prt_1_prt_ver_1_prt_view_1" xsi:type="n0:WiringHarnessAssemblyDesign">
+                     <InitialContext uidRef="vc_1"/>
+                     <Topology uidRef="rep_1"/>
+                  </PartView>
+               </Views>
+            </PartVersion>
+         </Versions>
+      </Part>
+      <RepresentationContext uid="rep_c_1" xsi:type="n0:GeometricCoordinateSpace">
+         <Id/>
+         <Units>
+            <Unit uidRef="u_1"/>
+         </Units>
+         <Representations>
+            <Representation uid="rep_1" xsi:type="n0:EdgeBasedTopologicalRepresentationWithLengthConstraint">
+               <Id id="Topological representation of H1 harness"/>
+               <Items>
+                  <RepresentationItem uidRef="ce_rep_it_1"/>
+               </Items>
+            </Representation>
+         </Representations>
+         <Items>
+            <RepresentationItem uid="ce_rep_it_1" xsi:type="n0:ConnectedEdgeSet">
+               <ConnectedEdges>
+                  <Edge uidRef="rep_it_2"/>
+                  <Edge uidRef="rep_it_4"/>
+                  <Edge uidRef="rep_it_6"/>
+                  <Edge uidRef="rep_it_8"/>
+                  <Edge uidRef="rep_it_10"/>
+               </ConnectedEdges>
+            </RepresentationItem>
+            <RepresentationItem uid="rep_it_10" xsi:type="n0:EdgeBoundedCurveWithLength">
+               <Name>
+                  <CharacterString>S5</CharacterString>
+               </Name>
+               <EdgeEnd uidRef="vp_rep_it_8"/>
+               <EdgeStart uidRef="vp_rep_it_12"/>
+               <EdgeGeometry uidRef="sub_rep_it_9"/>
+               <SameSense>true</SameSense>
+            </RepresentationItem>
+            <RepresentationItem uid="vp_rep_it_12" xsi:type="n0:VertexPoint">
+               <Name>
+                  <CharacterString>N6</CharacterString>
+               </Name>
+               <VertexGeometry uidRef="p_rep_it_11"/>
+            </RepresentationItem>
+            <RepresentationItem uid="p_rep_it_11" xsi:type="n0:Point"/>
+            <RepresentationItem uid="sub_rep_it_9" xsi:type="n0:BoundedCurveWithLength">
+               <CurveLength>8.0</CurveLength>
+            </RepresentationItem>
+            <RepresentationItem uid="rep_it_8" xsi:type="n0:EdgeBoundedCurveWithLength">
+               <Name>
+                  <CharacterString>S4</CharacterString>
+               </Name>
+               <EdgeEnd uidRef="vp_rep_it_8"/>
+               <EdgeStart uidRef="vp_rep_it_10"/>
+               <EdgeGeometry uidRef="sub_rep_it_7"/>
+               <SameSense>true</SameSense>
+            </RepresentationItem>
+            <RepresentationItem uid="vp_rep_it_10" xsi:type="n0:VertexPoint">
+               <Name>
+                  <CharacterString>N5</CharacterString>
+               </Name>
+               <VertexGeometry uidRef="p_rep_it_9"/>
+            </RepresentationItem>
+            <RepresentationItem uid="p_rep_it_9" xsi:type="n0:Point"/>
+            <RepresentationItem uid="sub_rep_it_7" xsi:type="n0:BoundedCurveWithLength">
+               <CurveLength>8.0</CurveLength>
+            </RepresentationItem>
+            <RepresentationItem uid="rep_it_6" xsi:type="n0:EdgeBoundedCurveWithLength">
+               <Name>
+                  <CharacterString>S3</CharacterString>
+               </Name>
+               <EdgeEnd uidRef="vp_rep_it_4"/>
+               <EdgeStart uidRef="vp_rep_it_8"/>
+               <EdgeGeometry uidRef="sub_rep_it_5"/>
+               <SameSense>true</SameSense>
+            </RepresentationItem>
+            <RepresentationItem uid="vp_rep_it_8" xsi:type="n0:VertexPoint">
+               <Name>
+                  <CharacterString>N4</CharacterString>
+               </Name>
+               <VertexGeometry uidRef="p_rep_it_7"/>
+            </RepresentationItem>
+            <RepresentationItem uid="p_rep_it_7" xsi:type="n0:Point"/>
+            <RepresentationItem uid="sub_rep_it_5" xsi:type="n0:BoundedCurveWithLength">
+               <CurveLength>6.0</CurveLength>
+            </RepresentationItem>
+            <RepresentationItem uid="rep_it_4" xsi:type="n0:EdgeBoundedCurveWithLength">
+               <Name>
+                  <CharacterString>S2</CharacterString>
+               </Name>
+               <EdgeEnd uidRef="vp_rep_it_4"/>
+               <EdgeStart uidRef="vp_rep_it_6"/>
+               <EdgeGeometry uidRef="sub_rep_it_3"/>
+               <SameSense>true</SameSense>
+            </RepresentationItem>
+            <RepresentationItem uid="vp_rep_it_6" xsi:type="n0:VertexPoint">
+               <Name>
+                  <CharacterString>N2</CharacterString>
+               </Name>
+               <VertexGeometry uidRef="p_rep_it_5"/>
+            </RepresentationItem>
+            <RepresentationItem uid="p_rep_it_5" xsi:type="n0:Point"/>
+            <RepresentationItem uid="sub_rep_it_3" xsi:type="n0:BoundedCurveWithLength">
+               <CurveLength>4.0</CurveLength>
+            </RepresentationItem>
+            <RepresentationItem uid="rep_it_2" xsi:type="n0:EdgeBoundedCurveWithLength">
+               <Name>
+                  <CharacterString>S1</CharacterString>
+               </Name>
+               <EdgeEnd uidRef="vp_rep_it_2"/>
+               <EdgeStart uidRef="vp_rep_it_4"/>
+               <EdgeGeometry uidRef="sub_rep_it_1"/>
+               <SameSense>true</SameSense>
+            </RepresentationItem>
+            <RepresentationItem uid="vp_rep_it_4" xsi:type="n0:VertexPoint">
+               <Name>
+                  <CharacterString>N3</CharacterString>
+               </Name>
+               <VertexGeometry uidRef="p_rep_it_3"/>
+            </RepresentationItem>
+            <RepresentationItem uid="p_rep_it_3" xsi:type="n0:Point"/>
+            <RepresentationItem uid="vp_rep_it_2" xsi:type="n0:VertexPoint">
+               <Name>
+                  <CharacterString>N1</CharacterString>
+               </Name>
+               <VertexGeometry uidRef="p_rep_it_1"/>
+            </RepresentationItem>
+            <RepresentationItem uid="p_rep_it_1" xsi:type="n0:Point"/>
+            <RepresentationItem uid="sub_rep_it_1" xsi:type="n0:BoundedCurveWithLength">
+               <CurveLength>2.0</CurveLength>
+            </RepresentationItem>
+         </Items>
+         <DimensionCount>1</DimensionCount>
+      </RepresentationContext>
+   </DataContainer>
+</n0:Uos>

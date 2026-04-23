@@ -1,0 +1,30 @@
+@prefix color:	<http://ontology.semanticstep.net/color#> .
+@prefix countrycodes:	<http://ontology.semanticstep.net/countrycodes#> .
+@prefix currencycodes:	<http://ontology.semanticstep.net/currencycodes#> .
+@prefix eed:	<http://ontology.semanticstep.net/eed#> .
+@prefix lci:	<http://ontology.semanticstep.net/lci#> .
+@prefix qau:	<http://ontology.semanticstep.net/qau#> .
+@prefix rep:	<http://ontology.semanticstep.net/rep#> .
+@prefix ssmeta:	<http://ontology.semanticstep.net/ssmeta#> .
+@prefix sso:	<http://ontology.semanticstep.net/sso#> .
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:	<http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:	<http://www.w3.org/2002/07/owl#> .
+@prefix skos:	<http://www.w3.org/2004/02/skos/core#> .
+@prefix :	<urn:uuid:b4c5887e-8b47-4902-8403-8b19a0218230#> .
+@prefix ns0:	<urn:uuid:382e9f12-9ffb-45d2-82f5-e11426ef2f47#> .
+@prefix ns1:	<urn:uuid:716ccd11-7156-4f89-a896-5b7c9d8ef242#> .
+@prefix ns2:	<urn:uuid:86693fb1-1a5c-4733-8f8b-fdd71874e4af#> .
+@prefix ns3:	<urn:uuid:db52fd3e-c347-4813-9d25-8ed383e3260d#> .
+@prefix ns4:	<urn:uuid:ce8e4f2a-2912-4251-add7-d747e4069e48#> .
+
+<urn:uuid:b4c5887e-8b47-4902-8403-8b19a0218230>	a	owl:Ontology ;
+	owl:imports	<urn:uuid:ce8e4f2a-2912-4251-add7-d747e4069e48> .
+:2a494be5-79eb-4cfc-b71a-7b372e5fd032	a	sso:Part ,
+			ns0:b49c82f4-c0a2-4eb5-9c06-200661987cfc ,
+			ns1:2aaca392-615b-4128-9f62-813e5b3952a9 ,
+			ns2:d9751ce5-95b0-49d0-874d-79a66ab6737e ,
+			ns3:6ecdef66-36b3-4259-a05e-043bcd27aa33 ;
+	rdfs:comment	"1048576 WORDx9 BIT DRAM MODULE" ;
+	ns4:271be5c4-57be-4547-8097-160eaba0cffb	"THM91001AL-10" .

@@ -1,0 +1,1151 @@
+@base          <urn:uuid:0f8b94cb-a412-4bd1-b614-eaf3c3b4c47e> .
+@prefix ProductOccurrenceSchema: <http://semanticstep.net/sst/v1/ProductOccurrenceSchema#> .
+@prefix :      <urn:uuid:0f8b94cb-a412-4bd1-b614-eaf3c3b4c47e#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix PropertySchema: <http://semanticstep.net/sst/v1/PropertySchema#> .
+@prefix QuantityAndUnitSchema: <http://semanticstep.net/sst/v1/QuantityAndUnitSchema#> .
+@prefix PartTaxonomySchema: <http://semanticstep.net/sst/v1/PartTaxonomySchema#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix AssemblyDesignSchema: <http://semanticstep.net/sst/v1/AssemblyDesignSchema#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix self:  <urn:uuid:0f8b94cb-a412-4bd1-b614-eaf3c3b4c47e> .
+@prefix AspectSchema: <http://semanticstep.net/sst/v1/AspectSchema#> .
+@prefix ProductTaxonomySchema: <http://semanticstep.net/sst/v1/ProductTaxonomySchema#> .
+@prefix IdentifierAndVersionSchema: <http://semanticstep.net/sst/v1/IdentifierAndVersionSchema#> .
+
+:212b16d9-0cde-4b7b-a33f-0c9146a2e8db
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  ( "318180" "318181" ) ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:48375242-8cef-4f05-91d7-cea41ca37924#main> .
+
+:416a0daa-47ec-4e01-9e10-76e800b4fe88
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "1318180" .
+
+:b772fb3d-5d4e-4b8e-a8f5-b82d729bc7b4
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318505" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:1aff1e3a-994d-41c4-a96d-5ef96efedd21#main> .
+
+:881a8e8b-4f3b-47da-9a70-00c9c19e1025
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318455" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:07ca55b7-142d-497d-ac0d-0a2b97fce6b5#main> .
+
+:90a100bc-28b8-4364-941e-b6be15670355
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318200" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:324e0add-7791-47db-a2a4-980506ca6783#main> .
+
+:4a2ac8a4-605b-4856-bab9-ccf7e2430ef5
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318780" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:f0d8a38c-3ca3-4dd5-9339-696dfa298879#main> .
+
+:3cab6f54-b990-4e87-9a18-15b963836393
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318310" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:7aeb1ca9-ecf5-4de0-a9e9-24dca10a802d#main> .
+
+:8f1be4c9-0229-428a-8892-4f38874dd4bf
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318580" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:eb5ca243-6ba8-44bc-88de-6943473d74c7#main> .
+
+:205edd94-f404-462b-973f-49c9246c82bc
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318500" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:1aff1e3a-994d-41c4-a96d-5ef96efedd21#main> .
+
+:acacafa6-5f2e-4442-9666-478aea9638e4
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318465" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:07ca55b7-142d-497d-ac0d-0a2b97fce6b5#main> .
+
+:17e1a8ff-4e54-44e9-a312-7a48e1f39c27
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318470" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:07ca55b7-142d-497d-ac0d-0a2b97fce6b5#main> .
+
+:acfebe28-da0b-4848-90d4-afe18095cc60
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318345" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:0aa2cd21-e62a-4000-87ff-60bd5d3d35e4#main> .
+
+:a8bc48fa-0977-4fbe-8c7a-ddf78b0dbc65
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318775" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:f0d8a38c-3ca3-4dd5-9339-696dfa298879#main> .
+
+[ a       AspectSchema:Aspect , PropertySchema:PropertyValue , QuantityAndUnitSchema:PhysicalQuantity , QuantityAndUnitSchema:VolumeQuantity , QuantityAndUnitSchema:Quantity ;
+  QuantityAndUnitSchema:cubicMetreScale
+          [ a       QuantityAndUnitSchema:RealDatatype ;
+            QuantityAndUnitSchema:multiplicationFactor
+                    QuantityAndUnitSchema:siPrefix-milli ;
+            QuantityAndUnitSchema:real_value
+                    "2029773.0"^^xsd:double
+          ]
+] .
+
+:a3bf5d32-e0ed-4241-bc61-099a758d81cb
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318705" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:db3fe860-8ab6-48dc-a679-a202f991e8a9#main> .
+
+:7774182e-81bf-4d5d-9dd4-0f3290d83285
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318590" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:eb5ca243-6ba8-44bc-88de-6943473d74c7#main> .
+
+:450a02a6-d9ab-4e2e-a812-39764cd00ce0
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318675" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:db3fe860-8ab6-48dc-a679-a202f991e8a9#main> .
+
+:55379595-3958-45d7-828d-20f6ae1bdbfb
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318155" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:b18b08dd-8d53-4c27-8d11-d4d8185a2ac6#main> .
+
+:db701f73-3154-4438-b5cc-3574b6e4b197
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318785" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:f0d8a38c-3ca3-4dd5-9339-696dfa298879#main> .
+
+:b7da93bf-5fb5-45d2-824e-c3d81e448b5e
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318530" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:a4acaea7-546c-4307-ac88-6c8b034532f6#main> .
+
+:637e5ed3-be87-4da8-9850-21eb7e9658e1
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318100" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:ea5766ff-bec9-45d8-95df-4f2812eae314#8869fb0d-60e7-4623-a8d7-ca94f5d9f4ba> .
+
+:79a06a1d-8df7-4992-8b6d-35895ab8dae9
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318930" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:c26a4870-f7cd-463c-8bad-6e69c5e5890c#main> .
+
+:e02a8b08-03a5-4e31-adb1-5337b0c74253
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318195" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:beb83239-c26b-48b3-965b-528dfabd1cba#main> .
+
+:27d41155-066e-40aa-b139-ddf3e1dda66a
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318760" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:db3fe860-8ab6-48dc-a679-a202f991e8a9#main> .
+
+:fa08f488-5628-41ba-8f33-8c6c0b89e27b
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318605" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:1aa9f40c-3cf1-44f3-a3e9-8cd2b82a5825#2c9f03b4-f596-4da0-b8ee-debd45a6af01> .
+
+:ddfadafc-bfe0-42b9-8252-5ac8337aaa31
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318130" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:65d0bcc0-1642-4bec-b619-eb304a9b57c5#main> .
+
+:cc1b1bdb-8395-4648-9ee2-282e8ac87fcb
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318800" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:f0d8a38c-3ca3-4dd5-9339-696dfa298879#main> .
+
+:4370d060-a072-4ceb-b127-deef73cc3798
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318360" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:18dbead4-eb3b-46fe-956a-dad859546108#main> .
+
+:5bfbcc90-a9d9-406a-82ec-92a6575583c6
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318205" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:324e0add-7791-47db-a2a4-980506ca6783#main> .
+
+:bf2b9eb9-8601-43cd-9824-4fd0676dd5d2
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318915" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:cc284ee3-cb77-4022-aefe-c633959203ef#main> .
+
+:685371cb-d15d-45ca-bb8e-b5e379e4154b
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318110" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:fa86f08b-998f-4dcc-9d52-62bb66016230#main> .
+
+:a0eee9f0-da43-454e-9039-0c30d533f517
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318615" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:79d3b38b-6c2a-4bee-938b-41aff7352885#main> .
+
+:114be9e1-47e6-4ffb-b51f-ef8bb0b6ea11
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318660" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:d8bf8336-cbca-4e16-9708-5bb3190c86e3#main> .
+
+:182dfb5c-d9c1-4ef7-b175-49c25e5fee32
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318120" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:8c832115-bb1c-4309-a40f-965d61d36c31#main> .
+
+:7d0b4505-daaa-41b5-adb5-3710339059a5
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318070" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:f98a69d3-5e07-492c-b8a3-e816e1f36c7b#5a032a09-fd6d-4daa-bf59-01ddd506b63b> .
+
+:0577042f-9d06-430e-917b-5b85c43e640d
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318140" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:fa5aba44-eb0b-454e-837e-d5fd07264cc0#main> .
+
+:c98afa37-ae8b-4c6f-9d5a-2c7bfd597b4d
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318115" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:f65eeb02-52d2-47ec-8c22-e77db856ce1a#main> .
+
+:756640ff-8f93-4128-8be4-a47df133b5c4
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318895" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:a37e9ec8-d148-4260-93bb-66967de60016#main> .
+
+:55b9644b-e7d1-4d19-a963-54e84d08e1cc
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318460" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:ac58664f-9d77-4cf3-830a-01f8ad00cddd#main> .
+
+:83037b7d-c39a-4e07-9873-461578f270ee
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318235" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:2b2bc6bd-eb4e-47fb-bcd9-583800293095#main> .
+
+:3104cfe0-36c2-47af-bd6c-e8c8f2814a3a
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318175" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:6dab6e32-1407-4d99-ba4f-30a546508d18#main> .
+
+:242d4236-0683-46af-83ef-9cd7e532fa53
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318135" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:bed027a3-c2ca-4380-ab43-96291807980e#main> .
+
+:23f41bda-6ece-47a6-941c-eb99dcc91a7f
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318270" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:435b24b8-729d-4192-a457-3303c187699e#main> .
+
+:777b05c8-22be-401a-b7f0-afb1908cf403
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318305" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:383095a3-f202-438c-838a-d1b8181fb8d3#main> .
+
+:ba3d0047-d643-4ec4-b195-a7b54d47b3a7
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318625" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:6b706060-05ff-441d-b6a7-1750ea71f3d1#main> .
+
+:c3805deb-cd0e-4be8-9098-9d064dd726c6
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318320" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:c49763e4-8132-42b0-97d6-0ec3df822924#main> .
+
+:1ee88ab1-fd90-440d-b2c0-958c1f17ad62
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318330" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:db50daf1-dce1-4cb3-a292-74378bf7ff3b#main> .
+
+:84397879-d58e-49f0-b53d-7f441ad8eaa8
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318240" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:2b2bc6bd-eb4e-47fb-bcd9-583800293095#main> .
+
+:8f6dcce5-ed69-4476-936f-4813ddf847cc
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318925" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:39a54760-6a43-4a3d-926d-d41678f49947#main> .
+
+:91cab0ea-7a9b-4a29-930f-c1d0902a639c
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318245" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:42e069e7-00f0-4d5e-be0e-f63221acb077#main> .
+
+:baa1cac1-b0cf-4d77-9df5-480557d182ec
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318210" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:324e0add-7791-47db-a2a4-980506ca6783#main> .
+
+:e22b5dd6-30d2-4edb-9006-16b2103200be
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318850" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:dfb0e344-1e29-49d5-a834-13e47d8f03f3#main> .
+
+:97e3bcf3-b3b6-44b8-8a19-a088e7468edc
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318890" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:a9d60f7b-2220-4632-b1ac-707b8d421b65#main> .
+
+:41ee8f87-de0b-4d21-bb2a-88f986e28f9f
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318855" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:dfb0e344-1e29-49d5-a834-13e47d8f03f3#main> .
+
+:6e764a66-ca83-462b-9938-0248324799a2
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318585" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:eb5ca243-6ba8-44bc-88de-6943473d74c7#main> .
+
+:7d1f3b9f-7756-4e80-9f1b-617246d6129c
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318885" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:27196e6a-9022-4529-b763-4111137b4e03#main> .
+
+:25d497f0-9b16-40d1-9c12-b3ae5d07a794
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318860" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:324e0add-7791-47db-a2a4-980506ca6783#main> .
+
+:76e2772d-00ae-433d-8c44-9a5a9ec0a7c9
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318830" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:38330e63-d0b1-4330-bbc4-72372e2664b6#05d312df-624a-4af1-a7bc-2f933b17e12f> .
+
+:23f5069d-c894-4269-9f5b-ad7163f5d24c
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318480" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:07ca55b7-142d-497d-ac0d-0a2b97fce6b5#main> .
+
+:872e20b3-40ef-4bc7-83dc-5723c41d0c5d
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318790" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:f0d8a38c-3ca3-4dd5-9339-696dfa298879#main> .
+
+:5b84fb91-0cf4-4c4e-9bb0-462151203b1d
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318440" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:5df43fd7-0e7a-4f68-ab40-404f1b2a0dbd#main> .
+
+:20db2dbb-e181-4cf4-80d5-1db7afae49fc
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318485" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:0ba86438-d202-45b0-b320-3690f6dea09b#525458cd-41f7-4ddc-b2b7-1fe39733520c> .
+
+:main   a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , PartTaxonomySchema:DiscretePart , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , PartTaxonomySchema:ProduciblePart , ProductTaxonomySchema:TypicalPhysicalProduct , PartTaxonomySchema:DetailedPart ;
+        IdentifierAndVersionSchema:id  "assembly, combiner, 6700, 1500-3340" .
+
+:9ab45acc-c1ea-48c0-ae82-db30a904e51e
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318765" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:db3fe860-8ab6-48dc-a679-a202f991e8a9#main> .
+
+:66c830c8-9c33-401d-be2e-829400a1c6b2
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318255" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:53e4942b-42be-4fb1-89c8-0238d617a557#5606a644-628c-45ae-8996-7d1164d6103d> .
+
+:b1e54ae0-77eb-4329-8515-8c97db0dfdfb
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318410" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:cc284ee3-cb77-4022-aefe-c633959203ef#main> .
+
+:ad131e50-9cc8-49aa-bed7-cb4b7e917649
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318750" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:db3fe860-8ab6-48dc-a679-a202f991e8a9#main> .
+
+self:   a            owl:Ontology ;
+        owl:imports  <urn:uuid:48375242-8cef-4f05-91d7-cea41ca37924> , <urn:uuid:8280562e-e7a4-4458-9116-276f877f5929> , <urn:uuid:b18b08dd-8d53-4c27-8d11-d4d8185a2ac6> , <urn:uuid:38ce1db9-0ca5-4136-bab2-a7a18b89f249> , <urn:uuid:bf1ad938-738c-4199-9c90-2a1d4ea717f3> , <urn:uuid:d89854c6-b620-4280-95bb-17c654f9e68b> , <urn:uuid:5526e035-faf3-41e7-961d-e895410b9769> , <urn:uuid:0ba86438-d202-45b0-b320-3690f6dea09b> , <urn:uuid:2b2bc6bd-eb4e-47fb-bcd9-583800293095> , <urn:uuid:39a54760-6a43-4a3d-926d-d41678f49947> , <urn:uuid:08c58513-b1cb-45fa-81d6-c41b7bbf9206> , <urn:uuid:d972ff00-f3c7-45be-b255-b0554bcadd8d> , <urn:uuid:69ca7e4f-658c-43cb-ad38-90cfefc96deb> , <urn:uuid:0c275d74-b312-4f57-918f-6e5fa3aa2cb1> , <urn:uuid:41924e95-6ee5-45ba-9906-2d746f987e39> , <urn:uuid:beb83239-c26b-48b3-965b-528dfabd1cba> , <urn:uuid:65374914-963c-4b1b-b339-ce75a2c2d71b> , <urn:uuid:ac58664f-9d77-4cf3-830a-01f8ad00cddd> , <urn:uuid:bf04ac00-2f59-49f0-8dc1-01e9b5f1db7d> , <urn:uuid:fa5aba44-eb0b-454e-837e-d5fd07264cc0> , <urn:uuid:42f84842-7503-4350-a000-0207d9a50feb> , <urn:uuid:6ef3de68-8a6e-43c4-aa77-44bb84b04abb> , <urn:uuid:16a99502-e032-4c02-b3a7-f211645a2f84> , <urn:uuid:27196e6a-9022-4529-b763-4111137b4e03> , <urn:uuid:c4f442e1-9a61-4423-b826-b5d74b22e721> , <urn:uuid:79d3b38b-6c2a-4bee-938b-41aff7352885> , <urn:uuid:cc284ee3-cb77-4022-aefe-c633959203ef> , <urn:uuid:1394c7e4-0649-4373-9cf5-12010e87777f> , <urn:uuid:a37e9ec8-d148-4260-93bb-66967de60016> , <urn:uuid:53e4942b-42be-4fb1-89c8-0238d617a557> , <urn:uuid:ed232e3b-bb8c-459a-9269-7ecd57166846> , <urn:uuid:c26a4870-f7cd-463c-8bad-6e69c5e5890c> , <urn:uuid:c4038aee-7211-4510-8bb9-a35a35c065fa> , <urn:uuid:a21402d1-2769-4e20-a1d6-d28878c619bb> , <urn:uuid:324e0add-7791-47db-a2a4-980506ca6783> , <urn:uuid:bed027a3-c2ca-4380-ab43-96291807980e> , <urn:uuid:3f8ec845-a5be-4033-9f88-828651e88869> , <urn:uuid:5f1418be-5ab0-4aeb-b496-57646dadbd89> , <urn:uuid:ff7874e9-3607-4377-abdf-4a379e18776b> , <urn:uuid:d6bc6e61-168f-45ff-90ce-297d826423a5> , <urn:uuid:f98a69d3-5e07-492c-b8a3-e816e1f36c7b> , <urn:uuid:383095a3-f202-438c-838a-d1b8181fb8d3> , <urn:uuid:db50daf1-dce1-4cb3-a292-74378bf7ff3b> , <urn:uuid:8ff7cdae-ac61-4e47-b6e6-3ce64e34e76f> , <urn:uuid:a0feffae-4669-42ef-ba7b-9d27299aaa83> , <urn:uuid:a9d60f7b-2220-4632-b1ac-707b8d421b65> , <urn:uuid:8aadf1c8-a920-4a13-860b-b01c5540e236> , <urn:uuid:0aa2cd21-e62a-4000-87ff-60bd5d3d35e4> , <urn:uuid:eb5ca243-6ba8-44bc-88de-6943473d74c7> , <urn:uuid:3ce1737d-0a9e-453a-a593-bdd59b11c185> , <urn:uuid:1aa9f40c-3cf1-44f3-a3e9-8cd2b82a5825> , <urn:uuid:a1bc821a-fa4f-4dcd-b3ea-3735a715246b> , <urn:uuid:16c189dd-8972-410e-bb97-6bb9f6d5de8f> , <urn:uuid:435b24b8-729d-4192-a457-3303c187699e> , <urn:uuid:a7f53f65-c18e-4634-844f-0ade712ee075> , <urn:uuid:18dbead4-eb3b-46fe-956a-dad859546108> , <urn:uuid:6dab6e32-1407-4d99-ba4f-30a546508d18> , <urn:uuid:6b33ae42-b4f2-4e04-9326-ddadd58aabd0> , <urn:uuid:06f27a5e-29ac-4924-83ed-3d4b144ea6ea> , <urn:uuid:c28643f7-4add-469c-a676-e982fdf8ab9f> , <urn:uuid:f65eeb02-52d2-47ec-8c22-e77db856ce1a> , <urn:uuid:a4acaea7-546c-4307-ac88-6c8b034532f6> , <urn:uuid:42e069e7-00f0-4d5e-be0e-f63221acb077> , <urn:uuid:98803922-a8d4-4447-81fe-6ce745e7764a> , <urn:uuid:7aeb1ca9-ecf5-4de0-a9e9-24dca10a802d> , <urn:uuid:6b706060-05ff-441d-b6a7-1750ea71f3d1> , <urn:uuid:d8bf8336-cbca-4e16-9708-5bb3190c86e3> , <urn:uuid:c49763e4-8132-42b0-97d6-0ec3df822924> , <urn:uuid:dfb0e344-1e29-49d5-a834-13e47d8f03f3> , <urn:uuid:09dabf7e-35ae-4426-9153-03ab516fc6d4> , <urn:uuid:db3fe860-8ab6-48dc-a679-a202f991e8a9> , <urn:uuid:caa00301-7fea-449c-9b43-ef21258505fa> , <urn:uuid:2f22fb7f-82c8-4e5d-95ba-8a7840345b5c> , <urn:uuid:f540806d-127f-4715-8358-4571e0a59727> , <urn:uuid:ce3f25ad-17fd-4949-b06f-078d3b5b3cb5> , <urn:uuid:5df43fd7-0e7a-4f68-ab40-404f1b2a0dbd> , <urn:uuid:920a5476-bff4-4740-abff-85d47c93406a> , <urn:uuid:8c832115-bb1c-4309-a40f-965d61d36c31> , <urn:uuid:65d0bcc0-1642-4bec-b619-eb304a9b57c5> , <urn:uuid:07ca55b7-142d-497d-ac0d-0a2b97fce6b5> , <urn:uuid:8d7e5608-7979-4e4f-b711-7b89f597d597> , <urn:uuid:38330e63-d0b1-4330-bbc4-72372e2664b6> , <urn:uuid:a20a5721-181c-4c18-9e77-48d6461debfe> , <urn:uuid:fa86f08b-998f-4dcc-9d52-62bb66016230> , <urn:uuid:a81d4bfd-2104-45fb-bf7c-2033d217400a> , <urn:uuid:1aff1e3a-994d-41c4-a96d-5ef96efedd21> , <urn:uuid:4e72dd33-0eef-4372-a2cf-338e67d33020> , <urn:uuid:ea5766ff-bec9-45d8-95df-4f2812eae314> , <urn:uuid:87479529-84ec-4575-9b09-ef2c2b4d54e6> , <urn:uuid:eb7e43e7-cf45-4ba1-98f8-980eaa3a5e18> , <urn:uuid:7df18ced-6bfe-41f5-9fa9-84ee717ea15f> , <urn:uuid:d318599f-3ecf-4f93-9f73-f9848b632d7a> , <urn:uuid:d8312538-99be-4158-94e1-ee6eddc47f59> , <urn:uuid:56b52cd6-2e47-4ea4-9e4c-41c498c58277> , <urn:uuid:f0d8a38c-3ca3-4dd5-9339-696dfa298879> , <urn:uuid:098ae4c1-b378-4d96-ac63-01667f8c6e06> .
+
+[ a       AspectSchema:Aspect , QuantityAndUnitSchema:AreaQuantity , PropertySchema:PropertyValue , QuantityAndUnitSchema:Quantity , QuantityAndUnitSchema:PhysicalQuantity ;
+  QuantityAndUnitSchema:squareMetreScale
+          [ a       QuantityAndUnitSchema:RealDatatype ;
+            QuantityAndUnitSchema:multiplicationFactor
+                    QuantityAndUnitSchema:siPrefix-milli ;
+            QuantityAndUnitSchema:real_value
+                    "899397.0"^^xsd:double
+          ]
+] .
+
+:8d7de22d-edc4-4120-bb59-a10d3bd4bd19
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318640" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:2f22fb7f-82c8-4e5d-95ba-8a7840345b5c#c8847777-02a4-472b-b800-cf324d02e70c> .
+
+:64f9dbe3-4e2b-4aca-93a9-1c851ff07138
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318840" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:2f22fb7f-82c8-4e5d-95ba-8a7840345b5c#c8847777-02a4-472b-b800-cf324d02e70c> .
+
+:3da5032c-4e8d-4ef3-a794-b06c6a1703d6
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318260" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:69ca7e4f-658c-43cb-ad38-90cfefc96deb#3753a638-0688-4150-92d3-7ea0618aab32> .
+
+:148553e0-3980-410d-b1b3-880375b36ab9
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318735" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:db3fe860-8ab6-48dc-a679-a202f991e8a9#main> .
+
+:55de2d48-b17c-4002-b981-d1cba659af84
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318325" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:8aadf1c8-a920-4a13-860b-b01c5540e236#main> .
+
+:7ce345a3-079e-43b7-9f52-3e21fca2def4
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318380" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:920a5476-bff4-4740-abff-85d47c93406a#main> .
+
+:7be9d157-0390-424e-bad1-cbe4a3fe0929
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318405" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:56b52cd6-2e47-4ea4-9e4c-41c498c58277#main> .
+
+:17800d88-d1e3-4141-ace2-1686b82e6e04
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318170" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:41924e95-6ee5-45ba-9906-2d746f987e39#main> .
+
+:225027b2-1f0b-420c-9535-263aaff89136
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318870" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:324e0add-7791-47db-a2a4-980506ca6783#main> .
+
+:1d4112c6-f6c0-4e6f-b560-74a3220b51e3
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318515" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:16a99502-e032-4c02-b3a7-f211645a2f84#main> .
+
+:98b5688f-f955-4893-bbf5-4cbd5aec8fc5
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318695" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:db3fe860-8ab6-48dc-a679-a202f991e8a9#main> .
+
+:1a21d259-53cc-4b77-8e3d-a0e2cdc3df31
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318595" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:c4038aee-7211-4510-8bb9-a35a35c065fa#main> .
+
+:f1ddf918-bcda-4d8d-8cba-d5f55b009329
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318935" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:d8bf8336-cbca-4e16-9708-5bb3190c86e3#main> .
+
+:60ea99c3-3b58-47d3-82a3-c70cdef23d77
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318145" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:fa5aba44-eb0b-454e-837e-d5fd07264cc0#main> .
+
+:3ae2425e-e91d-49d9-b8d9-d41ddb4cdead
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318650" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:d8bf8336-cbca-4e16-9708-5bb3190c86e3#main> .
+
+:f4bf7bed-c114-43b3-9ff7-e5252c2ac57a
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318570" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:caa00301-7fea-449c-9b43-ef21258505fa#main> .
+
+:0d70a41a-b93c-476e-aaed-b9061c402b61
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318610" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:1aa9f40c-3cf1-44f3-a3e9-8cd2b82a5825#2c9f03b4-f596-4da0-b8ee-debd45a6af01> .
+
+:bb9532c9-a12f-40a7-b7c6-d90308da6749
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318875" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:324e0add-7791-47db-a2a4-980506ca6783#main> .
+
+:f377ea1c-03e2-4eac-bf22-f8341b6a7518
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318095" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:ea5766ff-bec9-45d8-95df-4f2812eae314#8869fb0d-60e7-4623-a8d7-ca94f5d9f4ba> .
+
+:3178b154-aa91-41a7-b081-eae3bafb3597
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318385" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:08c58513-b1cb-45fa-81d6-c41b7bbf9206#main> .
+
+:ccaa745c-31e0-4c5a-ac5e-23f110d99811
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318125" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:bf1ad938-738c-4199-9c90-2a1d4ea717f3#main> .
+
+:d964dc4f-62d1-4cc6-8138-8e28047b7233
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318510" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:16a99502-e032-4c02-b3a7-f211645a2f84#main> .
+
+:c385389d-3b07-41a5-bf81-6750f4ac11a1
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318250" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:39a54760-6a43-4a3d-926d-d41678f49947#main> .
+
+:8b26d923-e60b-4415-af34-70d62f059550
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318375" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:d89854c6-b620-4280-95bb-17c654f9e68b#main> .
+
+:b769147e-971b-44a5-be94-d3e18408549b
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318680" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:db3fe860-8ab6-48dc-a679-a202f991e8a9#main> .
+
+:2b1a7bde-cea5-4c74-951d-4142c649bce6
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318395" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:d8bf8336-cbca-4e16-9708-5bb3190c86e3#main> .
+
+:e8ae4941-dc00-4b23-b658-9a55f1a5e093
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318960" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:3f8ec845-a5be-4033-9f88-828651e88869#main> .
+
+:0e90b499-867f-461d-a53f-f5b634c846c4
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318525" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:4e72dd33-0eef-4372-a2cf-338e67d33020#main> .
+
+:21c4a3bd-8bd0-4d36-a3b8-18ca10b9999f
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318820" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:6b33ae42-b4f2-4e04-9326-ddadd58aabd0#main> .
+
+:e156b86b-7364-4807-9992-24a5815afd22
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318620" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:42f84842-7503-4350-a000-0207d9a50feb#main> .
+
+:bbaa9343-d3d7-41a9-b381-d045bfd15f9e
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318665" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:db3fe860-8ab6-48dc-a679-a202f991e8a9#main> .
+
+:bbeb26e8-7fa1-4e1b-8ab2-2d028778786d
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318290" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:a7f53f65-c18e-4634-844f-0ade712ee075#main> .
+
+:4c1d2e23-bcfa-4677-802b-6cc3e0750b63
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318600" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:a7f53f65-c18e-4634-844f-0ade712ee075#main> .
+
+:4082998d-644c-46bc-b441-126e83d33a28
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318315" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:c49763e4-8132-42b0-97d6-0ec3df822924#main> .
+
+:77dc9895-4add-4d52-813d-907bbfa41528
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318350" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:8ff7cdae-ac61-4e47-b6e6-3ce64e34e76f#main> .
+
+:77401b88-2d6c-4de0-baf3-791d98d9d3a1
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318975" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:ce3f25ad-17fd-4949-b06f-078d3b5b3cb5#main> .
+
+:6e263ecc-d543-4906-9ba7-78e6b964d8ab
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318630" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:8d7e5608-7979-4e4f-b711-7b89f597d597#main> .
+
+:359084a1-6f29-49e1-b9cb-07d0265ca699
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318220" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:a9d60f7b-2220-4632-b1ac-707b8d421b65#main> .
+
+:83b02209-1c9d-4a86-963e-87db479adc97
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318940" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:d8bf8336-cbca-4e16-9708-5bb3190c86e3#main> .
+
+:288bc55d-01a0-4bde-a09a-ca48eb6200c0
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318340" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:d318599f-3ecf-4f93-9f73-f9848b632d7a#main> .
+
+:60294fc4-a308-4c87-ac22-28dfad44f067
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318970" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:5526e035-faf3-41e7-961d-e895410b9769#9cbbb5c0-2161-4f02-849b-fec4b760f679> .
+
+:c11d9470-ae7d-43fa-aff3-6e52579a39d6
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318740" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:db3fe860-8ab6-48dc-a679-a202f991e8a9#main> .
+
+:44e0218d-6f7f-44d8-96b5-e28f5b69357a
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318710" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:db3fe860-8ab6-48dc-a679-a202f991e8a9#main> .
+
+:1e9caed9-f4be-47b5-8ba8-f532378f95df
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318300" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:a20a5721-181c-4c18-9e77-48d6461debfe#main> .
+
+:fa5ad30e-3e62-4026-b19e-959fbac134e6
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318535" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:a4acaea7-546c-4307-ac88-6c8b034532f6#main> .
+
+:3cd86578-5ea4-47d9-874c-1668c1c6d92f
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318575" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:caa00301-7fea-449c-9b43-ef21258505fa#main> .
+
+:7ce97ba6-a160-4274-8fb9-666970b2b0d6
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318670" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:db3fe860-8ab6-48dc-a679-a202f991e8a9#main> .
+
+:b8348b9a-fc04-49f8-b69f-2c727f99f088
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318565" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:caa00301-7fea-449c-9b43-ef21258505fa#main> .
+
+:42a2c318-2777-4041-a3a6-af4ab39febdc
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318810" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:c4f442e1-9a61-4423-b826-b5d74b22e721#main> .
+
+:837d8b48-4762-43a6-9c60-41e5d4b14331
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318755" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:db3fe860-8ab6-48dc-a679-a202f991e8a9#main> .
+
+:8cbbe6ab-c4de-41f3-aedd-5e49cba3a9bc
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318730" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:db3fe860-8ab6-48dc-a679-a202f991e8a9#main> .
+
+:dafa2bd5-1555-4b22-9e9b-9553f7b0d4a3
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318185" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:dfb0e344-1e29-49d5-a834-13e47d8f03f3#main> .
+
+[ a       AspectSchema:Aspect , PropertySchema:PropertyValue , QuantityAndUnitSchema:Quantity , QuantityAndUnitSchema:PhysicalQuantity , QuantityAndUnitSchema:LengthQuantity ;
+  QuantityAndUnitSchema:metreScale
+          [ a       QuantityAndUnitSchema:RealDatatype ;
+            QuantityAndUnitSchema:multiplicationFactor
+                    QuantityAndUnitSchema:siPrefix-milli ;
+            QuantityAndUnitSchema:real_value
+                    "0.0"^^xsd:double
+          ]
+] .
+
+:6b58893b-eecf-4231-af48-56b31cf53b86
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318900" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:2b2bc6bd-eb4e-47fb-bcd9-583800293095#main> .
+
+:a7d373e9-e124-40a2-bcc2-f76aa60f03c9
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318430" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:65374914-963c-4b1b-b339-ce75a2c2d71b#main> .
+
+:d7138e9b-2d94-44c2-9331-703514ddef3c
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318215" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:d6bc6e61-168f-45ff-90ce-297d826423a5#main> .
+
+:ffbdbe04-c37d-4dca-a9dd-cdca65a7a733
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318745" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:db3fe860-8ab6-48dc-a679-a202f991e8a9#main> .
+
+:6f915e58-4eed-4e59-a1a1-def4213503f0
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318965" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:a0feffae-4669-42ef-ba7b-9d27299aaa83#main> .
+
+:1ffac581-a377-427e-a439-26ca8b024a11
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318905" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:2b2bc6bd-eb4e-47fb-bcd9-583800293095#main> .
+
+:99616265-6e74-4499-ab5b-db9e7361a15b
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318880" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:d6bc6e61-168f-45ff-90ce-297d826423a5#main> .
+
+:d0729a29-571f-4d12-a54b-000d9113db21
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318835" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:bf04ac00-2f59-49f0-8dc1-01e9b5f1db7d#main> .
+
+:4a21821c-a291-4a7b-99db-404972109c0d
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318865" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:beb83239-c26b-48b3-965b-528dfabd1cba#main> .
+
+:d718e9fb-2ec5-4d11-b0c7-35d9455de7e8
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318450" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:ac58664f-9d77-4cf3-830a-01f8ad00cddd#main> .
+
+:8537ef3d-8067-463b-89b6-abb909a2c899
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318725" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:db3fe860-8ab6-48dc-a679-a202f991e8a9#main> .
+
+:2fcd478e-4a54-4bfa-8c59-a95218dbef1b
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318275" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:d972ff00-f3c7-45be-b255-b0554bcadd8d#main> .
+
+:54276692-c386-4150-b1db-27f2e4d1cc1a
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318825" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:5526e035-faf3-41e7-961d-e895410b9769#9cbbb5c0-2161-4f02-849b-fec4b760f679> .
+
+:262b55d2-110d-4606-bc7b-9c0bc0a844f3
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318520" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:4e72dd33-0eef-4372-a2cf-338e67d33020#main> .
+
+:5057202b-4915-44ae-9071-428cd200683a
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318690" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:db3fe860-8ab6-48dc-a679-a202f991e8a9#main> .
+
+:3e51c45b-4bd4-441d-a959-ff767842f9a2
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318365" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:38ce1db9-0ca5-4136-bab2-a7a18b89f249#main> .
+
+:70a842ec-dee3-41b8-96b0-0ecae88ca0f1
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318285" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:f540806d-127f-4715-8358-4571e0a59727#main> .
+
+:b10ef84e-9edd-4d2f-8f22-2fa0fe58abc7
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318445" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:ac58664f-9d77-4cf3-830a-01f8ad00cddd#main> .
+
+:37ffaaef-3d0d-4c01-8a9c-8ee9c45d0b4e
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318295" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:098ae4c1-b378-4d96-ac63-01667f8c6e06#c1ad91a7-3289-4437-9b65-e82dbd107ad7> .
+
+:e28e536d-6a7e-4581-ac90-74b0f09c91a0
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318540" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:d8312538-99be-4158-94e1-ee6eddc47f59#main> .
+
+:f94b0152-38eb-40b0-8a9d-7661722d0fba
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318700" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:db3fe860-8ab6-48dc-a679-a202f991e8a9#main> .
+
+:00d35d58-f698-4986-9a0d-2fd18c627d1b
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318085" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:3ce1737d-0a9e-453a-a593-bdd59b11c185#main> .
+
+:a2b4e50a-42d4-4891-9bec-0ef51284eb6b
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318635" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:a81d4bfd-2104-45fb-bf7c-2033d217400a#main> .
+
+:53365b4c-5888-4501-bbba-19963d9d043e
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318545" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:d8312538-99be-4158-94e1-ee6eddc47f59#main> .
+
+:3e5655b9-40e4-4c6b-8eb3-feb081ea8ba9
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318645" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:5526e035-faf3-41e7-961d-e895410b9769#9cbbb5c0-2161-4f02-849b-fec4b760f679> .
+
+:2d77ca01-7dc9-4254-8d49-b61eb12b7513
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318655" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:d8bf8336-cbca-4e16-9708-5bb3190c86e3#main> .
+
+:a794b223-1662-4846-a424-24bf6abe35fd
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318715" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:db3fe860-8ab6-48dc-a679-a202f991e8a9#main> .
+
+:0e4eec3e-6a46-4951-9b11-4a2af98405ca
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318390" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:d8bf8336-cbca-4e16-9708-5bb3190c86e3#main> .
+
+:28827975-cac0-431f-b774-0cb11f8c19b2
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318555" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:7df18ced-6bfe-41f5-9fa9-84ee717ea15f#main> .
+
+:fc997012-a4de-499f-9879-3e51c435ad72
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318335" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:eb7e43e7-cf45-4ba1-98f8-980eaa3a5e18#main> .
+
+:3f6eb2a1-71e3-4124-8c22-175894d4373e
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318080" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:2f22fb7f-82c8-4e5d-95ba-8a7840345b5c#c8847777-02a4-472b-b800-cf324d02e70c> .
+
+:c13a9cc8-3e4f-4380-a3d0-de5334f68d07
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318685" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:db3fe860-8ab6-48dc-a679-a202f991e8a9#main> .
+
+:f5e3db49-c44e-4400-bb41-52469418c1f3
+        a                              IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AssemblyDesignSchema:AssemblyDesign , ProductTaxonomySchema:ProductDesign , ProductTaxonomySchema:InformationProduct , IdentifierAndVersionSchema:IdentifiedVersionedObject ;
+        AssemblyDesignSchema:nextAssemblyUsage
+                :637e5ed3-be87-4da8-9850-21eb7e9658e1 , :77401b88-2d6c-4de0-baf3-791d98d9d3a1 , :450a02a6-d9ab-4e2e-a812-39764cd00ce0 , :23f41bda-6ece-47a6-941c-eb99dcc91a7f , :cc5321ee-28b5-4e3c-b55c-85dc2d78e249 , :8d7de22d-edc4-4120-bb59-a10d3bd4bd19 , :f4bf7bed-c114-43b3-9ff7-e5252c2ac57a , :fdc33633-f235-4139-8054-a83e5bd503b7 , :1ffac581-a377-427e-a439-26ca8b024a11 , :41614843-37df-4f93-8ee7-16a948285097 , :c13a9cc8-3e4f-4380-a3d0-de5334f68d07 , :ba3d0047-d643-4ec4-b195-a7b54d47b3a7 , :f377ea1c-03e2-4eac-bf22-f8341b6a7518 , :ccaa745c-31e0-4c5a-ac5e-23f110d99811 , :5057202b-4915-44ae-9071-428cd200683a , :4c1d2e23-bcfa-4677-802b-6cc3e0750b63 , :cc1b1bdb-8395-4648-9ee2-282e8ac87fcb , :8b26d923-e60b-4415-af34-70d62f059550 , :8342247f-709f-487e-a732-67ee7280a2ee , :8537ef3d-8067-463b-89b6-abb909a2c899 , :79a06a1d-8df7-4992-8b6d-35895ab8dae9 , :685371cb-d15d-45ca-bb8e-b5e379e4154b , :dafa2bd5-1555-4b22-9e9b-9553f7b0d4a3 , :88dd67a2-6706-42f5-87be-526e6895bb88 , :bbeb26e8-7fa1-4e1b-8ab2-2d028778786d , :db701f73-3154-4438-b5cc-3574b6e4b197 , :3178b154-aa91-41a7-b081-eae3bafb3597 , :872e20b3-40ef-4bc7-83dc-5723c41d0c5d , :bb9532c9-a12f-40a7-b7c6-d90308da6749 , :83b02209-1c9d-4a86-963e-87db479adc97 , :69911919-e297-475c-b47c-fbbd0c9adcf2 , :1ee88ab1-fd90-440d-b2c0-958c1f17ad62 , :3cab6f54-b990-4e87-9a18-15b963836393 , :17800d88-d1e3-4141-ace2-1686b82e6e04 , :c1e220af-b36a-4e4c-8d4a-32fa7c1780f3 , :54276692-c386-4150-b1db-27f2e4d1cc1a , :5b84fb91-0cf4-4c4e-9bb0-462151203b1d , :60ea99c3-3b58-47d3-82a3-c70cdef23d77 , :27d41155-066e-40aa-b139-ddf3e1dda66a , :359084a1-6f29-49e1-b9cb-07d0265ca699 , :b769147e-971b-44a5-be94-d3e18408549b , :212b16d9-0cde-4b7b-a33f-0c9146a2e8db , :1e9caed9-f4be-47b5-8ba8-f532378f95df , :bf2b9eb9-8601-43cd-9824-4fd0676dd5d2 , :bbaa9343-d3d7-41a9-b381-d045bfd15f9e , :55de2d48-b17c-4002-b981-d1cba659af84 , :f94b0152-38eb-40b0-8a9d-7661722d0fba , :6e764a66-ca83-462b-9938-0248324799a2 , :c385389d-3b07-41a5-bf81-6750f4ac11a1 , :ffbdbe04-c37d-4dca-a9dd-cdca65a7a733 , :efeb2916-da39-482c-ba4f-2aa7a6dbbc17 , :ad131e50-9cc8-49aa-bed7-cb4b7e917649 , :e156b86b-7364-4807-9992-24a5815afd22 , :3da5032c-4e8d-4ef3-a794-b06c6a1703d6 , :e2b060f3-8512-4956-b2cb-9829a496c91f , :837d8b48-4762-43a6-9c60-41e5d4b14331 , :3c5fc42c-6bad-4f9e-851b-40c96f397cfe , :3f6eb2a1-71e3-4124-8c22-175894d4373e , :f1ddf918-bcda-4d8d-8cba-d5f55b009329 , :37ffaaef-3d0d-4c01-8a9c-8ee9c45d0b4e , :7ce345a3-079e-43b7-9f52-3e21fca2def4 , :6b58893b-eecf-4231-af48-56b31cf53b86 , :1a21d259-53cc-4b77-8e3d-a0e2cdc3df31 , :2d22b0cb-0eb3-4a9f-ab79-7a1c8776e8a6 , :8f6dcce5-ed69-4476-936f-4813ddf847cc , :66c830c8-9c33-401d-be2e-829400a1c6b2 , :8cbbe6ab-c4de-41f3-aedd-5e49cba3a9bc , :205edd94-f404-462b-973f-49c9246c82bc , :cda2e5aa-dfba-4758-b2e2-df206af47a54 , :55379595-3958-45d7-828d-20f6ae1bdbfb , :a2b4e50a-42d4-4891-9bec-0ef51284eb6b , :6ab8b72b-5a9a-4166-93e2-ac499b66ad2a , :4939d427-4f39-43d6-8cc3-f15f2a3b0f8b , :54aa2aed-af21-415f-a967-7ab48d5169b5 , :182dfb5c-d9c1-4ef7-b175-49c25e5fee32 , :23f5069d-c894-4269-9f5b-ad7163f5d24c , :d75e4aa8-cb40-472e-b7ef-fc8d98381974 , :0d70a41a-b93c-476e-aaed-b9061c402b61 , :6e263ecc-d543-4906-9ba7-78e6b964d8ab , :3ae2425e-e91d-49d9-b8d9-d41ddb4cdead , :3cd86578-5ea4-47d9-874c-1668c1c6d92f , :4082998d-644c-46bc-b441-126e83d33a28 , :90a100bc-28b8-4364-941e-b6be15670355 , :7d0b4505-daaa-41b5-adb5-3710339059a5 , :4c954f23-e0b9-4a17-9937-fc788bcb8ea9 , :28827975-cac0-431f-b774-0cb11f8c19b2 , :8ab35d7a-04e5-49aa-b42c-4900fbbb3267 , :7ce97ba6-a160-4274-8fb9-666970b2b0d6 , :b772fb3d-5d4e-4b8e-a8f5-b82d729bc7b4 , :b7da93bf-5fb5-45d2-824e-c3d81e448b5e , :7d1f3b9f-7756-4e80-9f1b-617246d6129c , :6f915e58-4eed-4e59-a1a1-def4213503f0 , :e22b5dd6-30d2-4edb-9006-16b2103200be , :a3bf5d32-e0ed-4241-bc61-099a758d81cb , :7be9d157-0390-424e-bad1-cbe4a3fe0929 , :53365b4c-5888-4501-bbba-19963d9d043e , :00d35d58-f698-4986-9a0d-2fd18c627d1b , :225027b2-1f0b-420c-9535-263aaff89136 , :98b5688f-f955-4893-bbf5-4cbd5aec8fc5 , :288bc55d-01a0-4bde-a09a-ca48eb6200c0 , :4370d060-a072-4ceb-b127-deef73cc3798 , :2b1a7bde-cea5-4c74-951d-4142c649bce6 , :60294fc4-a308-4c87-ac22-28dfad44f067 , :baa1cac1-b0cf-4d77-9df5-480557d182ec , :3104cfe0-36c2-47af-bd6c-e8c8f2814a3a , :fc997012-a4de-499f-9879-3e51c435ad72 , :c11d9470-ae7d-43fa-aff3-6e52579a39d6 , :2fcd478e-4a54-4bfa-8c59-a95218dbef1b , :fa08f488-5628-41ba-8f33-8c6c0b89e27b , :ddfadafc-bfe0-42b9-8252-5ac8337aaa31 , :4a21821c-a291-4a7b-99db-404972109c0d , :64f9dbe3-4e2b-4aca-93a9-1c851ff07138 , :8f1be4c9-0229-428a-8892-4f38874dd4bf , :1d4112c6-f6c0-4e6f-b560-74a3220b51e3 , :42a2c318-2777-4041-a3a6-af4ab39febdc , :21c4a3bd-8bd0-4d36-a3b8-18ca10b9999f , :a0eee9f0-da43-454e-9039-0c30d533f517 , :7cda232a-f2b0-4ba3-b8f0-2984bdda54ae , :91cab0ea-7a9b-4a29-930f-c1d0902a639c , :c76256df-5ea2-47ac-aa5a-32feef46c128 , :2d77ca01-7dc9-4254-8d49-b61eb12b7513 , :1e1114bd-cbfd-4729-8567-87ffebbf42cc , :44e0218d-6f7f-44d8-96b5-e28f5b69357a , :20db2dbb-e181-4cf4-80d5-1db7afae49fc , :0577042f-9d06-430e-917b-5b85c43e640d , :41ee8f87-de0b-4d21-bb2a-88f986e28f9f , :d718e9fb-2ec5-4d11-b0c7-35d9455de7e8 , :17e1a8ff-4e54-44e9-a312-7a48e1f39c27 , :5dabab72-6e10-4701-b7dd-376646480f55 , :da5eef57-a14b-4ec6-8279-15c6ec6ec2e3 , :1998edee-9418-4bff-9a33-e0b6fda8d74e , :a8bc48fa-0977-4fbe-8c7a-ddf78b0dbc65 , :83037b7d-c39a-4e07-9873-461578f270ee , :9ab45acc-c1ea-48c0-ae82-db30a904e51e , :6ef398b6-dc97-4158-a60e-89cc9944064a , :242d4236-0683-46af-83ef-9cd7e532fa53 , :d964dc4f-62d1-4cc6-8138-8e28047b7233 , :b8348b9a-fc04-49f8-b69f-2c727f99f088 , :fa5ad30e-3e62-4026-b19e-959fbac134e6 , :ec0a169f-dce9-43e4-90ac-d135e09ca987 , :756640ff-8f93-4128-8be4-a47df133b5c4 , :85a3a1cb-5b7c-46b5-9c97-0a843c5687a8 , :a794b223-1662-4846-a424-24bf6abe35fd , :76e2772d-00ae-433d-8c44-9a5a9ec0a7c9 , :d7138e9b-2d94-44c2-9331-703514ddef3c , :c3805deb-cd0e-4be8-9098-9d064dd726c6 , :87da586c-a8ee-4f31-abd8-47e6d84eb0db , :b1e54ae0-77eb-4329-8515-8c97db0dfdfb , :84397879-d58e-49f0-b53d-7f441ad8eaa8 , :4a2ac8a4-605b-4856-bab9-ccf7e2430ef5 , :55b9644b-e7d1-4d19-a963-54e84d08e1cc , :acacafa6-5f2e-4442-9666-478aea9638e4 , :777b05c8-22be-401a-b7f0-afb1908cf403 , :148553e0-3980-410d-b1b3-880375b36ab9 , :77dc9895-4add-4d52-813d-907bbfa41528 , :70a842ec-dee3-41b8-96b0-0ecae88ca0f1 , :25d497f0-9b16-40d1-9c12-b3ae5d07a794 , :5bfbcc90-a9d9-406a-82ec-92a6575583c6 , :3e5655b9-40e4-4c6b-8eb3-feb081ea8ba9 , :e02a8b08-03a5-4e31-adb1-5337b0c74253 , :a7d373e9-e124-40a2-bcc2-f76aa60f03c9 , :7774182e-81bf-4d5d-9dd4-0f3290d83285 , :50f80866-1428-4e43-999d-9f3d98315135 , :fc1c10c1-8a67-4a9e-8eb9-2bbba8433066 , :c98afa37-ae8b-4c6f-9d5a-2c7bfd597b4d , :262b55d2-110d-4606-bc7b-9c0bc0a844f3 , :0e90b499-867f-461d-a53f-f5b634c846c4 , :2ce1fc49-1134-4ff6-a97b-09d6a7ab7ba7 , :0e4eec3e-6a46-4951-9b11-4a2af98405ca , :99616265-6e74-4499-ab5b-db9e7361a15b , :881a8e8b-4f3b-47da-9a70-00c9c19e1025 , :acfebe28-da0b-4848-90d4-afe18095cc60 , :97e3bcf3-b3b6-44b8-8a19-a088e7468edc , :114be9e1-47e6-4ffb-b51f-ef8bb0b6ea11 , :e28e536d-6a7e-4581-ac90-74b0f09c91a0 , :e8ae4941-dc00-4b23-b658-9a55f1a5e093 , :d0da32c8-f80b-432d-8baa-8728389cfe07 , :7d6666c2-5dce-437f-8e8e-23bc7921177b , :3e51c45b-4bd4-441d-a959-ff767842f9a2 , :d0729a29-571f-4d12-a54b-000d9113db21 , :b10ef84e-9edd-4d2f-8f22-2fa0fe58abc7 ;
+        IdentifierAndVersionSchema:id  "assembly, combiner, 6700, 1500-3340" ;
+        ProductTaxonomySchema:designDefinition
+                self: ;
+        ProductTaxonomySchema:designRealization
+                :main .
+
+:2ce1fc49-1134-4ff6-a97b-09d6a7ab7ba7
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , PropertySchema:PropertyValue , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318560" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:98803922-a8d4-4447-81fe-6ce745e7764a#main> .
+
+:5dabab72-6e10-4701-b7dd-376646480f55
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318945" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:ed232e3b-bb8c-459a-9269-7ecd57166846#688b522e-cd4c-4917-a330-100f2f20371a> .
+
+:8342247f-709f-487e-a732-67ee7280a2ee
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318490" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:87479529-84ec-4575-9b09-ef2c2b4d54e6#main> .
+
+:fc1c10c1-8a67-4a9e-8eb9-2bbba8433066
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318160" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:06f27a5e-29ac-4924-83ed-3d4b144ea6ea#main> .
+
+:2d22b0cb-0eb3-4a9f-ab79-7a1c8776e8a6
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318845" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:06f27a5e-29ac-4924-83ed-3d4b144ea6ea#main> .
+
+:41614843-37df-4f93-8ee7-16a948285097
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318420" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:6b33ae42-b4f2-4e04-9326-ddadd58aabd0#main> .
+
+:efeb2916-da39-482c-ba4f-2aa7a6dbbc17
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318805" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:3ce1737d-0a9e-453a-a593-bdd59b11c185#main> .
+
+:4939d427-4f39-43d6-8cc3-f15f2a3b0f8b
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318425" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:ff7874e9-3607-4377-abdf-4a379e18776b#main> .
+
+:1e1114bd-cbfd-4729-8567-87ffebbf42cc
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318370" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:0c275d74-b312-4f57-918f-6e5fa3aa2cb1#main> .
+
+:4c954f23-e0b9-4a17-9937-fc788bcb8ea9
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318415" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:c28643f7-4add-469c-a676-e982fdf8ab9f#main> .
+
+:54aa2aed-af21-415f-a967-7ab48d5169b5
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318720" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:db3fe860-8ab6-48dc-a679-a202f991e8a9#main> .
+
+:cc5321ee-28b5-4e3c-b55c-85dc2d78e249
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318105" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:fa86f08b-998f-4dcc-9d52-62bb66016230#main> .
+
+:fdc33633-f235-4139-8054-a83e5bd503b7
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318435" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:5f1418be-5ab0-4aeb-b496-57646dadbd89#main> .
+
+:1998edee-9418-4bff-9a33-e0b6fda8d74e
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318550" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:7df18ced-6bfe-41f5-9fa9-84ee717ea15f#main> .
+
+:7cda232a-f2b0-4ba3-b8f0-2984bdda54ae
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318280" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:a21402d1-2769-4e20-a1d6-d28878c619bb#main> .
+
+:c76256df-5ea2-47ac-aa5a-32feef46c128
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318265" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:1394c7e4-0649-4373-9cf5-12010e87777f#main> .
+
+:69911919-e297-475c-b47c-fbbd0c9adcf2
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318225" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:27196e6a-9022-4529-b763-4111137b4e03#main> .
+
+:6ef398b6-dc97-4158-a60e-89cc9944064a
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318190" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:dfb0e344-1e29-49d5-a834-13e47d8f03f3#main> .
+
+:87da586c-a8ee-4f31-abd8-47e6d84eb0db
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318090" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:bf04ac00-2f59-49f0-8dc1-01e9b5f1db7d#main> .
+
+:ec0a169f-dce9-43e4-90ac-d135e09ca987
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318910" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:42e069e7-00f0-4d5e-be0e-f63221acb077#main> .
+
+:cda2e5aa-dfba-4758-b2e2-df206af47a54
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318815" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:5f1418be-5ab0-4aeb-b496-57646dadbd89#main> .
+
+:3c5fc42c-6bad-4f9e-851b-40c96f397cfe
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318475" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:ac58664f-9d77-4cf3-830a-01f8ad00cddd#main> .
+
+:6ab8b72b-5a9a-4166-93e2-ac499b66ad2a
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318355" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:16c189dd-8972-410e-bb97-6bb9f6d5de8f#main> .
+
+:d75e4aa8-cb40-472e-b7ef-fc8d98381974
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318770" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:db3fe860-8ab6-48dc-a679-a202f991e8a9#main> .
+
+:8ab35d7a-04e5-49aa-b42c-4900fbbb3267
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318230" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:a37e9ec8-d148-4260-93bb-66967de60016#main> .
+
+:d0da32c8-f80b-432d-8baa-8728389cfe07
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318955" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:09dabf7e-35ae-4426-9153-03ab516fc6d4#main> .
+
+:e2b060f3-8512-4956-b2cb-9829a496c91f
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318165" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:beb83239-c26b-48b3-965b-528dfabd1cba#main> .
+
+:85a3a1cb-5b7c-46b5-9c97-0a843c5687a8
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318075" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:38330e63-d0b1-4330-bbc4-72372e2664b6#05d312df-624a-4af1-a7bc-2f933b17e12f> .
+
+:7d6666c2-5dce-437f-8e8e-23bc7921177b
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318495" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:bf04ac00-2f59-49f0-8dc1-01e9b5f1db7d#main> .
+
+:88dd67a2-6706-42f5-87be-526e6895bb88
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318400" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:6ef3de68-8a6e-43c4-aa77-44bb84b04abb#main> .
+
+:da5eef57-a14b-4ec6-8279-15c6ec6ec2e3
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318795" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:f0d8a38c-3ca3-4dd5-9339-696dfa298879#main> .
+
+:50f80866-1428-4e43-999d-9f3d98315135
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318920" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:7aeb1ca9-ecf5-4de0-a9e9-24dca10a802d#main> .
+
+:c1e220af-b36a-4e4c-8d4a-32fa7c1780f3
+        a                              IdentifierAndVersionSchema:IdentifiedVersionedObject , IdentifierAndVersionSchema:IdentifiedObject , ProductTaxonomySchema:Product , AspectSchema:Aspect , ProductTaxonomySchema:ProductOccurrence , ProductOccurrenceSchema:DefinitionBasedProductOccurrence ;
+        IdentifierAndVersionSchema:id  "318950" ;
+        ProductOccurrenceSchema:definition
+                <urn:uuid:a1bc821a-fa4f-4dcd-b3ea-3735a715246b#main> .

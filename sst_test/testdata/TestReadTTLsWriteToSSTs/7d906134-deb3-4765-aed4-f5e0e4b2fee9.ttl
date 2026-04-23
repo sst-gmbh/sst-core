@@ -1,0 +1,15 @@
+@prefix lci:	<http://ontology.semanticstep.net/lci#> .
+@prefix sso:	<http://ontology.semanticstep.net/sso#> .
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:	<http://www.w3.org/2002/07/owl#> .
+@prefix :	<urn:uuid:7d906134-deb3-4765-aed4-f5e0e4b2fee9#> .
+@prefix ns4:	<urn:uuid:55bb223f-acee-4ca3-a753-fe99daba16f7#> .
+@prefix ns2:	<urn:uuid:aec28ed6-fa13-4061-b220-4ab2bdc6bc73#> .
+
+<urn:uuid:7d906134-deb3-4765-aed4-f5e0e4b2fee9>	a	owl:Ontology ;
+	owl:imports	<urn:uuid:aec28ed6-fa13-4061-b220-4ab2bdc6bc73> .
+:681f0d7e-3092-4607-a21b-098a7563d451	a	sso:ShapeFeatureDefinition ,
+			ns4:b66dadb2-e2c7-4369-bedf-06cd1f5a0ebf ;
+	rdfs:label	"Size 8 Twinax Contact" ;
+	ns2:84865a29-3282-4b9e-bb14-0d44e5d6e9c0	"Size 8 Twinax Contact" .

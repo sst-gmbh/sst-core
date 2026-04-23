@@ -1,0 +1,3385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<cmn:Uos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cmn="http://standards.iso.org/iso/ts/10303/-3000/-ed-1/tech/xml-schema/common" xmlns:n0="http://standards.iso.org/iso/ts/10303/-3001/-ed-1/tech/xml-schema/bo_model" xsi:schemaLocation="http://standards.iso.org/iso/ts/10303/-3001/-ed-1/tech/xml-schema/bo_model file:///C:/Users/st22077/Desktop/En%20cours%20AP242%20ed2/xsd/Core_Model_manual_modification.xsd">-->
+<n0:Uos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cmn="http://standards.iso.org/iso/ts/10303/-3000/-ed-1/tech/xml-schema/common" xmlns:n0="http://standards.iso.org/iso/ts/10303/-4442/-ed-1/tech/xml-schema/domain_model" xsi:schemaLocation="http://standards.iso.org/iso/ts/10303/-4442/-ed-1/tech/xml-schema/domain_model DomainModel.xsd">
+	<Header/>
+	<DataContainer xsi:type="n0:AP242DataContainer">
+		<!--CONTEXT-->
+		<ViewContext uid="_100101">
+			<ApplicationDomain>
+				<ProxyString>wiring harness assembly 3D design</ProxyString>
+			</ApplicationDomain>
+			<LifeCycleStage>
+				<ProxyString>design</ProxyString>
+			</LifeCycleStage>
+		</ViewContext>
+		<ViewContext uid="_100102">
+			<ApplicationDomain>
+				<ProxyString>electrical design</ProxyString>
+			</ApplicationDomain>
+			<LifeCycleStage>
+				<ProxyString>design</ProxyString>
+			</LifeCycleStage>
+		</ViewContext>
+		<ViewContext uid="_100104">
+			<ApplicationDomain>
+				<ProxyString>wiring harness segment topology</ProxyString>
+			</ApplicationDomain>
+			<LifeCycleStage>
+				<ProxyString>design</ProxyString>
+			</LifeCycleStage>
+		</ViewContext>
+		<ViewContext uid="_100105">
+			<ApplicationDomain>
+				<ProxyString>wire and part list with connectivity</ProxyString>
+			</ApplicationDomain>
+			<LifeCycleStage>
+				<ProxyString>design</ProxyString>
+			</LifeCycleStage>
+		</ViewContext>
+		<PropertyDefinition xsi:type="n0:WireColourBasedIdentificationCode" uid="_100201">
+			<Id id="white"/>
+			<PropertyType>
+				<ClassString>wire colour-based identification code</ClassString>
+			</PropertyType>
+		</PropertyDefinition>
+		<PropertyDefinition xsi:type="n0:WireColourBasedIdentificationCode" uid="_100202">
+			<Id id="red"/>
+			<PropertyType>
+				<ClassString>wire colour-based identification code</ClassString>
+			</PropertyType>
+		</PropertyDefinition>
+		<PropertyDefinition xsi:type="n0:WireColourBasedIdentificationCode" uid="_100203">
+			<Id id="green"/>
+			<PropertyType>
+				<ClassString>wire colour-based identification code</ClassString>
+			</PropertyType>
+		</PropertyDefinition>
+		<PropertyDefinition xsi:type="n0:WireColourBasedIdentificationCode" uid="_100204">
+			<Id id="shield"/>
+			<PropertyType>
+				<ClassString>wire colour-based identification code</ClassString>
+			</PropertyType>
+		</PropertyDefinition>
+		<PropertyDefinition uid="_100207">
+			<DefinedIn uidRef="_100502"/>
+			<!--see bug 7175-->
+			<Description>
+				<Descriptor uid="_100208">
+					<Text>
+						<CharacterString>open-circuit voltage</CharacterString>
+					</Text>
+				</Descriptor>
+			</Description>
+			<Id id="0112/2///61360_4#AAE529"/>
+		</PropertyDefinition>
+		<Unit uid="_100301">
+			<Name>
+				<ClassString>metre</ClassString>
+			</Name>
+			<Quantity>
+				<ClassString>length</ClassString>
+			</Quantity>
+		</Unit>
+		<Unit uid="_100302">
+			<Name>
+				<ClassString>volt</ClassString>
+			</Name>
+			<Quantity>
+				<ClassString>electric potential difference</ClassString>
+			</Quantity>
+		</Unit>
+		<FormatProperty uid="_100300">
+			<DataFormat>
+				<ClassString>ISO 10303-214</ClassString>
+			</DataFormat>
+		</FormatProperty>
+		<Organization uid="_100400">
+			<Id id="http://www.te.com"/>
+			<Name>
+				<CharacterString>TE Connectivity Ltd</CharacterString>
+			</Name>
+			<OrganizationTypes>
+				<ClassString>company</ClassString>
+			</OrganizationTypes>
+		</Organization>
+		<Organization uid="_100410">
+			<Id id="http://www.souriau.com"/>
+			<Name>
+				<CharacterString>SOURIAU</CharacterString>
+			</Name>
+			<OrganizationTypes>
+				<ClassString>company</ClassString>
+			</OrganizationTypes>
+		</Organization>
+		<Organization uid="_100420">
+			<Id id="http://www.shrinkflexthailand.com"/>
+			<Name>
+				<CharacterString>Shrinkflex (Thailand) Co., Ltd</CharacterString>
+			</Name>
+			<OrganizationTypes>
+				<ClassString>company</ClassString>
+			</OrganizationTypes>
+		</Organization>
+		<Organization uid="_100430">
+			<Id id="IEC"/>
+			<Name>
+				<CharacterString>International Electrotechnical Commission</CharacterString>
+			</Name>
+		</Organization>
+		<Class uid="_100500">
+			<Id id="sensitive"/>
+		</Class>
+		<Class uid="_100504">
+			<Id id="identification information"/>
+		</Class>
+		<ExternalClassSystem uid="_100502">
+			<Id>
+				<Identifier uid="_100503" id="IEC 61360 - Common Data Dictionary" idRoleRef="_100504" idContextRef="_100430"/>
+			</Id>
+		</ExternalClassSystem>
+		<Classification uid="_100506">
+			<Class>
+				<Class uidRef="_100500"/>
+			</Class>
+			<Role>electrical harness segregation code</Role>
+		</Classification>
+		<Part uid="_101000">
+			<Id id="04034-22-9"/>
+			<Name>
+				<CharacterString>WIRE,ELEC,COMP,SNGL CONDUCTOR,150 DEG C</CharacterString>
+			</Name>
+			<PartTypes>
+				<PartCategoryEnum>wire</PartCategoryEnum>
+				<PartCategoryEnum>raw_material_by_length</PartCategoryEnum>
+			</PartTypes>
+			<Versions>
+				<PartVersion uid="_101001">
+					<Id id="Version 1"/>
+					<Views>
+						<PartView uid="_101002">
+							<DefiningGeometry uidRef="_104890"/>
+							<InitialContext uidRef="_100102"/>
+							<Occurrence xsi:type="n0:WireOccurrence" uid="_201004">
+								<Id id="wire1"/>
+								<ShapeElement xsi:type="n0:WireOccurrenceTerminal" uid="_201006">
+									<Name>
+										<CharacterString>end a</CharacterString>
+									</Name>
+									<AssociatedTransportFeature uidRef="_201011"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:WireOccurrenceTerminal" uid="_201007">
+									<Name>
+										<CharacterString>end b</CharacterString>
+									</Name>
+									<AssociatedTransportFeature uidRef="_201011"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:WireOccurrenceIdentification" uid="_201011">
+									<Code uidRef="_100201"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:CrossSectionalOccurrenceShapeElement" uid="_201009">
+									<Definition uidRef="_101020"/>
+								</ShapeElement>
+								<Quantity xsi:type="n0:NumericalValue" uid="_201010">
+									<Unit uidRef="_100301"/>
+									<ValueComponent>1.75</ValueComponent>
+								</Quantity>
+							</Occurrence>
+							<Occurrence xsi:type="n0:WireOccurrence" uid="_201104">
+								<Id id="wire2"/>
+								<ShapeElement xsi:type="n0:WireOccurrenceTerminal" uid="_201106">
+									<Name>
+										<CharacterString>end a</CharacterString>
+									</Name>
+									<AssociatedTransportFeature uidRef="_201111"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:WireOccurrenceTerminal" uid="_201107">
+									<Name>
+										<CharacterString>end b</CharacterString>
+									</Name>
+									<AssociatedTransportFeature uidRef="_201111"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:WireOccurrenceIdentification" uid="_201111">
+									<Code uidRef="_100201"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:CrossSectionalOccurrenceShapeElement" uid="_201109">
+									<Definition uidRef="_101020"/>
+								</ShapeElement>
+								<Quantity xsi:type="n0:NumericalValue" uid="_201110">
+									<Unit uidRef="_100301"/>
+									<ValueComponent>1.5</ValueComponent>
+								</Quantity>
+							</Occurrence>
+							<Occurrence xsi:type="n0:WireOccurrence" uid="_201204">
+								<Id id="wire3"/>
+								<ShapeElement xsi:type="n0:WireOccurrenceTerminal" uid="_201206">
+									<Name>
+										<CharacterString>end a</CharacterString>
+									</Name>
+									<AssociatedTransportFeature uidRef="_201211"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:WireOccurrenceTerminal" uid="_201207">
+									<Name>
+										<CharacterString>end b</CharacterString>
+									</Name>
+									<AssociatedTransportFeature uidRef="_201211"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:WireOccurrenceIdentification" uid="_201211">
+									<Code uidRef="_100201"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:CrossSectionalOccurrenceShapeElement" uid="_201209">
+									<Definition uidRef="_101020"/>
+								</ShapeElement>
+								<Quantity xsi:type="n0:NumericalValue" uid="_201210">
+									<Unit uidRef="_100301"/>
+									<ValueComponent>2.5</ValueComponent>
+								</Quantity>
+							</Occurrence>
+							<ShapeElement xsi:type="n0:CrossSectionalPartShapeElement" uid="_101020">
+								<OuterOrInnerBoundary>outer_boundary</OuterOrInnerBoundary>
+							</ShapeElement>
+						</PartView>
+					</Views>
+				</PartVersion>
+			</Versions>
+		</Part>
+		<Part uid="_102000">
+			<!-- RG 58 (COAX cable) -->
+			<Id id="RG 58"/>
+			<Name>
+				<CharacterString>RG 58</CharacterString>
+			</Name>
+			<PartTypes>
+				<PartCategoryEnum>cable</PartCategoryEnum>
+				<PartCategoryEnum>raw_material_by_length</PartCategoryEnum>
+			</PartTypes>
+			<Versions>
+				<PartVersion uid="_102001">
+					<Id id="Version 1"/>
+					<Views>
+						<PartView uid="_102002">
+							<DefiningGeometry uidRef="_104890"/>
+							<InitialContext uidRef="_100102"/>
+							<Occurrence xsi:type="n0:CableOccurrence" uid="_202006">
+								<Id id="cable1"/>
+								<ShapeElement xsi:type="n0:CableOccurrenceTerminalLocationGroup" uid="_202010">
+									<Name>
+										<CharacterString>end a</CharacterString>
+									</Name>
+									<ShapeElement xsi:type="n0:CableOccurrenceTerminal" uid="_202013">
+										<AssociatedTransportFeature uidRef="_202001"/>
+									</ShapeElement>
+									<ShapeElement xsi:type="n0:CableOccurrenceTerminal" uid="_202014">
+										<AssociatedTransportFeature uidRef="_202002"/>
+									</ShapeElement>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:CableOccurrenceTerminalLocationGroup" uid="_202020">
+									<Name>
+										<CharacterString>end b</CharacterString>
+									</Name>
+									<ShapeElement xsi:type="n0:CableOccurrenceTerminal" uid="_202023">
+										<AssociatedTransportFeature uidRef="_202001"/>
+									</ShapeElement>
+									<ShapeElement xsi:type="n0:CableOccurrenceTerminal" uid="_202024">
+										<AssociatedTransportFeature uidRef="_202002"/>
+									</ShapeElement>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:WireOccurrenceIdentification" uid="_202001">
+									<Id id="Signal"/>
+									<Code uidRef="_100202"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:WireOccurrenceIdentification" uid="_202002">
+									<Id id="gnd"/>
+									<Code uidRef="_100203"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:CrossSectionalOccurrenceShapeElement" uid="_202007">
+									<Definition uidRef="_102020"/>
+								</ShapeElement>
+								<PropertyValueAssignment uid="_202009">
+									<AssignedPropertyValues>
+										<PropertyValue xsi:type="n0:StringValue" uid="_202011">
+											<Definition>
+												<PropertyDefinitionString>occurrence marking property</PropertyDefinitionString>
+											</Definition>
+											<ValueComponent>
+												<CharacterString>CABLE 1</CharacterString>
+											</ValueComponent>
+										</PropertyValue>
+									</AssignedPropertyValues>
+								</PropertyValueAssignment>
+								<Quantity xsi:type="n0:NumericalValue" uid="_202008">
+									<Unit uidRef="_100301"/>
+									<ValueComponent>4.45</ValueComponent>
+								</Quantity>
+							</Occurrence>
+							<Occurrence xsi:type="n0:CableOccurrence" uid="_202106">
+								<Id id="cable2"/>
+								<ShapeElement xsi:type="n0:CableOccurrenceTerminalLocationGroup" uid="_202110">
+									<Name>
+										<CharacterString>end a</CharacterString>
+									</Name>
+									<ShapeElement xsi:type="n0:CableOccurrenceTerminal" uid="_202113">
+										<AssociatedTransportFeature uidRef="_202101"/>
+									</ShapeElement>
+									<ShapeElement xsi:type="n0:CableOccurrenceTerminal" uid="_202114">
+										<AssociatedTransportFeature uidRef="_202102"/>
+									</ShapeElement>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:CableOccurrenceTerminalLocationGroup" uid="_202120">
+									<Name>
+										<CharacterString>end b</CharacterString>
+									</Name>
+									<ShapeElement xsi:type="n0:CableOccurrenceTerminal" uid="_202123">
+										<AssociatedTransportFeature uidRef="_202101"/>
+									</ShapeElement>
+									<ShapeElement xsi:type="n0:CableOccurrenceTerminal" uid="_202124">
+										<AssociatedTransportFeature uidRef="_202102"/>
+									</ShapeElement>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:WireOccurrenceIdentification" uid="_202101">
+									<Id id="Signal"/>
+									<Code uidRef="_100202"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:WireOccurrenceIdentification" uid="_202102">
+									<Id id="gnd"/>
+									<Code uidRef="_100203"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:CrossSectionalOccurrenceShapeElement" uid="_202107">
+									<Definition uidRef="_102020"/>
+								</ShapeElement>
+								<Quantity xsi:type="n0:NumericalValue" uid="_202108">
+									<Unit uidRef="_100301"/>
+									<ValueComponent>4.45</ValueComponent>
+								</Quantity>
+							</Occurrence>
+							<ShapeElement xsi:type="n0:CrossSectionalPartShapeElement" uid="_102020">
+								<OuterOrInnerBoundary>outer_boundary</OuterOrInnerBoundary>
+							</ShapeElement>
+						</PartView>
+					</Views>
+				</PartVersion>
+			</Versions>
+		</Part>
+		<Part uid="_103000">
+			<!-- TERMINAL LUG CRIMP STYLE COPPER INSULATED RING TONGUE -->
+			<Id id="MS5036-153"/>
+			<Name>
+				<LocalizedString lang="en-US">TERMINAL LUG CRIMP STYLE COPPER INSULATED RING TONGUE</LocalizedString>
+				<LocalizedString lang="fr-FR">COSSE</LocalizedString>
+			</Name>
+			<PartTypes>
+				<PartCategoryEnum>discrete</PartCategoryEnum>
+				<PartCategoryEnum>terminal_lug</PartCategoryEnum>
+			</PartTypes>
+			<Versions>
+				<PartVersion uid="_103001">
+					<Id id="Version 1"/>
+					<Views>
+						<PartView uid="_103002">
+							<DefiningGeometry uidRef="_103090"/>
+							<InitialContext uidRef="_100102"/>
+							<Occurrence xsi:type="n0:SingleOccurrence" uid="_203005">
+								<Id id="lug1"/>
+								<!--Screw terminal-->
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_203006">
+									<Definition uidRef="_103003"/>
+								</ShapeElement>
+								<!--Crimp terminal-->
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_203008">
+									<Definition uidRef="_103004"/>
+								</ShapeElement>
+							</Occurrence>
+							<ShapeElement xsi:type="n0:PartTerminal" uid="_103003">
+								<Id id="External"/>
+								<RepresentedGeometry uidRef="_103092"/>
+								<IntendedJointType>
+									<TerminalJointTypeEnum>screw_terminal</TerminalJointTypeEnum>
+								</IntendedJointType>
+								<InterfaceOrJoinTerminal>interface_terminal</InterfaceOrJoinTerminal>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartTerminal" uid="_103004">
+								<Id id="Internal"/>
+								<RepresentedGeometry uidRef="_103094"/>
+								<IntendedJointType>
+									<TerminalJointTypeEnum>crimp_terminal</TerminalJointTypeEnum>
+								</IntendedJointType>
+								<InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartConnectivityDefinition" uid="_103007">
+								<ConnectedTerminals>
+									<PartTerminal uidRef="_103003"/>
+									<PartTerminal uidRef="_103004"/>
+								</ConnectedTerminals>
+							</ShapeElement>
+							<PropertyValueAssignment uid="_103005">
+								<AssignedPropertyValues>
+									<PropertyValue xsi:type="n0:NumericalValue" uid="_103006">
+										<Definition>
+											<PropertyDefinitionString>inner ring opening</PropertyDefinitionString>
+										</Definition>
+										<Unit uidRef="_100301"/>
+										<!--metre-->
+										<ValueComponent>0.03</ValueComponent>
+									</PropertyValue>
+								</AssignedPropertyValues>
+							</PropertyValueAssignment>
+							<PropertyValueAssignment uid="_103008">
+								<AssignedPropertyValues>
+									<PropertyValue xsi:type="n0:NumericalValue" uid="_103009">
+										<Definition>
+											<PropertyDefinition uidRef="_100207"/>
+										</Definition>
+										<Unit uidRef="_100301"/>
+										<!--metre-->
+										<ValueComponent>0.05</ValueComponent>
+									</PropertyValue>
+								</AssignedPropertyValues>
+							</PropertyValueAssignment>
+						</PartView>
+					</Views>
+				</PartVersion>
+			</Versions>
+		</Part>
+		<Part uid="_104000">
+			<!-- Speaker wire -->
+			<Id id="16 AWG"/>
+			<Name>
+				<CharacterString>Speaker wire</CharacterString>
+			</Name>
+			<PartTypes>
+				<PartCategoryEnum>cable</PartCategoryEnum>
+				<PartCategoryEnum>raw_material_by_length</PartCategoryEnum>
+			</PartTypes>
+			<Versions>
+				<PartVersion uid="_104001">
+					<Id id="Version 1"/>
+					<Views>
+						<PartView uid="_104002">
+							<DefiningGeometry uidRef="_104890"/>
+							<InitialContext uidRef="_100102"/>
+							<Occurrence xsi:type="n0:CableOccurrence" uid="_204006">
+								<Id id="cable3"/>
+								<ShapeElement xsi:type="n0:CableOccurrenceTerminalLocationGroup" uid="_204010">
+									<Name>
+										<CharacterString>end a</CharacterString>
+									</Name>
+									<ShapeElement xsi:type="n0:CableOccurrenceTerminal" uid="_204013">
+										<AssociatedTransportFeature uidRef="_204003"/>
+									</ShapeElement>
+									<ShapeElement xsi:type="n0:CableOccurrenceTerminal" uid="_204014">
+										<AssociatedTransportFeature uidRef="_204004"/>
+									</ShapeElement>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:CableOccurrenceTerminalLocationGroup" uid="_204020">
+									<Name>
+										<CharacterString>end b</CharacterString>
+									</Name>
+									<ShapeElement xsi:type="n0:CableOccurrenceTerminal" uid="_204023">
+										<AssociatedTransportFeature uidRef="_204003"/>
+									</ShapeElement>
+									<ShapeElement xsi:type="n0:CableOccurrenceTerminal" uid="_204024">
+										<AssociatedTransportFeature uidRef="_204004"/>
+									</ShapeElement>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:WireOccurrenceIdentification" uid="_204003">
+									<Id id="A"/>
+									<Code uidRef="_100201"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:WireOccurrenceIdentification" uid="_204004">
+									<Id id="B"/>
+									<Code uidRef="_100202"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:CrossSectionalOccurrenceShapeElement" uid="_204007">
+									<Definition uidRef="_104020"/>
+								</ShapeElement>
+								<Quantity xsi:type="n0:NumericalValue" uid="_204008">
+									<Unit uidRef="_100301"/>
+									<ValueComponent>4.25</ValueComponent>
+								</Quantity>
+							</Occurrence>
+							<ShapeElement xsi:type="n0:CrossSectionalPartShapeElement" uid="_104020">
+								<OuterOrInnerBoundary>outer_boundary</OuterOrInnerBoundary>
+							</ShapeElement>
+						</PartView>
+					</Views>
+				</PartVersion>
+			</Versions>
+		</Part>
+		<!-- Here was ARINC 600 -->
+		<Part uid="_111000">
+			<!-- ARINC 600 shell 1 A and B dummy -->
+			<Id>
+				<Identifier uid="_111999" id="8660-31A-100-01A/AA" idRoleRef="_100504" idContextRef="_100410"/>
+			</Id>
+			<Name>
+				<CharacterString>ARINC 600 rack plug shell 1 A and B dummy</CharacterString>
+			</Name>
+			<PartTypes>
+				<PartCategoryEnum>discrete</PartCategoryEnum>
+				<PartCategoryEnum>connector_insert</PartCategoryEnum>
+			</PartTypes>
+			<Versions>
+				<PartVersion uid="_111001">
+					<Id id="Version 1"/>
+					<Views>
+						<PartView uid="_111002">
+							<InitialContext uidRef="_100102"/>
+							<Occurrence xsi:type="n0:SingleOccurrence" uid="_211010">
+								<Id id="A-insert"/>
+								<ShapeElement xsi:type="n0:OccurrenceContactFeature" uid="_211019">
+									<Definition uidRef="_111090"/>
+								</ShapeElement>
+							</Occurrence>
+							<Occurrence xsi:type="n0:SingleOccurrence" uid="_211020">
+								<Id id="B-insert"/>
+								<ShapeElement xsi:type="n0:OccurrenceContactFeature" uid="_211029">
+									<Definition uidRef="_111090"/>
+								</ShapeElement>
+							</Occurrence>
+							<ShapeElement xsi:type="n0:PartContactFeature" uid="_111090">
+								<Id id="Slot profile"/>
+								<PartDefinition uidRef="_601000"/>
+							</ShapeElement>
+						</PartView>
+					</Views>
+				</PartVersion>
+			</Versions>
+		</Part>
+		<Part uid="_112000">
+			<!-- ARINC 600 shell 1 C 5W2 insert -->
+			<Id id="8660-5W2"/>
+			<Name>
+				<CharacterString>ARINC rack plug 600 shell 1 C 5W2 insert</CharacterString>
+			</Name>
+			<PartTypes>
+				<PartCategoryEnum>discrete</PartCategoryEnum>
+				<PartCategoryEnum>connector_insert</PartCategoryEnum>
+			</PartTypes>
+			<Versions>
+				<PartVersion uid="_112001">
+					<Id id="Version 1"/>
+					<Views>
+						<PartView uid="_112002">
+							<InitialContext uidRef="_100102"/>
+							<Occurrence xsi:type="n0:SingleOccurrence" uid="_212010">
+								<Id id="C-insert"/>
+								<ShapeElement xsi:type="n0:OccurrenceContactFeature" uid="_212011">
+									<Definition uidRef="_112010"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceContactFeature" uid="_212012">
+									<Definition uidRef="_112020"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceContactFeature" uid="_212013">
+									<Definition uidRef="_112030"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceContactFeature" uid="_212014">
+									<Definition uidRef="_112040"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceContactFeature" uid="_212015">
+									<Definition uidRef="_112050"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceContactFeature" uid="_212019">
+									<Definition uidRef="_112090"/>
+								</ShapeElement>
+							</Occurrence>
+							<ShapeElement xsi:type="n0:PartContactFeature" uid="_112010">
+								<Id id="1"/> <!-- size #5-->
+								<PartDefinition uidRef="_60B010"/>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartContactFeature" uid="_112020">
+								<Id id="5"/> <!-- size #5-->
+								<PartDefinition uidRef="_60B020"/>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartContactFeature" uid="_112030">
+								<Id id="2"/> <!-- size #16-->
+								<PartDefinition uidRef="_60B030"/>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartContactFeature" uid="_112040">
+								<Id id="4"/> <!-- size #16-->
+								<PartDefinition uidRef="_60B040"/>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartContactFeature" uid="_112050">
+								<Id id="3"/> <!-- size #12-->
+								<PartDefinition uidRef="_60B050"/>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartContactFeature" uid="_112090">
+								<Id id="Insert profile"/>
+								<PartDefinition uidRef="_60B090"/>
+							</ShapeElement>
+						</PartView>
+					</Views>
+				</PartVersion>
+			</Versions>
+		</Part>
+		<Part uid="_113000">
+			<!-- #5 Coax contact -->
+			<Id id="8660-2485"/>
+			<Name>
+				<CharacterString>#5 Coax contact</CharacterString>
+			</Name>
+			<PartTypes>
+				<PartCategoryEnum>discrete</PartCategoryEnum>
+				<PartCategoryEnum>connector_contact</PartCategoryEnum>
+			</PartTypes>
+			<Versions>
+				<PartVersion uid="_113001">
+					<Id id="Version 1"/>
+					<Views>
+						<PartView uid="_113002">
+							<DefiningGeometry uidRef="_103090"/>
+							<InitialContext uidRef="_100102"/>
+							<Occurrence xsi:type="n0:SingleOccurrence" uid="_213100">
+								<Id id="coax1"/>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_213101">
+									<Definition uidRef="_113003"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_213102">
+									<Definition uidRef="_113004"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_213103">
+									<Definition uidRef="_113008"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_213104">
+									<Definition uidRef="_113009"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceContactFeature" uid="_213109">
+									<Definition uidRef="_113090"/>
+								</ShapeElement>
+							</Occurrence>
+							<Occurrence xsi:type="n0:SingleOccurrence" uid="_213200">
+								<Id id="coax2"/>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_213201">
+									<Definition uidRef="_113003"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_213202">
+									<Definition uidRef="_113004"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_213203">
+									<Definition uidRef="_113008"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_213204">
+									<Definition uidRef="_113009"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceContactFeature" uid="_213209">
+									<Definition uidRef="_113090"/>
+								</ShapeElement>
+							</Occurrence>
+							<ShapeElement xsi:type="n0:PartTerminal" uid="_113003">
+								<Id id="Interface signal"/>
+								<IntendedJointType>
+									<TerminalJointTypeEnum>pin_terminal</TerminalJointTypeEnum>
+								</IntendedJointType>
+								<InterfaceOrJoinTerminal>interface_terminal</InterfaceOrJoinTerminal>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartTerminal" uid="_113004">
+								<Id id="Join signal"/>
+								<IntendedJointType>
+									<TerminalJointTypeEnum>crimp_terminal</TerminalJointTypeEnum>
+								</IntendedJointType>
+								<InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartConnectivityDefinition" uid="_113007">
+								<Name>
+									<CharacterString>Signal node</CharacterString>
+								</Name>
+								<ConnectedTerminals>
+									<PartTerminal uidRef="_113003"/>
+									<PartTerminal uidRef="_113004"/>
+								</ConnectedTerminals>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartTerminal" uid="_113008">
+								<Id id="Interface gnd"/>
+								<IntendedJointType>
+									<TerminalJointTypeEnum>pin_terminal</TerminalJointTypeEnum>
+								</IntendedJointType>
+								<InterfaceOrJoinTerminal>interface_terminal</InterfaceOrJoinTerminal>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartTerminal" uid="_113009">
+								<Id id="Join gnd"/>
+								<IntendedJointType>
+									<TerminalJointTypeEnum>crimp_terminal</TerminalJointTypeEnum>
+								</IntendedJointType>
+								<InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartConnectivityDefinition" uid="_113010">
+								<Name>
+									<CharacterString>Gnd node</CharacterString>
+								</Name>
+								<ConnectedTerminals>
+									<PartTerminal uidRef="_113008"/>
+									<PartTerminal uidRef="_113009"/>
+								</ConnectedTerminals>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartContactFeature" uid="_113090">
+								<Id id="Contact mounting profile"/>
+								<PartDefinition uidRef="_608000"/>
+							</ShapeElement>
+						</PartView>
+					</Views>
+				</PartVersion>
+			</Versions>
+		</Part>
+		<Part uid="_114000">
+			<!-- #16 Rack plug power contact -->
+			<Id id="8660-249"/>
+			<Name>
+				<CharacterString>#16 Rack plug power contact</CharacterString>
+			</Name>
+			<PartTypes>
+				<PartCategoryEnum>discrete</PartCategoryEnum>
+				<PartCategoryEnum>connector_contact</PartCategoryEnum>
+			</PartTypes>
+			<Versions>
+				<PartVersion uid="_114001">
+					<Id id="Version 1"/>
+					<Views>
+						<PartView uid="_114002">
+							<DefiningGeometry uidRef="_103090"/>
+							<InitialContext uidRef="_100102"/>
+							<Occurrence xsi:type="n0:SingleOccurrence" uid="_214100">
+								<Id id="arinc1/C-Assy/power3"/>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_214103">
+									<Definition uidRef="_114003"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_214104">
+									<Definition uidRef="_114004"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceContactFeature" uid="_214109">
+									<Definition uidRef="_114090"/>
+								</ShapeElement>
+							</Occurrence>
+							<Occurrence xsi:type="n0:SingleOccurrence" uid="_214200">
+								<Id id="arinc1/C-Assy/power4"/>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_214203">
+									<Definition uidRef="_114003"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_214204">
+									<Definition uidRef="_114004"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceContactFeature" uid="_214209">
+									<Definition uidRef="_114090"/>
+								</ShapeElement>
+							</Occurrence>
+							<ShapeElement xsi:type="n0:PartTerminal" uid="_114003">
+								<Id id="Int term"/>
+								<IntendedJointType>
+									<TerminalJointTypeEnum>pin_terminal</TerminalJointTypeEnum>
+								</IntendedJointType>
+								<InterfaceOrJoinTerminal>interface_terminal</InterfaceOrJoinTerminal>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartTerminal" uid="_114004">
+								<Id id="Join term"/>
+								<IntendedJointType>
+									<TerminalJointTypeEnum>crimp_terminal</TerminalJointTypeEnum>
+								</IntendedJointType>
+								<InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartConnectivityDefinition" uid="_114007">
+								<Name>
+									<CharacterString>Node</CharacterString>
+								</Name>
+								<ConnectedTerminals>
+									<PartTerminal uidRef="_114003"/>
+									<PartTerminal uidRef="_114004"/>
+								</ConnectedTerminals>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartContactFeature" uid="_114090">
+								<Id id="Contact mounting profile"/>
+								<PartDefinition uidRef="_606000"/>
+							</ShapeElement>
+						</PartView>
+					</Views>
+				</PartVersion>
+			</Versions>
+		</Part>
+		<!--Here was Insert 5W2 assembly-->
+		<Part uid="_116000">
+			<!-- 12 Rack plug signal contact -->
+			<Id id="8660-250"/>
+			<Name>
+				<CharacterString>#12 Rack plug signal contact</CharacterString>
+			</Name>
+			<PartTypes>
+				<PartCategoryEnum>discrete</PartCategoryEnum>
+				<PartCategoryEnum>connector_contact</PartCategoryEnum>
+			</PartTypes>
+			<Versions>
+				<PartVersion uid="_116001">
+					<Id id="Version 1"/>
+					<Views>
+						<PartView uid="_116002">
+							<InitialContext uidRef="_100102"/>
+							<Occurrence xsi:type="n0:SingleOccurrence" uid="_216100">
+								<Id id="arinc1/C-Assy/signal5"/>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_216101">
+									<Definition uidRef="_116003"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_216102">
+									<Definition uidRef="_116004"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceContactFeature" uid="_216109">
+									<Definition uidRef="_116090"/>
+								</ShapeElement>
+							</Occurrence>
+							<ShapeElement xsi:type="n0:PartTerminal" uid="_116003">
+								<Id id="Int term"/>
+								<IntendedJointType>
+									<TerminalJointTypeEnum>pin_terminal</TerminalJointTypeEnum>
+								</IntendedJointType>
+								<InterfaceOrJoinTerminal>interface_terminal</InterfaceOrJoinTerminal>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartTerminal" uid="_116004">
+								<Id id="Join term"/>
+								<IntendedJointType>
+									<TerminalJointTypeEnum>crimp_terminal</TerminalJointTypeEnum>
+								</IntendedJointType>
+								<InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartConnectivityDefinition" uid="_116007">
+								<Name>
+									<CharacterString>Node</CharacterString>
+								</Name>
+								<ConnectedTerminals>
+									<PartTerminal uidRef="_116003"/>
+									<PartTerminal uidRef="_116004"/>
+								</ConnectedTerminals>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartContactFeature" uid="_116090">
+								<Id id="Contact mounting profile"/>
+								<PartDefinition uidRef="_60A000"/>
+							</ShapeElement>
+						</PartView>
+					</Views>
+				</PartVersion>
+			</Versions>
+		</Part>
+		<Part uid="_117000">
+			<!-- Phone connector 6.35mm -->
+			<Id id="TM2PB"/>
+			<!-- Amphenol ?? -->
+			<Name>
+				<CharacterString>Phone connector 6.35mm</CharacterString>
+			</Name>
+			<PartTypes>
+				<PartCategoryEnum>discrete</PartCategoryEnum>
+				<PartCategoryEnum>connector</PartCategoryEnum>
+			</PartTypes>
+			<Versions>
+				<PartVersion uid="_117001">
+					<Id id="Version 1"/>
+					<Views>
+						<PartView uid="_117002">
+							<InitialContext uidRef="_100102"/>
+							<Occurrence xsi:type="n0:SingleOccurrence" uid="_217100">
+								<Id id="phone1"/>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_217101">
+									<Definition uidRef="_117003"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_217102">
+									<Definition uidRef="_117004"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_217103">
+									<Definition uidRef="_117008"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_217104">
+									<Definition uidRef="_117009"/>
+								</ShapeElement>
+							</Occurrence>
+							<ShapeElement xsi:type="n0:PartTerminal" uid="_117003">
+								<Id id="Interface signal"/>
+								<IntendedJointType>
+									<TerminalJointTypeEnum>pin_terminal</TerminalJointTypeEnum>
+								</IntendedJointType>
+								<InterfaceOrJoinTerminal>interface_terminal</InterfaceOrJoinTerminal>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartTerminal" uid="_117004">
+								<Id id="Join signal"/>
+								<IntendedJointType>
+									<TerminalJointTypeEnum>crimp_terminal</TerminalJointTypeEnum>
+								</IntendedJointType>
+								<InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartConnectivityDefinition" uid="_117007">
+								<Name>
+									<CharacterString>Signal node</CharacterString>
+								</Name>
+								<ConnectedTerminals>
+									<PartTerminal uidRef="_117003"/>
+									<PartTerminal uidRef="_117004"/>
+								</ConnectedTerminals>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartTerminal" uid="_117008">
+								<Id id="Interface gnd"/>
+								<IntendedJointType>
+									<TerminalJointTypeEnum>pin_terminal</TerminalJointTypeEnum>
+								</IntendedJointType>
+								<InterfaceOrJoinTerminal>interface_terminal</InterfaceOrJoinTerminal>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartTerminal" uid="_117009">
+								<Id id="Join gnd"/>
+								<IntendedJointType>
+									<TerminalJointTypeEnum>crimp_terminal</TerminalJointTypeEnum>
+								</IntendedJointType>
+								<InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartConnectivityDefinition" uid="_117010">
+								<Name>
+									<CharacterString>Gnd node</CharacterString>
+								</Name>
+								<ConnectedTerminals>
+									<PartTerminal uidRef="_117008"/>
+									<PartTerminal uidRef="_117009"/>
+								</ConnectedTerminals>
+							</ShapeElement>
+						</PartView>
+					</Views>
+				</PartVersion>
+			</Versions>
+		</Part>
+		<Part uid="_118000">
+			<!-- Splice-->
+			<Id id="M81824"/>
+			<Name>
+				<CharacterString>Butt Splice Terminal</CharacterString>
+			</Name>
+			<PartTypes>
+				<PartCategoryEnum>discrete</PartCategoryEnum>
+				<PartCategoryEnum>splice</PartCategoryEnum>
+			</PartTypes>
+			<Versions>
+				<PartVersion uid="_118001">
+					<Id id="Version 1"/>
+					<Views>
+						<PartView uid="_118002">
+							<InitialContext uidRef="_100102"/>
+							<Occurrence xsi:type="n0:SingleOccurrence" uid="_218100">
+								<Id id="splice1"/>
+								<!-- Insulation displacement termination? terminal-->
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_218103">
+									<Definition uidRef="_118003"/>
+								</ShapeElement>
+								<!--Crimp? terminal-->
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_218104">
+									<Definition uidRef="_118004"/>
+								</ShapeElement>
+							</Occurrence>
+							<ShapeElement xsi:type="n0:PartTerminal" uid="_118003">
+								<Id id="end a"/>
+								<IntendedJointType>
+									<TerminalJointTypeEnum>crimp_terminal</TerminalJointTypeEnum>
+								</IntendedJointType>
+								<InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartTerminal" uid="_118004">
+								<Id id="end b"/>
+								<IntendedJointType>
+									<TerminalJointTypeEnum>crimp_terminal</TerminalJointTypeEnum>
+								</IntendedJointType>
+								<InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartConnectivityDefinition" uid="_118007">
+								<ConnectedTerminals>
+									<PartTerminal uidRef="_118003"/>
+									<PartTerminal uidRef="_118004"/>
+								</ConnectedTerminals>
+							</ShapeElement>
+						</PartView>
+					</Views>
+				</PartVersion>
+			</Versions>
+		</Part>
+		<Part uid="_119000">
+			<!-- Dsub9-->
+			<Id id="DEP09S065TLF"/>
+			<Name>
+				<CharacterString>D-sub 9 Pin Db9 Female Solder Type Socket Connector</CharacterString>
+			</Name>
+			<PartTypes>
+				<PartCategoryEnum>discrete</PartCategoryEnum>
+				<PartCategoryEnum>connector</PartCategoryEnum>
+			</PartTypes>
+			<Versions>
+				<PartVersion uid="_119001">
+					<Id id="Version 1"/>
+					<Views>
+						<PartView uid="_119002">
+							<InitialContext uidRef="_100102"/>
+							<Occurrence xsi:type="n0:SingleOccurrence" uid="_219100">
+								<Id id="dsub1"/>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_219113">
+									<Definition uidRef="_119013"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_219114">
+									<Definition uidRef="_119014"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_219123">
+									<Definition uidRef="_119023"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_219124">
+									<Definition uidRef="_119024"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_219133">
+									<Definition uidRef="_119033"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_219134">
+									<Definition uidRef="_119034"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_219143">
+									<Definition uidRef="_119043"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_219144">
+									<Definition uidRef="_119044"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_219153">
+									<Definition uidRef="_119053"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_219154">
+									<Definition uidRef="_119054"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_219163">
+									<Definition uidRef="_119063"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_219164">
+									<Definition uidRef="_119064"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_219173">
+									<Definition uidRef="_119073"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_219174">
+									<Definition uidRef="_119074"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_219183">
+									<Definition uidRef="_119083"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_219184">
+									<Definition uidRef="_119084"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_219193">
+									<Definition uidRef="_119093"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_219194">
+									<Definition uidRef="_119094"/>
+								</ShapeElement>
+							</Occurrence>
+							<ShapeElement xsi:type="n0:PartTerminal" uid="_119013">
+								<Id id="Interface1"/>
+								<IntendedJointType>
+									<TerminalJointTypeEnum>socket_terminal</TerminalJointTypeEnum>
+								</IntendedJointType>
+								<InterfaceOrJoinTerminal>interface_terminal</InterfaceOrJoinTerminal>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartTerminal" uid="_119014">
+								<Id id="Join1"/>
+								<IntendedJointType>
+									<TerminalJointTypeEnum>solder_terminal</TerminalJointTypeEnum>
+								</IntendedJointType>
+								<InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartConnectivityDefinition" uid="_119017">
+								<Name>
+									<CharacterString>node1</CharacterString>
+								</Name>
+								<ConnectedTerminals>
+									<PartTerminal uidRef="_119013"/>
+									<PartTerminal uidRef="_119014"/>
+								</ConnectedTerminals>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartTerminal" uid="_119023">
+								<Id id="Interface2"/>
+								<IntendedJointType>
+									<TerminalJointTypeEnum>socket_terminal</TerminalJointTypeEnum>
+								</IntendedJointType>
+								<InterfaceOrJoinTerminal>interface_terminal</InterfaceOrJoinTerminal>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartTerminal" uid="_119024">
+								<Id id="Join2"/>
+								<IntendedJointType>
+									<TerminalJointTypeEnum>solder_terminal</TerminalJointTypeEnum>
+								</IntendedJointType>
+								<InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartConnectivityDefinition" uid="_119027">
+								<Name>
+									<CharacterString>node2</CharacterString>
+								</Name>
+								<ConnectedTerminals>
+									<PartTerminal uidRef="_119023"/>
+									<PartTerminal uidRef="_119024"/>
+								</ConnectedTerminals>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartTerminal" uid="_119033">
+								<Id id="Interface3"/>
+								<IntendedJointType>
+									<TerminalJointTypeEnum>socket_terminal</TerminalJointTypeEnum>
+								</IntendedJointType>
+								<InterfaceOrJoinTerminal>interface_terminal</InterfaceOrJoinTerminal>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartTerminal" uid="_119034">
+								<Id id="Join3"/>
+								<IntendedJointType>
+									<TerminalJointTypeEnum>solder_terminal</TerminalJointTypeEnum>
+								</IntendedJointType>
+								<InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartConnectivityDefinition" uid="_119037">
+								<Name>
+									<CharacterString>node3</CharacterString>
+								</Name>
+								<ConnectedTerminals>
+									<PartTerminal uidRef="_119033"/>
+									<PartTerminal uidRef="_119034"/>
+								</ConnectedTerminals>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartTerminal" uid="_119043">
+								<Id id="Interface4"/>
+								<IntendedJointType>
+									<TerminalJointTypeEnum>socket_terminal</TerminalJointTypeEnum>
+								</IntendedJointType>
+								<InterfaceOrJoinTerminal>interface_terminal</InterfaceOrJoinTerminal>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartTerminal" uid="_119044">
+								<Id id="Join4"/>
+								<IntendedJointType>
+									<TerminalJointTypeEnum>solder_terminal</TerminalJointTypeEnum>
+								</IntendedJointType>
+								<InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartConnectivityDefinition" uid="_119047">
+								<Name>
+									<CharacterString>node4</CharacterString>
+								</Name>
+								<ConnectedTerminals>
+									<PartTerminal uidRef="_119043"/>
+									<PartTerminal uidRef="_119044"/>
+								</ConnectedTerminals>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartTerminal" uid="_119053">
+								<Id id="Interface5"/>
+								<IntendedJointType>
+									<TerminalJointTypeEnum>socket_terminal</TerminalJointTypeEnum>
+								</IntendedJointType>
+								<InterfaceOrJoinTerminal>interface_terminal</InterfaceOrJoinTerminal>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartTerminal" uid="_119054">
+								<Id id="Join5"/>
+								<IntendedJointType>
+									<TerminalJointTypeEnum>solder_terminal</TerminalJointTypeEnum>
+								</IntendedJointType>
+								<InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartConnectivityDefinition" uid="_119057">
+								<Name>
+									<CharacterString>node5</CharacterString>
+								</Name>
+								<ConnectedTerminals>
+									<PartTerminal uidRef="_119053"/>
+									<PartTerminal uidRef="_119054"/>
+								</ConnectedTerminals>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartTerminal" uid="_119063">
+								<Id id="Interface6"/>
+								<IntendedJointType>
+									<TerminalJointTypeEnum>socket_terminal</TerminalJointTypeEnum>
+								</IntendedJointType>
+								<InterfaceOrJoinTerminal>interface_terminal</InterfaceOrJoinTerminal>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartTerminal" uid="_119064">
+								<Id id="Join6"/>
+								<IntendedJointType>
+									<TerminalJointTypeEnum>solder_terminal</TerminalJointTypeEnum>
+								</IntendedJointType>
+								<InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartConnectivityDefinition" uid="_119067">
+								<Name>
+									<CharacterString>node6</CharacterString>
+								</Name>
+								<ConnectedTerminals>
+									<PartTerminal uidRef="_119063"/>
+									<PartTerminal uidRef="_119064"/>
+								</ConnectedTerminals>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartTerminal" uid="_119073">
+								<Id id="Interface7"/>
+								<IntendedJointType>
+									<TerminalJointTypeEnum>socket_terminal</TerminalJointTypeEnum>
+								</IntendedJointType>
+								<InterfaceOrJoinTerminal>interface_terminal</InterfaceOrJoinTerminal>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartTerminal" uid="_119074">
+								<Id id="Join7"/>
+								<IntendedJointType>
+									<TerminalJointTypeEnum>solder_terminal</TerminalJointTypeEnum>
+								</IntendedJointType>
+								<InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartConnectivityDefinition" uid="_119077">
+								<Name>
+									<CharacterString>node7</CharacterString>
+								</Name>
+								<ConnectedTerminals>
+									<PartTerminal uidRef="_119073"/>
+									<PartTerminal uidRef="_119074"/>
+								</ConnectedTerminals>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartTerminal" uid="_119083">
+								<Id id="Interface8"/>
+								<IntendedJointType>
+									<TerminalJointTypeEnum>socket_terminal</TerminalJointTypeEnum>
+								</IntendedJointType>
+								<InterfaceOrJoinTerminal>interface_terminal</InterfaceOrJoinTerminal>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartTerminal" uid="_119084">
+								<Id id="Join8"/>
+								<IntendedJointType>
+									<TerminalJointTypeEnum>solder_terminal</TerminalJointTypeEnum>
+								</IntendedJointType>
+								<InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartConnectivityDefinition" uid="_119087">
+								<Name>
+									<CharacterString>node8</CharacterString>
+								</Name>
+								<ConnectedTerminals>
+									<PartTerminal uidRef="_119083"/>
+									<PartTerminal uidRef="_119084"/>
+								</ConnectedTerminals>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartTerminal" uid="_119093">
+								<Id id="Interface9"/>
+								<IntendedJointType>
+									<TerminalJointTypeEnum>socket_terminal</TerminalJointTypeEnum>
+								</IntendedJointType>
+								<InterfaceOrJoinTerminal>interface_terminal</InterfaceOrJoinTerminal>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartTerminal" uid="_119094">
+								<Id id="Join9"/>
+								<IntendedJointType>
+									<TerminalJointTypeEnum>solder_terminal</TerminalJointTypeEnum>
+								</IntendedJointType>
+								<InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartConnectivityDefinition" uid="_119097">
+								<Name>
+									<CharacterString>node9</CharacterString>
+								</Name>
+								<ConnectedTerminals>
+									<PartTerminal uidRef="_119093"/>
+									<PartTerminal uidRef="_119094"/>
+								</ConnectedTerminals>
+							</ShapeElement>
+						</PartView>
+					</Views>
+				</PartVersion>
+			</Versions>
+		</Part>
+		<Part uid="_120000">
+			<!-- Braid 1/2inch -->
+			<Id id="TC122"/>
+			<Name>
+				<CharacterString>Braid 1/2inch</CharacterString>
+			</Name>
+			<PartTypes>
+				<PartCategoryEnum>overbraid</PartCategoryEnum>
+				<PartCategoryEnum>raw_material_by_length</PartCategoryEnum>
+			</PartTypes>
+			<Versions>
+				<PartVersion uid="_120001">
+					<Id id="Version 1"/>
+					<Views>
+						<PartView uid="_120002">
+							<DefiningGeometry uidRef="_104890"/>
+							<InitialContext uidRef="_100102"/>
+							<Occurrence xsi:type="n0:WireOccurrence" uid="_220005">
+								<Id id="braid1"/>
+								<ShapeElement xsi:type="n0:CrossSectionalOccurrenceShapeElement" uid="_220006">
+									<Definition uidRef="_120003"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:WireOccurrenceTerminal" uid="_220007">
+									<Name>
+										<CharacterString>end a</CharacterString>
+									</Name>
+									<AssociatedTransportFeature uidRef="_220001"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:WireOccurrenceIdentification" uid="_220001">
+									<Id id="shield"/>
+									<Code uidRef="_100201"/>
+								</ShapeElement>
+								<Quantity xsi:type="n0:NumericalValue" uid="_220009">
+									<Unit uidRef="_100301"/>
+									<ValueComponent>3.7</ValueComponent>
+								</Quantity>
+							</Occurrence>
+							<ShapeElement xsi:type="n0:CrossSectionalPartShapeElement" uid="_120003">
+								<Id id="Inner surface"/>
+								<OuterOrInnerBoundary>inner_boundary</OuterOrInnerBoundary>
+							</ShapeElement>
+						</PartView>
+					</Views>
+				</PartVersion>
+			</Versions>
+		</Part>
+		<Part uid="_121000">
+			<!-- Wrap -->
+			<Id id="SPW-500SP-BK"/>
+			<Name>
+				<CharacterString>1/2 inch Spiral Wrap - 100 foot spool - Black</CharacterString>
+			</Name>
+			<PartTypes>
+				<PartCategoryEnum>protective_covering</PartCategoryEnum>
+				<PartCategoryEnum>raw_material_by_length</PartCategoryEnum>
+			</PartTypes>
+			<Versions>
+				<PartVersion uid="_121001">
+					<Id id="Version 1"/>
+					<Views>
+						<PartView uid="_121002">
+							<DefiningGeometry uidRef="_104890"/>
+							<InitialContext uidRef="_100102"/>
+							<Occurrence xsi:type="n0:QuantifiedOccurrence" uid="_221005">
+								<Id id="wrap1"/>
+								<ShapeElement xsi:type="n0:CrossSectionalOccurrenceShapeElement" uid="_221006">
+									<Definition uidRef="_121003"/>
+								</ShapeElement>
+								<Quantity xsi:type="n0:NumericalValue" uid="_221007">
+									<Unit uidRef="_100301"/>
+									<ValueComponent>1.75</ValueComponent>
+								</Quantity>
+							</Occurrence>
+							<ShapeElement xsi:type="n0:CrossSectionalPartShapeElement" uid="_121003">
+								<Id id="Inner surface"/>
+								<OuterOrInnerBoundary>inner_boundary</OuterOrInnerBoundary>
+							</ShapeElement>
+						</PartView>
+					</Views>
+				</PartVersion>
+			</Versions>
+		</Part>
+		<Part uid="_122000">
+			<!-- HeatShrink -->
+			<Id>
+				<Identifier uid="_120999" id="H4N1.00BK" idRoleRef="_100504" idContextRef="_100420"/>
+			</Id>
+			<Name>
+				<CharacterString>Shrinkflex Polyolefin Heatshrink Tubing - 4/1 - 25mm 1" - Black</CharacterString>
+			</Name>
+			<PartTypes>
+				<PartCategoryEnum>protective_covering</PartCategoryEnum>
+				<PartCategoryEnum>raw_material_by_length</PartCategoryEnum>
+			</PartTypes>
+			<Versions>
+				<PartVersion uid="_122001">
+					<Id id="Version 1"/>
+					<Views>
+						<PartView uid="_122002">
+							<DefiningGeometry uidRef="_104890"/>
+							<InitialContext uidRef="_100102"/>
+							<Occurrence xsi:type="n0:QuantifiedOccurrence" uid="_222005">
+								<Id id="heatshrink1"/>
+								<ShapeElement xsi:type="n0:CrossSectionalOccurrenceShapeElement" uid="_222006">
+									<Definition uidRef="_122003"/>
+								</ShapeElement>
+								<Quantity xsi:type="n0:NumericalValue" uid="_222007">
+									<Unit uidRef="_100301"/>
+									<ValueComponent>2.1</ValueComponent>
+								</Quantity>
+							</Occurrence>
+							<ShapeElement xsi:type="n0:CrossSectionalPartShapeElement" uid="_122003">
+								<Id id="Inner surface"/>
+								<OuterOrInnerBoundary>inner_boundary</OuterOrInnerBoundary>
+							</ShapeElement>
+						</PartView>
+					</Views>
+				</PartVersion>
+			</Versions>
+		</Part>
+		<Part uid="_123000">
+			<!-- Backshell EMI connector -->
+			<Id id="8660-140"/>
+			<Name>
+				<CharacterString>Backshell EMI connector</CharacterString>
+			</Name>
+			<PartTypes>
+				<PartCategoryEnum>discrete</PartCategoryEnum>
+				<PartCategoryEnum>electrified_backshell</PartCategoryEnum>
+			</PartTypes>
+			<Versions>
+				<PartVersion uid="_123001">
+					<Id id="Version 1"/>
+					<Views>
+						<PartView uid="_123002">
+							<InitialContext uidRef="_100102"/>
+							<Occurrence xsi:type="n0:SingleOccurrence" uid="_223100">
+								<Id id="arinc1/backshell1"/>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_223101">
+									<Definition uidRef="_123003"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_223102">
+									<Definition uidRef="_123004"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceShapeFeature" uid="_223111">
+									<Definition uidRef="_123011"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceShapeFeature" uid="_223112">
+									<Definition uidRef="_123012"/>
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:OccurrenceShapeFeature" uid="_223113">
+									<Definition uidRef="_123013"/>
+								</ShapeElement>
+							</Occurrence>
+							<ShapeElement xsi:type="n0:PartTerminal" uid="_123003">
+								<Id id="GND1"/>
+								<IntendedJointType>
+									<TerminalJointTypeEnum>screw_terminal</TerminalJointTypeEnum>
+								</IntendedJointType>
+								<InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartTerminal" uid="_123004">
+								<Id id="GND2"/>
+								<IntendedJointType>
+									<TerminalJointTypeEnum>screw_terminal</TerminalJointTypeEnum>
+								</IntendedJointType>
+								<InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartConnectivityDefinition" uid="_123007">
+								<Name>
+									<CharacterString>GND Node</CharacterString>
+								</Name>
+								<ConnectedTerminals>
+									<PartTerminal uidRef="_123003"/>
+									<PartTerminal uidRef="_123004"/>
+								</ConnectedTerminals>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartFeature" uid="_123011">
+								<Id id="Segment opening A"/>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartFeature" uid="_123012">
+								<Id id="Segment opening B"/>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:PartFeature" uid="_123013">
+								<Id id="Segment opening C"/>
+							</ShapeElement>
+						</PartView>
+					</Views>
+				</PartVersion>
+			</Versions>
+		</Part>
+		<Part uid="_125000">
+			<!-- ARINC 600 shell size 1 rack plug -->
+			<Id id="SB6 4 1 M"/>
+			<Name>
+				<CharacterString>ARINC 600 shell size 1 rack plug </CharacterString>
+			</Name>
+			<PartTypes>
+				<PartCategoryEnum>discrete</PartCategoryEnum>
+				<PartCategoryEnum>connector_housing</PartCategoryEnum>
+			</PartTypes>
+			<Versions>
+				<PartVersion uid="_125001">
+					<Id/>
+					<Views>
+						<PartView uid="_125002">
+							<InitialContext uidRef="_100102"/>
+							<Occurrence xsi:type="n0:SingleOccurrence" uid="_225100">
+								<Id id="arinc1 housing"/>
+								<ShapeElement xsi:type="n0:OccurrenceContactFeature" uid="_225100x">
+									<ShapeElement xsi:type="n0:OccurrenceContactFeature" uid="_225101">
+										<Definition uidRef="_125011"/>
+									</ShapeElement>
+									<ShapeElement xsi:type="n0:OccurrenceContactFeature" uid="_225102">
+										<Definition uidRef="_125012"/>
+									</ShapeElement>
+									<ShapeElement xsi:type="n0:OccurrenceContactFeature" uid="_225103">
+										<Definition uidRef="_125013"/>
+									</ShapeElement>
+									<Definition uidRef="_125010"/>
+								</ShapeElement>
+							</Occurrence>
+							<ShapeElement xsi:type="n0:PartContactFeature" uid="_125010">
+								<ShapeElement xsi:type="n0:PartContactFeature" uid="_125011">
+									<PartDefinition uidRef="_60C010"/>
+									<!-- A-slot-->
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:PartContactFeature" uid="_125012">
+									<PartDefinition uidRef="_60C020"/>
+									<!-- B-slot-->
+								</ShapeElement>
+								<ShapeElement xsi:type="n0:PartContactFeature" uid="_125013">
+									<PartDefinition uidRef="_60C030"/>
+									<!-- C-slot-->
+								</ShapeElement>
+								<PartDefinition uidRef="_60C000"/>
+							</ShapeElement>
+						</PartView>
+					</Views>
+				</PartVersion>
+			</Versions>
+		</Part>
+		<Part uid="_311000">
+			<!-- Part_H1 -->
+			<Id id="Part_H1"/>
+			<Name>
+				<CharacterString>Electrical Harness example 1</CharacterString>
+			</Name>
+			<PartTypes>
+				<PartCategoryEnum>assembly</PartCategoryEnum>
+				<PartCategoryEnum>wiring_harness</PartCategoryEnum>
+			</PartTypes>
+			<Versions>
+				<PartVersion uid="_311001">
+					<Id/>
+					<Views>
+						<PartView xsi:type="n0:WiringHarnessAssemblyDesign" uid="_311002">
+							<AdditionalContexts>
+								<ViewContext uidRef="_100101"/>
+								<ViewContext uidRef="_100104"/>
+								<ViewContext uidRef="_100105"/>
+							</AdditionalContexts>
+							<DefiningGeometry uidRef="_314090"/>  <!-- => ComposedGeometricModel -->
+							<InitialContext uidRef="_100102"/>
+							<!-- AssemblyJoint on lug1 with wire1-->
+							<ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_311010">
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311110">
+									<Related uidRef="_201006"/>
+									<!-- wire1#end a -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311210">
+									<Related uidRef="_203008"/>
+									<!-- lug1#Internal -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<JointType>crimped_connection</JointType>
+							</ShapeElement>
+							<!--2 AssemblyJoints on Phone1 with cable3-->
+							<ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_311020">
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311120">
+									<Related uidRef="_204023"/>
+									<!-- cable3#end b A -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311220">
+									<Related uidRef="_217102"/>
+									<!-- phone1#Join signal -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<JointType>crimped_connection</JointType>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_311021">
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311121">
+									<Related uidRef="_204024"/>
+									<!-- cable3#end b B -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311222">
+									<Related uidRef="_217104"/>
+									<!-- phone1#Join gnd -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<JointType>crimped_connection</JointType>
+							</ShapeElement>
+							<!--5 AssemblyJoints on dsub1 with Cable1, Cable2, Wire3-->
+							<ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_311030">
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311130">
+									<Related uidRef="_219114"/>
+									<!-- dsub1#Join 1 -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311230">
+									<Related uidRef="_202023"/>
+									<!-- cable1#end b signal -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<JointType>crimped_connection</JointType>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_311031">
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311131">
+									<Related uidRef="_219124"/>
+									<!-- dsub1#Join 2 -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311231">
+									<Related uidRef="_202024"/>
+									<!-- cable1#end b shield -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<JointType>crimped_connection</JointType>
+							</ShapeElement>
+							<!--Cable2-->
+							<ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_311032">
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311132">
+									<Related uidRef="_219134"/>
+									<!-- dsub1#Join 3  -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311232">
+									<Related uidRef="_202123"/>
+									<!-- cable2#end b signal -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<JointType>crimped_connection</JointType>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_311033">
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311133">
+									<Related uidRef="_219144"/>
+									<!-- dsub1#Join 4 -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311233">
+									<Related uidRef="_202124"/>
+									<!-- cable2#end b shield -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<JointType>crimped_connection</JointType>
+							</ShapeElement>
+							<!--Wire1-->
+							<ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_311034">
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311134">
+									<Related uidRef="_219154"/>
+									<!-- dsub1#Join 5 -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311234">
+									<Related uidRef="_201207"/>
+									<!-- wire3#end b -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<JointType>crimped_connection</JointType>
+							</ShapeElement>
+							<!--8 AssemblyJoints on arinc1 with wire2, cable1, cable2 cable3, braid1 and -->
+							<ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_311040">
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311140">
+									<Related uidRef="_201106"/>
+									<!-- wire2#end a ?????????????????????????? -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311240">
+									<Related uidRef="_216102"/>
+									<!-- arinc1/C-Assy/signal5#Join term -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<JointType>crimped_connection</JointType>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_311041">
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311141">
+									<Related uidRef="_202013"/>
+									<!-- cable1#end a signal -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311241">
+									<Related uidRef="_213102"/>
+									<!-- arinc1/C-Assy/coax1#Join signal -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<JointType>crimped_connection</JointType>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_311042">
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311142">
+									<Related uidRef="_202014"/>
+									<!-- cable1#end a shield -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311242">
+									<Related uidRef="_213104"/>
+									<!-- arinc1/C-Assy/coax1#Join gnd -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<JointType>crimped_connection</JointType>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_311043">
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311143">
+									<Related uidRef="_202113"/>
+									<!-- cable2#end a signal -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311243">
+									<Related uidRef="_213202"/>
+									<!-- arinc1/C-Assy/coax2#Join signal -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<JointType>crimped_connection</JointType>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_311044">
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311144">
+									<Related uidRef="_202114"/>
+									<!-- cable2#end a shield -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311244">
+									<Related uidRef="_213204"/>
+									<!-- arinc1/C-Assy/coax2#Join gnd -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<JointType>crimped_connection</JointType>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_311045">
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311145">
+									<Related uidRef="_204013"/>
+									<!-- cable3#end a A  -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311245">
+									<Related uidRef="_214103"/>
+									<!-- arinc1/C-Assy/power3#Join term -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<JointType>crimped_connection</JointType>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_311046">
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311146">
+									<Related uidRef="_204014"/>
+									<!-- cable3#end a B -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311246">
+									<Related uidRef="_214104"/>
+									<!-- arinc1/C-Assy/power4#Join term -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<JointType>crimped_connection</JointType>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_311047">
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311147">
+									<Related uidRef="_223101"/>
+									<!-- backshell1#GND1  -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311247">
+									<Related uidRef="_220007"/>
+									<!-- braid1#end a -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<JointType>crimped_connection</JointType>
+							</ShapeElement>
+							<!--3 AssemblyJoints on splice1 with wire1, wire2 and wire3-->
+							<ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_311050">
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311150">
+									<Related uidRef="_201007"/>
+									<!-- wire1#end b -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311250">
+									<Related uidRef="_201107"/>
+									<!-- wire2#end b -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311251">
+									<Related uidRef="_218103"/> <!-- splice1#end_a -->
+									<RelationType><ClassString></ClassString></RelationType>
+								</ShapeElementRelationship>
+								<JointType>crimped_connection</JointType>
+							</ShapeElement>
+							<!--Splice1 end b & Wire3 end a-->
+							<ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_311052">
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311152">
+									<Related uidRef="_218104"/>
+									<!-- splice1#end b  -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311252">
+									<Related uidRef="_201206"/>
+									<!-- wire3#end a -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<JointType>crimped_connection</JointType>
+							</ShapeElement>
+							<!-- Insert A into arinc1 housing-->
+							<ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_311053">
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311153">
+									<Related uidRef="_211019"/>
+									<!-- A insert  -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311253">
+									<Related uidRef="_225101"/>
+									<!-- arinc1 housing A slot-->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<JointType>snap_connection</JointType>
+							</ShapeElement>
+							<!-- Insert B into arinc1 housing-->
+							<ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_311054">
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311154">
+									<Related uidRef="_211029"/>
+									<!-- B insert  -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311254">
+									<Related uidRef="_225102"/>
+									<!-- arinc1 housing B slot-->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<JointType>snap_connection</JointType>
+							</ShapeElement>
+							<!-- Insert C into arinc1 housing-->
+							<ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_311390">
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311391">
+									<Related uidRef="_212019"/>
+									<!-- C insert  -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311392">
+									<Related uidRef="_225103"/>
+									<!-- arinc1 housing C slot-->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<JointType>snap_connection</JointType>
+							</ShapeElement>
+							<!-- Arinc1 Insert C cavities to contacts-->
+							<ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_311310">
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311311">
+									<Related uidRef="_212011"/>
+									<!-- C insert cavity 1-#5  -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311312">
+									<Related uidRef="_213109"/>
+									<!-- coax1 contact mounting -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<JointType>snap_connection</JointType>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_311320">
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311321">
+									<Related uidRef="_212012"/>
+									<!-- C insert cavity 2-#5  -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311322">
+									<Related uidRef="_213209"/>
+									<!-- coax2 contact mounting -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<JointType>snap_connection</JointType>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_311330">
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311331">
+									<Related uidRef="_212013"/>
+									<!-- C insert cavity 3-#16  -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311332">
+									<Related uidRef="_214109"/>
+									<!-- power3 contact mounting -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<JointType>snap_connection</JointType>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_311340">
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311341">
+									<Related uidRef="_212014"/>
+									<!-- C insert cavity 4-#16  -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311342">
+									<Related uidRef="_214209"/>
+									<!-- power4 contact mounting -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<JointType>snap_connection</JointType>
+							</ShapeElement>
+							<ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_311350">
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311351">
+									<Related uidRef="_212015"/>
+									<!-- C insert cavity 5-#12  -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_311352">
+									<Related uidRef="_216109"/>
+									<!-- signal5 contact mounting -->
+									<RelationType>
+										<ClassString/>
+									</RelationType>
+								</ShapeElementRelationship>
+								<JointType>snap_connection</JointType>
+							</ShapeElement>
+							<!--wire2 or wire3 (S2&S3)-->
+							<ShapeElement xsi:type="n0:CrossSectionalAlternativePartShapeElement" uid="_313001">
+								<OuterOrInnerBoundary>outer_boundary</OuterOrInnerBoundary>
+								<Items>
+									<CrossSectionalOccurrenceShapeElement uidRef="_201109"/>
+									<!--wire2/outer-->
+									<CrossSectionalOccurrenceShapeElement uidRef="_201209"/>
+									<!--wire3/outer-->
+								</Items>
+							</ShapeElement>
+							<!--twist (wire2 or wire3) with cable3 (S2&S3)-->
+							<ShapeElement xsi:type="n0:TwistedCrossSectionalGroupShapeElement" uid="_313002">
+								<OuterOrInnerBoundary>outer_boundary</OuterOrInnerBoundary>
+								<Items>
+									<CrossSectionalPartShapeElement uidRef="_313001"/>
+									<!--wire2 or wire3 -->
+									<CrossSectionalOccurrenceShapeElement uidRef="_204007"/>
+									<!--cable3/outer -->
+								</Items>
+								<TwistDirection>clockwise</TwistDirection>
+								<TwistPeriod xsi:type="n0:NumericalValue" uid="_313003">
+									<Definition>
+										<PropertyDefinitionString>Non sense</PropertyDefinitionString>
+									</Definition>
+									<Unit uidRef="_100301"/>
+									<ValueComponent>0.05</ValueComponent>
+								</TwistPeriod>
+							</ShapeElement>
+							<!--braid1 on (twist... and cable1 and cable2) (S2&S3)-->
+							<ShapeElement xsi:type="n0:CrossSectionalGroupShapeElementWithTubularCover" uid="_313004">
+								<OuterOrInnerBoundary>outer_boundary</OuterOrInnerBoundary>
+								<Items>
+									<CrossSectionalPartShapeElement uidRef="_313002"/>
+									<!--twist...-->
+									<CrossSectionalOccurrenceShapeElement uidRef="_202007"/>
+									<!--cable1/outer-->
+									<CrossSectionalOccurrenceShapeElement uidRef="_202107"/>
+									<!--cable2/outer-->
+								</Items>
+								<Cover uidRef="_220006"/>
+								<!-- braid1/inner -->
+							</ShapeElement>
+							<!--wrap1 on braid1... (C1)-->
+							<ShapeElement xsi:type="n0:CrossSectionalGroupShapeElementWithTubularCover" uid="_313005">
+								<OuterOrInnerBoundary>outer_boundary</OuterOrInnerBoundary>
+								<Items>
+									<CrossSectionalOccurrenceShapeElement uidRef="_313004"/>
+									<!-- braid1 on (twist... -->
+								</Items>
+								<Cover uidRef="_221006"/>
+								<!--wrap1/inner-->
+							</ShapeElement>
+							<!--heatshrink1 on wrap1 (C1)-->
+							<ShapeElement xsi:type="n0:CrossSectionalGroupShapeElementWithTubularCover" uid="_313006">
+								<OuterOrInnerBoundary>outer_boundary</OuterOrInnerBoundary>
+								<Items>
+									<CrossSectionalOccurrenceShapeElement uidRef="_313005"/>
+									<!-- wrap1 on ... -->
+								</Items>
+								<Cover uidRef="_222006"/>
+								<!--heatshrink1/inner-->
+							</ShapeElement>
+							<!--heatshrink1 on braid1 (S2-2)-->
+							<ShapeElement xsi:type="n0:CrossSectionalGroupShapeElementWithTubularCover" uid="_313007">
+								<OuterOrInnerBoundary>outer_boundary</OuterOrInnerBoundary>
+								<Items>
+									<CrossSectionalOccurrenceShapeElement uidRef="_313004"/>
+									<!-- braid1 on (twist... -->
+								</Items>
+								<Cover uidRef="_222006"/>
+								<!--heatshrink1/inner-->
+							</ShapeElement>
+							<!--Lacing of cable1, cable2 & wire3 (S5)-->
+							<ShapeElement xsi:type="n0:CrossSectionalGroupShapeElementWithLacing" uid="_313008">
+								<OuterOrInnerBoundary>outer_boundary</OuterOrInnerBoundary>
+								<Items>
+									<CrossSectionalOccurrenceShapeElement uidRef="_201209"/>
+									<!--wire3/outer-->
+									<CrossSectionalOccurrenceShapeElement uidRef="_202007"/>
+									<!--cable1/outer-->
+									<CrossSectionalOccurrenceShapeElement uidRef="_202107"/>
+									<!--cable2/outer-->
+								</Items>
+							</ShapeElement>
+							<!--SEGMENTS-->
+							<!--HarnessSegment S2-2-->
+							<ShapeElement xsi:type="n0:HarnessSegment" uid="_314001">
+								<ClassifiedAs>
+									<Classification uidRef="_100506"/>
+								</ClassifiedAs>
+								<RepresentedGeometry uidRef="_321032"/>
+								<CrossSection uidRef="_313007"/>
+								<!-- heatshrink1 on braid1 ... -->
+							</ShapeElement>
+							<!--HarnessSegment S2-3-->
+							<ShapeElement xsi:type="n0:HarnessSegment" uid="_314002">
+								<ClassifiedAs>
+									<Classification uidRef="_100506"/>
+								</ClassifiedAs>
+								<RepresentedGeometry uidRef="_321033"/>
+								<CrossSection uidRef="_313004"/>
+								<!-- braid1 on (twist... )  -->
+							</ShapeElement>
+							<!--HarnessSegment S3-2-->
+							<ShapeElement xsi:type="n0:HarnessSegment" uid="_314003">
+								<ClassifiedAs>
+									<Classification uidRef="_100506"/>
+								</ClassifiedAs>
+								<RepresentedGeometry uidRef="_321035"/>
+								<CrossSection uidRef="_313004"/>
+								<!-- braid1 on (twist... )  -->
+							</ShapeElement>
+							<!--HarnessSegment S5-->
+							<ShapeElement xsi:type="n0:HarnessSegment" uid="_314004">
+								<ClassifiedAs>
+									<Classification uidRef="_100506"/>
+								</ClassifiedAs>
+								<RepresentedGeometry uidRef="_321025"/>
+								<CrossSection uidRef="_313008"/>
+								<!-- Lacing of cable1, cable2 & wire3 -->
+							</ShapeElement>
+							<!--HarnessSegment S2-1-->
+							<ShapeElement xsi:type="n0:HarnessSegment" uid="_314005">
+								<ClassifiedAs>
+									<Classification uidRef="_100506"/>
+								</ClassifiedAs>
+								<RepresentedGeometry uidRef="_321031"/>
+								<CrossSection uidRef="_313005"/>
+								<!-- heatshrink1 on wrap1 -->
+							</ShapeElement>
+							<!--HarnessSegment S3-1-->
+							<ShapeElement xsi:type="n0:HarnessSegment" uid="_314006">
+								<ClassifiedAs>
+									<Classification uidRef="_100506"/>
+								</ClassifiedAs>
+								<RepresentedGeometry uidRef="_321034"/>
+								<CrossSection uidRef="_313006"/>
+								<!-- heatshrink1 on wrap1 -->
+							</ShapeElement>
+							<!--HARNESSNODES-->
+							<!--HarnessNode N1-->
+							<ShapeElement xsi:type="n0:HarnessNode" uid="_314011">
+								<RepresentedGeometry uidRef="_321041"/>
+								<AttachedFeature uidRef="_203008"/>
+								<!--lug1/Internal-->
+								<NodeType>extremity_node</NodeType>
+							</ShapeElement>
+							<!--HarnessNode N2-->
+							<ShapeElement xsi:type="n0:HarnessNode" uid="_314012">
+								<RepresentedGeometry uidRef="_321042"/>
+								<AttachedFeature uidRef="_223113"/>
+								<!--arinc1/backshell1/C-->
+								<NodeType>extremity_node</NodeType>
+							</ShapeElement>
+							<!--HarnessNode N3-->
+							<ShapeElement xsi:type="n0:HarnessNode" uid="_314013">
+								<RepresentedGeometry uidRef="_321043"/>
+								<NodeType>branch_node</NodeType>
+							</ShapeElement>
+							<!--HarnessNode N5-->
+							<ShapeElement xsi:type="n0:HarnessNode" uid="_314015">
+								<RepresentedGeometry uidRef="_321045"/>
+								<AttachedFeature uidRef="_217102"/> <!-- phone1/Join signal -->
+								<NodeType>extremity_node</NodeType>
+							</ShapeElement>
+							<!--HarnessNode N6-->
+							<ShapeElement xsi:type="n0:HarnessNode" uid="_314016">
+								<RepresentedGeometry uidRef="_321046"/>
+								<AttachedFeature uidRef="_219113"/> <!-- dsub1/Interface1 -->
+								<NodeType>extremity_node</NodeType>
+							</ShapeElement>
+							<!--HarnessNode X1-->
+							<ShapeElement xsi:type="n0:HarnessNode" uid="_314021">
+								<RepresentedGeometry uidRef="_321051"/>
+								<NodeType>intermediate_node</NodeType>
+							</ShapeElement>
+							<!--HarnessNode X2-->
+							<ShapeElement xsi:type="n0:HarnessNode" uid="_314022">
+								<RepresentedGeometry uidRef="_321052"/>
+								<NodeType>intermediate_node</NodeType>
+							</ShapeElement>
+							<!--HarnessNode X3-->
+							<ShapeElement xsi:type="n0:HarnessNode" uid="_314023">
+								<RepresentedGeometry uidRef="_321053"/>
+								<NodeType>intermediate_node</NodeType>
+							</ShapeElement>
+							<!--HarnessNode X4-->
+							<ShapeElement xsi:type="n0:HarnessNode" uid="_314024">
+								<RepresentedGeometry uidRef="_321054"/>
+								<NodeType>external_node</NodeType>
+							</ShapeElement>
+							<!--HarnessNode X6-->
+							<ShapeElement xsi:type="n0:HarnessNode" uid="_314026">
+								<RepresentedGeometry uidRef="_321056"/>
+								<NodeType>intermediate_node</NodeType>
+							</ShapeElement>
+							<!--HarnessNode X7-->
+							<ShapeElement xsi:type="n0:HarnessNode" uid="_314027">
+								<RepresentedGeometry uidRef="_321057"/>
+								<NodeType>intermediate_node</NodeType>
+							</ShapeElement>
+							<!--Cables & Wires-->
+							<ViewOccurrenceRelationship uid="_315011" xsi:type="n0:NextAssemblyOccurrenceUsage">
+								<Related uidRef="_201004"/>
+								<!--WireOccurrence wire1-->
+								<RelationType>
+									<ClassString>next assembly occurrence</ClassString>
+								</RelationType>
+								<Placement>
+									<GeometryToTopologyModelAssociation uidRef="_321080"/>
+								</Placement>
+							</ViewOccurrenceRelationship>
+							<ViewOccurrenceRelationship uid="_315012" xsi:type="n0:NextAssemblyOccurrenceUsage">
+								<Related uidRef="_201104"/>
+								<!--WireOccurrence wire2-->
+								<RelationType>
+									<ClassString>next assembly occurrence</ClassString>
+								</RelationType>
+								<Placement>
+									<GeometryToTopologyModelAssociation uidRef="_321081"/>
+								</Placement>
+							</ViewOccurrenceRelationship>
+							<ViewOccurrenceRelationship uid="_315013" xsi:type="n0:NextAssemblyOccurrenceUsage">
+								<Related uidRef="_201204"/>
+								<!--WireOccurrence wire3-->
+								<RelationType>
+									<ClassString>next assembly occurrence</ClassString>
+								</RelationType>
+								<Placement>
+									<GeometryToTopologyModelAssociation uidRef="_321082"/>
+								</Placement>
+							</ViewOccurrenceRelationship>
+							<ViewOccurrenceRelationship uid="_315003" xsi:type="n0:NextAssemblyOccurrenceUsage">
+								<Related uidRef="_202006"/>
+								<!--CableOccurrence cable1 (RG 58) -->
+								<RelationType>
+									<ClassString>next assembly occurrence</ClassString>
+								</RelationType>
+								<Placement>
+									<GeometryToTopologyModelAssociation uidRef="_321083"/>
+								</Placement>
+							</ViewOccurrenceRelationship>
+							<ViewOccurrenceRelationship uid="_315004" xsi:type="n0:NextAssemblyOccurrenceUsage">
+								<Related uidRef="_202106"/>
+								<!--CableOccurrence cable2 (RG 58)-->
+								<RelationType>
+									<ClassString>next assembly occurrence</ClassString>
+								</RelationType>
+								<Placement>
+									<GeometryToTopologyModelAssociation uidRef="_321084"/>
+								</Placement>
+							</ViewOccurrenceRelationship>
+							<ViewOccurrenceRelationship uid="_315021" xsi:type="n0:NextAssemblyOccurrenceUsage">
+								<Related uidRef="_204006"/>
+								<!--CableOccurrence cable3 (speaker wire)-->
+								<RelationType>
+									<ClassString>next assembly occurrence</ClassString>
+								</RelationType>
+								<Placement>
+									<GeometryToTopologyModelAssociation uidRef="_321085"/>
+								</Placement>
+							</ViewOccurrenceRelationship>
+							<ViewOccurrenceRelationship uid="_315031" xsi:type="n0:NextAssemblyOccurrenceUsage">
+								<Related uidRef="_220005"/>
+								<!-- braid1 -->
+								<RelationType>
+									<ClassString>next assembly occurrence</ClassString>
+								</RelationType>
+								<Placement>
+									<GeometryToTopologyModelAssociation uidRef="_321088"/>
+								</Placement>
+							</ViewOccurrenceRelationship>
+							<ViewOccurrenceRelationship uid="_315032" xsi:type="n0:NextAssemblyOccurrenceUsage">
+								<Related uidRef="_221005"/>
+								<!-- wrap1 -->
+								<RelationType>
+									<ClassString>next assembly occurrence</ClassString>
+								</RelationType>
+								<Placement>
+									<GeometryToTopologyModelAssociation uidRef="_321086"/>
+								</Placement>
+							</ViewOccurrenceRelationship>
+							<ViewOccurrenceRelationship uid="_315033" xsi:type="n0:NextAssemblyOccurrenceUsage">
+								<Related uidRef="_222005"/>
+								<!-- heatshrink1 -->
+								<RelationType>
+									<ClassString>next assembly occurrence</ClassString>
+								</RelationType>
+								<Placement>
+									<GeometryToTopologyModelAssociation uidRef="_321087"/>
+								</Placement>
+							</ViewOccurrenceRelationship>
+							<ViewOccurrenceRelationship uid="_315041" xsi:type="n0:NextAssemblyOccurrenceUsage">
+								<Related uidRef="_203005"/>
+								<!--SingleOccurrence lug1 -->
+								<RelationType>
+									<ClassString>next assembly occurrence</ClassString>
+								</RelationType>
+								<Placement>
+									<GeometricRepresentationRelationship uidRef="_314210"/>
+								</Placement>
+							</ViewOccurrenceRelationship>
+							<ViewOccurrenceRelationship uid="_315042_1" xsi:type="n0:NextAssemblyOccurrenceUsage">
+								<Related uidRef="_211010"/>
+								<!--arinc1/A-insert -->
+								<RelationType>
+									<ClassString>next assembly occurrence</ClassString>
+								</RelationType>
+							</ViewOccurrenceRelationship>
+							<ViewOccurrenceRelationship uid="_315042_2" xsi:type="n0:NextAssemblyOccurrenceUsage">
+								<Related uidRef="_211020"/>
+								<!--arinc1/B-insert -->
+								<RelationType>
+									<ClassString>next assembly occurrence</ClassString>
+								</RelationType>
+							</ViewOccurrenceRelationship>
+							<ViewOccurrenceRelationship uid="_315042_3" xsi:type="n0:NextAssemblyOccurrenceUsage">
+								<Related uidRef="_212010"/>
+								<!--arinc1/C-insert -->
+								<RelationType>
+									<ClassString>next assembly occurrence</ClassString>
+								</RelationType>
+							</ViewOccurrenceRelationship>
+							<ViewOccurrenceRelationship uid="_315042_4" xsi:type="n0:NextAssemblyOccurrenceUsage">
+								<Related uidRef="_213100"/>
+								<!--arinc1/C-insert/coax1 -->
+								<RelationType>
+									<ClassString>next assembly occurrence</ClassString>
+								</RelationType>
+							</ViewOccurrenceRelationship>
+							<ViewOccurrenceRelationship uid="_315042_5" xsi:type="n0:NextAssemblyOccurrenceUsage">
+								<Related uidRef="_213200"/>
+								<!--arinc1/C-insert/coax2 -->
+								<RelationType>
+									<ClassString>next assembly occurrence</ClassString>
+								</RelationType>
+							</ViewOccurrenceRelationship>
+							<ViewOccurrenceRelationship uid="_315042_6" xsi:type="n0:NextAssemblyOccurrenceUsage">
+								<Related uidRef="_214100"/>
+								<!--arinc1/C-insert/power3 -->
+								<RelationType>
+									<ClassString>next assembly occurrence</ClassString>
+								</RelationType>
+							</ViewOccurrenceRelationship>
+							<ViewOccurrenceRelationship uid="_315042_7" xsi:type="n0:NextAssemblyOccurrenceUsage">
+								<Related uidRef="_214200"/>
+								<!--arinc1/C-insert/power4 -->
+								<RelationType>
+									<ClassString>next assembly occurrence</ClassString>
+								</RelationType>
+							</ViewOccurrenceRelationship>
+							<ViewOccurrenceRelationship uid="_315042_8" xsi:type="n0:NextAssemblyOccurrenceUsage">
+								<Related uidRef="_216100"/>
+								<!--arinc1/C-insert/signal5 -->
+								<RelationType>
+									<ClassString>next assembly occurrence</ClassString>
+								</RelationType>
+							</ViewOccurrenceRelationship>
+							<ViewOccurrenceRelationship uid="_315042_9" xsi:type="n0:NextAssemblyOccurrenceUsage">
+								<Related uidRef="_223100"/>
+								<!--arinc1/backshell1 -->
+								<RelationType>
+									<ClassString>next assembly occurrence</ClassString>
+								</RelationType>
+							</ViewOccurrenceRelationship>
+							<ViewOccurrenceRelationship uid="_315043" xsi:type="n0:NextAssemblyOccurrenceUsage">
+								<Related uidRef="_217100"/>
+								<!-- phone1 -->
+								<RelationType>
+									<ClassString>next assembly occurrence</ClassString>
+								</RelationType>
+							</ViewOccurrenceRelationship>
+							<ViewOccurrenceRelationship uid="_315044" xsi:type="n0:NextAssemblyOccurrenceUsage">
+								<Related uidRef="_218100"/>
+								<!-- splice1 -->
+								<RelationType>
+									<ClassString>next assembly occurrence</ClassString>
+								</RelationType>
+							</ViewOccurrenceRelationship>
+							<ViewOccurrenceRelationship uid="_315045" xsi:type="n0:NextAssemblyOccurrenceUsage">
+								<Related uidRef="_219100"/>
+								<!-- dsub1 -->
+								<RelationType>
+									<ClassString>next assembly occurrence</ClassString>
+								</RelationType>
+							</ViewOccurrenceRelationship>
+							<ViewOccurrenceRelationship uid="_315046" xsi:type="n0:NextAssemblyOccurrenceUsage">
+								<Related uidRef="_225100"/>
+								<!-- arinc 1 housing -->
+								<RelationType>
+									<ClassString>next assembly occurrence</ClassString>
+								</RelationType>
+							</ViewOccurrenceRelationship>
+							<Topology uidRef="_321010"/>  <!-- => EdgeBasedTopologicalRepresentationWithLengthConstraint -->
+						</PartView>
+					</Views>
+				</PartVersion>
+			</Versions>
+		</Part>
+		<!--TOPOLOGY-->
+		<RepresentationContext xsi:type="n0:GeometricCoordinateSpace" uid="_321000">
+			<Id id="H1.x Harness topology context"/>
+			<Units>
+				<Unit uidRef="_100301"/>
+			</Units>
+			<Representations>
+				<Representation xsi:type="n0:EdgeBasedTopologicalRepresentationWithLengthConstraint" uid="_321010">
+					<Id id="Topological representation of H1 harness"/>
+					<!--This should be the name but Id is mandatory-->
+					<Items>
+						<RepresentationItem uidRef="_321020"/>  <!--ConnectedEdgeSet-->
+						<RepresentationItem uidRef="_321061"/>  <!--Path C1=S2-1+S3-1-->
+						<RepresentationItem uidRef="_321062"/>  <!--Path C2=S2-2+S2-1+S3-1-->
+						<RepresentationItem uidRef="_321063"/>  <!--Path S2+S3+S5-->
+						<RepresentationItem uidRef="_321064"/>  <!--Path S2+S3+S4-->
+						<RepresentationItem uidRef="_321065"/>  <!--Path S2+S3-->
+						<RepresentationItem uidRef="_321066"/>  <!--Path S3+S5-->
+						<RepresentationItem uidRef="_321056"/>  <!--VertexOnEdge X6-->
+						<RepresentationItem uidRef="_321057"/>  <!--VertexOnEdge X7-->
+					</Items>
+					<!--Transformation of wire1-->
+					<RepresentationRelationship xsi:type="n0:GeometryToTopologyModelAssociation" uid="_321080">
+						<Definitional>false</Definitional>
+						<Related uidRef="_104890"/>
+						<Origin>
+							<AxisPlacement uidRef="_104896"/>
+						</Origin>
+						<Target>
+							<Edge uidRef="_321021"/>
+							<!-- Edge S1 -->
+						</Target>
+						<!-- Edge S1 -->
+					</RepresentationRelationship>
+					<!--Transformation of wire2-->
+					<RepresentationRelationship xsi:type="n0:GeometryToTopologyModelAssociation" uid="_321081">
+						<Definitional>false</Definitional>
+						<Related uidRef="_104890"/>
+						<Origin>
+							<AxisPlacement uidRef="_104896"/>
+						</Origin>
+						<Target>
+							<Edge uidRef="_321022"/>
+							<!-- Edge S2 -->
+						</Target>
+					</RepresentationRelationship>
+					<!--Transformation of wire3-->
+					<RepresentationRelationship xsi:type="n0:GeometryToTopologyModelAssociation" uid="_321082">
+						<Definitional>false</Definitional>
+						<Related uidRef="_104890"/>
+						<Origin>
+							<AxisPlacement uidRef="_104896"/>
+						</Origin>
+						<Target>
+							<Path uidRef="_321066"/>
+							<!-- Path S3-S5 -->
+						</Target>
+					</RepresentationRelationship>
+					<!--Transformation of cable1-->
+					<RepresentationRelationship xsi:type="n0:GeometryToTopologyModelAssociation" uid="_321083">
+						<Definitional>false</Definitional>
+						<Related uidRef="_104890"/>
+						<Origin>
+							<AxisPlacement uidRef="_104896"/>
+						</Origin>
+						<Target>
+							<Path uidRef="_321063"/>
+							<!-- Path S2+S3+S5 -->
+						</Target>
+					</RepresentationRelationship>
+					<!--Transformation of cable2-->
+					<RepresentationRelationship xsi:type="n0:GeometryToTopologyModelAssociation" uid="_321084">
+						<Definitional>false</Definitional>
+						<Related uidRef="_104890"/>
+						<Origin>
+							<AxisPlacement uidRef="_104896"/>
+						</Origin>
+						<Target>
+							<Path uidRef="_321063"/>
+							<!-- Path S2+S3+S5 -->
+						</Target>
+					</RepresentationRelationship>
+					<!--Transformation of cable3-->
+					<RepresentationRelationship xsi:type="n0:GeometryToTopologyModelAssociation" uid="_321085">
+						<Definitional>false</Definitional>
+						<Related uidRef="_104890"/>
+						<Origin>
+							<AxisPlacement uidRef="_104896"/>
+						</Origin>
+						<Target>
+							<Path uidRef="_321064"/>
+							<!-- Path S2+S3+S4 -->
+						</Target>
+					</RepresentationRelationship>
+					<!--Transformation of wrap1-->
+					<RepresentationRelationship xsi:type="n0:GeometryToTopologyModelAssociation" uid="_321086">
+						<Definitional>false</Definitional>
+						<Related uidRef="_104890"/>
+						<Origin>
+							<AxisPlacement uidRef="_104896"/>
+						</Origin>
+						<Target>
+							<Path uidRef="_321061"/>
+							<!-- Path C1=S2-1+S3-1 -->
+						</Target>
+					</RepresentationRelationship>
+					<!--Transformation of heatshrink1-->
+					<RepresentationRelationship xsi:type="n0:GeometryToTopologyModelAssociation" uid="_321087">
+						<Definitional>false</Definitional>
+						<Related uidRef="_104890"/>
+						<Origin>
+							<AxisPlacement uidRef="_104896"/>
+						</Origin>
+						<Target>
+							<Path uidRef="_321062"/>
+							<!-- Path C2=S2-2+S2-1+S3-1 -->
+						</Target>
+					</RepresentationRelationship>
+					<!--Transformation of braid1-->
+					<RepresentationRelationship xsi:type="n0:GeometryToTopologyModelAssociation" uid="_321088">
+						<Definitional>false</Definitional>
+						<Related uidRef="_104890"/>
+						<Origin>
+							<AxisPlacement uidRef="_104896"/>
+						</Origin>
+						<Target>
+							<Path uidRef="_321065"/>  <!-- Path S2+S3-->
+						</Target>
+					</RepresentationRelationship>
+				</Representation>
+				<Representation xsi:type="n0:EdgeBasedTopologicalRepresentationWithLengthConstraint" uid="_322010">
+					<Id id="SubRep H1.a"/>
+					<!--This should be the name but Id is mandatory-->
+					<Items>
+						<RepresentationItem uidRef="_322020"/>
+					</Items>
+				</Representation>
+				<Representation xsi:type="n0:EdgeBasedTopologicalRepresentationWithLengthConstraint" uid="_323010">
+					<Id id="SubRep H1.b"/>
+					<!--This should be the name but Id is mandatory-->
+					<Items>
+						<RepresentationItem uidRef="_323020"/>
+					</Items>
+				</Representation>
+			</Representations>
+			<Items>
+				<RepresentationItem xsi:type="n0:ConnectedEdgeSet" uid="_321020">
+					<ConnectedEdges>
+						<Edge uidRef="_321021"/>
+						<Edge uidRef="_321022"/>
+						<Edge uidRef="_321023"/>
+						<Edge uidRef="_321024"/>
+						<Edge uidRef="_321025"/>
+					</ConnectedEdges>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:EdgeBoundedCurveWithLength" uid="_321021">
+					<Name>
+						<CharacterString>S1</CharacterString>
+					</Name>
+					<EdgeEnd uidRef="_321041"/>
+					<EdgeStart uidRef="_321043"/>
+					<EdgeGeometry uidRef="_341021"/>
+					<SameSense>true</SameSense>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:BoundedCurveWithLength" uid="_341021">
+					<CurveLength>1.5</CurveLength>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:EdgeBoundedCurveWithLength" uid="_321022">
+					<Name>
+						<CharacterString>S2</CharacterString>
+					</Name>
+					<EdgeEnd uidRef="_321043"/>
+					<EdgeStart uidRef="_321042"/>
+					<EdgeGeometry uidRef="_341022"/>
+					<SameSense>true</SameSense>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:BoundedCurveWithLength" uid="_341022">
+					<CurveLength>1.7</CurveLength>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:EdgeBoundedCurveWithLength" uid="_321023">
+					<Name>
+						<CharacterString>S3</CharacterString>
+					</Name>
+					<EdgeEnd uidRef="_321043"/>
+					<EdgeStart uidRef="_321044"/>
+					<EdgeGeometry uidRef="_341023"/>
+					<SameSense>true</SameSense>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:BoundedCurveWithLength" uid="_341023">
+					<CurveLength>2.0</CurveLength>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:EdgeBoundedCurveWithLength" uid="_321024">
+					<Name>
+						<CharacterString>S4</CharacterString>
+					</Name>
+					<EdgeEnd uidRef="_321044"/>
+					<EdgeStart uidRef="_321045"/>
+					<EdgeGeometry uidRef="_341024"/>
+					<SameSense>true</SameSense>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:BoundedCurveWithLength" uid="_341024">
+					<CurveLength>0.5</CurveLength>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:EdgeBoundedCurveWithLength" uid="_321025">
+					<Name>
+						<CharacterString>S5</CharacterString>
+					</Name>
+					<EdgeEnd uidRef="_321044"/>
+					<EdgeStart uidRef="_321046"/>
+					<EdgeGeometry uidRef="_341025"/>
+					<SameSense>true</SameSense>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:BoundedCurveWithLength" uid="_341025">
+					<CurveLength>0.7</CurveLength>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:SubEdge" uid="_321031">
+					<Name>
+						<CharacterString>S2-1</CharacterString>
+					</Name>
+					<EdgeEnd uidRef="_321043"/>
+					<EdgeStart uidRef="_321052"/>
+					<ParentEdge uidRef="_321022"/>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:SubEdge" uid="_321032">
+					<Name>
+						<CharacterString>S2-2</CharacterString>
+					</Name>
+					<EdgeEnd uidRef="_321052"/>
+					<EdgeStart uidRef="_321053"/>
+					<ParentEdge uidRef="_321022"/>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:SubEdge" uid="_321033">
+					<Name>
+						<CharacterString>S2-3</CharacterString>
+					</Name>
+					<EdgeEnd uidRef="_321043"/>
+					<EdgeStart uidRef="_321052"/>
+					<ParentEdge uidRef="_321022"/>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:SubEdge" uid="_321034">
+					<Name>
+						<CharacterString>S3-1</CharacterString>
+					</Name>
+					<EdgeEnd uidRef="_321043"/>
+					<EdgeStart uidRef="_321051"/>
+					<ParentEdge uidRef="_321023"/>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:SubEdge" uid="_321035">
+					<Name>
+						<CharacterString>S3-2</CharacterString>
+					</Name>
+					<EdgeEnd uidRef="_321044"/>
+					<EdgeStart uidRef="_321051"/>
+					<ParentEdge uidRef="_321023"/>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:SubEdge" uid="_321036">
+					<Name>
+						<CharacterString>S3-a</CharacterString>
+					</Name>
+					<EdgeEnd uidRef="_321043"/>
+					<EdgeStart uidRef="_321054"/>
+					<ParentEdge uidRef="_321023"/>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:SubEdge" uid="_321037">
+					<Name>
+						<CharacterString>S3-b</CharacterString>
+					</Name>
+					<EdgeEnd uidRef="_321054"/>
+					<EdgeStart uidRef="_321044"/>
+					<ParentEdge uidRef="_321023"/>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:VertexPoint" uid="_321041">
+					<Name>
+						<CharacterString>N1</CharacterString>
+					</Name>
+					<VertexGeometry uidRef="_341041"/>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:Point" uid="_341041"/>
+				<RepresentationItem xsi:type="n0:VertexPoint" uid="_321042">
+					<Name>
+						<CharacterString>N2</CharacterString>
+					</Name>
+					<VertexGeometry uidRef="_341042"/>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:Point" uid="_341042"/>
+				<RepresentationItem xsi:type="n0:VertexPoint" uid="_321043">
+					<Name>
+						<CharacterString>N3</CharacterString>
+					</Name>
+					<VertexGeometry uidRef="_341043"/>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:Point" uid="_341043"/>
+				<RepresentationItem xsi:type="n0:VertexPoint" uid="_321044">
+					<Name>
+						<CharacterString>N4</CharacterString>
+					</Name>
+					<VertexGeometry uidRef="_341044"/>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:Point" uid="_341044"/>
+				<RepresentationItem xsi:type="n0:VertexPoint" uid="_321045">
+					<Name>
+						<CharacterString>N5</CharacterString>
+					</Name>
+					<VertexGeometry uidRef="_341045"/>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:Point" uid="_341045"/>
+				<RepresentationItem xsi:type="n0:VertexPoint" uid="_321046">
+					<Name>
+						<CharacterString>N6</CharacterString>
+					</Name>
+					<VertexGeometry uidRef="_341046"/>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:Point" uid="_341046"/>
+				<RepresentationItem xsi:type="n0:VertexPoint" uid="_321051">
+					<Name>
+						<CharacterString>X1</CharacterString>
+					</Name>
+					<VertexGeometry uidRef="_341051"/>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:PointOnCurve" uid="_341051">
+					<BasicCurve uidRef="_341023"/>
+					<Parameter>0.8</Parameter>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:VertexPoint" uid="_321052">
+					<Name>
+						<CharacterString>X2</CharacterString>
+					</Name>
+					<VertexGeometry uidRef="_341052"/>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:PointOnCurve" uid="_341052">
+					<BasicCurve uidRef="_341022"/>
+					<Parameter>0.8</Parameter>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:VertexPoint" uid="_321053">
+					<Name>
+						<CharacterString>X3</CharacterString>
+					</Name>
+					<VertexGeometry uidRef="_341053"/>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:PointOnCurve" uid="_341053">
+					<BasicCurve uidRef="_341022"/>
+					<Parameter>0.4</Parameter>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:VertexPoint" uid="_321054">
+					<Name>
+						<CharacterString>X4</CharacterString>
+					</Name>
+					<VertexGeometry uidRef="_341054"/>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:PointOnCurve" uid="_341054">
+					<BasicCurve uidRef="_341023"/>
+					<Parameter>0.3</Parameter>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:VertexPoint" uid="_321056">
+					<Name>
+						<CharacterString>X6</CharacterString>
+					</Name>
+					<VertexGeometry uidRef="_341056"/>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:PointOnCurve" uid="_341056">
+					<BasicCurve uidRef="_341025"/>
+					<Parameter>0.3</Parameter>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:VertexPoint" uid="_321057">
+					<Name>
+						<CharacterString>X7</CharacterString>
+					</Name>
+					<VertexGeometry uidRef="_341057"/>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:PointOnCurve" uid="_341057">
+					<BasicCurve uidRef="_341025"/>
+					<Parameter>0.7</Parameter>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:Path" uid="_321061">
+					<Name>
+						<CharacterString>C1</CharacterString>
+					</Name>
+					<EdgeList>
+						<Edge uidRef="_321031"/>
+						<!--S2-1-->
+						<Edge uidRef="_321034"/>
+						<!--S3-1-->
+					</EdgeList>
+					<OrientationList>
+						<Boolean>false</Boolean>
+						<Boolean>true</Boolean>
+					</OrientationList>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:Path" uid="_321062">
+					<Name>
+						<CharacterString>C2</CharacterString>
+					</Name>
+					<EdgeList>
+						<Edge uidRef="_321032"/>
+						<!--S2-2-->
+						<Edge uidRef="_321031"/>
+						<!--S2-1-->
+						<Edge uidRef="_321034"/>
+						<!--S3-1-->
+					</EdgeList>
+					<OrientationList>
+						<Boolean>false</Boolean>
+						<Boolean>false</Boolean>
+						<Boolean>true</Boolean>
+					</OrientationList>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:Path" uid="_321063">
+					<Name>
+						<CharacterString>S2-S3-S5</CharacterString>
+					</Name>
+					<EdgeList>
+						<Edge uidRef="_321022"/>
+						<Edge uidRef="_321023"/>
+						<Edge uidRef="_321025"/>
+					</EdgeList>
+					<OrientationList>
+						<Boolean>false</Boolean>
+						<Boolean>true</Boolean>
+						<Boolean>true</Boolean>
+					</OrientationList>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:Path" uid="_321064">
+					<Name>
+						<CharacterString>S2-S3-S4</CharacterString>
+					</Name>
+					<EdgeList>
+						<Edge uidRef="_321022"/>
+						<Edge uidRef="_321023"/>
+						<Edge uidRef="_321024"/>
+					</EdgeList>
+					<OrientationList>
+						<Boolean>false</Boolean>
+						<Boolean>true</Boolean>
+						<Boolean>true</Boolean>
+					</OrientationList>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:Path" uid="_321065">
+					<Name>
+						<CharacterString>S2-S3</CharacterString>
+					</Name>
+					<EdgeList>
+						<Edge uidRef="_321022"/>
+						<Edge uidRef="_321023"/>
+					</EdgeList>
+					<OrientationList>
+						<Boolean>true</Boolean>
+						<Boolean>false</Boolean>
+					</OrientationList>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:Path" uid="_321066">
+					<Name>
+						<CharacterString>S3-S5</CharacterString>
+					</Name>
+					<EdgeList>
+						<Edge uidRef="_321023"/>
+						<!--Edge S3-->
+						<Edge uidRef="_321025"/>
+						<!--Edge S5-->
+					</EdgeList>
+					<OrientationList>
+						<Boolean>false</Boolean>
+						<Boolean>true</Boolean>
+					</OrientationList>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:ConnectedEdgeSubSet" uid="_322020">
+					<ConnectedEdges>
+						<Edge uidRef="_321021"/>
+						<!-- S1 -->
+						<Edge uidRef="_321022"/>
+						<!-- S2 -->
+						<Edge uidRef="_321034"/>
+						<!-- S3-a -->
+					</ConnectedEdges>
+					<ParentEdgeSet uidRef="_321020"/>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:ConnectedEdgeSubSet" uid="_323020">
+					<ConnectedEdges>
+						<Edge uidRef="_321036"/>
+						<!-- S3-b -->
+						<Edge uidRef="_321024"/>
+						<!-- S4 -->
+						<Edge uidRef="_321025"/>
+						<!-- S5 -->
+					</ConnectedEdges>
+					<ParentEdgeSet uidRef="_321020"/>
+				</RepresentationItem>
+			</Items>
+			<DimensionCount>1</DimensionCount>
+		</RepresentationContext>
+		<!--Generic single AxisPlacement representation for all wire, cable, covering  -->
+		<RepresentationContext xsi:type="n0:GeometricCoordinateSpace" uid="_104891">
+			<Id id="/NULL"/>
+			<Representations>
+				<Representation xsi:type="n0:GeometricModel" uid="_104890">
+					<Id id="xxx"/>
+					<Items>
+						<RepresentationItem uidRef="_104896"/>
+					</Items>
+				</Representation>
+			</Representations>
+			<Items>
+				<RepresentationItem xsi:type="n0:AxisPlacement" uid="_104896">
+					<Position>0.0 0.0 0.0</Position>
+				</RepresentationItem>
+			</Items>
+			<DimensionCount>2</DimensionCount>
+		</RepresentationContext>
+		<!-- terminal lug geometric representation-->
+		<File xsi:type="n0:DigitalFile" uid="_103080">
+			<FileFormat uidRef="_100300"/>
+			<FileLocations>
+				<FileLocationIdentification uid="_103081">
+					<SourceId>c-51864-1-af-3d.stp</SourceId>
+					<SourceType>file</SourceType>
+				</FileLocationIdentification>
+			</FileLocations>
+		</File>
+		<!--Geometry for terminal lug-->
+		<RepresentationContext xsi:type="n0:GeometricCoordinateSpace" uid="_103091">
+			<Id id="/NULL"/>
+			<Representations>
+				<Representation xsi:type="n0:ExternalAdvancedBrepShapeRepresentation" uid="_103090">
+					<Id id="c-51864-1-af-3d.stp"/>
+					<Items>
+						<RepresentationItem uidRef="_103092"/>
+						<RepresentationItem uidRef="_103094"/>
+						<RepresentationItem uidRef="_103096"/>
+					</Items>
+					<ExternalFile uidRef="_103080"/>
+					<ExternalItem xsi:type="n0:ExternalEntityInstance" uid="_103097">
+						<Id id="#1023"/>
+					</ExternalItem>
+				</Representation>
+			</Representations>
+			<Items>
+				<RepresentationItem xsi:type="n0:ExternalRepresentationItem" uid="_103092">
+					<External xsi:type="n0:ExternalEntityInstance" uid="_103093">
+						<Id id="#521"/>
+					</External>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:ExternalRepresentationItem" uid="_103094">
+					<External xsi:type="n0:ExternalEntityInstance" uid="_103095">
+						<Id id="#940"/>
+					</External>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:AxisPlacement" uid="_103096">
+					<Position>0.0 0.0 0.0</Position>
+				</RepresentationItem>
+			</Items>
+			<DimensionCount>3</DimensionCount>
+		</RepresentationContext>
+		<!--3D geometric model for the Harness design-->
+		<File xsi:type="n0:DigitalFile" uid="_314080">
+			<FileFormat uidRef="_100300"/>
+			<FileLocations>
+				<FileLocationIdentification uid="_314081">
+					<SourceId>H1_abrep.stp</SourceId>
+					<SourceType>file</SourceType>
+				</FileLocationIdentification>
+			</FileLocations>
+		</File>
+		<RepresentationContext xsi:type="n0:GeometricCoordinateSpace" uid="_314091">
+			<Id id="/NULL"/>
+			<Representations>
+				<Representation xsi:type="n0:ExternalAdvancedBrepShapeRepresentation" uid="_314090">
+					<Id id="xxx"/>
+					<Items>
+						<RepresentationItem uidRef="_314092"/>
+						<RepresentationItem uidRef="_314094"/>
+					</Items>
+					<!--Transformation of topology model-->
+					<RepresentationRelationship xsi:type="n0:TopologyToGeometryModelAssociation" uid="_314200">
+						<Definitional>false</Definitional>
+						<Related uidRef="_321010"/>
+						<Origin>
+							<Vertex uidRef="_321041"/>
+							<Edge uidRef="_321021"/>
+						</Origin>
+						<Target>
+							<AxisPlacement uidRef="_314096"/>
+							<AxisPlacement uidRef="_314092"/>
+						</Target>
+					</RepresentationRelationship>
+					<!--Transformation of lug1-->
+					<RepresentationRelationship xsi:type="n0:GeometricRepresentationRelationshipWithPlacementTransformation" uid="_314210">
+						<Definitional>true</Definitional>
+						<Related uidRef="_103090"/>
+						<Origin uidRef="_103096"/>
+						<Target uidRef="_314096"/>
+					</RepresentationRelationship>
+					<ExternalFile uidRef="_314080"/>  <!-- => H1_abrep.stp -->
+					<ExternalItem xsi:type="n0:ExternalEntityInstance" uid="_314082">
+						<Id id="#15"/> <!-- #15=SHAPE_REPRESENTATION(' ',(#1917,#5143,#31773,#44222,#45076,#45089,#45943,#47475,#50537,#50845,#51147,#51449,#51751,#51772),#21) ; -->
+					</ExternalItem>
+				</Representation>
+			</Representations>
+			<Items>
+				<RepresentationItem xsi:type="n0:AxisPlacement" uid="_314092">
+					<External uid="_314093">
+						<Id id="#521"/>
+					</External>
+					<Name>
+						<CharacterString>dummy position value as it has be be taken from external file</CharacterString>
+					</Name>				
+					<Position>0.0 0.0 0.0</Position>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:ExternalRepresentationItem" uid="_314094">
+					<External uid="_314095">
+						<Id id="#940"/>
+					</External>
+				</RepresentationItem>
+				<RepresentationItem xsi:type="n0:AxisPlacement" uid="_314096">
+					<Position>0.0 0.0 0.0</Position>
+				</RepresentationItem>
+			</Items>
+			<DimensionCount>3</DimensionCount>
+		</RepresentationContext>
+		<!--**********ShapeFeatureDefinition for rack plug side*****************-->
+		<ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_601000">
+			<Name>
+				<CharacterString>arinc600 rack plug A/B insert profile</CharacterString>
+			</Name>
+			<ShapeFeatureType>insert_profile</ShapeFeatureType>
+		</ShapeFeatureDefinition>
+		<ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_602000">
+			<Name>
+				<CharacterString>arinc600 rack plug A/B slot profile</CharacterString>
+			</Name>
+			<ShapeFeatureType>slot_profile</ShapeFeatureType>
+			<ShapeFeatureDefinitionRelationship xsi:type="n0:ContactFeatureDefinitionFitRelationship" uid="_602010">
+				<Related uidRef="_601000"/>
+			</ShapeFeatureDefinitionRelationship>
+		</ShapeFeatureDefinition>
+		<ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_603000">
+			<Name>
+				<CharacterString>arinc600 rack plug  C insert profile</CharacterString>
+			</Name>
+			<ShapeFeatureType>insert_profile</ShapeFeatureType>
+		</ShapeFeatureDefinition>
+		<ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_604000">
+			<Name>
+				<CharacterString>arinc600 rack plug  C slot profile</CharacterString>
+			</Name>
+			<ShapeFeatureType>slot_profile</ShapeFeatureType>
+			<ShapeFeatureDefinitionRelationship xsi:type="n0:ContactFeatureDefinitionFitRelationship" uid="_604010">
+				<Related uidRef="_603000"/>
+			</ShapeFeatureDefinitionRelationship>
+		</ShapeFeatureDefinition>
+		<ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_605000">
+			<Name>
+				<CharacterString>arinc600 rack plug  #16 contact interface</CharacterString>
+			</Name>
+			<ShapeFeatureType>contact_profile</ShapeFeatureType>
+		</ShapeFeatureDefinition>
+		<ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_605100">
+			<Name>
+				<CharacterString>arinc600 rack plug  #16 contact mounting</CharacterString>
+			</Name>
+			<ShapeFeatureType>cavity_plug_or_contact_profile</ShapeFeatureType>
+		</ShapeFeatureDefinition>
+		<ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_606000">
+			<Name>
+				<CharacterString>arinc600 rack plug  #16 cavity</CharacterString>
+			</Name>
+			<ShapeFeatureType>cavity_profile</ShapeFeatureType>
+			<ShapeFeatureDefinitionRelationship xsi:type="n0:ContactFeatureDefinitionFitRelationship" uid="_606010">
+				<Related uidRef="_605100"/>
+			</ShapeFeatureDefinitionRelationship>
+		</ShapeFeatureDefinition>
+		<ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_607000">
+			<Name>
+				<CharacterString>arinc600 rack plug  #5 contact interface</CharacterString>
+			</Name>
+			<ShapeFeatureType>contact_profile</ShapeFeatureType>
+		</ShapeFeatureDefinition>
+		<ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_607100">
+			<Name>
+				<CharacterString>arinc600 rack plug  #5 contact mounting</CharacterString>
+			</Name>
+			<ShapeFeatureType>cavity_plug_or_contact_profile</ShapeFeatureType>
+		</ShapeFeatureDefinition>
+		<ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_608000">
+			<Name>
+				<CharacterString>arinc600 rack plug  #5 cavity</CharacterString>
+			</Name>
+			<ShapeFeatureType>cavity_profile</ShapeFeatureType>
+			<ShapeFeatureDefinitionRelationship xsi:type="n0:ContactFeatureDefinitionFitRelationship" uid="_608010">
+				<Related uidRef="_607100"/>
+			</ShapeFeatureDefinitionRelationship>
+		</ShapeFeatureDefinition>
+		<ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_609000">
+			<Name>
+				<CharacterString>arinc600 rack plug  #12 contact interface</CharacterString>
+			</Name>
+			<ShapeFeatureType>contact_profile</ShapeFeatureType>
+		</ShapeFeatureDefinition>
+		<ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_609100">
+			<Name>
+				<CharacterString>arinc600 rack plug  #12 contact mounting</CharacterString>
+			</Name>
+			<ShapeFeatureType>cavity_plug_or_contact_profile</ShapeFeatureType>
+		</ShapeFeatureDefinition>
+		<ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_60A000">
+			<Name>
+				<CharacterString>arinc600 rack plug  #12 cavity</CharacterString>
+			</Name>
+			<ShapeFeatureType>cavity_profile</ShapeFeatureType>
+			<ShapeFeatureDefinitionRelationship xsi:type="n0:ContactFeatureDefinitionFitRelationship" uid="_60A010">
+				<Related uidRef="_609100"/>
+			</ShapeFeatureDefinitionRelationship>
+		</ShapeFeatureDefinition>
+		<ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_60B000">
+			<Name>
+				<CharacterString>arinc600 rack plug  C 5W2 insert profile</CharacterString>
+			</Name>
+			<ShapeElement xsi:type="n0:ShapeFeatureDefinitionOccurrenceElement" uid="_60B010">
+				<Name>
+					<CharacterString>1</CharacterString> <!-- size #5 -->
+				</Name>
+				<Definition uidRef="_608000"/>
+			</ShapeElement>
+			<ShapeElement xsi:type="n0:ShapeFeatureDefinitionOccurrenceElement" uid="_60B020">
+				<Name>
+					<CharacterString>5</CharacterString> <!-- size #5 -->
+				</Name>
+				<Definition uidRef="_608000"/>
+			</ShapeElement>
+			<ShapeElement xsi:type="n0:ShapeFeatureDefinitionOccurrenceElement" uid="_60B030">
+				<Name>
+					<CharacterString>2</CharacterString> <!-- size #16 -->
+				</Name>
+				<Definition uidRef="_606000"/>
+			</ShapeElement>
+			<ShapeElement xsi:type="n0:ShapeFeatureDefinitionOccurrenceElement" uid="_60B040">
+				<Name>
+					<CharacterString>4</CharacterString> <!-- size #16 -->
+				</Name>
+				<Definition uidRef="_606000"/>
+			</ShapeElement>
+			<ShapeElement xsi:type="n0:ShapeFeatureDefinitionOccurrenceElement" uid="_60B050">
+				<Name>
+					<CharacterString>3</CharacterString> <!-- size #12 -->
+				</Name>
+				<Definition uidRef="_60A000"/>
+			</ShapeElement>
+			<ShapeElement xsi:type="n0:ShapeFeatureDefinitionOccurrenceElement" uid="_60B090">
+				<Name>
+					<CharacterString>C-insert profile</CharacterString>
+				</Name>
+				<Definition uidRef="_603000"/>
+			</ShapeElement>
+		</ShapeFeatureDefinition>
+		<ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_60C000">
+			<Name>
+				<CharacterString>arinc600 rack plug shell size1</CharacterString>
+			</Name>
+			<ShapeElement xsi:type="n0:ShapeFeatureDefinitionOccurrenceElement" uid="_60C010">
+				<Name>
+					<CharacterString>A-slot</CharacterString>
+				</Name>
+				<Definition uidRef="_602000"/>
+			</ShapeElement>
+			<ShapeElement xsi:type="n0:ShapeFeatureDefinitionOccurrenceElement" uid="_60C020">
+				<Name>
+					<CharacterString>B-slot</CharacterString>
+				</Name>
+				<Definition uidRef="_602000"/>
+			</ShapeElement>
+			<ShapeElement xsi:type="n0:ShapeFeatureDefinitionOccurrenceElement" uid="_60C030">
+				<Name>
+					<CharacterString>C-slot</CharacterString>
+				</Name>
+				<Definition uidRef="_604000"/>
+			</ShapeElement>
+		</ShapeFeatureDefinition>
+		<!--**********ShapeFeatureDefinition for equipement receptacle side*****************-->
+		<ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_611000">
+			<Name>
+				<CharacterString>arinc600 receptacle A/B insert profile</CharacterString>
+			</Name>
+			<ShapeFeatureType>insert_profile</ShapeFeatureType>
+		</ShapeFeatureDefinition>
+		<ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_612000">
+			<Name>
+				<CharacterString>arinc600 receptacle A/B slot profile</CharacterString>
+			</Name>
+			<ShapeFeatureType>slot_profile</ShapeFeatureType>
+			<ShapeFeatureDefinitionRelationship xsi:type="n0:ContactFeatureDefinitionFitRelationship" uid="_612010">
+				<Related uidRef="_611000"/>
+			</ShapeFeatureDefinitionRelationship>
+		</ShapeFeatureDefinition>
+		<ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_613000">
+			<Name>
+				<CharacterString>arinc600 receptacle  C insert profile</CharacterString>
+			</Name>
+			<ShapeFeatureType>insert_profile</ShapeFeatureType>
+		</ShapeFeatureDefinition>
+		<ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_614000">
+			<Name>
+				<CharacterString>arinc600 receptacle  C slot profile</CharacterString>
+			</Name>
+			<ShapeFeatureType>slot_profile</ShapeFeatureType>
+			<ShapeFeatureDefinitionRelationship xsi:type="n0:ContactFeatureDefinitionFitRelationship" uid="_614010">
+				<Related uidRef="_613000"/>
+			</ShapeFeatureDefinitionRelationship>
+		</ShapeFeatureDefinition>
+		<ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_615000">
+			<Name>
+				<CharacterString>arinc600 receptacle  #16 contact interface</CharacterString>
+			</Name>
+			<ShapeFeatureType>contact_profile</ShapeFeatureType>
+			<ShapeFeatureDefinitionRelationship xsi:type="n0:ContactFeatureDefinitionFitRelationship" uid="_6150X0">
+				<Related uidRef="_605000"/>
+			</ShapeFeatureDefinitionRelationship>
+		</ShapeFeatureDefinition>
+		<ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_615100">
+			<Name>
+				<CharacterString>arinc600 receptacle  #16 contact mounting</CharacterString>
+			</Name>
+			<ShapeFeatureType>cavity_plug_or_contact_profile</ShapeFeatureType>
+		</ShapeFeatureDefinition>
+		<ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_616000">
+			<Name>
+				<CharacterString>arinc600 receptacle  #16 cavity</CharacterString>
+			</Name>
+			<ShapeFeatureType>cavity_profile</ShapeFeatureType>
+			<ShapeFeatureDefinitionRelationship xsi:type="n0:ContactFeatureDefinitionFitRelationship" uid="_616010">
+				<Related uidRef="_615100"/>
+			</ShapeFeatureDefinitionRelationship>
+		</ShapeFeatureDefinition>
+		<ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_617000">
+			<Name>
+				<CharacterString>arinc600 receptacle  #5 contact interface</CharacterString>
+			</Name>
+			<ShapeFeatureType>contact_profile</ShapeFeatureType>
+			<ShapeFeatureDefinitionRelationship xsi:type="n0:ContactFeatureDefinitionFitRelationship" uid="_6170X0">
+				<Related uidRef="_607000"/>
+			</ShapeFeatureDefinitionRelationship>
+		</ShapeFeatureDefinition>
+		<ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_617100">
+			<Name>
+				<CharacterString>arinc600 receptacle  #5 contact mounting</CharacterString>
+			</Name>
+			<ShapeFeatureType>cavity_plug_or_contact_profile</ShapeFeatureType>
+		</ShapeFeatureDefinition>
+		<ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_618000">
+			<Name>
+				<CharacterString>arinc600 receptacle  #5 cavity</CharacterString>
+			</Name>
+			<ShapeFeatureType>cavity_profile</ShapeFeatureType>
+			<ShapeFeatureDefinitionRelationship xsi:type="n0:ContactFeatureDefinitionFitRelationship" uid="_618010">
+				<Related uidRef="_617100"/>
+			</ShapeFeatureDefinitionRelationship>
+		</ShapeFeatureDefinition>
+		<ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_619000">
+			<Name>
+				<CharacterString>arinc600 receptacle  #12 contact interface</CharacterString>
+			</Name>
+			<ShapeFeatureType>contact_profile</ShapeFeatureType>
+			<ShapeFeatureDefinitionRelationship xsi:type="n0:ContactFeatureDefinitionFitRelationship" uid="_6190X0">
+				<Related uidRef="_609000"/>
+			</ShapeFeatureDefinitionRelationship>
+		</ShapeFeatureDefinition>
+		<ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_619100">
+			<Name>
+				<CharacterString>arinc600 receptacle  #12 contact mounting</CharacterString>
+			</Name>
+			<ShapeFeatureType>cavity_plug_or_contact_profile</ShapeFeatureType>
+		</ShapeFeatureDefinition>
+		<ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_61A000">
+			<Name>
+				<CharacterString>arinc600 receptacle  #12 cavity</CharacterString>
+			</Name>
+			<ShapeFeatureType>cavity_profile</ShapeFeatureType>
+			<ShapeFeatureDefinitionRelationship xsi:type="n0:ContactFeatureDefinitionFitRelationship" uid="_61A010">
+				<Related uidRef="_619100"/>
+			</ShapeFeatureDefinitionRelationship>
+		</ShapeFeatureDefinition>
+		<ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_61B000">
+			<Name>
+				<CharacterString>arinc600 receptacle  C 5W2 insert profile</CharacterString>
+			</Name>
+			<ShapeElement xsi:type="n0:ShapeFeatureDefinitionOccurrenceElement" uid="_61B010">
+				<Name>
+					<CharacterString>1-#5</CharacterString>
+				</Name>
+				<ShapeElementRelationship xsi:type="n0:ShapeFeatureDefinitionOccurrenceElementRelationship" uid="_61B01X">
+					<Related uidRef="_60B010"/>
+					<RelationType>
+						<ClassString/>
+					</RelationType>
+					<Definition uidRef="_6170X0"/>
+					<!-- <FitParent uidRef="_61B0X0"/> -->
+				</ShapeElementRelationship>
+				<Definition uidRef="_618000"/>
+			</ShapeElement>
+			<ShapeElement xsi:type="n0:ShapeFeatureDefinitionOccurrenceElement" uid="_61B020">
+				<Name>
+					<CharacterString>2-#5</CharacterString>
+				</Name>
+				<ShapeElementRelationship xsi:type="n0:ShapeFeatureDefinitionOccurrenceElementRelationship" uid="_61B02X">
+					<Related uidRef="_60B020"/>
+					<RelationType>
+						<ClassString/>
+					</RelationType>
+					<Definition uidRef="_6170X0"/>
+					<!-- <FitParent uidRef="_61B0X0"/> -->
+				</ShapeElementRelationship>
+				<Definition uidRef="_618000"/>
+			</ShapeElement>
+			<ShapeElement xsi:type="n0:ShapeFeatureDefinitionOccurrenceElement" uid="_61B030">
+				<Name>
+					<CharacterString>3-#16</CharacterString>
+				</Name>
+				<ShapeElementRelationship xsi:type="n0:ShapeFeatureDefinitionOccurrenceElementRelationship" uid="_61B03X">
+					<Related uidRef="_60B030"/>
+					<RelationType>
+						<ClassString/>
+					</RelationType>
+					<Definition uidRef="_6150X0"/>
+					<!-- <FitParent uidRef="_61B0X0"/>-->
+				</ShapeElementRelationship>
+				<Definition uidRef="_616000"/>
+			</ShapeElement>
+			<ShapeElement xsi:type="n0:ShapeFeatureDefinitionOccurrenceElement" uid="_61B040">
+				<Name>
+					<CharacterString>4-#16</CharacterString>
+				</Name>
+				<ShapeElementRelationship xsi:type="n0:ShapeFeatureDefinitionOccurrenceElementRelationship" uid="_61B04X">
+					<Related uidRef="_60B040"/>
+					<RelationType>
+						<ClassString/>
+					</RelationType>
+					<Definition uidRef="_6150X0"/>
+					<!-- <FitParent uidRef="_61B0X0"/>-->
+				</ShapeElementRelationship>
+				<Definition uidRef="_616000"/>
+			</ShapeElement>
+			<ShapeElement xsi:type="n0:ShapeFeatureDefinitionOccurrenceElement" uid="_61B050">
+				<Name>
+					<CharacterString>5-#12</CharacterString>
+				</Name>
+				<ShapeElementRelationship xsi:type="n0:ShapeFeatureDefinitionOccurrenceElementRelationship" uid="_61B05X">
+					<Related uidRef="_60B050"/>
+					<RelationType>
+						<ClassString/>
+					</RelationType>
+					<Definition uidRef="_6190X0"/>
+					<!-- <FitParent uidRef="_61B0X0"/> -->
+				</ShapeElementRelationship>
+				<Definition uidRef="_61A000"/>
+			</ShapeElement>
+			<ShapeElement xsi:type="n0:ShapeFeatureDefinitionOccurrenceElement" uid="_61B090">
+				<Name>
+					<CharacterString>C-insert profile</CharacterString>
+				</Name>
+				<Definition uidRef="_613000"/>
+			</ShapeElement>
+			<ShapeFeatureDefinitionRelationship xsi:type="n0:ContactFeatureDefinitionFitRelationship" uid="_61B0X0">
+				<Related uidRef="_60B000"/>
+			</ShapeFeatureDefinitionRelationship>
+		</ShapeFeatureDefinition>
+		<ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_61C000">
+			<Name>
+				<CharacterString>arinc600 receptacle shell size1</CharacterString>
+			</Name>
+			<ShapeElement xsi:type="n0:ShapeFeatureDefinitionOccurrenceElement" uid="_61C010">
+				<Name>
+					<CharacterString>A-slot</CharacterString>
+				</Name>
+				<Definition uidRef="_612000"/>
+			</ShapeElement>
+			<ShapeElement xsi:type="n0:ShapeFeatureDefinitionOccurrenceElement" uid="_61C020">
+				<Name>
+					<CharacterString>B-slot</CharacterString>
+				</Name>
+				<Definition uidRef="_612000"/>
+			</ShapeElement>
+			<ShapeElement xsi:type="n0:ShapeFeatureDefinitionOccurrenceElement" uid="_61C030">
+				<Name>
+					<CharacterString>C-slot</CharacterString>
+				</Name>
+				<Definition uidRef="_614000"/>
+			</ShapeElement>
+			<ShapeFeatureDefinitionRelationship xsi:type="n0:ContactFeatureDefinitionFitRelationship" uid="_61C0X0">
+				<Related uidRef="_60C000"/>
+			</ShapeFeatureDefinitionRelationship>
+		</ShapeFeatureDefinition>
+	</DataContainer>
+</n0:Uos>

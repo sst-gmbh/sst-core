@@ -1,0 +1,38 @@
+# This file defines a modified and reduced version of lci as defined in ISO/TS 15926-12:2018
+# Several higher level abstraction concepts are removed, but otherwise all statements are kept in their order
+
+# @prefix lci:   <http://standards.iso.org/iso/15926/ontology/life-cycle-integration/> .  # original from ISO/TS 15926-12:2018
+@prefix lci:   <http://ontology.semanticstep.net/lci#> .				  # the one to be used for SST
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix ssmeta:   <http://ontology.semanticstep.net/ssmeta#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://ontology.semanticstep.net/lci>
+	rdf:type     owl:Ontology ;
+	owl:versionInfo "0.01" .
+
+# OK ISO 15926-2: 5.2.1.2 thing
+lci:Thing
+	rdf:type owl:Class , ssmeta:AbstractClass;
+	rdfs:subClassOf owl:Thing ;
+	owl:disjointUnionOf (
+		lci:Individual 
+		# ... more to add
+		lci:AbstractObject) ;
+	skos:definition "an <Individual> or <AbstractObject>" ;
+	skos:prefLabel "thing" ;
+	skos:scopeNote "An owl:Thing can be something other than an <Individual> or <AbstractObject>. Therefore <Thing> is a subclass of owl:Thing." .
+
+# SST only
+<lci:OtherIndividual>
+	rdf:type owl:Class , ssmeta:MainClass ;
+	owl:disjointUnionOf (
+		lci:State
+		lci:OtherIndividualEnumeration
+		rdfs:Literal) ;
+	skos:definition "The class of individuals that do not exist in space and time and that and that have no variations defined in 4D" ;
+	skos:prefLabel "other individual" .
+

@@ -1,0 +1,1781 @@
+@prefix lci:	<http://ontology.semanticstep.net/lci#> .
+@prefix qau:	<http://ontology.semanticstep.net/qau#> .
+@prefix rep:	<http://ontology.semanticstep.net/rep#> .
+@prefix sso:	<http://ontology.semanticstep.net/sso#> .
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:	<http://www.w3.org/2002/07/owl#> .
+@prefix :	<urn:uuid:e6afddc9-d380-43e6-9789-0fc5d0b540dd#> .
+
+<urn:uuid:e6afddc9-d380-43e6-9789-0fc5d0b540dd>	a	owl:Ontology .
+:00f09515-03bd-4718-90c6-3e1956a294e0	a	rep:EdgeBoundedCurveWithLength ;
+	rep:edgeEnd	:0839a94a-859d-4029-a8b9-e5a0e2a244fd ;
+	rep:edgeGeometry	:13ecc75a-64a8-48f9-aed3-156f519b133c ;
+	rep:edgeStart	:4dbdc8bd-c904-427b-a1f9-2c6f6f364eb1 ;
+	rep:sameSense	true ;
+	rdfs:label	"S3" .
+:014497eb-4ad8-4f0a-a4a8-87594c930ab0	a	sso:WireColourBasedIdentificationCode ;
+	sso:id	"green" ;
+	rdfs:label	"wire colour-based identification code" .
+:01bf0f7d-c5f4-4aed-b9e5-719e29c7a23b	a	sso:ContactFeatureDefinition ,
+			sso:ShapeFeatureType_connector_insert_profile ;
+	rdfs:label	"arinc600 receptacle  C insert profile" .
+:01bfe04a-9e38-4cd4-bd54-3f1f39ae28c5	a	sso:OccurrenceTerminal ;
+	lci:isDefinedBy	:08e0680f-fc19-4d9c-a44f-620ac9b9dd34 .
+:020f3c95-2aa8-4258-ba21-4f4f1d83bbce	a	sso:ContactFeatureDefinition ,
+			sso:ShapeFeatureType_cavity_plug_or_contact_profile ;
+	rdfs:label	"arinc600 receptacle  #12 contact mounting" .
+:02b87607-2049-4e8d-9768-f8f9cd6428cb	a	sso:AssemblyJointType_crimped_connection ,
+			sso:AssemblyShapeJoint ;
+	sso:assemblyShapeJointItemRelationship	:78ade60e-bdc8-4324-8854-8d1e06d3aaa3 ,
+			:b718fc72-7a8a-4224-9858-a25c9e2ef54f .
+:0341fe88-8966-451d-8a7a-093008bc0135	a	sso:WireOccurrenceTerminal .
+:03bf1cd5-3a4d-4ff8-b390-e8f9bd60b5e2	a	sso:ShapeFeatureDefinitionOccurrenceElement ;
+	lci:isDefinedBy	:3b97632d-3b0b-4e23-88d8-08d71b981a4a ;
+	sso:shapeFeatureDefinitionOccurrenceElementRelationship	:14b06379-a65d-412e-966d-29e706534494 .
+:057f2b05-5e8f-4f31-9d83-6e5879c0ad00	a	rep:Path ;
+	rep:edgeList	( :a1b1bd7c-a3f7-4c5f-975c-9113c3b2fbb2 :3580cda9-6019-41cf-a008-f83cfd737599 ) ;
+	:5c257ba8-5882-4aa7-a370-ccaef02905d9	:732720b3-20b6-480f-9639-225c740ca172 ;
+	rdfs:label	"C1" .
+:05db3da1-49be-44ff-897e-b7fb92ec3c52	a	sso:AssemblyJointType_crimped_connection ,
+			sso:AssemblyShapeJoint ;
+	sso:assemblyShapeJointItemRelationship	:65242101-9dc9-425b-8bd9-9d53a9b19eb9 ,
+			:9fe2bcca-3b0e-46de-be72-9b18fc4bbe6b .
+:05ee915e-13b2-4422-8174-584ab31d9b1e	a	rep:BoundedCurveWithLength ;
+	rep:lengthValue	1.5 .
+:060b3a41-db48-49a3-91e6-a228dc52643b	a	sso:ContactFeatureDefinition ,
+			sso:ShapeFeatureType_cavity_profile ;
+	rdfs:label	"arinc600 receptacle  #12 cavity" .
+:060df459-2596-48e4-ae2d-d9dd395ef8f7	a	rep:OrientedEdge ;
+	rep:edgeElement	:00f09515-03bd-4718-90c6-3e1956a294e0 ;
+	rep:orientation	true .
+:06f04e91-601f-46cf-8dea-57e2f7088fbf	a	sso:OccurrenceContactFeature ;
+	lci:isDefinedBy	:691b310e-67e2-4259-a257-c9111c205955 .
+:0828794c-af87-4631-92bb-da7b66dd30d7	a	sso:ShapeFeatureDefinitionOccurrenceElement ;
+	lci:isDefinedBy	:d50eda9a-cc71-4363-a61f-d0aaa6b21136 .
+:0839a94a-859d-4029-a8b9-e5a0e2a244fd	a	rep:VertexPoint ;
+	rep:vertexGeometry	:da89f99b-ec30-47e4-b013-69a0fcfc52ae ;
+	rdfs:label	"N3" .
+:08e0680f-fc19-4d9c-a44f-620ac9b9dd34	a	sso:InterfaceOrJoinTerminal_join_terminal ,
+			sso:PartTerminal ,
+			sso:TerminalJointType_crimp_terminal ;
+	rdfs:label	"Join gnd" .
+:09637e73-e4e4-4a17-8674-245e8c454b49	a	sso:WireOccurrenceIdentification ;
+	sso:colourCode	:cda3d0b8-5fb0-4efa-a576-07210ebc0f42 ;
+	rdfs:label	"B" .
+:098cc93b-92ec-49c5-ae9c-071658776ca6	a	owl:ObjectProperty ;
+	rep:transformationOperator	:7de95df2-99d5-49f4-a6ff-d1596bcff4ee ;
+	rdfs:subPropertyOf	rep:geometryToTopologyModelAssociation .
+:09d159b6-e271-400d-b2ef-94929a1de83b	a	sso:LifeCycleStage_design ,
+			sso:PartDesign ;
+	lci:hasArrangedPart	:35edbe36-20f0-48e2-a141-5fbac04d926b ;
+	sso:viewId	"Version 1" ;
+	rdfs:label	"" .
+:0a1607a2-4c23-4c96-8902-af0039d7edd0	a	sso:Part ,
+			sso:PartCategory_connector_housing ,
+			sso:PartCategory_discrete ;
+	sso:hasPartVersion	:70f10159-390c-4a22-837d-e13ae9ebfaa6 ;
+	sso:id	"SB6 4 1 M" ;
+	rdfs:label	"ARINC 600 shell size 1 rack plug " .
+:0a1ab974-2ab8-4f7d-9725-819b46ee975b	a	sso:PartVersion ;
+	sso:hasProductDefinition	:b8eddd82-d7b3-492e-8548-7d7ccd94b684 ;
+	sso:versionId	"Version 1" .
+:0a8492c6-551a-4351-9979-56a8898e909d	a	owl:ObjectProperty ;
+	rep:transformationOperator	:424609e2-5e64-4153-aa2c-ce59320294e9 ;
+	rdfs:subPropertyOf	rep:geometryToTopologyModelAssociation .
+:0a948dd5-0a5e-4d96-af5b-5e67685a8760	a	sso:ExternalAdvancedBrepShapeRepresentation ;
+	rep:contextOfItems	:0cfa55f3-70c5-4e78-8d90-57989e8cc71c ;
+	rep:item	:0b21e9f9-f6a1-4b79-b08e-3cf05372c0f4 ,
+			:0fc7cf7a-1a4f-4b38-a1d7-39ccd10a5a75 ,
+			:8d585e45-b4b1-4006-9c17-aac7e8fa8e40 ;
+	sso:id	"c-51864-1-af-3d.stp" .
+:0b21e9f9-f6a1-4b79-b08e-3cf05372c0f4	a	sso:ExternalRepresentationItem .
+:0b388c9b-a67b-4fe3-ae58-f93b17765af7	a	sso:PartVersion ;
+	sso:hasProductDefinition	:9d407ccf-64e4-4de0-9ce6-4c9a9c1c57e9 ;
+	sso:versionId	"Version 1" .
+:0b7e0b1c-e977-4b6b-b268-28a0c0f832a5	a	sso:OccurrenceTerminal ;
+	lci:isDefinedBy	:2a5f8099-b49e-477d-98d3-e1941bed7f74 .
+:0ba03f12-6338-4394-99c1-d24410e9c5ea	a	sso:AssemblyJointType_crimped_connection ,
+			sso:AssemblyShapeJoint ;
+	sso:assemblyShapeJointItemRelationship	:345317ae-4190-4405-8893-9364d651796b ,
+			:8bb5b9e6-2c6a-4b57-a740-6b517b945fd6 .
+:0cfa55f3-70c5-4e78-8d90-57989e8cc71c	a	rep:GeometricRepresentationContext ;
+	rep:coordinateSpaceDimension	3 ;
+	sso:id	"/NULL" .
+:0e3a609c-eaf3-423a-b1ce-b60f1960ebde	a	sso:OccurrenceTerminal ;
+	lci:isDefinedBy	:08e0680f-fc19-4d9c-a44f-620ac9b9dd34 .
+:0e617bb1-1cfb-4c13-99b7-bf48ac4a5bca	a	sso:PartContactFeature ;
+	lci:isDefinedBy	:22eef73c-b7d3-474e-82e2-fd3551a6e48c ;
+	rdfs:label	"3" .
+:0ed78db0-24a1-4344-879c-29858efc2f6c	a	sso:InterfaceOrJoinTerminal_join_terminal ,
+			sso:PartTerminal ,
+			sso:TerminalJointType_crimp_terminal ;
+	rdfs:label	"Join gnd" .
+:0f12ad2c-9eaf-4886-97ac-4557aa4a5d17	a	sso:CrossSectionalPartShapeElement .
+:0fc7cf7a-1a4f-4b38-a1d7-39ccd10a5a75	a	rep:Axis2Placement3D ;
+	rep:location	[
+	a	rep:CartesianPoint ;
+	rep:coordinates	( 0.0 0.0 0.0 )
+] .
+:10aea213-e52c-49a5-993d-a06857c4728f	a	rep:SubEdge ;
+	rep:edgeEnd	:0839a94a-859d-4029-a8b9-e5a0e2a244fd ;
+	rep:edgeStart	:52ea2745-0260-446a-aa2e-781e8236bb10 ;
+	rep:parentEdge	:00f09515-03bd-4718-90c6-3e1956a294e0 ;
+	rdfs:label	"S3-a" .
+:10c8fc9a-d8e7-4504-95b1-1c90242a4399	a	sso:SingleOccurrence ;
+	lci:hasArrangedPart	:01bfe04a-9e38-4cd4-bd54-3f1f39ae28c5 ,
+			:25b7f307-63bf-436b-a980-a239c1f83227 ,
+			:345317ae-4190-4405-8893-9364d651796b ,
+			:5883537e-19cb-4935-8be7-d70876dba9ff ,
+			:e50ef881-b62b-4c07-8c38-bebda72bcc14 ;
+	lci:isDefinedBy	:67ed968f-e3a6-438a-824e-6c079e1acf1d ;
+	rdfs:label	"coax2" .
+:11447065-63ec-457d-b51e-95dad8aad8ab	a	sso:ContactFeatureDefinition ,
+			sso:ShapeFeatureType_connector_insert_profile ;
+	rdfs:label	"arinc600 rack plug A/B insert profile" .
+:11d61cec-3539-4620-92b3-3223f32ec502	a	sso:AssemblyJointType_snap_connection ,
+			sso:AssemblyShapeJoint ;
+	sso:assemblyShapeJointItemRelationship	:06f04e91-601f-46cf-8dea-57e2f7088fbf ,
+			:810c9c09-405f-4106-b5a3-28f5f2b3286e .
+:130c8016-f2f9-4501-b843-c5e161c772dd	a	sso:Part ,
+			sso:PartCategory_connector_contact ,
+			sso:PartCategory_discrete ;
+	sso:hasPartVersion	:6901247a-d6d0-4f08-a00a-b71f9846cccb ;
+	sso:id	"8660-2485" ;
+	rdfs:label	"#5 Coax contact" .
+:13c61d5f-e819-4fe1-b085-49edaa5d1ada	a	owl:ObjectProperty ;
+	rep:contextDependentShapeRepresentation	:23c522ac-df59-4121-b71b-9e3dd441c170 ;
+	rdfs:subPropertyOf	sso:nextAssemblyOccurrenceUsage .
+:13ecc75a-64a8-48f9-aed3-156f519b133c	a	rep:BoundedCurveWithLength ;
+	rep:lengthValue	2.0 .
+:13f347ec-4232-4bee-aa03-639bb70a0e6b	a	sso:CableOccurrenceTerminalLocationGroup ;
+	lci:hasArrangedPart	:21d4aa54-1f86-4219-9e95-ba947e4b71d7 ,
+			:5b8a176a-9172-4243-a128-698ea51f5b5e .
+:1491783c-bbd2-492d-a039-694cb119ac38	a	rep:SubEdge ;
+	rep:edgeEnd	:0839a94a-859d-4029-a8b9-e5a0e2a244fd ;
+	rep:edgeStart	:cdee167c-c9c5-43fe-abb0-270139e12caa ;
+	rep:parentEdge	:00f09515-03bd-4718-90c6-3e1956a294e0 ;
+	rdfs:label	"S3-1" .
+:14b06379-a65d-412e-966d-29e706534494	a	sso:ShapeFeatureDefinitionOccurrenceElement ;
+	lci:isDefinedBy	:c78f7067-13c0-42ff-8e94-9ad804fc2086 .
+:14faf6f3-7ebc-4866-8461-6ae04177ea9a	a	sso:AssemblyJointType_snap_connection ,
+			sso:AssemblyShapeJoint ;
+	sso:assemblyShapeJointItemRelationship	:35110264-f076-4b77-bdea-56d7c7f92e18 ,
+			:7fece86d-0bfa-44aa-9cab-08b559d52a9d .
+:170996c2-f173-475e-992e-a43287a39240	a	sso:ContactFeatureDefinition ,
+			sso:ShapeFeatureType_connector_insert_profile ;
+	rdfs:label	"arinc600 receptacle A/B insert profile" .
+:17dbfe0e-cb2e-4d30-b641-4ca32791082b	a	sso:HarnessSegment ;
+	sso:representedGeometry	:1491783c-bbd2-492d-a039-694cb119ac38 .
+:185fa24a-24f6-474c-a506-a0a07a35ab98	a	owl:ObjectProperty ;
+	rdfs:subPropertyOf	sso:nextAssemblyOccurrenceUsage .
+:1864700d-91de-40e4-9291-29c5c07e44b2	a	rep:Path ;
+	rep:edgeList	( :b9b33971-abb5-4e92-bdd9-e146c1a0433d :a1b1bd7c-a3f7-4c5f-975c-9113c3b2fbb2
+	:3580cda9-6019-41cf-a008-f83cfd737599 ) ;
+	:e7ebce70-fb3c-4e2c-af07-16b49ed86836	:732720b3-20b6-480f-9639-225c740ca172 ;
+	rdfs:label	"C2" .
+:186903ce-1005-4a36-a821-ce7ceee97734	a	sso:AssemblyJointType_snap_connection ,
+			sso:AssemblyShapeJoint ;
+	sso:assemblyShapeJointItemRelationship	:1fc5ee6f-3ae2-457a-a6e7-19878e7e404a ,
+			:25b7f307-63bf-436b-a980-a239c1f83227 .
+:1995059e-a7c9-422a-b953-aa7e82990547	a	sso:InterfaceOrJoinTerminal_join_terminal ,
+			sso:PartTerminal ,
+			sso:TerminalJointType_crimp_terminal ;
+	rdfs:label	"end a" .
+:19e70fdd-fa05-42d3-8470-f7ed7608a1e3	a	sso:ExternalAdvancedBrepShapeRepresentation ;
+	rep:contextOfItems	:c7b640a3-f3a9-49ae-a308-8159b2081833 ;
+	rep:item	:52e5ab6e-ca8f-4980-a65f-91789dbd5819 ,
+			:56ca5fb0-6d8c-4979-b84e-fa72ee5a06de ;
+	:30da3a6c-5d4f-4324-b552-f987138c52ca	:0a948dd5-0a5e-4d96-af5b-5e67685a8760 ;
+	:64b53aa1-d292-4c3e-bd63-40a5e217a459	:4f32ce55-dec0-4dfe-94fc-ddb383181c4d ;
+	sso:id	"xxx" .
+:19e7eaa4-255e-47da-92fa-7e88507a08c3	a	sso:PartConnectivityDefinition ;
+	lci:isDefinedBy	:d17ff878-c1ec-47de-8bb9-e2096bf2ae1c ,
+			:dd634d5e-63a2-45de-a650-1eba554ff8f7 .
+:1b73433c-512c-4482-ab10-840aed6a97ba	a	rep:Path ;
+	rep:edgeList	( :b3cbb349-bb11-42d2-a7f0-be13e9464139 :5edf0666-f869-470b-9225-5819a7b77c77 ) ;
+	:491f778b-519b-4383-b371-b3cc7364e951	:732720b3-20b6-480f-9639-225c740ca172 ;
+	rdfs:label	"S3-S5" .
+:1bdfd492-821f-44aa-8f6a-cc9f74976b2e	a	sso:Part ,
+			sso:PartCategory_discrete ,
+			sso:PartCategory_terminal_lug ;
+	sso:hasPartVersion	:28cef357-240f-4a7f-8d8c-83a6398b1cc8 ;
+	sso:id	"MS5036-153" ;
+	rdfs:label	"" .
+:1c124231-a2a9-4461-96ef-e2fc315e1f22	a	owl:ObjectProperty ;
+	rep:transformationOperator	:491f778b-519b-4383-b371-b3cc7364e951 ;
+	rdfs:subPropertyOf	rep:geometryToTopologyModelAssociation .
+:1c7e3b5e-0d24-4b5e-851b-1d338a16705d	a	sso:WireOccurrenceIdentification ;
+	sso:colourCode	:67a27c84-cf3d-4673-9fe4-ae3789c4e9b5 .
+:1d33738a-151c-4f1d-badb-b583a889e84b	a	sso:OccurrenceTerminal ;
+	lci:isDefinedBy	:a44649cb-efe2-4d19-b160-69fe4fb00238 .
+:1d35375b-d942-4c2e-aa4f-df53ef5bce0b	a	sso:PartConnectivityDefinition ;
+	lci:isDefinedBy	:40777db7-f077-48df-99ff-dbd1ee88d70b ,
+			:4c3f3343-3671-493e-90f2-5fde41ce5fe1 .
+:1d7005fd-5d68-4b31-a1b3-7c23d0275d79	a	sso:ContactFeatureDefinition ,
+			sso:ShapeFeatureType_cavity_plug_or_contact_profile ;
+	rdfs:label	"arinc600 rack plug  #5 contact mounting" .
+:1d8d1c69-07e6-4c77-bbf1-14e9374af3c3	a	sso:ShapeFeatureDefinitionOccurrenceElement ;
+	lci:isDefinedBy	:d50eda9a-cc71-4363-a61f-d0aaa6b21136 .
+:1e280497-29a9-412b-bf7a-0f93205de798	a	sso:OccurrenceTerminal ;
+	lci:isDefinedBy	:da86e78c-3537-4bba-9ba6-548f7e8fe8df .
+:1e438a49-ff58-4400-85af-c4bf7acb1bc4	a	sso:AssemblyJointType_snap_connection ,
+			sso:AssemblyShapeJoint ;
+	sso:assemblyShapeJointItemRelationship	:5876ab65-7fce-46b5-a417-de6682dbc9be ,
+			:c0d4808e-579a-438a-819a-f60840d650e6 .
+:1ed34e78-95ec-4602-be0c-2beebde52131	a	sso:InterfaceOrJoinTerminal_interface_terminal ,
+			sso:PartTerminal ,
+			sso:TerminalJointType_pin_terminal ;
+	rdfs:label	"Interface gnd" .
+:1fc5ee6f-3ae2-457a-a6e7-19878e7e404a	a	sso:OccurrenceContactFeature ;
+	lci:isDefinedBy	:3febc538-aa17-4443-969e-8cfe826cd0aa .
+:1fd0de9f-6461-4f96-987b-86d59f197553	a	rep:SubEdge ;
+	rep:edgeEnd	:52ea2745-0260-446a-aa2e-781e8236bb10 ;
+	rep:edgeStart	:4dbdc8bd-c904-427b-a1f9-2c6f6f364eb1 ;
+	rep:parentEdge	:00f09515-03bd-4718-90c6-3e1956a294e0 ;
+	rdfs:label	"S3-b" .
+:1fef7eb6-3c21-4884-9e91-746ab4c61d2a	a	sso:CrossSectionalOccurrenceShapeElement ;
+	lci:isDefinedBy	:4cefc307-2f8e-4f53-83f2-b8b1635088c3 .
+:200ae720-0f47-43c7-a7be-397deae20c29	a	sso:OccurrenceTerminal ;
+	lci:isDefinedBy	:f0bd12bb-c398-4a74-9d28-c8f99e98f883 .
+:20c938e2-f12a-40fc-bcac-2e7d2e64fd88	a	sso:ShapeFeatureDefinitionOccurrenceElement ;
+	lci:isDefinedBy	:e8c2e14c-a8de-4025-a861-df81c2228f44 ;
+	sso:shapeFeatureDefinitionOccurrenceElementRelationship	:7ca1a9e6-d3fe-472f-a521-de7c9917965a .
+:20d2500b-4b07-46d7-b146-78b880cbf96f	a	sso:PartConnectivityDefinition ;
+	lci:isDefinedBy	:76b4944d-afec-4dab-9e4f-66993df43fa9 ,
+			:b7dbeda8-aba8-46f9-a83a-2ddddcab35b0 .
+:2177385e-efac-4c43-a4c4-1e640d1802be	a	sso:PartConnectivityDefinition ;
+	lci:isDefinedBy	:246f6e8d-9a00-4f3e-bafd-34f4e13f97f3 ,
+			:2b45c6b5-8300-4b5c-9029-023eff559e60 .
+:21857c81-5021-4f5b-b302-e91f22d7624d	a	sso:InterfaceOrJoinTerminal_interface_terminal ,
+			sso:PartTerminal ,
+			sso:TerminalJointType_socket_terminal ;
+	rdfs:label	"Interface5" .
+:21d4aa54-1f86-4219-9e95-ba947e4b71d7	a	sso:CableOccurrenceTerminal .
+:21dbbcc4-0672-41a5-aa62-753096717c73	a	rep:SubEdge ;
+	rep:edgeEnd	:0839a94a-859d-4029-a8b9-e5a0e2a244fd ;
+	rep:edgeStart	:25a23c39-3f5e-4e5c-b297-a628d1cda32f ;
+	rep:parentEdge	:cb227f74-5071-42f4-977f-5f4a916e1424 ;
+	rdfs:label	"S2-3" .
+:21e7d8da-6114-4e24-871c-32f643921cfa	a	sso:WireOccurrence ;
+	lci:hasArrangedPart	:1c7e3b5e-0d24-4b5e-851b-1d338a16705d ,
+			:27af57f5-b598-40cd-bdd6-01bc78b2490f ,
+			:4c6883bd-fc3e-4b85-b924-7f9fff8a68cd ,
+			:d8f76a45-d394-4554-8ce0-f7c34c16e1de ;
+	lci:isDefinedBy	:824347bc-e972-44c8-8abb-0422e4733618 ;
+	sso:occurrenceQuantity	:e46bf84c-0a0b-408b-846d-28dc903bcfaa ;
+	rdfs:label	"wire1" .
+:22522857-419f-49aa-b6b9-4665cf043ea5	a	sso:ContactFeatureDefinition ,
+			sso:ShapeFeatureType_cavity_profile ;
+	rdfs:label	"arinc600 rack plug  #12 cavity" .
+:22eef73c-b7d3-474e-82e2-fd3551a6e48c	a	sso:ShapeFeatureDefinitionOccurrenceElement ;
+	lci:isDefinedBy	:22522857-419f-49aa-b6b9-4665cf043ea5 .
+:2338c1b4-a6b3-4c05-a770-6a4fbafac842	a	owl:ObjectProperty ;
+	rep:contextDependentShapeRepresentation	:edffd952-db8b-4e6b-b3e7-f3cb4dea23d8 ;
+	rdfs:subPropertyOf	sso:nextAssemblyOccurrenceUsage .
+:23421cf6-4931-4551-89fa-95eb7d65c6a4	a	sso:CrossSectionalOccurrenceShapeElement ;
+	lci:isDefinedBy	:794726a4-cd72-4bf5-88ae-a104d56741eb .
+:23c522ac-df59-4121-b71b-9e3dd441c170	a	owl:ObjectProperty ;
+	rep:transformationOperator	:a4298bf5-28c0-4a06-abc0-35c806c85a6a ;
+	rdfs:subPropertyOf	rep:geometryToTopologyModelAssociation .
+:246f6e8d-9a00-4f3e-bafd-34f4e13f97f3	a	sso:InterfaceOrJoinTerminal_join_terminal ,
+			sso:PartTerminal ,
+			sso:TerminalJointType_crimp_terminal ;
+	rdfs:label	"Join signal" .
+:2477d399-b9f1-42b8-a5a8-00a2f3a8daa5	a	sso:PartContactFeature ;
+	lci:isDefinedBy	:22522857-419f-49aa-b6b9-4665cf043ea5 ;
+	rdfs:label	"Contact mounting profile" .
+:25a23c39-3f5e-4e5c-b297-a628d1cda32f	a	rep:VertexPoint ;
+	rep:vertexGeometry	:b99e4276-6dcc-4f53-a446-6afa078aaaeb ;
+	rdfs:label	"X2" .
+:25b7f307-63bf-436b-a980-a239c1f83227	a	sso:OccurrenceContactFeature ;
+	lci:isDefinedBy	:ebb49391-b410-47e1-be30-408372a410c0 .
+:2600b6ac-870d-4487-b573-27ac8fb71767	a	qau:Length ;
+	qau:metre	2.1 .
+:2638771d-8851-43d2-ad71-0b5a156531c6	a	sso:InterfaceOrJoinTerminal_join_terminal ,
+			sso:PartTerminal ,
+			sso:TerminalJointType_crimp_terminal ;
+	rdfs:label	"end b" .
+:27918042-4085-4817-8289-e6583a0b10ca	a	sso:CrossSectionalOccurrenceShapeElement ;
+	lci:isDefinedBy	:bbd1538f-4990-4330-8949-754cb5035756 .
+:279beb0f-c49f-4665-912e-62b5205ea0af	a	rep:EdgeBasedTopologicalRepresentationWithLengthConstraint ;
+	rep:contextOfItems	:442b5bb5-4042-4f73-81f2-5c190472624f ;
+	rep:item	:ff9ee965-af28-431a-88f3-eb46c2e52b85 ;
+	sso:id	"SubRep H1.b" .
+:27ad3057-0702-4a33-becc-6514edf16060	a	sso:PartContactFeature ;
+	lci:isDefinedBy	:5330b5fd-f556-4fee-8a64-68d74978feed .
+:27af57f5-b598-40cd-bdd6-01bc78b2490f	a	sso:WireOccurrenceTerminal .
+:28206bcb-c047-4710-8c79-95b625839cbe	a	sso:InterfaceOrJoinTerminal_join_terminal ,
+			sso:PartTerminal ,
+			sso:TerminalJointType_solder_terminal ;
+	rdfs:label	"Join4" .
+:28965ef2-e00d-4a8a-9a78-4f7f4feda575	a	sso:OccurrenceTerminal ;
+	lci:isDefinedBy	:d6a571e0-22eb-4dda-8910-368777d69930 .
+:28cef357-240f-4a7f-8d8c-83a6398b1cc8	a	sso:PartVersion ;
+	sso:hasProductDefinition	:c4e4a5f3-0e21-4d48-8e1d-9bc16135aeb6 ;
+	sso:versionId	"Version 1" .
+:29145878-2c75-4cbc-855b-7746fae9816b	a	rep:VertexPoint ;
+	rep:vertexGeometry	:e611a992-951c-4248-9290-dedd8b26857b ;
+	rdfs:label	"N5" .
+:2a5f8099-b49e-477d-98d3-e1941bed7f74	a	sso:InterfaceOrJoinTerminal_interface_terminal ,
+			sso:PartTerminal ,
+			sso:TerminalJointType_pin_terminal ;
+	rdfs:label	"Int term" .
+:2b432365-6aac-4adb-9aba-613be1752b15	a	sso:WireOccurrenceTerminal .
+:2b45c6b5-8300-4b5c-9029-023eff559e60	a	sso:InterfaceOrJoinTerminal_interface_terminal ,
+			sso:PartTerminal ,
+			sso:TerminalJointType_pin_terminal ;
+	rdfs:label	"Interface signal" .
+:2c4265de-ac3e-4440-969c-aa78158c8e1f	a	rep:ConnectedEdgeSet ;
+	rep:cesEdges	:00f09515-03bd-4718-90c6-3e1956a294e0 ,
+			:322ed50f-35f8-4766-938c-c3ba2502a3a6 ,
+			:4018af3e-4875-48e2-bd3f-a62afaab8f05 ,
+			:cb227f74-5071-42f4-977f-5f4a916e1424 ,
+			:f896cced-e4a6-4992-b810-6d16a010a616 .
+:2ee92119-8400-4a6a-9549-2f17a49f6b3a	a	sso:WireOccurrence ;
+	lci:hasArrangedPart	:31c8bdaa-c83e-455e-97c8-9b4879bc4dbb ,
+			:75469d85-26f0-4dba-aec9-2cad100242c4 ,
+			:ab671014-c8da-4352-8951-e0700eb43453 ;
+	lci:isDefinedBy	:b8eddd82-d7b3-492e-8548-7d7ccd94b684 ;
+	sso:occurrenceQuantity	:803dcfa4-744f-4f00-ac57-948fe8f3bcaf ;
+	rdfs:label	"braid1" .
+:305083c3-21e5-4880-9511-eecff2b323c1	a	sso:CrossSectionalPartShapeElement ;
+	rdfs:label	"Inner surface" .
+:3082c638-1b0f-4d30-b54e-56f69d135b1b	a	sso:PartContactFeature ;
+	lci:isDefinedBy	:945c2833-7a68-48da-99b2-35241201c4a7 ;
+	rdfs:label	"4" .
+:30aca412-f2ff-422c-8107-258126182f77	a	sso:OccurrenceTerminal ;
+	lci:isDefinedBy	:dd634d5e-63a2-45de-a650-1eba554ff8f7 .
+:30da3a6c-5d4f-4324-b552-f987138c52ca	a	owl:ObjectProperty ;
+	rep:transformationOperator	:35d25f54-03e6-417b-b40e-13b4985fc310 ;
+	rdfs:subPropertyOf	rep:shapeRepresentationRelationshipWithPlacementTransformation .
+:30dce560-4e20-4e9a-ab84-9c7c1f24b447	a	qau:Length ;
+	qau:metre	2.5 .
+:30eae51c-8dd0-4cb2-af13-5a213f9a2cd8	a	sso:OccurrenceContactFeature ;
+	lci:hasArrangedPart	:5876ab65-7fce-46b5-a417-de6682dbc9be ,
+			:72dc076c-a43e-4c32-8cd8-a01d098ecda7 ,
+			:7fece86d-0bfa-44aa-9cab-08b559d52a9d ;
+	lci:isDefinedBy	:706b2a6f-2427-42da-bc7d-d6bc3d975427 .
+:311aa7d3-b626-444e-a290-73bd1275dce6	a	sso:ShapeFeatureDefinitionOccurrenceElement ;
+	lci:isDefinedBy	:3223507c-6bab-43bc-bf25-cb4b0e164bb8 .
+:318f6112-5dc1-48ae-aa42-8fe1aa99316b	a	sso:PartConnectivityDefinition ;
+	lci:isDefinedBy	:08e0680f-fc19-4d9c-a44f-620ac9b9dd34 ,
+			:1ed34e78-95ec-4602-be0c-2beebde52131 .
+:31c8bdaa-c83e-455e-97c8-9b4879bc4dbb	a	sso:WireOccurrenceTerminal .
+:31d352d9-7c2f-4242-9dff-23cae7c4f973	a	sso:InterfaceOrJoinTerminal_interface_terminal ,
+			sso:PartTerminal ,
+			sso:TerminalJointType_socket_terminal ;
+	rdfs:label	"Interface4" .
+:31d91549-523d-4d1c-b981-da2b449be5fd	a	lci:Organization ;
+	sso:id	"IEC" ;
+	rdfs:label	"International Electrotechnical Commission" .
+:3223507c-6bab-43bc-bf25-cb4b0e164bb8	a	sso:ContactFeatureDefinition ,
+			sso:ShapeFeatureType_connector_insert_profile ;
+	rdfs:label	"arinc600 rack plug  C insert profile" .
+:322ed50f-35f8-4766-938c-c3ba2502a3a6	a	rep:EdgeBoundedCurveWithLength ;
+	rep:edgeEnd	:62ee135f-b72e-4ff3-83d5-3d686f55dd9d ;
+	rep:edgeGeometry	:05ee915e-13b2-4422-8174-584ab31d9b1e ;
+	rep:edgeStart	:0839a94a-859d-4029-a8b9-e5a0e2a244fd ;
+	:3cb879b0-11b0-438c-8db3-85452924fc9b	:732720b3-20b6-480f-9639-225c740ca172 ;
+	rep:sameSense	true ;
+	rdfs:label	"S1" .
+:32a66a32-ccd1-4e62-9247-610d8c710167	a	sso:PartVersion ;
+	sso:hasProductDefinition	:6fa5a150-7329-45bb-a5c8-e53ec9ef68ef ;
+	sso:versionId	"Version 1" .
+:32b88d64-4c33-482f-aac7-59c60ae01ea6	a	rep:OrientedEdge ;
+	rep:edgeElement	:cb227f74-5071-42f4-977f-5f4a916e1424 ;
+	rep:orientation	true .
+:3325c9b1-438d-44e7-90fc-4175be2140f7	a	sso:Part ,
+			sso:PartCategory_raw_material_by_length ,
+			sso:PartCategory_wire ;
+	sso:hasPartVersion	:a6ef01d1-b5e5-4fca-aa17-24cffbe2cd67 ;
+	sso:id	"04034-22-9" ;
+	rdfs:label	"WIRE,ELEC,COMP,SNGL CONDUCTOR,150 DEG C" .
+:33c35b6c-4d91-4f51-adf2-fd1d19f208c7	a	sso:CrossSectionalGroupShapeElementWithTubularCover .
+:33c37562-c94f-4472-b5c5-4f3f279ab28f	a	sso:OccurrenceContactFeature ;
+	lci:isDefinedBy	:0e617bb1-1cfb-4c13-99b7-bf48ac4a5bca .
+:33c5c347-c2c1-445c-aef7-fe0eae77eaec	a	sso:ContactFeatureDefinition ,
+			sso:ShapeFeatureType_cavity_profile ;
+	rdfs:label	"arinc600 rack plug  #5 cavity" .
+:345317ae-4190-4405-8893-9364d651796b	a	sso:OccurrenceTerminal ;
+	lci:isDefinedBy	:246f6e8d-9a00-4f3e-bafd-34f4e13f97f3 .
+:34e442e0-6ebf-434c-8977-b0d37116bd91	a	sso:Part ,
+			sso:PartCategory_connector ,
+			sso:PartCategory_discrete ;
+	sso:hasPartVersion	:66ac8d6b-5d4f-441b-b817-1b050b6033b0 ;
+	sso:id	"TM2PB" ;
+	rdfs:label	"Phone connector 6.35mm" .
+:35110264-f076-4b77-bdea-56d7c7f92e18	a	sso:OccurrenceContactFeature ;
+	lci:isDefinedBy	:35edbe36-20f0-48e2-a141-5fbac04d926b .
+:351f061b-1f1c-4e68-82de-4d392d363134	a	sso:LifeCycleStage_design ,
+			sso:PartDesign ;
+	lci:hasArrangedPart	:bbd1538f-4990-4330-8949-754cb5035756 ;
+	sso:definingGeometry	:ff8eb3d4-66ac-40dd-8d38-1e2370f02e14 ;
+	sso:viewId	"Version 1" ;
+	rdfs:label	"" .
+:3580cda9-6019-41cf-a008-f83cfd737599	a	rep:OrientedEdge ;
+	rep:edgeElement	:1491783c-bbd2-492d-a039-694cb119ac38 ;
+	rep:orientation	true .
+:35a5f81a-e6c6-4044-bfb6-6323589f3e22	a	sso:OccurrenceTerminal ;
+	lci:isDefinedBy	:cc027da4-bab9-4992-9360-2551745fd147 .
+:35d25f54-03e6-417b-b40e-13b4985fc310	a	owl:ObjectProperty ;
+	rdfs:subPropertyOf	rep:itemDefinedTransformation .
+:35edbe36-20f0-48e2-a141-5fbac04d926b	a	sso:PartContactFeature ;
+	lci:isDefinedBy	:11447065-63ec-457d-b51e-95dad8aad8ab ;
+	rdfs:label	"Slot profile" .
+:36118963-b2f7-4a3b-88f0-ca35502b7d19	a	sso:ShapeElement ;
+	lci:isDefinedBy	:f99c07fc-1e95-4693-bdc4-c4c257290f99 .
+:377ae9a2-6c95-416c-961e-ca2f54abbfc7	a	owl:ObjectProperty ;
+	rdfs:subPropertyOf	sso:nextAssemblyOccurrenceUsage .
+:37ae9fe1-0502-4f30-bef2-ccb9a04f7069	a	sso:PartContactFeature ;
+	lci:isDefinedBy	:a96a80d9-9266-4a80-8dc8-f1c8cac2f147 .
+:38915739-8c11-460d-9c18-6cc4e25e86e6	a	sso:HarnessSegment ;
+	sso:representedGeometry	:5479742f-fd6d-4c17-ba45-47936561cc9d .
+:389d6c0a-679e-4637-91a4-ba472a844c92	a	sso:ContactFeatureDefinition ,
+			sso:ShapeFeatureType_contact_profile ;
+	rdfs:label	"arinc600 receptacle  #12 contact interface" .
+:3af7665c-bde8-4716-bfa3-cf15e520b5c2	a	sso:PartVersion ;
+	sso:hasProductDefinition	:09d159b6-e271-400d-b2ef-94929a1de83b ;
+	sso:versionId	"Version 1" .
+:3b44b9d4-84b6-4397-aeba-bb4013662e99	a	qau:Length ;
+	qau:metre	4.45 .
+:3b97632d-3b0b-4e23-88d8-08d71b981a4a	a	sso:ContactFeatureDefinition ,
+			sso:ShapeFeatureType_cavity_profile ;
+	rdfs:label	"arinc600 receptacle  #16 cavity" .
+:3ca6abd6-9915-45a7-a569-d375973975f3	a	sso:AssemblyJointType_snap_connection ,
+			sso:AssemblyShapeJoint ;
+	sso:assemblyShapeJointItemRelationship	:4b8bdc58-a3f5-4a26-b731-8d1122509d1e ,
+			:72dc076c-a43e-4c32-8cd8-a01d098ecda7 .
+:3cb879b0-11b0-438c-8db3-85452924fc9b	a	owl:ObjectProperty ;
+	rdfs:subPropertyOf	rep:geometryToTopologyItemAssociation .
+:3ce92a6b-c739-4743-9977-661165aa02eb	a	sso:Part ,
+			sso:PartCategory_discrete ,
+			sso:PartCategory_splice ;
+	sso:hasPartVersion	:ea8ae93e-3936-4ffb-a57d-4041725769b9 ;
+	sso:id	"M81824" ;
+	rdfs:label	"Butt Splice Terminal" .
+:3d912cf2-2108-4d26-a06c-d730296af147	a	sso:Part ,
+			sso:PartCategory_assembly ,
+			sso:PartCategory_wiring_harness ;
+	sso:hasPartVersion	:f6f6b330-6c3a-4269-ab4c-bea41e46315c ;
+	sso:id	"Part_H1" ;
+	rdfs:label	"Electrical Harness example 1" .
+:3f7c0908-ac20-4444-970b-579f96c81426	a	owl:ObjectProperty ;
+	rdfs:subPropertyOf	sso:nextAssemblyOccurrenceUsage .
+:3febc538-aa17-4443-969e-8cfe826cd0aa	a	sso:PartContactFeature ;
+	lci:isDefinedBy	:8c9412e7-ca1f-4127-b866-6f209340a74d ;
+	rdfs:label	"5" .
+:4018af3e-4875-48e2-bd3f-a62afaab8f05	a	rep:EdgeBoundedCurveWithLength ;
+	rep:edgeEnd	:4dbdc8bd-c904-427b-a1f9-2c6f6f364eb1 ;
+	rep:edgeGeometry	:a6d746ff-0cbd-4995-89f1-1b12ffdc5fed ;
+	rep:edgeStart	:29145878-2c75-4cbc-855b-7746fae9816b ;
+	rep:sameSense	true ;
+	rdfs:label	"S4" .
+:405144f1-bc0f-472f-975a-4676fe89a1e6	a	owl:ObjectProperty ;
+	rep:transformationOperator	:51167af0-0ead-4d37-89da-d2faa9ddd8fd ;
+	rdfs:subPropertyOf	rep:geometryToTopologyModelAssociation .
+:406a4839-db62-4a49-87ac-5c33f099d80c	a	sso:AssemblyJointType_crimped_connection ,
+			sso:AssemblyShapeJoint ;
+	sso:assemblyShapeJointItemRelationship	:31c8bdaa-c83e-455e-97c8-9b4879bc4dbb ,
+			:6337c45b-1721-4465-a574-04f4e9c350e2 .
+:40777db7-f077-48df-99ff-dbd1ee88d70b	a	sso:InterfaceOrJoinTerminal_join_terminal ,
+			sso:PartTerminal ,
+			sso:TerminalJointType_crimp_terminal ;
+	rdfs:label	"Join signal" .
+:41f5f49d-dc45-4aa2-9e8b-62b99f681b11	a	sso:AssemblyJointType_crimped_connection ,
+			sso:AssemblyShapeJoint ;
+	sso:assemblyShapeJointItemRelationship	:434a3d80-403e-499d-8f5e-a1ae03bfc48d ,
+			:44256ec1-4dec-410a-b380-16dd467b0ab9 .
+:424609e2-5e64-4153-aa2c-ce59320294e9	a	owl:ObjectProperty ;
+	rdfs:subPropertyOf	rep:geometryToTopologyItemAssociation .
+:42c671b4-f18b-40e9-b0a0-e340465c1228	a	sso:WireOccurrenceIdentification ;
+	sso:colourCode	:67a27c84-cf3d-4673-9fe4-ae3789c4e9b5 ;
+	rdfs:label	"A" .
+:434a3d80-403e-499d-8f5e-a1ae03bfc48d	a	sso:CableOccurrenceTerminal .
+:4375c5b7-faa7-455e-b05b-eceba9c41abd	a	qau:Length ;
+	qau:metre	4.45 .
+:439e24e5-1031-4574-8d50-f7c3faf23d41	a	sso:HarnessNode ;
+	sso:representedGeometry	:c6d130d3-6c29-49d2-a4a9-22572d260a64 .
+:43ce962b-ab6f-47b1-b63e-1b522f7ee52c	a	sso:WireOccurrence ;
+	lci:hasArrangedPart	:0341fe88-8966-451d-8a7a-093008bc0135 ,
+			:587c40e2-8c2f-42de-89c8-37983abb78d0 ,
+			:5bea937b-465a-45d3-b0d8-5910fee54333 ,
+			:9fe2bcca-3b0e-46de-be72-9b18fc4bbe6b ;
+	lci:isDefinedBy	:824347bc-e972-44c8-8abb-0422e4733618 ;
+	sso:occurrenceQuantity	:4e826cca-499e-43fe-8f84-f82e210baa98 ;
+	rdfs:label	"wire2" .
+:44256ec1-4dec-410a-b380-16dd467b0ab9	a	sso:OccurrenceTerminal ;
+	lci:isDefinedBy	:d6a571e0-22eb-4dda-8910-368777d69930 .
+:442b5bb5-4042-4f73-81f2-5c190472624f	a	rep:GeometricRepresentationContext ;
+	rep:coordinateSpaceDimension	1 ;
+	sso:id	"H1.x Harness topology context" .
+:46ad313a-3c72-4417-bca2-b86f7a4e4c30	a	rep:Point .
+:46b56c4a-a9cf-4564-abe8-f437941a7997	a	sso:Part ,
+			sso:PartCategory_connector ,
+			sso:PartCategory_discrete ;
+	sso:hasPartVersion	:9b3f714f-381c-4870-af90-f53a68809c56 ;
+	sso:id	"DEP09S065TLF" ;
+	rdfs:label	"D-sub 9 Pin Db9 Female Solder Type Socket Connector" .
+:46cbdd00-fbd7-4758-bc0a-adf206d2c0f0	a	sso:CrossSectionalAlternativePartShapeElement .
+:471efe9f-1481-42a5-bfec-0c483f14329c	a	sso:InterfaceOrJoinTerminal_interface_terminal ,
+			sso:PartTerminal ,
+			sso:TerminalJointType_socket_terminal ;
+	rdfs:label	"Interface1" .
+:47be6e2d-584e-4db5-91c0-cee57e07d87c	a	sso:ContactFeatureDefinition ,
+			sso:ShapeFeatureType_contact_profile ;
+	rdfs:label	"arinc600 rack plug  #16 contact interface" .
+:47e19e7a-4c08-459c-95fd-f50971348dc0	a	sso:Part ,
+			sso:PartCategory_connector_insert ,
+			sso:PartCategory_discrete ;
+	sso:hasPartVersion	:3af7665c-bde8-4716-bfa3-cf15e520b5c2 ;
+	rdfs:label	"ARINC 600 rack plug shell 1 A and B dummy" ;
+	:af25877f-847f-4283-ae2e-04d2ec77db8d	"8660-31A-100-01A/AA" .
+:4800c1d6-f07c-44fc-88de-d67845653bc9	a	sso:AssemblyJointType_snap_connection ,
+			sso:AssemblyShapeJoint ;
+	sso:assemblyShapeJointItemRelationship	:73aeb2fe-17a1-45ce-88fb-230aad960929 ,
+			:c53a7b6b-785d-4b01-934c-98f606c22637 .
+:48c74e34-fa26-4831-bf72-ca6b392023d8	a	sso:InterfaceOrJoinTerminal_join_terminal ,
+			sso:PartTerminal ,
+			sso:TerminalJointType_solder_terminal ;
+	rdfs:label	"Join1" .
+:4912b039-54b5-48ff-a5f9-2edfc873c218	a	sso:SingleOccurrence ;
+	lci:hasArrangedPart	:28965ef2-e00d-4a8a-9a78-4f7f4feda575 ,
+			:4981a41c-6b84-4389-b0a8-e025a946972b ,
+			:4b8f9c3a-68b7-47da-a0dc-14a26da2f1df ;
+	lci:isDefinedBy	:54f994eb-55a5-4e04-850f-2b96c6ee9cc5 ;
+	rdfs:label	"arinc1/C-Assy/power4" .
+:491f778b-519b-4383-b371-b3cc7364e951	a	owl:ObjectProperty ;
+	rdfs:subPropertyOf	rep:geometryToTopologyItemAssociation .
+:4938efdb-9d0d-4345-b097-fe87837004d6	a	sso:AssemblyJointType_crimped_connection ,
+			sso:AssemblyShapeJoint ;
+	sso:assemblyShapeJointItemRelationship	:21d4aa54-1f86-4219-9e95-ba947e4b71d7 ,
+			:c9eb3685-71f8-42d1-9a09-5d7d59deb431 .
+:4981a41c-6b84-4389-b0a8-e025a946972b	a	sso:OccurrenceContactFeature ;
+	lci:isDefinedBy	:4a69726d-c04d-4569-8eb5-7d12502b90c0 .
+:4a69726d-c04d-4569-8eb5-7d12502b90c0	a	sso:PartContactFeature ;
+	lci:isDefinedBy	:c78f7067-13c0-42ff-8e94-9ad804fc2086 ;
+	rdfs:label	"Contact mounting profile" .
+:4b8bdc58-a3f5-4a26-b731-8d1122509d1e	a	sso:OccurrenceContactFeature ;
+	lci:isDefinedBy	:35edbe36-20f0-48e2-a141-5fbac04d926b .
+:4b8f9c3a-68b7-47da-a0dc-14a26da2f1df	a	sso:OccurrenceTerminal ;
+	lci:isDefinedBy	:2a5f8099-b49e-477d-98d3-e1941bed7f74 .
+:4c1e88ba-9eb9-4b65-b8a1-288426e096f4	a	sso:ContactFeatureDefinition ,
+			sso:ShapeFeatureType_contact_profile ;
+	rdfs:label	"arinc600 rack plug  #12 contact interface" .
+:4c3f3343-3671-493e-90f2-5fde41ce5fe1	a	sso:InterfaceOrJoinTerminal_interface_terminal ,
+			sso:PartTerminal ,
+			sso:TerminalJointType_pin_terminal ;
+	rdfs:label	"Interface signal" .
+:4c6883bd-fc3e-4b85-b924-7f9fff8a68cd	a	sso:WireOccurrenceTerminal .
+:4ca67789-6f3b-411c-832f-44ecda430ae3	a	sso:PartConnectivityDefinition ;
+	lci:isDefinedBy	:650da9fe-00a2-4967-ae0f-7198c3458ff6 ,
+			:cc027da4-bab9-4992-9360-2551745fd147 .
+:4cefc307-2f8e-4f53-83f2-b8b1635088c3	a	sso:CrossSectionalPartShapeElement ;
+	rdfs:label	"Inner surface" .
+:4dbdc8bd-c904-427b-a1f9-2c6f6f364eb1	a	rep:VertexPoint ;
+	rep:vertexGeometry	:5f1e8224-c54b-4abe-8190-51c56ed3270e ;
+	rdfs:label	"N4" .
+:4e826cca-499e-43fe-8f84-f82e210baa98	a	qau:Length ;
+	qau:metre	1.5 .
+:4f32ce55-dec0-4dfe-94fc-ddb383181c4d	a	rep:EdgeBasedTopologicalRepresentationWithLengthConstraint ;
+	rep:contextOfItems	:442b5bb5-4042-4f73-81f2-5c190472624f ;
+	rep:item	:057f2b05-5e8f-4f31-9d83-6e5879c0ad00 ,
+			:1864700d-91de-40e4-9291-29c5c07e44b2 ,
+			:1b73433c-512c-4482-ab10-840aed6a97ba ,
+			:2c4265de-ac3e-4440-969c-aa78158c8e1f ,
+			:6c4fa71a-a515-4f22-8a57-0cffd0071964 ,
+			:c6d130d3-6c29-49d2-a4a9-22572d260a64 ,
+			:c8590d30-5c5d-45ec-957f-a694de01b2a9 ,
+			:e6d259a3-e910-4d39-a3e5-712b28e979cb ,
+			:eca0f71d-ca23-41c9-ab4e-b34d1e9ccd11 ;
+	:098cc93b-92ec-49c5-ae9c-071658776ca6	:ff8eb3d4-66ac-40dd-8d38-1e2370f02e14 ;
+	:0a8492c6-551a-4351-9979-56a8898e909d	:ff8eb3d4-66ac-40dd-8d38-1e2370f02e14 ;
+	:1c124231-a2a9-4461-96ef-e2fc315e1f22	:ff8eb3d4-66ac-40dd-8d38-1e2370f02e14 ;
+	:23c522ac-df59-4121-b71b-9e3dd441c170	:ff8eb3d4-66ac-40dd-8d38-1e2370f02e14 ;
+	:405144f1-bc0f-472f-975a-4676fe89a1e6	:ff8eb3d4-66ac-40dd-8d38-1e2370f02e14 ;
+	:6bc84855-c0b0-4450-b786-d48a55a30335	:ff8eb3d4-66ac-40dd-8d38-1e2370f02e14 ;
+	:74eeb7d6-f77d-451a-9049-e82a38a0e9fa	:ff8eb3d4-66ac-40dd-8d38-1e2370f02e14 ;
+	:d7cb3958-4273-4ddb-b1eb-1c1828e87ee5	:ff8eb3d4-66ac-40dd-8d38-1e2370f02e14 ;
+	:edffd952-db8b-4e6b-b3e7-f3cb4dea23d8	:ff8eb3d4-66ac-40dd-8d38-1e2370f02e14 ;
+	sso:id	"Topological representation of H1 harness" .
+:4faa7457-2dcc-4d0f-980e-0584f5df2c92	a	sso:ShapeFeatureDefinitionOccurrenceElement ;
+	lci:isDefinedBy	:060b3a41-db48-49a3-91e6-a228dc52643b ;
+	sso:shapeFeatureDefinitionOccurrenceElementRelationship	:22eef73c-b7d3-474e-82e2-fd3551a6e48c .
+:51167af0-0ead-4d37-89da-d2faa9ddd8fd	a	owl:ObjectProperty ;
+	rdfs:subPropertyOf	rep:geometryToTopologyItemAssociation .
+:524bc7f7-f717-425e-8b53-57f5741ecc24	a	sso:CableOccurrenceTerminal .
+:5263b04d-a618-4d61-8e44-21e4db9f640f	a	sso:HarnessNode ;
+	sso:representedGeometry	:62ee135f-b72e-4ff3-83d5-3d686f55dd9d .
+:52857f38-90f2-45f4-8fb8-bc4184d8a993	a	sso:HarnessNode ;
+	sso:representedGeometry	:d9e94996-8a07-4e5e-a97c-28a57e645776 .
+:52e5ab6e-ca8f-4980-a65f-91789dbd5819	a	sso:ExternalRepresentationItem .
+:52ea2745-0260-446a-aa2e-781e8236bb10	a	rep:VertexPoint ;
+	rep:vertexGeometry	:df874f6e-2f51-45f3-83a5-b032bfa853b6 ;
+	rdfs:label	"X4" .
+:5330b5fd-f556-4fee-8a64-68d74978feed	a	sso:ShapeFeatureDefinitionOccurrenceElement ;
+	lci:isDefinedBy	:958ddbc2-5784-4162-bb60-931085ab0f5f .
+:53aec615-4f68-4122-ae20-7fabb015e95e	a	sso:HarnessNode ;
+	sso:representedGeometry	:be55f707-763e-4c50-87cb-bcdd2ca1728f .
+:5479742f-fd6d-4c17-ba45-47936561cc9d	a	rep:SubEdge ;
+	rep:edgeEnd	:4dbdc8bd-c904-427b-a1f9-2c6f6f364eb1 ;
+	rep:edgeStart	:cdee167c-c9c5-43fe-abb0-270139e12caa ;
+	rep:parentEdge	:00f09515-03bd-4718-90c6-3e1956a294e0 ;
+	rdfs:label	"S3-2" .
+:54f994eb-55a5-4e04-850f-2b96c6ee9cc5	a	sso:LifeCycleStage_design ,
+			sso:PartDesign ;
+	lci:hasArrangedPart	:2a5f8099-b49e-477d-98d3-e1941bed7f74 ,
+			:4a69726d-c04d-4569-8eb5-7d12502b90c0 ,
+			:7edcb6a7-7d0d-493a-89ed-9c9ae444722e ,
+			:d6a571e0-22eb-4dda-8910-368777d69930 ;
+	sso:definingGeometry	:0a948dd5-0a5e-4d96-af5b-5e67685a8760 ;
+	sso:viewId	"Version 1" ;
+	rdfs:label	"" .
+:557be9fa-196f-446a-b23e-a2d8dbd65b1f	a	sso:WireColourBasedIdentificationCode ;
+	sso:id	"shield" ;
+	rdfs:label	"wire colour-based identification code" .
+:56559e6b-67b4-4bcc-ae75-2c6714f5dd8d	a	rep:PointOnCurve ;
+	rep:basisCurve	:aa34be68-310a-48ab-8485-4f45d34afe5c ;
+	rep:pointParameter	0.4 .
+:56ca5fb0-6d8c-4979-b84e-fa72ee5a06de	a	rep:Axis2Placement3D ;
+	rep:location	[
+	a	rep:CartesianPoint ;
+	rep:coordinates	( 0.0 0.0 0.0 )
+] ;
+	:a337f285-8a67-45cc-b73f-d1289cc17124	:322ed50f-35f8-4766-938c-c3ba2502a3a6 ;
+	rdfs:label	"dummy position value as it has be be taken from external file" .
+:5720cfeb-2c57-4de9-9262-fe7a2782fb0f	a	sso:OccurrenceTerminal ;
+	lci:isDefinedBy	:a06d5a20-e6b0-40fe-8ebb-b86f39121326 .
+:573e2113-bf44-4b90-948e-a40d5d282ab9	a	sso:WireOccurrenceIdentification ;
+	sso:colourCode	:67a27c84-cf3d-4673-9fe4-ae3789c4e9b5 .
+:585a8432-c913-4299-a2da-1ee288f19af5	a	sso:ContactFeatureDefinition ,
+			sso:ShapeFeatureType_contact_profile ;
+	rdfs:label	"arinc600 rack plug  #5 contact interface" .
+:5876ab65-7fce-46b5-a417-de6682dbc9be	a	sso:OccurrenceContactFeature ;
+	lci:isDefinedBy	:27ad3057-0702-4a33-becc-6514edf16060 .
+:587c40e2-8c2f-42de-89c8-37983abb78d0	a	sso:WireOccurrenceIdentification ;
+	sso:colourCode	:67a27c84-cf3d-4673-9fe4-ae3789c4e9b5 .
+:5883537e-19cb-4935-8be7-d70876dba9ff	a	sso:OccurrenceTerminal ;
+	lci:isDefinedBy	:2b45c6b5-8300-4b5c-9029-023eff559e60 .
+:59b71534-b7b9-4035-9ad3-9e9287348c8e	a	sso:LifeCycleStage_design ,
+			sso:PartDesign ;
+	lci:hasArrangedPart	:305083c3-21e5-4880-9511-eecff2b323c1 ;
+	sso:definingGeometry	:ff8eb3d4-66ac-40dd-8d38-1e2370f02e14 ;
+	sso:viewId	"Version 1" ;
+	rdfs:label	"" .
+:5a546b6a-07a7-4f0b-ae93-69fbdf99c1b2	a	sso:OccurrenceTerminal ;
+	lci:isDefinedBy	:bf8e2747-9ad3-4cce-a0b9-a6fad71b2248 .
+:5b8a176a-9172-4243-a128-698ea51f5b5e	a	sso:CableOccurrenceTerminal .
+:5ba13a75-5507-4c9f-baba-41c402bcd4b4	a	sso:OccurrenceTerminal ;
+	lci:isDefinedBy	:4c3f3343-3671-493e-90f2-5fde41ce5fe1 .
+:5bea937b-465a-45d3-b0d8-5910fee54333	a	sso:CrossSectionalOccurrenceShapeElement ;
+	lci:isDefinedBy	:794726a4-cd72-4bf5-88ae-a104d56741eb .
+:5c257ba8-5882-4aa7-a370-ccaef02905d9	a	owl:ObjectProperty ;
+	rdfs:subPropertyOf	rep:geometryToTopologyItemAssociation .
+:5dcd349f-4226-465e-852f-dc7cf2490440	a	sso:OccurrenceTerminal ;
+	lci:isDefinedBy	:28206bcb-c047-4710-8c79-95b625839cbe .
+:5e489780-a43b-4be4-81ad-1fd32218ba37	a	sso:PartConnectivityDefinition ;
+	lci:isDefinedBy	:a44649cb-efe2-4d19-b160-69fe4fb00238 ,
+			:bf8e2747-9ad3-4cce-a0b9-a6fad71b2248 .
+:5edf0666-f869-470b-9225-5819a7b77c77	a	rep:OrientedEdge ;
+	rep:edgeElement	:f896cced-e4a6-4992-b810-6d16a010a616 ;
+	rep:orientation	true .
+:5f14557c-7045-4ae5-99f2-be9006112ede	a	sso:CrossSectionalGroupShapeElementWithLacing .
+:5f1e8224-c54b-4abe-8190-51c56ed3270e	a	rep:Point .
+:5f963ee3-6ade-4bff-ba85-bdc1e7254145	a	sso:ShapeFeatureDefinitionOccurrenceElement ;
+	lci:isDefinedBy	:3b97632d-3b0b-4e23-88d8-08d71b981a4a ;
+	sso:shapeFeatureDefinitionOccurrenceElementRelationship	:945c2833-7a68-48da-99b2-35241201c4a7 .
+:6117ec32-7dc4-4fd2-a21b-21d523d0d41e	a	sso:Part ,
+			sso:PartCategory_overbraid ,
+			sso:PartCategory_raw_material_by_length ;
+	sso:hasPartVersion	:0a1ab974-2ab8-4f7d-9725-819b46ee975b ;
+	sso:id	"TC122" ;
+	rdfs:label	"Braid 1/2inch" .
+:61859193-7aef-40ab-a3ff-5ee48c20c637	a	sso:Part ,
+			sso:PartCategory_cable ,
+			sso:PartCategory_raw_material_by_length ;
+	sso:hasPartVersion	:32a66a32-ccd1-4e62-9247-610d8c710167 ;
+	sso:id	"16 AWG" ;
+	rdfs:label	"Speaker wire" .
+:61d2c838-0a9b-4e2a-860a-a89956fab0df	a	qau:Length ;
+	qau:metre	4.25 .
+:625db017-7c62-4321-aa32-0dc678a033ba	a	sso:InterfaceOrJoinTerminal_interface_terminal ,
+			sso:PartTerminal ,
+			sso:TerminalJointType_socket_terminal ;
+	rdfs:label	"Interface7" .
+:627bc8e0-1e09-4ba0-ade1-83b0d5506f05	a	sso:Part ,
+			sso:PartCategory_discrete ,
+			sso:PartCategory_electrified_backshell ;
+	sso:hasPartVersion	:ecedaf66-181c-47c8-8eaf-e15b2e3b9656 ;
+	sso:id	"8660-140" ;
+	rdfs:label	"Backshell EMI connector" .
+:62b7462b-8ee5-4f07-b64d-31aed6406943	a	sso:PartFeature ;
+	rdfs:label	"Segment opening C" .
+:62ee135f-b72e-4ff3-83d5-3d686f55dd9d	a	rep:VertexPoint ;
+	rep:vertexGeometry	:f9eb84d8-12d5-49d1-8cdd-5f3d7423cf6b ;
+	rdfs:label	"N1" .
+:62f300d2-26cd-4e3b-81fd-6f20101d7cd4	a	sso:InterfaceOrJoinTerminal_join_terminal ,
+			sso:PartTerminal ,
+			sso:TerminalJointType_solder_terminal ;
+	rdfs:label	"Join9" .
+:6337c45b-1721-4465-a574-04f4e9c350e2	a	sso:OccurrenceTerminal ;
+	lci:isDefinedBy	:b0caf3b4-5b12-4fa9-875f-e2e588e12ab8 .
+:63d2d610-5966-4a88-944b-58d6a7867139	a	owl:ObjectProperty ;
+	rep:contextDependentShapeRepresentation	:d7cb3958-4273-4ddb-b1eb-1c1828e87ee5 ;
+	rdfs:subPropertyOf	sso:nextAssemblyOccurrenceUsage .
+:63ebb1d8-a306-4c94-a989-1cfb88cff832	a	sso:HarnessNode ;
+	sso:representedGeometry	:eca0f71d-ca23-41c9-ab4e-b34d1e9ccd11 .
+:645582f2-0066-44fe-a0e6-a619503cae54	a	sso:CableOccurrence ;
+	lci:hasArrangedPart	:09637e73-e4e4-4a17-8674-245e8c454b49 ,
+			:13f347ec-4232-4bee-aa03-639bb70a0e6b ,
+			:42c671b4-f18b-40e9-b0a0-e340465c1228 ,
+			:b39fe37e-825e-4722-ba35-3e8952a0de6a ,
+			:d85a4b82-fab3-41cd-9ae1-605dd1694cad ;
+	lci:isDefinedBy	:6fa5a150-7329-45bb-a5c8-e53ec9ef68ef ;
+	sso:occurrenceQuantity	:61d2c838-0a9b-4e2a-860a-a89956fab0df ;
+	rdfs:label	"cable3" .
+:6478d540-cf2b-480a-bacb-12e4b330417e	a	owl:ObjectProperty ;
+	rdfs:subPropertyOf	sso:nextAssemblyOccurrenceUsage .
+:64b53aa1-d292-4c3e-bd63-40a5e217a459	a	owl:ObjectProperty ;
+	rep:transformationOperator	:919e21ef-3957-423d-8dda-aa1df5dcb376 ,
+			:a337f285-8a67-45cc-b73f-d1289cc17124 ;
+	rdfs:subPropertyOf	rep:topologyToGeometryModelAssociation .
+:650da9fe-00a2-4967-ae0f-7198c3458ff6	a	sso:InterfaceOrJoinTerminal_join_terminal ,
+			sso:PartTerminal ,
+			sso:TerminalJointType_solder_terminal ;
+	rdfs:label	"Join2" .
+:65242101-9dc9-425b-8bd9-9d53a9b19eb9	a	sso:OccurrenceTerminal ;
+	lci:isDefinedBy	:b2ce3f23-1804-466b-857d-1b449ed614b4 .
+:655d45c9-286b-4d0e-8ed5-137fb98e5592	a	rep:ConnectedEdgeSubSet ;
+	rep:ConnectedEdgeSubSet	:2c4265de-ac3e-4440-969c-aa78158c8e1f ;
+	rep:cesEdges	:1491783c-bbd2-492d-a039-694cb119ac38 ,
+			:322ed50f-35f8-4766-938c-c3ba2502a3a6 ,
+			:cb227f74-5071-42f4-977f-5f4a916e1424 .
+:65ab6850-05d6-4b67-b7ea-a8edbdbb5b02	a	sso:LifeCycleStage_design ,
+			sso:PartDesign ;
+	lci:hasArrangedPart	:2477d399-b9f1-42b8-a5a8-00a2f3a8daa5 ,
+			:894f0016-07e2-4dee-b606-2f88b41fdafd ,
+			:a06d5a20-e6b0-40fe-8ebb-b86f39121326 ,
+			:b2ce3f23-1804-466b-857d-1b449ed614b4 ;
+	sso:viewId	"Version 1" ;
+	rdfs:label	"" .
+:6663eddb-df51-433b-ad2b-f1d5ae519e95	a	sso:CableOccurrenceTerminalLocationGroup ;
+	lci:hasArrangedPart	:6bb94ce9-8d66-4095-8e7c-d92634bad691 ,
+			:f8c3ca39-3b39-4f15-aa62-1d2aace86f15 .
+:66ac8d6b-5d4f-441b-b817-1b050b6033b0	a	sso:PartVersion ;
+	sso:hasProductDefinition	:b86ce2fa-e2a5-4e61-a486-d81b93366673 ;
+	sso:versionId	"Version 1" .
+:6768cbb7-6b24-44ac-bd34-c86953b58362	a	sso:CableOccurrenceTerminalLocationGroup ;
+	lci:hasArrangedPart	:524bc7f7-f717-425e-8b53-57f5741ecc24 ,
+			:c8c05ce6-8770-4ca2-a604-3d11c4701cad .
+:67a27c84-cf3d-4673-9fe4-ae3789c4e9b5	a	sso:WireColourBasedIdentificationCode ;
+	sso:id	"white" ;
+	rdfs:label	"wire colour-based identification code" .
+:67ed968f-e3a6-438a-824e-6c079e1acf1d	a	sso:LifeCycleStage_design ,
+			sso:PartDesign ;
+	lci:hasArrangedPart	:08e0680f-fc19-4d9c-a44f-620ac9b9dd34 ,
+			:1ed34e78-95ec-4602-be0c-2beebde52131 ,
+			:2177385e-efac-4c43-a4c4-1e640d1802be ,
+			:246f6e8d-9a00-4f3e-bafd-34f4e13f97f3 ,
+			:2b45c6b5-8300-4b5c-9029-023eff559e60 ,
+			:318f6112-5dc1-48ae-aa42-8fe1aa99316b ,
+			:ebb49391-b410-47e1-be30-408372a410c0 ;
+	sso:definingGeometry	:0a948dd5-0a5e-4d96-af5b-5e67685a8760 ;
+	sso:viewId	"Version 1" ;
+	rdfs:label	"" .
+:6823e6da-b37c-4045-ae41-7744e1ab7285	a	sso:InterfaceOrJoinTerminal_join_terminal ,
+			sso:PartTerminal ,
+			sso:TerminalJointType_solder_terminal ;
+	rdfs:label	"Join5" .
+:6869a4b7-1cc0-4e23-8dd1-34a4e5687c33	a	rep:VertexPoint ;
+	rep:vertexGeometry	:56559e6b-67b4-4bcc-ae75-2c6714f5dd8d ;
+	rdfs:label	"X3" .
+:688ac693-37f0-4d5b-a193-acf7926af861	a	sso:CrossSectionalGroupShapeElementWithTubularCover .
+:6901247a-d6d0-4f08-a00a-b71f9846cccb	a	sso:PartVersion ;
+	sso:hasProductDefinition	:67ed968f-e3a6-438a-824e-6c079e1acf1d ;
+	sso:versionId	"Version 1" .
+:691b310e-67e2-4259-a257-c9111c205955	a	sso:PartContactFeature ;
+	lci:isDefinedBy	:14b06379-a65d-412e-966d-29e706534494 ;
+	rdfs:label	"2" .
+:6a4ea4a8-d94c-423d-bdce-c813326a4c8b	a	sso:SingleOccurrence ;
+	lci:hasArrangedPart	:35110264-f076-4b77-bdea-56d7c7f92e18 ;
+	lci:isDefinedBy	:09d159b6-e271-400d-b2ef-94929a1de83b ;
+	rdfs:label	"A-insert" .
+:6ab59c74-2e9d-438a-a343-e368cdb83b78	a	sso:CableOccurrenceTerminal .
+:6b5e419f-fbdd-4515-93a5-4e6cbad8d67a	a	sso:ShapeFeatureDefinitionOccurrenceElement ;
+	lci:isDefinedBy	:e8c2e14c-a8de-4025-a861-df81c2228f44 ;
+	sso:shapeFeatureDefinitionOccurrenceElementRelationship	:8c9412e7-ca1f-4127-b866-6f209340a74d .
+:6bb94ce9-8d66-4095-8e7c-d92634bad691	a	sso:CableOccurrenceTerminal .
+:6bc84855-c0b0-4450-b786-d48a55a30335	a	owl:ObjectProperty ;
+	rep:transformationOperator	:3cb879b0-11b0-438c-8db3-85452924fc9b ;
+	rdfs:subPropertyOf	rep:geometryToTopologyModelAssociation .
+:6bd2a96c-58d2-428a-88c3-95d00b4a8557	a	sso:OccurrenceTerminal ;
+	lci:isDefinedBy	:31d352d9-7c2f-4242-9dff-23cae7c4f973 .
+:6bd5fffb-08ce-4b9f-9943-180494ddcf1a	a	sso:LifeCycleStage_design ,
+			sso:PartDesign ;
+	lci:hasArrangedPart	:19e7eaa4-255e-47da-92fa-7e88507a08c3 ,
+			:20d2500b-4b07-46d7-b146-78b880cbf96f ,
+			:21857c81-5021-4f5b-b302-e91f22d7624d ,
+			:28206bcb-c047-4710-8c79-95b625839cbe ,
+			:31d352d9-7c2f-4242-9dff-23cae7c4f973 ,
+			:471efe9f-1481-42a5-bfec-0c483f14329c ,
+			:48c74e34-fa26-4831-bf72-ca6b392023d8 ,
+			:4ca67789-6f3b-411c-832f-44ecda430ae3 ,
+			:625db017-7c62-4321-aa32-0dc678a033ba ,
+			:62f300d2-26cd-4e3b-81fd-6f20101d7cd4 ,
+			:650da9fe-00a2-4967-ae0f-7198c3458ff6 ,
+			:6823e6da-b37c-4045-ae41-7744e1ab7285 ,
+			:7158889f-5906-4bf1-9aed-5a272461d83a ,
+			:76b4944d-afec-4dab-9e4f-66993df43fa9 ,
+			:7bf4b993-c2a5-47e3-9fe0-a43ca7d1c941 ,
+			:7ea4453d-7971-4586-9bbc-21d493c99d2f ,
+			:84b32f05-5cc1-4741-8892-2d80999dd840 ,
+			:8aea074b-2220-4bd1-8dd9-8d09c5bd8bfd ,
+			:9a809579-ae6d-4c58-852c-660defb4ad2b ,
+			:a297e02f-c76e-4ba7-aa3a-e13c55de0c0e ,
+			:a54c53a2-2d27-4375-8835-8464e6da2f1b ,
+			:b070b8ac-93e5-4701-b084-0d2c3c609454 ,
+			:b7dbeda8-aba8-46f9-a83a-2ddddcab35b0 ,
+			:cc027da4-bab9-4992-9360-2551745fd147 ,
+			:d17ff878-c1ec-47de-8bb9-e2096bf2ae1c ,
+			:dd634d5e-63a2-45de-a650-1eba554ff8f7 ,
+			:e313c86a-53ba-4700-afdc-ff7c679373c2 ;
+	sso:viewId	"Version 1" ;
+	rdfs:label	"" .
+:6c420727-58c3-43ad-a4c5-83501f21b36f	a	rep:PointOnCurve ;
+	rep:basisCurve	:13ecc75a-64a8-48f9-aed3-156f519b133c ;
+	rep:pointParameter	0.8 .
+:6c4fa71a-a515-4f22-8a57-0cffd0071964	a	rep:Path ;
+	rep:edgeList	( :a9a103b5-fda1-4d64-9582-d35cc227d36d :060df459-2596-48e4-ae2d-d9dd395ef8f7
+	:aea83f9b-f98d-453b-9250-c1844f2a16b2 ) ;
+	:ba5e0a2a-957b-48d5-b5f4-73885dddac98	:732720b3-20b6-480f-9639-225c740ca172 ;
+	rdfs:label	"S2-S3-S4" .
+:6d2220ab-0a12-49da-a231-da85b7f72793	a	sso:CableOccurrenceTerminal .
+:6dcc00d7-4349-4daa-a4a1-9d1f63c54953	a	sso:PropertyDefinition ;
+	sso:id	"0112/2///61360_4#AAE529" ;
+	rdfs:label	"" .
+:6e39189b-b419-41a2-bc4d-76801fc1ec4a	a	sso:ContactFeatureDefinition ,
+			sso:ShapeFeatureType_contact_profile ;
+	rdfs:label	"arinc600 receptacle  #5 contact interface" .
+:6fa5a150-7329-45bb-a5c8-e53ec9ef68ef	a	sso:LifeCycleStage_design ,
+			sso:PartDesign ;
+	lci:hasArrangedPart	:0f12ad2c-9eaf-4886-97ac-4557aa4a5d17 ;
+	sso:definingGeometry	:ff8eb3d4-66ac-40dd-8d38-1e2370f02e14 ;
+	sso:viewId	"Version 1" ;
+	rdfs:label	"" .
+:706b2a6f-2427-42da-bc7d-d6bc3d975427	a	sso:PartContactFeature ;
+	lci:hasArrangedPart	:27ad3057-0702-4a33-becc-6514edf16060 ,
+			:37ae9fe1-0502-4f30-bef2-ccb9a04f7069 ,
+			:9af7c797-684c-4251-bcdf-f6ffdce1f525 ;
+	lci:isDefinedBy	:c5ccb01d-8ebe-4b9e-a13f-d4b3c5e17494 .
+:70a3c722-8d24-4047-8637-91e99b4d2336	a	sso:CrossSectionalGroupShapeElementWithTubularCover .
+:70f10159-390c-4a22-837d-e13ae9ebfaa6	a	sso:PartVersion ;
+	sso:hasProductDefinition	:ddef4a84-4507-4d1a-9fa1-56bb8ca62e56 .
+:7158889f-5906-4bf1-9aed-5a272461d83a	a	sso:InterfaceOrJoinTerminal_join_terminal ,
+			sso:PartTerminal ,
+			sso:TerminalJointType_solder_terminal ;
+	rdfs:label	"Join7" .
+:71914dd9-2019-4921-a3b4-7ad70a0a6aa6	a	sso:OccurrenceTerminal ;
+	lci:isDefinedBy	:2b45c6b5-8300-4b5c-9029-023eff559e60 .
+:71961ef8-a2d2-4554-b5ab-93647ab18ae7	a	owl:ObjectProperty ;
+	rep:contextDependentShapeRepresentation	:6bc84855-c0b0-4450-b786-d48a55a30335 ;
+	rdfs:subPropertyOf	sso:nextAssemblyOccurrenceUsage .
+:72819f12-d3f4-4674-abae-72fa4a9e27ec	a	sso:OccurrenceTerminal ;
+	lci:isDefinedBy	:471efe9f-1481-42a5-bfec-0c483f14329c .
+:72dc076c-a43e-4c32-8cd8-a01d098ecda7	a	sso:OccurrenceContactFeature ;
+	lci:isDefinedBy	:37ae9fe1-0502-4f30-bef2-ccb9a04f7069 .
+:732720b3-20b6-480f-9639-225c740ca172	a	rep:Axis2Placement3D ;
+	rep:location	[
+	a	rep:CartesianPoint ;
+	rep:coordinates	( 0.0 0.0 0.0 )
+] .
+:73aeb2fe-17a1-45ce-88fb-230aad960929	a	sso:OccurrenceContactFeature ;
+	lci:isDefinedBy	:79aad633-aeb3-4d58-b4d2-b3300c1dbfc0 .
+:7457663e-33b3-45b3-84a6-4e281586bbce	a	sso:OccurrenceTerminal ;
+	lci:isDefinedBy	:76b4944d-afec-4dab-9e4f-66993df43fa9 .
+:74eeb7d6-f77d-451a-9049-e82a38a0e9fa	a	owl:ObjectProperty ;
+	rep:transformationOperator	:e7ebce70-fb3c-4e2c-af07-16b49ed86836 ;
+	rdfs:subPropertyOf	rep:geometryToTopologyModelAssociation .
+:75469d85-26f0-4dba-aec9-2cad100242c4	a	sso:CrossSectionalOccurrenceShapeElement ;
+	lci:isDefinedBy	:e157d6d1-c7cf-49ff-8375-6f8a236a9617 .
+:76b4944d-afec-4dab-9e4f-66993df43fa9	a	sso:InterfaceOrJoinTerminal_join_terminal ,
+			sso:PartTerminal ,
+			sso:TerminalJointType_solder_terminal ;
+	rdfs:label	"Join8" .
+:7710c91a-c997-4c20-9911-00867f060310	a	sso:WireOccurrenceIdentification ;
+	sso:colourCode	:014497eb-4ad8-4f0a-a4a8-87594c930ab0 ;
+	rdfs:label	"gnd" .
+:78ade60e-bdc8-4324-8854-8d1e06d3aaa3	a	sso:WireOccurrenceTerminal .
+:78d843c1-f36d-436e-b0b4-243dbdbe356c	a	qau:Length ;
+	qau:metre	1.75 .
+:794726a4-cd72-4bf5-88ae-a104d56741eb	a	sso:CrossSectionalPartShapeElement .
+:7996d360-1908-4277-86f1-cd7ec63327f4	a	sso:HarnessSegment ;
+	sso:representedGeometry	:adf8f4bd-b791-48c9-b66d-5b8d305768c6 .
+:79aab485-d548-4700-88f0-5bbb198c600a	a	sso:OccurrenceTerminal ;
+	lci:isDefinedBy	:7ea4453d-7971-4586-9bbc-21d493c99d2f .
+:79aad633-aeb3-4d58-b4d2-b3300c1dbfc0	a	sso:PartContactFeature ;
+	lci:isDefinedBy	:7ca1a9e6-d3fe-472f-a521-de7c9917965a ;
+	rdfs:label	"1" .
+:7a16d717-e728-456f-ac97-2039ad222168	a	sso:ContactFeatureDefinition ,
+			sso:ShapeFeatureType_cavity_plug_or_contact_profile ;
+	rdfs:label	"arinc600 rack plug  #16 contact mounting" .
+:7bc2867c-1c5c-494d-b4b9-1f848d2be8ff	a	sso:Part ,
+			sso:PartCategory_connector_insert ,
+			sso:PartCategory_discrete ;
+	sso:hasPartVersion	:0b388c9b-a67b-4fe3-ae58-f93b17765af7 ;
+	sso:id	"8660-5W2" ;
+	rdfs:label	"ARINC rack plug 600 shell 1 C 5W2 insert" .
+:7bf4b993-c2a5-47e3-9fe0-a43ca7d1c941	a	sso:PartConnectivityDefinition ;
+	lci:isDefinedBy	:21857c81-5021-4f5b-b302-e91f22d7624d ,
+			:6823e6da-b37c-4045-ae41-7744e1ab7285 .
+:7ca1a9e6-d3fe-472f-a521-de7c9917965a	a	sso:ShapeFeatureDefinitionOccurrenceElement ;
+	lci:isDefinedBy	:33c5c347-c2c1-445c-aef7-fe0eae77eaec .
+:7d0a12a8-982c-4a9a-99fb-d8b6a9572634	a	sso:PartVersion ;
+	sso:hasProductDefinition	:59b71534-b7b9-4035-9ad3-9e9287348c8e ;
+	sso:versionId	"Version 1" .
+:7d26155c-b021-4a93-a28c-054de36d3242	a	sso:SingleOccurrence ;
+	lci:hasArrangedPart	:30aca412-f2ff-422c-8107-258126182f77 ,
+			:35a5f81a-e6c6-4044-bfb6-6323589f3e22 ,
+			:5dcd349f-4226-465e-852f-dc7cf2490440 ,
+			:6bd2a96c-58d2-428a-88c3-95d00b4a8557 ,
+			:72819f12-d3f4-4674-abae-72fa4a9e27ec ,
+			:7457663e-33b3-45b3-84a6-4e281586bbce ,
+			:79aab485-d548-4700-88f0-5bbb198c600a ,
+			:8fe000b0-aa8b-4885-a28c-2906de10bf66 ,
+			:9fabb6be-a6be-42ff-b656-22129688efb6 ,
+			:ab749335-46f9-494b-aab4-7f6e905c2eae ,
+			:b84c58a8-3334-4a86-9a63-ba237d90aa2e ,
+			:bb7a8b1d-299d-4a6e-802d-eebe55d42765 ,
+			:cb1c58b8-bec8-475f-997c-fb1ab826b687 ,
+			:cdaf1954-2fd1-4c02-bc2d-f15126edbffe ,
+			:da24ecd5-117d-43a5-b231-a7ddb8262935 ,
+			:ded27371-956a-4006-bc5f-a394f8b89d55 ,
+			:f039a63c-df28-4957-ab1a-4a87b0e39adb ,
+			:fa688b2f-7bae-4554-834e-ab3ce4a3663e ;
+	lci:isDefinedBy	:6bd5fffb-08ce-4b9f-9943-180494ddcf1a ;
+	rdfs:label	"dsub1" .
+:7d89e255-39e6-45ed-bcae-7faf25002053	a	owl:ObjectProperty ;
+	sso:idOwner	:dd187bc4-9119-490a-865b-25a5a8c95861 ;
+	rdfs:subPropertyOf	sso:id .
+:7de95df2-99d5-49f4-a6ff-d1596bcff4ee	a	owl:ObjectProperty ;
+	rdfs:subPropertyOf	rep:geometryToTopologyItemAssociation .
+:7ea4453d-7971-4586-9bbc-21d493c99d2f	a	sso:InterfaceOrJoinTerminal_join_terminal ,
+			sso:PartTerminal ,
+			sso:TerminalJointType_solder_terminal ;
+	rdfs:label	"Join6" .
+:7edcb6a7-7d0d-493a-89ed-9c9ae444722e	a	sso:PartConnectivityDefinition ;
+	lci:isDefinedBy	:2a5f8099-b49e-477d-98d3-e1941bed7f74 ,
+			:d6a571e0-22eb-4dda-8910-368777d69930 .
+:7f1174c5-617c-4a18-ad76-236c7d4df5b5	a	sso:ContactFeatureDefinition ;
+	lci:hasArrangedPart	:03bf1cd5-3a4d-4ff8-b390-e8f9bd60b5e2 ,
+			:20c938e2-f12a-40fc-bcac-2e7d2e64fd88 ,
+			:4faa7457-2dcc-4d0f-980e-0584f5df2c92 ,
+			:5f963ee3-6ade-4bff-ba85-bdc1e7254145 ,
+			:6b5e419f-fbdd-4515-93a5-4e6cbad8d67a ,
+			:c438ebe7-2ba9-47d5-a03a-5ddf30fc7c3f ;
+	rdfs:label	"arinc600 receptacle  C 5W2 insert profile" .
+:7f930827-ecaf-44dc-8a02-49d270c9a317	a	sso:AssemblyJointType_crimped_connection ,
+			sso:AssemblyShapeJoint ;
+	sso:assemblyShapeJointItemRelationship	:ded27371-956a-4006-bc5f-a394f8b89d55 ,
+			:e86729cb-fdf8-4de1-ac4a-23663ccd1114 .
+:7fece86d-0bfa-44aa-9cab-08b559d52a9d	a	sso:OccurrenceContactFeature ;
+	lci:isDefinedBy	:9af7c797-684c-4251-bcdf-f6ffdce1f525 .
+:803dcfa4-744f-4f00-ac57-948fe8f3bcaf	a	qau:Length ;
+	qau:metre	3.7 .
+:804b4e0f-8ae1-4432-9cd4-28e0c90e566f	a	sso:PartConnectivityDefinition ;
+	lci:isDefinedBy	:1995059e-a7c9-422a-b953-aa7e82990547 ,
+			:2638771d-8851-43d2-ad71-0b5a156531c6 .
+:810c9c09-405f-4106-b5a3-28f5f2b3286e	a	sso:OccurrenceContactFeature ;
+	lci:isDefinedBy	:4a69726d-c04d-4569-8eb5-7d12502b90c0 .
+:8118a1d8-32db-462c-9fbf-10046ad02250	a	rep:PointOnCurve ;
+	rep:basisCurve	:c387d03c-699d-48a9-a6dc-3b4488823163 ;
+	rep:pointParameter	0.3 .
+:824347bc-e972-44c8-8abb-0422e4733618	a	sso:LifeCycleStage_design ,
+			sso:PartDesign ;
+	lci:hasArrangedPart	:794726a4-cd72-4bf5-88ae-a104d56741eb ;
+	sso:definingGeometry	:ff8eb3d4-66ac-40dd-8d38-1e2370f02e14 ;
+	sso:viewId	"Version 1" ;
+	rdfs:label	"" .
+:82f5d203-e8e5-441d-826c-b962149a9a16	a	sso:AssemblyJointType_snap_connection ,
+			sso:AssemblyShapeJoint ;
+	sso:assemblyShapeJointItemRelationship	:4981a41c-6b84-4389-b0a8-e025a946972b ,
+			:bd37e09c-07cc-4633-a58d-4c6945ff0b0d .
+:8319b17b-ea49-4440-95ea-7297c3c0fbaf	a	sso:OccurrenceTerminal ;
+	lci:isDefinedBy	:1995059e-a7c9-422a-b953-aa7e82990547 .
+:8473c2a3-61b2-42de-b302-f57feab112bb	a	sso:SingleOccurrence ;
+	lci:hasArrangedPart	:1e280497-29a9-412b-bf7a-0f93205de798 ,
+			:36118963-b2f7-4a3b-88f0-ca35502b7d19 ,
+			:6337c45b-1721-4465-a574-04f4e9c350e2 ,
+			:b64a0e85-88cf-48b2-aa50-203620141d11 ,
+			:c4b32833-21b0-47f5-b57d-23f08f3f59aa ;
+	lci:isDefinedBy	:f8905de7-a929-4b34-a8f4-5c5cc4e7a01a ;
+	rdfs:label	"arinc1/backshell1" .
+:847b09fd-330e-4ef7-811d-0f110abe88f6	a	sso:ContactFeatureDefinition ,
+			sso:ShapeFeatureType_contact_profile ;
+	rdfs:label	"arinc600 receptacle  #16 contact interface" .
+:84b32f05-5cc1-4741-8892-2d80999dd840	a	sso:PartConnectivityDefinition ;
+	lci:isDefinedBy	:7ea4453d-7971-4586-9bbc-21d493c99d2f ,
+			:8aea074b-2220-4bd1-8dd9-8d09c5bd8bfd .
+:86412724-b0b3-4895-b52f-8abafb4ad4fa	a	sso:AssemblyJointType_crimped_connection ,
+			sso:AssemblyShapeJoint ;
+	sso:assemblyShapeJointItemRelationship	:0e3a609c-eaf3-423a-b1ce-b60f1960ebde ,
+			:6bb94ce9-8d66-4095-8e7c-d92634bad691 .
+:86b1e63d-8772-4c8d-bf95-308f4cdedff7	a	sso:HarnessNode ;
+	sso:representedGeometry	:52ea2745-0260-446a-aa2e-781e8236bb10 .
+:872b0004-1971-466e-8059-f37989f46199	a	sso:PartVersion ;
+	sso:hasProductDefinition	:54f994eb-55a5-4e04-850f-2b96c6ee9cc5 ;
+	sso:versionId	"Version 1" .
+:8817208a-b8e0-4ff1-b04a-bf709da01556	a	rep:Point .
+:8832f031-d5b2-445b-8514-ccad9279f548	a	sso:AssemblyJointType_crimped_connection ,
+			sso:AssemblyShapeJoint ;
+	sso:assemblyShapeJointItemRelationship	:30aca412-f2ff-422c-8107-258126182f77 ,
+			:524bc7f7-f717-425e-8b53-57f5741ecc24 .
+:894f0016-07e2-4dee-b606-2f88b41fdafd	a	sso:PartConnectivityDefinition ;
+	lci:isDefinedBy	:a06d5a20-e6b0-40fe-8ebb-b86f39121326 ,
+			:b2ce3f23-1804-466b-857d-1b449ed614b4 .
+:8a8fbaf8-3c23-4be1-b123-5dd2e9dc3643	a	owl:ObjectProperty ;
+	rep:contextDependentShapeRepresentation	:405144f1-bc0f-472f-975a-4676fe89a1e6 ;
+	rdfs:subPropertyOf	sso:nextAssemblyOccurrenceUsage .
+:8aea074b-2220-4bd1-8dd9-8d09c5bd8bfd	a	sso:InterfaceOrJoinTerminal_interface_terminal ,
+			sso:PartTerminal ,
+			sso:TerminalJointType_socket_terminal ;
+	rdfs:label	"Interface6" .
+:8bb5b9e6-2c6a-4b57-a740-6b517b945fd6	a	sso:CableOccurrenceTerminal .
+:8bff4f80-5c42-40dd-9f95-8d75a666b6c5	a	owl:ObjectProperty ;
+	rdfs:subPropertyOf	sso:nextAssemblyOccurrenceUsage .
+:8c9412e7-ca1f-4127-b866-6f209340a74d	a	sso:ShapeFeatureDefinitionOccurrenceElement ;
+	lci:isDefinedBy	:33c5c347-c2c1-445c-aef7-fe0eae77eaec .
+:8d585e45-b4b1-4006-9c17-aac7e8fa8e40	a	sso:ExternalRepresentationItem .
+:8d673b17-ad16-4058-9c3e-4b4e8d95d63d	a	sso:CrossSectionalOccurrenceShapeElement ;
+	lci:isDefinedBy	:bbd1538f-4990-4330-8949-754cb5035756 .
+:8d82cd90-7cc4-47a5-81fa-13c5a3fb3552	a	sso:ContactFeatureDefinition ,
+			sso:ShapeFeatureType_cavity_plug_or_contact_profile ;
+	rdfs:label	"arinc600 receptacle  #5 contact mounting" .
+:8e2f4299-2b02-4906-9be8-5c1e2be4ed62	a	owl:ObjectProperty ;
+	rdfs:subPropertyOf	sso:nextAssemblyOccurrenceUsage .
+:8fe000b0-aa8b-4885-a28c-2906de10bf66	a	sso:OccurrenceTerminal ;
+	lci:isDefinedBy	:650da9fe-00a2-4967-ae0f-7198c3458ff6 .
+:90946eb5-5e5a-45db-aab5-2beacc336b17	a	sso:PartConnectivityDefinition ;
+	lci:isDefinedBy	:0ed78db0-24a1-4344-879c-29858efc2f6c ,
+			:f0bd12bb-c398-4a74-9d28-c8f99e98f883 .
+:917ca28f-e9d5-42ad-8f70-3007a49c4629	a	owl:ObjectProperty ;
+	rdfs:subPropertyOf	sso:nextAssemblyOccurrenceUsage .
+:919e21ef-3957-423d-8dda-aa1df5dcb376	a	owl:ObjectProperty ;
+	rdfs:subPropertyOf	rep:topologyToGeometryItemAssociation .
+:92b6d5a4-44b2-48da-b2ad-2b7aaa3e8ace	a	owl:ObjectProperty ;
+	rdfs:subPropertyOf	sso:nextAssemblyOccurrenceUsage .
+:93503196-70e3-4c6b-ae0f-a73398a938a1	a	sso:CrossSectionalOccurrenceShapeElement ;
+	lci:isDefinedBy	:305083c3-21e5-4880-9511-eecff2b323c1 .
+:943e8de0-8241-40d3-8d63-23928377b17d	a	sso:OccurrenceTerminal ;
+	lci:isDefinedBy	:40777db7-f077-48df-99ff-dbd1ee88d70b .
+:944877b8-9e9f-4de0-989a-3734760a5d17	a	sso:QuantifiedOccurrence ;
+	lci:hasArrangedPart	:93503196-70e3-4c6b-ae0f-a73398a938a1 ;
+	lci:isDefinedBy	:59b71534-b7b9-4035-9ad3-9e9287348c8e ;
+	sso:occurrenceQuantity	:2600b6ac-870d-4487-b573-27ac8fb71767 ;
+	rdfs:label	"heatshrink1" .
+:945c2833-7a68-48da-99b2-35241201c4a7	a	sso:ShapeFeatureDefinitionOccurrenceElement ;
+	lci:isDefinedBy	:c78f7067-13c0-42ff-8e94-9ad804fc2086 .
+:94852d17-a83c-47f4-90d9-5c4c3188f6dc	a	sso:HarnessNode ;
+	sso:representedGeometry	:25a23c39-3f5e-4e5c-b297-a628d1cda32f .
+:95818560-bbb6-437e-a3ea-7fc3c218c0a3	a	sso:SingleOccurrence ;
+	lci:hasArrangedPart	:0b7e0b1c-e977-4b6b-b268-28a0c0f832a5 ,
+			:44256ec1-4dec-410a-b380-16dd467b0ab9 ,
+			:810c9c09-405f-4106-b5a3-28f5f2b3286e ;
+	lci:isDefinedBy	:54f994eb-55a5-4e04-850f-2b96c6ee9cc5 ;
+	rdfs:label	"arinc1/C-Assy/power3" .
+:958ddbc2-5784-4162-bb60-931085ab0f5f	a	sso:ContactFeatureDefinition ,
+			sso:ShapeFeatureType_slot_profile ;
+	rdfs:label	"arinc600 rack plug  C slot profile" .
+:959297fc-cbd4-43d8-a8b7-778f9b472684	a	sso:HarnessSegment ;
+	sso:representedGeometry	:f896cced-e4a6-4992-b810-6d16a010a616 .
+:96a10445-3b0d-4ff5-899e-b9854b3a9654	a	rep:PointOnCurve ;
+	rep:basisCurve	:c387d03c-699d-48a9-a6dc-3b4488823163 ;
+	rep:pointParameter	0.7 .
+:97528b86-1bd1-4422-b6e5-846664a2f420	a	sso:Part ,
+			sso:PartCategory_protective_covering ,
+			sso:PartCategory_raw_material_by_length ;
+	sso:hasPartVersion	:d0e505cf-54ed-4704-8fae-732298ac52c2 ;
+	sso:id	"SPW-500SP-BK" ;
+	rdfs:label	"1/2 inch Spiral Wrap - 100 foot spool - Black" .
+:984570c3-a3b2-4293-908a-fc26a52fcba9	a	owl:ObjectProperty ;
+	rdfs:subPropertyOf	sso:nextAssemblyOccurrenceUsage .
+:986c8da4-f803-4764-b18e-10ce6397fa9f	a	sso:Part ,
+			sso:PartCategory_connector_contact ,
+			sso:PartCategory_discrete ;
+	sso:hasPartVersion	:b524e684-a5e3-49d9-848f-c1961d7a6649 ;
+	sso:id	"8660-250" ;
+	rdfs:label	"#12 Rack plug signal contact" .
+:9a809579-ae6d-4c58-852c-660defb4ad2b	a	sso:PartConnectivityDefinition ;
+	lci:isDefinedBy	:62f300d2-26cd-4e3b-81fd-6f20101d7cd4 ,
+			:e313c86a-53ba-4700-afdc-ff7c679373c2 .
+:9af7c797-684c-4251-bcdf-f6ffdce1f525	a	sso:PartContactFeature ;
+	lci:isDefinedBy	:ca7bb9f1-154a-4830-96ff-b1313841ca54 .
+:9b1e56b2-c5de-4336-9a05-a05e54216c35	a	sso:WireOccurrenceIdentification ;
+	sso:colourCode	:cda3d0b8-5fb0-4efa-a576-07210ebc0f42 ;
+	rdfs:label	"Signal" .
+:9b3f714f-381c-4870-af90-f53a68809c56	a	sso:PartVersion ;
+	sso:hasProductDefinition	:6bd5fffb-08ce-4b9f-9943-180494ddcf1a ;
+	sso:versionId	"Version 1" .
+:9c245500-6487-43a8-aa19-f4dc69e136dd	a	sso:SingleOccurrence ;
+	lci:hasArrangedPart	:5720cfeb-2c57-4de9-9262-fe7a2782fb0f ,
+			:65242101-9dc9-425b-8bd9-9d53a9b19eb9 ,
+			:bde1a395-b246-4b4d-ba39-b8ec43746cec ;
+	lci:isDefinedBy	:65ab6850-05d6-4b67-b7ea-a8edbdbb5b02 ;
+	rdfs:label	"arinc1/C-Assy/signal5" .
+:9d407ccf-64e4-4de0-9ce6-4c9a9c1c57e9	a	sso:LifeCycleStage_design ,
+			sso:PartDesign ;
+	lci:hasArrangedPart	:0e617bb1-1cfb-4c13-99b7-bf48ac4a5bca ,
+			:3082c638-1b0f-4d30-b54e-56f69d135b1b ,
+			:3febc538-aa17-4443-969e-8cfe826cd0aa ,
+			:691b310e-67e2-4259-a257-c9111c205955 ,
+			:79aad633-aeb3-4d58-b4d2-b3300c1dbfc0 ,
+			:b18c8a3b-6bc1-4de4-91d2-d83d5a8dfa4a ;
+	sso:viewId	"Version 1" ;
+	rdfs:label	"" .
+:9fabb6be-a6be-42ff-b656-22129688efb6	a	sso:OccurrenceTerminal ;
+	lci:isDefinedBy	:6823e6da-b37c-4045-ae41-7744e1ab7285 .
+:9fe2bcca-3b0e-46de-be72-9b18fc4bbe6b	a	sso:WireOccurrenceTerminal .
+:a06d5a20-e6b0-40fe-8ebb-b86f39121326	a	sso:InterfaceOrJoinTerminal_interface_terminal ,
+			sso:PartTerminal ,
+			sso:TerminalJointType_pin_terminal ;
+	rdfs:label	"Int term" .
+:a1469933-f9cc-47fb-9feb-c37ead1549d7	a	sso:PartConnectivityDefinition ;
+	lci:isDefinedBy	:b0caf3b4-5b12-4fa9-875f-e2e588e12ab8 ,
+			:da86e78c-3537-4bba-9ba6-548f7e8fe8df .
+:a1480f41-e4aa-4c7b-b42c-e4062b10385f	a	sso:ContactFeatureDefinition ,
+			sso:ShapeFeatureType_slot_profile ;
+	rdfs:label	"arinc600 rack plug A/B slot profile" .
+:a1b1bd7c-a3f7-4c5f-975c-9113c3b2fbb2	a	rep:OrientedEdge ;
+	rep:edgeElement	:febaf9d0-859c-4c41-8c9d-fbbe3b19b00e ;
+	rep:orientation	false .
+:a297e02f-c76e-4ba7-aa3a-e13c55de0c0e	a	sso:PartConnectivityDefinition ;
+	lci:isDefinedBy	:471efe9f-1481-42a5-bfec-0c483f14329c ,
+			:48c74e34-fa26-4831-bf72-ca6b392023d8 .
+:a337f285-8a67-45cc-b73f-d1289cc17124	a	owl:ObjectProperty ;
+	rdfs:subPropertyOf	rep:topologyToGeometryItemAssociation .
+:a350359f-f750-4b53-b295-54e6ea5658a8	a	lci:Organization ;
+	sso:id	"http://www.souriau.com" ;
+	rdfs:label	"SOURIAU" .
+:a382842b-2a74-4218-946b-d5543fdb5fd6	a	sso:AssemblyJointType_crimped_connection ,
+			sso:AssemblyShapeJoint ;
+	sso:assemblyShapeJointItemRelationship	:2b432365-6aac-4adb-9aba-613be1752b15 ,
+			:9fabb6be-a6be-42ff-b656-22129688efb6 .
+:a41d280c-2df1-44a3-b3b8-df5d73758612	a	sso:SingleOccurrence ;
+	lci:hasArrangedPart	:0e3a609c-eaf3-423a-b1ce-b60f1960ebde ,
+			:71914dd9-2019-4921-a3b4-7ad70a0a6aa6 ,
+			:be66f267-d87e-4d83-8737-a6f1be2e9429 ,
+			:c53a7b6b-785d-4b01-934c-98f606c22637 ,
+			:f4fd56f5-f073-4930-bebb-ec32192f83a8 ;
+	lci:isDefinedBy	:67ed968f-e3a6-438a-824e-6c079e1acf1d ;
+	rdfs:label	"coax1" .
+:a4298bf5-28c0-4a06-abc0-35c806c85a6a	a	owl:ObjectProperty ;
+	rdfs:subPropertyOf	rep:geometryToTopologyItemAssociation .
+:a44649cb-efe2-4d19-b160-69fe4fb00238	a	sso:InterfaceOrJoinTerminal_join_terminal ,
+			sso:PartTerminal ,
+			sso:TerminalJointType_crimp_terminal ;
+	sso:representedGeometry	:0b21e9f9-f6a1-4b79-b08e-3cf05372c0f4 ;
+	rdfs:label	"Internal" .
+:a45cdf5b-8546-4375-9596-f31dbc4eeb80	a	sso:HarnessSegment ;
+	sso:representedGeometry	:febaf9d0-859c-4c41-8c9d-fbbe3b19b00e .
+:a54c53a2-2d27-4375-8835-8464e6da2f1b	a	sso:PartConnectivityDefinition ;
+	lci:isDefinedBy	:625db017-7c62-4321-aa32-0dc678a033ba ,
+			:7158889f-5906-4bf1-9aed-5a272461d83a .
+:a5e6eea9-cb69-41b6-970c-fa2e24a6ee70	a	sso:Part ,
+			sso:PartCategory_connector_contact ,
+			sso:PartCategory_discrete ;
+	sso:hasPartVersion	:872b0004-1971-466e-8059-f37989f46199 ;
+	sso:id	"8660-249" ;
+	rdfs:label	"#16 Rack plug power contact" .
+:a6d746ff-0cbd-4995-89f1-1b12ffdc5fed	a	rep:BoundedCurveWithLength ;
+	rep:lengthValue	0.5 .
+:a6ef01d1-b5e5-4fca-aa17-24cffbe2cd67	a	sso:PartVersion ;
+	sso:hasProductDefinition	:824347bc-e972-44c8-8abb-0422e4733618 ;
+	sso:versionId	"Version 1" .
+:a76c8ccd-12bf-412e-b688-52cb720f2332	a	sso:ContactFeatureDefinition ,
+			sso:ShapeFeatureType_slot_profile ;
+	rdfs:label	"arinc600 receptacle  C slot profile" .
+:a92510ad-0a96-47a9-a2b0-5546e8e136d4	a	owl:ObjectProperty ;
+	rep:contextDependentShapeRepresentation	:098cc93b-92ec-49c5-ae9c-071658776ca6 ;
+	rdfs:subPropertyOf	sso:nextAssemblyOccurrenceUsage .
+:a96a80d9-9266-4a80-8dc8-f1c8cac2f147	a	sso:ShapeFeatureDefinitionOccurrenceElement ;
+	lci:isDefinedBy	:a1480f41-e4aa-4c7b-b42c-e4062b10385f .
+:a9a103b5-fda1-4d64-9582-d35cc227d36d	a	rep:OrientedEdge ;
+	rep:edgeElement	:cb227f74-5071-42f4-977f-5f4a916e1424 ;
+	rep:orientation	false .
+:aa34be68-310a-48ab-8485-4f45d34afe5c	a	rep:BoundedCurveWithLength ;
+	rep:lengthValue	1.7 .
+:ab671014-c8da-4352-8951-e0700eb43453	a	sso:WireOccurrenceIdentification ;
+	sso:colourCode	:67a27c84-cf3d-4673-9fe4-ae3789c4e9b5 ;
+	rdfs:label	"shield" .
+:ab749335-46f9-494b-aab4-7f6e905c2eae	a	sso:OccurrenceTerminal ;
+	lci:isDefinedBy	:625db017-7c62-4321-aa32-0dc678a033ba .
+:ad4559af-0493-4bc1-b94c-8cfd7f32ee24	a	sso:WireOccurrenceIdentification ;
+	sso:colourCode	:cda3d0b8-5fb0-4efa-a576-07210ebc0f42 ;
+	rdfs:label	"Signal" .
+:adf8f4bd-b791-48c9-b66d-5b8d305768c6	a	rep:SubEdge ;
+	rep:edgeEnd	:25a23c39-3f5e-4e5c-b297-a628d1cda32f ;
+	rep:edgeStart	:6869a4b7-1cc0-4e23-8dd1-34a4e5687c33 ;
+	rep:parentEdge	:cb227f74-5071-42f4-977f-5f4a916e1424 ;
+	rdfs:label	"S2-2" .
+:ae028c54-bfd5-4286-8848-5d53115ec464	a	owl:ObjectProperty ;
+	rep:contextDependentShapeRepresentation	:30da3a6c-5d4f-4324-b552-f987138c52ca ;
+	rdfs:subPropertyOf	sso:nextAssemblyOccurrenceUsage .
+:aea83f9b-f98d-453b-9250-c1844f2a16b2	a	rep:OrientedEdge ;
+	rep:edgeElement	:4018af3e-4875-48e2-bd3f-a62afaab8f05 ;
+	rep:orientation	true .
+:aeb32804-fc61-4e66-b30b-42823b9fa61e	a	sso:HarnessNode ;
+	sso:representedGeometry	:cdee167c-c9c5-43fe-abb0-270139e12caa .
+:af25877f-847f-4283-ae2e-04d2ec77db8d	a	owl:ObjectProperty ;
+	sso:idOwner	:a350359f-f750-4b53-b295-54e6ea5658a8 ;
+	rdfs:subPropertyOf	sso:id .
+:b070b8ac-93e5-4701-b084-0d2c3c609454	a	sso:PartConnectivityDefinition ;
+	lci:isDefinedBy	:28206bcb-c047-4710-8c79-95b625839cbe ,
+			:31d352d9-7c2f-4242-9dff-23cae7c4f973 .
+:b0caf3b4-5b12-4fa9-875f-e2e588e12ab8	a	sso:InterfaceOrJoinTerminal_join_terminal ,
+			sso:PartTerminal ,
+			sso:TerminalJointType_screw_terminal ;
+	rdfs:label	"GND1" .
+:b18c8a3b-6bc1-4de4-91d2-d83d5a8dfa4a	a	sso:PartContactFeature ;
+	lci:isDefinedBy	:311aa7d3-b626-444e-a290-73bd1275dce6 ;
+	rdfs:label	"Insert profile" .
+:b1badbc0-9758-451a-b6d0-b85d8a7e2739	a	sso:AssemblyJointType_crimped_connection ,
+			sso:AssemblyShapeJoint ;
+	sso:assemblyShapeJointItemRelationship	:5b8a176a-9172-4243-a128-698ea51f5b5e ,
+			:943e8de0-8241-40d3-8d63-23928377b17d .
+:b2ce3f23-1804-466b-857d-1b449ed614b4	a	sso:InterfaceOrJoinTerminal_join_terminal ,
+			sso:PartTerminal ,
+			sso:TerminalJointType_crimp_terminal ;
+	rdfs:label	"Join term" .
+:b2ee1d23-4303-45eb-90b9-27acaaa23ff9	a	owl:ObjectProperty ;
+	rep:contextDependentShapeRepresentation	:1c124231-a2a9-4461-96ef-e2fc315e1f22 ;
+	rdfs:subPropertyOf	sso:nextAssemblyOccurrenceUsage .
+:b2fa9308-398f-4db5-9719-efbb3415e4bd	a	sso:CableOccurrence ;
+	lci:hasArrangedPart	:6663eddb-df51-433b-ad2b-f1d5ae519e95 ,
+			:8d673b17-ad16-4058-9c3e-4b4e8d95d63d ,
+			:9b1e56b2-c5de-4336-9a05-a05e54216c35 ,
+			:c13b784b-0cbd-4522-aad8-02dbbaf9be24 ,
+			:d70badd2-8492-4f76-90e9-1f19d1b0f521 ;
+	lci:isDefinedBy	:351f061b-1f1c-4e68-82de-4d392d363134 ;
+	sso:occurrenceQuantity	:3b44b9d4-84b6-4397-aeba-bb4013662e99 ;
+	rdfs:label	"cable1" .
+:b39fe37e-825e-4722-ba35-3e8952a0de6a	a	sso:CableOccurrenceTerminalLocationGroup ;
+	lci:hasArrangedPart	:434a3d80-403e-499d-8f5e-a1ae03bfc48d ,
+			:6d2220ab-0a12-49da-a231-da85b7f72793 .
+:b3cbb349-bb11-42d2-a7f0-be13e9464139	a	rep:OrientedEdge ;
+	rep:edgeElement	:00f09515-03bd-4718-90c6-3e1956a294e0 ;
+	rep:orientation	false .
+:b510304f-9e2d-42b8-b25a-e224621ee676	a	owl:ObjectProperty ;
+	rdfs:subPropertyOf	sso:nextAssemblyOccurrenceUsage .
+:b524e684-a5e3-49d9-848f-c1961d7a6649	a	sso:PartVersion ;
+	sso:hasProductDefinition	:65ab6850-05d6-4b67-b7ea-a8edbdbb5b02 ;
+	sso:versionId	"Version 1" .
+:b64a0e85-88cf-48b2-aa50-203620141d11	a	sso:ShapeElement ;
+	lci:isDefinedBy	:dcc9daf3-92f9-4646-a6b8-1d45f404f8c5 .
+:b718fc72-7a8a-4224-9858-a25c9e2ef54f	a	sso:OccurrenceTerminal ;
+	lci:isDefinedBy	:2638771d-8851-43d2-ad71-0b5a156531c6 .
+:b7dbeda8-aba8-46f9-a83a-2ddddcab35b0	a	sso:InterfaceOrJoinTerminal_interface_terminal ,
+			sso:PartTerminal ,
+			sso:TerminalJointType_socket_terminal ;
+	rdfs:label	"Interface8" .
+:b84c58a8-3334-4a86-9a63-ba237d90aa2e	a	sso:OccurrenceTerminal ;
+	lci:isDefinedBy	:e313c86a-53ba-4700-afdc-ff7c679373c2 .
+:b86ce2fa-e2a5-4e61-a486-d81b93366673	a	sso:LifeCycleStage_design ,
+			sso:PartDesign ;
+	lci:hasArrangedPart	:0ed78db0-24a1-4344-879c-29858efc2f6c ,
+			:1d35375b-d942-4c2e-aa4f-df53ef5bce0b ,
+			:40777db7-f077-48df-99ff-dbd1ee88d70b ,
+			:4c3f3343-3671-493e-90f2-5fde41ce5fe1 ,
+			:90946eb5-5e5a-45db-aab5-2beacc336b17 ,
+			:f0bd12bb-c398-4a74-9d28-c8f99e98f883 ;
+	sso:viewId	"Version 1" ;
+	rdfs:label	"" .
+:b8eddd82-d7b3-492e-8548-7d7ccd94b684	a	sso:LifeCycleStage_design ,
+			sso:PartDesign ;
+	lci:hasArrangedPart	:e157d6d1-c7cf-49ff-8375-6f8a236a9617 ;
+	sso:definingGeometry	:ff8eb3d4-66ac-40dd-8d38-1e2370f02e14 ;
+	sso:viewId	"Version 1" ;
+	rdfs:label	"" .
+:b9808b96-766f-4ecd-a528-74f3d8e754d9	a	sso:SingleOccurrence ;
+	lci:hasArrangedPart	:4b8bdc58-a3f5-4a26-b731-8d1122509d1e ;
+	lci:isDefinedBy	:09d159b6-e271-400d-b2ef-94929a1de83b ;
+	rdfs:label	"B-insert" .
+:b99e4276-6dcc-4f53-a446-6afa078aaaeb	a	rep:PointOnCurve ;
+	rep:basisCurve	:aa34be68-310a-48ab-8485-4f45d34afe5c ;
+	rep:pointParameter	0.8 .
+:b9b33971-abb5-4e92-bdd9-e146c1a0433d	a	rep:OrientedEdge ;
+	rep:edgeElement	:adf8f4bd-b791-48c9-b66d-5b8d305768c6 ;
+	rep:orientation	false .
+:b9b605cd-7b33-4893-bf93-70351f84b0cf	a	sso:ContactFeatureDefinition ,
+			sso:ShapeFeatureType_cavity_plug_or_contact_profile ;
+	rdfs:label	"arinc600 rack plug  #12 contact mounting" .
+:ba5e0a2a-957b-48d5-b5f4-73885dddac98	a	owl:ObjectProperty ;
+	rdfs:subPropertyOf	rep:geometryToTopologyItemAssociation .
+:bb7a8b1d-299d-4a6e-802d-eebe55d42765	a	sso:OccurrenceTerminal ;
+	lci:isDefinedBy	:62f300d2-26cd-4e3b-81fd-6f20101d7cd4 .
+:bbd1538f-4990-4330-8949-754cb5035756	a	sso:CrossSectionalPartShapeElement .
+:bd37e09c-07cc-4633-a58d-4c6945ff0b0d	a	sso:OccurrenceContactFeature ;
+	lci:isDefinedBy	:3082c638-1b0f-4d30-b54e-56f69d135b1b .
+:bd6b4d5a-ce59-4d5e-8ec8-a6a2dad0b97b	a	sso:AssemblyJointType_crimped_connection ,
+			sso:AssemblyShapeJoint ;
+	sso:assemblyShapeJointItemRelationship	:f4fd56f5-f073-4930-bebb-ec32192f83a8 ,
+			:f8c3ca39-3b39-4f15-aa62-1d2aace86f15 .
+:bde1a395-b246-4b4d-ba39-b8ec43746cec	a	sso:OccurrenceContactFeature ;
+	lci:isDefinedBy	:2477d399-b9f1-42b8-a5a8-00a2f3a8daa5 .
+:bde6660f-e629-4bdb-be1b-26878655bb7d	a	sso:CableOccurrenceTerminalLocationGroup ;
+	lci:hasArrangedPart	:8bb5b9e6-2c6a-4b57-a740-6b517b945fd6 ,
+			:cb6cbd1c-38ca-4e1c-a602-56e3d40569d6 .
+:be55f707-763e-4c50-87cb-bcdd2ca1728f	a	rep:VertexPoint ;
+	rep:vertexGeometry	:8817208a-b8e0-4ff1-b04a-bf709da01556 ;
+	rdfs:label	"N2" .
+:be66f267-d87e-4d83-8737-a6f1be2e9429	a	sso:OccurrenceTerminal ;
+	lci:isDefinedBy	:1ed34e78-95ec-4602-be0c-2beebde52131 .
+:bf3c2d9d-7536-41fb-9632-1e7e6f513ae8	a	sso:AssemblyJointType_crimped_connection ,
+			sso:AssemblyShapeJoint ;
+	sso:assemblyShapeJointItemRelationship	:1d33738a-151c-4f1d-badb-b583a889e84b ,
+			:4c6883bd-fc3e-4b85-b924-7f9fff8a68cd .
+:bf5841c6-ae9f-41a5-b432-86d3afafc449	a	owl:ObjectProperty ;
+	rep:contextDependentShapeRepresentation	:0a8492c6-551a-4351-9979-56a8898e909d ;
+	rdfs:subPropertyOf	sso:nextAssemblyOccurrenceUsage .
+:bf7eb811-8948-4eb0-befb-fab2205ea974	a	sso:AssemblyJointType_crimped_connection ,
+			sso:AssemblyShapeJoint ;
+	sso:assemblyShapeJointItemRelationship	:01bfe04a-9e38-4cd4-bd54-3f1f39ae28c5 ,
+			:cb6cbd1c-38ca-4e1c-a602-56e3d40569d6 .
+:bf8e2747-9ad3-4cce-a0b9-a6fad71b2248	a	sso:InterfaceOrJoinTerminal_interface_terminal ,
+			sso:PartTerminal ,
+			sso:TerminalJointType_screw_terminal ;
+	sso:representedGeometry	:8d585e45-b4b1-4006-9c17-aac7e8fa8e40 ;
+	rdfs:label	"External" .
+:c08bdbfc-4924-4ce8-9684-8a9e7d238c80	a	owl:ObjectProperty ;
+	rdfs:subPropertyOf	sso:nextAssemblyOccurrenceUsage .
+:c0c5e7de-b85d-47d1-ae7a-7cc7b6933a73	a	sso:Part ,
+			sso:PartCategory_cable ,
+			sso:PartCategory_raw_material_by_length ;
+	sso:hasPartVersion	:d3708b50-739b-4adf-8620-3106fc990727 ;
+	sso:id	"RG 58" ;
+	rdfs:label	"RG 58" .
+:c0d4808e-579a-438a-819a-f60840d650e6	a	sso:OccurrenceContactFeature ;
+	lci:isDefinedBy	:b18c8a3b-6bc1-4de4-91d2-d83d5a8dfa4a .
+:c13b784b-0cbd-4522-aad8-02dbbaf9be24	a	sso:CableOccurrenceTerminalLocationGroup ;
+	lci:hasArrangedPart	:6ab59c74-2e9d-438a-a343-e368cdb83b78 ,
+			:e86729cb-fdf8-4de1-ac4a-23663ccd1114 .
+:c1a6a0b6-e10f-488a-bc29-e56a6fb348dd	a	sso:SingleOccurrence ;
+	lci:hasArrangedPart	:1d33738a-151c-4f1d-badb-b583a889e84b ,
+			:5a546b6a-07a7-4f0b-ae93-69fbdf99c1b2 ;
+	lci:isDefinedBy	:c4e4a5f3-0e21-4d48-8e1d-9bc16135aeb6 ;
+	rdfs:label	"lug1" .
+:c2b17de3-2c31-4482-9220-af3f6bd25c04	a	sso:AssemblyJointType_crimped_connection ,
+			sso:AssemblyShapeJoint ;
+	sso:assemblyShapeJointItemRelationship	:6ab59c74-2e9d-438a-a343-e368cdb83b78 ,
+			:8fe000b0-aa8b-4885-a28c-2906de10bf66 .
+:c3814cd1-f482-4acd-84ad-7fd81342a3f9	a	sso:SingleOccurrence ;
+	lci:hasArrangedPart	:8319b17b-ea49-4440-95ea-7297c3c0fbaf ,
+			:b718fc72-7a8a-4224-9858-a25c9e2ef54f ;
+	lci:isDefinedBy	:c443c263-312a-4595-ad23-53e38ca7872c ;
+	rdfs:label	"splice1" .
+:c387d03c-699d-48a9-a6dc-3b4488823163	a	rep:BoundedCurveWithLength ;
+	rep:lengthValue	0.7 .
+:c3d36088-4e7f-4f9f-9fa2-b052969752bd	a	sso:ContactFeatureDefinition ,
+			sso:ShapeFeatureType_cavity_plug_or_contact_profile ;
+	rdfs:label	"arinc600 receptacle  #16 contact mounting" .
+:c438ebe7-2ba9-47d5-a03a-5ddf30fc7c3f	a	sso:ShapeFeatureDefinitionOccurrenceElement ;
+	lci:isDefinedBy	:01bf0f7d-c5f4-4aed-b9e5-719e29c7a23b .
+:c443c263-312a-4595-ad23-53e38ca7872c	a	sso:LifeCycleStage_design ,
+			sso:PartDesign ;
+	lci:hasArrangedPart	:1995059e-a7c9-422a-b953-aa7e82990547 ,
+			:2638771d-8851-43d2-ad71-0b5a156531c6 ,
+			:804b4e0f-8ae1-4432-9cd4-28e0c90e566f ;
+	sso:viewId	"Version 1" ;
+	rdfs:label	"" .
+:c4b32833-21b0-47f5-b57d-23f08f3f59aa	a	sso:ShapeElement ;
+	lci:isDefinedBy	:62b7462b-8ee5-4f07-b64d-31aed6406943 .
+:c4e4a5f3-0e21-4d48-8e1d-9bc16135aeb6	a	sso:LifeCycleStage_design ,
+			sso:PartDesign ;
+	lci:hasArrangedPart	:5e489780-a43b-4be4-81ad-1fd32218ba37 ,
+			:a44649cb-efe2-4d19-b160-69fe4fb00238 ,
+			:bf8e2747-9ad3-4cce-a0b9-a6fad71b2248 ;
+	sso:definingGeometry	:0a948dd5-0a5e-4d96-af5b-5e67685a8760 ;
+	sso:viewId	"Version 1" ;
+	rdfs:label	"" .
+:c53a7b6b-785d-4b01-934c-98f606c22637	a	sso:OccurrenceContactFeature ;
+	lci:isDefinedBy	:ebb49391-b410-47e1-be30-408372a410c0 .
+:c5ccb01d-8ebe-4b9e-a13f-d4b3c5e17494	a	sso:ContactFeatureDefinition ;
+	lci:hasArrangedPart	:5330b5fd-f556-4fee-8a64-68d74978feed ,
+			:a96a80d9-9266-4a80-8dc8-f1c8cac2f147 ,
+			:ca7bb9f1-154a-4830-96ff-b1313841ca54 ;
+	rdfs:label	"arinc600 rack plug shell size1" .
+:c6d130d3-6c29-49d2-a4a9-22572d260a64	a	rep:VertexPoint ;
+	rep:vertexGeometry	:96a10445-3b0d-4ff5-899e-b9854b3a9654 ;
+	rdfs:label	"X7" .
+:c78f7067-13c0-42ff-8e94-9ad804fc2086	a	sso:ContactFeatureDefinition ,
+			sso:ShapeFeatureType_cavity_profile ;
+	rdfs:label	"arinc600 rack plug  #16 cavity" .
+:c7b640a3-f3a9-49ae-a308-8159b2081833	a	rep:GeometricRepresentationContext ;
+	rep:coordinateSpaceDimension	3 ;
+	sso:id	"/NULL" .
+:c8590d30-5c5d-45ec-957f-a694de01b2a9	a	rep:Path ;
+	rep:edgeList	( :32b88d64-4c33-482f-aac7-59c60ae01ea6 :b3cbb349-bb11-42d2-a7f0-be13e9464139 ) ;
+	:424609e2-5e64-4153-aa2c-ce59320294e9	:732720b3-20b6-480f-9639-225c740ca172 ;
+	rdfs:label	"S2-S3" .
+:c87c37f0-b1de-4feb-8113-102478f95c56	a	sso:SingleOccurrence ;
+	lci:hasArrangedPart	:200ae720-0f47-43c7-a7be-397deae20c29 ,
+			:5ba13a75-5507-4c9f-baba-41c402bcd4b4 ,
+			:943e8de0-8241-40d3-8d63-23928377b17d ,
+			:c9eb3685-71f8-42d1-9a09-5d7d59deb431 ;
+	lci:isDefinedBy	:b86ce2fa-e2a5-4e61-a486-d81b93366673 ;
+	rdfs:label	"phone1" .
+:c8c05ce6-8770-4ca2-a604-3d11c4701cad	a	sso:CableOccurrenceTerminal .
+:c8d9a1d3-7d47-4077-b01f-880dc04c8927	a	sso:ContactFeatureDefinition ;
+	lci:hasArrangedPart	:14b06379-a65d-412e-966d-29e706534494 ,
+			:22eef73c-b7d3-474e-82e2-fd3551a6e48c ,
+			:311aa7d3-b626-444e-a290-73bd1275dce6 ,
+			:7ca1a9e6-d3fe-472f-a521-de7c9917965a ,
+			:8c9412e7-ca1f-4127-b866-6f209340a74d ,
+			:945c2833-7a68-48da-99b2-35241201c4a7 ;
+	rdfs:label	"arinc600 rack plug  C 5W2 insert profile" .
+:c9eb3685-71f8-42d1-9a09-5d7d59deb431	a	sso:OccurrenceTerminal ;
+	lci:isDefinedBy	:0ed78db0-24a1-4344-879c-29858efc2f6c .
+:ca4ecb6e-c9d7-486e-b688-82e0d351bd88	a	rep:EdgeBasedTopologicalRepresentationWithLengthConstraint ;
+	rep:contextOfItems	:442b5bb5-4042-4f73-81f2-5c190472624f ;
+	rep:item	:655d45c9-286b-4d0e-8ed5-137fb98e5592 ;
+	sso:id	"SubRep H1.a" .
+:ca7bb9f1-154a-4830-96ff-b1313841ca54	a	sso:ShapeFeatureDefinitionOccurrenceElement ;
+	lci:isDefinedBy	:a1480f41-e4aa-4c7b-b42c-e4062b10385f .
+:cb1c58b8-bec8-475f-997c-fb1ab826b687	a	sso:OccurrenceTerminal ;
+	lci:isDefinedBy	:8aea074b-2220-4bd1-8dd9-8d09c5bd8bfd .
+:cb227f74-5071-42f4-977f-5f4a916e1424	a	rep:EdgeBoundedCurveWithLength ;
+	rep:edgeEnd	:0839a94a-859d-4029-a8b9-e5a0e2a244fd ;
+	rep:edgeGeometry	:aa34be68-310a-48ab-8485-4f45d34afe5c ;
+	rep:edgeStart	:be55f707-763e-4c50-87cb-bcdd2ca1728f ;
+	:7de95df2-99d5-49f4-a6ff-d1596bcff4ee	:732720b3-20b6-480f-9639-225c740ca172 ;
+	rep:sameSense	true ;
+	rdfs:label	"S2" .
+:cb63ae96-7fd1-4f21-bb15-5453ff41e9d6	a	sso:Part ,
+			sso:PartCategory_protective_covering ,
+			sso:PartCategory_raw_material_by_length ;
+	sso:hasPartVersion	:7d0a12a8-982c-4a9a-99fb-d8b6a9572634 ;
+	rdfs:label	"Shrinkflex Polyolefin Heatshrink Tubing - 4/1 - 25mm 1\" - Black" ;
+	:7d89e255-39e6-45ed-bcae-7faf25002053	"H4N1.00BK" .
+:cb6cbd1c-38ca-4e1c-a602-56e3d40569d6	a	sso:CableOccurrenceTerminal .
+:cc027da4-bab9-4992-9360-2551745fd147	a	sso:InterfaceOrJoinTerminal_interface_terminal ,
+			sso:PartTerminal ,
+			sso:TerminalJointType_socket_terminal ;
+	rdfs:label	"Interface2" .
+:cc4f30ba-923a-498a-9aaa-3dd3ca92c297	a	lci:Organization ;
+	sso:id	"http://www.te.com" ;
+	rdfs:label	"TE Connectivity Ltd" .
+:cda3d0b8-5fb0-4efa-a576-07210ebc0f42	a	sso:WireColourBasedIdentificationCode ;
+	sso:id	"red" ;
+	rdfs:label	"wire colour-based identification code" .
+:cdaf1954-2fd1-4c02-bc2d-f15126edbffe	a	sso:OccurrenceTerminal ;
+	lci:isDefinedBy	:b7dbeda8-aba8-46f9-a83a-2ddddcab35b0 .
+:cdee167c-c9c5-43fe-abb0-270139e12caa	a	rep:VertexPoint ;
+	rep:vertexGeometry	:6c420727-58c3-43ad-a4c5-83501f21b36f ;
+	rdfs:label	"X1" .
+:cdf73180-8610-40ac-a259-07f600dddaa9	a	rep:Axis2Placement3D ;
+	rep:location	[
+	a	rep:CartesianPoint ;
+	rep:coordinates	( 0.0 0.0 0.0 )
+] ;
+	:35d25f54-03e6-417b-b40e-13b4985fc310	:0fc7cf7a-1a4f-4b38-a1d7-39ccd10a5a75 ;
+	:919e21ef-3957-423d-8dda-aa1df5dcb376	:62ee135f-b72e-4ff3-83d5-3d686f55dd9d .
+:ce38180c-d43b-4793-9908-f89f1bdf426d	a	sso:HarnessNode ;
+	sso:representedGeometry	:29145878-2c75-4cbc-855b-7746fae9816b .
+:d0e505cf-54ed-4704-8fae-732298ac52c2	a	sso:PartVersion ;
+	sso:hasProductDefinition	:e2901d54-fdd9-4ca5-9cdf-eaecba6da8d0 ;
+	sso:versionId	"Version 1" .
+:d17ff878-c1ec-47de-8bb9-e2096bf2ae1c	a	sso:InterfaceOrJoinTerminal_interface_terminal ,
+			sso:PartTerminal ,
+			sso:TerminalJointType_socket_terminal ;
+	rdfs:label	"Interface3" .
+:d3708b50-739b-4adf-8620-3106fc990727	a	sso:PartVersion ;
+	sso:hasProductDefinition	:351f061b-1f1c-4e68-82de-4d392d363134 ;
+	sso:versionId	"Version 1" .
+:d4f47607-abab-4a31-97eb-c0771f193b6e	a	sso:QuantifiedOccurrence ;
+	lci:hasArrangedPart	:1fef7eb6-3c21-4884-9e91-746ab4c61d2a ;
+	lci:isDefinedBy	:e2901d54-fdd9-4ca5-9cdf-eaecba6da8d0 ;
+	sso:occurrenceQuantity	:78d843c1-f36d-436e-b0b4-243dbdbe356c ;
+	rdfs:label	"wrap1" .
+:d50eda9a-cc71-4363-a61f-d0aaa6b21136	a	sso:ContactFeatureDefinition ,
+			sso:ShapeFeatureType_slot_profile ;
+	rdfs:label	"arinc600 receptacle A/B slot profile" .
+:d5565163-0947-4966-a775-8e01f5594cbe	a	rep:GeometricRepresentationContext ;
+	rep:coordinateSpaceDimension	2 ;
+	sso:id	"/NULL" .
+:d6a571e0-22eb-4dda-8910-368777d69930	a	sso:InterfaceOrJoinTerminal_join_terminal ,
+			sso:PartTerminal ,
+			sso:TerminalJointType_crimp_terminal ;
+	rdfs:label	"Join term" .
+:d70badd2-8492-4f76-90e9-1f19d1b0f521	a	sso:WireOccurrenceIdentification ;
+	sso:colourCode	:014497eb-4ad8-4f0a-a4a8-87594c930ab0 ;
+	rdfs:label	"gnd" .
+:d7cb3958-4273-4ddb-b1eb-1c1828e87ee5	a	owl:ObjectProperty ;
+	rep:transformationOperator	:ba5e0a2a-957b-48d5-b5f4-73885dddac98 ;
+	rdfs:subPropertyOf	rep:geometryToTopologyModelAssociation .
+:d85a4b82-fab3-41cd-9ae1-605dd1694cad	a	sso:CrossSectionalOccurrenceShapeElement ;
+	lci:isDefinedBy	:0f12ad2c-9eaf-4886-97ac-4557aa4a5d17 .
+:d8f76a45-d394-4554-8ce0-f7c34c16e1de	a	sso:CrossSectionalOccurrenceShapeElement ;
+	lci:isDefinedBy	:794726a4-cd72-4bf5-88ae-a104d56741eb .
+:d9b6a623-0637-490f-9030-319c0056e428	a	owl:ObjectProperty ;
+	rdfs:subPropertyOf	sso:nextAssemblyOccurrenceUsage .
+:d9e94996-8a07-4e5e-a97c-28a57e645776	a	rep:VertexPoint ;
+	rep:vertexGeometry	:46ad313a-3c72-4417-bca2-b86f7a4e4c30 ;
+	rdfs:label	"N6" .
+:da24ecd5-117d-43a5-b231-a7ddb8262935	a	sso:OccurrenceTerminal ;
+	lci:isDefinedBy	:21857c81-5021-4f5b-b302-e91f22d7624d .
+:da86e78c-3537-4bba-9ba6-548f7e8fe8df	a	sso:InterfaceOrJoinTerminal_join_terminal ,
+			sso:PartTerminal ,
+			sso:TerminalJointType_screw_terminal ;
+	rdfs:label	"GND2" .
+:da89f99b-ec30-47e4-b013-69a0fcfc52ae	a	rep:Point .
+:dcc9daf3-92f9-4646-a6b8-1d45f404f8c5	a	sso:PartFeature ;
+	rdfs:label	"Segment opening A" .
+:dd187bc4-9119-490a-865b-25a5a8c95861	a	lci:Organization ;
+	sso:id	"http://www.shrinkflexthailand.com" ;
+	rdfs:label	"Shrinkflex (Thailand) Co., Ltd" .
+:dd634d5e-63a2-45de-a650-1eba554ff8f7	a	sso:InterfaceOrJoinTerminal_join_terminal ,
+			sso:PartTerminal ,
+			sso:TerminalJointType_solder_terminal ;
+	rdfs:label	"Join3" .
+:ddef4a84-4507-4d1a-9fa1-56bb8ca62e56	a	sso:LifeCycleStage_design ,
+			sso:PartDesign ;
+	lci:hasArrangedPart	:706b2a6f-2427-42da-bc7d-d6bc3d975427 ;
+	rdfs:label	"" .
+:ded27371-956a-4006-bc5f-a394f8b89d55	a	sso:OccurrenceTerminal ;
+	lci:isDefinedBy	:48c74e34-fa26-4831-bf72-ca6b392023d8 .
+:deeaae36-a7ae-4e4e-bfa1-360e8f62bbda	a	sso:LifeCycleStage_design ,
+			sso:WiringHarnessAssemblyDesign ;
+	lci:hasArrangedPart	:02b87607-2049-4e8d-9768-f8f9cd6428cb ,
+			:05db3da1-49be-44ff-897e-b7fb92ec3c52 ,
+			:0ba03f12-6338-4394-99c1-d24410e9c5ea ,
+			:11d61cec-3539-4620-92b3-3223f32ec502 ,
+			:14faf6f3-7ebc-4866-8461-6ae04177ea9a ,
+			:17dbfe0e-cb2e-4d30-b641-4ca32791082b ,
+			:186903ce-1005-4a36-a821-ce7ceee97734 ,
+			:1e438a49-ff58-4400-85af-c4bf7acb1bc4 ,
+			:33c35b6c-4d91-4f51-adf2-fd1d19f208c7 ,
+			:38915739-8c11-460d-9c18-6cc4e25e86e6 ,
+			:3ca6abd6-9915-45a7-a569-d375973975f3 ,
+			:406a4839-db62-4a49-87ac-5c33f099d80c ,
+			:41f5f49d-dc45-4aa2-9e8b-62b99f681b11 ,
+			:439e24e5-1031-4574-8d50-f7c3faf23d41 ,
+			:46cbdd00-fbd7-4758-bc0a-adf206d2c0f0 ,
+			:4800c1d6-f07c-44fc-88de-d67845653bc9 ,
+			:4938efdb-9d0d-4345-b097-fe87837004d6 ,
+			:5263b04d-a618-4d61-8e44-21e4db9f640f ,
+			:52857f38-90f2-45f4-8fb8-bc4184d8a993 ,
+			:53aec615-4f68-4122-ae20-7fabb015e95e ,
+			:5f14557c-7045-4ae5-99f2-be9006112ede ,
+			:63ebb1d8-a306-4c94-a989-1cfb88cff832 ,
+			:688ac693-37f0-4d5b-a193-acf7926af861 ,
+			:70a3c722-8d24-4047-8637-91e99b4d2336 ,
+			:7996d360-1908-4277-86f1-cd7ec63327f4 ,
+			:7f930827-ecaf-44dc-8a02-49d270c9a317 ,
+			:82f5d203-e8e5-441d-826c-b962149a9a16 ,
+			:86412724-b0b3-4895-b52f-8abafb4ad4fa ,
+			:86b1e63d-8772-4c8d-bf95-308f4cdedff7 ,
+			:8832f031-d5b2-445b-8514-ccad9279f548 ,
+			:94852d17-a83c-47f4-90d9-5c4c3188f6dc ,
+			:959297fc-cbd4-43d8-a8b7-778f9b472684 ,
+			:a382842b-2a74-4218-946b-d5543fdb5fd6 ,
+			:a45cdf5b-8546-4375-9596-f31dbc4eeb80 ,
+			:aeb32804-fc61-4e66-b30b-42823b9fa61e ,
+			:b1badbc0-9758-451a-b6d0-b85d8a7e2739 ,
+			:bd6b4d5a-ce59-4d5e-8ec8-a6a2dad0b97b ,
+			:bf3c2d9d-7536-41fb-9632-1e7e6f513ae8 ,
+			:bf7eb811-8948-4eb0-befb-fab2205ea974 ,
+			:c2b17de3-2c31-4482-9220-af3f6bd25c04 ,
+			:ce38180c-d43b-4793-9908-f89f1bdf426d ,
+			:e021fd6b-931d-463b-bd0a-d294e2087775 ,
+			:e1729ac1-de11-4467-9f3c-49bd8e5b9dd0 ,
+			:e26287b1-db5c-4cb9-90bf-7f5563fd6052 ,
+			:e26a264b-b32b-4021-9320-fc9f44a978d2 ,
+			:e612dc86-75f7-4d44-aea0-ece7a3e9b3f3 ,
+			:ef8c4947-9803-4403-80a3-50095eb4afa7 ,
+			:f1b30329-8c20-4dbb-82c1-a17076ccaef6 ,
+			:f92b26b6-854d-4796-bd0d-f2dfd19da2f3 ,
+			:ffb7a44c-8e32-4138-b1ed-c8542866f9b4 ;
+	sso:definingGeometry	:19e70fdd-fa05-42d3-8470-f7ed7608a1e3 ;
+	sso:topology	:4f32ce55-dec0-4dfe-94fc-ddb383181c4d ;
+	:13c61d5f-e819-4fe1-b085-49edaa5d1ada	:e5f2f139-55ba-483d-8f6d-98f7c6e114bb ;
+	:185fa24a-24f6-474c-a506-a0a07a35ab98	:4912b039-54b5-48ff-a5f9-2edfc873c218 ;
+	:2338c1b4-a6b3-4c05-a770-6a4fbafac842	:d4f47607-abab-4a31-97eb-c0771f193b6e ;
+	:377ae9a2-6c95-416c-961e-ca2f54abbfc7	:b9808b96-766f-4ecd-a528-74f3d8e754d9 ;
+	:3f7c0908-ac20-4444-970b-579f96c81426	:c3814cd1-f482-4acd-84ad-7fd81342a3f9 ;
+	:63d2d610-5966-4a88-944b-58d6a7867139	:645582f2-0066-44fe-a0e6-a619503cae54 ;
+	:6478d540-cf2b-480a-bacb-12e4b330417e	:95818560-bbb6-437e-a3ea-7fc3c218c0a3 ;
+	:71961ef8-a2d2-4554-b5ab-93647ab18ae7	:21e7d8da-6114-4e24-871c-32f643921cfa ;
+	:8a8fbaf8-3c23-4be1-b123-5dd2e9dc3643	:b2fa9308-398f-4db5-9719-efbb3415e4bd ;
+	:8bff4f80-5c42-40dd-9f95-8d75a666b6c5	:10c8fc9a-d8e7-4504-95b1-1c90242a4399 ;
+	:8e2f4299-2b02-4906-9be8-5c1e2be4ed62	:a41d280c-2df1-44a3-b3b8-df5d73758612 ;
+	:917ca28f-e9d5-42ad-8f70-3007a49c4629	:7d26155c-b021-4a93-a28c-054de36d3242 ;
+	:92b6d5a4-44b2-48da-b2ad-2b7aaa3e8ace	:8473c2a3-61b2-42de-b302-f57feab112bb ;
+	:984570c3-a3b2-4293-908a-fc26a52fcba9	:c87c37f0-b1de-4feb-8113-102478f95c56 ;
+	:a92510ad-0a96-47a9-a2b0-5546e8e136d4	:43ce962b-ab6f-47b1-b63e-1b522f7ee52c ;
+	:ae028c54-bfd5-4286-8848-5d53115ec464	:c1a6a0b6-e10f-488a-bc29-e56a6fb348dd ;
+	:b2ee1d23-4303-45eb-90b9-27acaaa23ff9	:ff0efd38-c20e-4b1e-bfe0-e4515abff9ef ;
+	:b510304f-9e2d-42b8-b25a-e224621ee676	:f0068161-0e09-4f03-b611-9627007e7528 ;
+	:bf5841c6-ae9f-41a5-b432-86d3afafc449	:2ee92119-8400-4a6a-9549-2f17a49f6b3a ;
+	:c08bdbfc-4924-4ce8-9684-8a9e7d238c80	:9c245500-6487-43a8-aa19-f4dc69e136dd ;
+	:d9b6a623-0637-490f-9030-319c0056e428	:e9849cca-ee66-4fda-b06c-ab99cb81b028 ;
+	:e9e07798-ebe4-453e-92ee-fb6d4a20f821	:944877b8-9e9f-4de0-989a-3734760a5d17 ;
+	:fd6ee167-5136-4ffd-a23f-a85901bada2d	:6a4ea4a8-d94c-423d-bdce-c813326a4c8b ;
+	rdfs:label	"" .
+:df874f6e-2f51-45f3-83a5-b032bfa853b6	a	rep:PointOnCurve ;
+	rep:basisCurve	:13ecc75a-64a8-48f9-aed3-156f519b133c ;
+	rep:pointParameter	0.3 .
+:e021fd6b-931d-463b-bd0a-d294e2087775	a	sso:HarnessNode ;
+	sso:representedGeometry	:0839a94a-859d-4029-a8b9-e5a0e2a244fd .
+:e157d6d1-c7cf-49ff-8375-6f8a236a9617	a	sso:CrossSectionalPartShapeElement ;
+	rdfs:label	"Inner surface" .
+:e1729ac1-de11-4467-9f3c-49bd8e5b9dd0	a	sso:HarnessSegment ;
+	sso:representedGeometry	:21dbbcc4-0672-41a5-aa62-753096717c73 .
+:e26287b1-db5c-4cb9-90bf-7f5563fd6052	a	sso:AssemblyJointType_snap_connection ,
+			sso:AssemblyShapeJoint ;
+	sso:assemblyShapeJointItemRelationship	:33c37562-c94f-4472-b5c5-4f3f279ab28f ,
+			:bde1a395-b246-4b4d-ba39-b8ec43746cec .
+:e26a264b-b32b-4021-9320-fc9f44a978d2	a	sso:HarnessNode ;
+	sso:representedGeometry	:6869a4b7-1cc0-4e23-8dd1-34a4e5687c33 .
+:e2901d54-fdd9-4ca5-9cdf-eaecba6da8d0	a	sso:LifeCycleStage_design ,
+			sso:PartDesign ;
+	lci:hasArrangedPart	:4cefc307-2f8e-4f53-83f2-b8b1635088c3 ;
+	sso:definingGeometry	:ff8eb3d4-66ac-40dd-8d38-1e2370f02e14 ;
+	sso:viewId	"Version 1" ;
+	rdfs:label	"" .
+:e313c86a-53ba-4700-afdc-ff7c679373c2	a	sso:InterfaceOrJoinTerminal_interface_terminal ,
+			sso:PartTerminal ,
+			sso:TerminalJointType_socket_terminal ;
+	rdfs:label	"Interface9" .
+:e46bf84c-0a0b-408b-846d-28dc903bcfaa	a	qau:Length ;
+	qau:metre	1.75 .
+:e50ef881-b62b-4c07-8c38-bebda72bcc14	a	sso:OccurrenceTerminal ;
+	lci:isDefinedBy	:1ed34e78-95ec-4602-be0c-2beebde52131 .
+:e5f2f139-55ba-483d-8f6d-98f7c6e114bb	a	sso:CableOccurrence ;
+	lci:hasArrangedPart	:27918042-4085-4817-8289-e6583a0b10ca ,
+			:6768cbb7-6b24-44ac-bd34-c86953b58362 ,
+			:7710c91a-c997-4c20-9911-00867f060310 ,
+			:ad4559af-0493-4bc1-b94c-8cfd7f32ee24 ,
+			:bde6660f-e629-4bdb-be1b-26878655bb7d ;
+	lci:isDefinedBy	:351f061b-1f1c-4e68-82de-4d392d363134 ;
+	sso:occurrenceQuantity	:4375c5b7-faa7-455e-b05b-eceba9c41abd ;
+	rdfs:label	"cable2" .
+:e611a992-951c-4248-9290-dedd8b26857b	a	rep:Point .
+:e612dc86-75f7-4d44-aea0-ece7a3e9b3f3	a	sso:AssemblyJointType_crimped_connection ,
+			sso:AssemblyShapeJoint ;
+	sso:assemblyShapeJointItemRelationship	:0b7e0b1c-e977-4b6b-b268-28a0c0f832a5 ,
+			:6d2220ab-0a12-49da-a231-da85b7f72793 .
+:e6d259a3-e910-4d39-a3e5-712b28e979cb	a	rep:Path ;
+	rep:edgeList	( :a9a103b5-fda1-4d64-9582-d35cc227d36d :060df459-2596-48e4-ae2d-d9dd395ef8f7
+	:5edf0666-f869-470b-9225-5819a7b77c77 ) ;
+	:51167af0-0ead-4d37-89da-d2faa9ddd8fd	:732720b3-20b6-480f-9639-225c740ca172 ;
+	:a4298bf5-28c0-4a06-abc0-35c806c85a6a	:732720b3-20b6-480f-9639-225c740ca172 ;
+	rdfs:label	"S2-S3-S5" .
+:e7ebce70-fb3c-4e2c-af07-16b49ed86836	a	owl:ObjectProperty ;
+	rdfs:subPropertyOf	rep:geometryToTopologyItemAssociation .
+:e86729cb-fdf8-4de1-ac4a-23663ccd1114	a	sso:CableOccurrenceTerminal .
+:e8c2e14c-a8de-4025-a861-df81c2228f44	a	sso:ContactFeatureDefinition ,
+			sso:ShapeFeatureType_cavity_profile ;
+	rdfs:label	"arinc600 receptacle  #5 cavity" .
+:e9849cca-ee66-4fda-b06c-ab99cb81b028	a	sso:SingleOccurrence ;
+	lci:hasArrangedPart	:06f04e91-601f-46cf-8dea-57e2f7088fbf ,
+			:1fc5ee6f-3ae2-457a-a6e7-19878e7e404a ,
+			:33c37562-c94f-4472-b5c5-4f3f279ab28f ,
+			:73aeb2fe-17a1-45ce-88fb-230aad960929 ,
+			:bd37e09c-07cc-4633-a58d-4c6945ff0b0d ,
+			:c0d4808e-579a-438a-819a-f60840d650e6 ;
+	lci:isDefinedBy	:9d407ccf-64e4-4de0-9ce6-4c9a9c1c57e9 ;
+	rdfs:label	"C-insert" .
+:e9e07798-ebe4-453e-92ee-fb6d4a20f821	a	owl:ObjectProperty ;
+	rep:contextDependentShapeRepresentation	:74eeb7d6-f77d-451a-9049-e82a38a0e9fa ;
+	rdfs:subPropertyOf	sso:nextAssemblyOccurrenceUsage .
+:ea8ae93e-3936-4ffb-a57d-4041725769b9	a	sso:PartVersion ;
+	sso:hasProductDefinition	:c443c263-312a-4595-ad23-53e38ca7872c ;
+	sso:versionId	"Version 1" .
+:ebb49391-b410-47e1-be30-408372a410c0	a	sso:PartContactFeature ;
+	lci:isDefinedBy	:33c5c347-c2c1-445c-aef7-fe0eae77eaec ;
+	rdfs:label	"Contact mounting profile" .
+:eca0f71d-ca23-41c9-ab4e-b34d1e9ccd11	a	rep:VertexPoint ;
+	rep:vertexGeometry	:8118a1d8-32db-462c-9fbf-10046ad02250 ;
+	rdfs:label	"X6" .
+:ecba306d-ab4f-4b54-9895-17a80adc48ff	a	sso:ContactFeatureDefinition ;
+	lci:hasArrangedPart	:0828794c-af87-4631-92bb-da7b66dd30d7 ,
+			:1d8d1c69-07e6-4c77-bbf1-14e9374af3c3 ,
+			:f63e643e-cc06-4b27-a8ac-cc2dc2b8f8e4 ;
+	rdfs:label	"arinc600 receptacle shell size1" .
+:ecedaf66-181c-47c8-8eaf-e15b2e3b9656	a	sso:PartVersion ;
+	sso:hasProductDefinition	:f8905de7-a929-4b34-a8f4-5c5cc4e7a01a ;
+	sso:versionId	"Version 1" .
+:edffd952-db8b-4e6b-b3e7-f3cb4dea23d8	a	owl:ObjectProperty ;
+	rep:transformationOperator	:5c257ba8-5882-4aa7-a370-ccaef02905d9 ;
+	rdfs:subPropertyOf	rep:geometryToTopologyModelAssociation .
+:ef8c4947-9803-4403-80a3-50095eb4afa7	a	sso:AssemblyJointType_crimped_connection ,
+			sso:AssemblyShapeJoint ;
+	sso:assemblyShapeJointItemRelationship	:5dcd349f-4226-465e-852f-dc7cf2490440 ,
+			:c8c05ce6-8770-4ca2-a604-3d11c4701cad .
+:f0068161-0e09-4f03-b611-9627007e7528	a	sso:SingleOccurrence ;
+	lci:hasArrangedPart	:30eae51c-8dd0-4cb2-af13-5a213f9a2cd8 ;
+	lci:isDefinedBy	:ddef4a84-4507-4d1a-9fa1-56bb8ca62e56 ;
+	rdfs:label	"arinc1 housing" .
+:f039a63c-df28-4957-ab1a-4a87b0e39adb	a	sso:OccurrenceTerminal ;
+	lci:isDefinedBy	:7158889f-5906-4bf1-9aed-5a272461d83a .
+:f0bd12bb-c398-4a74-9d28-c8f99e98f883	a	sso:InterfaceOrJoinTerminal_interface_terminal ,
+			sso:PartTerminal ,
+			sso:TerminalJointType_pin_terminal ;
+	rdfs:label	"Interface gnd" .
+:f1b30329-8c20-4dbb-82c1-a17076ccaef6	a	sso:AssemblyJointType_crimped_connection ,
+			sso:AssemblyShapeJoint ;
+	sso:assemblyShapeJointItemRelationship	:0341fe88-8966-451d-8a7a-093008bc0135 ,
+			:27af57f5-b598-40cd-bdd6-01bc78b2490f ,
+			:8319b17b-ea49-4440-95ea-7297c3c0fbaf .
+:f4fd56f5-f073-4930-bebb-ec32192f83a8	a	sso:OccurrenceTerminal ;
+	lci:isDefinedBy	:246f6e8d-9a00-4f3e-bafd-34f4e13f97f3 .
+:f63e643e-cc06-4b27-a8ac-cc2dc2b8f8e4	a	sso:ShapeFeatureDefinitionOccurrenceElement ;
+	lci:isDefinedBy	:a76c8ccd-12bf-412e-b688-52cb720f2332 .
+:f6f6b330-6c3a-4269-ab4c-bea41e46315c	a	sso:PartVersion ;
+	sso:hasProductDefinition	:deeaae36-a7ae-4e4e-bfa1-360e8f62bbda .
+:f8905de7-a929-4b34-a8f4-5c5cc4e7a01a	a	sso:LifeCycleStage_design ,
+			sso:PartDesign ;
+	lci:hasArrangedPart	:62b7462b-8ee5-4f07-b64d-31aed6406943 ,
+			:a1469933-f9cc-47fb-9feb-c37ead1549d7 ,
+			:b0caf3b4-5b12-4fa9-875f-e2e588e12ab8 ,
+			:da86e78c-3537-4bba-9ba6-548f7e8fe8df ,
+			:dcc9daf3-92f9-4646-a6b8-1d45f404f8c5 ,
+			:f99c07fc-1e95-4693-bdc4-c4c257290f99 ;
+	sso:viewId	"Version 1" ;
+	rdfs:label	"" .
+:f896cced-e4a6-4992-b810-6d16a010a616	a	rep:EdgeBoundedCurveWithLength ;
+	rep:edgeEnd	:4dbdc8bd-c904-427b-a1f9-2c6f6f364eb1 ;
+	rep:edgeGeometry	:c387d03c-699d-48a9-a6dc-3b4488823163 ;
+	rep:edgeStart	:d9e94996-8a07-4e5e-a97c-28a57e645776 ;
+	rep:sameSense	true ;
+	rdfs:label	"S5" .
+:f8c3ca39-3b39-4f15-aa62-1d2aace86f15	a	sso:CableOccurrenceTerminal .
+:f92b26b6-854d-4796-bd0d-f2dfd19da2f3	a	sso:TwistedCrossSectionalGroupShapeElement .
+:f99c07fc-1e95-4693-bdc4-c4c257290f99	a	sso:PartFeature ;
+	rdfs:label	"Segment opening B" .
+:f9eb84d8-12d5-49d1-8cdd-5f3d7423cf6b	a	rep:Point .
+:fa688b2f-7bae-4554-834e-ab3ce4a3663e	a	sso:OccurrenceTerminal ;
+	lci:isDefinedBy	:d17ff878-c1ec-47de-8bb9-e2096bf2ae1c .
+:fd6ee167-5136-4ffd-a23f-a85901bada2d	a	owl:ObjectProperty ;
+	rdfs:subPropertyOf	sso:nextAssemblyOccurrenceUsage .
+:febaf9d0-859c-4c41-8c9d-fbbe3b19b00e	a	rep:SubEdge ;
+	rep:edgeEnd	:0839a94a-859d-4029-a8b9-e5a0e2a244fd ;
+	rep:edgeStart	:25a23c39-3f5e-4e5c-b297-a628d1cda32f ;
+	rep:parentEdge	:cb227f74-5071-42f4-977f-5f4a916e1424 ;
+	rdfs:label	"S2-1" .
+:ff0efd38-c20e-4b1e-bfe0-e4515abff9ef	a	sso:WireOccurrence ;
+	lci:hasArrangedPart	:23421cf6-4931-4551-89fa-95eb7d65c6a4 ,
+			:2b432365-6aac-4adb-9aba-613be1752b15 ,
+			:573e2113-bf44-4b90-948e-a40d5d282ab9 ,
+			:78ade60e-bdc8-4324-8854-8d1e06d3aaa3 ;
+	lci:isDefinedBy	:824347bc-e972-44c8-8abb-0422e4733618 ;
+	sso:occurrenceQuantity	:30dce560-4e20-4e9a-ab84-9c7c1f24b447 ;
+	rdfs:label	"wire3" .
+:ff8eb3d4-66ac-40dd-8d38-1e2370f02e14	a	rep:GeometricModel ;
+	rep:contextOfItems	:d5565163-0947-4966-a775-8e01f5594cbe ;
+	rep:item	:732720b3-20b6-480f-9639-225c740ca172 ;
+	sso:id	"xxx" .
+:ff9ee965-af28-431a-88f3-eb46c2e52b85	a	rep:ConnectedEdgeSubSet ;
+	rep:ConnectedEdgeSubSet	:2c4265de-ac3e-4440-969c-aa78158c8e1f ;
+	rep:cesEdges	:10aea213-e52c-49a5-993d-a06857c4728f ,
+			:4018af3e-4875-48e2-bd3f-a62afaab8f05 ,
+			:f896cced-e4a6-4992-b810-6d16a010a616 .
+:ffb7a44c-8e32-4138-b1ed-c8542866f9b4	a	sso:CrossSectionalGroupShapeElementWithTubularCover .

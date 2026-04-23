@@ -1,0 +1,32 @@
+issues:
+  exclude-use-default: false
+  exclude:
+    - "exported (.+) should have comment( \\(or a comment on this block\\))? or be unexported"
+    - "Error return value of .((os\\.)?std(out|err)\\..*|.*Close|.*Flush|os\\.Remove(All)?|.*print(f|ln)?|os\\.(Un)?Setenv). is not checked"
+  exclude-case-sensitive: true
+  max-issues-per-linter: 10000
+  max-same-issues: 10000
+  new: false
+  fix: true
+linters:
+  enable:
+    - deadcode
+    - errcheck
+    - gosimple
+    - govet
+    - ineffassign
+    - structcheck
+    - typecheck
+    - unused
+    - varcheck
+    - staticcheck
+    - gofumpt
+    - revive
+    - errcheck
+    - errorlint
+    - exhaustive
+    - exportloopref
+    - unconvert
+    - unparam
+    - godot
+    - godox

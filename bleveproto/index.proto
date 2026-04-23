@@ -1,0 +1,20 @@
+// Copyright Semantic STEP Technology GmbH, Germany & DCT Co., Ltd. Tianjin, China
+
+syntax = "proto3";
+
+option go_package = "git.semanticstep.net/x/sst/bleveproto";
+
+package sst.ssquery;
+
+service IndexService {
+  rpc Search(stream SearchRequest) returns (SearchResult);
+}
+
+message SearchRequest {
+  bytes request = 1;
+  string repoName = 2;
+}
+
+message SearchResult {
+  bytes result = 1;
+}

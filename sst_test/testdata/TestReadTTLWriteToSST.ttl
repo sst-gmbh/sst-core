@@ -1,0 +1,11 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl:	<http://www.w3.org/2002/07/owl#> .
+@prefix :	    <urn:uuid:c1efcf54-3e8e-4cc7-a7d1-82a9f613a362#> .
+
+<urn:uuid:c1efcf54-3e8e-4cc7-a7d1-82a9f613a362>	a	owl:Ontology .
+
+[ foaf:name "Alice" ] foaf:knows [
+    foaf:name "Bob" ;
+    foaf:knows [
+        foaf:name "Eve" ] ;
+    foaf:mbox <mailto:bob@example.com> ] .

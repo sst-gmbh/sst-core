@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://standards.iso.org/iso/ts/10303/-3000/-ed-2/tech/xml-schema/common" targetNamespace="http://standards.iso.org/iso/ts/10303/-3000/-ed-2/tech/xml-schema/common">
+	<xsd:element name="Uos" type="Uos">
+		<xsd:annotation>
+			<xsd:documentation/>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:complexType name="Uos">
+		<xsd:annotation>
+			<xsd:documentation>Unit of serialization</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="Header" type="Header"/>
+			<xsd:element name="DataContainer" type="DataContainer" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="Header">
+		<xsd:annotation>
+			<xsd:documentation/>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="Name" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="TimeStamp" type="xsd:dateTime" minOccurs="0"/>
+			<xsd:element name="Author" type="NameAndAddress" minOccurs="0"/>
+			<xsd:element name="Organization" type="NameAndAddress" minOccurs="0"/>
+			<xsd:element name="PreprocessorVersion" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="OriginatingSystem" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="Authorization" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="Documentation" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="NameAndAddress">
+		<xsd:sequence>
+			<xsd:element name="Name" type="xsd:string"/>
+			<xsd:element name="Address" minOccurs="0">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="AddressLine" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="DataContainer" abstract="true">
+		<xsd:annotation>
+			<xsd:documentation> A DataContainer is an abstract generalization of the root element of a
+                data file. Only non-abstract specializations of the DataContainer can be instantiated.
+            </xsd:documentation>
+		</xsd:annotation>
+	</xsd:complexType>
+	<!-- Base type for all objects -->
+	<xsd:complexType name="BaseObject" abstract="true">
+		<xsd:annotation>
+			<xsd:documentation> 
+            </xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="uid" type="xsd:ID" use="optional"/>
+	</xsd:complexType>
+	<!--  -->
+	<xsd:complexType name="Reference">
+		<xsd:annotation>
+			<xsd:documentation> 
+            </xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="uidRef" type="xsd:IDREF" use="required"/>
+	</xsd:complexType>
+	<!--Base type for root elements - objects that can be instantiated inside Container-->
+	<xsd:complexType name="BaseRootObject" abstract="true">
+		<xsd:annotation>
+			<xsd:documentation> 
+            </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="BaseObject"/>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>

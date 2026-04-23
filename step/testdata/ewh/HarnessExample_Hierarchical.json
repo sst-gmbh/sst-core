@@ -1,0 +1,4263 @@
+{
+  "@context": {
+    "@vocab": {
+      "@id": "http://ontology.semanticstep.net"
+    },
+    "aw0": {
+      "@id": "urn:uuid:79dfdd0c-5982-4b4b-b1e2-88aef86a9cf5",
+      "status": "included"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "aw0:a1312af5-a157-4044-94d9-f50e1b88fd3c",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:4c946fba-cfde-44ea-b416-24a43aa54ff3"
+    },
+    {
+      "@id": "aw0:31616419-67f7-4a49-9cea-f46bd6571249",
+      "@type": "rep:Path",
+      "rdfs:label": "C2",
+      "rep:edgeList": [
+        "aw0:9f1cd14f-7a14-4426-9f0d-199450a7cd01",
+        "aw0:c2038603-05b3-4edd-8b85-c5a785e24ff0",
+        "aw0:98e9fb65-3707-4b2e-b939-0b5681335e12"
+      ],
+      "rep:geometryToTopologyItemAssociation": {
+        "@id": "aw0:610d0c3c-4d69-4291-8c82-0a0d02b56ffa",
+        "specificProperty": "aw0:62d77791-0ce4-424b-bb03-bb245c375742"
+      }
+    },
+    {
+      "@id": "aw0:395599d1-a3d3-46f9-b359-7091115beb97",
+      "@type": [
+        "sso:AssemblyJointType_crimped_connection",
+        "sso:AssemblyShapeJoint"
+      ],
+      "sso:assemblyShapeJointItemRelationship": [
+        "aw0:55c60fdb-8176-4082-8890-3b870621d1cd",
+        "aw0:ddb25749-2f60-46b1-aee3-26508862f7d8"
+      ]
+    },
+    {
+      "@id": "aw0:d75608cc-1876-47f9-ba6a-c9a32304e23d",
+      "@type": [
+        "sso:InterfaceOrJoinTerminal_interface_terminal",
+        "sso:PartTerminal",
+        "sso:TerminalJointType_pin_terminal"
+      ],
+      "rdfs:label": "Int term"
+    },
+    {
+      "@id": "aw0:ed9cb9d1-5b2f-42f9-9267-aec351c5d876",
+      "@type": [
+        "sso:AssemblyJointType_crimped_connection",
+        "sso:AssemblyShapeJoint"
+      ],
+      "sso:assemblyShapeJointItemRelationship": [
+        "aw0:11d169ca-d3b5-48b5-a673-a92f944c1c47",
+        "aw0:6cb847c7-57ec-4894-89ad-0259aa4496b0"
+      ]
+    },
+    {
+      "@id": "aw0:261018e7-15d5-445b-9902-171af1382daf",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:dab8e0d9-ff2f-4a59-abb9-0442c19012ac"
+    },
+    {
+      "@id": "aw0:1609a42d-7bc7-48ae-b457-639fb12a2043",
+      "@type": "sso:ShapeElement",
+      "lci:isDefinedBy": "aw0:69f013b8-bca1-4d9d-aec0-d627e14af5d7"
+    },
+    {
+      "@id": "aw0:a6f60456-0cb1-4a43-9582-e9c0b885e2e2",
+      "@type": "sso:ShapeElement",
+      "lci:isDefinedBy": "aw0:d99d616d-26a0-4e76-ad32-2b05783699a6"
+    },
+    {
+      "@id": "aw0:85362866-44bb-45bf-b015-1befeab1a57a",
+      "@type": "sso:PartVersion",
+      "sso:hasProductDefinition": "aw0:7840fed5-44d5-41bb-84b3-8c5022a2bb03",
+      "sso:versionId": "/NULL"
+    },
+    {
+      "@id": "aw0:3468fd63-d5ea-4644-b8df-f838a96cab21",
+      "@type": "sso:OccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:86f971eb-8016-4f11-b94d-e906e0c666b1",
+      "@type": [
+        "sso:Part",
+        "sso:PartCategory_protective_covering",
+        "sso:PartCategory_raw_material_by_length"
+      ],
+      "rdfs:label": "1/2 inch Spiral Wrap - 100 foot spool - Black",
+      "sso:hasPartVersion": "aw0:ed6b8c9f-66d1-4817-a6ed-4e57262930f3",
+      "sso:id": "SPW-500SP-BK"
+    },
+    {
+      "@id": "aw0:cf376184-ad69-4eea-9d53-3995738f25ae",
+      "@type": "sso:PartVersion",
+      "sso:hasProductDefinition": "aw0:602d1f20-b9b0-4b95-b275-64667d208ffe",
+      "sso:versionId": "/NULL"
+    },
+    {
+      "@id": "aw0:0e454854-be2d-4023-b192-b14d5277a732",
+      "@type": "sso:WireOccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:bcd91a5a-2e34-4fff-ae9e-8bf142954713",
+      "@type": "sso:OccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:0947920b-4c85-4dbe-81bc-4851f625a28b",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:c8f894e0-43b8-4ac8-8f21-5a619ed7d6b7"
+    },
+    {
+      "@id": "aw0:7d883707-a566-4c68-8d08-dd8b6f2719fa",
+      "@type": "sso:CableOccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:f92cf0df-47e9-420d-8681-bda25418cb70",
+      "@type": [
+        "sso:ApplicationDomain_electrical",
+        "sso:LifeCycleStage_design",
+        "sso:PartDesign"
+      ],
+      "lci:hasArrangedPart": [
+        "aw0:45d3453e-fb1d-43c1-9d37-7eba0814051c",
+        "aw0:4d4eca5e-2125-495d-a2c6-7563531e2f97",
+        "aw0:6a7afc68-152b-4a3f-9f33-4f16a7b68514"
+      ],
+      "rdfs:label": "",
+      "sso:definingGeometry": "aw0:1679e3a6-d75c-4078-ac04-0caabc87ef4c",
+      "sso:viewId": "/NULL"
+    },
+    {
+      "@id": "aw0:c2038603-05b3-4edd-8b85-c5a785e24ff0",
+      "@type": "rep:OrientedEdge",
+      "rep:edgeElement": "aw0:d7ead54a-025c-4b34-8a8c-e1e2b75f9f45",
+      "rep:orientation": false
+    },
+    {
+      "@id": "aw0:bed2acdf-ac12-4d3b-8651-5b9b0dbe3688",
+      "@type": "rep:EdgeBoundedCurveWithLength",
+      "rdfs:label": "S4",
+      "rep:edgeEnd": "aw0:c1c59179-50a0-4adf-a80b-1eda08b5d59c",
+      "rep:edgeGeometry": "aw0:4935247c-148c-4ff4-afbe-5f45ece73f8b",
+      "rep:edgeStart": "aw0:e3554ed5-2afb-4a34-b02c-b9188240b0e9",
+      "rep:sameSense": true
+    },
+    {
+      "@id": "aw0:e838608b-38f7-40e5-876b-a18a24747174",
+      "@type": "sso:OccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:f01af7bc-7c74-4bb3-aae9-5ef23c180feb",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "sso:nextAssemblyOccurrenceUsage",
+      "rep:contextDependentShapeRepresentation": "aw0:781d7a38-89ce-41b1-a658-58c14ad8bc92"
+    },
+    {
+      "@id": "aw0:5ee668a1-69a1-4f02-8377-8bfd1ec5d473",
+      "@type": [
+        "sso:InterfaceOrJoinTerminal_interface_terminal",
+        "sso:PartTerminal",
+        "sso:TerminalJointType_socket_terminal"
+      ],
+      "rdfs:label": "Interface2"
+    },
+    {
+      "@id": "aw0:f7c218e1-8e7a-405b-89b3-5d8968299fac",
+      "@type": "sso:ExternalRepresentationItem"
+    },
+    {
+      "@id": "aw0:6a7afc68-152b-4a3f-9f33-4f16a7b68514",
+      "@type": "sso:CrossSectionalPartShapeElement"
+    },
+    {
+      "@id": "aw0:98d69e1a-1678-49b2-9f9c-7f4b1574d71c",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "rep:geometryToTopologyModelAssociation",
+      "rep:transformationOperator": "aw0:a6f487f1-135f-4b41-b26b-d42aea256e9f"
+    },
+    {
+      "@id": "aw0:a98d7cc2-0724-4a88-ab1c-aaa4581ce8cd",
+      "@type": "rep:ConnectedEdgeSubSet",
+      "rep:ConnectedEdgeSubSet": "aw0:bc84ee75-f33c-484c-b80b-1a22bfa726f8",
+      "rep:cesEdges": [
+        "aw0:9a3c359a-29c1-477d-8107-c799a9669f4a",
+        "aw0:bed2acdf-ac12-4d3b-8651-5b9b0dbe3688",
+        "aw0:e5299ec4-aa4b-4dc1-94a5-5b3c356dc1ae"
+      ]
+    },
+    {
+      "@id": "aw0:e5299ec4-aa4b-4dc1-94a5-5b3c356dc1ae",
+      "@type": "rep:SubEdge",
+      "rdfs:label": "S3-b",
+      "rep:edgeEnd": "aw0:ec372cec-18c9-48b7-8462-139b18098369",
+      "rep:edgeStart": "aw0:e3554ed5-2afb-4a34-b02c-b9188240b0e9",
+      "rep:parentEdge": "aw0:9f0fe65f-4e49-42bc-8451-b2fd094fd058"
+    },
+    {
+      "@id": "aw0:bd81bdce-30f6-49ed-ad71-f5c13556f78a",
+      "@type": "sso:OccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:d060166d-97b1-4e90-998a-60cc4cf02bf8",
+      "@type": [
+        "sso:Part",
+        "sso:PartCategory_connector_contact",
+        "sso:PartCategory_discrete"
+      ],
+      "rdfs:label": "#5 Coax contact",
+      "sso:hasPartVersion": "aw0:17861189-ae0e-499b-8ce2-d71df0bb1e39",
+      "sso:id": "8660-2485"
+    },
+    {
+      "@id": "aw0:00a53cb9-eff7-4549-9cef-d93954135dc3",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:a6eb5c94-a24b-41cf-b53e-b1f84e722cdd"
+    },
+    {
+      "@id": "aw0:a6eb5c94-a24b-41cf-b53e-b1f84e722cdd",
+      "@type": [
+        "sso:InterfaceOrJoinTerminal_interface_terminal",
+        "sso:PartTerminal",
+        "sso:TerminalJointType_socket_terminal"
+      ],
+      "rdfs:label": "Interface8"
+    },
+    {
+      "@id": "aw0:3cc9b104-c9ed-458d-93ae-0dcf5f83b873",
+      "@type": "rep:VertexPoint",
+      "rdfs:label": "N1",
+      "rep:vertexGeometry": "aw0:1ce76f49-1fb1-4f6b-b616-4d18eede95c4"
+    },
+    {
+      "@id": "aw0:abe41235-f4be-46d5-91be-7901a173e5f8",
+      "@type": "sso:PartConnectivityDefinition",
+      "lci:isDefinedBy": [
+        "aw0:51ef72f9-df61-4d48-8177-ae8646cf4f99",
+        "aw0:54cdea3e-a831-4cd7-89b9-c9ce9d0acae6"
+      ]
+    },
+    {
+      "@id": "aw0:81a7637e-65e8-4f8f-98ac-5c6a004d561a",
+      "@type": "sso:ExternalGeometricModel",
+      "rep:contextOfItems": "aw0:f4c43fd3-073a-4e61-a3cb-3b6992cf6448",
+      "rep:item": [
+        "aw0:3bb60a40-387b-4f8e-88e2-bcd91dfaddb8",
+        "aw0:56517ead-3188-450e-baf6-12ec43339ff4"
+      ],
+      "rep:topologyToGeometryModelAssociation": {
+        "@id": "aw0:cfdcb7cf-8257-47db-96ce-1b01113c3e1a",
+        "specificProperty": "aw0:fa3e4b43-9e3e-4217-8bdf-db4e362b4933"
+      },
+      "sso:id": "xxx"
+    },
+    {
+      "@id": "aw0:e878ea37-f3e6-42c3-b21b-36d9b9be084c",
+      "@type": "sso:WireOccurrenceIdentification",
+      "lci:isDefinedBy": "aw0:11bcb143-babe-471d-ae95-d886e84d6738"
+    },
+    {
+      "@id": "aw0:ce0d31a2-cb49-43b2-a812-29353d94ce0f",
+      "@type": "sso:OccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:f7b89171-952d-46ef-95d1-fbda179835c7",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "sso:nextAssemblyOccurrenceUsage"
+    },
+    {
+      "@id": "aw0:ad53a572-f2e0-4745-aa16-93756a6ebb6f",
+      "@type": "rep:Axis2Placement3D",
+      "rep:location": "aw0_:88efd86e-20dd-4ba2-bfb4-740b7002d3f5"
+    },
+    {
+      "@id": "aw0:0ff6fc0f-6c2f-4459-9118-336bbea70b99",
+      "@type": "sso:PartTerminal",
+      "rdfs:label": "MINUS"
+    },
+    {
+      "@id": "aw0:c3bc8915-178c-4873-966f-e5b43186b13c",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:b2190c94-d1ee-40b9-b323-337173591369"
+    },
+    {
+      "@id": "aw0:204d620d-6ba6-49ba-9460-0d1c7d132430",
+      "@type": "sso:WireOccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:c1c14c0e-4243-40f4-9e08-53e04ee75da1",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:54cdea3e-a831-4cd7-89b9-c9ce9d0acae6"
+    },
+    {
+      "@id": "aw0:75abdcff-d5f9-4992-8e5b-bece635073b3",
+      "@type": "rep:Point"
+    },
+    {
+      "@id": "aw0:ef56aa91-a8cd-4bb6-be9d-bbf7c81602a0",
+      "@type": "sso:OccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:f863649a-6c8c-4ce3-8f27-9a4dddb1e67f",
+      "@type": "sso:SpecifiedOccurrence",
+      "lci:hasArrangedPart": [
+        "aw0:b112464a-8738-4d6d-b220-7a8efb72e6b4",
+        "aw0:ce0d31a2-cb49-43b2-a812-29353d94ce0f"
+      ],
+      "lci:isDefinedBy": "aw0:683ec0dd-0b9d-4c84-887c-b88557f17075",
+      "rdfs:label": "C-Assy/power3",
+      "sso:hasHigherUsage": "aw0:9c3adc28-7969-4c6b-857a-06b170a43278"
+    },
+    {
+      "@id": "aw0:12e8a5f9-e609-4574-af0e-1f1da6353d25",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "sso:promissoryAssemblyOccurrenceUsage"
+    },
+    {
+      "@id": "aw0:205bcf32-0905-4963-929b-8bf0ba6a2068",
+      "@type": "sso:SingleOccurrence",
+      "lci:isDefinedBy": "aw0:c2d979ac-a15a-4456-834f-d2f07e59fbc0",
+      "rdfs:label": "C-insert"
+    },
+    {
+      "@id": "aw0:3f7db2fc-09c2-4e20-b0c5-3a257401a0f1",
+      "@type": "qau:Length",
+      "qau:metre": 3.17
+    },
+    {
+      "@id": "aw0:6418c302-c41a-459e-9423-55ffcaf12105",
+      "@type": "sso:OccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:0ccfcb52-0657-4ba5-a624-bdf6c8159df5",
+      "@type": "sso:CrossSectionalOccurrenceShapeElement",
+      "lci:hasArrangedPart": "aw0:8183cc51-c824-4b0e-b6ba-e2937fea7e97",
+      "lci:isDefinedBy": "aw0:f2e4b062-4be0-4405-951d-1653d7ea3c1c"
+    },
+    {
+      "@id": "aw0:b0658328-2eef-48d1-a458-7183d4e8e44c",
+      "@type": [
+        "sso:InterfaceOrJoinTerminal_join_terminal",
+        "sso:PartTerminal",
+        "sso:TerminalJointType_crimp_terminal"
+      ],
+      "rdfs:label": "Internal",
+      "sso:representedGeometry": "aw0:f7c218e1-8e7a-405b-89b3-5d8968299fac"
+    },
+    {
+      "@id": "aw0:f7883ffd-794f-4fca-80c1-473b7f4ada1e",
+      "@type": [
+        "sso:InterfaceOrJoinTerminal_join_terminal",
+        "sso:PartTerminal",
+        "sso:TerminalJointType_crimp_terminal"
+      ],
+      "rdfs:label": "Join gnd"
+    },
+    {
+      "@id": "aw0:79c7f59e-4864-42f5-a00a-45887a25741b",
+      "@type": "sso:PartConnectivityDefinition",
+      "lci:isDefinedBy": [
+        "aw0:3024aa72-fcfe-41f0-afd4-f35dfc7ac694",
+        "aw0:ebb34f40-0ffb-44be-b1a2-0e6fdfaad1a1"
+      ]
+    },
+    {
+      "@id": "aw0:6aa589f9-56b9-455b-8b97-00115bf047a9",
+      "@type": "sso:TwistedCrossSectionalGroupShapeElement"
+    },
+    {
+      "@id": "aw0:b6361725-484f-4a32-8700-39591b24ed68",
+      "@type": "sso:SpecifiedOccurrence",
+      "lci:hasArrangedPart": [
+        "aw0:385fd25c-5ce3-4e5b-87e8-2e97f9099a6b",
+        "aw0:ad918473-2eb4-4158-a469-6d5fd56d177f",
+        "aw0:bcd91a5a-2e34-4fff-ae9e-8bf142954713",
+        "aw0:ef56aa91-a8cd-4bb6-be9d-bbf7c81602a0"
+      ],
+      "lci:isDefinedBy": "aw0:24f6ead8-6edf-4446-8bfb-edf7d77548e3",
+      "rdfs:label": "C-Assy/coax1",
+      "sso:hasHigherUsage": "aw0:9c3adc28-7969-4c6b-857a-06b170a43278"
+    },
+    {
+      "@id": "aw0:75d3dda6-127b-4a66-9930-dc043e02ca1f",
+      "@type": [
+        "sso:InterfaceOrJoinTerminal_join_terminal",
+        "sso:PartTerminal",
+        "sso:TerminalJointType_crimp_terminal"
+      ],
+      "rdfs:label": "Join term"
+    },
+    {
+      "@id": "aw0:47f499aa-a2e9-4aeb-aa10-64177d19332b",
+      "@type": "sso:WireOccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:e820308d-bf4d-4363-8bea-f0392f9f1ef1",
+      "@type": "sso:WireColourBasedIdentificationCode",
+      "rdfs:label": "wire colour-based identification code",
+      "sso:id": "green"
+    },
+    {
+      "@id": "aw0:9902d5a7-bfd6-47be-a3c0-57e0fb2f566b",
+      "@type": "sso:OccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:c92c6b32-7ff8-4a23-a47d-c92bf46a89f6",
+      "@type": "sso:CrossSectionalPartShapeElement",
+      "rdfs:label": "Inner surface"
+    },
+    {
+      "@id": "aw0:b010b14e-0ebc-460d-b82f-1e615c0b762d",
+      "@type": "sso:CableOccurrenceTerminalLocationGroup",
+      "lci:hasArrangedPart": [
+        "aw0:42eefda2-effe-4636-9849-8cb452887cde",
+        "aw0:bcdf0bd0-9470-4ff0-bfb7-4ea34c50d10a"
+      ]
+    },
+    {
+      "@id": "aw0:e3a10178-2b82-4aff-9990-0ca8b2e766b5",
+      "@type": "rep:Path",
+      "rdfs:label": "S2-S3-S4",
+      "rep:edgeList": [
+        "aw0:42451326-677a-47a3-8526-4cb519eb2be6",
+        "aw0:2a6f29be-3ccd-43ed-95ad-bc292add61e4",
+        "aw0:45f0fbc4-5ff2-4fcf-a822-03e9ddcf8d8e"
+      ],
+      "rep:geometryToTopologyItemAssociation": {
+        "@id": "aw0:610d0c3c-4d69-4291-8c82-0a0d02b56ffa",
+        "specificProperty": "aw0:802114cd-b515-4647-8348-40dead36ec14"
+      }
+    },
+    {
+      "@id": "aw0:00de766b-b15c-4f53-873f-45ecf8873bec",
+      "@type": [
+        "sso:AssemblyJointType_crimped_connection",
+        "sso:AssemblyShapeJoint"
+      ],
+      "sso:assemblyShapeJointItemRelationship": [
+        "aw0:aeaefec3-1356-4d8f-b0cc-def3ffaa241e",
+        "aw0:ec94b9c1-681e-4e98-ae7b-0b47ef0dfd1a"
+      ]
+    },
+    {
+      "@id": "aw0:66f2cf1d-a83b-4344-b1ff-d56e05d4897e",
+      "@type": "sso:HarnessSegment",
+      "sso:representedGeometry": "aw0:b28a0955-ea9e-46ed-a4c4-5c008dbcb477"
+    },
+    {
+      "@id": "aw0:78cd624b-d76d-49cf-9d7a-9584a70baaba",
+      "@type": "sso:SpecifiedOccurrence",
+      "lci:isDefinedBy": "aw0:9c3adc28-7969-4c6b-857a-06b170a43278",
+      "rdfs:label": "arinc1/C-Assy",
+      "sso:hasHigherUsage": "aw0:961b612c-1d98-42fc-9a96-0590c5ce3682"
+    },
+    {
+      "@id": "aw0:b02fb20f-f254-4c29-a803-1c78633c168b",
+      "@type": "sso:ExternalRepresentationItem"
+    },
+    {
+      "@id": "aw0:ad918473-2eb4-4158-a469-6d5fd56d177f",
+      "@type": "sso:OccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:96d4f5a1-c563-499e-addb-b341caf9f9fd",
+      "@type": [
+        "sso:InterfaceOrJoinTerminal_interface_terminal",
+        "sso:PartTerminal",
+        "sso:TerminalJointType_socket_terminal"
+      ],
+      "rdfs:label": "Interface1"
+    },
+    {
+      "@id": "aw0:1a4468be-9535-416d-8d6e-572ead0faaa2",
+      "@type": "sso:CableOccurrence",
+      "lci:hasArrangedPart": [
+        "aw0:18f3d4c0-2189-4007-9364-c8680317016b",
+        "aw0:908ffa63-6f24-4ff2-aa05-feb8ca8d706d",
+        "aw0:cb9b1046-0098-4367-bd42-b7ee13a2450f",
+        "aw0:d8ae0e40-a3c7-4864-8ee7-5dcacf251397",
+        "aw0:e6dff3b7-3449-4e2c-a84b-6eb6367fe5f7"
+      ],
+      "lci:isDefinedBy": "aw0:f92cf0df-47e9-420d-8681-bda25418cb70",
+      "rdfs:label": "cable3",
+      "sso:occurrenceQuantity": "aw0:2eb7aeaa-a8af-41f7-8093-2f87023762ad"
+    },
+    {
+      "@id": "aw0:b5cd0ccc-dd53-42e1-95e6-4e7d2e9b3c1d",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:f9c7c756-b20d-45bb-8c88-2591d05a5d7d"
+    },
+    {
+      "@id": "aw0:42451326-677a-47a3-8526-4cb519eb2be6",
+      "@type": "rep:OrientedEdge",
+      "rep:edgeElement": "aw0:9f7d9e6f-82a9-4ef9-974a-a17b0fc13ab2",
+      "rep:orientation": false
+    },
+    {
+      "@id": "aw0:7840fed5-44d5-41bb-84b3-8c5022a2bb03",
+      "@type": [
+        "sso:ApplicationDomain_electrical",
+        "sso:LifeCycleStage_design",
+        "sso:PartDesign"
+      ],
+      "lci:hasArrangedPart": [
+        "aw0:75d3dda6-127b-4a66-9930-dc043e02ca1f",
+        "aw0:d75608cc-1876-47f9-ba6a-c9a32304e23d",
+        "aw0:f6b19603-12c9-42d2-9735-02f706f083c0"
+      ],
+      "rdfs:label": "",
+      "sso:viewId": "/NULL"
+    },
+    {
+      "@id": "aw0:b0298916-5e04-4486-ac50-045e2ba989cc",
+      "@type": "rep:Path",
+      "rdfs:label": "S2-S3-S5",
+      "rep:edgeList": [
+        "aw0:42451326-677a-47a3-8526-4cb519eb2be6",
+        "aw0:2a6f29be-3ccd-43ed-95ad-bc292add61e4",
+        "aw0:9c665574-17db-45df-a439-87415589c290"
+      ],
+      "rep:geometryToTopologyItemAssociation": [
+        {
+          "@id": "aw0:610d0c3c-4d69-4291-8c82-0a0d02b56ffa",
+          "specificProperty": "aw0:8d8236b0-4d3c-4ffb-be1d-fca42f63e7bd"
+        },
+        {
+          "@id": "aw0:610d0c3c-4d69-4291-8c82-0a0d02b56ffa",
+          "specificProperty": "aw0:920462cd-5bf2-4396-a546-3f3cbc63fefc"
+        },
+        {
+          "@id": "aw0:610d0c3c-4d69-4291-8c82-0a0d02b56ffa",
+          "specificProperty": "aw0:a2afdd88-82a1-4d51-a604-fc210cf8a93b"
+        },
+        {
+          "@id": "aw0:610d0c3c-4d69-4291-8c82-0a0d02b56ffa",
+          "specificProperty": "aw0:a6f487f1-135f-4b41-b26b-d42aea256e9f"
+        },
+        {
+          "@id": "aw0:610d0c3c-4d69-4291-8c82-0a0d02b56ffa",
+          "specificProperty": "aw0:be9a1d19-6553-473b-b233-4ddf29b85a1f"
+        },
+        {
+          "@id": "aw0:610d0c3c-4d69-4291-8c82-0a0d02b56ffa",
+          "specificProperty": "aw0:d6c79d08-2166-4e31-a648-0fdaf51adfd3"
+        },
+        {
+          "@id": "aw0:610d0c3c-4d69-4291-8c82-0a0d02b56ffa",
+          "specificProperty": "aw0:dcbd1f9b-d221-44f4-b618-764168db7f8c"
+        }
+      ]
+    },
+    {
+      "@id": "aw0:fcd1dc4e-6335-4e87-82bd-34c950cbdccd",
+      "@type": [
+        "sso:Part",
+        "sso:PartCategory_overbraid",
+        "sso:PartCategory_raw_material_by_length"
+      ],
+      "rdfs:label": "Braid 1/2inch",
+      "sso:hasPartVersion": "aw0:3d6f736c-2321-473f-8e00-366b33297f21",
+      "sso:id": "TC122"
+    },
+    {
+      "@id": "aw0:634e0a84-e346-4740-8102-36b3ffaa7d0b",
+      "@type": "sso:CrossSectionalGroupShapeElementWithLacing"
+    },
+    {
+      "@id": "aw0:309232af-07ba-4139-b732-97ac6bf042fa",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:bcaff119-f706-478a-9057-5c80762419c6"
+    },
+    {
+      "@id": "aw0:dd5d80be-d66a-4ba0-9363-9f388d4d5290",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:62e5f4d6-01ba-423d-a33b-9046edda9fba"
+    },
+    {
+      "@id": "aw0:6296ce67-0414-4407-b92c-6ced90cdb98d",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "rep:geometryToTopologyModelAssociation",
+      "rep:transformationOperator": "aw0:d6c79d08-2166-4e31-a648-0fdaf51adfd3"
+    },
+    {
+      "@id": "aw0:93d74b80-71c0-403a-8ccf-cf69c1ce5f6d",
+      "@type": "sso:WireOccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:0a1ac768-7eba-41f0-9f2b-9b1c4f9b51df",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "sso:nextAssemblyOccurrenceUsage"
+    },
+    {
+      "@id": "aw0:36260ed1-69b5-4fb0-b282-2384c1a2ad32",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "rep:shapeRepresentationRelationshipWithPlacementTransformation",
+      "rep:transformationOperator": "aw0:a6872321-7615-4447-81ea-4599f30695e4"
+    },
+    {
+      "@id": "aw0:094a228f-3d16-4353-bf5c-a427445d2de0",
+      "@type": "sso:PartConnectivityDefinition",
+      "lci:isDefinedBy": [
+        "aw0:c8f894e0-43b8-4ac8-8f21-5a619ed7d6b7",
+        "aw0:dbba7fb6-974b-4b8d-a4fb-ea3297b837a7"
+      ]
+    },
+    {
+      "@id": "aw0:0f4417d1-5fa4-4f7d-ab22-9bb48ea97748",
+      "@type": [
+        "sso:InterfaceOrJoinTerminal_join_terminal",
+        "sso:PartTerminal",
+        "sso:TerminalJointType_crimp_terminal"
+      ],
+      "rdfs:label": "Join signal"
+    },
+    {
+      "@id": "aw0:11d757f2-189d-4e97-9556-703489ef633b",
+      "@type": [
+        "sso:AssemblyJointType_crimped_connection",
+        "sso:AssemblyShapeJoint"
+      ],
+      "sso:assemblyShapeJointItemRelationship": [
+        "aw0:f8c61a7d-52b2-4091-b339-396b2e3f427a",
+        "aw0:fa0cbd1c-5455-4b1f-9d47-39288c987f68"
+      ]
+    },
+    {
+      "@id": "aw0:e6dff3b7-3449-4e2c-a84b-6eb6367fe5f7",
+      "@type": "sso:CableOccurrenceTerminalLocationGroup",
+      "lci:hasArrangedPart": [
+        "aw0:03a6da3b-f4b2-4732-a02c-f89cb370c238",
+        "aw0:835a1979-a25b-4eda-a61f-b295351adc4a"
+      ]
+    },
+    {
+      "@id": "aw0:a418bac7-3907-4333-8917-6d3817d9a18f",
+      "@type": "sso:OccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:eea75a4d-fe13-4e97-8514-0b7e2df63dfb",
+      "@type": [
+        "sso:ApplicationDomain_electrical",
+        "sso:LifeCycleStage_design",
+        "sso:PartDesign"
+      ],
+      "lci:hasArrangedPart": [
+        "aw0:2ae4d8c5-267e-4f38-b746-ca86be6af20b",
+        "aw0:49077055-7a4d-4590-9bd4-24ebacae703b"
+      ],
+      "rdfs:label": "",
+      "sso:definingGeometry": "aw0:1679e3a6-d75c-4078-ac04-0caabc87ef4c",
+      "sso:viewId": "/NULL"
+    },
+    {
+      "@id": "aw0:871e68fa-036a-4b87-8451-f33c8dad2da4",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "sso:nextAssemblyOccurrenceUsage"
+    },
+    {
+      "@id": "aw0:2e0654e4-58b7-4805-a33b-bd44e155f694",
+      "@type": "rep:ConnectedEdgeSubSet",
+      "rep:ConnectedEdgeSubSet": "aw0:bc84ee75-f33c-484c-b80b-1a22bfa726f8",
+      "rep:cesEdges": [
+        "aw0:1ce30646-3079-4d84-9b83-cc82bfd0c605",
+        "aw0:9f7d9e6f-82a9-4ef9-974a-a17b0fc13ab2",
+        "aw0:ea72b56b-68e1-4bc8-889f-33afd6faf756"
+      ]
+    },
+    {
+      "@id": "aw0:fc6d1467-9a2d-486d-a398-2818ed96031d",
+      "@type": "sso:SpecifiedOccurrence",
+      "lci:hasArrangedPart": [
+        "aw0:6f4d7df6-629e-44c4-98e9-59d85c0d4427",
+        "aw0:8692c2c4-ce5c-4532-9076-b839d088ce9a"
+      ],
+      "lci:isDefinedBy": "aw0:f863649a-6c8c-4ce3-8f27-9a4dddb1e67f",
+      "rdfs:label": "arinc1/C-Assy/power3",
+      "sso:hasHigherUsage": "aw0:961b612c-1d98-42fc-9a96-0590c5ce3682"
+    },
+    {
+      "@id": "aw0:835a1979-a25b-4eda-a61f-b295351adc4a",
+      "@type": "sso:CableOccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:30f62f2a-da42-41c4-8128-28f5c07f130e",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "rep:topologyToGeometryItemAssociation"
+    },
+    {
+      "@id": "aw0:c0e51b13-d326-40f3-805b-667bf171efac",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "rep:geometryToTopologyModelAssociation",
+      "rep:transformationOperator": "aw0:4173319c-d2e6-4102-b5f1-e2702db50b19"
+    },
+    {
+      "@id": "aw0:c65fcee3-d12b-487c-bd53-2fcea7eba5ea",
+      "@type": [
+        "sso:AssemblyJointType_crimped_connection",
+        "sso:AssemblyShapeJoint"
+      ],
+      "sso:assemblyShapeJointItemRelationship": [
+        "aw0:3468fd63-d5ea-4644-b8df-f838a96cab21",
+        "aw0:7d883707-a566-4c68-8d08-dd8b6f2719fa"
+      ]
+    },
+    {
+      "@id": "aw0:05472841-67f4-4b92-ad52-0b0492c92e6f",
+      "@type": "sso:OccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:9e720fdd-a7ae-4839-9cac-2836623bfa56",
+      "@type": "rep:BoundedCurveWithLength",
+      "rep:lengthValue": 1.5
+    },
+    {
+      "@id": "aw0:db76a2e3-5e65-43c1-87b2-7cc0362cdb97",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "rep:geometryToTopologyModelAssociation",
+      "rep:transformationOperator": "aw0:881d764c-7172-4420-ab40-f5cc9e408fdf"
+    },
+    {
+      "@id": "aw0:d71148ef-741f-4464-aee6-9a5e12571b32",
+      "@type": "lci:Organization",
+      "rdfs:label": "TE Connectivity Ltd",
+      "sso:id": "http://www.te.com"
+    },
+    {
+      "@id": "aw0:870c0951-7e5f-41b7-ae37-bc463dfd2bea",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "rep:geometryToTopologyModelAssociation",
+      "rep:transformationOperator": "aw0:5514f4ff-fdc4-4ab8-bfb5-bb411a9f5593"
+    },
+    {
+      "@id": "aw0:2b34cda6-0dd5-43e6-8d49-f37ddc4b2c16",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "sso:nextAssemblyOccurrenceUsage"
+    },
+    {
+      "@id": "aw0:d99d616d-26a0-4e76-ad32-2b05783699a6",
+      "@type": "sso:PartFeature",
+      "rdfs:label": "Segment opening C"
+    },
+    {
+      "@id": "aw0:ee43d015-aca2-4cd2-96bf-7292d40d6c20",
+      "@type": [
+        "sso:Part",
+        "sso:PartCategory_discrete",
+        "sso:PartCategory_terminal_lug"
+      ],
+      "rdfs:label": "",
+      "sso:hasPartVersion": "aw0:118c0fbe-176c-4a14-8cea-c249ff4aa704",
+      "sso:id": "MS5036-153"
+    },
+    {
+      "@id": "aw0:ca83d710-4274-48bc-b47c-adb7c1894318",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:5ee668a1-69a1-4f02-8377-8bfd1ec5d473"
+    },
+    {
+      "@id": "aw0:1aa0fbbc-8d99-4d13-97aa-927635b7d15c",
+      "@type": [
+        "sso:InterfaceOrJoinTerminal_interface_terminal",
+        "sso:PartTerminal",
+        "sso:TerminalJointType_pin_terminal"
+      ],
+      "rdfs:label": "Interface gnd"
+    },
+    {
+      "@id": "aw0:4bda2099-f464-42f6-937d-c4472f800145",
+      "@type": "rep:PointOnCurve",
+      "rep:basisCurve": "aw0:3f5eba64-d5c3-4d1d-9814-22aca8979d09",
+      "rep:pointParameter": 0.7
+    },
+    {
+      "@id": "aw0:424bfc32-63ac-468e-b52b-37be9cf77901",
+      "@type": "sso:OccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:602d1f20-b9b0-4b95-b275-64667d208ffe",
+      "@type": [
+        "sso:ApplicationDomain_electrical",
+        "sso:LifeCycleStage_design",
+        "sso:PartDesign"
+      ],
+      "lci:hasArrangedPart": [
+        "aw0:69642d88-5eda-4bfe-9c22-7fd8a2bdcd4c",
+        "aw0:ae359b5f-86a0-4e52-b7a6-e7bd8786b823",
+        "aw0:ecea60e9-afd3-414b-901d-31fa2e47b9fa"
+      ],
+      "rdfs:label": "",
+      "sso:viewId": "/NULL"
+    },
+    {
+      "@id": "aw0:71b46569-6620-47af-90a1-b573e55c846d",
+      "@type": "sso:ShapeElement"
+    },
+    {
+      "@id": "aw0:4130e4c3-d4b4-4244-8af1-a6cbdb4d172c",
+      "@type": "sso:PartVersion",
+      "sso:hasProductDefinition": "aw0:5cb750ed-460a-47b5-acd7-c93c4323f335",
+      "sso:versionId": "/NULL"
+    },
+    {
+      "@id": "aw0:46790de6-97ce-4931-bcc9-2a1602573afa",
+      "@type": "sso:PartConnectivityDefinition",
+      "lci:isDefinedBy": [
+        "aw0:f0b8c11a-93ca-4eae-ad6f-350e77435ddd",
+        "aw0:ff098549-7030-4404-adb8-29f38bbfbd0d"
+      ]
+    },
+    {
+      "@id": "aw0:4e866111-17d8-47a1-8225-c70c2ab9c47a",
+      "@type": [
+        "sso:AssemblyJointType_crimped_connection",
+        "sso:AssemblyShapeJoint"
+      ],
+      "sso:assemblyShapeJointItemRelationship": [
+        "aw0:835a1979-a25b-4eda-a61f-b295351adc4a",
+        "aw0:dd5d80be-d66a-4ba0-9363-9f388d4d5290"
+      ]
+    },
+    {
+      "@id": "aw0:aab8e046-50d9-41f6-bf8c-5973c4934603",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "sso:nextAssemblyOccurrenceUsage",
+      "rep:contextDependentShapeRepresentation": "aw0:9174386c-c2fc-4c36-b012-791a2775273b"
+    },
+    {
+      "@id": "aw0:ebeec5b9-e953-402e-b5ad-fe6ced468597",
+      "@type": "rep:Point"
+    },
+    {
+      "@id": "aw0:6da8c9b9-f724-44b6-a362-81cd0822cbb0",
+      "@type": [
+        "sso:AssemblyJointType_crimped_connection",
+        "sso:AssemblyShapeJoint"
+      ],
+      "sso:assemblyShapeJointItemRelationship": [
+        "aw0:5b804969-05a6-4bdd-a4e2-ea4ad3e11403",
+        "aw0:b48f3278-2484-4dc9-8ce3-aa5d4f425d03"
+      ]
+    },
+    {
+      "@id": "aw0:dde0f091-6645-49cd-ac57-0346a2935362",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:1aa0fbbc-8d99-4d13-97aa-927635b7d15c"
+    },
+    {
+      "@id": "aw0:c8aff67f-3ad6-4103-9fc0-fae7217f03e8",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "sso:nextAssemblyOccurrenceUsage",
+      "rep:contextDependentShapeRepresentation": "aw0:c0e51b13-d326-40f3-805b-667bf171efac"
+    },
+    {
+      "@id": "aw0:f446cd53-374f-4eb9-b295-4092d6809639",
+      "@type": [
+        "sso:ApplicationDomain_electrical",
+        "sso:AssemblyDesign",
+        "sso:LifeCycleStage_design"
+      ],
+      "lci:hasArrangedPart": [
+        "aw0:5c9d8d45-01d2-4114-bbbb-7942170c6dda",
+        "aw0:6192efb2-55a5-45c1-b1eb-7046427428a6",
+        "aw0:b043b113-cdfb-47b9-9097-fb4b77326a98"
+      ],
+      "rdfs:label": "",
+      "sso:definingGeometry": "aw0:1679e3a6-d75c-4078-ac04-0caabc87ef4c",
+      "sso:nextAssemblyOccurrenceUsage": [
+        {
+          "@id": "aw0:0a4402f6-9943-4dce-82ea-cacc0f56382d",
+          "specificProperty": "aw0:871e68fa-036a-4b87-8451-f33c8dad2da4"
+        },
+        {
+          "@id": "aw0:434fc6e2-f784-4683-b110-121d70944205",
+          "specificProperty": "aw0:aebdf9b9-e008-467a-b4f3-4aa1a1e1d70e"
+        },
+        {
+          "@id": "aw0:31068e99-79ef-427b-bdf8-f3a74e6e72c1",
+          "specificProperty": "aw0:fca9a544-c8ff-412d-add7-1f960c7f642b"
+        }
+      ],
+      "sso:viewId": "/NULL"
+    },
+    {
+      "@id": "aw0:85093075-874c-4f7f-981b-022da21bf2ab",
+      "@type": "sso:OccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:fd5c8789-2bec-4a2a-9b39-516072ec079d",
+      "@type": "sso:PartVersion",
+      "sso:hasProductDefinition": "aw0:c2d979ac-a15a-4456-834f-d2f07e59fbc0",
+      "sso:versionId": "/NULL"
+    },
+    {
+      "@id": "aw0:7c210e81-c2bf-411e-b6a8-31b06ada75c0",
+      "@type": [
+        "sso:Part",
+        "sso:PartCategory_assembly",
+        "sso:PartCategory_wiring_harness"
+      ],
+      "rdfs:label": "Electrical Harness example 2",
+      "sso:hasPartVersion": "aw0:64e12186-918a-4966-9128-c35dad8201bb",
+      "sso:id": "Part_H2"
+    },
+    {
+      "@id": "aw0:d8538ace-0999-4c40-b8cb-97b2af25dcff",
+      "@type": "sso:ComposedGeometricModel",
+      "rep:contextOfItems": "aw0:f4c43fd3-073a-4e61-a3cb-3b6992cf6448",
+      "rep:item": "aw0:56517ead-3188-450e-baf6-12ec43339ff4",
+      "rep:shapeRepresentationRelationshipWithPlacementTransformation": {
+        "@id": "aw0:43da36ed-e52a-4292-aaec-11fe4954ac19",
+        "specificProperty": "aw0:36260ed1-69b5-4fb0-b282-2384c1a2ad32"
+      },
+      "rep:shapeRepresentationRelationshipWithSameGeometricRepresentationContext": {
+        "@id": "aw0:81a7637e-65e8-4f8f-98ac-5c6a004d561a",
+        "specificProperty": "aw0:ca8a248a-892d-4786-ac47-b1fc4bc6e6c3"
+      },
+      "sso:id": "xxx"
+    },
+    {
+      "@id": "aw0:0cf9f3e3-a93f-473d-83fc-ab72b513488b",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "rep:geometryToTopologyItemAssociation"
+    },
+    {
+      "@id": "aw0:b36e4b4b-9c4d-4c9c-84fa-b9abb3645724",
+      "@type": [
+        "sso:AssemblyJointType_crimped_connection",
+        "sso:AssemblyShapeJoint"
+      ],
+      "sso:assemblyShapeJointItemRelationship": [
+        "aw0:42eefda2-effe-4636-9849-8cb452887cde",
+        "aw0:de465fe3-0359-4a9a-bbdb-c39de46ae9b3"
+      ]
+    },
+    {
+      "@id": "aw0:e0fe57d9-fefe-4e34-a125-9a16ee407946",
+      "@type": "rep:VertexPoint",
+      "rdfs:label": "N3",
+      "rep:vertexGeometry": "aw0:ebeec5b9-e953-402e-b5ad-fe6ced468597"
+    },
+    {
+      "@id": "aw0:82078431-cafb-449b-951a-6afe0d7681aa",
+      "@type": "sso:HarnessNode",
+      "sso:representedGeometry": "aw0:8d4761de-e3d1-4831-9c1d-9af620d2a328"
+    },
+    {
+      "@id": "aw0:fb5bb642-516d-4bd9-935e-493690446b99",
+      "@type": "sso:WireOccurrenceIdentification",
+      "lci:isDefinedBy": "aw0:11bcb143-babe-471d-ae95-d886e84d6738"
+    },
+    {
+      "@id": "aw0:1731fec4-8316-40a3-83a2-fd697449e7f8",
+      "@type": "sso:SpecifiedOccurrence",
+      "lci:hasArrangedPart": [
+        "aw0:2cf868f4-0c1a-4b0c-bb54-4a6ebbe950fc",
+        "aw0:65a82222-9b0a-487d-a374-d1c6f57dc1eb",
+        "aw0:71b46569-6620-47af-90a1-b573e55c846d",
+        "aw0:a182e71a-e441-48ae-841f-4b7b322a9b4e",
+        "aw0:e80dd72c-4b67-4e98-8653-e19bbcc448cf"
+      ],
+      "lci:isDefinedBy": "aw0:2a7f83f9-6486-4913-a34d-7b3a0242a4bf",
+      "rdfs:label": "arinc1/backshell1",
+      "sso:hasHigherUsage": "aw0:961b612c-1d98-42fc-9a96-0590c5ce3682"
+    },
+    {
+      "@id": "aw0:0a4402f6-9943-4dce-82ea-cacc0f56382d",
+      "@type": "sso:SingleOccurrence",
+      "lci:isDefinedBy": "aw0:b893d270-4914-48f8-a5ed-739d5f0b9836",
+      "rdfs:label": "h2.1"
+    },
+    {
+      "@id": "aw0:ff098549-7030-4404-adb8-29f38bbfbd0d",
+      "@type": [
+        "sso:InterfaceOrJoinTerminal_join_terminal",
+        "sso:PartTerminal",
+        "sso:TerminalJointType_solder_terminal"
+      ],
+      "rdfs:label": "Join5"
+    },
+    {
+      "@id": "aw0:2a5763d6-4749-4074-af2a-f054ad59a312",
+      "@type": "sso:SpecifiedOccurrence",
+      "lci:hasArrangedPart": [
+        "aw0:87294100-2bf2-46a4-9b5b-9cbcef0e8084",
+        "aw0:b48f3278-2484-4dc9-8ce3-aa5d4f425d03"
+      ],
+      "lci:isDefinedBy": "aw0:09172cea-e425-4d93-8746-626103b2b5ee",
+      "rdfs:label": "arinc1/C-Assy/power4",
+      "sso:hasHigherUsage": "aw0:961b612c-1d98-42fc-9a96-0590c5ce3682"
+    },
+    {
+      "@id": "aw0:37794961-223f-4b15-94b5-367c743ba8ab",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "sso:nextAssemblyOccurrenceUsage"
+    },
+    {
+      "@id": "aw0:f3cbd58c-1823-4b61-8925-ba3c1d54b7d7",
+      "@type": "sso:PartConnectivityDefinition",
+      "lci:isDefinedBy": [
+        "aw0:3f1fec88-e1d9-46fb-bc73-8dca4f0dea3a",
+        "aw0:61dfe7ba-0f0e-4367-bf51-f71bd36801c8"
+      ]
+    },
+    {
+      "@id": "aw0:4d4eca5e-2125-495d-a2c6-7563531e2f97",
+      "@type": "sso:ShapeElement",
+      "rdfs:label": "B",
+      "sso:colourCode": "aw0:bb1a96c2-092f-4dcd-a33d-f56a155cc1c2"
+    },
+    {
+      "@id": "aw0:5d59e4dd-f912-4b12-ae2f-f1f71ef69c37",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "sso:nextAssemblyOccurrenceUsage"
+    },
+    {
+      "@id": "aw0:7ceed6cd-a028-45e6-852a-cc806985f2c6",
+      "@type": "sso:HarnessNode",
+      "sso:representedGeometry": "aw0:634e90fc-6124-4e2c-a5c6-cb476eab504b"
+    },
+    {
+      "@id": "aw0:8692c2c4-ce5c-4532-9076-b839d088ce9a",
+      "@type": "sso:OccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:f1f8ece0-1eea-420f-b964-b342c6742bc3",
+      "@type": "sso:WireColourBasedIdentificationCode",
+      "rdfs:label": "wire colour-based identification code",
+      "sso:id": "shield"
+    },
+    {
+      "@id": "aw0:8585fec7-f317-4955-a9f6-32a0b380b4de",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:b0658328-2eef-48d1-a458-7183d4e8e44c"
+    },
+    {
+      "@id": "aw0:84ae654b-12be-4cda-849b-4ad8e1542cad",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:ecea60e9-afd3-414b-901d-31fa2e47b9fa"
+    },
+    {
+      "@id": "aw0:78bad4cb-bba5-42a6-95f9-f3bfac773843",
+      "@type": "sso:ProductConfiguration",
+      "rdfs:label": "H1 harness"
+    },
+    {
+      "@id": "aw0:a35bc13a-3256-4e16-ba0f-9a3ba0dd6592",
+      "@type": "sso:PartVersion",
+      "sso:hasProductDefinition": "aw0:fafa0349-a5e9-4b6a-be32-c6e88821c595",
+      "sso:versionId": "/NULL"
+    },
+    {
+      "@id": "aw0:2fe94d37-ed94-44c1-8b85-b5206c8fcb8d",
+      "@type": "sso:OccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:bc84ee75-f33c-484c-b80b-1a22bfa726f8",
+      "@type": "rep:ConnectedEdgeSet",
+      "rep:cesEdges": [
+        "aw0:1ce30646-3079-4d84-9b83-cc82bfd0c605",
+        "aw0:9a3c359a-29c1-477d-8107-c799a9669f4a",
+        "aw0:9f0fe65f-4e49-42bc-8451-b2fd094fd058",
+        "aw0:9f7d9e6f-82a9-4ef9-974a-a17b0fc13ab2",
+        "aw0:bed2acdf-ac12-4d3b-8651-5b9b0dbe3688"
+      ]
+    },
+    {
+      "@id": "aw0:3e282f31-027b-46b3-ba16-c228f61c963a",
+      "@type": [
+        "sso:ApplicationDomain_electrical",
+        "sso:LifeCycleStage_design",
+        "sso:PartDesign"
+      ],
+      "lci:hasArrangedPart": "aw0:c92c6b32-7ff8-4a23-a47d-c92bf46a89f6",
+      "rdfs:label": "",
+      "sso:definingGeometry": "aw0:1679e3a6-d75c-4078-ac04-0caabc87ef4c",
+      "sso:viewId": "/NULL"
+    },
+    {
+      "@id": "aw0:43da36ed-e52a-4292-aaec-11fe4954ac19",
+      "@type": "sso:ExternalAdvancedBrepShapeRepresentation",
+      "rep:contextOfItems": "aw0:5ec9aec7-fb6c-4a08-8bd3-9a9dddb8d461",
+      "rep:item": [
+        "aw0:77986dd8-2d2e-4de6-ac2a-70f11197a5b3",
+        "aw0:f7c218e1-8e7a-405b-89b3-5d8968299fac",
+        "aw0:fa15406b-37b5-4f5e-bf38-ef7c5ca94000"
+      ],
+      "sso:id": "c-51864-1-af-3d.stp"
+    },
+    {
+      "@id": "aw0:4935247c-148c-4ff4-afbe-5f45ece73f8b",
+      "@type": "rep:BoundedCurveWithLength",
+      "rep:lengthValue": 0.5
+    },
+    {
+      "@id": "aw0:9285b7f9-4bf5-4765-bf54-1d00953364ac",
+      "@type": "sso:OccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:1ac427a5-a5ff-4669-bfc2-de63a39d2072",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:f0b8c11a-93ca-4eae-ad6f-350e77435ddd"
+    },
+    {
+      "@id": "aw0:7f470042-eddf-4004-a6c5-7964a36221e2",
+      "@type": "qau:Length",
+      "qau:metre": 1.75
+    },
+    {
+      "@id": "aw0:7ddcbafe-7815-4d35-ac3a-9113221b6d95",
+      "@type": "rep:GeometricRepresentationContext",
+      "rep:coordinateSpaceDimension": 1,
+      "sso:id": "H1.x Harness topology context"
+    },
+    {
+      "@id": "aw0:9e051df5-f3cf-4d23-8401-4208362ba493",
+      "@type": "sso:CableOccurrence",
+      "lci:hasArrangedPart": [
+        "aw0:0a36e10a-82ce-459b-87f3-20cdda17cdf3",
+        "aw0:1d65d9e5-d41e-43cf-8164-17a0e6f419c3",
+        "aw0:556825d7-6b84-4fc6-b89b-d839b3f2fb2a",
+        "aw0:5e03b340-b889-4b66-aa8d-e4c73c06aab0",
+        "aw0:fb5bb642-516d-4bd9-935e-493690446b99"
+      ],
+      "lci:isDefinedBy": "aw0:fafa0349-a5e9-4b6a-be32-c6e88821c595",
+      "rdfs:label": "cable1",
+      "sso:occurrenceQuantity": "aw0:5f2913f4-9666-47c2-8ef2-1af8c429751f"
+    },
+    {
+      "@id": "aw0:b7225c0a-3c9c-4b4c-aa52-cc9f73e9a5eb",
+      "@type": [
+        "sso:AssemblyJointType_crimped_connection",
+        "sso:AssemblyShapeJoint"
+      ],
+      "sso:assemblyShapeJointItemRelationship": [
+        "aw0:2fe94d37-ed94-44c1-8b85-b5206c8fcb8d",
+        "aw0:bcdf0bd0-9470-4ff0-bfb7-4ea34c50d10a"
+      ]
+    },
+    {
+      "@id": "aw0:15d92684-e013-4a5e-86fb-c1bbaa653440",
+      "@type": "sso:SingleOccurrence",
+      "lci:hasArrangedPart": [
+        "aw0:00a53cb9-eff7-4549-9cef-d93954135dc3",
+        "aw0:0947920b-4c85-4dbe-81bc-4851f625a28b",
+        "aw0:0bc94ee3-d4ec-41ea-8cff-89a681c84553",
+        "aw0:10c0e1a4-b3cf-4502-98ee-adbd881767a8",
+        "aw0:1ac427a5-a5ff-4669-bfc2-de63a39d2072",
+        "aw0:261018e7-15d5-445b-9902-171af1382daf",
+        "aw0:2e5db794-0279-4d14-b24a-58924534aaf7",
+        "aw0:309232af-07ba-4139-b732-97ac6bf042fa",
+        "aw0:5043ac26-3faa-4235-b4e7-6536a4c65c2d",
+        "aw0:55c60fdb-8176-4082-8890-3b870621d1cd",
+        "aw0:618274fa-19b0-479a-9970-9976c2bc62fc",
+        "aw0:6cb847c7-57ec-4894-89ad-0259aa4496b0",
+        "aw0:70c632fb-df37-4828-bdea-e3bf59bf0f6f",
+        "aw0:8df06bdb-76e2-49a6-9eb7-cfe5f3243fed",
+        "aw0:a0281887-3e87-465a-8ec9-9accce024fbf",
+        "aw0:a1312af5-a157-4044-94d9-f50e1b88fd3c",
+        "aw0:c3bc8915-178c-4873-966f-e5b43186b13c",
+        "aw0:ca83d710-4274-48bc-b47c-adb7c1894318"
+      ],
+      "lci:isDefinedBy": "aw0:5cb750ed-460a-47b5-acd7-c93c4323f335",
+      "rdfs:label": "dsub1"
+    },
+    {
+      "@id": "aw0:ebb34f40-0ffb-44be-b1a2-0e6fdfaad1a1",
+      "@type": [
+        "sso:InterfaceOrJoinTerminal_join_terminal",
+        "sso:PartTerminal",
+        "sso:TerminalJointType_solder_terminal"
+      ],
+      "rdfs:label": "Join6"
+    },
+    {
+      "@id": "aw0:7c7bd00e-66b7-4119-9462-1a0139dfa27e",
+      "@type": "sso:QuantifiedOccurrence",
+      "lci:hasArrangedPart": "aw0:f0eb468f-618b-441a-9ffb-fa76d0cda5f3",
+      "lci:isDefinedBy": "aw0:3e282f31-027b-46b3-ba16-c228f61c963a",
+      "rdfs:label": "wrap1",
+      "sso:occurrenceQuantity": "aw0:15285140-2510-47ee-a681-0d99f673fb76"
+    },
+    {
+      "@id": "aw0:fa3e4b43-9e3e-4217-8bdf-db4e362b4933",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "rep:topologyToGeometryModelAssociation",
+      "rep:transformationOperator": [
+        "aw0:30f62f2a-da42-41c4-8128-28f5c07f130e",
+        "aw0:c79c1303-8b4c-4b78-8f12-c87342242b06"
+      ]
+    },
+    {
+      "@id": "aw0:a6f487f1-135f-4b41-b26b-d42aea256e9f",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "rep:geometryToTopologyItemAssociation"
+    },
+    {
+      "@id": "aw0:f4ea5e56-2466-4355-a1b9-c90330b7404b",
+      "@type": "rep:Path",
+      "rdfs:label": "S3-S5",
+      "rep:edgeList": [
+        "aw0:2e466298-6577-4144-9f91-add524d87dcd",
+        "aw0:9c665574-17db-45df-a439-87415589c290"
+      ],
+      "rep:geometryToTopologyItemAssociation": {
+        "@id": "aw0:610d0c3c-4d69-4291-8c82-0a0d02b56ffa",
+        "specificProperty": "aw0:5514f4ff-fdc4-4ab8-bfb5-bb411a9f5593"
+      }
+    },
+    {
+      "@id": "aw0:0fa455af-de6a-4607-a577-ed0654a1e974",
+      "@type": "rep:GeometricRepresentationContext",
+      "rep:coordinateSpaceDimension": 2,
+      "sso:id": "/NULL"
+    },
+    {
+      "@id": "aw0:2cf868f4-0c1a-4b0c-bb54-4a6ebbe950fc",
+      "@type": "sso:OccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:1c7793fa-5e43-44d0-a6c3-1d025973839d",
+      "@type": "sso:WireOccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:23afe99d-02a8-4e0f-85bb-f8ac72819c28",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "rep:geometryToTopologyModelAssociation",
+      "rep:transformationOperator": "aw0:802114cd-b515-4647-8348-40dead36ec14"
+    },
+    {
+      "@id": "aw0:5f0c7554-dd26-4370-b06f-8572a262f97e",
+      "@type": [
+        "sso:ApplicationDomain_electrical",
+        "sso:LifeCycleStage_design",
+        "sso:PartDesign"
+      ],
+      "lci:hasArrangedPart": [
+        "aw0:51ef72f9-df61-4d48-8177-ae8646cf4f99",
+        "aw0:54cdea3e-a831-4cd7-89b9-c9ce9d0acae6",
+        "aw0:69f013b8-bca1-4d9d-aec0-d627e14af5d7",
+        "aw0:aa98ae3f-4b43-4db8-996e-1b1ef4ee4c5a",
+        "aw0:abe41235-f4be-46d5-91be-7901a173e5f8",
+        "aw0:d99d616d-26a0-4e76-ad32-2b05783699a6"
+      ],
+      "rdfs:label": "",
+      "sso:viewId": "/NULL"
+    },
+    {
+      "@id": "aw0:3e041160-7c3d-4a0e-acb4-a2b8b2383189",
+      "@type": "rep:BoundedCurveWithLength",
+      "rep:lengthValue": 2
+    },
+    {
+      "@id": "aw0:a2f4a2ea-9286-4a09-921f-2e324a1afc38",
+      "@type": [
+        "sso:Part",
+        "sso:PartCategory_assembly"
+      ],
+      "rdfs:label": "Aircraft99x",
+      "sso:hasPartVersion": "aw0:419483f2-b66b-43f2-b9d8-5cfcb98ed2f0",
+      "sso:id": "Aircraft99x"
+    },
+    {
+      "@id": "aw0:aeaefec3-1356-4d8f-b0cc-def3ffaa241e",
+      "@type": "sso:WireOccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:c8f894e0-43b8-4ac8-8f21-5a619ed7d6b7",
+      "@type": [
+        "sso:InterfaceOrJoinTerminal_interface_terminal",
+        "sso:PartTerminal",
+        "sso:TerminalJointType_socket_terminal"
+      ],
+      "rdfs:label": "Interface4"
+    },
+    {
+      "@id": "aw0:5dc4c1af-adc4-4477-8713-f83c29f1e034",
+      "@type": [
+        "sso:AssemblyJointType_crimped_connection",
+        "sso:AssemblyShapeJoint"
+      ],
+      "sso:assemblyShapeJointItemRelationship": [
+        "aw0:87294100-2bf2-46a4-9b5b-9cbcef0e8084",
+        "aw0:c1a93d98-7e75-4c2f-ab7b-c3db801cb2ca"
+      ]
+    },
+    {
+      "@id": "aw0:ad4cd913-168d-41a3-b350-429b97eb358c",
+      "@type": "sso:CrossSectionalAlternativePartShapeElement"
+    },
+    {
+      "@id": "aw0:29a63ca8-d5f7-49fd-a154-4d3891eadde0",
+      "@type": "sso:QuantifiedOccurrence",
+      "lci:hasArrangedPart": [
+        "aw0:0ccfcb52-0657-4ba5-a624-bdf6c8159df5",
+        "aw0:613ca49a-e5f2-4e36-a020-c0e422b39ce9",
+        "aw0:9902d5a7-bfd6-47be-a3c0-57e0fb2f566b"
+      ],
+      "lci:isDefinedBy": "aw0:04880b7f-7eec-4997-bfa9-0e87d478c2de",
+      "rdfs:label": "braid1",
+      "sso:occurrenceQuantity": "aw0:445e6e4b-aef7-4d4c-9e4c-e2549ff74270"
+    },
+    {
+      "@id": "aw0:3d6f736c-2321-473f-8e00-366b33297f21",
+      "@type": "sso:PartVersion",
+      "sso:hasProductDefinition": "aw0:04880b7f-7eec-4997-bfa9-0e87d478c2de",
+      "sso:versionId": "/NULL"
+    },
+    {
+      "@id": "aw0:6837d199-f57c-45fc-98eb-7cd8ba13d6a3",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:64cc9f77-bb1f-46bc-8228-c8f319cce6be"
+    },
+    {
+      "@id": "aw0:eda3cbd5-79bd-49dd-9d04-50c5f40bc537",
+      "@type": "sso:HarnessNode",
+      "sso:representedGeometry": "aw0:f8894dc7-add3-46fb-95a6-c57e210ecaef"
+    },
+    {
+      "@id": "aw0:2e5db794-0279-4d14-b24a-58924534aaf7",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:e060864c-fe42-45f7-8d59-5b9170f7bcbc"
+    },
+    {
+      "@id": "aw0:c8c36848-9671-4287-8791-ddc02f60a4e1",
+      "@type": "sso:CrossSectionalOccurrenceShapeElement",
+      "lci:isDefinedBy": "aw0:49077055-7a4d-4590-9bd4-24ebacae703b"
+    },
+    {
+      "@id": "aw0:8b977a79-cd00-46d6-994c-87b808b49c4e",
+      "@type": "sso:PartVersion",
+      "sso:hasProductDefinition": "aw0:2f08bfa1-2ee7-4f0f-89dc-0418d9d9f679",
+      "sso:versionId": "/NULL"
+    },
+    {
+      "@id": "aw0:525b8e5c-4b22-4751-8737-8060fca2e32d",
+      "@type": "sso:SingleOccurrence",
+      "lci:hasArrangedPart": [
+        "aw0:448113cd-0942-45e5-b109-c0199161e30f",
+        "aw0:6837d199-f57c-45fc-98eb-7cd8ba13d6a3",
+        "aw0:e387f249-e97f-4fc8-8a5a-8c0dbb35bdac",
+        "aw0:e56e1945-cd27-4678-977b-f74f5aedbac8"
+      ],
+      "lci:isDefinedBy": "aw0:2d00bd5b-becb-468d-8e12-2d4e378f3990",
+      "rdfs:label": "5"
+    },
+    {
+      "@id": "aw0:ea72b56b-68e1-4bc8-889f-33afd6faf756",
+      "@type": "rep:SubEdge",
+      "rdfs:label": "S3-a",
+      "rep:edgeEnd": "aw0:e0fe57d9-fefe-4e34-a125-9a16ee407946",
+      "rep:edgeStart": "aw0:ec372cec-18c9-48b7-8462-139b18098369",
+      "rep:parentEdge": "aw0:9f0fe65f-4e49-42bc-8451-b2fd094fd058"
+    },
+    {
+      "@id": "aw0:325af98a-734d-446d-8a2c-750a35d5bca8",
+      "@type": "sso:WireOccurrence",
+      "lci:hasArrangedPart": [
+        "aw0:1defd8a2-5c5a-4449-8a9b-cbb411a07127",
+        "aw0:47f499aa-a2e9-4aeb-aa10-64177d19332b",
+        "aw0:aeaefec3-1356-4d8f-b0cc-def3ffaa241e",
+        "aw0:fd78e13a-2f75-41f1-9fcc-cc7d9e9824a6"
+      ],
+      "lci:isDefinedBy": "aw0:eea75a4d-fe13-4e97-8514-0b7e2df63dfb",
+      "rdfs:label": "wire1",
+      "sso:occurrenceQuantity": "aw0:7f470042-eddf-4004-a6c5-7964a36221e2"
+    },
+    {
+      "@id": "aw0:e387f249-e97f-4fc8-8a5a-8c0dbb35bdac",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:0f4417d1-5fa4-4f7d-ab22-9bb48ea97748"
+    },
+    {
+      "@id": "aw0:556825d7-6b84-4fc6-b89b-d839b3f2fb2a",
+      "@type": "sso:CrossSectionalOccurrenceShapeElement",
+      "lci:isDefinedBy": "aw0:7dc42aa9-a841-406f-825b-04e1faf4a06a"
+    },
+    {
+      "@id": "aw0:f6b19603-12c9-42d2-9735-02f706f083c0",
+      "@type": "sso:PartConnectivityDefinition",
+      "lci:isDefinedBy": [
+        "aw0:75d3dda6-127b-4a66-9930-dc043e02ca1f",
+        "aw0:d75608cc-1876-47f9-ba6a-c9a32304e23d"
+      ]
+    },
+    {
+      "@id": "aw0:852fd18b-775d-4048-a03d-7f51ae289e54",
+      "@type": [
+        "sso:Part",
+        "sso:PartCategory_cable",
+        "sso:PartCategory_raw_material_by_length"
+      ],
+      "rdfs:label": "Speaker wire",
+      "sso:hasPartVersion": "aw0:11d65007-ae70-4ef7-a5f4-f745b2a47028",
+      "sso:id": "16 AWG"
+    },
+    {
+      "@id": "aw0:5043ac26-3faa-4235-b4e7-6536a4c65c2d",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:dbba7fb6-974b-4b8d-a4fb-ea3297b837a7"
+    },
+    {
+      "@id": "aw0:19a1670a-8ae5-48e0-8b3b-106db6fe15be",
+      "@type": "sso:HarnessSegment",
+      "sso:representedGeometry": "aw0:73bf2b5f-8802-4a4b-ac7c-8d990e3cc067"
+    },
+    {
+      "@id": "aw0:cb9b1046-0098-4367-bd42-b7ee13a2450f",
+      "@type": "sso:WireOccurrenceIdentification",
+      "lci:isDefinedBy": "aw0:45d3453e-fb1d-43c1-9d37-7eba0814051c"
+    },
+    {
+      "@id": "aw0:26838695-8391-45f7-a646-e598019ade50",
+      "@type": "sso:PartConnectivityDefinition",
+      "lci:isDefinedBy": [
+        "aw0:ae904951-792e-487a-9026-82d49f5406d6",
+        "aw0:b0658328-2eef-48d1-a458-7183d4e8e44c"
+      ]
+    },
+    {
+      "@id": "aw0:535c9d35-7ef7-45a6-81ee-5da49c118153",
+      "@type": "sso:OccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:88f5ebb8-5ac5-444e-9ebc-e6ad12778e99",
+      "@type": [
+        "sso:InterfaceOrJoinTerminal_join_terminal",
+        "sso:PartTerminal",
+        "sso:TerminalJointType_solder_terminal"
+      ],
+      "rdfs:label": "Join1"
+    },
+    {
+      "@id": "aw0:a7620a97-9c11-4b40-811d-e97a5cf1f952",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:fd608668-e09a-4b2a-9625-d216e0bb1a19"
+    },
+    {
+      "@id": "aw0:182e45ea-390e-459b-bbb8-400c2accf420",
+      "@type": "sso:PartTerminal",
+      "rdfs:label": "PLUS"
+    },
+    {
+      "@id": "aw0:6b05a4b2-6ae4-413c-a8f7-732c19dcc8f5",
+      "@type": "sso:PartVersion",
+      "sso:hasProductDefinition": "aw0:3323c150-af2d-4fad-9921-9a945af586ac",
+      "sso:versionId": "/NULL"
+    },
+    {
+      "@id": "aw0:fc8b9880-5366-407c-892e-70bc78f4b18b",
+      "@type": "sso:OccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:c880864c-a655-4f9a-8ed0-3fa004ddcc9f",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:0f4417d1-5fa4-4f7d-ab22-9bb48ea97748"
+    },
+    {
+      "@id": "aw0:77986dd8-2d2e-4de6-ac2a-70f11197a5b3",
+      "@type": "rep:Axis2Placement3D",
+      "rep:location": "aw0_:3d359282-dfaa-4432-a7ec-1e7e4537f014"
+    },
+    {
+      "@id": "aw0:45f0fbc4-5ff2-4fcf-a822-03e9ddcf8d8e",
+      "@type": "rep:OrientedEdge",
+      "rep:edgeElement": "aw0:bed2acdf-ac12-4d3b-8651-5b9b0dbe3688",
+      "rep:orientation": true
+    },
+    {
+      "@id": "aw0:e56e1945-cd27-4678-977b-f74f5aedbac8",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:f9c7c756-b20d-45bb-8c88-2591d05a5d7d"
+    },
+    {
+      "@id": "aw0:d3ab64a3-950b-40f2-882e-409c89e96199",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:61dfe7ba-0f0e-4367-bf51-f71bd36801c8"
+    },
+    {
+      "@id": "aw0:c1c59179-50a0-4adf-a80b-1eda08b5d59c",
+      "@type": "rep:VertexPoint",
+      "rdfs:label": "N5",
+      "rep:vertexGeometry": "aw0:82c6575d-958b-425b-b24f-b3c84b963b06"
+    },
+    {
+      "@id": "aw0:c388f185-ea4a-4535-b57b-c0c1f01f4a17",
+      "@type": "sso:ProductConfiguration",
+      "rdfs:label": "H1 harness"
+    },
+    {
+      "@id": "aw0:f6e2235a-c3c7-4270-abf6-aba08ff7f0ef",
+      "@type": [
+        "sso:AssemblyJointType_crimped_connection",
+        "sso:AssemblyShapeJoint"
+      ],
+      "sso:assemblyShapeJointItemRelationship": [
+        "aw0:261018e7-15d5-445b-9902-171af1382daf",
+        "aw0:43f4d495-c8ef-4d73-9184-6b5b4bf478ad"
+      ]
+    },
+    {
+      "@id": "aw0:d535d920-57eb-4eec-8bb6-e06da302bff5",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:d75608cc-1876-47f9-ba6a-c9a32304e23d"
+    },
+    {
+      "@id": "aw0:09172cea-e425-4d93-8746-626103b2b5ee",
+      "@type": "sso:SpecifiedOccurrence",
+      "lci:hasArrangedPart": [
+        "aw0:aac988c7-7056-4daa-adff-ef7dca2aa6eb",
+        "aw0:ae734829-d9a1-46cd-a724-6bd9b99f22ee"
+      ],
+      "lci:isDefinedBy": "aw0:f43cb378-1bd7-488a-9d35-585b5b92ed79",
+      "rdfs:label": "C-Assy/power4",
+      "sso:hasHigherUsage": "aw0:9c3adc28-7969-4c6b-857a-06b170a43278"
+    },
+    {
+      "@id": "aw0:0d7583c3-a245-4178-94ce-7dfe3f63fe98",
+      "@type": "sso:PartVersion",
+      "sso:hasProductDefinition": "aw0:2b8004a0-a342-4424-8caf-e1176b321dfd",
+      "sso:versionId": "/NULL"
+    },
+    {
+      "@id": "aw0:802114cd-b515-4647-8348-40dead36ec14",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "rep:geometryToTopologyItemAssociation"
+    },
+    {
+      "@id": "aw0:9a3c359a-29c1-477d-8107-c799a9669f4a",
+      "@type": "rep:EdgeBoundedCurveWithLength",
+      "rdfs:label": "S5",
+      "rep:edgeEnd": "aw0:cd99570c-2a0a-4e40-ac0a-5e54d1011432",
+      "rep:edgeGeometry": "aw0:3f5eba64-d5c3-4d1d-9814-22aca8979d09",
+      "rep:edgeStart": "aw0:e3554ed5-2afb-4a34-b02c-b9188240b0e9",
+      "rep:sameSense": true
+    },
+    {
+      "@id": "aw0:2543ad2f-3edf-48a8-bc90-33957790e07e",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "sso:nextAssemblyOccurrenceUsage",
+      "rep:contextDependentShapeRepresentation": "aw0:870c0951-7e5f-41b7-ae37-bc463dfd2bea"
+    },
+    {
+      "@id": "aw0:aac988c7-7056-4daa-adff-ef7dca2aa6eb",
+      "@type": "sso:OccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:85dd354e-60ce-4c70-ae4a-b207eb60cb01",
+      "@type": "sso:ShapeElement",
+      "lci:isDefinedBy": "aw0:aa98ae3f-4b43-4db8-996e-1b1ef4ee4c5a"
+    },
+    {
+      "@id": "aw0:51ef72f9-df61-4d48-8177-ae8646cf4f99",
+      "@type": [
+        "sso:InterfaceOrJoinTerminal_join_terminal",
+        "sso:PartTerminal",
+        "sso:TerminalJointType_screw_terminal"
+      ],
+      "rdfs:label": "GND1"
+    },
+    {
+      "@id": "aw0:45ad2eef-a562-451a-9ffd-088e93683fc9",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "sso:nextAssemblyOccurrenceUsage",
+      "rep:contextDependentShapeRepresentation": "aw0:23afe99d-02a8-4e0f-85bb-f8ac72819c28"
+    },
+    {
+      "@id": "aw0:0a36e10a-82ce-459b-87f3-20cdda17cdf3",
+      "@type": "sso:CableOccurrenceTerminalLocationGroup",
+      "lci:hasArrangedPart": [
+        "aw0:254e03fd-d7f3-4034-bad0-e0a70eb4939c",
+        "aw0:7d883707-a566-4c68-8d08-dd8b6f2719fa"
+      ]
+    },
+    {
+      "@id": "aw0:ae904951-792e-487a-9026-82d49f5406d6",
+      "@type": [
+        "sso:InterfaceOrJoinTerminal_interface_terminal",
+        "sso:PartTerminal",
+        "sso:TerminalJointType_screw_terminal"
+      ],
+      "rdfs:label": "External",
+      "sso:representedGeometry": "aw0:fa15406b-37b5-4f5e-bf38-ef7c5ca94000"
+    },
+    {
+      "@id": "aw0:3024aa72-fcfe-41f0-afd4-f35dfc7ac694",
+      "@type": [
+        "sso:InterfaceOrJoinTerminal_interface_terminal",
+        "sso:PartTerminal",
+        "sso:TerminalJointType_socket_terminal"
+      ],
+      "rdfs:label": "Interface6"
+    },
+    {
+      "@id": "aw0:354f20df-6dfa-4e3a-860f-ef1aa2a04154",
+      "@type": "sso:SpecifiedOccurrence",
+      "lci:hasArrangedPart": "aw0:fc8b9880-5366-407c-892e-70bc78f4b18b",
+      "lci:isDefinedBy": "aw0:491c97bd-1af1-4d97-adbf-7ca2136234b7",
+      "rdfs:label": "h1.1/lug1",
+      "sso:hasHigherUsage": "aw0:434fc6e2-f784-4683-b110-121d70944205"
+    },
+    {
+      "@id": "aw0:debdbf7f-952f-43b8-92ac-88bb06a9d2de",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "sso:nextAssemblyOccurrenceUsage",
+      "rep:contextDependentShapeRepresentation": "aw0:9e233c7f-73dc-468d-916e-378de8f5d543"
+    },
+    {
+      "@id": "aw0:2d00bd5b-becb-468d-8e12-2d4e378f3990",
+      "@type": [
+        "sso:ApplicationDomain_electrical",
+        "sso:LifeCycleStage_design",
+        "sso:PartDesign"
+      ],
+      "lci:hasArrangedPart": [
+        "aw0:0f4417d1-5fa4-4f7d-ab22-9bb48ea97748",
+        "aw0:64cc9f77-bb1f-46bc-8228-c8f319cce6be",
+        "aw0:7994807a-dd5d-40bc-a64b-893b6fe7fe49",
+        "aw0:b6a62262-fc12-4dd8-a5bd-a1e8f69a36bc",
+        "aw0:f9c7c756-b20d-45bb-8c88-2591d05a5d7d",
+        "aw0:fa976b79-201a-4acf-b3bc-f4fefb022dee"
+      ],
+      "rdfs:label": "",
+      "sso:viewId": "/NULL"
+    },
+    {
+      "@id": "aw0:491c97bd-1af1-4d97-adbf-7ca2136234b7",
+      "@type": "sso:SingleOccurrence",
+      "lci:hasArrangedPart": [
+        "aw0:eaef88e5-ce22-4519-827e-348b43d7d01e",
+        "aw0:ec94b9c1-681e-4e98-ae7b-0b47ef0dfd1a"
+      ],
+      "lci:isDefinedBy": "aw0:431b0ff2-9500-4160-871d-b4b64d278863",
+      "rdfs:label": "lug1"
+    },
+    {
+      "@id": "aw0:aceb32d3-251c-4e3e-bda5-c6f3200417e1",
+      "@type": "rep:BoundedCurveWithLength",
+      "rep:lengthValue": 1.7
+    },
+    {
+      "@id": "aw0:448113cd-0942-45e5-b109-c0199161e30f",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:b6a62262-fc12-4dd8-a5bd-a1e8f69a36bc"
+    },
+    {
+      "@id": "aw0:61dfe7ba-0f0e-4367-bf51-f71bd36801c8",
+      "@type": [
+        "sso:InterfaceOrJoinTerminal_join_terminal",
+        "sso:PartTerminal",
+        "sso:TerminalJointType_crimp_terminal"
+      ],
+      "rdfs:label": "end a"
+    },
+    {
+      "@id": "aw0:299d2809-afba-45fc-8547-c61d0da27b0a",
+      "@type": [
+        "sso:InterfaceOrJoinTerminal_interface_terminal",
+        "sso:PartTerminal",
+        "sso:TerminalJointType_socket_terminal"
+      ],
+      "rdfs:label": "Interface3"
+    },
+    {
+      "@id": "aw0:5e03b340-b889-4b66-aa8d-e4c73c06aab0",
+      "@type": "sso:WireOccurrenceIdentification",
+      "lci:isDefinedBy": "aw0:250b1624-bfcd-447a-aa38-49faa0751be9"
+    },
+    {
+      "@id": "aw0:aebdf9b9-e008-467a-b4f3-4aa1a1e1d70e",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "sso:nextAssemblyOccurrenceUsage"
+    },
+    {
+      "@id": "aw0:b374056e-5834-45cb-bf1a-aa630fded8c7",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:69642d88-5eda-4bfe-9c22-7fd8a2bdcd4c"
+    },
+    {
+      "@id": "aw0:10c0e1a4-b3cf-4502-98ee-adbd881767a8",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:96d4f5a1-c563-499e-addb-b341caf9f9fd"
+    },
+    {
+      "@id": "aw0:d9b19dde-72c3-40b5-8fb7-a1c883772ee8",
+      "@type": "rep:SubEdge",
+      "rdfs:label": "S2-2",
+      "rep:edgeEnd": "aw0:97e33a8b-2874-48cd-9828-6c1039f2c4c8",
+      "rep:edgeStart": "aw0:634e90fc-6124-4e2c-a5c6-cb476eab504b",
+      "rep:parentEdge": "aw0:9f7d9e6f-82a9-4ef9-974a-a17b0fc13ab2"
+    },
+    {
+      "@id": "aw0:6cb847c7-57ec-4894-89ad-0259aa4496b0",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:88f5ebb8-5ac5-444e-9ebc-e6ad12778e99"
+    },
+    {
+      "@id": "aw0:881d764c-7172-4420-ab40-f5cc9e408fdf",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "rep:geometryToTopologyItemAssociation"
+    },
+    {
+      "@id": "aw0:5af83afb-a6e4-4509-87be-85476fb0a2ca",
+      "@type": "sso:OccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:396be7c3-128c-4cc1-a702-4b56db0b5919",
+      "@type": "rep:PointOnCurve",
+      "rep:basisCurve": "aw0:aceb32d3-251c-4e3e-bda5-c6f3200417e1",
+      "rep:pointParameter": 0.4
+    },
+    {
+      "@id": "aw0:82c6575d-958b-425b-b24f-b3c84b963b06",
+      "@type": "rep:Point"
+    },
+    {
+      "@id": "aw0:0d2e01a6-03c0-4a99-b0e6-73a4f1b99640",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "rep:geometryToTopologyItemAssociation"
+    },
+    {
+      "@id": "aw0:216dc77c-8e6b-4c8c-b069-1afc4cc4218c",
+      "@type": "rep:VertexPoint",
+      "rdfs:label": "X7",
+      "rep:vertexGeometry": "aw0:4bda2099-f464-42f6-937d-c4472f800145"
+    },
+    {
+      "@id": "aw0:4a587b23-340e-4ff2-92b4-9b487d88cfa9",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:3f1fec88-e1d9-46fb-bc73-8dca4f0dea3a"
+    },
+    {
+      "@id": "aw0:52933b98-9cae-43f9-884c-a9c284fe93d0",
+      "@type": "sso:SpecifiedOccurrence",
+      "lci:hasArrangedPart": "aw0:9285b7f9-4bf5-4765-bf54-1d00953364ac",
+      "lci:isDefinedBy": "aw0:7f62e268-aa6e-40cb-8cc1-5e961c5296fb",
+      "rdfs:label": "h1.1/wire2",
+      "sso:hasHigherUsage": "aw0:434fc6e2-f784-4683-b110-121d70944205"
+    },
+    {
+      "@id": "aw0:b28a0955-ea9e-46ed-a4c4-5c008dbcb477",
+      "@type": "rep:SubEdge",
+      "rdfs:label": "S3-1",
+      "rep:edgeEnd": "aw0:e0fe57d9-fefe-4e34-a125-9a16ee407946",
+      "rep:edgeStart": "aw0:8d4761de-e3d1-4831-9c1d-9af620d2a328",
+      "rep:parentEdge": "aw0:9f0fe65f-4e49-42bc-8451-b2fd094fd058"
+    },
+    {
+      "@id": "aw0:639b0c88-2469-47c9-b2c8-e13872a30e00",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "sso:id",
+      "sso:idOwner": "aw0:fc9b62e7-446c-4da4-b801-e0fd3b047712"
+    },
+    {
+      "@id": "aw0:53fc12b0-5404-45c9-8c71-42fe6d4419db",
+      "@type": "sso:PartConnectivityDefinition",
+      "lci:isDefinedBy": [
+        "aw0:a6eb5c94-a24b-41cf-b53e-b1f84e722cdd",
+        "aw0:b2190c94-d1ee-40b9-b323-337173591369"
+      ]
+    },
+    {
+      "@id": "aw0:7800ef28-9be3-4041-af17-16ae2581843d",
+      "@type": "sso:PartConnectivityDefinition",
+      "lci:isDefinedBy": [
+        "aw0:88f5ebb8-5ac5-444e-9ebc-e6ad12778e99",
+        "aw0:96d4f5a1-c563-499e-addb-b341caf9f9fd"
+      ]
+    },
+    {
+      "@id": "aw0:88ce0f47-63f6-44d9-9b2e-a5c30bcf9f2b",
+      "@type": [
+        "sso:Part",
+        "sso:PartCategory_assembly",
+        "sso:PartCategory_connector"
+      ],
+      "rdfs:label": "ARINC 600 set",
+      "sso:hasPartVersion": "aw0:8b977a79-cd00-46d6-994c-87b808b49c4e",
+      "sso:id": {
+        "@value": "SB6 4 1 M G 05 W2 P E1 01 AA",
+        "specificProperty": "aw0:639b0c88-2469-47c9-b2c8-e13872a30e00"
+      }
+    },
+    {
+      "@id": "aw0:bcdf0bd0-9470-4ff0-bfb7-4ea34c50d10a",
+      "@type": "sso:CableOccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:e9859edc-d872-4ded-ad80-1fe57fbb9058",
+      "@type": "sso:WireOccurrenceIdentification",
+      "lci:isDefinedBy": "aw0:2ae4d8c5-267e-4f38-b746-ca86be6af20b"
+    },
+    {
+      "@id": "aw0:2eb7aeaa-a8af-41f7-8093-2f87023762ad",
+      "@type": "qau:Length",
+      "qau:metre": 4.25
+    },
+    {
+      "@id": "aw0:c2d979ac-a15a-4456-834f-d2f07e59fbc0",
+      "@type": [
+        "sso:ApplicationDomain_electrical",
+        "sso:LifeCycleStage_design",
+        "sso:PartDesign"
+      ],
+      "rdfs:label": "",
+      "sso:viewId": "/NULL"
+    },
+    {
+      "@id": "aw0:2d1021a9-9b14-4ef2-83c2-3bef92136091",
+      "@type": "sso:SpecifiedOccurrence",
+      "lci:hasArrangedPart": [
+        "aw0:05472841-67f4-4b92-ad52-0b0492c92e6f",
+        "aw0:2fe94d37-ed94-44c1-8b85-b5206c8fcb8d",
+        "aw0:5d6ac677-e868-4a7a-8504-3601a3563e0a",
+        "aw0:de465fe3-0359-4a9a-bbdb-c39de46ae9b3"
+      ],
+      "lci:isDefinedBy": "aw0:f5b32158-3db5-409f-b02c-94fa41752ae7",
+      "rdfs:label": "arinc1/C-Assy/coax2",
+      "sso:hasHigherUsage": "aw0:961b612c-1d98-42fc-9a96-0590c5ce3682"
+    },
+    {
+      "@id": "aw0:97e33a8b-2874-48cd-9828-6c1039f2c4c8",
+      "@type": "rep:VertexPoint",
+      "rdfs:label": "X2",
+      "rep:vertexGeometry": "aw0:cd790696-1042-4204-a732-0696a7a7881c"
+    },
+    {
+      "@id": "aw0:9b157964-b9af-4d4a-bd0d-b4f956b2b3b0",
+      "@type": "sso:CrossSectionalGroupShapeElementWithTubularCover"
+    },
+    {
+      "@id": "aw0:dc421170-122f-4ad1-b759-a9e9d07d629e",
+      "@type": "sso:WireOccurrence",
+      "lci:hasArrangedPart": [
+        "aw0:01341a22-26ea-446d-bb70-5110436529c6",
+        "aw0:0e454854-be2d-4023-b192-b14d5277a732",
+        "aw0:e9859edc-d872-4ded-ad80-1fe57fbb9058"
+      ],
+      "lci:isDefinedBy": "aw0:eea75a4d-fe13-4e97-8514-0b7e2df63dfb",
+      "rdfs:label": "wire4",
+      "sso:occurrenceQuantity": "aw0:3f7db2fc-09c2-4e20-b0c5-3a257401a0f1"
+    },
+    {
+      "@id": "aw0:7f91bbda-e4f9-49c3-a0d2-974e0fb9fddc",
+      "@type": "sso:PartVersion",
+      "sso:hasProductDefinition": "aw0:f1cbbbc5-ead9-4999-b90f-74ce8ff4b75f",
+      "sso:versionId": "/NULL"
+    },
+    {
+      "@id": "aw0:ddb25749-2f60-46b1-aee3-26508862f7d8",
+      "@type": "sso:CableOccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:f43cb378-1bd7-488a-9d35-585b5b92ed79",
+      "@type": "sso:SingleOccurrence",
+      "lci:hasArrangedPart": [
+        "aw0:0eef3e56-e58b-451c-ae53-2411eef57591",
+        "aw0:b374056e-5834-45cb-bf1a-aa630fded8c7"
+      ],
+      "lci:isDefinedBy": "aw0:602d1f20-b9b0-4b95-b275-64667d208ffe",
+      "rdfs:label": "4"
+    },
+    {
+      "@id": "aw0:ecea60e9-afd3-414b-901d-31fa2e47b9fa",
+      "@type": [
+        "sso:InterfaceOrJoinTerminal_join_terminal",
+        "sso:PartTerminal",
+        "sso:TerminalJointType_crimp_terminal"
+      ],
+      "rdfs:label": "Join term"
+    },
+    {
+      "@id": "aw0:51292921-0517-415d-b2c4-6217c90b0f1f",
+      "@type": "rep:GeometricRepresentationContext",
+      "rep:coordinateSpaceDimension": 3,
+      "sso:id": "/NULL"
+    },
+    {
+      "@id": "aw0:6965ba4c-2904-4fd1-8a29-85ef60af9e14",
+      "@type": "sso:HarnessNode",
+      "sso:representedGeometry": "aw0:3cc9b104-c9ed-458d-93ae-0dcf5f83b873"
+    },
+    {
+      "@id": "aw0:1defd8a2-5c5a-4449-8a9b-cbb411a07127",
+      "@type": "sso:WireOccurrenceIdentification",
+      "lci:isDefinedBy": "aw0:2ae4d8c5-267e-4f38-b746-ca86be6af20b"
+    },
+    {
+      "@id": "aw0:f5b32158-3db5-409f-b02c-94fa41752ae7",
+      "@type": "sso:SpecifiedOccurrence",
+      "lci:hasArrangedPart": [
+        "aw0:04450583-ba5e-4837-a5d0-ac56864f437e",
+        "aw0:3fbb356e-42ee-437b-9fbe-be91f38b2241",
+        "aw0:98a70bbe-04af-4f88-aeae-b9b4e9dd6b6b",
+        "aw0:bd81bdce-30f6-49ed-ad71-f5c13556f78a"
+      ],
+      "lci:isDefinedBy": "aw0:525b8e5c-4b22-4751-8737-8060fca2e32d",
+      "rdfs:label": "C-Assy/coax2",
+      "sso:hasHigherUsage": "aw0:9c3adc28-7969-4c6b-857a-06b170a43278"
+    },
+    {
+      "@id": "aw0:987116fb-e2f6-4e28-80fc-022a75974aec",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:ae904951-792e-487a-9026-82d49f5406d6"
+    },
+    {
+      "@id": "aw0:f1dd045e-f7d5-4e0a-a31a-7487d6e0140e",
+      "@type": "qau:Length",
+      "qau:metre": 2.5
+    },
+    {
+      "@id": "aw0:08d56b63-0ff9-4823-ab26-585af4d2a3f2",
+      "@type": [
+        "sso:AssemblyJointType_crimped_connection",
+        "sso:AssemblyShapeJoint"
+      ],
+      "sso:assemblyShapeJointItemRelationship": [
+        "aw0:0bc94ee3-d4ec-41ea-8cff-89a681c84553",
+        "aw0:47f499aa-a2e9-4aeb-aa10-64177d19332b"
+      ]
+    },
+    {
+      "@id": "aw0:dbba7fb6-974b-4b8d-a4fb-ea3297b837a7",
+      "@type": [
+        "sso:InterfaceOrJoinTerminal_join_terminal",
+        "sso:PartTerminal",
+        "sso:TerminalJointType_solder_terminal"
+      ],
+      "rdfs:label": "Join4"
+    },
+    {
+      "@id": "aw0:a6a1b050-c7cd-4d1f-910b-315d69f5e617",
+      "@type": "sso:HarnessNode",
+      "sso:representedGeometry": "aw0:ec372cec-18c9-48b7-8462-139b18098369"
+    },
+    {
+      "@id": "aw0:2e466298-6577-4144-9f91-add524d87dcd",
+      "@type": "rep:OrientedEdge",
+      "rep:edgeElement": "aw0:9f0fe65f-4e49-42bc-8451-b2fd094fd058",
+      "rep:orientation": false
+    },
+    {
+      "@id": "aw0:71e78e1e-9372-4f83-aab6-69386660e0ab",
+      "@type": "lci:Organization",
+      "rdfs:label": "International Electrotechnical Commission",
+      "sso:id": "IEC"
+    },
+    {
+      "@id": "aw0:781d7a38-89ce-41b1-a658-58c14ad8bc92",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "rep:geometryToTopologyModelAssociation",
+      "rep:transformationOperator": "aw0:dcbd1f9b-d221-44f4-b618-764168db7f8c"
+    },
+    {
+      "@id": "aw0:3323c150-af2d-4fad-9921-9a945af586ac",
+      "@type": [
+        "sso:ApplicationDomain_electrical",
+        "sso:LifeCycleStage_design",
+        "sso:PartDesign"
+      ],
+      "rdfs:label": "",
+      "sso:viewId": "/NULL"
+    },
+    {
+      "@id": "aw0:a6cc0fab-05be-4247-9f79-6acd8c0888ae",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "sso:nextAssemblyOccurrenceUsage"
+    },
+    {
+      "@id": "aw0:07e92d3a-ed54-4506-afcb-ed3cec9ee2f9",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "sso:nextAssemblyOccurrenceUsage"
+    },
+    {
+      "@id": "aw0:b63c58b2-81ac-4309-94e2-4fccc1a32d39",
+      "@type": "qau:Length",
+      "qau:metre": 2.1
+    },
+    {
+      "@id": "aw0:dcbd1f9b-d221-44f4-b618-764168db7f8c",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "rep:geometryToTopologyItemAssociation"
+    },
+    {
+      "@id": "aw0:17861189-ae0e-499b-8ce2-d71df0bb1e39",
+      "@type": "sso:PartVersion",
+      "sso:hasProductDefinition": "aw0:2d00bd5b-becb-468d-8e12-2d4e378f3990",
+      "sso:versionId": "/NULL"
+    },
+    {
+      "@id": "aw0:c1a93d98-7e75-4c2f-ab7b-c3db801cb2ca",
+      "@type": "sso:CableOccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:43f4d495-c8ef-4d73-9184-6b5b4bf478ad",
+      "@type": "sso:CableOccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:be9a1d19-6553-473b-b233-4ddf29b85a1f",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "rep:geometryToTopologyItemAssociation"
+    },
+    {
+      "@id": "aw0:3fbb356e-42ee-437b-9fbe-be91f38b2241",
+      "@type": "sso:OccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:9fda43c4-2ee2-44e5-8b01-5cee25bc74b1",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "rep:geometryToTopologyModelAssociation",
+      "rep:transformationOperator": "aw0:a2afdd88-82a1-4d51-a604-fc210cf8a93b"
+    },
+    {
+      "@id": "aw0:f53430ee-c141-4da6-a3ff-95eee619c905",
+      "@type": [
+        "sso:PartTransportFeature",
+        "sso:TerminalAndTransportDomainType_electrical"
+      ],
+      "rdfs:label": "shield"
+    },
+    {
+      "@id": "aw0:2456a734-e074-48bf-acfe-f628dc157166",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "rep:geometryToTopologyModelAssociation",
+      "rep:transformationOperator": "aw0:be9a1d19-6553-473b-b233-4ddf29b85a1f"
+    },
+    {
+      "@id": "aw0:45b9ef53-b6f6-4e28-bac4-128f823b11d4",
+      "@type": [
+        "sso:ApplicationDomain_electrical",
+        "sso:LifeCycleStage_design",
+        "sso:PartDesign"
+      ],
+      "lci:hasArrangedPart": [
+        "aw0:3f1fec88-e1d9-46fb-bc73-8dca4f0dea3a",
+        "aw0:61dfe7ba-0f0e-4367-bf51-f71bd36801c8",
+        "aw0:f3cbd58c-1823-4b61-8925-ba3c1d54b7d7"
+      ],
+      "rdfs:label": "",
+      "sso:viewId": "/NULL"
+    },
+    {
+      "@id": "aw0:5e05d0fa-1b90-4f71-9698-d1752b654ba8",
+      "@type": "sso:PropertyDefinition",
+      "rdfs:label": "",
+      "sso:id": "0112/2///61360_4#AAE529"
+    },
+    {
+      "@id": "aw0:7c167403-92b4-438d-8120-cad5e5bd3c78",
+      "@type": [
+        "sso:AssemblyJointType_crimped_connection",
+        "sso:AssemblyShapeJoint"
+      ],
+      "sso:assemblyShapeJointItemRelationship": [
+        "aw0:1c7793fa-5e43-44d0-a6c3-1d025973839d",
+        "aw0:4a587b23-340e-4ff2-92b4-9b487d88cfa9"
+      ]
+    },
+    {
+      "@id": "aw0:58dead20-17d8-41d4-afa5-1a1e9936c71f",
+      "@type": "sso:CableOccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:a83fcbb5-f933-4de2-9087-126d3d797c39",
+      "@type": "sso:PartVersion",
+      "sso:hasProductDefinition": "aw0:45b9ef53-b6f6-4e28-bac4-128f823b11d4",
+      "sso:versionId": "/NULL"
+    },
+    {
+      "@id": "aw0:00cd0fc9-2063-4c20-946f-76f6fee00ec4",
+      "@type": "sso:WireOccurrenceIdentification",
+      "lci:isDefinedBy": "aw0:2ae4d8c5-267e-4f38-b746-ca86be6af20b"
+    },
+    {
+      "@id": "aw0:62e5f4d6-01ba-423d-a33b-9046edda9fba",
+      "@type": [
+        "sso:InterfaceOrJoinTerminal_join_terminal",
+        "sso:PartTerminal",
+        "sso:TerminalJointType_crimp_terminal"
+      ],
+      "rdfs:label": "Join signal"
+    },
+    {
+      "@id": "aw0:395cfcf7-450e-4dda-90c1-0c13ab705530",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:51ef72f9-df61-4d48-8177-ae8646cf4f99"
+    },
+    {
+      "@id": "aw0:385fd25c-5ce3-4e5b-87e8-2e97f9099a6b",
+      "@type": "sso:OccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:33aa1d18-6dba-4e98-8b12-4b6fde5d8b53",
+      "@type": [
+        "sso:Part",
+        "sso:PartCategory_connector_insert",
+        "sso:PartCategory_discrete"
+      ],
+      "rdfs:label": "ARINC 600 shell 1 A and B dummy",
+      "sso:hasPartVersion": "aw0:6b05a4b2-6ae4-413c-a8f7-732c19dcc8f5",
+      "sso:id": {
+        "@value": "8660-31A-100-01A/AA",
+        "specificProperty": "aw0:639b0c88-2469-47c9-b2c8-e13872a30e00"
+      }
+    },
+    {
+      "@id": "aw0:a6872321-7615-4447-81ea-4599f30695e4",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "rep:itemDefinedTransformation"
+    },
+    {
+      "@id": "aw0:5ec9aec7-fb6c-4a08-8bd3-9a9dddb8d461",
+      "@type": "rep:GeometricRepresentationContext",
+      "rep:coordinateSpaceDimension": 3,
+      "sso:id": "/NULL"
+    },
+    {
+      "@id": "aw0:d6c79d08-2166-4e31-a648-0fdaf51adfd3",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "rep:geometryToTopologyItemAssociation"
+    },
+    {
+      "@id": "aw0:b64fe574-f514-46bc-af99-e3f140db7bcc",
+      "@type": [
+        "sso:AssemblyJointType_crimped_connection",
+        "sso:AssemblyShapeJoint"
+      ],
+      "sso:assemblyShapeJointItemRelationship": [
+        "aw0:1718fabb-119c-4b26-8a01-4c66ae3b4b21",
+        "aw0:835a1979-a25b-4eda-a61f-b295351adc4a"
+      ]
+    },
+    {
+      "@id": "aw0:45d3453e-fb1d-43c1-9d37-7eba0814051c",
+      "@type": "sso:ShapeElement",
+      "rdfs:label": "A",
+      "sso:colourCode": "aw0:c80d4921-28db-4bbe-b1ec-a94911bfa575"
+    },
+    {
+      "@id": "aw0:b7917025-ff08-4c56-8250-1929d13be39b",
+      "@type": "sso:CableOccurrence",
+      "lci:hasArrangedPart": [
+        "aw0:65d87d40-3e87-4b77-8471-e4aeabc6ee84",
+        "aw0:72373632-b142-43f7-9859-d5cb28118770",
+        "aw0:9df704b4-855d-43c0-89fa-e23553c14a9d",
+        "aw0:b010b14e-0ebc-460d-b82f-1e615c0b762d",
+        "aw0:e878ea37-f3e6-42c3-b21b-36d9b9be084c"
+      ],
+      "lci:isDefinedBy": "aw0:fafa0349-a5e9-4b6a-be32-c6e88821c595",
+      "rdfs:label": "cable2",
+      "sso:occurrenceQuantity": "aw0:9c427234-4eaf-4d9a-837f-c62868f27257"
+    },
+    {
+      "@id": "aw0:1718fabb-119c-4b26-8a01-4c66ae3b4b21",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:b0658328-2eef-48d1-a458-7183d4e8e44c"
+    },
+    {
+      "@id": "aw0:2b8004a0-a342-4424-8caf-e1176b321dfd",
+      "@type": [
+        "sso:ApplicationDomain_electrical",
+        "sso:AssemblyDesign",
+        "sso:LifeCycleStage_design"
+      ],
+      "rdfs:label": "",
+      "sso:nextAssemblyOccurrenceUsage": [
+        {
+          "@id": "aw0:683ec0dd-0b9d-4c84-887c-b88557f17075",
+          "specificProperty": "aw0:2b34cda6-0dd5-43e6-8d49-f37ddc4b2c16"
+        },
+        {
+          "@id": "aw0:f43cb378-1bd7-488a-9d35-585b5b92ed79",
+          "specificProperty": "aw0:3181b3fe-81bb-4fb2-bec0-370e07bb6149"
+        },
+        {
+          "@id": "aw0:24f6ead8-6edf-4446-8bfb-edf7d77548e3",
+          "specificProperty": "aw0:5c77cbed-dd4f-4158-9720-4b146a4c6621"
+        },
+        {
+          "@id": "aw0:9729e005-7290-4099-a5a2-fb1834aa80f9",
+          "specificProperty": "aw0:5f15dc3f-f4fb-45bc-9d44-cb30a1c9922a"
+        },
+        {
+          "@id": "aw0:205bcf32-0905-4963-929b-8bf0ba6a2068",
+          "specificProperty": "aw0:7c984aef-d9d3-471c-aad7-7add6748c3e3"
+        },
+        {
+          "@id": "aw0:525b8e5c-4b22-4751-8737-8060fca2e32d",
+          "specificProperty": "aw0:c71b39d5-b757-4a94-acae-2a056c8ba35c"
+        }
+      ],
+      "sso:viewId": "/NULL"
+    },
+    {
+      "@id": "aw0:158c695e-4631-4d71-8d94-899e02aa4d76",
+      "@type": [
+        "sso:Part",
+        "sso:PartCategory_assembly",
+        "sso:PartCategory_wiring_harness"
+      ],
+      "rdfs:label": "Electrical Harness example 1",
+      "sso:hasPartVersion": "aw0:7f91bbda-e4f9-49c3-a0d2-974e0fb9fddc",
+      "sso:id": "Part_H1"
+    },
+    {
+      "@id": "aw0:908ffa63-6f24-4ff2-aa05-feb8ca8d706d",
+      "@type": "sso:WireOccurrenceIdentification",
+      "lci:isDefinedBy": "aw0:4d4eca5e-2125-495d-a2c6-7563531e2f97"
+    },
+    {
+      "@id": "aw0:6015524b-d30c-4856-8efd-c262fd290f82",
+      "@type": "sso:CrossSectionalPartShapeElement",
+      "rdfs:label": "Inner surface"
+    },
+    {
+      "@id": "aw0:e3554ed5-2afb-4a34-b02c-b9188240b0e9",
+      "@type": "rep:VertexPoint",
+      "rdfs:label": "N4",
+      "rep:vertexGeometry": "aw0:5b232f65-d46d-4a70-89d9-3320c026542b"
+    },
+    {
+      "@id": "aw0:8b59f004-9866-4e01-b1d4-beeb0302c797",
+      "@type": "qau:Length",
+      "qau:metre": 1.5
+    },
+    {
+      "@id": "aw0:a88eb54e-7cc1-4834-85b6-252d98d3eaab",
+      "@type": [
+        "sso:Part",
+        "sso:PartCategory_discrete",
+        "sso:PartCategory_electrified_backshell"
+      ],
+      "rdfs:label": "Backshell EMI connector",
+      "sso:hasPartVersion": "aw0:c07bf575-c09c-4a13-a369-0e0a845bc1dd",
+      "sso:id": "8660-140"
+    },
+    {
+      "@id": "aw0:9f7d9e6f-82a9-4ef9-974a-a17b0fc13ab2",
+      "@type": "rep:EdgeBoundedCurveWithLength",
+      "rdfs:label": "S2",
+      "rep:edgeEnd": "aw0:e0fe57d9-fefe-4e34-a125-9a16ee407946",
+      "rep:edgeGeometry": "aw0:aceb32d3-251c-4e3e-bda5-c6f3200417e1",
+      "rep:edgeStart": "aw0:c3b4c6f9-2013-4505-b025-f92cac83b9f6",
+      "rep:geometryToTopologyItemAssociation": {
+        "@id": "aw0:610d0c3c-4d69-4291-8c82-0a0d02b56ffa",
+        "specificProperty": "aw0:4173319c-d2e6-4102-b5f1-e2702db50b19"
+      },
+      "rep:sameSense": true
+    },
+    {
+      "@id": "aw0:c71b39d5-b757-4a94-acae-2a056c8ba35c",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "sso:nextAssemblyOccurrenceUsage"
+    },
+    {
+      "@id": "aw0:8d4761de-e3d1-4831-9c1d-9af620d2a328",
+      "@type": "rep:VertexPoint",
+      "rdfs:label": "X1",
+      "rep:vertexGeometry": "aw0:86106e84-67fe-416b-a729-8322bd004280"
+    },
+    {
+      "@id": "aw0:9ef6528f-b47f-42f8-a14e-42c269a34443",
+      "@type": "sso:OccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:8350b34e-fdbe-4446-8c20-3ef6cbf7b129",
+      "@type": "sso:HarnessNode",
+      "sso:representedGeometry": "aw0:216dc77c-8e6b-4c8c-b069-1afc4cc4218c"
+    },
+    {
+      "@id": "aw0:11d65007-ae70-4ef7-a5f4-f745b2a47028",
+      "@type": "sso:PartVersion",
+      "sso:hasProductDefinition": "aw0:f92cf0df-47e9-420d-8681-bda25418cb70",
+      "sso:versionId": "/NULL"
+    },
+    {
+      "@id": "aw0:65d87d40-3e87-4b77-8471-e4aeabc6ee84",
+      "@type": "sso:WireOccurrenceIdentification",
+      "lci:isDefinedBy": "aw0:250b1624-bfcd-447a-aa38-49faa0751be9"
+    },
+    {
+      "@id": "aw0:4c946fba-cfde-44ea-b416-24a43aa54ff3",
+      "@type": [
+        "sso:InterfaceOrJoinTerminal_interface_terminal",
+        "sso:PartTerminal",
+        "sso:TerminalJointType_socket_terminal"
+      ],
+      "rdfs:label": "Interface7"
+    },
+    {
+      "@id": "aw0:bcaff119-f706-478a-9057-5c80762419c6",
+      "@type": [
+        "sso:InterfaceOrJoinTerminal_join_terminal",
+        "sso:PartTerminal",
+        "sso:TerminalJointType_solder_terminal"
+      ],
+      "rdfs:label": "Join9"
+    },
+    {
+      "@id": "aw0:586237be-5ab2-47d5-b9b0-2eddf842826b",
+      "@type": "sso:OccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:ca2144d6-6974-4554-98ae-47049e1e6cf9",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:ae904951-792e-487a-9026-82d49f5406d6"
+    },
+    {
+      "@id": "aw0:a4cbe447-01ac-45f3-aa7a-d636e9222f43",
+      "@type": [
+        "sso:AssemblyJointType_crimped_connection",
+        "sso:AssemblyShapeJoint"
+      ],
+      "sso:assemblyShapeJointItemRelationship": [
+        "aw0:03a6da3b-f4b2-4732-a02c-f89cb370c238",
+        "aw0:f707d139-8e8c-495c-a490-6c7a0d851383"
+      ]
+    },
+    {
+      "@id": "aw0:1ea42bba-6cac-4e7c-97ba-a2eaad01ed0d",
+      "@type": "sso:SingleOccurrence",
+      "lci:isDefinedBy": "aw0:3323c150-af2d-4fad-9921-9a945af586ac",
+      "rdfs:label": "A-insert"
+    },
+    {
+      "@id": "aw0:7c984aef-d9d3-471c-aad7-7add6748c3e3",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "sso:nextAssemblyOccurrenceUsage"
+    },
+    {
+      "@id": "aw0:8e248fcc-9cc7-43cb-9d76-7f15566e305c",
+      "@type": "sso:ExternalAdvancedBrepShapeRepresentation",
+      "rep:contextOfItems": "aw0:51292921-0517-415d-b2c4-6217c90b0f1f",
+      "rep:item": [
+        "aw0:5cac1f9d-dd6a-451a-8eaf-d97df3e619d6",
+        "aw0:b02fb20f-f254-4c29-a803-1c78633c168b"
+      ],
+      "sso:id": "c-51864-1-af-3d.stp"
+    },
+    {
+      "@id": "aw0:57ef2d8c-3b27-4d74-855d-236621971ebd",
+      "@type": "sso:CrossSectionalGroupShapeElementWithTubularCover"
+    },
+    {
+      "@id": "aw0:95d98a39-c3d9-4f2d-9411-b07140480cb1",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "rep:geometryToTopologyModelAssociation",
+      "rep:transformationOperator": "aw0:62d77791-0ce4-424b-bb03-bb245c375742"
+    },
+    {
+      "@id": "aw0:2ae4d8c5-267e-4f38-b746-ca86be6af20b",
+      "@type": "sso:ShapeElement",
+      "rdfs:label": "1",
+      "sso:colourCode": "aw0:c80d4921-28db-4bbe-b1ec-a94911bfa575"
+    },
+    {
+      "@id": "aw0:55c60fdb-8176-4082-8890-3b870621d1cd",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:81e4385c-1125-4a24-9e4a-af399c7407cf"
+    },
+    {
+      "@id": "aw0:9f0fe65f-4e49-42bc-8451-b2fd094fd058",
+      "@type": "rep:EdgeBoundedCurveWithLength",
+      "rdfs:label": "S3",
+      "rep:edgeEnd": "aw0:e3554ed5-2afb-4a34-b02c-b9188240b0e9",
+      "rep:edgeGeometry": "aw0:3e041160-7c3d-4a0e-acb4-a2b8b2383189",
+      "rep:edgeStart": "aw0:e0fe57d9-fefe-4e34-a125-9a16ee407946",
+      "rep:sameSense": true
+    },
+    {
+      "@id": "aw0:43e93647-a590-4542-b2d5-aba772b5c14b",
+      "@type": [
+        "sso:ApplicationDomain_electrical",
+        "sso:LifeCycleStage_design",
+        "sso:PartDesign"
+      ],
+      "lci:hasArrangedPart": [
+        "aw0:1aa0fbbc-8d99-4d13-97aa-927635b7d15c",
+        "aw0:62e5f4d6-01ba-423d-a33b-9046edda9fba",
+        "aw0:81339e5a-fb5a-4b40-a59b-bef2996a79a6",
+        "aw0:a2885bb0-f3ea-4ee5-8252-90dd193291ce",
+        "aw0:f7883ffd-794f-4fca-80c1-473b7f4ada1e",
+        "aw0:fd608668-e09a-4b2a-9625-d216e0bb1a19"
+      ],
+      "rdfs:label": "",
+      "sso:viewId": "/NULL"
+    },
+    {
+      "@id": "aw0:79aeae84-8666-45ce-936b-5351d9a2befe",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "sso:nextAssemblyOccurrenceUsage",
+      "rep:contextDependentShapeRepresentation": "aw0:95d98a39-c3d9-4f2d-9411-b07140480cb1"
+    },
+    {
+      "@id": "aw0:cd790696-1042-4204-a732-0696a7a7881c",
+      "@type": "rep:PointOnCurve",
+      "rep:basisCurve": "aw0:aceb32d3-251c-4e3e-bda5-c6f3200417e1",
+      "rep:pointParameter": 0.8
+    },
+    {
+      "@id": "aw0:9c665574-17db-45df-a439-87415589c290",
+      "@type": "rep:OrientedEdge",
+      "rep:edgeElement": "aw0:9a3c359a-29c1-477d-8107-c799a9669f4a",
+      "rep:orientation": true
+    },
+    {
+      "@id": "aw0:ec372cec-18c9-48b7-8462-139b18098369",
+      "@type": "rep:VertexPoint",
+      "rdfs:label": "X4",
+      "rep:vertexGeometry": "aw0:4236402b-f7a9-4269-9969-e30fff74fd76"
+    },
+    {
+      "@id": "aw0:0d99049c-7837-481b-b939-e4d79bb11716",
+      "@type": "sso:PartShapeElement",
+      "rdfs:label": "Cavity B"
+    },
+    {
+      "@id": "aw0:69f013b8-bca1-4d9d-aec0-d627e14af5d7",
+      "@type": "sso:PartFeature",
+      "rdfs:label": "Segment opening B"
+    },
+    {
+      "@id": "aw0:9859c2ba-acb5-4676-b88f-71a32c88ee8b",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:b0658328-2eef-48d1-a458-7183d4e8e44c"
+    },
+    {
+      "@id": "aw0:89bc1e7f-2892-49f7-a8b0-5cf0ad45ab98",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "sso:nextAssemblyOccurrenceUsage"
+    },
+    {
+      "@id": "aw0:445e6e4b-aef7-4d4c-9e4c-e2549ff74270",
+      "@type": "qau:Length",
+      "qau:metre": 3.7
+    },
+    {
+      "@id": "aw0:2bae682e-1755-4727-bf53-6d1a3c53d354",
+      "@type": [
+        "sso:AssemblyJointType_crimped_connection",
+        "sso:AssemblyShapeJoint"
+      ],
+      "sso:assemblyShapeJointItemRelationship": [
+        "aw0:835a1979-a25b-4eda-a61f-b295351adc4a",
+        "aw0:8585fec7-f317-4955-a9f6-32a0b380b4de"
+      ]
+    },
+    {
+      "@id": "aw0:e060864c-fe42-45f7-8d59-5b9170f7bcbc",
+      "@type": [
+        "sso:InterfaceOrJoinTerminal_interface_terminal",
+        "sso:PartTerminal",
+        "sso:TerminalJointType_socket_terminal"
+      ],
+      "rdfs:label": "Interface9"
+    },
+    {
+      "@id": "aw0:a2885bb0-f3ea-4ee5-8252-90dd193291ce",
+      "@type": "sso:PartConnectivityDefinition",
+      "lci:isDefinedBy": [
+        "aw0:1aa0fbbc-8d99-4d13-97aa-927635b7d15c",
+        "aw0:f7883ffd-794f-4fca-80c1-473b7f4ada1e"
+      ]
+    },
+    {
+      "@id": "aw0:01341a22-26ea-446d-bb70-5110436529c6",
+      "@type": "sso:WireOccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:0bc94ee3-d4ec-41ea-8cff-89a681c84553",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:ff098549-7030-4404-adb8-29f38bbfbd0d"
+    },
+    {
+      "@id": "aw0:fd608668-e09a-4b2a-9625-d216e0bb1a19",
+      "@type": [
+        "sso:InterfaceOrJoinTerminal_interface_terminal",
+        "sso:PartTerminal",
+        "sso:TerminalJointType_pin_terminal"
+      ],
+      "rdfs:label": "Interface signal"
+    },
+    {
+      "@id": "aw0:5ba305cf-c7de-4ba3-97e5-b744b4ca9062",
+      "@type": "sso:HarnessSegment",
+      "sso:representedGeometry": "aw0:d7ead54a-025c-4b34-8a8c-e1e2b75f9f45"
+    },
+    {
+      "@id": "aw0:cfdcb7cf-8257-47db-96ce-1b01113c3e1a",
+      "@type": "rep:EdgeBasedTopologicalRepresentationWithLengthConstraint",
+      "rep:contextOfItems": "aw0:7ddcbafe-7815-4d35-ac3a-9113221b6d95",
+      "rep:geometryToTopologyModelAssociation": [
+        {
+          "@id": "aw0:1679e3a6-d75c-4078-ac04-0caabc87ef4c",
+          "specificProperty": "aw0:23afe99d-02a8-4e0f-85bb-f8ac72819c28"
+        },
+        {
+          "@id": "aw0:1679e3a6-d75c-4078-ac04-0caabc87ef4c",
+          "specificProperty": "aw0:2456a734-e074-48bf-acfe-f628dc157166"
+        },
+        {
+          "@id": "aw0:1679e3a6-d75c-4078-ac04-0caabc87ef4c",
+          "specificProperty": "aw0:24657049-b747-4396-8dee-3fcb1346aaf7"
+        },
+        {
+          "@id": "aw0:1679e3a6-d75c-4078-ac04-0caabc87ef4c",
+          "specificProperty": "aw0:6296ce67-0414-4407-b92c-6ced90cdb98d"
+        },
+        {
+          "@id": "aw0:1679e3a6-d75c-4078-ac04-0caabc87ef4c",
+          "specificProperty": "aw0:781d7a38-89ce-41b1-a658-58c14ad8bc92"
+        },
+        {
+          "@id": "aw0:1679e3a6-d75c-4078-ac04-0caabc87ef4c",
+          "specificProperty": "aw0:870c0951-7e5f-41b7-ae37-bc463dfd2bea"
+        },
+        {
+          "@id": "aw0:1679e3a6-d75c-4078-ac04-0caabc87ef4c",
+          "specificProperty": "aw0:9174386c-c2fc-4c36-b012-791a2775273b"
+        },
+        {
+          "@id": "aw0:1679e3a6-d75c-4078-ac04-0caabc87ef4c",
+          "specificProperty": "aw0:95d98a39-c3d9-4f2d-9411-b07140480cb1"
+        },
+        {
+          "@id": "aw0:1679e3a6-d75c-4078-ac04-0caabc87ef4c",
+          "specificProperty": "aw0:98d69e1a-1678-49b2-9f9c-7f4b1574d71c"
+        },
+        {
+          "@id": "aw0:1679e3a6-d75c-4078-ac04-0caabc87ef4c",
+          "specificProperty": "aw0:9e233c7f-73dc-468d-916e-378de8f5d543"
+        },
+        {
+          "@id": "aw0:1679e3a6-d75c-4078-ac04-0caabc87ef4c",
+          "specificProperty": "aw0:9fda43c4-2ee2-44e5-8b01-5cee25bc74b1"
+        },
+        {
+          "@id": "aw0:1679e3a6-d75c-4078-ac04-0caabc87ef4c",
+          "specificProperty": "aw0:b3f8693f-e42a-4247-89d9-4c64a3062c9b"
+        },
+        {
+          "@id": "aw0:1679e3a6-d75c-4078-ac04-0caabc87ef4c",
+          "specificProperty": "aw0:c0e51b13-d326-40f3-805b-667bf171efac"
+        },
+        {
+          "@id": "aw0:1679e3a6-d75c-4078-ac04-0caabc87ef4c",
+          "specificProperty": "aw0:db76a2e3-5e65-43c1-87b2-7cc0362cdb97"
+        }
+      ],
+      "rep:item": [
+        "aw0:216dc77c-8e6b-4c8c-b069-1afc4cc4218c",
+        "aw0:31616419-67f7-4a49-9cea-f46bd6571249",
+        "aw0:4af5eb74-e14a-495a-a6a0-d2d92a2c06bf",
+        "aw0:68f12289-5a9e-4c1e-9646-fd5bf512e848",
+        "aw0:b0298916-5e04-4486-ac50-045e2ba989cc",
+        "aw0:bc84ee75-f33c-484c-b80b-1a22bfa726f8",
+        "aw0:e3a10178-2b82-4aff-9990-0ca8b2e766b5",
+        "aw0:ec372cec-18c9-48b7-8462-139b18098369",
+        "aw0:ed1e4590-acc9-4adc-b4f2-f4c0e5bb9487",
+        "aw0:f4ea5e56-2466-4355-a1b9-c90330b7404b",
+        "aw0:f8894dc7-add3-46fb-95a6-c57e210ecaef"
+      ],
+      "sso:id": "Topological representation of H1 harness"
+    },
+    {
+      "@id": "aw0:9e233c7f-73dc-468d-916e-378de8f5d543",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "rep:geometryToTopologyModelAssociation",
+      "rep:transformationOperator": "aw0:0cf9f3e3-a93f-473d-83fc-ab72b513488b"
+    },
+    {
+      "@id": "aw0:254e03fd-d7f3-4034-bad0-e0a70eb4939c",
+      "@type": "sso:CableOccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:d8ae0e40-a3c7-4864-8ee7-5dcacf251397",
+      "@type": "sso:CrossSectionalOccurrenceShapeElement",
+      "lci:isDefinedBy": "aw0:6a7afc68-152b-4a3f-9f33-4f16a7b68514"
+    },
+    {
+      "@id": "aw0:f3677905-47ea-447d-ba19-ffc2bca4b798",
+      "@type": "lci:Organization",
+      "rdfs:label": "Shrinkflex (Thailand) Co., Ltd",
+      "sso:id": "http://www.shrinkflexthailand.com"
+    },
+    {
+      "@id": "aw0:2f08bfa1-2ee7-4f0f-89dc-0418d9d9f679",
+      "@type": [
+        "sso:ApplicationDomain_electrical",
+        "sso:AssemblyDesign",
+        "sso:LifeCycleStage_design"
+      ],
+      "lci:hasArrangedPart": [
+        "aw0:0d99049c-7837-481b-b939-e4d79bb11716",
+        "aw0:621c0e38-3a4a-4560-86ff-0a492faa3aa8",
+        "aw0:cf039507-911e-4dda-a29a-49429b86d2ab"
+      ],
+      "rdfs:label": "",
+      "sso:definingGeometry": "aw0:8e248fcc-9cc7-43cb-9d76-7f15566e305c",
+      "sso:nextAssemblyOccurrenceUsage": [
+        {
+          "@id": "aw0:bc913ae2-f9f4-4bd4-8232-42debee491ed",
+          "specificProperty": "aw0:0a1ac768-7eba-41f0-9f2b-9b1c4f9b51df"
+        },
+        {
+          "@id": "aw0:2a7f83f9-6486-4913-a34d-7b3a0242a4bf",
+          "specificProperty": "aw0:37794961-223f-4b15-94b5-367c743ba8ab"
+        },
+        {
+          "@id": "aw0:9c3adc28-7969-4c6b-857a-06b170a43278",
+          "specificProperty": "aw0:9e392e0a-50dd-4254-b757-543d5cba09d1"
+        },
+        {
+          "@id": "aw0:1ea42bba-6cac-4e7c-97ba-a2eaad01ed0d",
+          "specificProperty": "aw0:a6cc0fab-05be-4247-9f79-6acd8c0888ae"
+        }
+      ],
+      "sso:viewId": "/NULL"
+    },
+    {
+      "@id": "aw0:11bcb143-babe-471d-ae95-d886e84d6738",
+      "@type": "sso:ShapeElement",
+      "rdfs:label": "Signal",
+      "sso:colourCode": "aw0:bb1a96c2-092f-4dcd-a33d-f56a155cc1c2"
+    },
+    {
+      "@id": "aw0:b48f3278-2484-4dc9-8ce3-aa5d4f425d03",
+      "@type": "sso:OccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:5f15dc3f-f4fb-45bc-9d44-cb30a1c9922a",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "sso:nextAssemblyOccurrenceUsage"
+    },
+    {
+      "@id": "aw0:3bb60a40-387b-4f8e-88e2-bcd91dfaddb8",
+      "@type": "rep:Axis2Placement3D",
+      "rdfs:label": "dummy position value as it has be be taken from external file",
+      "rep:location": "aw0_:84844b63-8fd3-4515-94fd-f28e4bd88c75",
+      "rep:topologyToGeometryItemAssociation": {
+        "@id": "aw0:1ce30646-3079-4d84-9b83-cc82bfd0c605",
+        "specificProperty": "aw0:30f62f2a-da42-41c4-8128-28f5c07f130e"
+      }
+    },
+    {
+      "@id": "aw0:71450a3f-c7ab-4c92-b869-f46eb472feb9",
+      "@type": "sso:SpecifiedOccurrence",
+      "lci:hasArrangedPart": [
+        "aw0:3468fd63-d5ea-4644-b8df-f838a96cab21",
+        "aw0:424bfc32-63ac-468e-b52b-37be9cf77901",
+        "aw0:4d98f841-e838-49f3-8c37-21185b715f5e",
+        "aw0:586237be-5ab2-47d5-b9b0-2eddf842826b"
+      ],
+      "lci:isDefinedBy": "aw0:b6361725-484f-4a32-8700-39591b24ed68",
+      "rdfs:label": "arinc1/C-Assy/coax1",
+      "sso:hasHigherUsage": "aw0:961b612c-1d98-42fc-9a96-0590c5ce3682"
+    },
+    {
+      "@id": "aw0:fafa0349-a5e9-4b6a-be32-c6e88821c595",
+      "@type": [
+        "sso:ApplicationDomain_electrical",
+        "sso:LifeCycleStage_design",
+        "sso:PartDesign"
+      ],
+      "lci:hasArrangedPart": [
+        "aw0:11bcb143-babe-471d-ae95-d886e84d6738",
+        "aw0:250b1624-bfcd-447a-aa38-49faa0751be9",
+        "aw0:7dc42aa9-a841-406f-825b-04e1faf4a06a"
+      ],
+      "rdfs:label": "",
+      "sso:definingGeometry": "aw0:1679e3a6-d75c-4078-ac04-0caabc87ef4c",
+      "sso:viewId": "/NULL"
+    },
+    {
+      "@id": "aw0:f707d139-8e8c-495c-a490-6c7a0d851383",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:f7883ffd-794f-4fca-80c1-473b7f4ada1e"
+    },
+    {
+      "@id": "aw0:24657049-b747-4396-8dee-3fcb1346aaf7",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "rep:geometryToTopologyModelAssociation",
+      "rep:transformationOperator": "aw0:8d8236b0-4d3c-4ffb-be1d-fca42f63e7bd"
+    },
+    {
+      "@id": "aw0:cf039507-911e-4dda-a29a-49429b86d2ab",
+      "@type": "sso:PartShapeElement",
+      "rdfs:label": "Cavity C"
+    },
+    {
+      "@id": "aw0:a69c05a7-e021-4c05-8923-a63e54b6d625",
+      "@type": [
+        "sso:Part",
+        "sso:PartCategory_connector_contact",
+        "sso:PartCategory_discrete"
+      ],
+      "rdfs:label": "#16 Rack plug power contact",
+      "sso:hasPartVersion": "aw0:cf376184-ad69-4eea-9d53-3995738f25ae",
+      "sso:id": "8660-249"
+    },
+    {
+      "@id": "aw0:c0a55702-55e5-4782-91f9-e00579f0cbe7",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "sso:nextAssemblyOccurrenceUsage"
+    },
+    {
+      "@id": "aw0:04450583-ba5e-4837-a5d0-ac56864f437e",
+      "@type": "sso:OccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:f8c61a7d-52b2-4091-b339-396b2e3f427a",
+      "@type": "sso:OccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:5514f4ff-fdc4-4ab8-bfb5-bb411a9f5593",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "rep:geometryToTopologyItemAssociation"
+    },
+    {
+      "@id": "aw0:6192efb2-55a5-45c1-b1eb-7046427428a6",
+      "@type": [
+        "sso:AssemblyJointType_screwed_connection",
+        "sso:AssemblyShapeJoint"
+      ],
+      "sso:assemblyShapeJointItemRelationship": [
+        "aw0:5af83afb-a6e4-4509-87be-85476fb0a2ca",
+        "aw0:fc8b9880-5366-407c-892e-70bc78f4b18b"
+      ]
+    },
+    {
+      "@id": "aw0:7403350c-5632-47e2-a011-27a123f5c43d",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "sso:id",
+      "sso:idOwner": "aw0:f3677905-47ea-447d-ba19-ffc2bca4b798"
+    },
+    {
+      "@id": "aw0:acf97867-a222-40b3-b57e-c201cade5ae9",
+      "@type": "sso:HarnessSegment",
+      "sso:representedGeometry": "aw0:d9b19dde-72c3-40b5-8fb7-a1c883772ee8"
+    },
+    {
+      "@id": "aw0:d7a194c8-0a01-4917-94cd-1cb984643182",
+      "@type": [
+        "sso:Part",
+        "sso:PartCategory_assembly",
+        "sso:PartCategory_connector_insert"
+      ],
+      "rdfs:label": "Insert 5W2 assembly",
+      "sso:hasPartVersion": "aw0:0d7583c3-a245-4178-94ce-7dfe3f63fe98",
+      "sso:id": "8660-5W2x1"
+    },
+    {
+      "@id": "aw0:2790619b-5daa-4077-9a1a-0d0150f05d52",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "sso:nextAssemblyOccurrenceUsage",
+      "rep:contextDependentShapeRepresentation": "aw0:db76a2e3-5e65-43c1-87b2-7cc0362cdb97"
+    },
+    {
+      "@id": "aw0:2e05e1fd-dbce-4d92-ab2c-53ff3f590aff",
+      "@type": "sso:SpecifiedOccurrence",
+      "lci:hasArrangedPart": [
+        "aw0:61d23993-5ba1-4616-a752-8986260b7893",
+        "aw0:f8c61a7d-52b2-4091-b339-396b2e3f427a"
+      ],
+      "lci:isDefinedBy": "aw0:bf61f0d1-fa68-4fe0-9e9f-83d00f4d740f",
+      "rdfs:label": "arinc1/C-Assy/signal5",
+      "sso:hasHigherUsage": "aw0:961b612c-1d98-42fc-9a96-0590c5ce3682"
+    },
+    {
+      "@id": "aw0:ac0cccce-a193-4148-ba4a-e1ba72ca246c",
+      "@type": [
+        "sso:AssemblyJointType_promissory_connection_for_missing_contributors",
+        "sso:AssemblyShapeJoint"
+      ],
+      "sso:assemblyShapeJointItemRelationship": [
+        "aw0:01341a22-26ea-446d-bb70-5110436529c6",
+        "aw0:6f4d7df6-629e-44c4-98e9-59d85c0d4427"
+      ]
+    },
+    {
+      "@id": "aw0:ed1e4590-acc9-4adc-b4f2-f4c0e5bb9487",
+      "@type": "rep:Path",
+      "rdfs:label": "C1",
+      "rep:edgeList": [
+        "aw0:c2038603-05b3-4edd-8b85-c5a785e24ff0",
+        "aw0:98e9fb65-3707-4b2e-b939-0b5681335e12"
+      ],
+      "rep:geometryToTopologyItemAssociation": {
+        "@id": "aw0:610d0c3c-4d69-4291-8c82-0a0d02b56ffa",
+        "specificProperty": "aw0:0d2e01a6-03c0-4a99-b0e6-73a4f1b99640"
+      }
+    },
+    {
+      "@id": "aw0:fca9a544-c8ff-412d-add7-1f960c7f642b",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "sso:nextAssemblyOccurrenceUsage"
+    },
+    {
+      "@id": "aw0:c79c1303-8b4c-4b78-8f12-c87342242b06",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "rep:topologyToGeometryItemAssociation"
+    },
+    {
+      "@id": "aw0:2888a769-ed96-4907-879c-4f505a74f1a7",
+      "@type": [
+        "sso:ApplicationDomain_electrical",
+        "sso:LifeCycleStage_design",
+        "sso:PartDesign"
+      ],
+      "lci:hasArrangedPart": "aw0:6015524b-d30c-4856-8efd-c262fd290f82",
+      "rdfs:label": "",
+      "sso:definingGeometry": "aw0:1679e3a6-d75c-4078-ac04-0caabc87ef4c",
+      "sso:viewId": "/NULL"
+    },
+    {
+      "@id": "aw0:5cac1f9d-dd6a-451a-8eaf-d97df3e619d6",
+      "@type": "sso:ExternalRepresentationItem"
+    },
+    {
+      "@id": "aw0:bbeab9b6-bded-4001-8b80-65a8c5670603",
+      "@type": "sso:PartConnectivityDefinition",
+      "lci:isDefinedBy": [
+        "aw0:bcaff119-f706-478a-9057-5c80762419c6",
+        "aw0:e060864c-fe42-45f7-8d59-5b9170f7bcbc"
+      ]
+    },
+    {
+      "@id": "aw0:634e90fc-6124-4e2c-a5c6-cb476eab504b",
+      "@type": "rep:VertexPoint",
+      "rdfs:label": "X3",
+      "rep:vertexGeometry": "aw0:396be7c3-128c-4cc1-a702-4b56db0b5919"
+    },
+    {
+      "@id": "aw0:1679e3a6-d75c-4078-ac04-0caabc87ef4c",
+      "@type": "rep:GeometricModel",
+      "rep:contextOfItems": "aw0:0fa455af-de6a-4607-a577-ed0654a1e974",
+      "rep:item": "aw0:610d0c3c-4d69-4291-8c82-0a0d02b56ffa",
+      "sso:id": "xxx"
+    },
+    {
+      "@id": "aw0:70c632fb-df37-4828-bdea-e3bf59bf0f6f",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:76a75f3a-7236-43de-871d-b8f49893f91d"
+    },
+    {
+      "@id": "aw0:8df06bdb-76e2-49a6-9eb7-cfe5f3243fed",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:3024aa72-fcfe-41f0-afd4-f35dfc7ac694"
+    },
+    {
+      "@id": "aw0:613ca49a-e5f2-4e36-a020-c0e422b39ce9",
+      "@type": "sso:OccurrenceTransportFeature",
+      "lci:isDefinedBy": "aw0:f53430ee-c141-4da6-a3ff-95eee619c905"
+    },
+    {
+      "@id": "aw0:3304a8d4-c47b-4847-9a0f-d90ba6521c14",
+      "@type": [
+        "sso:AssemblyJointType_crimped_connection",
+        "sso:AssemblyShapeJoint"
+      ],
+      "sso:assemblyShapeJointItemRelationship": [
+        "aw0:2cf868f4-0c1a-4b0c-bb54-4a6ebbe950fc",
+        "aw0:9902d5a7-bfd6-47be-a3c0-57e0fb2f566b"
+      ]
+    },
+    {
+      "@id": "aw0:eaef88e5-ce22-4519-827e-348b43d7d01e",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:ae904951-792e-487a-9026-82d49f5406d6"
+    },
+    {
+      "@id": "aw0:b3f8693f-e42a-4247-89d9-4c64a3062c9b",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "rep:geometryToTopologyModelAssociation",
+      "rep:transformationOperator": "aw0:920462cd-5bf2-4396-a546-3f3cbc63fefc"
+    },
+    {
+      "@id": "aw0:01b31c44-923c-4e15-a0a9-f2fa2fba21fe",
+      "@type": [
+        "sso:AssemblyJointType_crimped_connection",
+        "sso:AssemblyShapeJoint"
+      ],
+      "sso:assemblyShapeJointItemRelationship": [
+        "aw0:5043ac26-3faa-4235-b4e7-6536a4c65c2d",
+        "aw0:58dead20-17d8-41d4-afa5-1a1e9936c71f"
+      ]
+    },
+    {
+      "@id": "aw0:3f1fec88-e1d9-46fb-bc73-8dca4f0dea3a",
+      "@type": [
+        "sso:InterfaceOrJoinTerminal_join_terminal",
+        "sso:PartTerminal",
+        "sso:TerminalJointType_crimp_terminal"
+      ],
+      "rdfs:label": "end b"
+    },
+    {
+      "@id": "aw0:636138df-11cd-447d-a915-cb26e6e7cea8",
+      "@type": "sso:SpecifiedOccurrence",
+      "lci:isDefinedBy": "aw0:961b612c-1d98-42fc-9a96-0590c5ce3682",
+      "rdfs:label": "h1.1/arinc1",
+      "sso:hasHigherUsage": "aw0:434fc6e2-f784-4683-b110-121d70944205"
+    },
+    {
+      "@id": "aw0:cd99570c-2a0a-4e40-ac0a-5e54d1011432",
+      "@type": "rep:VertexPoint",
+      "rdfs:label": "N6",
+      "rep:vertexGeometry": "aw0:3543440c-a982-4dda-87db-c8b891ab61ed"
+    },
+    {
+      "@id": "aw0:54cdea3e-a831-4cd7-89b9-c9ce9d0acae6",
+      "@type": [
+        "sso:InterfaceOrJoinTerminal_join_terminal",
+        "sso:PartTerminal",
+        "sso:TerminalJointType_screw_terminal"
+      ],
+      "rdfs:label": "GND2"
+    },
+    {
+      "@id": "aw0:9174386c-c2fc-4c36-b012-791a2775273b",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "rep:geometryToTopologyModelAssociation",
+      "rep:transformationOperator": "aw0:0d2e01a6-03c0-4a99-b0e6-73a4f1b99640"
+    },
+    {
+      "@id": "aw0:9c427234-4eaf-4d9a-837f-c62868f27257",
+      "@type": "qau:Length",
+      "qau:metre": 4.45
+    },
+    {
+      "@id": "aw0:9df704b4-855d-43c0-89fa-e23553c14a9d",
+      "@type": "sso:CrossSectionalOccurrenceShapeElement",
+      "lci:isDefinedBy": "aw0:7dc42aa9-a841-406f-825b-04e1faf4a06a"
+    },
+    {
+      "@id": "aw0:f8894dc7-add3-46fb-95a6-c57e210ecaef",
+      "@type": "rep:VertexPoint",
+      "rdfs:label": "X6",
+      "rep:vertexGeometry": "aw0:c73e16a1-9ffa-432d-8ebd-d6b345357fa6"
+    },
+    {
+      "@id": "aw0:3543440c-a982-4dda-87db-c8b891ab61ed",
+      "@type": "rep:Point"
+    },
+    {
+      "@id": "aw0:3651d103-2108-40ab-8f75-098f1b5678d2",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:69642d88-5eda-4bfe-9c22-7fd8a2bdcd4c"
+    },
+    {
+      "@id": "aw0:5b232f65-d46d-4a70-89d9-3320c026542b",
+      "@type": "rep:Point"
+    },
+    {
+      "@id": "aw0:6f4d7df6-629e-44c4-98e9-59d85c0d4427",
+      "@type": "sso:OccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:ae734829-d9a1-46cd-a724-6bd9b99f22ee",
+      "@type": "sso:OccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:2a7f83f9-6486-4913-a34d-7b3a0242a4bf",
+      "@type": "sso:SingleOccurrence",
+      "lci:hasArrangedPart": [
+        "aw0:1609a42d-7bc7-48ae-b457-639fb12a2043",
+        "aw0:395cfcf7-450e-4dda-90c1-0c13ab705530",
+        "aw0:85dd354e-60ce-4c70-ae4a-b207eb60cb01",
+        "aw0:a6f60456-0cb1-4a43-9582-e9c0b885e2e2",
+        "aw0:c1c14c0e-4243-40f4-9e08-53e04ee75da1"
+      ],
+      "lci:isDefinedBy": "aw0:5f0c7554-dd26-4370-b06f-8572a262f97e",
+      "rdfs:label": "backshell1"
+    },
+    {
+      "@id": "aw0:24f6ead8-6edf-4446-8bfb-edf7d77548e3",
+      "@type": "sso:SingleOccurrence",
+      "lci:hasArrangedPart": [
+        "aw0:6884a3e5-e88a-49b5-8e27-7e64dc75e3a3",
+        "aw0:b5cd0ccc-dd53-42e1-95e6-4e7d2e9b3c1d",
+        "aw0:c880864c-a655-4f9a-8ed0-3fa004ddcc9f",
+        "aw0:ee2db0f5-9f0d-4a68-bc54-82bcb7a7d703"
+      ],
+      "lci:isDefinedBy": "aw0:2d00bd5b-becb-468d-8e12-2d4e378f3990",
+      "rdfs:label": "1"
+    },
+    {
+      "@id": "aw0:4236402b-f7a9-4269-9969-e30fff74fd76",
+      "@type": "rep:PointOnCurve",
+      "rep:basisCurve": "aw0:3e041160-7c3d-4a0e-acb4-a2b8b2383189",
+      "rep:pointParameter": 0.3
+    },
+    {
+      "@id": "aw0:ed6b8c9f-66d1-4817-a6ed-4e57262930f3",
+      "@type": "sso:PartVersion",
+      "sso:hasProductDefinition": "aw0:3e282f31-027b-46b3-ba16-c228f61c963a",
+      "sso:versionId": "/NULL"
+    },
+    {
+      "@id": "aw0:a096830d-9d23-472b-b10e-c842bd5c6f16",
+      "@type": "sso:HarnessNode",
+      "sso:representedGeometry": "aw0:c1c59179-50a0-4adf-a80b-1eda08b5d59c"
+    },
+    {
+      "@id": "aw0:c07bf575-c09c-4a13-a369-0e0a845bc1dd",
+      "@type": "sso:PartVersion",
+      "sso:hasProductDefinition": "aw0:5f0c7554-dd26-4370-b06f-8572a262f97e",
+      "sso:versionId": "/NULL"
+    },
+    {
+      "@id": "aw0:683ec0dd-0b9d-4c84-887c-b88557f17075",
+      "@type": "sso:SingleOccurrence",
+      "lci:hasArrangedPart": [
+        "aw0:3651d103-2108-40ab-8f75-098f1b5678d2",
+        "aw0:84ae654b-12be-4cda-849b-4ad8e1542cad"
+      ],
+      "lci:isDefinedBy": "aw0:602d1f20-b9b0-4b95-b275-64667d208ffe",
+      "rdfs:label": "2"
+    },
+    {
+      "@id": "aw0:2ec8b56f-6bb8-4703-bbb2-20223856bd23",
+      "@type": "sso:CrossSectionalPartShapeElement",
+      "rdfs:label": "Inner surface"
+    },
+    {
+      "@id": "aw0:53b97f45-7185-4e5d-988f-1e2720d7b5ef",
+      "@type": "sso:PartVersion",
+      "sso:hasProductDefinition": "aw0:43e93647-a590-4542-b2d5-aba772b5c14b",
+      "sso:versionId": "/NULL"
+    },
+    {
+      "@id": "aw0:7dc42aa9-a841-406f-825b-04e1faf4a06a",
+      "@type": "sso:CrossSectionalPartShapeElement"
+    },
+    {
+      "@id": "aw0:f2ac41de-8f42-48eb-b93e-788a0e73999b",
+      "@type": "sso:PartConnectivityDefinition",
+      "lci:isDefinedBy": [
+        "aw0:299d2809-afba-45fc-8547-c61d0da27b0a",
+        "aw0:81e4385c-1125-4a24-9e4a-af399c7407cf"
+      ]
+    },
+    {
+      "@id": "aw0:687600a2-c50e-4206-9716-2c147adc5a92",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "sso:nextAssemblyOccurrenceUsage",
+      "rep:contextDependentShapeRepresentation": "aw0:24657049-b747-4396-8dee-3fcb1346aaf7"
+    },
+    {
+      "@id": "aw0:9df0bb43-efab-4449-b6b5-a7726f37b080",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "sso:nextAssemblyOccurrenceUsage"
+    },
+    {
+      "@id": "aw0:3150d1d1-78bb-4a50-ad8c-3d80586500bc",
+      "@type": "sso:SpecifiedOccurrence",
+      "lci:hasArrangedPart": "aw0:85093075-874c-4f7f-981b-022da21bf2ab",
+      "lci:isDefinedBy": "aw0:e7f2bb8c-0dae-4bf8-819d-babc2f5a5dd7",
+      "rdfs:label": "h2.1/lug2",
+      "sso:hasHigherUsage": "aw0:0a4402f6-9943-4dce-82ea-cacc0f56382d"
+    },
+    {
+      "@id": "aw0:81339e5a-fb5a-4b40-a59b-bef2996a79a6",
+      "@type": "sso:PartConnectivityDefinition",
+      "lci:isDefinedBy": [
+        "aw0:62e5f4d6-01ba-423d-a33b-9046edda9fba",
+        "aw0:fd608668-e09a-4b2a-9625-d216e0bb1a19"
+      ]
+    },
+    {
+      "@id": "aw0:4d98f841-e838-49f3-8c37-21185b715f5e",
+      "@type": "sso:OccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:7f62e268-aa6e-40cb-8cc1-5e961c5296fb",
+      "@type": "sso:WireOccurrence",
+      "lci:hasArrangedPart": [
+        "aw0:00cd0fc9-2063-4c20-946f-76f6fee00ec4",
+        "aw0:93d74b80-71c0-403a-8ccf-cf69c1ce5f6d",
+        "aw0:c8c36848-9671-4287-8791-ddc02f60a4e1",
+        "aw0:fa0cbd1c-5455-4b1f-9d47-39288c987f68"
+      ],
+      "lci:isDefinedBy": "aw0:eea75a4d-fe13-4e97-8514-0b7e2df63dfb",
+      "rdfs:label": "wire2",
+      "sso:occurrenceQuantity": "aw0:8b59f004-9866-4e01-b1d4-beeb0302c797"
+    },
+    {
+      "@id": "aw0:6cb7c83d-2475-4c23-a60b-96d1e1af8eff",
+      "@type": "sso:HarnessNode",
+      "sso:representedGeometry": "aw0:e0fe57d9-fefe-4e34-a125-9a16ee407946"
+    },
+    {
+      "@id": "aw0:f4c43fd3-073a-4e61-a3cb-3b6992cf6448",
+      "@type": "rep:GeometricRepresentationContext",
+      "rep:coordinateSpaceDimension": 3,
+      "sso:id": "/NULL"
+    },
+    {
+      "@id": "aw0:aded329c-c2ab-422d-abda-547f34836cf8",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "sso:nextAssemblyOccurrenceUsage"
+    },
+    {
+      "@id": "aw0:03a6da3b-f4b2-4732-a02c-f89cb370c238",
+      "@type": "sso:CableOccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:e80dd72c-4b67-4e98-8653-e19bbcc448cf",
+      "@type": "sso:ShapeElement"
+    },
+    {
+      "@id": "aw0:73bf2b5f-8802-4a4b-ac7c-8d990e3cc067",
+      "@type": "rep:SubEdge",
+      "rdfs:label": "S3-2",
+      "rep:edgeEnd": "aw0:e3554ed5-2afb-4a34-b02c-b9188240b0e9",
+      "rep:edgeStart": "aw0:8d4761de-e3d1-4831-9c1d-9af620d2a328",
+      "rep:parentEdge": "aw0:9f0fe65f-4e49-42bc-8451-b2fd094fd058"
+    },
+    {
+      "@id": "aw0:1343f910-2fe5-4bca-846e-a9294c8a5664",
+      "@type": "sso:CrossSectionalGroupShapeElementWithTubularCover"
+    },
+    {
+      "@id": "aw0:419483f2-b66b-43f2-b9d8-5cfcb98ed2f0",
+      "@type": "sso:PartVersion",
+      "sso:hasProductDefinition": "aw0:f446cd53-374f-4eb9-b295-4092d6809639",
+      "sso:versionId": "/NULL"
+    },
+    {
+      "@id": "aw0:8183cc51-c824-4b0e-b6ba-e2937fea7e97",
+      "@type": "sso:CrossSectionalOccurrenceShapeElement",
+      "lci:isDefinedBy": "aw0:2ec8b56f-6bb8-4703-bbb2-20223856bd23"
+    },
+    {
+      "@id": "aw0:15285140-2510-47ee-a681-0d99f673fb76",
+      "@type": "qau:Length",
+      "qau:metre": 1.75
+    },
+    {
+      "@id": "aw0:2109fd2c-a322-453a-8350-9483051d6238",
+      "@type": "sso:SpecifiedOccurrence",
+      "lci:hasArrangedPart": [
+        "aw0:a418bac7-3907-4333-8917-6d3817d9a18f",
+        "aw0:d6d49315-c485-45c6-8d64-c30829b6ed8c"
+      ],
+      "lci:isDefinedBy": "aw0:fc6d1467-9a2d-486d-a398-2818ed96031d",
+      "rdfs:label": "h1.1/arinc1/C-Assy/power3",
+      "sso:hasHigherUsage": "aw0:434fc6e2-f784-4683-b110-121d70944205"
+    },
+    {
+      "@id": "aw0:8d8236b0-4d3c-4ffb-be1d-fca42f63e7bd",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "rep:geometryToTopologyItemAssociation"
+    },
+    {
+      "@id": "aw0:73943553-6620-4f6d-a913-8d9c514b04e1",
+      "@type": [
+        "sso:Part",
+        "sso:PartCategory_connector_contact",
+        "sso:PartCategory_discrete"
+      ],
+      "rdfs:label": "#12 Rack plug signal contact",
+      "sso:hasPartVersion": "aw0:85362866-44bb-45bf-b015-1befeab1a57a",
+      "sso:id": "8660-250"
+    },
+    {
+      "@id": "aw0:87294100-2bf2-46a4-9b5b-9cbcef0e8084",
+      "@type": "sso:OccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:5f2913f4-9666-47c2-8ef2-1af8c429751f",
+      "@type": "qau:Length",
+      "qau:metre": 4.45
+    },
+    {
+      "@id": "aw0:d1356b8d-7545-4a0d-97d9-b4146cde9218",
+      "@type": "sso:WireOccurrence",
+      "lci:hasArrangedPart": [
+        "aw0:1c7793fa-5e43-44d0-a6c3-1d025973839d",
+        "aw0:204d620d-6ba6-49ba-9460-0d1c7d132430",
+        "aw0:33d74441-6474-4b18-a972-0fbdcc7ff357",
+        "aw0:d028c25d-87bd-42c2-a72c-9c1595210dcb"
+      ],
+      "lci:isDefinedBy": "aw0:eea75a4d-fe13-4e97-8514-0b7e2df63dfb",
+      "rdfs:label": "wire3",
+      "sso:occurrenceQuantity": "aw0:f1dd045e-f7d5-4e0a-a31a-7487d6e0140e"
+    },
+    {
+      "@id": "aw0:96c68a8f-ad5c-4d01-81c4-06346d0237bf",
+      "@type": [
+        "sso:Part",
+        "sso:PartCategory_cable",
+        "sso:PartCategory_raw_material_by_length"
+      ],
+      "rdfs:label": "RG 58",
+      "sso:hasPartVersion": "aw0:a35bc13a-3256-4e16-ba0f-9a3ba0dd6592",
+      "sso:id": "RG 58"
+    },
+    {
+      "@id": "aw0:dfd2f7aa-163b-4dcd-b107-40b7de20983e",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "sso:nextAssemblyOccurrenceUsage",
+      "rep:contextDependentShapeRepresentation": [
+        "aw0:2456a734-e074-48bf-acfe-f628dc157166",
+        "aw0:36260ed1-69b5-4fb0-b282-2384c1a2ad32"
+      ]
+    },
+    {
+      "@id": "aw0:0a149066-a603-442e-af40-81617f7add58",
+      "@type": "sso:ProductConfiguration",
+      "lci:hasArrangedPart": [
+        "aw0:0ff6fc0f-6c2f-4459-9118-336bbea70b99",
+        "aw0:182e45ea-390e-459b-bbb8-400c2accf420"
+      ],
+      "rdfs:label": "Standard Battery"
+    },
+    {
+      "@id": "aw0:961b612c-1d98-42fc-9a96-0590c5ce3682",
+      "@type": "sso:SingleOccurrence",
+      "lci:isDefinedBy": "aw0:2f08bfa1-2ee7-4f0f-89dc-0418d9d9f679",
+      "rdfs:label": "arinc1"
+    },
+    {
+      "@id": "aw0:4269cc70-6714-4955-b4c8-3198a7068515",
+      "@type": [
+        "sso:AssemblyJointType_crimped_connection",
+        "sso:AssemblyShapeJoint"
+      ],
+      "sso:assemblyShapeJointItemRelationship": [
+        "aw0:0e454854-be2d-4023-b192-b14d5277a732",
+        "aw0:9859c2ba-acb5-4676-b88f-71a32c88ee8b"
+      ]
+    },
+    {
+      "@id": "aw0:920462cd-5bf2-4396-a546-3f3cbc63fefc",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "rep:geometryToTopologyItemAssociation"
+    },
+    {
+      "@id": "aw0:c5ab633b-35d8-4b61-94ca-2614919a29a4",
+      "@type": [
+        "sso:Part",
+        "sso:PartCategory_connector",
+        "sso:PartCategory_discrete"
+      ],
+      "rdfs:label": "Phone connector 6.35mm",
+      "sso:hasPartVersion": "aw0:53b97f45-7185-4e5d-988f-1e2720d7b5ef",
+      "sso:id": "TM2PB"
+    },
+    {
+      "@id": "aw0:d3f78372-65d3-4e32-a5bd-bf63f7adfc19",
+      "@type": [
+        "sso:Part",
+        "sso:PartCategory_connector",
+        "sso:PartCategory_discrete"
+      ],
+      "rdfs:label": "D-sub 9 Pin Db9 Female Solder Type Socket Connector",
+      "sso:hasPartVersion": "aw0:4130e4c3-d4b4-4244-8af1-a6cbdb4d172c",
+      "sso:id": "DEP09S065TLF"
+    },
+    {
+      "@id": "aw0:f2e4b062-4be0-4405-951d-1653d7ea3c1c",
+      "@type": "sso:CrossSectionalPartShapeElement",
+      "lci:hasArrangedPart": "aw0:2ec8b56f-6bb8-4703-bbb2-20223856bd23",
+      "rdfs:label": "Outer surface"
+    },
+    {
+      "@id": "aw0:621c0e38-3a4a-4560-86ff-0a492faa3aa8",
+      "@type": "sso:PartShapeElement",
+      "rdfs:label": "Cavity A"
+    },
+    {
+      "@id": "aw0:9f1cd14f-7a14-4426-9f0d-199450a7cd01",
+      "@type": "rep:OrientedEdge",
+      "rep:edgeElement": "aw0:d9b19dde-72c3-40b5-8fb7-a1c883772ee8",
+      "rep:orientation": false
+    },
+    {
+      "@id": "aw0:3b79f359-6e43-4c1a-b62d-06c10a46ba6b",
+      "@type": "sso:SingleOccurrence",
+      "lci:hasArrangedPart": [
+        "aw0:8585fec7-f317-4955-a9f6-32a0b380b4de",
+        "aw0:987116fb-e2f6-4e28-80fc-022a75974aec"
+      ],
+      "lci:isDefinedBy": "aw0:431b0ff2-9500-4160-871d-b4b64d278863",
+      "rdfs:label": "lug4"
+    },
+    {
+      "@id": "aw0:3f5eba64-d5c3-4d1d-9814-22aca8979d09",
+      "@type": "rep:BoundedCurveWithLength",
+      "rep:lengthValue": 0.7
+    },
+    {
+      "@id": "aw0:d028c25d-87bd-42c2-a72c-9c1595210dcb",
+      "@type": "sso:WireOccurrenceIdentification",
+      "lci:isDefinedBy": "aw0:2ae4d8c5-267e-4f38-b746-ca86be6af20b"
+    },
+    {
+      "@id": "aw0:f0b8c11a-93ca-4eae-ad6f-350e77435ddd",
+      "@type": [
+        "sso:InterfaceOrJoinTerminal_interface_terminal",
+        "sso:PartTerminal",
+        "sso:TerminalJointType_socket_terminal"
+      ],
+      "rdfs:label": "Interface5"
+    },
+    {
+      "@id": "aw0:b6a62262-fc12-4dd8-a5bd-a1e8f69a36bc",
+      "@type": [
+        "sso:InterfaceOrJoinTerminal_interface_terminal",
+        "sso:PartTerminal",
+        "sso:TerminalJointType_pin_terminal"
+      ],
+      "rdfs:label": "Interface gnd"
+    },
+    {
+      "@id": "aw0:42eefda2-effe-4636-9849-8cb452887cde",
+      "@type": "sso:CableOccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:56517ead-3188-450e-baf6-12ec43339ff4",
+      "@type": "rep:Axis2Placement3D",
+      "rdfs:label": "dummy position value as it has be be taken from external file",
+      "rep:itemDefinedTransformation": {
+        "@id": "aw0:77986dd8-2d2e-4de6-ac2a-70f11197a5b3",
+        "specificProperty": "aw0:a6872321-7615-4447-81ea-4599f30695e4"
+      },
+      "rep:location": "aw0_:dd41dd50-42cb-4286-a049-68d042d80f74",
+      "rep:topologyToGeometryItemAssociation": {
+        "@id": "aw0:3cc9b104-c9ed-458d-93ae-0dcf5f83b873",
+        "specificProperty": "aw0:c79c1303-8b4c-4b78-8f12-c87342242b06"
+      }
+    },
+    {
+      "@id": "aw0:618274fa-19b0-479a-9970-9976c2bc62fc",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:299d2809-afba-45fc-8547-c61d0da27b0a"
+    },
+    {
+      "@id": "aw0:118c0fbe-176c-4a14-8cea-c249ff4aa704",
+      "@type": "sso:PartVersion",
+      "sso:hasProductDefinition": "aw0:431b0ff2-9500-4160-871d-b4b64d278863",
+      "sso:versionId": "/NULL"
+    },
+    {
+      "@id": "aw0:a182e71a-e441-48ae-841f-4b7b322a9b4e",
+      "@type": "sso:ShapeElement"
+    },
+    {
+      "@id": "aw0:fd78e13a-2f75-41f1-9fcc-cc7d9e9824a6",
+      "@type": "sso:CrossSectionalOccurrenceShapeElement",
+      "lci:isDefinedBy": "aw0:49077055-7a4d-4590-9bd4-24ebacae703b"
+    },
+    {
+      "@id": "aw0:bb1a96c2-092f-4dcd-a33d-f56a155cc1c2",
+      "@type": "sso:WireColourBasedIdentificationCode",
+      "rdfs:label": "wire colour-based identification code",
+      "sso:id": "red"
+    },
+    {
+      "@id": "aw0:d6d49315-c485-45c6-8d64-c30829b6ed8c",
+      "@type": "sso:OccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:6884a3e5-e88a-49b5-8e27-7e64dc75e3a3",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:64cc9f77-bb1f-46bc-8228-c8f319cce6be"
+    },
+    {
+      "@id": "aw0:9729e005-7290-4099-a5a2-fb1834aa80f9",
+      "@type": "sso:SingleOccurrence",
+      "lci:hasArrangedPart": [
+        "aw0:c578decf-e1e2-48fa-8ddb-f0ff42b69c25",
+        "aw0:d535d920-57eb-4eec-8bb6-e06da302bff5"
+      ],
+      "lci:isDefinedBy": "aw0:7840fed5-44d5-41bb-84b3-8c5022a2bb03",
+      "rdfs:label": "2"
+    },
+    {
+      "@id": "aw0:33d74441-6474-4b18-a972-0fbdcc7ff357",
+      "@type": "sso:CrossSectionalOccurrenceShapeElement",
+      "lci:isDefinedBy": "aw0:49077055-7a4d-4590-9bd4-24ebacae703b"
+    },
+    {
+      "@id": "aw0:5cb750ed-460a-47b5-acd7-c93c4323f335",
+      "@type": [
+        "sso:ApplicationDomain_electrical",
+        "sso:LifeCycleStage_design",
+        "sso:PartDesign"
+      ],
+      "lci:hasArrangedPart": [
+        "aw0:094a228f-3d16-4353-bf5c-a427445d2de0",
+        "aw0:1d98ce3b-cc8c-49a9-9911-09c4747c53f7",
+        "aw0:2857dc4c-6025-4409-809a-886833f907d7",
+        "aw0:299d2809-afba-45fc-8547-c61d0da27b0a",
+        "aw0:3024aa72-fcfe-41f0-afd4-f35dfc7ac694",
+        "aw0:46790de6-97ce-4931-bcc9-2a1602573afa",
+        "aw0:4c946fba-cfde-44ea-b416-24a43aa54ff3",
+        "aw0:53fc12b0-5404-45c9-8c71-42fe6d4419db",
+        "aw0:5ee668a1-69a1-4f02-8377-8bfd1ec5d473",
+        "aw0:76a75f3a-7236-43de-871d-b8f49893f91d",
+        "aw0:7800ef28-9be3-4041-af17-16ae2581843d",
+        "aw0:79c7f59e-4864-42f5-a00a-45887a25741b",
+        "aw0:81e4385c-1125-4a24-9e4a-af399c7407cf",
+        "aw0:88f5ebb8-5ac5-444e-9ebc-e6ad12778e99",
+        "aw0:96d4f5a1-c563-499e-addb-b341caf9f9fd",
+        "aw0:a6eb5c94-a24b-41cf-b53e-b1f84e722cdd",
+        "aw0:b2190c94-d1ee-40b9-b323-337173591369",
+        "aw0:bbeab9b6-bded-4001-8b80-65a8c5670603",
+        "aw0:bcaff119-f706-478a-9057-5c80762419c6",
+        "aw0:c8f894e0-43b8-4ac8-8f21-5a619ed7d6b7",
+        "aw0:dab8e0d9-ff2f-4a59-abb9-0442c19012ac",
+        "aw0:dbba7fb6-974b-4b8d-a4fb-ea3297b837a7",
+        "aw0:e060864c-fe42-45f7-8d59-5b9170f7bcbc",
+        "aw0:ebb34f40-0ffb-44be-b1a2-0e6fdfaad1a1",
+        "aw0:f0b8c11a-93ca-4eae-ad6f-350e77435ddd",
+        "aw0:f2ac41de-8f42-48eb-b93e-788a0e73999b",
+        "aw0:ff098549-7030-4404-adb8-29f38bbfbd0d"
+      ],
+      "rdfs:label": "",
+      "sso:viewId": "/NULL"
+    },
+    {
+      "@id": "aw0:2857dc4c-6025-4409-809a-886833f907d7",
+      "@type": "sso:PartConnectivityDefinition",
+      "lci:isDefinedBy": [
+        "aw0:4c946fba-cfde-44ea-b416-24a43aa54ff3",
+        "aw0:76a75f3a-7236-43de-871d-b8f49893f91d"
+      ]
+    },
+    {
+      "@id": "aw0:3181b3fe-81bb-4fb2-bec0-370e07bb6149",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "sso:nextAssemblyOccurrenceUsage"
+    },
+    {
+      "@id": "aw0:aa98ae3f-4b43-4db8-996e-1b1ef4ee4c5a",
+      "@type": "sso:PartFeature",
+      "rdfs:label": "Segment opening A"
+    },
+    {
+      "@id": "aw0:68f12289-5a9e-4c1e-9646-fd5bf512e848",
+      "@type": "rep:SubEdge",
+      "rdfs:label": "S2-3",
+      "rep:edgeEnd": "aw0:e0fe57d9-fefe-4e34-a125-9a16ee407946",
+      "rep:edgeStart": "aw0:97e33a8b-2874-48cd-9828-6c1039f2c4c8",
+      "rep:parentEdge": "aw0:9f7d9e6f-82a9-4ef9-974a-a17b0fc13ab2"
+    },
+    {
+      "@id": "aw0:7994807a-dd5d-40bc-a64b-893b6fe7fe49",
+      "@type": "sso:PartConnectivityDefinition",
+      "lci:isDefinedBy": [
+        "aw0:0f4417d1-5fa4-4f7d-ab22-9bb48ea97748",
+        "aw0:64cc9f77-bb1f-46bc-8228-c8f319cce6be"
+      ]
+    },
+    {
+      "@id": "aw0:4173319c-d2e6-4102-b5f1-e2702db50b19",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "rep:geometryToTopologyItemAssociation"
+    },
+    {
+      "@id": "aw0:64e12186-918a-4966-9128-c35dad8201bb",
+      "@type": "sso:PartVersion",
+      "sso:hasProductDefinition": "aw0:b893d270-4914-48f8-a5ed-739d5f0b9836",
+      "sso:versionId": "/NULL"
+    },
+    {
+      "@id": "aw0:431b0ff2-9500-4160-871d-b4b64d278863",
+      "@type": [
+        "sso:ApplicationDomain_electrical",
+        "sso:LifeCycleStage_design",
+        "sso:PartDesign"
+      ],
+      "lci:hasArrangedPart": [
+        "aw0:26838695-8391-45f7-a646-e598019ade50",
+        "aw0:ae904951-792e-487a-9026-82d49f5406d6",
+        "aw0:b0658328-2eef-48d1-a458-7183d4e8e44c"
+      ],
+      "rdfs:label": "",
+      "sso:definingGeometry": "aw0:43da36ed-e52a-4292-aaec-11fe4954ac19",
+      "sso:viewId": "/NULL"
+    },
+    {
+      "@id": "aw0:98a70bbe-04af-4f88-aeae-b9b4e9dd6b6b",
+      "@type": "sso:OccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:b043b113-cdfb-47b9-9097-fb4b77326a98",
+      "@type": [
+        "sso:AssemblyJointType_crimped_connection",
+        "sso:AssemblyShapeJoint"
+      ],
+      "sso:assemblyShapeJointItemRelationship": [
+        "aw0:a418bac7-3907-4333-8917-6d3817d9a18f",
+        "aw0:e838608b-38f7-40e5-876b-a18a24747174"
+      ]
+    },
+    {
+      "@id": "aw0:76ee6904-fa0c-4512-a388-95c6870bf3de",
+      "@type": "sso:QuantifiedOccurrence",
+      "lci:hasArrangedPart": "aw0:29028987-420e-4f89-9abf-b549c6d1839f",
+      "lci:isDefinedBy": "aw0:2888a769-ed96-4907-879c-4f505a74f1a7",
+      "rdfs:label": "heatshrink1",
+      "sso:occurrenceQuantity": "aw0:b63c58b2-81ac-4309-94e2-4fccc1a32d39"
+    },
+    {
+      "@id": "aw0:f0eb468f-618b-441a-9ffb-fa76d0cda5f3",
+      "@type": "sso:CrossSectionalOccurrenceShapeElement",
+      "lci:isDefinedBy": "aw0:c92c6b32-7ff8-4a23-a47d-c92bf46a89f6"
+    },
+    {
+      "@id": "aw0:d73feff4-06de-4721-998c-cae25b8f3259",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "sso:nextAssemblyOccurrenceUsage"
+    },
+    {
+      "@id": "aw0:d56a7b50-0fcb-4dae-9ccf-99a500960ddb",
+      "@type": "sso:HarnessNode",
+      "sso:representedGeometry": "aw0:cd99570c-2a0a-4e40-ac0a-5e54d1011432"
+    },
+    {
+      "@id": "aw0:dfa712ed-fcf6-4c39-b0e5-ca01b40f5740",
+      "@type": "sso:SpecifiedOccurrence",
+      "lci:hasArrangedPart": "aw0:e838608b-38f7-40e5-876b-a18a24747174",
+      "lci:isDefinedBy": "aw0:dc421170-122f-4ad1-b759-a9e9d07d629e",
+      "rdfs:label": "h2.1/wire4",
+      "sso:hasHigherUsage": "aw0:0a4402f6-9943-4dce-82ea-cacc0f56382d"
+    },
+    {
+      "@id": "aw0:64cc9f77-bb1f-46bc-8228-c8f319cce6be",
+      "@type": [
+        "sso:InterfaceOrJoinTerminal_interface_terminal",
+        "sso:PartTerminal",
+        "sso:TerminalJointType_pin_terminal"
+      ],
+      "rdfs:label": "Interface signal"
+    },
+    {
+      "@id": "aw0:e7f2bb8c-0dae-4bf8-819d-babc2f5a5dd7",
+      "@type": "sso:SingleOccurrence",
+      "lci:hasArrangedPart": [
+        "aw0:9859c2ba-acb5-4676-b88f-71a32c88ee8b",
+        "aw0:b319adcf-0680-43fd-9d29-89f7324ca6b7"
+      ],
+      "lci:isDefinedBy": "aw0:431b0ff2-9500-4160-871d-b4b64d278863",
+      "rdfs:label": "lug2"
+    },
+    {
+      "@id": "aw0:b2190c94-d1ee-40b9-b323-337173591369",
+      "@type": [
+        "sso:InterfaceOrJoinTerminal_join_terminal",
+        "sso:PartTerminal",
+        "sso:TerminalJointType_solder_terminal"
+      ],
+      "rdfs:label": "Join8"
+    },
+    {
+      "@id": "aw0:0eef3e56-e58b-451c-ae53-2411eef57591",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:ecea60e9-afd3-414b-901d-31fa2e47b9fa"
+    },
+    {
+      "@id": "aw0:a0281887-3e87-465a-8ec9-9accce024fbf",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:ebb34f40-0ffb-44be-b1a2-0e6fdfaad1a1"
+    },
+    {
+      "@id": "aw0:98e9fb65-3707-4b2e-b939-0b5681335e12",
+      "@type": "rep:OrientedEdge",
+      "rep:edgeElement": "aw0:b28a0955-ea9e-46ed-a4c4-5c008dbcb477",
+      "rep:orientation": true
+    },
+    {
+      "@id": "aw0:81e4385c-1125-4a24-9e4a-af399c7407cf",
+      "@type": [
+        "sso:InterfaceOrJoinTerminal_join_terminal",
+        "sso:PartTerminal",
+        "sso:TerminalJointType_solder_terminal"
+      ],
+      "rdfs:label": "Join3"
+    },
+    {
+      "@id": "aw0:ad708a70-5295-4117-9ad5-6dd1c483cd23",
+      "@type": "sso:HarnessSegment",
+      "sso:representedGeometry": "aw0:68f12289-5a9e-4c1e-9646-fd5bf512e848"
+    },
+    {
+      "@id": "aw0:ec94b9c1-681e-4e98-ae7b-0b47ef0dfd1a",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:b0658328-2eef-48d1-a458-7183d4e8e44c"
+    },
+    {
+      "@id": "aw0:11d169ca-d3b5-48b5-a673-a92f944c1c47",
+      "@type": "sso:CableOccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:367b1ca3-4170-4c80-a29c-2273a76725da",
+      "@type": [
+        "sso:Part",
+        "sso:PartCategory_connector_insert",
+        "sso:PartCategory_discrete"
+      ],
+      "rdfs:label": "ARINC 600 shell 1 C 5W2 insert",
+      "sso:hasPartVersion": "aw0:fd5c8789-2bec-4a2a-9b39-516072ec079d",
+      "sso:id": "8660-5W2"
+    },
+    {
+      "@id": "aw0:2a6f29be-3ccd-43ed-95ad-bc292add61e4",
+      "@type": "rep:OrientedEdge",
+      "rep:edgeElement": "aw0:9f0fe65f-4e49-42bc-8451-b2fd094fd058",
+      "rep:orientation": true
+    },
+    {
+      "@id": "aw0:5c77cbed-dd4f-4158-9720-4b146a4c6621",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "sso:nextAssemblyOccurrenceUsage"
+    },
+    {
+      "@id": "aw0:f9c7c756-b20d-45bb-8c88-2591d05a5d7d",
+      "@type": [
+        "sso:InterfaceOrJoinTerminal_join_terminal",
+        "sso:PartTerminal",
+        "sso:TerminalJointType_crimp_terminal"
+      ],
+      "rdfs:label": "Join gnd"
+    },
+    {
+      "@id": "aw0:a2afdd88-82a1-4d51-a604-fc210cf8a93b",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "rep:geometryToTopologyItemAssociation"
+    },
+    {
+      "@id": "aw0:b112464a-8738-4d6d-b220-7a8efb72e6b4",
+      "@type": "sso:OccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:0b0db39f-fc43-4e54-a8b8-a9c04ebbfd4c",
+      "@type": "sso:CrossSectionalGroupShapeElementWithTubularCover"
+    },
+    {
+      "@id": "aw0:5b804969-05a6-4bdd-a4e2-ea4ad3e11403",
+      "@type": "sso:CableOccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:86106e84-67fe-416b-a729-8322bd004280",
+      "@type": "rep:PointOnCurve",
+      "rep:basisCurve": "aw0:3e041160-7c3d-4a0e-acb4-a2b8b2383189",
+      "rep:pointParameter": 0.8
+    },
+    {
+      "@id": "aw0:b1c73efb-bf5e-4c86-acf5-ca5def81b153",
+      "@type": "sso:SingleOccurrence",
+      "lci:hasArrangedPart": [
+        "aw0:a7620a97-9c11-4b40-811d-e97a5cf1f952",
+        "aw0:dd5d80be-d66a-4ba0-9363-9f388d4d5290",
+        "aw0:dde0f091-6645-49cd-ac57-0346a2935362",
+        "aw0:f707d139-8e8c-495c-a490-6c7a0d851383"
+      ],
+      "lci:isDefinedBy": "aw0:43e93647-a590-4542-b2d5-aba772b5c14b",
+      "rdfs:label": "phone1"
+    },
+    {
+      "@id": "aw0:073138ab-38b9-4ee8-807a-c2033a8f4deb",
+      "@type": [
+        "sso:Part",
+        "sso:PartCategory_raw_material_by_length",
+        "sso:PartCategory_wire"
+      ],
+      "rdfs:label": "WIRE,ELEC,COMP,SNGL CONDUCTOR,150 DEG C",
+      "sso:hasPartVersion": "aw0:687f5275-3140-43a9-a818-b0aaa3e76255",
+      "sso:id": "04034-22-9"
+    },
+    {
+      "@id": "aw0:fa976b79-201a-4acf-b3bc-f4fefb022dee",
+      "@type": "sso:PartConnectivityDefinition",
+      "lci:isDefinedBy": [
+        "aw0:b6a62262-fc12-4dd8-a5bd-a1e8f69a36bc",
+        "aw0:f9c7c756-b20d-45bb-8c88-2591d05a5d7d"
+      ]
+    },
+    {
+      "@id": "aw0:5d6ac677-e868-4a7a-8504-3601a3563e0a",
+      "@type": "sso:OccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:49077055-7a4d-4590-9bd4-24ebacae703b",
+      "@type": "sso:CrossSectionalPartShapeElement"
+    },
+    {
+      "@id": "aw0:fa15406b-37b5-4f5e-bf38-ef7c5ca94000",
+      "@type": "sso:ExternalRepresentationItem"
+    },
+    {
+      "@id": "aw0:ae359b5f-86a0-4e52-b7a6-e7bd8786b823",
+      "@type": "sso:PartConnectivityDefinition",
+      "lci:isDefinedBy": [
+        "aw0:69642d88-5eda-4bfe-9c22-7fd8a2bdcd4c",
+        "aw0:ecea60e9-afd3-414b-901d-31fa2e47b9fa"
+      ]
+    },
+    {
+      "@id": "aw0:be476c28-a00b-46f2-b2f8-edc44e4b5eb3",
+      "@type": "sso:PartVersion",
+      "sso:hasProductDefinition": "aw0:2888a769-ed96-4907-879c-4f505a74f1a7",
+      "sso:versionId": "/NULL"
+    },
+    {
+      "@id": "aw0:610d0c3c-4d69-4291-8c82-0a0d02b56ffa",
+      "@type": "rep:Axis2Placement3D",
+      "rep:location": "aw0_:57644230-3048-43c9-999c-9d7149db9d2e"
+    },
+    {
+      "@id": "aw0:18f3d4c0-2189-4007-9364-c8680317016b",
+      "@type": "sso:CableOccurrenceTerminalLocationGroup",
+      "lci:hasArrangedPart": [
+        "aw0:5b804969-05a6-4bdd-a4e2-ea4ad3e11403",
+        "aw0:c1a93d98-7e75-4c2f-ab7b-c3db801cb2ca"
+      ]
+    },
+    {
+      "@id": "aw0:434fc6e2-f784-4683-b110-121d70944205",
+      "@type": "sso:SingleOccurrence",
+      "lci:isDefinedBy": "aw0:f1cbbbc5-ead9-4999-b90f-74ce8ff4b75f",
+      "rdfs:label": "h1.1"
+    },
+    {
+      "@id": "aw0:69642d88-5eda-4bfe-9c22-7fd8a2bdcd4c",
+      "@type": [
+        "sso:InterfaceOrJoinTerminal_interface_terminal",
+        "sso:PartTerminal",
+        "sso:TerminalJointType_pin_terminal"
+      ],
+      "rdfs:label": "Int term"
+    },
+    {
+      "@id": "aw0:72172de4-6b0c-4061-aa08-f858bdff3c37",
+      "@type": [
+        "sso:Part",
+        "sso:PartCategory_protective_covering",
+        "sso:PartCategory_raw_material_by_length"
+      ],
+      "rdfs:label": "Shrinkflex Polyolefin Heatshrink Tubing - 4/1 - 25mm 1\" - Black",
+      "sso:hasPartVersion": "aw0:be476c28-a00b-46f2-b2f8-edc44e4b5eb3",
+      "sso:id": {
+        "@value": "H4N1.00BK",
+        "specificProperty": "aw0:7403350c-5632-47e2-a011-27a123f5c43d"
+      }
+    },
+    {
+      "@id": "aw0:89798e7e-a686-4c10-99bd-a874fa4df4bb",
+      "@type": [
+        "sso:AssemblyJointType_crimped_connection",
+        "sso:AssemblyShapeJoint"
+      ],
+      "sso:assemblyShapeJointItemRelationship": [
+        "aw0:254e03fd-d7f3-4034-bad0-e0a70eb4939c",
+        "aw0:586237be-5ab2-47d5-b9b0-2eddf842826b"
+      ]
+    },
+    {
+      "@id": "aw0:9c3adc28-7969-4c6b-857a-06b170a43278",
+      "@type": "sso:SingleOccurrence",
+      "lci:isDefinedBy": "aw0:2b8004a0-a342-4424-8caf-e1176b321dfd",
+      "rdfs:label": "C-Assy"
+    },
+    {
+      "@id": "aw0:c3b4c6f9-2013-4505-b025-f92cac83b9f6",
+      "@type": "rep:VertexPoint",
+      "rdfs:label": "N2",
+      "rep:vertexGeometry": "aw0:75abdcff-d5f9-4992-8e5b-bece635073b3"
+    },
+    {
+      "@id": "aw0:d7ead54a-025c-4b34-8a8c-e1e2b75f9f45",
+      "@type": "rep:SubEdge",
+      "rdfs:label": "S2-1",
+      "rep:edgeEnd": "aw0:e0fe57d9-fefe-4e34-a125-9a16ee407946",
+      "rep:edgeStart": "aw0:97e33a8b-2874-48cd-9828-6c1039f2c4c8",
+      "rep:parentEdge": "aw0:9f7d9e6f-82a9-4ef9-974a-a17b0fc13ab2"
+    },
+    {
+      "@id": "aw0:622da06a-c58a-4e8b-9e19-c22b5fe2519d",
+      "@type": "sso:HarnessNode",
+      "sso:representedGeometry": "aw0:97e33a8b-2874-48cd-9828-6c1039f2c4c8"
+    },
+    {
+      "@id": "aw0:77e53766-e91c-47ee-9f7a-2fd27a7e10d2",
+      "@type": "sso:SingleOccurrence",
+      "lci:hasArrangedPart": [
+        "aw0:4a587b23-340e-4ff2-92b4-9b487d88cfa9",
+        "aw0:d3ab64a3-950b-40f2-882e-409c89e96199"
+      ],
+      "lci:isDefinedBy": "aw0:45b9ef53-b6f6-4e28-bac4-128f823b11d4",
+      "rdfs:label": "splice1"
+    },
+    {
+      "@id": "aw0:1ce30646-3079-4d84-9b83-cc82bfd0c605",
+      "@type": "rep:EdgeBoundedCurveWithLength",
+      "rdfs:label": "S1",
+      "rep:edgeEnd": "aw0:3cc9b104-c9ed-458d-93ae-0dcf5f83b873",
+      "rep:edgeGeometry": "aw0:9e720fdd-a7ae-4839-9cac-2836623bfa56",
+      "rep:edgeStart": "aw0:e0fe57d9-fefe-4e34-a125-9a16ee407946",
+      "rep:geometryToTopologyItemAssociation": {
+        "@id": "aw0:610d0c3c-4d69-4291-8c82-0a0d02b56ffa",
+        "specificProperty": "aw0:881d764c-7172-4420-ab40-f5cc9e408fdf"
+      },
+      "rep:sameSense": true
+    },
+    {
+      "@id": "aw0:ee2db0f5-9f0d-4a68-bc54-82bcb7a7d703",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:b6a62262-fc12-4dd8-a5bd-a1e8f69a36bc"
+    },
+    {
+      "@id": "aw0:9e392e0a-50dd-4254-b757-543d5cba09d1",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "sso:nextAssemblyOccurrenceUsage"
+    },
+    {
+      "@id": "aw0:fc9b62e7-446c-4da4-b801-e0fd3b047712",
+      "@type": "lci:Organization",
+      "rdfs:label": "SOURIAU",
+      "sso:id": "http://www.souriau.com"
+    },
+    {
+      "@id": "aw0:ca8a248a-892d-4786-ac47-b1fc4bc6e6c3",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "rep:shapeRepresentationRelationshipWithSameGeometricRepresentationContext"
+    },
+    {
+      "@id": "aw0:65a82222-9b0a-487d-a374-d1c6f57dc1eb",
+      "@type": "sso:OccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:250b1624-bfcd-447a-aa38-49faa0751be9",
+      "@type": "sso:ShapeElement",
+      "rdfs:label": "gnd",
+      "sso:colourCode": "aw0:e820308d-bf4d-4363-8bea-f0392f9f1ef1"
+    },
+    {
+      "@id": "aw0:bc913ae2-f9f4-4bd4-8232-42debee491ed",
+      "@type": "sso:SingleOccurrence",
+      "lci:isDefinedBy": "aw0:3323c150-af2d-4fad-9921-9a945af586ac",
+      "rdfs:label": "B-insert"
+    },
+    {
+      "@id": "aw0:30ed3b59-d532-4dcd-a572-88c06943276c",
+      "@type": "sso:HarnessNode",
+      "sso:representedGeometry": "aw0:c3b4c6f9-2013-4505-b025-f92cac83b9f6"
+    },
+    {
+      "@id": "aw0:f1cbbbc5-ead9-4999-b90f-74ce8ff4b75f",
+      "@type": [
+        "sso:ApplicationDomain_electrical",
+        "sso:LifeCycleStage_design",
+        "sso:WiringHarnessAssemblyDesign"
+      ],
+      "lci:hasArrangedPart": [
+        "aw0:00de766b-b15c-4f53-873f-45ecf8873bec",
+        "aw0:01b31c44-923c-4e15-a0a9-f2fa2fba21fe",
+        "aw0:08d56b63-0ff9-4823-ab26-585af4d2a3f2",
+        "aw0:0b0db39f-fc43-4e54-a8b8-a9c04ebbfd4c",
+        "aw0:11d757f2-189d-4e97-9556-703489ef633b",
+        "aw0:1343f910-2fe5-4bca-846e-a9294c8a5664",
+        "aw0:19129136-359c-4c70-99ac-66ad4ee21f2b",
+        "aw0:19a1670a-8ae5-48e0-8b3b-106db6fe15be",
+        "aw0:2bae682e-1755-4727-bf53-6d1a3c53d354",
+        "aw0:30ed3b59-d532-4dcd-a572-88c06943276c",
+        "aw0:3304a8d4-c47b-4847-9a0f-d90ba6521c14",
+        "aw0:395599d1-a3d3-46f9-b359-7091115beb97",
+        "aw0:4e866111-17d8-47a1-8225-c70c2ab9c47a",
+        "aw0:57ef2d8c-3b27-4d74-855d-236621971ebd",
+        "aw0:5ba305cf-c7de-4ba3-97e5-b744b4ca9062",
+        "aw0:5dc4c1af-adc4-4477-8713-f83c29f1e034",
+        "aw0:622da06a-c58a-4e8b-9e19-c22b5fe2519d",
+        "aw0:634e0a84-e346-4740-8102-36b3ffaa7d0b",
+        "aw0:66f2cf1d-a83b-4344-b1ff-d56e05d4897e",
+        "aw0:6965ba4c-2904-4fd1-8a29-85ef60af9e14",
+        "aw0:6aa589f9-56b9-455b-8b97-00115bf047a9",
+        "aw0:6cb7c83d-2475-4c23-a60b-96d1e1af8eff",
+        "aw0:6da8c9b9-f724-44b6-a362-81cd0822cbb0",
+        "aw0:7c167403-92b4-438d-8120-cad5e5bd3c78",
+        "aw0:7ceed6cd-a028-45e6-852a-cc806985f2c6",
+        "aw0:82078431-cafb-449b-951a-6afe0d7681aa",
+        "aw0:8350b34e-fdbe-4446-8c20-3ef6cbf7b129",
+        "aw0:89798e7e-a686-4c10-99bd-a874fa4df4bb",
+        "aw0:9b157964-b9af-4d4a-bd0d-b4f956b2b3b0",
+        "aw0:a096830d-9d23-472b-b10e-c842bd5c6f16",
+        "aw0:a4cbe447-01ac-45f3-aa7a-d636e9222f43",
+        "aw0:a6a1b050-c7cd-4d1f-910b-315d69f5e617",
+        "aw0:acf97867-a222-40b3-b57e-c201cade5ae9",
+        "aw0:ad4cd913-168d-41a3-b350-429b97eb358c",
+        "aw0:ad708a70-5295-4117-9ad5-6dd1c483cd23",
+        "aw0:aebc0963-9040-4dfe-b882-fda0c53ae879",
+        "aw0:b36e4b4b-9c4d-4c9c-84fa-b9abb3645724",
+        "aw0:b64fe574-f514-46bc-af99-e3f140db7bcc",
+        "aw0:b7225c0a-3c9c-4b4c-aa52-cc9f73e9a5eb",
+        "aw0:c65fcee3-d12b-487c-bd53-2fcea7eba5ea",
+        "aw0:d56a7b50-0fcb-4dae-9ccf-99a500960ddb",
+        "aw0:ed9cb9d1-5b2f-42f9-9267-aec351c5d876",
+        "aw0:eda3cbd5-79bd-49dd-9d04-50c5f40bc537",
+        "aw0:f6e2235a-c3c7-4270-abf6-aba08ff7f0ef"
+      ],
+      "rdfs:label": "",
+      "sso:definingGeometry": "aw0:d8538ace-0999-4c40-b8cb-97b2af25dcff",
+      "sso:nextAssemblyOccurrenceUsage": [
+        {
+          "@id": "aw0:d1356b8d-7545-4a0d-97d9-b4146cde9218",
+          "specificProperty": "aw0:2543ad2f-3edf-48a8-bc90-33957790e07e"
+        },
+        {
+          "@id": "aw0:325af98a-734d-446d-8a2c-750a35d5bca8",
+          "specificProperty": "aw0:2790619b-5daa-4077-9a1a-0d0150f05d52"
+        },
+        {
+          "@id": "aw0:1a4468be-9535-416d-8d6e-572ead0faaa2",
+          "specificProperty": "aw0:45ad2eef-a562-451a-9ffd-088e93683fc9"
+        },
+        {
+          "@id": "aw0:88a00f3f-56b0-4d0c-b59e-f8848adc8a18",
+          "specificProperty": "aw0:5d59e4dd-f912-4b12-ae2f-f1f71ef69c37"
+        },
+        {
+          "@id": "aw0:b7917025-ff08-4c56-8250-1929d13be39b",
+          "specificProperty": "aw0:687600a2-c50e-4206-9716-2c147adc5a92"
+        },
+        {
+          "@id": "aw0:76ee6904-fa0c-4512-a388-95c6870bf3de",
+          "specificProperty": "aw0:79aeae84-8666-45ce-936b-5351d9a2befe"
+        },
+        {
+          "@id": "aw0:b1c73efb-bf5e-4c86-acf5-ca5def81b153",
+          "specificProperty": "aw0:89bc1e7f-2892-49f7-a8b0-5cf0ad45ab98"
+        },
+        {
+          "@id": "aw0:961b612c-1d98-42fc-9a96-0590c5ce3682",
+          "specificProperty": "aw0:9df0bb43-efab-4449-b6b5-a7726f37b080"
+        },
+        {
+          "@id": "aw0:7c7bd00e-66b7-4119-9462-1a0139dfa27e",
+          "specificProperty": "aw0:aab8e046-50d9-41f6-bf8c-5973c4934603"
+        },
+        {
+          "@id": "aw0:15d92684-e013-4a5e-86fb-c1bbaa653440",
+          "specificProperty": "aw0:aded329c-c2ab-422d-abda-547f34836cf8"
+        },
+        {
+          "@id": "aw0:77e53766-e91c-47ee-9f7a-2fd27a7e10d2",
+          "specificProperty": "aw0:c0a55702-55e5-4782-91f9-e00579f0cbe7"
+        },
+        {
+          "@id": "aw0:7f62e268-aa6e-40cb-8cc1-5e961c5296fb",
+          "specificProperty": "aw0:c8aff67f-3ad6-4103-9fc0-fae7217f03e8"
+        },
+        {
+          "@id": "aw0:29a63ca8-d5f7-49fd-a154-4d3891eadde0",
+          "specificProperty": "aw0:debdbf7f-952f-43b8-92ac-88bb06a9d2de"
+        },
+        {
+          "@id": "aw0:491c97bd-1af1-4d97-adbf-7ca2136234b7",
+          "specificProperty": "aw0:dfd2f7aa-163b-4dcd-b107-40b7de20983e"
+        },
+        {
+          "@id": "aw0:9e051df5-f3cf-4d23-8401-4208362ba493",
+          "specificProperty": "aw0:f01af7bc-7c74-4bb3-aae9-5ef23c180feb"
+        },
+        {
+          "@id": "aw0:3b79f359-6e43-4c1a-b62d-06c10a46ba6b",
+          "specificProperty": "aw0:f7b89171-952d-46ef-95d1-fbda179835c7"
+        }
+      ],
+      "sso:topology": "aw0:cfdcb7cf-8257-47db-96ce-1b01113c3e1a",
+      "sso:viewId": "/NULL"
+    },
+    {
+      "@id": "aw0:c578decf-e1e2-48fa-8ddb-f0ff42b69c25",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:75d3dda6-127b-4a66-9930-dc043e02ca1f"
+    },
+    {
+      "@id": "aw0:04880b7f-7eec-4997-bfa9-0e87d478c2de",
+      "@type": [
+        "sso:ApplicationDomain_electrical",
+        "sso:LifeCycleStage_design",
+        "sso:PartDesign"
+      ],
+      "lci:hasArrangedPart": [
+        "aw0:f2e4b062-4be0-4405-951d-1653d7ea3c1c",
+        "aw0:f53430ee-c141-4da6-a3ff-95eee619c905"
+      ],
+      "rdfs:label": "",
+      "sso:definingGeometry": "aw0:1679e3a6-d75c-4078-ac04-0caabc87ef4c",
+      "sso:viewId": "/NULL"
+    },
+    {
+      "@id": "aw0:b893d270-4914-48f8-a5ed-739d5f0b9836",
+      "@type": [
+        "sso:ApplicationDomain_electrical",
+        "sso:LifeCycleStage_design",
+        "sso:WiringHarnessAssemblyDesign"
+      ],
+      "lci:hasArrangedPart": [
+        "aw0:4269cc70-6714-4955-b4c8-3198a7068515",
+        "aw0:ac0cccce-a193-4148-ba4a-e1ba72ca246c"
+      ],
+      "rdfs:label": "",
+      "sso:nextAssemblyOccurrenceUsage": [
+        {
+          "@id": "aw0:dc421170-122f-4ad1-b759-a9e9d07d629e",
+          "specificProperty": "aw0:07e92d3a-ed54-4506-afcb-ed3cec9ee2f9"
+        },
+        {
+          "@id": "aw0:e7f2bb8c-0dae-4bf8-819d-babc2f5a5dd7",
+          "specificProperty": "aw0:d73feff4-06de-4721-998c-cae25b8f3259"
+        }
+      ],
+      "sso:promissoryAssemblyOccurrenceUsage": {
+        "@id": "aw0:961b612c-1d98-42fc-9a96-0590c5ce3682",
+        "specificProperty": "aw0:12e8a5f9-e609-4574-af0e-1f1da6353d25"
+      },
+      "sso:viewId": "/NULL"
+    },
+    {
+      "@id": "aw0:19129136-359c-4c70-99ac-66ad4ee21f2b",
+      "@type": "sso:HarnessSegment",
+      "sso:representedGeometry": "aw0:9a3c359a-29c1-477d-8107-c799a9669f4a"
+    },
+    {
+      "@id": "aw0:bf61f0d1-fa68-4fe0-9e9f-83d00f4d740f",
+      "@type": "sso:SpecifiedOccurrence",
+      "lci:hasArrangedPart": [
+        "aw0:6418c302-c41a-459e-9423-55ffcaf12105",
+        "aw0:9ef6528f-b47f-42f8-a14e-42c269a34443"
+      ],
+      "lci:isDefinedBy": "aw0:9729e005-7290-4099-a5a2-fb1834aa80f9",
+      "rdfs:label": "C-Assy/signal5",
+      "sso:hasHigherUsage": "aw0:9c3adc28-7969-4c6b-857a-06b170a43278"
+    },
+    {
+      "@id": "aw0:4af5eb74-e14a-495a-a6a0-d2d92a2c06bf",
+      "@type": "rep:Path",
+      "rdfs:label": "S2-S3",
+      "rep:edgeList": [
+        "aw0:9df84d74-0c4a-4445-be52-50feccd9c1cf",
+        "aw0:2e466298-6577-4144-9f91-add524d87dcd"
+      ],
+      "rep:geometryToTopologyItemAssociation": {
+        "@id": "aw0:610d0c3c-4d69-4291-8c82-0a0d02b56ffa",
+        "specificProperty": "aw0:0cf9f3e3-a93f-473d-83fc-ab72b513488b"
+      }
+    },
+    {
+      "@id": "aw0:b319adcf-0680-43fd-9d29-89f7324ca6b7",
+      "@type": "sso:OccurrenceTerminal",
+      "lci:isDefinedBy": "aw0:ae904951-792e-487a-9026-82d49f5406d6"
+    },
+    {
+      "@id": "aw0:1d98ce3b-cc8c-49a9-9911-09c4747c53f7",
+      "@type": "sso:PartConnectivityDefinition",
+      "lci:isDefinedBy": [
+        "aw0:5ee668a1-69a1-4f02-8377-8bfd1ec5d473",
+        "aw0:dab8e0d9-ff2f-4a59-abb9-0442c19012ac"
+      ]
+    },
+    {
+      "@id": "aw0:9df84d74-0c4a-4445-be52-50feccd9c1cf",
+      "@type": "rep:OrientedEdge",
+      "rep:edgeElement": "aw0:9f7d9e6f-82a9-4ef9-974a-a17b0fc13ab2",
+      "rep:orientation": true
+    },
+    {
+      "@id": "aw0:c73e16a1-9ffa-432d-8ebd-d6b345357fa6",
+      "@type": "rep:PointOnCurve",
+      "rep:basisCurve": "aw0:3f5eba64-d5c3-4d1d-9814-22aca8979d09",
+      "rep:pointParameter": 0.3
+    },
+    {
+      "@id": "aw0:62d77791-0ce4-424b-bb03-bb245c375742",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": "rep:geometryToTopologyItemAssociation"
+    },
+    {
+      "@id": "aw0:3e464149-4659-47ca-8e3d-35711cd6fd77",
+      "@type": "sso:ProductClass",
+      "rdfs:label": "H1 harness"
+    },
+    {
+      "@id": "aw0:29028987-420e-4f89-9abf-b549c6d1839f",
+      "@type": "sso:CrossSectionalOccurrenceShapeElement",
+      "lci:isDefinedBy": "aw0:6015524b-d30c-4856-8efd-c262fd290f82"
+    },
+    {
+      "@id": "aw0:c80d4921-28db-4bbe-b1ec-a94911bfa575",
+      "@type": "sso:WireColourBasedIdentificationCode",
+      "rdfs:label": "wire colour-based identification code",
+      "sso:id": "white"
+    },
+    {
+      "@id": "aw0:31068e99-79ef-427b-bdf8-f3a74e6e72c1",
+      "@type": "sso:SingleOccurrence",
+      "lci:hasArrangedPart": [
+        "aw0:535c9d35-7ef7-45a6-81ee-5da49c118153",
+        "aw0:5af83afb-a6e4-4509-87be-85476fb0a2ca"
+      ],
+      "lci:isDefinedBy": "aw0:0a149066-a603-442e-af40-81617f7add58",
+      "rdfs:label": "battery1"
+    },
+    {
+      "@id": "aw0:88a00f3f-56b0-4d0c-b59e-f8848adc8a18",
+      "@type": "sso:SingleOccurrence",
+      "lci:hasArrangedPart": [
+        "aw0:1718fabb-119c-4b26-8a01-4c66ae3b4b21",
+        "aw0:ca2144d6-6974-4554-98ae-47049e1e6cf9"
+      ],
+      "lci:isDefinedBy": "aw0:431b0ff2-9500-4160-871d-b4b64d278863",
+      "rdfs:label": "lug3"
+    },
+    {
+      "@id": "aw0:fa0cbd1c-5455-4b1f-9d47-39288c987f68",
+      "@type": "sso:WireOccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:dab8e0d9-ff2f-4a59-abb9-0442c19012ac",
+      "@type": [
+        "sso:InterfaceOrJoinTerminal_join_terminal",
+        "sso:PartTerminal",
+        "sso:TerminalJointType_solder_terminal"
+      ],
+      "rdfs:label": "Join2"
+    },
+    {
+      "@id": "aw0:72373632-b142-43f7-9859-d5cb28118770",
+      "@type": "sso:CableOccurrenceTerminalLocationGroup",
+      "lci:hasArrangedPart": [
+        "aw0:58dead20-17d8-41d4-afa5-1a1e9936c71f",
+        "aw0:ddb25749-2f60-46b1-aee3-26508862f7d8"
+      ]
+    },
+    {
+      "@id": "aw0:aebc0963-9040-4dfe-b882-fda0c53ae879",
+      "@type": [
+        "sso:AssemblyJointType_crimped_connection",
+        "sso:AssemblyShapeJoint"
+      ],
+      "sso:assemblyShapeJointItemRelationship": [
+        "aw0:47f499aa-a2e9-4aeb-aa10-64177d19332b",
+        "aw0:93d74b80-71c0-403a-8ccf-cf69c1ce5f6d",
+        "aw0:d3ab64a3-950b-40f2-882e-409c89e96199"
+      ]
+    },
+    {
+      "@id": "aw0:1ce76f49-1fb1-4f6b-b616-4d18eede95c4",
+      "@type": "rep:Point"
+    },
+    {
+      "@id": "aw0:1d65d9e5-d41e-43cf-8164-17a0e6f419c3",
+      "@type": "sso:CableOccurrenceTerminalLocationGroup",
+      "lci:hasArrangedPart": [
+        "aw0:11d169ca-d3b5-48b5-a673-a92f944c1c47",
+        "aw0:43f4d495-c8ef-4d73-9184-6b5b4bf478ad"
+      ]
+    },
+    {
+      "@id": "aw0:5c9d8d45-01d2-4114-bbbb-7942170c6dda",
+      "@type": [
+        "sso:AssemblyJointType_screwed_connection",
+        "sso:AssemblyShapeJoint"
+      ],
+      "sso:assemblyShapeJointItemRelationship": [
+        "aw0:535c9d35-7ef7-45a6-81ee-5da49c118153",
+        "aw0:85093075-874c-4f7f-981b-022da21bf2ab"
+      ]
+    },
+    {
+      "@id": "aw0:ebf7b5ef-ae7c-40f0-98b8-86cae06902b5",
+      "@type": "sso:ProductClass",
+      "rdfs:label": "Standard Battery"
+    },
+    {
+      "@id": "aw0:687f5275-3140-43a9-a818-b0aaa3e76255",
+      "@type": "sso:PartVersion",
+      "sso:hasProductDefinition": "aw0:eea75a4d-fe13-4e97-8514-0b7e2df63dfb",
+      "sso:versionId": "/NULL"
+    },
+    {
+      "@id": "aw0:186517bc-fad9-45cd-a7fd-63bef56fb7b7",
+      "@type": [
+        "sso:Part",
+        "sso:PartCategory_discrete",
+        "sso:PartCategory_splice"
+      ],
+      "rdfs:label": "Butt Splice Terminal",
+      "sso:hasPartVersion": "aw0:a83fcbb5-f933-4de2-9087-126d3d797c39",
+      "sso:id": "M81824"
+    },
+    {
+      "@id": "aw0:76a75f3a-7236-43de-871d-b8f49893f91d",
+      "@type": [
+        "sso:InterfaceOrJoinTerminal_join_terminal",
+        "sso:PartTerminal",
+        "sso:TerminalJointType_solder_terminal"
+      ],
+      "rdfs:label": "Join7"
+    },
+    {
+      "@id": "aw0:de465fe3-0359-4a9a-bbdb-c39de46ae9b3",
+      "@type": "sso:OccurrenceTerminal"
+    },
+    {
+      "@id": "aw0:61d23993-5ba1-4616-a752-8986260b7893",
+      "@type": "sso:OccurrenceTerminal"
+    },
+    {
+      "@id": "aw0_:3d359282-dfaa-4432-a7ec-1e7e4537f014",
+      "@type": "rep:CartesianPoint",
+      "rep:coordinates": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "@id": "aw0_:84844b63-8fd3-4515-94fd-f28e4bd88c75",
+      "@type": "rep:CartesianPoint",
+      "rep:coordinates": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "@id": "aw0_:dd41dd50-42cb-4286-a049-68d042d80f74",
+      "@type": "rep:CartesianPoint",
+      "rep:coordinates": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "@id": "aw0_:57644230-3048-43c9-999c-9d7149db9d2e",
+      "@type": "rep:CartesianPoint",
+      "rep:coordinates": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "@id": "aw0_:88efd86e-20dd-4ba2-bfb4-740b7002d3f5",
+      "@type": "rep:CartesianPoint",
+      "rep:coordinates": [
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

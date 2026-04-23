@@ -1,0 +1,12 @@
+@prefix rep:	<http://ontology.semanticstep.net/rep#> .
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:	<http://www.w3.org/2002/07/owl#> .
+@prefix :	<urn:uuid:c1efcf54-3e8e-4cc7-a7d1-82a9f613a361#> .
+@prefix ns0:	<urn:uuid:c1efcf54-3e8e-4cc7-a7d1-82a9f613a362#> .
+@prefix ns1:	<urn:uuid:c1efcf54-3e8e-4cc7-a7d1-82a9f613a364#> .
+
+<urn:uuid:c1efcf54-3e8e-4cc7-a7d1-82a9f613a361>	a	owl:Ontology ;
+	owl:imports	<urn:uuid:c1efcf54-3e8e-4cc7-a7d1-82a9f613a362> ,
+			<urn:uuid:c1efcf54-3e8e-4cc7-a7d1-82a9f613a364> .
+:mainA	rep:mappingSource	ns0:mainB ,
+			ns1:mainD .

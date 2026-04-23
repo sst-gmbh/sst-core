@@ -1,0 +1,2488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<n0:Uos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cmn="http://standards.iso.org/iso/ts/10303/-3000/-ed-1/tech/xml-schema/common" xmlns:n0="http://standards.iso.org/iso/ts/10303/-4442/-ed-1/tech/xml-schema/domain_model" xsi:schemaLocation="http://standards.iso.org/iso/ts/10303/-4442/-ed-1/tech/xml-schema/domain_model DomainModel.xsd">
+    <Header></Header>
+    <DataContainer xsi:type="n0:AP242DataContainer">
+        <ViewContext uid="_62bf9224-4a23-4343-bd9c-d72e66c4adea">
+            <ApplicationDomain>
+                <PredefinedApplicationDomainEnum>electrical</PredefinedApplicationDomainEnum>
+            </ApplicationDomain>
+            <LifeCycleStage>
+                <ProxyString>Design</ProxyString>
+            </LifeCycleStage>
+        </ViewContext>
+        <Unit uid="_cf5bcf40-5f4e-4631-8ed6-387873b730b6">
+            <Name>
+                <ClassString>metre</ClassString>
+            </Name>
+            <Quantity>
+                <ClassString>length</ClassString>
+            </Quantity>
+        </Unit>
+        <Unit uid="_4c988c47-8191-4486-ac0b-26c7bff5a214">
+            <Name>
+                <ClassString>milli metre</ClassString>
+            </Name>
+            <Quantity>
+                <ClassString>length</ClassString>
+            </Quantity>
+        </Unit>
+        <Unit uid="_b6b65f28-bd8f-4d10-b916-33f0cd5a1f7e">
+            <Name>
+                <ClassString>square milli metre</ClassString>
+            </Name>
+            <Quantity>
+                <ClassString>length</ClassString>
+            </Quantity>
+        </Unit>
+        <FormatProperty uid="_21455cd8-9973-4c52-a59a-ebb60cd1e545">
+            <DataFormat>
+                <ClassString>ISO 10303-214</ClassString>
+            </DataFormat>
+        </FormatProperty>
+        <Organization uid="_9e3bb15b-ef22-4744-bde8-1e6fc4e8a3a1">
+            <Id id="http://www.shrinkflexthailand.com"></Id>
+            <Name>
+                <CharacterString>Shrinkflex (Thailand) Co., Ltd</CharacterString>
+            </Name>
+        </Organization>
+        <Organization uid="_8660366f-1e57-41fe-a7b4-4be23bc65a69">
+            <Id id="http://www.te.com"></Id>
+            <Name>
+                <CharacterString>TE Connectivity Ltd</CharacterString>
+            </Name>
+        </Organization>
+        <Organization uid="_456618e2-0d92-4d4c-b25a-b5f2234b1a23">
+            <Id id="http://www.souriau.com"></Id>
+            <Name>
+                <CharacterString>SOURIAU</CharacterString>
+            </Name>
+        </Organization>
+        <Organization uid="_f21e26c0-8fd3-4eed-bec9-79c3be0f6825">
+            <Id id="IEC"></Id>
+            <Name>
+                <CharacterString>International Electrotechnical Commission</CharacterString>
+            </Name>
+        </Organization>
+        <PropertyDefinition xsi:type="n0:WireColourBasedIdentificationCode" uid="_3ed0fb5c-0400-4df8-8864-8f881c1e4ab1">
+            <Id id="shield"></Id>
+            <PropertyType>
+                <ClassString>wire colour-based identification code</ClassString>
+            </PropertyType>
+        </PropertyDefinition>
+        <PropertyDefinition xsi:type="n0:PropertyDefinition" uid="_a380c7d5-9500-4427-8aac-0539303574d4">
+            <Id id="0112/2///61360_4#AAE529"></Id>
+            <PropertyType>
+                <ClassString></ClassString>
+            </PropertyType>
+        </PropertyDefinition>
+        <PropertyDefinition xsi:type="n0:WireColourBasedIdentificationCode" uid="_3d68f713-3059-4547-a894-3fb36d45d001">
+            <Id id="red"></Id>
+            <PropertyType>
+                <ClassString>wire colour-based identification code</ClassString>
+            </PropertyType>
+        </PropertyDefinition>
+        <PropertyDefinition xsi:type="n0:WireColourBasedIdentificationCode" uid="_e2b073db-7f0b-403d-8bdd-319025c114b9">
+            <Id id="green"></Id>
+            <PropertyType>
+                <ClassString>wire colour-based identification code</ClassString>
+            </PropertyType>
+        </PropertyDefinition>
+        <PropertyDefinition xsi:type="n0:WireColourBasedIdentificationCode" uid="_f659c906-2032-4fd2-83e9-b528f0b0d31e">
+            <Id id="white"></Id>
+            <PropertyType>
+                <ClassString>wire colour-based identification code</ClassString>
+            </PropertyType>
+        </PropertyDefinition>
+        <Part uid="_06fc2f99-5a55-4a08-b039-b736b998aafd">
+            <Id id="8660-249"></Id>
+            <Name>
+                <CharacterString>#16 Rack plug power contact</CharacterString>
+            </Name>
+            <PartTypes>
+                <PartCategoryEnum>connector_contact</PartCategoryEnum>
+                <PartCategoryEnum>discrete</PartCategoryEnum>
+            </PartTypes>
+            <Versions>
+                <PartVersion uid="_03be1a57-3542-4980-a686-a2d14237ef78">
+                    <Id id="Version 1"></Id>
+                    <Views>
+                        <PartView uid="_057a74b2-5185-49fc-9d9a-949b9d7a553d">
+                            <DefiningGeometry uidRef="_c5a25b70-b0c2-4e37-88ec-fce23456318c"></DefiningGeometry>
+                            <Id id="Version 1"></Id>
+                            <InitialContext uidRef="default_electrical_design_view_context"></InitialContext>
+                            <Occurrence xsi:type="n0:SingleOccurrence" uid="_584b1bbb-a09d-4f25-84a4-db0b6eb3c184">
+                                <Id id="arinc1/C-Assy/power3"></Id>
+                                <ShapeElement xsi:type="n0:OccurrenceContactFeature" uid="_3da52d9d-f58d-46dc-b6a7-098d844d8e24">
+                                    <Definition uidRef="_652f55a0-644b-4005-8d9d-297e8d7adfb3"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_6536937c-9b4e-4a58-99c1-8881c7aa19d3">
+                                    <Definition uidRef="_5bc39c00-0968-42a3-baf2-06de16acaec4"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_6de741e0-c916-42c0-b1e9-c07aee102fe3">
+                                    <Definition uidRef="_270411ec-9271-40d8-bff3-20ff6455e40e"></Definition>
+                                </ShapeElement>
+                            </Occurrence>
+                            <Occurrence xsi:type="n0:SingleOccurrence" uid="_e3416539-fd28-43df-bd2c-6b2d5a51213c">
+                                <Id id="arinc1/C-Assy/power4"></Id>
+                                <ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_1c999b79-76c5-4b99-b48a-c73386792170">
+                                    <Definition uidRef="_5bc39c00-0968-42a3-baf2-06de16acaec4"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceContactFeature" uid="_3abd894d-42e6-4080-b079-25bdaf1c0a1d">
+                                    <Definition uidRef="_652f55a0-644b-4005-8d9d-297e8d7adfb3"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_53bcb5df-1071-48f0-b741-e76d2ae71193">
+                                    <Definition uidRef="_270411ec-9271-40d8-bff3-20ff6455e40e"></Definition>
+                                </ShapeElement>
+                            </Occurrence>
+                            <ShapeElement xsi:type="n0:PartTerminal" uid="_270411ec-9271-40d8-bff3-20ff6455e40e">
+                                <Id id="Int term"></Id>
+                                <IntendedJointType>
+                                    <TerminalJointTypeEnum>pin_terminal</TerminalJointTypeEnum>
+                                </IntendedJointType>
+                                <InterfaceOrJoinTerminal>interface_terminal</InterfaceOrJoinTerminal>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartTerminal" uid="_5bc39c00-0968-42a3-baf2-06de16acaec4">
+                                <Id id="Join term"></Id>
+                                <IntendedJointType>
+                                    <TerminalJointTypeEnum>crimp_terminal</TerminalJointTypeEnum>
+                                </IntendedJointType>
+                                <InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartContactFeature" uid="_652f55a0-644b-4005-8d9d-297e8d7adfb3">
+                                <Id id="Contact mounting profile"></Id>
+                                <PartDefinition uidRef="_e1fdf0f9-b045-43d8-87ea-02cdd323fc00"></PartDefinition>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartConnectivityDefinition" uid="_b8502307-9c0b-412c-a568-863ea79141ff">
+                                <ConnectedTerminals>
+                                    <PartTerminal uidRef="_270411ec-9271-40d8-bff3-20ff6455e40e"></PartTerminal>
+                                    <PartTerminal uidRef="_5bc39c00-0968-42a3-baf2-06de16acaec4"></PartTerminal>
+                                </ConnectedTerminals>
+                            </ShapeElement>
+                        </PartView>
+                    </Views>
+                </PartVersion>
+            </Versions>
+        </Part>
+        <Part uid="_5b2703da-6eb5-4942-91b5-f38df08132c3">
+            <Id id="TM2PB"></Id>
+            <Name>
+                <CharacterString>Phone connector 6.35mm</CharacterString>
+            </Name>
+            <PartTypes>
+                <PartCategoryEnum>connector</PartCategoryEnum>
+                <PartCategoryEnum>discrete</PartCategoryEnum>
+            </PartTypes>
+            <Versions>
+                <PartVersion uid="_b670c8f4-b467-44e8-88cc-7eee9ddfa91a">
+                    <Id id="Version 1"></Id>
+                    <Views>
+                        <PartView uid="_b3ac8202-b9c0-4d2a-bd61-5aaeb4d202b1">
+                            <Id id="Version 1"></Id>
+                            <InitialContext uidRef="default_electrical_design_view_context"></InitialContext>
+                            <Occurrence xsi:type="n0:SingleOccurrence" uid="_f62e3da8-5ca1-4bc7-a8dd-f2d4cafe5a20">
+                                <Id id="phone1"></Id>
+                                <ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_0c51a2da-fac2-4565-9657-28a926013c92">
+                                    <Definition uidRef="_446a8389-695e-4b64-bc38-8a455e8ff2e5"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_39793fdd-edbb-404f-b9fe-1dc6b5e1531e">
+                                    <Definition uidRef="_fa062054-aea2-4f6f-83a8-192b2937a197"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_3aab65eb-34b4-42ca-887a-9cd46fcada26">
+                                    <Definition uidRef="_ddf3e533-d829-4c2b-99e2-a7ca298d2d58"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_98a9af56-866f-4b2d-b737-af62c94424a8">
+                                    <Definition uidRef="_5ef94b91-d40e-46f3-a825-76d3c6cbbab5"></Definition>
+                                </ShapeElement>
+                            </Occurrence>
+                            <ShapeElement xsi:type="n0:PartConnectivityDefinition" uid="_23fb6828-1910-4a65-b227-097360631880">
+                                <ConnectedTerminals>
+                                    <PartTerminal uidRef="_446a8389-695e-4b64-bc38-8a455e8ff2e5"></PartTerminal>
+                                    <PartTerminal uidRef="_ddf3e533-d829-4c2b-99e2-a7ca298d2d58"></PartTerminal>
+                                </ConnectedTerminals>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartTerminal" uid="_446a8389-695e-4b64-bc38-8a455e8ff2e5">
+                                <Id id="Interface signal"></Id>
+                                <IntendedJointType>
+                                    <TerminalJointTypeEnum>pin_terminal</TerminalJointTypeEnum>
+                                </IntendedJointType>
+                                <InterfaceOrJoinTerminal>interface_terminal</InterfaceOrJoinTerminal>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartTerminal" uid="_5ef94b91-d40e-46f3-a825-76d3c6cbbab5">
+                                <Id id="Interface gnd"></Id>
+                                <IntendedJointType>
+                                    <TerminalJointTypeEnum>pin_terminal</TerminalJointTypeEnum>
+                                </IntendedJointType>
+                                <InterfaceOrJoinTerminal>interface_terminal</InterfaceOrJoinTerminal>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartConnectivityDefinition" uid="_c9ff6011-8e5b-41db-bcad-c5ac0038ab38">
+                                <ConnectedTerminals>
+                                    <PartTerminal uidRef="_5ef94b91-d40e-46f3-a825-76d3c6cbbab5"></PartTerminal>
+                                    <PartTerminal uidRef="_fa062054-aea2-4f6f-83a8-192b2937a197"></PartTerminal>
+                                </ConnectedTerminals>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartTerminal" uid="_ddf3e533-d829-4c2b-99e2-a7ca298d2d58">
+                                <Id id="Join signal"></Id>
+                                <IntendedJointType>
+                                    <TerminalJointTypeEnum>crimp_terminal</TerminalJointTypeEnum>
+                                </IntendedJointType>
+                                <InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartTerminal" uid="_fa062054-aea2-4f6f-83a8-192b2937a197">
+                                <Id id="Join gnd"></Id>
+                                <IntendedJointType>
+                                    <TerminalJointTypeEnum>crimp_terminal</TerminalJointTypeEnum>
+                                </IntendedJointType>
+                                <InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+                            </ShapeElement>
+                        </PartView>
+                    </Views>
+                </PartVersion>
+            </Versions>
+        </Part>
+        <Part uid="_15ed40ec-c44a-4af9-a4f0-6cb456fd2595">
+            <Id id="TC122"></Id>
+            <Name>
+                <CharacterString>Braid 1/2inch</CharacterString>
+            </Name>
+            <PartTypes>
+                <PartCategoryEnum>overbraid</PartCategoryEnum>
+                <PartCategoryEnum>raw_material_by_length</PartCategoryEnum>
+            </PartTypes>
+            <Versions>
+                <PartVersion uid="_f64af15d-1078-4404-af44-b818e7357bee">
+                    <Id id="Version 1"></Id>
+                    <Views>
+                        <PartView uid="_dafd7303-c33e-42d6-b424-94403382b769">
+                            <DefiningGeometry uidRef="_7747c5dc-6e00-4a2f-a46a-665f5e522440"></DefiningGeometry>
+                            <Id id="Version 1"></Id>
+                            <InitialContext uidRef="default_electrical_design_view_context"></InitialContext>
+                            <Occurrence xsi:type="n0:WireOccurrence" uid="_29bc7cf0-efeb-4c42-91f7-fcaa3dee36a6">
+                                <Id id="braid1"></Id>
+                                <ShapeElement xsi:type="n0:WireOccurrenceTerminal" uid="_1e25dc4d-e619-4bdc-910d-9d920de7ecb8"></ShapeElement>
+                                <ShapeElement xsi:type="n0:WireOccurrenceIdentification" uid="_cfde1187-0f02-4534-9463-0d96db96b83a">
+                                    <Name>
+                                        <CharacterString>shield</CharacterString>
+                                    </Name>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:CrossSectionalOccurrenceShapeElement" uid="_df81a1b1-8b83-4cbf-b70e-dafe5343a03d">
+                                    <Definition uidRef="_4b2ac1eb-295c-46e5-b486-fd2e89c48508"></Definition>
+                                </ShapeElement>
+                                <Quantity xsi:type="n0:NumericalValue" uid="_504d407a-92f3-481e-af91-d68fd0122510">
+                                    <Unit uidRef="_cf5bcf40-5f4e-4631-8ed6-387873b730b6"></Unit>
+                                    <ValueComponent>3.7</ValueComponent>
+                                </Quantity>
+                            </Occurrence>
+                            <ShapeElement xsi:type="n0:CrossSectionalPartShapeElement" uid="_4b2ac1eb-295c-46e5-b486-fd2e89c48508">
+                                <Id id="Inner surface"></Id>
+                            </ShapeElement>
+                        </PartView>
+                    </Views>
+                </PartVersion>
+            </Versions>
+        </Part>
+        <Part uid="_aa3bc05e-19f0-4b05-bf49-6d2a43cf9576">
+            <Id>
+                <Identifier uid="_d9f13101-1ee3-4b07-828b-32ad7171598f" id="H4N1.00BK" idContextRef="_9e3bb15b-ef22-4744-bde8-1e6fc4e8a3a1" idRoleRef=""></Identifier>
+            </Id>
+            <Name>
+                <CharacterString>Shrinkflex Polyolefin Heatshrink Tubing - 4/1 - 25mm 1&#34; - Black</CharacterString>
+            </Name>
+            <PartTypes>
+                <PartCategoryEnum>protective_covering</PartCategoryEnum>
+                <PartCategoryEnum>raw_material_by_length</PartCategoryEnum>
+            </PartTypes>
+            <Versions>
+                <PartVersion uid="_dfdc77d9-f328-41ed-9615-d6eac5559613">
+                    <Id id="Version 1"></Id>
+                    <Views>
+                        <PartView uid="_383931c4-b0c5-4e9e-acb0-4ef9e715bd87">
+                            <DefiningGeometry uidRef="_7747c5dc-6e00-4a2f-a46a-665f5e522440"></DefiningGeometry>
+                            <Id id="Version 1"></Id>
+                            <InitialContext uidRef="default_electrical_design_view_context"></InitialContext>
+                            <Occurrence xsi:type="n0:QuantifiedOccurrence" uid="_8b17a43e-0be3-4187-8be3-b387af42fadd">
+                                <Id id="heatshrink1"></Id>
+                                <ShapeElement xsi:type="n0:CrossSectionalOccurrenceShapeElement" uid="_37902e39-c51a-487b-aa09-397b0f4eba82">
+                                    <Definition uidRef="_76942c3d-7d27-4587-8d0d-bf97121848dc"></Definition>
+                                </ShapeElement>
+                                <Quantity xsi:type="n0:NumericalValue" uid="_9f42f340-0547-4c2e-a447-b48d43a188fb">
+                                    <Unit uidRef="_cf5bcf40-5f4e-4631-8ed6-387873b730b6"></Unit>
+                                    <ValueComponent>2.1</ValueComponent>
+                                </Quantity>
+                            </Occurrence>
+                            <ShapeElement xsi:type="n0:CrossSectionalPartShapeElement" uid="_76942c3d-7d27-4587-8d0d-bf97121848dc">
+                                <Id id="Inner surface"></Id>
+                            </ShapeElement>
+                        </PartView>
+                    </Views>
+                </PartVersion>
+            </Versions>
+        </Part>
+        <Part uid="_d57d443d-c1fc-4d78-87b4-ab2c2c2bda18">
+            <Id id="16 AWG"></Id>
+            <Name>
+                <CharacterString>Speaker wire</CharacterString>
+            </Name>
+            <PartTypes>
+                <PartCategoryEnum>cable</PartCategoryEnum>
+                <PartCategoryEnum>raw_material_by_length</PartCategoryEnum>
+            </PartTypes>
+            <Versions>
+                <PartVersion uid="_b4eee806-b701-4d6a-827d-0f7fa38b86ad">
+                    <Id id="Version 1"></Id>
+                    <Views>
+                        <PartView uid="_174ce80d-f2cf-4472-b31a-112105043415">
+                            <DefiningGeometry uidRef="_7747c5dc-6e00-4a2f-a46a-665f5e522440"></DefiningGeometry>
+                            <Id id="Version 1"></Id>
+                            <InitialContext uidRef="default_electrical_design_view_context"></InitialContext>
+                            <Occurrence xsi:type="n0:CableOccurrence" uid="_611c208e-4ea8-42d3-8228-49fbbdd5119a">
+                                <Id id="cable3"></Id>
+                                <ShapeElement xsi:type="n0:WireOccurrenceIdentification" uid="_223c601e-9b9c-4a28-ac14-b2567ba98cc4">
+                                    <Name>
+                                        <CharacterString>A</CharacterString>
+                                    </Name>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:WireOccurrenceIdentification" uid="_2767fd8c-e975-4138-934b-359c4575481c">
+                                    <Name>
+                                        <CharacterString>B</CharacterString>
+                                    </Name>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:CableOccurrenceTerminalLocationGroup" uid="_495986cb-d3f3-45af-9dff-ac456996cec2">
+                                    <ShapeElement xsi:type="n0:CableOccurrenceTerminal" uid="_a3edbd21-b8d3-43ed-9f91-402e88440971"></ShapeElement>
+                                    <ShapeElement xsi:type="n0:CableOccurrenceTerminal" uid="_bf448514-beaf-4825-992c-d706bd79f0b1"></ShapeElement>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:CrossSectionalOccurrenceShapeElement" uid="_8b6bf90f-e032-46b0-91d8-a119ce6dcb02">
+                                    <Definition uidRef="_ca1483ef-e7bc-4bb7-a3ea-8ad61f0baaf4"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:CableOccurrenceTerminalLocationGroup" uid="_f3f2ca20-7d8e-45c4-90e8-3e6b3cabf402">
+                                    <ShapeElement xsi:type="n0:CableOccurrenceTerminal" uid="_445afcf7-850e-490c-af66-8cc094ce8e8c"></ShapeElement>
+                                    <ShapeElement xsi:type="n0:CableOccurrenceTerminal" uid="_8854d687-4dbb-47ed-8c71-d9d261a22c20"></ShapeElement>
+                                </ShapeElement>
+                                <Quantity xsi:type="n0:NumericalValue" uid="_450ca6d4-1c36-4275-9fb1-eae1a1ffacf0">
+                                    <Unit uidRef="_cf5bcf40-5f4e-4631-8ed6-387873b730b6"></Unit>
+                                    <ValueComponent>4.25</ValueComponent>
+                                </Quantity>
+                            </Occurrence>
+                            <ShapeElement xsi:type="n0:CrossSectionalPartShapeElement" uid="_ca1483ef-e7bc-4bb7-a3ea-8ad61f0baaf4"></ShapeElement>
+                        </PartView>
+                    </Views>
+                </PartVersion>
+            </Versions>
+        </Part>
+        <Part uid="_53fb1689-f763-42bf-9f1a-77db5d677309">
+            <Id id="SPW-500SP-BK"></Id>
+            <Name>
+                <CharacterString>1/2 inch Spiral Wrap - 100 foot spool - Black</CharacterString>
+            </Name>
+            <PartTypes>
+                <PartCategoryEnum>protective_covering</PartCategoryEnum>
+                <PartCategoryEnum>raw_material_by_length</PartCategoryEnum>
+            </PartTypes>
+            <Versions>
+                <PartVersion uid="_8765e0e4-8d3c-423e-b86d-a4f5c4c6e605">
+                    <Id id="Version 1"></Id>
+                    <Views>
+                        <PartView uid="_20584391-e047-4290-b309-b042c9296da4">
+                            <DefiningGeometry uidRef="_7747c5dc-6e00-4a2f-a46a-665f5e522440"></DefiningGeometry>
+                            <Id id="Version 1"></Id>
+                            <InitialContext uidRef="default_electrical_design_view_context"></InitialContext>
+                            <Occurrence xsi:type="n0:QuantifiedOccurrence" uid="_d9cbe10c-7ed0-4579-918f-fa5662c76b02">
+                                <Id id="wrap1"></Id>
+                                <ShapeElement xsi:type="n0:CrossSectionalOccurrenceShapeElement" uid="_2000d964-46d8-44f5-9cd2-d1eacad41110">
+                                    <Definition uidRef="_709083fb-267a-4f41-bdb4-519fe46c6bb5"></Definition>
+                                </ShapeElement>
+                                <Quantity xsi:type="n0:NumericalValue" uid="_595a517f-cff6-48fb-9053-6454a3429dd7">
+                                    <Unit uidRef="_cf5bcf40-5f4e-4631-8ed6-387873b730b6"></Unit>
+                                    <ValueComponent>1.75</ValueComponent>
+                                </Quantity>
+                            </Occurrence>
+                            <ShapeElement xsi:type="n0:CrossSectionalPartShapeElement" uid="_709083fb-267a-4f41-bdb4-519fe46c6bb5">
+                                <Id id="Inner surface"></Id>
+                            </ShapeElement>
+                        </PartView>
+                    </Views>
+                </PartVersion>
+            </Versions>
+        </Part>
+        <Part uid="_7779918b-e192-410a-a55b-026100447299">
+            <Id id="M81824"></Id>
+            <Name>
+                <CharacterString>Butt Splice Terminal</CharacterString>
+            </Name>
+            <PartTypes>
+                <PartCategoryEnum>discrete</PartCategoryEnum>
+                <PartCategoryEnum>splice</PartCategoryEnum>
+            </PartTypes>
+            <Versions>
+                <PartVersion uid="_8a6e988c-23c6-427c-9a86-b25aaea4b01e">
+                    <Id id="Version 1"></Id>
+                    <Views>
+                        <PartView uid="_0b46e8c9-2955-48bd-8033-2264787216d4">
+                            <Id id="Version 1"></Id>
+                            <InitialContext uidRef="default_electrical_design_view_context"></InitialContext>
+                            <Occurrence xsi:type="n0:SingleOccurrence" uid="_880a3a0b-885c-445e-8300-3e86929e0a2e">
+                                <Id id="splice1"></Id>
+                                <ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_9cbdf99f-6794-41bf-897b-d38dc26c4aad">
+                                    <Definition uidRef="_9abde0f2-343f-45c0-b197-624cee1ed732"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_c060fab8-374e-4899-9226-6e0935895072">
+                                    <Definition uidRef="_6d30be06-4252-4b92-9771-ee2cf07a4fd6"></Definition>
+                                </ShapeElement>
+                            </Occurrence>
+                            <ShapeElement xsi:type="n0:PartTerminal" uid="_6d30be06-4252-4b92-9771-ee2cf07a4fd6">
+                                <Id id="end a"></Id>
+                                <IntendedJointType>
+                                    <TerminalJointTypeEnum>crimp_terminal</TerminalJointTypeEnum>
+                                </IntendedJointType>
+                                <InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartConnectivityDefinition" uid="_74858935-b555-4e2c-a98f-89eca57b52e7">
+                                <ConnectedTerminals>
+                                    <PartTerminal uidRef="_6d30be06-4252-4b92-9771-ee2cf07a4fd6"></PartTerminal>
+                                    <PartTerminal uidRef="_9abde0f2-343f-45c0-b197-624cee1ed732"></PartTerminal>
+                                </ConnectedTerminals>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartTerminal" uid="_9abde0f2-343f-45c0-b197-624cee1ed732">
+                                <Id id="end b"></Id>
+                                <IntendedJointType>
+                                    <TerminalJointTypeEnum>crimp_terminal</TerminalJointTypeEnum>
+                                </IntendedJointType>
+                                <InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+                            </ShapeElement>
+                        </PartView>
+                    </Views>
+                </PartVersion>
+            </Versions>
+        </Part>
+        <Part uid="_553818fe-f274-4dc6-a73b-bab78b528fa1">
+            <Id id="8660-250"></Id>
+            <Name>
+                <CharacterString>#12 Rack plug signal contact</CharacterString>
+            </Name>
+            <PartTypes>
+                <PartCategoryEnum>connector_contact</PartCategoryEnum>
+                <PartCategoryEnum>discrete</PartCategoryEnum>
+            </PartTypes>
+            <Versions>
+                <PartVersion uid="_5ffcb058-6f26-45f2-8501-50fe10467238">
+                    <Id id="Version 1"></Id>
+                    <Views>
+                        <PartView uid="_0efd0424-d5ed-4a22-bba3-45baa57cbcbd">
+                            <Id id="Version 1"></Id>
+                            <InitialContext uidRef="default_electrical_design_view_context"></InitialContext>
+                            <Occurrence xsi:type="n0:SingleOccurrence" uid="_75811bd5-41a1-44a6-b636-abc49759fc0b">
+                                <Id id="arinc1/C-Assy/signal5"></Id>
+                                <ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_3e0d1b81-d078-4354-a462-274734dbb6b3">
+                                    <Definition uidRef="_864818c3-5d54-4800-acaf-57cc1d07f6d6"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_6348f788-0077-4e01-9e86-0f17164b356d">
+                                    <Definition uidRef="_7c21b0cf-e6f5-41eb-9ca4-bbac4c2f2313"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceContactFeature" uid="_6aa24cd2-83f7-4a75-aed5-64bd5caf398a">
+                                    <Definition uidRef="_baf99321-7ca1-4c55-9402-2824299142ff"></Definition>
+                                </ShapeElement>
+                            </Occurrence>
+                            <ShapeElement xsi:type="n0:PartConnectivityDefinition" uid="_5f50e4e4-ed89-4b0e-b130-cfb093fc3d76">
+                                <ConnectedTerminals>
+                                    <PartTerminal uidRef="_7c21b0cf-e6f5-41eb-9ca4-bbac4c2f2313"></PartTerminal>
+                                    <PartTerminal uidRef="_864818c3-5d54-4800-acaf-57cc1d07f6d6"></PartTerminal>
+                                </ConnectedTerminals>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartTerminal" uid="_7c21b0cf-e6f5-41eb-9ca4-bbac4c2f2313">
+                                <Id id="Int term"></Id>
+                                <IntendedJointType>
+                                    <TerminalJointTypeEnum>pin_terminal</TerminalJointTypeEnum>
+                                </IntendedJointType>
+                                <InterfaceOrJoinTerminal>interface_terminal</InterfaceOrJoinTerminal>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartTerminal" uid="_864818c3-5d54-4800-acaf-57cc1d07f6d6">
+                                <Id id="Join term"></Id>
+                                <IntendedJointType>
+                                    <TerminalJointTypeEnum>crimp_terminal</TerminalJointTypeEnum>
+                                </IntendedJointType>
+                                <InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartContactFeature" uid="_baf99321-7ca1-4c55-9402-2824299142ff">
+                                <Id id="Contact mounting profile"></Id>
+                                <PartDefinition uidRef="_dd3a2691-3772-4f27-b968-11f5c9da32cc"></PartDefinition>
+                            </ShapeElement>
+                        </PartView>
+                    </Views>
+                </PartVersion>
+            </Versions>
+        </Part>
+        <Part uid="_6abdeb38-c320-40ce-833d-39481ebb9ca9">
+            <Id id="MS5036-153"></Id>
+            <Name>
+                <CharacterString></CharacterString>
+            </Name>
+            <PartTypes>
+                <PartCategoryEnum>discrete</PartCategoryEnum>
+                <PartCategoryEnum>terminal_lug</PartCategoryEnum>
+            </PartTypes>
+            <Versions>
+                <PartVersion uid="_16c0fd3c-8254-4be8-b959-9bfd7eccdaf3">
+                    <Id id="Version 1"></Id>
+                    <Views>
+                        <PartView uid="_c2b4082d-adf6-4374-ba86-55815ef2735c">
+                            <DefiningGeometry uidRef="_c5a25b70-b0c2-4e37-88ec-fce23456318c"></DefiningGeometry>
+                            <Id id="Version 1"></Id>
+                            <InitialContext uidRef="default_electrical_design_view_context"></InitialContext>
+                            <Occurrence xsi:type="n0:SingleOccurrence" uid="_90c3247a-114c-4d05-95e9-6e5b4985d2c4">
+                                <Id id="lug1"></Id>
+                                <ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_3f3dcbe9-3b7e-4c15-814d-cefb79cafeaa">
+                                    <Definition uidRef="_5a744632-1e95-4cf8-a39e-7b40c77e54b7"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_7f20d24d-16b0-4179-80f4-02967a0ce27c">
+                                    <Definition uidRef="_7650a8b7-b6a8-4f43-9e4f-1115d8540a74"></Definition>
+                                </ShapeElement>
+                            </Occurrence>
+                            <ShapeElement xsi:type="n0:PartTerminal" uid="_5a744632-1e95-4cf8-a39e-7b40c77e54b7">
+                                <Id id="External"></Id>
+                                <RepresentedGeometry uidRef="_44b055f9-3fab-4d50-965d-4facea000e8b"></RepresentedGeometry>
+                                <IntendedJointType>
+                                    <TerminalJointTypeEnum>screw_terminal</TerminalJointTypeEnum>
+                                </IntendedJointType>
+                                <InterfaceOrJoinTerminal>interface_terminal</InterfaceOrJoinTerminal>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartTerminal" uid="_7650a8b7-b6a8-4f43-9e4f-1115d8540a74">
+                                <Id id="Internal"></Id>
+                                <RepresentedGeometry uidRef="_8650f54b-93ab-4f0f-b8c0-fbd19f014453"></RepresentedGeometry>
+                                <IntendedJointType>
+                                    <TerminalJointTypeEnum>crimp_terminal</TerminalJointTypeEnum>
+                                </IntendedJointType>
+                                <InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartConnectivityDefinition" uid="_efa226df-e530-4122-a6e7-dcffba21704f">
+                                <ConnectedTerminals>
+                                    <PartTerminal uidRef="_5a744632-1e95-4cf8-a39e-7b40c77e54b7"></PartTerminal>
+                                    <PartTerminal uidRef="_7650a8b7-b6a8-4f43-9e4f-1115d8540a74"></PartTerminal>
+                                </ConnectedTerminals>
+                            </ShapeElement>
+                        </PartView>
+                    </Views>
+                </PartVersion>
+            </Versions>
+        </Part>
+        <Part uid="_bb1cf074-33cd-465b-8668-d5e95a4f1b34">
+            <Id id="DEP09S065TLF"></Id>
+            <Name>
+                <CharacterString>D-sub 9 Pin Db9 Female Solder Type Socket Connector</CharacterString>
+            </Name>
+            <PartTypes>
+                <PartCategoryEnum>connector</PartCategoryEnum>
+                <PartCategoryEnum>discrete</PartCategoryEnum>
+            </PartTypes>
+            <Versions>
+                <PartVersion uid="_0b4e6f58-1954-4e8b-88df-55743c80372a">
+                    <Id id="Version 1"></Id>
+                    <Views>
+                        <PartView uid="_a1160d63-6437-4b87-9469-a03c9e3f635d">
+                            <Id id="Version 1"></Id>
+                            <InitialContext uidRef="default_electrical_design_view_context"></InitialContext>
+                            <Occurrence xsi:type="n0:SingleOccurrence" uid="_00ae389b-3c65-4ba2-b14a-c3a49666650e">
+                                <Id id="dsub1"></Id>
+                                <ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_1e01b59b-cc70-497a-9313-8f64a4b2548b">
+                                    <Definition uidRef="_a577635a-4cb2-4dc8-b65a-ce7b0e5df37f"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_22aec671-6f40-44c4-b6b3-3cc783818709">
+                                    <Definition uidRef="_ad042c8f-c823-46bc-8aa5-10f924610a48"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_3573ce4c-9cde-4f50-8d88-f96c27df577a">
+                                    <Definition uidRef="_60e68223-a11d-4d1e-ae41-423705de97da"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_443b4d69-8e9d-4f4e-9620-ae9c76e5b859">
+                                    <Definition uidRef="_d1a7de06-bb3b-46e5-b3f8-c875a091a404"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_4e4af1a9-9424-4d30-8e18-b989df5fa3fc">
+                                    <Definition uidRef="_5beae9e4-44be-4fe0-bbe9-f64917cd8205"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_93bc1915-27d0-4c86-a60d-281dd9bc7f5a">
+                                    <Definition uidRef="_3dafce61-660c-4548-936a-3153c99f1d0e"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_95b3c0f6-59b6-4282-a3cd-d9a696c832ca">
+                                    <Definition uidRef="_6618837b-de24-4c19-915a-8ac72005382b"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_981e3e26-959b-4cfb-a7e6-8856604f9ff9">
+                                    <Definition uidRef="_345d6144-f832-4a3f-88a5-85de4932e103"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_a40e5ee3-420e-486e-8d5a-7793258adb3b">
+                                    <Definition uidRef="_4334db1f-eab2-493e-8561-dd60237fb691"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_a542042c-3314-4d78-93b4-e939c4333653">
+                                    <Definition uidRef="_9250cf9a-bf05-4373-9689-d5c4816a8e33"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_adb10818-0469-4b10-9f8c-0ebf48e1e017">
+                                    <Definition uidRef="_c99b4114-c59c-4b91-a8c0-66d2d0dac77c"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_b250e43e-b5c3-4b89-a3dd-8f0153f64857">
+                                    <Definition uidRef="_e08a415a-b509-480d-a000-c3d16cd5b667"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_c366727e-67ad-4307-a26f-b76240f879b7">
+                                    <Definition uidRef="_adeaef5e-95d3-44e9-9afe-ef0dd6438114"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_c7c02d3c-e400-4e31-a158-f95d34657192">
+                                    <Definition uidRef="_ef24a6d6-f453-49bd-98c8-befa7233fe8b"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_d513319f-83cc-4c23-984a-bfd6c9072e2a">
+                                    <Definition uidRef="_ac19ba69-aaf9-4d5a-a2ea-14faf0238068"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_db38140d-4c45-4cea-8e3e-b204911d26e9">
+                                    <Definition uidRef="_f06bb2a4-1b0f-4dd8-b002-0ce5993a1a55"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_dedc368d-c599-4554-868a-f8337811da1a">
+                                    <Definition uidRef="_6ff4e053-7d27-4f40-aa9d-cbba82472218"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_feecdd4c-2c3c-4f5b-9c7f-fd0e20aeb061">
+                                    <Definition uidRef="_dfaf5914-69bf-4030-8633-18861693054e"></Definition>
+                                </ShapeElement>
+                            </Occurrence>
+                            <ShapeElement xsi:type="n0:PartConnectivityDefinition" uid="_0c252a3e-b5d0-4029-9465-ffb47b9a0580">
+                                <ConnectedTerminals>
+                                    <PartTerminal uidRef="_345d6144-f832-4a3f-88a5-85de4932e103"></PartTerminal>
+                                    <PartTerminal uidRef="_60e68223-a11d-4d1e-ae41-423705de97da"></PartTerminal>
+                                </ConnectedTerminals>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartConnectivityDefinition" uid="_1dec7358-ff18-4848-bb5b-93be0dd0ec1e">
+                                <ConnectedTerminals>
+                                    <PartTerminal uidRef="_d1a7de06-bb3b-46e5-b3f8-c875a091a404"></PartTerminal>
+                                    <PartTerminal uidRef="_e08a415a-b509-480d-a000-c3d16cd5b667"></PartTerminal>
+                                </ConnectedTerminals>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartConnectivityDefinition" uid="_25bc01ae-9688-4245-b2d3-b35387358945">
+                                <ConnectedTerminals>
+                                    <PartTerminal uidRef="_5beae9e4-44be-4fe0-bbe9-f64917cd8205"></PartTerminal>
+                                    <PartTerminal uidRef="_a577635a-4cb2-4dc8-b65a-ce7b0e5df37f"></PartTerminal>
+                                </ConnectedTerminals>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartTerminal" uid="_345d6144-f832-4a3f-88a5-85de4932e103">
+                                <Id id="Interface4"></Id>
+                                <IntendedJointType>
+                                    <TerminalJointTypeEnum>socket_terminal</TerminalJointTypeEnum>
+                                </IntendedJointType>
+                                <InterfaceOrJoinTerminal>interface_terminal</InterfaceOrJoinTerminal>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartConnectivityDefinition" uid="_364c1d46-91b1-413b-83a3-e117c14e0790">
+                                <ConnectedTerminals>
+                                    <PartTerminal uidRef="_4334db1f-eab2-493e-8561-dd60237fb691"></PartTerminal>
+                                    <PartTerminal uidRef="_f06bb2a4-1b0f-4dd8-b002-0ce5993a1a55"></PartTerminal>
+                                </ConnectedTerminals>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartTerminal" uid="_3dafce61-660c-4548-936a-3153c99f1d0e">
+                                <Id id="Join2"></Id>
+                                <IntendedJointType>
+                                    <TerminalJointTypeEnum>solder_terminal</TerminalJointTypeEnum>
+                                </IntendedJointType>
+                                <InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartTerminal" uid="_4334db1f-eab2-493e-8561-dd60237fb691">
+                                <Id id="Interface9"></Id>
+                                <IntendedJointType>
+                                    <TerminalJointTypeEnum>socket_terminal</TerminalJointTypeEnum>
+                                </IntendedJointType>
+                                <InterfaceOrJoinTerminal>interface_terminal</InterfaceOrJoinTerminal>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartConnectivityDefinition" uid="_4ed19002-3c54-48c0-8c80-dc6c78a5f5e0">
+                                <ConnectedTerminals>
+                                    <PartTerminal uidRef="_3dafce61-660c-4548-936a-3153c99f1d0e"></PartTerminal>
+                                    <PartTerminal uidRef="_6618837b-de24-4c19-915a-8ac72005382b"></PartTerminal>
+                                </ConnectedTerminals>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartTerminal" uid="_5beae9e4-44be-4fe0-bbe9-f64917cd8205">
+                                <Id id="Interface1"></Id>
+                                <IntendedJointType>
+                                    <TerminalJointTypeEnum>socket_terminal</TerminalJointTypeEnum>
+                                </IntendedJointType>
+                                <InterfaceOrJoinTerminal>interface_terminal</InterfaceOrJoinTerminal>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartTerminal" uid="_60e68223-a11d-4d1e-ae41-423705de97da">
+                                <Id id="Join4"></Id>
+                                <IntendedJointType>
+                                    <TerminalJointTypeEnum>solder_terminal</TerminalJointTypeEnum>
+                                </IntendedJointType>
+                                <InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartTerminal" uid="_6618837b-de24-4c19-915a-8ac72005382b">
+                                <Id id="Interface2"></Id>
+                                <IntendedJointType>
+                                    <TerminalJointTypeEnum>socket_terminal</TerminalJointTypeEnum>
+                                </IntendedJointType>
+                                <InterfaceOrJoinTerminal>interface_terminal</InterfaceOrJoinTerminal>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartTerminal" uid="_6ff4e053-7d27-4f40-aa9d-cbba82472218">
+                                <Id id="Join8"></Id>
+                                <IntendedJointType>
+                                    <TerminalJointTypeEnum>solder_terminal</TerminalJointTypeEnum>
+                                </IntendedJointType>
+                                <InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartConnectivityDefinition" uid="_83ecc285-393d-491d-bbac-0afc517262c7">
+                                <ConnectedTerminals>
+                                    <PartTerminal uidRef="_9250cf9a-bf05-4373-9689-d5c4816a8e33"></PartTerminal>
+                                    <PartTerminal uidRef="_ad042c8f-c823-46bc-8aa5-10f924610a48"></PartTerminal>
+                                </ConnectedTerminals>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartTerminal" uid="_9250cf9a-bf05-4373-9689-d5c4816a8e33">
+                                <Id id="Join5"></Id>
+                                <IntendedJointType>
+                                    <TerminalJointTypeEnum>solder_terminal</TerminalJointTypeEnum>
+                                </IntendedJointType>
+                                <InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartTerminal" uid="_a577635a-4cb2-4dc8-b65a-ce7b0e5df37f">
+                                <Id id="Join1"></Id>
+                                <IntendedJointType>
+                                    <TerminalJointTypeEnum>solder_terminal</TerminalJointTypeEnum>
+                                </IntendedJointType>
+                                <InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartTerminal" uid="_ac19ba69-aaf9-4d5a-a2ea-14faf0238068">
+                                <Id id="Join6"></Id>
+                                <IntendedJointType>
+                                    <TerminalJointTypeEnum>solder_terminal</TerminalJointTypeEnum>
+                                </IntendedJointType>
+                                <InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartTerminal" uid="_ad042c8f-c823-46bc-8aa5-10f924610a48">
+                                <Id id="Interface5"></Id>
+                                <IntendedJointType>
+                                    <TerminalJointTypeEnum>socket_terminal</TerminalJointTypeEnum>
+                                </IntendedJointType>
+                                <InterfaceOrJoinTerminal>interface_terminal</InterfaceOrJoinTerminal>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartTerminal" uid="_adeaef5e-95d3-44e9-9afe-ef0dd6438114">
+                                <Id id="Interface8"></Id>
+                                <IntendedJointType>
+                                    <TerminalJointTypeEnum>socket_terminal</TerminalJointTypeEnum>
+                                </IntendedJointType>
+                                <InterfaceOrJoinTerminal>interface_terminal</InterfaceOrJoinTerminal>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartConnectivityDefinition" uid="_b9149339-4d76-4754-b0bd-6356667961e3">
+                                <ConnectedTerminals>
+                                    <PartTerminal uidRef="_ac19ba69-aaf9-4d5a-a2ea-14faf0238068"></PartTerminal>
+                                    <PartTerminal uidRef="_ef24a6d6-f453-49bd-98c8-befa7233fe8b"></PartTerminal>
+                                </ConnectedTerminals>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartConnectivityDefinition" uid="_c7dee096-6006-48cf-ba03-b6a4ec5f9ec2">
+                                <ConnectedTerminals>
+                                    <PartTerminal uidRef="_c99b4114-c59c-4b91-a8c0-66d2d0dac77c"></PartTerminal>
+                                    <PartTerminal uidRef="_dfaf5914-69bf-4030-8633-18861693054e"></PartTerminal>
+                                </ConnectedTerminals>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartTerminal" uid="_c99b4114-c59c-4b91-a8c0-66d2d0dac77c">
+                                <Id id="Interface3"></Id>
+                                <IntendedJointType>
+                                    <TerminalJointTypeEnum>socket_terminal</TerminalJointTypeEnum>
+                                </IntendedJointType>
+                                <InterfaceOrJoinTerminal>interface_terminal</InterfaceOrJoinTerminal>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartConnectivityDefinition" uid="_ca2d48ee-f8c6-41fe-bb49-3c97ca99b7f0">
+                                <ConnectedTerminals>
+                                    <PartTerminal uidRef="_6ff4e053-7d27-4f40-aa9d-cbba82472218"></PartTerminal>
+                                    <PartTerminal uidRef="_adeaef5e-95d3-44e9-9afe-ef0dd6438114"></PartTerminal>
+                                </ConnectedTerminals>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartTerminal" uid="_d1a7de06-bb3b-46e5-b3f8-c875a091a404">
+                                <Id id="Interface7"></Id>
+                                <IntendedJointType>
+                                    <TerminalJointTypeEnum>socket_terminal</TerminalJointTypeEnum>
+                                </IntendedJointType>
+                                <InterfaceOrJoinTerminal>interface_terminal</InterfaceOrJoinTerminal>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartTerminal" uid="_dfaf5914-69bf-4030-8633-18861693054e">
+                                <Id id="Join3"></Id>
+                                <IntendedJointType>
+                                    <TerminalJointTypeEnum>solder_terminal</TerminalJointTypeEnum>
+                                </IntendedJointType>
+                                <InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartTerminal" uid="_e08a415a-b509-480d-a000-c3d16cd5b667">
+                                <Id id="Join7"></Id>
+                                <IntendedJointType>
+                                    <TerminalJointTypeEnum>solder_terminal</TerminalJointTypeEnum>
+                                </IntendedJointType>
+                                <InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartTerminal" uid="_ef24a6d6-f453-49bd-98c8-befa7233fe8b">
+                                <Id id="Interface6"></Id>
+                                <IntendedJointType>
+                                    <TerminalJointTypeEnum>socket_terminal</TerminalJointTypeEnum>
+                                </IntendedJointType>
+                                <InterfaceOrJoinTerminal>interface_terminal</InterfaceOrJoinTerminal>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartTerminal" uid="_f06bb2a4-1b0f-4dd8-b002-0ce5993a1a55">
+                                <Id id="Join9"></Id>
+                                <IntendedJointType>
+                                    <TerminalJointTypeEnum>solder_terminal</TerminalJointTypeEnum>
+                                </IntendedJointType>
+                                <InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+                            </ShapeElement>
+                        </PartView>
+                    </Views>
+                </PartVersion>
+            </Versions>
+        </Part>
+        <Part uid="_f506e14f-d139-44c1-9f5e-e4b904c35532">
+            <Id id="Part_H1"></Id>
+            <Name>
+                <CharacterString>Electrical Harness example 1</CharacterString>
+            </Name>
+            <PartTypes>
+                <PartCategoryEnum>assembly</PartCategoryEnum>
+                <PartCategoryEnum>wiring_harness</PartCategoryEnum>
+            </PartTypes>
+            <Versions>
+                <PartVersion uid="_4571b01b-18e9-43b7-93de-e24bb2f83f80">
+                    <Id></Id>
+                    <Views>
+                        <PartView xsi:type="n0:WiringHarnessAssemblyDesign" uid="_ca556a8d-8f93-4a2e-934a-f391aa51176d">
+                            <DefiningGeometry uidRef="_b45c1303-f9cd-4900-940b-04dd83f6685e"></DefiningGeometry>
+                            <InitialContext uidRef="default_electrical_design_view_context"></InitialContext>
+                            <ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_18d19677-0722-4d12-8093-2104e0732086">
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_b3b27e3d-f124-445e-b74b-368c25ed7b51">
+                                    <Related uidRef="_a3e8b245-2585-40c0-89c8-aa8ec5c0eb5a"></Related>
+                                </ShapeElementRelationship>
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_21b4eadf-494b-4010-ad98-f006aecea9a4">
+                                    <Related uidRef="_ea329bc3-e8ea-432f-a793-d690230308d5"></Related>
+                                </ShapeElementRelationship>
+                                <JointType>crimped_connection</JointType>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:CrossSectionalGroupShapeElementWithTubularCover" uid="_19029067-64a2-4507-9b53-40c600a12452"></ShapeElement>
+                            <ShapeElement xsi:type="n0:CrossSectionalGroupShapeElementWithTubularCover" uid="_1fd2fcd7-8e0c-41ab-b49d-da290bd538e2"></ShapeElement>
+                            <ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_234e7204-1b74-4874-8f41-f54f79fe2d4c">
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_6f6c7203-d034-4f4d-b5fb-8673e8e8b36d">
+                                    <Related uidRef="_6de741e0-c916-42c0-b1e9-c07aee102fe3"></Related>
+                                </ShapeElementRelationship>
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_769e6866-1bd8-4f66-9b1c-0c4ac307687b">
+                                    <Related uidRef="_8854d687-4dbb-47ed-8c71-d9d261a22c20"></Related>
+                                </ShapeElementRelationship>
+                                <JointType>crimped_connection</JointType>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:HarnessSegment" uid="_26d798f0-ec40-4066-8af3-7a07b099118f">
+                                <RepresentedGeometry uidRef="_c4899dc3-153a-4d19-b702-08cd7faaf412"></RepresentedGeometry>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:HarnessSegment" uid="_2ed855e5-b1b9-4ed7-9469-3187548c3a96">
+                                <RepresentedGeometry uidRef="_e2a06939-2a5a-4ef8-95f1-da3ee17d479d"></RepresentedGeometry>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_331a5928-4573-499e-817a-864f7c3ab03f">
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_4682702e-69be-4529-b952-ec3363b0939b">
+                                    <Related uidRef="_3aab65eb-34b4-42ca-887a-9cd46fcada26"></Related>
+                                </ShapeElementRelationship>
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_2d8ccf75-27dc-45b6-a0a0-86ebbff6ea64">
+                                    <Related uidRef="_a3edbd21-b8d3-43ed-9f91-402e88440971"></Related>
+                                </ShapeElementRelationship>
+                                <JointType>crimped_connection</JointType>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:CrossSectionalGroupShapeElementWithTubularCover" uid="_334d0a60-f832-4cb7-b9e1-ca574fd674dc"></ShapeElement>
+                            <ShapeElement xsi:type="n0:CrossSectionalGroupShapeElementWithTubularCover" uid="_3777a8da-9b95-4a49-ad8c-ba39e64f93d2"></ShapeElement>
+                            <ShapeElement xsi:type="n0:HarnessNode" uid="_3784f41d-04ef-463a-884f-86f0789d434d">
+                                <RepresentedGeometry uidRef="_16af3983-c2c2-4d0d-898a-6f48b9f66e49"></RepresentedGeometry>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_38434e09-17e4-4733-ad9e-d7ecfebcd1ac">
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_2d333ad9-4bc4-4ab7-9242-b83e2d9baf81">
+                                    <Related uidRef="_3da52d9d-f58d-46dc-b6a7-098d844d8e24"></Related>
+                                </ShapeElementRelationship>
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_9e249ae6-04d9-4fe2-85c6-4c614e34a293">
+                                    <Related uidRef="_9d552fdc-7b46-429d-85bc-17e0d92494de"></Related>
+                                </ShapeElementRelationship>
+                                <JointType>snap_connection</JointType>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_3e6ec934-d753-4a7e-8d1a-9bb54c09a1ed">
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_8de37968-460c-4ed6-b8e5-b7157d28035f">
+                                    <Related uidRef="_39793fdd-edbb-404f-b9fe-1dc6b5e1531e"></Related>
+                                </ShapeElementRelationship>
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_a71d8621-6605-481c-a056-ad4caf333e61">
+                                    <Related uidRef="_bf448514-beaf-4825-992c-d706bd79f0b1"></Related>
+                                </ShapeElementRelationship>
+                                <JointType>crimped_connection</JointType>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:HarnessNode" uid="_42b916c4-b010-4674-b700-ba4d228917ac">
+                                <RepresentedGeometry uidRef="_d772bc3d-43ee-437b-9a7a-cc73933b6110"></RepresentedGeometry>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:HarnessNode" uid="_43884607-0411-4cf8-a1be-119a3554bf7d">
+                                <RepresentedGeometry uidRef="_3705bb40-0745-4fc7-92e7-707f2227e2c8"></RepresentedGeometry>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:HarnessSegment" uid="_47bec69e-682d-47c7-b6fe-075c343ff451">
+                                <RepresentedGeometry uidRef="_65ad694e-ae8f-4c3e-a261-1aa0d39caff0"></RepresentedGeometry>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_69739462-80e5-44a0-b55e-d61de98b395d">
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_1040cf34-f87e-4937-bf7e-bf429ead224e">
+                                    <Related uidRef="_445afcf7-850e-490c-af66-8cc094ce8e8c"></Related>
+                                </ShapeElementRelationship>
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_88f0a5d2-446d-4b2e-a734-47350e5b8dcf">
+                                    <Related uidRef="_6536937c-9b4e-4a58-99c1-8881c7aa19d3"></Related>
+                                </ShapeElementRelationship>
+                                <JointType>crimped_connection</JointType>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_6cf76e6d-717f-4511-ac03-c3d085ee4a96">
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_8f8e3973-d3e8-4038-a5dd-723f49a60dec">
+                                    <Related uidRef="_621eca7e-b647-4b63-a5c1-ed948c1972c9"></Related>
+                                </ShapeElementRelationship>
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_e013d892-03d3-4a4d-8175-1bed63bfb940">
+                                    <Related uidRef="_9cbdf99f-6794-41bf-897b-d38dc26c4aad"></Related>
+                                </ShapeElementRelationship>
+                                <JointType>crimped_connection</JointType>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_8145720f-74b5-44b9-8259-c30ebcf993dd">
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_10b69793-405b-4a04-8e24-4c7e2048111a">
+                                    <Related uidRef="_245bddf6-118c-4f99-9eb6-b689385824d5"></Related>
+                                </ShapeElementRelationship>
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_1ac21fbd-15c6-4978-8370-4b332611cd19">
+                                    <Related uidRef="_625855e2-2c08-446e-8549-e77320387a11"></Related>
+                                </ShapeElementRelationship>
+                                <JointType>crimped_connection</JointType>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:HarnessNode" uid="_81d1800d-9a30-4286-982d-1676f27704d6">
+                                <RepresentedGeometry uidRef="_b44c7875-e0d4-4ccc-9e19-11f231d198c3"></RepresentedGeometry>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_844dfa37-97b2-4a3b-a541-8b0e713bd412">
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_265a9b5f-4a97-48b8-bc6c-b92a763e103c">
+                                    <Related uidRef="_4e81f156-b961-4004-bf3c-f22e398beae1"></Related>
+                                </ShapeElementRelationship>
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_5ca809ee-0db6-44f7-875a-8bc33a47f9f1">
+                                    <Related uidRef="_c13e887f-dee1-4a42-bd59-cd6f74abc43e"></Related>
+                                </ShapeElementRelationship>
+                                <JointType>snap_connection</JointType>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:HarnessNode" uid="_86cdefef-df06-49de-bfcf-c55cb548f60d">
+                                <RepresentedGeometry uidRef="_a506b231-78cb-4529-a9f9-eeec8adb7097"></RepresentedGeometry>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_8700359d-a81b-49ab-a41d-19aea30d471a">
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_13d1fab6-ac22-4b7b-8307-be5f7e855d28">
+                                    <Related uidRef="_3573ce4c-9cde-4f50-8d88-f96c27df577a"></Related>
+                                </ShapeElementRelationship>
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_9e562e5b-6ece-41d7-8bdf-ba85cde3887c">
+                                    <Related uidRef="_9209a860-c1fe-4893-a23a-9f8eae2a7e0f"></Related>
+                                </ShapeElementRelationship>
+                                <JointType>crimped_connection</JointType>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_8f58ab0e-3dbc-4b8f-b8fc-89be4613a4d4">
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_e5729c2a-5fb0-4f95-9b56-348f8294d46d">
+                                    <Related uidRef="_7f20d24d-16b0-4179-80f4-02967a0ce27c"></Related>
+                                </ShapeElementRelationship>
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_887dc0d4-2bd3-478b-ad6b-ed6ed0ce0da4">
+                                    <Related uidRef="_ea2ca3bf-c3eb-45ee-8491-9c65b279f39b"></Related>
+                                </ShapeElementRelationship>
+                                <JointType>crimped_connection</JointType>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_a0ec6207-0cae-4ce0-a823-2025eeefad06">
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_abd6a25a-b366-43f6-9aa9-4d51f5c04d86">
+                                    <Related uidRef="_4e434020-f4e3-46a6-815e-496f9e67de2b"></Related>
+                                </ShapeElementRelationship>
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_57a0b1c3-4e61-4f8b-8658-3bc6fa6134a5">
+                                    <Related uidRef="_726519fd-018e-4fd6-a563-8743abb9041c"></Related>
+                                </ShapeElementRelationship>
+                                <JointType>snap_connection</JointType>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:HarnessNode" uid="_a68adc36-5975-4fa3-8128-335b6e668fea">
+                                <RepresentedGeometry uidRef="_cd0328a9-cb95-4430-aec1-4424d0f72054"></RepresentedGeometry>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:HarnessNode" uid="_a8bf25db-f4fe-45a7-a36f-507043884d8f">
+                                <RepresentedGeometry uidRef="_f46ea347-5434-4a4a-ad68-94eeec045122"></RepresentedGeometry>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:HarnessNode" uid="_b4c84f0c-1afc-47da-bd63-42a441a3d5cc">
+                                <RepresentedGeometry uidRef="_a820da3b-9f40-4b3e-8f88-80244bb1df73"></RepresentedGeometry>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_ba1660b6-5f20-4951-a9fe-cd520f8b1b7b">
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_0ae65378-5644-4e39-9649-edb1dc32abcd">
+                                    <Related uidRef="_02a596cb-34cb-49e6-99ac-0fdae55f99bc"></Related>
+                                </ShapeElementRelationship>
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_f903b544-5850-4e20-bb47-3dae93bf1cad">
+                                    <Related uidRef="_1e01b59b-cc70-497a-9313-8f64a4b2548b"></Related>
+                                </ShapeElementRelationship>
+                                <JointType>crimped_connection</JointType>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:CrossSectionalAlternativePartShapeElement" uid="_bdfa20de-7238-4f79-a99f-0fdc3760e15c"></ShapeElement>
+                            <ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_c17ab577-63aa-4c6d-93b3-42f548331d5c">
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_a8af4ada-cb3c-456e-8217-8d672dc0db21">
+                                    <Related uidRef="_4c3e708e-0163-4cdf-a405-1f6e00c30ba9"></Related>
+                                </ShapeElementRelationship>
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_49848a4d-49aa-4964-8243-4c08b85eb3f2">
+                                    <Related uidRef="_e533f177-dea4-4084-8059-927211d8fb35"></Related>
+                                </ShapeElementRelationship>
+                                <JointType>crimped_connection</JointType>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_c20adb8e-c558-4f31-959b-8e41228c8332">
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_e576db66-61e0-4b0b-a085-81e7c2d3d893">
+                                    <Related uidRef="_02dce6c4-649e-41b3-81a5-b5027c221b86"></Related>
+                                </ShapeElementRelationship>
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_12914acb-cbec-4090-a841-831e44bd77a3">
+                                    <Related uidRef="_a542042c-3314-4d78-93b4-e939c4333653"></Related>
+                                </ShapeElementRelationship>
+                                <JointType>crimped_connection</JointType>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_c4aa4efd-314a-4e27-86d1-4ccdda3bd5fa">
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_a2a4fdae-baf5-4b35-b68c-43ea7087117b">
+                                    <Related uidRef="_09543372-fe81-48bb-9aff-2aa1c9f5c8ca"></Related>
+                                </ShapeElementRelationship>
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_b4825455-bff4-4441-9a69-d10893c0cb61">
+                                    <Related uidRef="_4f83c3a1-05c8-4049-9555-199bf028487f"></Related>
+                                </ShapeElementRelationship>
+                                <JointType>snap_connection</JointType>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_c615f350-a9fe-495a-b121-d65235aafa7f">
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_8c780ac6-fc02-425c-b80c-a1b78d6f005f">
+                                    <Related uidRef="_1e25dc4d-e619-4bdc-910d-9d920de7ecb8"></Related>
+                                </ShapeElementRelationship>
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_3b40cb99-b56d-4b73-a660-007fa98bd4af">
+                                    <Related uidRef="_ad978cb9-f1dc-4243-8a62-7f59cca7ba01"></Related>
+                                </ShapeElementRelationship>
+                                <JointType>crimped_connection</JointType>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_c735dbb1-db90-41a5-b99d-42471ebf8f19">
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_f0094023-9e80-40ed-b4ed-58c95d54c7bb">
+                                    <Related uidRef="_4d4db133-e691-498d-a7c5-46a14fde9eae"></Related>
+                                </ShapeElementRelationship>
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_b86a418d-2c10-4eae-aacb-5f9ef9e6d1c7">
+                                    <Related uidRef="_f4ddc592-b204-4d9b-9364-524a9d1b70e0"></Related>
+                                </ShapeElementRelationship>
+                                <JointType>crimped_connection</JointType>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_cb29d622-b124-44b3-90ce-dcde140d5044">
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_97fca7b4-ad90-4572-a4e9-3b3b7609ed1f">
+                                    <Related uidRef="_d9c147a2-561d-4861-9b8d-fd6e66231c8f"></Related>
+                                </ShapeElementRelationship>
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_a4ed8d7b-b134-4eee-8f0f-572a6f602116">
+                                    <Related uidRef="_feecdd4c-2c3c-4f5b-9c7f-fd0e20aeb061"></Related>
+                                </ShapeElementRelationship>
+                                <JointType>crimped_connection</JointType>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:HarnessNode" uid="_cc490f9e-4631-41ef-8d9f-29c056f09ea3">
+                                <RepresentedGeometry uidRef="_2ca7d671-96bc-4254-8f0a-46744beef9f2"></RepresentedGeometry>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:CrossSectionalGroupShapeElementWithLacing" uid="_ce2e1816-b468-44f1-9ec6-1ad3d352c5a9"></ShapeElement>
+                            <ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_cfa81ad2-6f9e-48db-af37-d171142007f6">
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_acaaa967-1af7-4c60-bf42-94d77a8d8348">
+                                    <Related uidRef="_715ad25c-047f-4b91-9161-3f722d0e15e9"></Related>
+                                </ShapeElementRelationship>
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_f7d990f5-1efa-4977-894a-beae2630aabb">
+                                    <Related uidRef="_9676bb73-0e07-4156-8407-f06ff3e83892"></Related>
+                                </ShapeElementRelationship>
+                                <JointType>snap_connection</JointType>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_d42961c5-27fa-42fd-8573-318a2a5ba11e">
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_0a10c0ce-2355-4789-83c3-7df6df39da97">
+                                    <Related uidRef="_302a97bd-8194-45c3-a168-8906d9a13c12"></Related>
+                                </ShapeElementRelationship>
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_a04346b0-4607-44fa-8429-d27f6eb7bf0a">
+                                    <Related uidRef="_6f72242b-5a62-447a-871e-daab1cd7ff7c"></Related>
+                                </ShapeElementRelationship>
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_9f62582c-f04b-4f5c-b00a-cecf710f7298">
+                                    <Related uidRef="_c060fab8-374e-4899-9226-6e0935895072"></Related>
+                                </ShapeElementRelationship>
+                                <JointType>crimped_connection</JointType>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:HarnessSegment" uid="_d6680fc5-fd60-4a52-b812-c871512aaf24">
+                                <RepresentedGeometry uidRef="_8f41e0e1-393a-4aba-92f3-4f46e4271139"></RepresentedGeometry>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_d89edbe2-b657-4557-a790-118050c2ecc9">
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_98bc4878-918e-46bf-8bbb-3e9fb2bf6f5c">
+                                    <Related uidRef="_3e0d1b81-d078-4354-a462-274734dbb6b3"></Related>
+                                </ShapeElementRelationship>
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_d8c114b6-11e7-4c34-9828-93a5b39c4300">
+                                    <Related uidRef="_ad851c30-6bdc-4306-ada8-665907014c5c"></Related>
+                                </ShapeElementRelationship>
+                                <JointType>crimped_connection</JointType>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:TwistedCrossSectionalGroupShapeElement" uid="_da5808e1-0023-476c-a0ed-358c6b2960a5"></ShapeElement>
+                            <ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_dccd3955-d2ca-47b0-9a7a-12fba43c18e3">
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_0e8efb41-d8ac-4b78-87df-c50a85b93a80">
+                                    <Related uidRef="_3abd894d-42e6-4080-b079-25bdaf1c0a1d"></Related>
+                                </ShapeElementRelationship>
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_fc2de5d8-e58f-4781-b6c3-c878af7beb9d">
+                                    <Related uidRef="_ec534d13-ce5f-4386-908b-c78d4e507159"></Related>
+                                </ShapeElementRelationship>
+                                <JointType>snap_connection</JointType>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_e034c708-f4be-412e-b545-aad301f8c975">
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_22abfb5d-3424-4a97-9ab5-01103d67e6f0">
+                                    <Related uidRef="_187db890-98be-4f8e-806e-18f157c3c369"></Related>
+                                </ShapeElementRelationship>
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_7eb017b6-c12b-4ff8-bd1f-6b07b8b4cad3">
+                                    <Related uidRef="_8e75858f-ce86-4b47-92c7-c46e36bcb7a1"></Related>
+                                </ShapeElementRelationship>
+                                <JointType>snap_connection</JointType>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:HarnessSegment" uid="_e6e53b45-6fe7-4998-8f9b-b23a14f464de">
+                                <RepresentedGeometry uidRef="_35f7f3b8-0ead-46b0-b104-0058d288d37a"></RepresentedGeometry>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:HarnessSegment" uid="_e735c3f7-76a9-4357-9c65-6f9df6fd47d7">
+                                <RepresentedGeometry uidRef="_3b9708b1-a483-498e-8a30-e3459e84f124"></RepresentedGeometry>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_e910dcdb-4f14-4058-879a-34b8aa19e852">
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_a710229b-55af-46c6-b849-2ed86578f5aa">
+                                    <Related uidRef="_6aa24cd2-83f7-4a75-aed5-64bd5caf398a"></Related>
+                                </ShapeElementRelationship>
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_94aaddf4-4c48-4b17-8852-1034f13c3abd">
+                                    <Related uidRef="_7a4ddb78-7430-4ce1-a797-ed78d31a2228"></Related>
+                                </ShapeElementRelationship>
+                                <JointType>snap_connection</JointType>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:HarnessNode" uid="_f29ecede-6f53-4a6b-a3f8-496b3d3a7b9e">
+                                <RepresentedGeometry uidRef="_dddee560-45a6-4486-928b-4ae6b0053403"></RepresentedGeometry>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:AssemblyShapeJoint" uid="_f3cd9242-05da-40b0-9a05-882597ad8b3c">
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_b267afd0-6847-4703-bd04-43067f970c94">
+                                    <Related uidRef="_7bc2bb73-51ee-4b5d-acb6-969a8e588659"></Related>
+                                </ShapeElementRelationship>
+                                <ShapeElementRelationship xsi:type="n0:AssemblyShapeJointItemRelationship" uid="_9e16ad5e-91a6-464c-8cdd-9468e0aa8101">
+                                    <Related uidRef="_93bc1915-27d0-4c86-a60d-281dd9bc7f5a"></Related>
+                                </ShapeElementRelationship>
+                                <JointType>crimped_connection</JointType>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:HarnessNode" uid="_fc3a8f71-e075-42ca-b3f3-e7247cc6c354">
+                                <RepresentedGeometry uidRef="_8c24cf5d-c00c-42cd-92d9-55e1005f7565"></RepresentedGeometry>
+                            </ShapeElement>
+                            <ViewOccurrenceRelationship xsi:type="n0:NextAssemblyOccurrenceUsage" uid="_0118fb43-ca0b-46ca-b4c0-008b091e7dbb">
+                                <Related uidRef="_611c208e-4ea8-42d3-8228-49fbbdd5119a"></Related>
+                                <RelationType>
+                                    <ClassString>next assembly occurrence</ClassString>
+                                </RelationType>
+                                <Placement>
+                                    <GeometryToTopologyModelAssociation uidRef="_4ffcbc14-4d18-41fb-a1ac-72aa3712ef7a"></GeometryToTopologyModelAssociation>
+                                </Placement>
+                            </ViewOccurrenceRelationship>
+                            <ViewOccurrenceRelationship xsi:type="n0:NextAssemblyOccurrenceUsage" uid="_0536bb0f-6239-4fe4-9739-6aae8786e846">
+                                <Related uidRef="_f9b6d867-735d-4918-8cd8-4172a7bc47e7"></Related>
+                                <RelationType>
+                                    <ClassString>next assembly occurrence</ClassString>
+                                </RelationType>
+                                <Placement>
+                                    <GeometryToTopologyModelAssociation uidRef="_863004f0-3291-498a-9467-1273be7a2344"></GeometryToTopologyModelAssociation>
+                                </Placement>
+                            </ViewOccurrenceRelationship>
+                            <ViewOccurrenceRelationship xsi:type="n0:NextAssemblyOccurrenceUsage" uid="_0bf17422-c747-47d8-a8d0-e3956dd825e5">
+                                <Related uidRef="_880a3a0b-885c-445e-8300-3e86929e0a2e"></Related>
+                                <RelationType>
+                                    <ClassString>next assembly occurrence</ClassString>
+                                </RelationType>
+                            </ViewOccurrenceRelationship>
+                            <ViewOccurrenceRelationship xsi:type="n0:NextAssemblyOccurrenceUsage" uid="_38561a47-c910-41fb-818e-10e50b586877">
+                                <Related uidRef="_9c8ec43a-b389-4955-ac66-6a6a04c9f316"></Related>
+                                <RelationType>
+                                    <ClassString>next assembly occurrence</ClassString>
+                                </RelationType>
+                            </ViewOccurrenceRelationship>
+                            <ViewOccurrenceRelationship xsi:type="n0:NextAssemblyOccurrenceUsage" uid="_422d5b88-c5e9-43ad-ab16-9812577d612c">
+                                <Related uidRef="_f62e3da8-5ca1-4bc7-a8dd-f2d4cafe5a20"></Related>
+                                <RelationType>
+                                    <ClassString>next assembly occurrence</ClassString>
+                                </RelationType>
+                            </ViewOccurrenceRelationship>
+                            <ViewOccurrenceRelationship xsi:type="n0:NextAssemblyOccurrenceUsage" uid="_436bca55-fd16-494b-90ec-92a6130809d2">
+                                <Related uidRef="_3ffb0aa5-104f-40e1-8ad5-1affd21f420d"></Related>
+                                <RelationType>
+                                    <ClassString>next assembly occurrence</ClassString>
+                                </RelationType>
+                            </ViewOccurrenceRelationship>
+                            <ViewOccurrenceRelationship xsi:type="n0:NextAssemblyOccurrenceUsage" uid="_4fe4ae09-7e75-40a9-a3a1-0dde61670747">
+                                <Related uidRef="_9596c4b7-8f44-4d9e-ab81-d4a715d4316f"></Related>
+                                <RelationType>
+                                    <ClassString>next assembly occurrence</ClassString>
+                                </RelationType>
+                            </ViewOccurrenceRelationship>
+                            <ViewOccurrenceRelationship xsi:type="n0:NextAssemblyOccurrenceUsage" uid="_8a7bc0a9-2283-4779-bdfc-c94d760c85ba">
+                                <Related uidRef="_00ae389b-3c65-4ba2-b14a-c3a49666650e"></Related>
+                                <RelationType>
+                                    <ClassString>next assembly occurrence</ClassString>
+                                </RelationType>
+                            </ViewOccurrenceRelationship>
+                            <ViewOccurrenceRelationship xsi:type="n0:NextAssemblyOccurrenceUsage" uid="_8ceaf993-1f75-454f-9326-f46d2aedf1d5">
+                                <Related uidRef="_51390747-fae3-41f3-bd9e-691dec080a4f"></Related>
+                                <RelationType>
+                                    <ClassString>next assembly occurrence</ClassString>
+                                </RelationType>
+                                <Placement>
+                                    <GeometryToTopologyModelAssociation uidRef="_9a9d820e-e918-44a8-ae94-76f1de6e9898"></GeometryToTopologyModelAssociation>
+                                </Placement>
+                            </ViewOccurrenceRelationship>
+                            <ViewOccurrenceRelationship xsi:type="n0:NextAssemblyOccurrenceUsage" uid="_95c27b61-4f8e-490a-a220-2c76d171393d">
+                                <Related uidRef="_86c771f5-0128-4490-8ab4-7728bed816cf"></Related>
+                                <RelationType>
+                                    <ClassString>next assembly occurrence</ClassString>
+                                </RelationType>
+                            </ViewOccurrenceRelationship>
+                            <ViewOccurrenceRelationship xsi:type="n0:NextAssemblyOccurrenceUsage" uid="_9eb39b27-4cec-4453-b4a0-afda223ef913">
+                                <Related uidRef="_e3416539-fd28-43df-bd2c-6b2d5a51213c"></Related>
+                                <RelationType>
+                                    <ClassString>next assembly occurrence</ClassString>
+                                </RelationType>
+                            </ViewOccurrenceRelationship>
+                            <ViewOccurrenceRelationship xsi:type="n0:NextAssemblyOccurrenceUsage" uid="_a6fb9fec-4f48-49a9-bc6d-39369dd44c96">
+                                <Related uidRef="_584b1bbb-a09d-4f25-84a4-db0b6eb3c184"></Related>
+                                <RelationType>
+                                    <ClassString>next assembly occurrence</ClassString>
+                                </RelationType>
+                            </ViewOccurrenceRelationship>
+                            <ViewOccurrenceRelationship xsi:type="n0:NextAssemblyOccurrenceUsage" uid="_b3948179-ed78-4ca6-81fc-324403712686">
+                                <Related uidRef="_a0ee4f43-6d69-4a61-8656-07c17f1e1b1f"></Related>
+                                <RelationType>
+                                    <ClassString>next assembly occurrence</ClassString>
+                                </RelationType>
+                            </ViewOccurrenceRelationship>
+                            <ViewOccurrenceRelationship xsi:type="n0:NextAssemblyOccurrenceUsage" uid="_b8f4f124-1688-40b5-b91c-3976076492ad">
+                                <Related uidRef="_7029c86c-5f16-42fc-934d-a9556797c168"></Related>
+                                <RelationType>
+                                    <ClassString>next assembly occurrence</ClassString>
+                                </RelationType>
+                            </ViewOccurrenceRelationship>
+                            <ViewOccurrenceRelationship xsi:type="n0:NextAssemblyOccurrenceUsage" uid="_c2c787c4-f093-4619-bc0f-344a8dd16801">
+                                <Related uidRef="_60cf4893-911a-4229-a94f-524b5a3d64d8"></Related>
+                                <RelationType>
+                                    <ClassString>next assembly occurrence</ClassString>
+                                </RelationType>
+                                <Placement>
+                                    <GeometryToTopologyModelAssociation uidRef="_450fbe06-d563-4a09-9fdf-927651af4341"></GeometryToTopologyModelAssociation>
+                                </Placement>
+                            </ViewOccurrenceRelationship>
+                            <ViewOccurrenceRelationship xsi:type="n0:NextAssemblyOccurrenceUsage" uid="_c831670c-d0fc-4321-aff4-8c07b9ff22fe">
+                                <Related uidRef="_8b17a43e-0be3-4187-8be3-b387af42fadd"></Related>
+                                <RelationType>
+                                    <ClassString>next assembly occurrence</ClassString>
+                                </RelationType>
+                                <Placement>
+                                    <GeometryToTopologyModelAssociation uidRef="_4efaa9ff-3a92-4276-848c-fe11694ffae6"></GeometryToTopologyModelAssociation>
+                                </Placement>
+                            </ViewOccurrenceRelationship>
+                            <ViewOccurrenceRelationship xsi:type="n0:NextAssemblyOccurrenceUsage" uid="_cba28117-2dc0-424e-a038-05e90a14fe48">
+                                <Related uidRef="_75811bd5-41a1-44a6-b636-abc49759fc0b"></Related>
+                                <RelationType>
+                                    <ClassString>next assembly occurrence</ClassString>
+                                </RelationType>
+                            </ViewOccurrenceRelationship>
+                            <ViewOccurrenceRelationship xsi:type="n0:NextAssemblyOccurrenceUsage" uid="_cf8ce533-0fff-4787-a7a9-ec09465719ac">
+                                <Related uidRef="_26e19f2f-3b7e-40b5-8b98-0c2c80f3a77e"></Related>
+                                <RelationType>
+                                    <ClassString>next assembly occurrence</ClassString>
+                                </RelationType>
+                            </ViewOccurrenceRelationship>
+                            <ViewOccurrenceRelationship xsi:type="n0:NextAssemblyOccurrenceUsage" uid="_d6901155-28a6-4d3b-8cef-26485680bcc3">
+                                <Related uidRef="_871c3e8e-5281-4efb-987a-a5c1f1dcad4a"></Related>
+                                <RelationType>
+                                    <ClassString>next assembly occurrence</ClassString>
+                                </RelationType>
+                                <Placement>
+                                    <GeometryToTopologyModelAssociation uidRef="_a690c5b1-b525-4435-94d5-95e80ee618b0"></GeometryToTopologyModelAssociation>
+                                </Placement>
+                            </ViewOccurrenceRelationship>
+                            <ViewOccurrenceRelationship xsi:type="n0:NextAssemblyOccurrenceUsage" uid="_d814ae2c-91c8-4bb2-b4a0-396ef1c8c91f">
+                                <Related uidRef="_d9cbe10c-7ed0-4579-918f-fa5662c76b02"></Related>
+                                <RelationType>
+                                    <ClassString>next assembly occurrence</ClassString>
+                                </RelationType>
+                                <Placement>
+                                    <GeometryToTopologyModelAssociation uidRef="_43c664c6-18c2-4b92-b9af-e1b2ef913ec9"></GeometryToTopologyModelAssociation>
+                                </Placement>
+                            </ViewOccurrenceRelationship>
+                            <ViewOccurrenceRelationship xsi:type="n0:NextAssemblyOccurrenceUsage" uid="_d8809833-6c3d-4f87-a816-364a6c72b0a7">
+                                <Related uidRef="_f3b3186a-ea83-455a-ae8a-7037a5face16"></Related>
+                                <RelationType>
+                                    <ClassString>next assembly occurrence</ClassString>
+                                </RelationType>
+                                <Placement>
+                                    <GeometryToTopologyModelAssociation uidRef="_e3f4f667-58f8-4c0d-93b0-c8cab626b97e"></GeometryToTopologyModelAssociation>
+                                </Placement>
+                            </ViewOccurrenceRelationship>
+                            <ViewOccurrenceRelationship xsi:type="n0:NextAssemblyOccurrenceUsage" uid="_de43402c-e401-48bd-9e67-3c28a8153294">
+                                <Related uidRef="_90c3247a-114c-4d05-95e9-6e5b4985d2c4"></Related>
+                                <RelationType>
+                                    <ClassString>next assembly occurrence</ClassString>
+                                </RelationType>
+                                <Placement>
+                                    <GeometricRepresentationRelationship uidRef="_4b2d40af-0a3e-4fa9-ae9c-63fb36095e48"></GeometricRepresentationRelationship>
+                                </Placement>
+                            </ViewOccurrenceRelationship>
+                            <ViewOccurrenceRelationship xsi:type="n0:NextAssemblyOccurrenceUsage" uid="_ecde7d05-6a6a-4765-a12c-ed1d7013690f">
+                                <Related uidRef="_29bc7cf0-efeb-4c42-91f7-fcaa3dee36a6"></Related>
+                                <RelationType>
+                                    <ClassString>next assembly occurrence</ClassString>
+                                </RelationType>
+                                <Placement>
+                                    <GeometryToTopologyModelAssociation uidRef="_8d3a5e31-e0e1-4413-9657-84848aea226f"></GeometryToTopologyModelAssociation>
+                                </Placement>
+                            </ViewOccurrenceRelationship>
+                            <Topology uidRef="_1653ca5b-5e62-4f59-b361-4c73ca267898"></Topology>
+                        </PartView>
+                    </Views>
+                </PartVersion>
+            </Versions>
+        </Part>
+        <Part uid="_4a9de85f-dc72-4217-9e77-0b00ec857622">
+            <Id id="SB6 4 1 M"></Id>
+            <Name>
+                <CharacterString>ARINC 600 shell size 1 rack plug </CharacterString>
+            </Name>
+            <PartTypes>
+                <PartCategoryEnum>connector_housing</PartCategoryEnum>
+                <PartCategoryEnum>discrete</PartCategoryEnum>
+            </PartTypes>
+            <Versions>
+                <PartVersion uid="_2bf5f883-cf62-450c-8c67-339c9e67b5e6">
+                    <Id></Id>
+                    <Views>
+                        <PartView uid="_e31f11e8-b25e-4bb8-bb68-a080c2cbdea8">
+                            <InitialContext uidRef="default_electrical_design_view_context"></InitialContext>
+                            <Occurrence xsi:type="n0:SingleOccurrence" uid="_86c771f5-0128-4490-8ab4-7728bed816cf">
+                                <Id id="arinc1 housing"></Id>
+                                <ShapeElement xsi:type="n0:OccurrenceContactFeature" uid="_64e46ae0-a599-43ba-b9e3-c4505fe2c58e">
+                                    <ShapeElement xsi:type="n0:OccurrenceContactFeature" uid="_187db890-98be-4f8e-806e-18f157c3c369">
+                                        <Definition uidRef="_b7939723-5953-42c3-bb2f-86b61abffbc4"></Definition>
+                                    </ShapeElement>
+                                    <ShapeElement xsi:type="n0:OccurrenceContactFeature" uid="_4e434020-f4e3-46a6-815e-496f9e67de2b">
+                                        <Definition uidRef="_98c83a15-d2e2-4de3-a1da-e388c9521c52"></Definition>
+                                    </ShapeElement>
+                                    <ShapeElement xsi:type="n0:OccurrenceContactFeature" uid="_4f83c3a1-05c8-4049-9555-199bf028487f">
+                                        <Definition uidRef="_49edd8f4-d33d-4747-8698-7ce1e96ad4bf"></Definition>
+                                    </ShapeElement>
+                                    <Definition uidRef="_e5a4e7a9-1700-4d55-82fd-3db58aa23433"></Definition>
+                                </ShapeElement>
+                            </Occurrence>
+                            <ShapeElement xsi:type="n0:PartContactFeature" uid="_e5a4e7a9-1700-4d55-82fd-3db58aa23433">
+                                <PartDefinition uidRef="_a20ba8bf-55aa-4879-afab-c81293fd8bb3"></PartDefinition>
+                            </ShapeElement>
+                        </PartView>
+                    </Views>
+                </PartVersion>
+            </Versions>
+        </Part>
+        <Part uid="_9c3cf40c-2545-4f62-abd8-8895c1b64f5e">
+            <Id id="8660-5W2"></Id>
+            <Name>
+                <CharacterString>ARINC rack plug 600 shell 1 C 5W2 insert</CharacterString>
+            </Name>
+            <PartTypes>
+                <PartCategoryEnum>connector_insert</PartCategoryEnum>
+                <PartCategoryEnum>discrete</PartCategoryEnum>
+            </PartTypes>
+            <Versions>
+                <PartVersion uid="_65c487fa-81b3-4849-80d7-099c19aaf655">
+                    <Id id="Version 1"></Id>
+                    <Views>
+                        <PartView uid="_d462b4f3-a2e0-4831-972c-60c33f91c9f4">
+                            <Id id="Version 1"></Id>
+                            <InitialContext uidRef="default_electrical_design_view_context"></InitialContext>
+                            <Occurrence xsi:type="n0:SingleOccurrence" uid="_3ffb0aa5-104f-40e1-8ad5-1affd21f420d">
+                                <Id id="C-insert"></Id>
+                                <ShapeElement xsi:type="n0:OccurrenceContactFeature" uid="_7a4ddb78-7430-4ce1-a797-ed78d31a2228">
+                                    <Definition uidRef="_d0d8112e-a978-41a9-a10a-2cbfec695e9d"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceContactFeature" uid="_8e75858f-ce86-4b47-92c7-c46e36bcb7a1">
+                                    <Definition uidRef="_dcb51aad-8dfa-4b34-bce2-d7c901407303"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceContactFeature" uid="_9676bb73-0e07-4156-8407-f06ff3e83892">
+                                    <Definition uidRef="_133263c3-1139-4ace-aaf0-7cadfe241e92"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceContactFeature" uid="_9d552fdc-7b46-429d-85bc-17e0d92494de">
+                                    <Definition uidRef="_e3127d64-a1a7-4adc-92ae-a2e663e9dbda"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceContactFeature" uid="_c13e887f-dee1-4a42-bd59-cd6f74abc43e">
+                                    <Definition uidRef="_9a5cd618-a49e-4df9-b2f4-dcf54a9bc67b"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceContactFeature" uid="_ec534d13-ce5f-4386-908b-c78d4e507159">
+                                    <Definition uidRef="_6f6003a9-8a43-4bdd-8472-66c8a668b1bb"></Definition>
+                                </ShapeElement>
+                            </Occurrence>
+                            <ShapeElement xsi:type="n0:PartContactFeature" uid="_133263c3-1139-4ace-aaf0-7cadfe241e92">
+                                <Id id="5"></Id>
+                                <PartDefinition uidRef="_36200a57-284a-4bd4-95be-0959798b3b99"></PartDefinition>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartContactFeature" uid="_6f6003a9-8a43-4bdd-8472-66c8a668b1bb">
+                                <Id id="4"></Id>
+                                <PartDefinition uidRef="_bd6d3588-baf0-4416-af62-7941d6afb940"></PartDefinition>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartContactFeature" uid="_9a5cd618-a49e-4df9-b2f4-dcf54a9bc67b">
+                                <Id id="1"></Id>
+                                <PartDefinition uidRef="_8590de90-cc78-46e4-ac98-a722545127ad"></PartDefinition>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartContactFeature" uid="_d0d8112e-a978-41a9-a10a-2cbfec695e9d">
+                                <Id id="3"></Id>
+                                <PartDefinition uidRef="_e8d6d971-2a6a-443b-9883-0afeaf69a7d4"></PartDefinition>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartContactFeature" uid="_dcb51aad-8dfa-4b34-bce2-d7c901407303">
+                                <Id id="Insert profile"></Id>
+                                <PartDefinition uidRef="_82eee29a-b212-4f4a-b235-213bfbd654fe"></PartDefinition>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartContactFeature" uid="_e3127d64-a1a7-4adc-92ae-a2e663e9dbda">
+                                <Id id="2"></Id>
+                                <PartDefinition uidRef="_446f62dd-cd0a-4d3b-a507-b7bc1caaab50"></PartDefinition>
+                            </ShapeElement>
+                        </PartView>
+                    </Views>
+                </PartVersion>
+            </Versions>
+        </Part>
+        <Part uid="_85929d74-3587-4bad-a40f-e061e68d38a6">
+            <Id>
+                <Identifier uid="_30496f45-c234-4d89-9661-396b98a8e5b7" id="8660-31A-100-01A/AA" idContextRef="_456618e2-0d92-4d4c-b25a-b5f2234b1a23" idRoleRef=""></Identifier>
+            </Id>
+            <Name>
+                <CharacterString>ARINC 600 rack plug shell 1 A and B dummy</CharacterString>
+            </Name>
+            <PartTypes>
+                <PartCategoryEnum>connector_insert</PartCategoryEnum>
+                <PartCategoryEnum>discrete</PartCategoryEnum>
+            </PartTypes>
+            <Versions>
+                <PartVersion uid="_bae45329-2178-4b2f-b4a4-4c4160513426">
+                    <Id id="Version 1"></Id>
+                    <Views>
+                        <PartView uid="_6526ad54-4246-4b30-b8b1-c9b8950faf84">
+                            <Id id="Version 1"></Id>
+                            <InitialContext uidRef="default_electrical_design_view_context"></InitialContext>
+                            <Occurrence xsi:type="n0:SingleOccurrence" uid="_9596c4b7-8f44-4d9e-ab81-d4a715d4316f">
+                                <Id id="B-insert"></Id>
+                                <ShapeElement xsi:type="n0:OccurrenceContactFeature" uid="_726519fd-018e-4fd6-a563-8743abb9041c">
+                                    <Definition uidRef="_94a816cc-1710-499d-a89f-8f8a8563ec77"></Definition>
+                                </ShapeElement>
+                            </Occurrence>
+                            <Occurrence xsi:type="n0:SingleOccurrence" uid="_9c8ec43a-b389-4955-ac66-6a6a04c9f316">
+                                <Id id="A-insert"></Id>
+                                <ShapeElement xsi:type="n0:OccurrenceContactFeature" uid="_09543372-fe81-48bb-9aff-2aa1c9f5c8ca">
+                                    <Definition uidRef="_94a816cc-1710-499d-a89f-8f8a8563ec77"></Definition>
+                                </ShapeElement>
+                            </Occurrence>
+                            <ShapeElement xsi:type="n0:PartContactFeature" uid="_94a816cc-1710-499d-a89f-8f8a8563ec77">
+                                <Id id="Slot profile"></Id>
+                                <PartDefinition uidRef="_9193c9dd-ef91-4143-a572-db5fe65738e4"></PartDefinition>
+                            </ShapeElement>
+                        </PartView>
+                    </Views>
+                </PartVersion>
+            </Versions>
+        </Part>
+        <Part uid="_ead5270f-181b-4f76-b6a7-4606602eeee6">
+            <Id id="8660-2485"></Id>
+            <Name>
+                <CharacterString>#5 Coax contact</CharacterString>
+            </Name>
+            <PartTypes>
+                <PartCategoryEnum>connector_contact</PartCategoryEnum>
+                <PartCategoryEnum>discrete</PartCategoryEnum>
+            </PartTypes>
+            <Versions>
+                <PartVersion uid="_43755b01-3a90-4b95-a403-f92b66b3f894">
+                    <Id id="Version 1"></Id>
+                    <Views>
+                        <PartView uid="_cd4551d5-05bf-470e-a923-707f8cda249e">
+                            <DefiningGeometry uidRef="_c5a25b70-b0c2-4e37-88ec-fce23456318c"></DefiningGeometry>
+                            <Id id="Version 1"></Id>
+                            <InitialContext uidRef="default_electrical_design_view_context"></InitialContext>
+                            <Occurrence xsi:type="n0:SingleOccurrence" uid="_26e19f2f-3b7e-40b5-8b98-0c2c80f3a77e">
+                                <Id id="coax1"></Id>
+                                <ShapeElement xsi:type="n0:OccurrenceContactFeature" uid="_4e81f156-b961-4004-bf3c-f22e398beae1">
+                                    <Definition uidRef="_4c190103-8de4-4d0b-8ae1-abaaedad0652"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_625855e2-2c08-446e-8549-e77320387a11">
+                                    <Definition uidRef="_32a1e664-1b7b-44d8-8d6d-275d365d80ca"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_a3e774f6-4bae-4415-a878-120b7bd16b15">
+                                    <Definition uidRef="_bf8931b1-9a51-47a7-be14-9a52c9f9e83b"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_e987a8e3-0b64-4ca7-9196-7aa23d31fc95">
+                                    <Definition uidRef="_e627231e-686e-413a-9506-f9fea2bd6bcb"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_f4ddc592-b204-4d9b-9364-524a9d1b70e0">
+                                    <Definition uidRef="_0d052e59-f183-4f09-a86d-1196a93fd971"></Definition>
+                                </ShapeElement>
+                            </Occurrence>
+                            <Occurrence xsi:type="n0:SingleOccurrence" uid="_7029c86c-5f16-42fc-934d-a9556797c168">
+                                <Id id="coax2"></Id>
+                                <ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_13bdff43-c4b8-4679-a34a-0d4a70052928">
+                                    <Definition uidRef="_bf8931b1-9a51-47a7-be14-9a52c9f9e83b"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_216b142e-4504-4887-96d8-72d97526b80d">
+                                    <Definition uidRef="_e627231e-686e-413a-9506-f9fea2bd6bcb"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceContactFeature" uid="_715ad25c-047f-4b91-9161-3f722d0e15e9">
+                                    <Definition uidRef="_4c190103-8de4-4d0b-8ae1-abaaedad0652"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_e533f177-dea4-4084-8059-927211d8fb35">
+                                    <Definition uidRef="_32a1e664-1b7b-44d8-8d6d-275d365d80ca"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_ea329bc3-e8ea-432f-a793-d690230308d5">
+                                    <Definition uidRef="_0d052e59-f183-4f09-a86d-1196a93fd971"></Definition>
+                                </ShapeElement>
+                            </Occurrence>
+                            <ShapeElement xsi:type="n0:PartTerminal" uid="_0d052e59-f183-4f09-a86d-1196a93fd971">
+                                <Id id="Join gnd"></Id>
+                                <IntendedJointType>
+                                    <TerminalJointTypeEnum>crimp_terminal</TerminalJointTypeEnum>
+                                </IntendedJointType>
+                                <InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartConnectivityDefinition" uid="_2877d926-09da-40b8-b759-1c1e96b5b956">
+                                <ConnectedTerminals>
+                                    <PartTerminal uidRef="_0d052e59-f183-4f09-a86d-1196a93fd971"></PartTerminal>
+                                    <PartTerminal uidRef="_bf8931b1-9a51-47a7-be14-9a52c9f9e83b"></PartTerminal>
+                                </ConnectedTerminals>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartTerminal" uid="_32a1e664-1b7b-44d8-8d6d-275d365d80ca">
+                                <Id id="Join signal"></Id>
+                                <IntendedJointType>
+                                    <TerminalJointTypeEnum>crimp_terminal</TerminalJointTypeEnum>
+                                </IntendedJointType>
+                                <InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartContactFeature" uid="_4c190103-8de4-4d0b-8ae1-abaaedad0652">
+                                <Id id="Contact mounting profile"></Id>
+                                <PartDefinition uidRef="_809a8320-8c1c-45c2-a61c-6c2c9cb2ddcc"></PartDefinition>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartConnectivityDefinition" uid="_5eed7bb5-540a-40bb-bd32-c5e1366126cc">
+                                <ConnectedTerminals>
+                                    <PartTerminal uidRef="_32a1e664-1b7b-44d8-8d6d-275d365d80ca"></PartTerminal>
+                                    <PartTerminal uidRef="_e627231e-686e-413a-9506-f9fea2bd6bcb"></PartTerminal>
+                                </ConnectedTerminals>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartTerminal" uid="_bf8931b1-9a51-47a7-be14-9a52c9f9e83b">
+                                <Id id="Interface gnd"></Id>
+                                <IntendedJointType>
+                                    <TerminalJointTypeEnum>pin_terminal</TerminalJointTypeEnum>
+                                </IntendedJointType>
+                                <InterfaceOrJoinTerminal>interface_terminal</InterfaceOrJoinTerminal>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartTerminal" uid="_e627231e-686e-413a-9506-f9fea2bd6bcb">
+                                <Id id="Interface signal"></Id>
+                                <IntendedJointType>
+                                    <TerminalJointTypeEnum>pin_terminal</TerminalJointTypeEnum>
+                                </IntendedJointType>
+                                <InterfaceOrJoinTerminal>interface_terminal</InterfaceOrJoinTerminal>
+                            </ShapeElement>
+                        </PartView>
+                    </Views>
+                </PartVersion>
+            </Versions>
+        </Part>
+        <Part uid="_4846e4ef-a1ea-437c-9e14-176db4170771">
+            <Id id="04034-22-9"></Id>
+            <Name>
+                <CharacterString>WIRE,ELEC,COMP,SNGL CONDUCTOR,150 DEG C</CharacterString>
+            </Name>
+            <PartTypes>
+                <PartCategoryEnum>raw_material_by_length</PartCategoryEnum>
+                <PartCategoryEnum>wire</PartCategoryEnum>
+            </PartTypes>
+            <Versions>
+                <PartVersion uid="_443d507c-aaa1-42f9-b216-0abdb67a01e5">
+                    <Id id="Version 1"></Id>
+                    <Views>
+                        <PartView uid="_65809417-2066-4701-9949-6b285725674b">
+                            <DefiningGeometry uidRef="_7747c5dc-6e00-4a2f-a46a-665f5e522440"></DefiningGeometry>
+                            <Id id="Version 1"></Id>
+                            <InitialContext uidRef="default_electrical_design_view_context"></InitialContext>
+                            <Occurrence xsi:type="n0:WireOccurrence" uid="_60cf4893-911a-4229-a94f-524b5a3d64d8">
+                                <Id id="wire1"></Id>
+                                <ShapeElement xsi:type="n0:WireOccurrenceIdentification" uid="_1ba12b66-3809-4d12-9487-ea1e638e45b6"></ShapeElement>
+                                <ShapeElement xsi:type="n0:WireOccurrenceTerminal" uid="_302a97bd-8194-45c3-a168-8906d9a13c12"></ShapeElement>
+                                <ShapeElement xsi:type="n0:CrossSectionalOccurrenceShapeElement" uid="_6389ea52-cf8c-40c5-9214-7590a220ecd1">
+                                    <Definition uidRef="_0aa30fa6-06cb-447a-9166-af0dcfa1b834"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:WireOccurrenceTerminal" uid="_ea2ca3bf-c3eb-45ee-8491-9c65b279f39b"></ShapeElement>
+                                <Quantity xsi:type="n0:NumericalValue" uid="_a7f64529-d0ea-4c24-b15e-a3371721477f">
+                                    <Unit uidRef="_cf5bcf40-5f4e-4631-8ed6-387873b730b6"></Unit>
+                                    <ValueComponent>1.75</ValueComponent>
+                                </Quantity>
+                            </Occurrence>
+                            <Occurrence xsi:type="n0:WireOccurrence" uid="_f3b3186a-ea83-455a-ae8a-7037a5face16">
+                                <Id id="wire2"></Id>
+                                <ShapeElement xsi:type="n0:CrossSectionalOccurrenceShapeElement" uid="_0c249178-939f-4879-a799-53567e5f4f26">
+                                    <Definition uidRef="_0aa30fa6-06cb-447a-9166-af0dcfa1b834"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:WireOccurrenceTerminal" uid="_6f72242b-5a62-447a-871e-daab1cd7ff7c"></ShapeElement>
+                                <ShapeElement xsi:type="n0:WireOccurrenceTerminal" uid="_ad851c30-6bdc-4306-ada8-665907014c5c"></ShapeElement>
+                                <ShapeElement xsi:type="n0:WireOccurrenceIdentification" uid="_ecf07583-2c27-4fd1-b4a1-5160cc82c40f"></ShapeElement>
+                                <Quantity xsi:type="n0:NumericalValue" uid="_2f3b62a5-8f1b-4380-af07-2692dd2d9cce">
+                                    <Unit uidRef="_cf5bcf40-5f4e-4631-8ed6-387873b730b6"></Unit>
+                                    <ValueComponent>1.5</ValueComponent>
+                                </Quantity>
+                            </Occurrence>
+                            <Occurrence xsi:type="n0:WireOccurrence" uid="_f9b6d867-735d-4918-8cd8-4172a7bc47e7">
+                                <Id id="wire3"></Id>
+                                <ShapeElement xsi:type="n0:WireOccurrenceTerminal" uid="_02dce6c4-649e-41b3-81a5-b5027c221b86"></ShapeElement>
+                                <ShapeElement xsi:type="n0:WireOccurrenceIdentification" uid="_40719011-f173-4139-a3f8-9f0b2bb15902"></ShapeElement>
+                                <ShapeElement xsi:type="n0:WireOccurrenceTerminal" uid="_621eca7e-b647-4b63-a5c1-ed948c1972c9"></ShapeElement>
+                                <ShapeElement xsi:type="n0:CrossSectionalOccurrenceShapeElement" uid="_73987869-d699-4352-a5d9-be914d7a3cc9">
+                                    <Definition uidRef="_0aa30fa6-06cb-447a-9166-af0dcfa1b834"></Definition>
+                                </ShapeElement>
+                                <Quantity xsi:type="n0:NumericalValue" uid="_81d49001-0fd6-4b6c-a5d9-228d90af796b">
+                                    <Unit uidRef="_cf5bcf40-5f4e-4631-8ed6-387873b730b6"></Unit>
+                                    <ValueComponent>2.5</ValueComponent>
+                                </Quantity>
+                            </Occurrence>
+                            <ShapeElement xsi:type="n0:CrossSectionalPartShapeElement" uid="_0aa30fa6-06cb-447a-9166-af0dcfa1b834"></ShapeElement>
+                        </PartView>
+                    </Views>
+                </PartVersion>
+            </Versions>
+        </Part>
+        <Part uid="_e75dc64b-ffee-4f1b-a797-89e87b2d0049">
+            <Id id="RG 58"></Id>
+            <Name>
+                <CharacterString>RG 58</CharacterString>
+            </Name>
+            <PartTypes>
+                <PartCategoryEnum>cable</PartCategoryEnum>
+                <PartCategoryEnum>raw_material_by_length</PartCategoryEnum>
+            </PartTypes>
+            <Versions>
+                <PartVersion uid="_b3244eab-2d0b-4fb3-a47c-37c0072419f1">
+                    <Id id="Version 1"></Id>
+                    <Views>
+                        <PartView uid="_e82c4dbb-1b59-4c74-976f-5ded3dbac700">
+                            <DefiningGeometry uidRef="_7747c5dc-6e00-4a2f-a46a-665f5e522440"></DefiningGeometry>
+                            <Id id="Version 1"></Id>
+                            <InitialContext uidRef="default_electrical_design_view_context"></InitialContext>
+                            <Occurrence xsi:type="n0:CableOccurrence" uid="_51390747-fae3-41f3-bd9e-691dec080a4f">
+                                <Id id="cable2"></Id>
+                                <ShapeElement xsi:type="n0:WireOccurrenceIdentification" uid="_1730b4e3-1cd7-4fff-b867-1b0fb70ef980">
+                                    <Name>
+                                        <CharacterString>gnd</CharacterString>
+                                    </Name>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:CableOccurrenceTerminalLocationGroup" uid="_38b26f84-c57b-411b-87a5-e906d9e8c8dc">
+                                    <ShapeElement xsi:type="n0:CableOccurrenceTerminal" uid="_4c3e708e-0163-4cdf-a405-1f6e00c30ba9"></ShapeElement>
+                                    <ShapeElement xsi:type="n0:CableOccurrenceTerminal" uid="_a3e8b245-2585-40c0-89c8-aa8ec5c0eb5a"></ShapeElement>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:WireOccurrenceIdentification" uid="_8f74cc0c-b25d-4e1d-8c84-04bfbd408abb">
+                                    <Name>
+                                        <CharacterString>Signal</CharacterString>
+                                    </Name>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:CableOccurrenceTerminalLocationGroup" uid="_a583ba71-8aea-4f64-88cb-a225829f07d5">
+                                    <ShapeElement xsi:type="n0:CableOccurrenceTerminal" uid="_9209a860-c1fe-4893-a23a-9f8eae2a7e0f"></ShapeElement>
+                                    <ShapeElement xsi:type="n0:CableOccurrenceTerminal" uid="_d9c147a2-561d-4861-9b8d-fd6e66231c8f"></ShapeElement>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:CrossSectionalOccurrenceShapeElement" uid="_f11b64b3-5349-40b0-9cf7-29f87656c171">
+                                    <Definition uidRef="_efca49c5-dd8f-443f-b5f2-1dea6fef911c"></Definition>
+                                </ShapeElement>
+                                <Quantity xsi:type="n0:NumericalValue" uid="_1c581291-6102-4603-b3dd-b6736a8f1219">
+                                    <Unit uidRef="_cf5bcf40-5f4e-4631-8ed6-387873b730b6"></Unit>
+                                    <ValueComponent>4.45</ValueComponent>
+                                </Quantity>
+                            </Occurrence>
+                            <Occurrence xsi:type="n0:CableOccurrence" uid="_871c3e8e-5281-4efb-987a-a5c1f1dcad4a">
+                                <Id id="cable1"></Id>
+                                <ShapeElement xsi:type="n0:WireOccurrenceIdentification" uid="_5c8deabe-edff-4e87-be09-12539bd6564f">
+                                    <Name>
+                                        <CharacterString>Signal</CharacterString>
+                                    </Name>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:CrossSectionalOccurrenceShapeElement" uid="_88bf4b0b-7026-4ecf-8bed-5bd11b06afad">
+                                    <Definition uidRef="_efca49c5-dd8f-443f-b5f2-1dea6fef911c"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:CableOccurrenceTerminalLocationGroup" uid="_89b01b7c-2d38-4210-8a03-b151f200415a">
+                                    <ShapeElement xsi:type="n0:CableOccurrenceTerminal" uid="_245bddf6-118c-4f99-9eb6-b689385824d5"></ShapeElement>
+                                    <ShapeElement xsi:type="n0:CableOccurrenceTerminal" uid="_4d4db133-e691-498d-a7c5-46a14fde9eae"></ShapeElement>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:CableOccurrenceTerminalLocationGroup" uid="_926a9d91-228b-48e0-a630-36e31239f6f6">
+                                    <ShapeElement xsi:type="n0:CableOccurrenceTerminal" uid="_02a596cb-34cb-49e6-99ac-0fdae55f99bc"></ShapeElement>
+                                    <ShapeElement xsi:type="n0:CableOccurrenceTerminal" uid="_7bc2bb73-51ee-4b5d-acb6-969a8e588659"></ShapeElement>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:WireOccurrenceIdentification" uid="_ed1cb3e7-b7dd-4cef-8997-efaa0294d059">
+                                    <Name>
+                                        <CharacterString>gnd</CharacterString>
+                                    </Name>
+                                </ShapeElement>
+                                <Quantity xsi:type="n0:NumericalValue" uid="_4cf822fd-6a7f-4032-8a41-1891a7abeceb">
+                                    <Unit uidRef="_cf5bcf40-5f4e-4631-8ed6-387873b730b6"></Unit>
+                                    <ValueComponent>4.45</ValueComponent>
+                                </Quantity>
+                            </Occurrence>
+                            <ShapeElement xsi:type="n0:CrossSectionalPartShapeElement" uid="_efca49c5-dd8f-443f-b5f2-1dea6fef911c"></ShapeElement>
+                        </PartView>
+                    </Views>
+                </PartVersion>
+            </Versions>
+        </Part>
+        <Part uid="_f3da5748-06af-4589-a6bd-629c06588d8a">
+            <Id id="8660-140"></Id>
+            <Name>
+                <CharacterString>Backshell EMI connector</CharacterString>
+            </Name>
+            <PartTypes>
+                <PartCategoryEnum>discrete</PartCategoryEnum>
+                <PartCategoryEnum>electrified_backshell</PartCategoryEnum>
+            </PartTypes>
+            <Versions>
+                <PartVersion uid="_3191e9fa-7e6f-41d4-8d82-84bab7daa81c">
+                    <Id id="Version 1"></Id>
+                    <Views>
+                        <PartView uid="_a5bccee8-ea28-4830-b06a-6d43d429df46">
+                            <Id id="Version 1"></Id>
+                            <InitialContext uidRef="default_electrical_design_view_context"></InitialContext>
+                            <Occurrence xsi:type="n0:SingleOccurrence" uid="_a0ee4f43-6d69-4a61-8656-07c17f1e1b1f">
+                                <Id id="arinc1/backshell1"></Id>
+                                <ShapeElement xsi:type="n0:OccurrenceShapeFeature" uid="_2b4821d1-e3e9-4ad5-a175-c2359f5d359d">
+                                    <Definition uidRef="_74266404-58d6-4220-a416-13dc22b42355"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_49513225-752f-4abb-bc11-f00c6b15ced6">
+                                    <Definition uidRef="_9e2479cf-0797-4c05-b404-dcba0f027cfa"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceShapeFeature" uid="_68a8c9c5-353e-4961-9f2c-5f1fd596036d">
+                                    <Definition uidRef="_a51a1271-6c6c-4642-ba28-180b35cbc6fa"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceShapeFeature" uid="_6bc3579a-0e48-411d-8cea-5077714e5f9d">
+                                    <Definition uidRef="_0ed210e9-1d73-4f47-bc9a-0135ea0b89b6"></Definition>
+                                </ShapeElement>
+                                <ShapeElement xsi:type="n0:OccurrenceTerminal" uid="_ad978cb9-f1dc-4243-8a62-7f59cca7ba01">
+                                    <Definition uidRef="_a4389335-eb4b-40ad-9f82-a3dd02a981f9"></Definition>
+                                </ShapeElement>
+                            </Occurrence>
+                            <ShapeElement xsi:type="n0:PartFeature" uid="_0ed210e9-1d73-4f47-bc9a-0135ea0b89b6">
+                                <Id id="Segment opening A"></Id>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartFeature" uid="_74266404-58d6-4220-a416-13dc22b42355">
+                                <Id id="Segment opening C"></Id>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartTerminal" uid="_9e2479cf-0797-4c05-b404-dcba0f027cfa">
+                                <Id id="GND2"></Id>
+                                <IntendedJointType>
+                                    <TerminalJointTypeEnum>screw_terminal</TerminalJointTypeEnum>
+                                </IntendedJointType>
+                                <InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartTerminal" uid="_a4389335-eb4b-40ad-9f82-a3dd02a981f9">
+                                <Id id="GND1"></Id>
+                                <IntendedJointType>
+                                    <TerminalJointTypeEnum>screw_terminal</TerminalJointTypeEnum>
+                                </IntendedJointType>
+                                <InterfaceOrJoinTerminal>join_terminal</InterfaceOrJoinTerminal>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartFeature" uid="_a51a1271-6c6c-4642-ba28-180b35cbc6fa">
+                                <Id id="Segment opening B"></Id>
+                            </ShapeElement>
+                            <ShapeElement xsi:type="n0:PartConnectivityDefinition" uid="_afa6a3f4-e0ae-4ce8-bb7d-90e3d1ad2223">
+                                <ConnectedTerminals>
+                                    <PartTerminal uidRef="_9e2479cf-0797-4c05-b404-dcba0f027cfa"></PartTerminal>
+                                    <PartTerminal uidRef="_a4389335-eb4b-40ad-9f82-a3dd02a981f9"></PartTerminal>
+                                </ConnectedTerminals>
+                            </ShapeElement>
+                        </PartView>
+                    </Views>
+                </PartVersion>
+            </Versions>
+        </Part>
+        <ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_d798dd0b-2545-41e4-bc60-49b5ebd41c2a">
+            <Name>
+                <CharacterString>arinc600 rack plug  C insert profile</CharacterString>
+            </Name>
+        </ShapeFeatureDefinition>
+        <ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_9193c9dd-ef91-4143-a572-db5fe65738e4">
+            <Name>
+                <CharacterString>arinc600 rack plug A/B insert profile</CharacterString>
+            </Name>
+        </ShapeFeatureDefinition>
+        <ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_7c52bb82-8dcc-4972-950a-e6f03ef6e34d">
+            <Name>
+                <CharacterString>arinc600 receptacle  C insert profile</CharacterString>
+            </Name>
+        </ShapeFeatureDefinition>
+        <ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_9abfd556-02d1-44c6-82b2-6cea861a5170">
+            <Name>
+                <CharacterString>arinc600 receptacle  #16 contact mounting</CharacterString>
+            </Name>
+        </ShapeFeatureDefinition>
+        <ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_e7316c18-f06e-418d-bfcf-211003f0b7f6">
+            <Name>
+                <CharacterString>arinc600 rack plug  #5 contact mounting</CharacterString>
+            </Name>
+        </ShapeFeatureDefinition>
+        <ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_653489c1-c3bc-49d7-a89f-6cd579ae7546">
+            <Name>
+                <CharacterString>arinc600 receptacle A/B insert profile</CharacterString>
+            </Name>
+        </ShapeFeatureDefinition>
+        <ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_0ee16e3a-c6f0-4060-8d75-e43f58cbb8fc">
+            <Name>
+                <CharacterString>arinc600 receptacle  #12 contact interface</CharacterString>
+            </Name>
+        </ShapeFeatureDefinition>
+        <ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_3d722022-48e9-4f46-bffc-9b0948c36749">
+            <Name>
+                <CharacterString>arinc600 rack plug  #12 contact mounting</CharacterString>
+            </Name>
+        </ShapeFeatureDefinition>
+        <ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_e2ee5b16-9c1c-459c-9d3b-c21bc96f032e">
+            <Name>
+                <CharacterString>arinc600 receptacle  C 5W2 insert profile</CharacterString>
+            </Name>
+            <ShapeElement xsi:type="n0:ShapeFeatureDefinitionOccurrenceElement" uid="_02b70476-6529-4067-ac96-3e20b413e18f">
+                <ShapeElementRelationship xsi:type="n0:ShapeFeatureDefinitionOccurrenceElementRelationship" uid="_273a8db1-102b-4265-823e-9193b7ae3287">
+                    <Related uidRef="_e8d6d971-2a6a-443b-9883-0afeaf69a7d4"></Related>
+                </ShapeElementRelationship>
+                <Definition uidRef="_5deea494-53aa-464a-b1ab-a6f3f9f56e02"></Definition>
+            </ShapeElement>
+            <ShapeElement xsi:type="n0:ShapeFeatureDefinitionOccurrenceElement" uid="_1660067c-439a-48d9-b179-41c53a58d66f">
+                <ShapeElementRelationship xsi:type="n0:ShapeFeatureDefinitionOccurrenceElementRelationship" uid="_452830f5-d4a7-4e19-94a5-59861aa48505">
+                    <Related uidRef="_bd6d3588-baf0-4416-af62-7941d6afb940"></Related>
+                </ShapeElementRelationship>
+                <Definition uidRef="_211c4af5-1164-4fec-867d-666bdb98c2b6"></Definition>
+            </ShapeElement>
+            <ShapeElement xsi:type="n0:ShapeFeatureDefinitionOccurrenceElement" uid="_25213390-cdfe-4275-be60-f0248da6a26e">
+                <ShapeElementRelationship xsi:type="n0:ShapeFeatureDefinitionOccurrenceElementRelationship" uid="_f0b25487-5e1b-409c-9d4b-f7bd64e70bb7">
+                    <Related uidRef="_36200a57-284a-4bd4-95be-0959798b3b99"></Related>
+                </ShapeElementRelationship>
+                <Definition uidRef="_af719bc8-4df0-4e1f-900d-5782a6ffd86b"></Definition>
+            </ShapeElement>
+            <ShapeElement xsi:type="n0:ShapeFeatureDefinitionOccurrenceElement" uid="_5def1674-43d1-48d6-aecd-8e9c6b7b2694">
+                <ShapeElementRelationship xsi:type="n0:ShapeFeatureDefinitionOccurrenceElementRelationship" uid="_6724215b-4160-438e-8602-0e3566655b31">
+                    <Related uidRef="_8590de90-cc78-46e4-ac98-a722545127ad"></Related>
+                </ShapeElementRelationship>
+                <Definition uidRef="_af719bc8-4df0-4e1f-900d-5782a6ffd86b"></Definition>
+            </ShapeElement>
+            <ShapeElement xsi:type="n0:ShapeFeatureDefinitionOccurrenceElement" uid="_7f10d40b-680f-4bfa-a34e-520cf44137f9">
+                <Definition uidRef="_7c52bb82-8dcc-4972-950a-e6f03ef6e34d"></Definition>
+            </ShapeElement>
+            <ShapeElement xsi:type="n0:ShapeFeatureDefinitionOccurrenceElement" uid="_cb67f2e4-0f93-4716-ba27-6ba0768988d0">
+                <ShapeElementRelationship xsi:type="n0:ShapeFeatureDefinitionOccurrenceElementRelationship" uid="_8a67e433-0f6f-4dd9-ad04-0eb5d91c2ff3">
+                    <Related uidRef="_446f62dd-cd0a-4d3b-a507-b7bc1caaab50"></Related>
+                </ShapeElementRelationship>
+                <Definition uidRef="_211c4af5-1164-4fec-867d-666bdb98c2b6"></Definition>
+            </ShapeElement>
+        </ShapeFeatureDefinition>
+        <ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_e06e8d6e-cc69-42ba-bab1-c80464638805">
+            <Name>
+                <CharacterString>arinc600 receptacle shell size1</CharacterString>
+            </Name>
+            <ShapeElement xsi:type="n0:ShapeFeatureDefinitionOccurrenceElement" uid="_2bcaa76f-95ab-45ee-8802-29405bda5a85">
+                <Definition uidRef="_65a1b6da-3a6d-46ee-b9d4-67eb9958e35e"></Definition>
+            </ShapeElement>
+            <ShapeElement xsi:type="n0:ShapeFeatureDefinitionOccurrenceElement" uid="_c35195d1-8bb5-4dcf-996f-7b4261ab09ea">
+                <Definition uidRef="_65ad18ba-34f6-49ef-936b-450726897ce9"></Definition>
+            </ShapeElement>
+            <ShapeElement xsi:type="n0:ShapeFeatureDefinitionOccurrenceElement" uid="_f85bf830-05b8-491e-a4a5-f278ba9a6622">
+                <Definition uidRef="_65a1b6da-3a6d-46ee-b9d4-67eb9958e35e"></Definition>
+            </ShapeElement>
+        </ShapeFeatureDefinition>
+        <ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_82a1d4a8-6c87-4ed5-830a-6db8ed11515a">
+            <Name>
+                <CharacterString>arinc600 receptacle  #5 contact mounting</CharacterString>
+            </Name>
+        </ShapeFeatureDefinition>
+        <ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_e284eca3-a222-48bb-808e-d2ec3d8b34a0">
+            <Name>
+                <CharacterString>arinc600 rack plug  #16 contact interface</CharacterString>
+            </Name>
+        </ShapeFeatureDefinition>
+        <ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_1fc6028f-682a-47b4-948d-f3425650563d">
+            <Name>
+                <CharacterString>arinc600 receptacle  #16 contact interface</CharacterString>
+            </Name>
+        </ShapeFeatureDefinition>
+        <ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_02c4b22f-7d59-4760-a1bf-94534e97564c">
+            <Name>
+                <CharacterString>arinc600 rack plug  #16 contact mounting</CharacterString>
+            </Name>
+        </ShapeFeatureDefinition>
+        <ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_dd3a2691-3772-4f27-b968-11f5c9da32cc">
+            <Name>
+                <CharacterString>arinc600 rack plug  #12 cavity</CharacterString>
+            </Name>
+        </ShapeFeatureDefinition>
+        <ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_a7acbeae-89f6-46bc-bada-8eed1148ae35">
+            <Name>
+                <CharacterString>arinc600 rack plug  C 5W2 insert profile</CharacterString>
+            </Name>
+            <ShapeElement xsi:type="n0:ShapeFeatureDefinitionOccurrenceElement" uid="_36200a57-284a-4bd4-95be-0959798b3b99">
+                <Definition uidRef="_809a8320-8c1c-45c2-a61c-6c2c9cb2ddcc"></Definition>
+            </ShapeElement>
+            <ShapeElement xsi:type="n0:ShapeFeatureDefinitionOccurrenceElement" uid="_446f62dd-cd0a-4d3b-a507-b7bc1caaab50">
+                <Definition uidRef="_e1fdf0f9-b045-43d8-87ea-02cdd323fc00"></Definition>
+            </ShapeElement>
+            <ShapeElement xsi:type="n0:ShapeFeatureDefinitionOccurrenceElement" uid="_82eee29a-b212-4f4a-b235-213bfbd654fe">
+                <Definition uidRef="_d798dd0b-2545-41e4-bc60-49b5ebd41c2a"></Definition>
+            </ShapeElement>
+            <ShapeElement xsi:type="n0:ShapeFeatureDefinitionOccurrenceElement" uid="_8590de90-cc78-46e4-ac98-a722545127ad">
+                <Definition uidRef="_809a8320-8c1c-45c2-a61c-6c2c9cb2ddcc"></Definition>
+            </ShapeElement>
+            <ShapeElement xsi:type="n0:ShapeFeatureDefinitionOccurrenceElement" uid="_bd6d3588-baf0-4416-af62-7941d6afb940">
+                <Definition uidRef="_e1fdf0f9-b045-43d8-87ea-02cdd323fc00"></Definition>
+            </ShapeElement>
+            <ShapeElement xsi:type="n0:ShapeFeatureDefinitionOccurrenceElement" uid="_e8d6d971-2a6a-443b-9883-0afeaf69a7d4">
+                <Definition uidRef="_dd3a2691-3772-4f27-b968-11f5c9da32cc"></Definition>
+            </ShapeElement>
+        </ShapeFeatureDefinition>
+        <ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_29cbf73a-e160-45c7-a70f-81bb4838b83a">
+            <Name>
+                <CharacterString>arinc600 receptacle  #12 contact mounting</CharacterString>
+            </Name>
+        </ShapeFeatureDefinition>
+        <ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_91e11232-b3c1-4516-9b94-ed24115c1ee8">
+            <Name>
+                <CharacterString>arinc600 rack plug A/B slot profile</CharacterString>
+            </Name>
+        </ShapeFeatureDefinition>
+        <ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_65ad18ba-34f6-49ef-936b-450726897ce9">
+            <Name>
+                <CharacterString>arinc600 receptacle  C slot profile</CharacterString>
+            </Name>
+        </ShapeFeatureDefinition>
+        <ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_f83ed924-a16d-45ad-8d0f-75909bf97f68">
+            <Name>
+                <CharacterString>arinc600 receptacle  #5 contact interface</CharacterString>
+            </Name>
+        </ShapeFeatureDefinition>
+        <ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_af719bc8-4df0-4e1f-900d-5782a6ffd86b">
+            <Name>
+                <CharacterString>arinc600 receptacle  #5 cavity</CharacterString>
+            </Name>
+        </ShapeFeatureDefinition>
+        <ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_bc9e5383-9b1b-470a-b74a-7535bbb5bb26">
+            <Name>
+                <CharacterString>arinc600 rack plug  #12 contact interface</CharacterString>
+            </Name>
+        </ShapeFeatureDefinition>
+        <ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_65a1b6da-3a6d-46ee-b9d4-67eb9958e35e">
+            <Name>
+                <CharacterString>arinc600 receptacle A/B slot profile</CharacterString>
+            </Name>
+        </ShapeFeatureDefinition>
+        <ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_41bf7cd3-d4e2-44fa-84a9-22f4e50df479">
+            <Name>
+                <CharacterString>arinc600 rack plug  C slot profile</CharacterString>
+            </Name>
+        </ShapeFeatureDefinition>
+        <ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_a20ba8bf-55aa-4879-afab-c81293fd8bb3">
+            <Name>
+                <CharacterString>arinc600 rack plug shell size1</CharacterString>
+            </Name>
+            <ShapeElement xsi:type="n0:ShapeFeatureDefinitionOccurrenceElement" uid="_8ed7382b-3a84-494e-b1c1-2bba78c8cc78">
+                <Definition uidRef="_91e11232-b3c1-4516-9b94-ed24115c1ee8"></Definition>
+            </ShapeElement>
+            <ShapeElement xsi:type="n0:ShapeFeatureDefinitionOccurrenceElement" uid="_b0ed51c2-f1b9-4552-a049-2595bd229213">
+                <Definition uidRef="_91e11232-b3c1-4516-9b94-ed24115c1ee8"></Definition>
+            </ShapeElement>
+            <ShapeElement xsi:type="n0:ShapeFeatureDefinitionOccurrenceElement" uid="_c5c0b444-11f5-45bf-9318-dc26e8386f77">
+                <Definition uidRef="_41bf7cd3-d4e2-44fa-84a9-22f4e50df479"></Definition>
+            </ShapeElement>
+        </ShapeFeatureDefinition>
+        <ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_211c4af5-1164-4fec-867d-666bdb98c2b6">
+            <Name>
+                <CharacterString>arinc600 receptacle  #16 cavity</CharacterString>
+            </Name>
+        </ShapeFeatureDefinition>
+        <ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_5deea494-53aa-464a-b1ab-a6f3f9f56e02">
+            <Name>
+                <CharacterString>arinc600 receptacle  #12 cavity</CharacterString>
+            </Name>
+        </ShapeFeatureDefinition>
+        <ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_e1fdf0f9-b045-43d8-87ea-02cdd323fc00">
+            <Name>
+                <CharacterString>arinc600 rack plug  #16 cavity</CharacterString>
+            </Name>
+        </ShapeFeatureDefinition>
+        <ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_809a8320-8c1c-45c2-a61c-6c2c9cb2ddcc">
+            <Name>
+                <CharacterString>arinc600 rack plug  #5 cavity</CharacterString>
+            </Name>
+        </ShapeFeatureDefinition>
+        <ShapeFeatureDefinition xsi:type="n0:ContactFeatureDefinition" uid="_6aa353b2-92b4-466f-a288-641d4e5da34f">
+            <Name>
+                <CharacterString>arinc600 rack plug  #5 contact interface</CharacterString>
+            </Name>
+        </ShapeFeatureDefinition>
+        <RepresentationContext xsi:type="n0:GeometricCoordinateSpace" uid="_0e5bfa36-d33d-4a6d-a2b4-546d4a9e1858">
+            <Id id="H1.x Harness topology context"></Id>
+            <Representations>
+                <Representation xsi:type="n0:EdgeBasedTopologicalRepresentationWithLengthConstraint" uid="_1653ca5b-5e62-4f59-b361-4c73ca267898">
+                    <Id id="Topological representation of H1 harness"></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_08752184-c63c-4e99-8849-efd555373c1a"></RepresentationItem>
+                        <RepresentationItem uidRef="_1755b3e4-ed9a-456b-ac1e-edb9be239b11"></RepresentationItem>
+                        <RepresentationItem uidRef="_3705bb40-0745-4fc7-92e7-707f2227e2c8"></RepresentationItem>
+                        <RepresentationItem uidRef="_6f2d6bbf-cfe3-4b80-85cf-25e5951e787e"></RepresentationItem>
+                        <RepresentationItem uidRef="_8df7dac2-1e6e-4455-bf65-d82827b5af88"></RepresentationItem>
+                        <RepresentationItem uidRef="_a820da3b-9f40-4b3e-8f88-80244bb1df73"></RepresentationItem>
+                        <RepresentationItem uidRef="_acc6e3b7-5f6e-4787-ad22-54e260805063"></RepresentationItem>
+                        <RepresentationItem uidRef="_edee0c11-c32c-42c4-ae90-b1584645dc06"></RepresentationItem>
+                        <RepresentationItem uidRef="_f1a2337b-ddfb-4407-bbd7-78edcac26f7c"></RepresentationItem>
+                    </Items>
+                    <RepresentationRelationship xsi:type="n0:GeometryToTopologyModelAssociation" uid="_43c664c6-18c2-4b92-b9af-e1b2ef913ec9">
+                        <Definitional>false</Definitional>
+                        <Related uidRef="_7747c5dc-6e00-4a2f-a46a-665f5e522440"></Related>
+                        <Origin>
+                            <AxisPlacement uidRef="_99997f99-dc9c-4b88-9e04-37fef13e50f2"></AxisPlacement>
+                        </Origin>
+                        <Target>
+                            <Path uidRef="_8df7dac2-1e6e-4455-bf65-d82827b5af88"></Path>
+                        </Target>
+                    </RepresentationRelationship>
+                    <RepresentationRelationship xsi:type="n0:GeometryToTopologyModelAssociation" uid="_450fbe06-d563-4a09-9fdf-927651af4341">
+                        <Definitional>false</Definitional>
+                        <Related uidRef="_7747c5dc-6e00-4a2f-a46a-665f5e522440"></Related>
+                        <Origin>
+                            <AxisPlacement uidRef="_99997f99-dc9c-4b88-9e04-37fef13e50f2"></AxisPlacement>
+                        </Origin>
+                        <Target>
+                            <Edge uidRef="_2dfcbf1f-15da-416c-b007-3c6b7919d45a"></Edge>
+                        </Target>
+                    </RepresentationRelationship>
+                    <RepresentationRelationship xsi:type="n0:GeometryToTopologyModelAssociation" uid="_4efaa9ff-3a92-4276-848c-fe11694ffae6">
+                        <Definitional>false</Definitional>
+                        <Related uidRef="_7747c5dc-6e00-4a2f-a46a-665f5e522440"></Related>
+                        <Origin>
+                            <AxisPlacement uidRef="_99997f99-dc9c-4b88-9e04-37fef13e50f2"></AxisPlacement>
+                        </Origin>
+                        <Target>
+                            <Path uidRef="_08752184-c63c-4e99-8849-efd555373c1a"></Path>
+                        </Target>
+                    </RepresentationRelationship>
+                    <RepresentationRelationship xsi:type="n0:GeometryToTopologyModelAssociation" uid="_4ffcbc14-4d18-41fb-a1ac-72aa3712ef7a">
+                        <Definitional>false</Definitional>
+                        <Related uidRef="_7747c5dc-6e00-4a2f-a46a-665f5e522440"></Related>
+                        <Origin>
+                            <AxisPlacement uidRef="_99997f99-dc9c-4b88-9e04-37fef13e50f2"></AxisPlacement>
+                        </Origin>
+                        <Target>
+                            <Path uidRef="_acc6e3b7-5f6e-4787-ad22-54e260805063"></Path>
+                        </Target>
+                    </RepresentationRelationship>
+                    <RepresentationRelationship xsi:type="n0:GeometryToTopologyModelAssociation" uid="_863004f0-3291-498a-9467-1273be7a2344">
+                        <Definitional>false</Definitional>
+                        <Related uidRef="_7747c5dc-6e00-4a2f-a46a-665f5e522440"></Related>
+                        <Origin>
+                            <AxisPlacement uidRef="_99997f99-dc9c-4b88-9e04-37fef13e50f2"></AxisPlacement>
+                        </Origin>
+                        <Target>
+                            <Path uidRef="_edee0c11-c32c-42c4-ae90-b1584645dc06"></Path>
+                        </Target>
+                    </RepresentationRelationship>
+                    <RepresentationRelationship xsi:type="n0:GeometryToTopologyModelAssociation" uid="_8d3a5e31-e0e1-4413-9657-84848aea226f">
+                        <Definitional>false</Definitional>
+                        <Related uidRef="_7747c5dc-6e00-4a2f-a46a-665f5e522440"></Related>
+                        <Origin>
+                            <AxisPlacement uidRef="_99997f99-dc9c-4b88-9e04-37fef13e50f2"></AxisPlacement>
+                        </Origin>
+                        <Target>
+                            <Path uidRef="_1755b3e4-ed9a-456b-ac1e-edb9be239b11"></Path>
+                        </Target>
+                    </RepresentationRelationship>
+                    <RepresentationRelationship xsi:type="n0:GeometryToTopologyModelAssociation" uid="_9a9d820e-e918-44a8-ae94-76f1de6e9898">
+                        <Definitional>false</Definitional>
+                        <Related uidRef="_7747c5dc-6e00-4a2f-a46a-665f5e522440"></Related>
+                        <Origin>
+                            <AxisPlacement uidRef="_99997f99-dc9c-4b88-9e04-37fef13e50f2"></AxisPlacement>
+                        </Origin>
+                        <Target>
+                            <Path uidRef="_f1a2337b-ddfb-4407-bbd7-78edcac26f7c"></Path>
+                        </Target>
+                    </RepresentationRelationship>
+                    <RepresentationRelationship xsi:type="n0:GeometryToTopologyModelAssociation" uid="_a690c5b1-b525-4435-94d5-95e80ee618b0">
+                        <Definitional>false</Definitional>
+                        <Related uidRef="_7747c5dc-6e00-4a2f-a46a-665f5e522440"></Related>
+                        <Origin>
+                            <AxisPlacement uidRef="_99997f99-dc9c-4b88-9e04-37fef13e50f2"></AxisPlacement>
+                        </Origin>
+                        <Target>
+                            <Path uidRef="_f1a2337b-ddfb-4407-bbd7-78edcac26f7c"></Path>
+                        </Target>
+                    </RepresentationRelationship>
+                    <RepresentationRelationship xsi:type="n0:GeometryToTopologyModelAssociation" uid="_e3f4f667-58f8-4c0d-93b0-c8cab626b97e">
+                        <Definitional>false</Definitional>
+                        <Related uidRef="_7747c5dc-6e00-4a2f-a46a-665f5e522440"></Related>
+                        <Origin>
+                            <AxisPlacement uidRef="_99997f99-dc9c-4b88-9e04-37fef13e50f2"></AxisPlacement>
+                        </Origin>
+                        <Target>
+                            <Edge uidRef="_a60ce93b-ce98-44ef-ba93-baff2260eada"></Edge>
+                        </Target>
+                    </RepresentationRelationship>
+                </Representation>
+                <Representation xsi:type="n0:EdgeBasedTopologicalRepresentationWithLengthConstraint" uid="_f1e8485a-4178-425a-9212-9531061287c0">
+                    <Id id="SubRep H1.a"></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_7703580d-3754-4d84-a283-37be622734d7"></RepresentationItem>
+                    </Items>
+                </Representation>
+                <Representation xsi:type="n0:EdgeBasedTopologicalRepresentationWithLengthConstraint" uid="_f5e6dfa7-936e-45c0-9a23-6f7c13af187c">
+                    <Id id="SubRep H1.b"></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_a27f0f11-79b5-4590-bfec-75d198bd0e2c"></RepresentationItem>
+                    </Items>
+                </Representation>
+            </Representations>
+            <Items>
+                <RepresentationItem xsi:type="n0:Path" uid="_08752184-c63c-4e99-8849-efd555373c1a">
+                    <Name>
+                        <CharacterString>C2</CharacterString>
+                    </Name>
+                    <EdgeList>
+                        <Edge uidRef="_1ee92254-0acc-439c-a323-a44207ff78a2"></Edge>
+                        <Edge uidRef="_3e0bdb1f-1c4e-4fc0-a84b-868b44c53396"></Edge>
+                        <Edge uidRef="_6cc64469-2505-4f2b-b257-094ff82bc0ef"></Edge>
+                    </EdgeList>
+                    <OrientationList>
+                        <Boolean>false</Boolean>
+                        <Boolean>false</Boolean>
+                        <Boolean>true</Boolean>
+                    </OrientationList>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:SubEdge" uid="_35f7f3b8-0ead-46b0-b104-0058d288d37a">
+                    <Name>
+                        <CharacterString>S2-2</CharacterString>
+                    </Name>
+                    <EdgeEnd uidRef="_d772bc3d-43ee-437b-9a7a-cc73933b6110"></EdgeEnd>
+                    <EdgeStart uidRef="_f46ea347-5434-4a4a-ad68-94eeec045122"></EdgeStart>
+                    <ParentEdge uidRef="_a60ce93b-ce98-44ef-ba93-baff2260eada"></ParentEdge>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:VertexPoint" uid="_d772bc3d-43ee-437b-9a7a-cc73933b6110">
+                    <Name>
+                        <CharacterString>X2</CharacterString>
+                    </Name>
+                    <VertexGeometry uidRef="_5ed7c3b9-6e6a-41eb-8abc-b13dfabc17d8"></VertexGeometry>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:PointOnCurve" uid="_5ed7c3b9-6e6a-41eb-8abc-b13dfabc17d8">
+                    <BasicCurve uidRef="_118767a8-5ca2-4a54-ad59-e7997fa2d0da"></BasicCurve>
+                    <Parameter>0.8</Parameter>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:BoundedCurveWithLength" uid="_118767a8-5ca2-4a54-ad59-e7997fa2d0da">
+                    <CurveLength>1.7</CurveLength>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:VertexPoint" uid="_f46ea347-5434-4a4a-ad68-94eeec045122">
+                    <Name>
+                        <CharacterString>X3</CharacterString>
+                    </Name>
+                    <VertexGeometry uidRef="_7154d6ff-0e0d-4314-baed-86e4b51e0e55"></VertexGeometry>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:PointOnCurve" uid="_7154d6ff-0e0d-4314-baed-86e4b51e0e55">
+                    <BasicCurve uidRef="_118767a8-5ca2-4a54-ad59-e7997fa2d0da"></BasicCurve>
+                    <Parameter>0.4</Parameter>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:EdgeBoundedCurveWithLength" uid="_a60ce93b-ce98-44ef-ba93-baff2260eada">
+                    <Name>
+                        <CharacterString>S2</CharacterString>
+                    </Name>
+                    <EdgeEnd uidRef="_2ca7d671-96bc-4254-8f0a-46744beef9f2"></EdgeEnd>
+                    <EdgeStart uidRef="_16af3983-c2c2-4d0d-898a-6f48b9f66e49"></EdgeStart>
+                    <EdgeGeometry uidRef="_118767a8-5ca2-4a54-ad59-e7997fa2d0da"></EdgeGeometry>
+                    <SameSense>true</SameSense>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:VertexPoint" uid="_2ca7d671-96bc-4254-8f0a-46744beef9f2">
+                    <Name>
+                        <CharacterString>N3</CharacterString>
+                    </Name>
+                    <VertexGeometry uidRef="_785b673a-90ce-4e52-80d2-6f376f565291"></VertexGeometry>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:Point" uid="_785b673a-90ce-4e52-80d2-6f376f565291"></RepresentationItem>
+                <RepresentationItem xsi:type="n0:VertexPoint" uid="_16af3983-c2c2-4d0d-898a-6f48b9f66e49">
+                    <Name>
+                        <CharacterString>N2</CharacterString>
+                    </Name>
+                    <VertexGeometry uidRef="_2e1a7ac6-cae2-4424-9ffe-6893ffd49c48"></VertexGeometry>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:Point" uid="_2e1a7ac6-cae2-4424-9ffe-6893ffd49c48"></RepresentationItem>
+                <RepresentationItem xsi:type="n0:SubEdge" uid="_65ad694e-ae8f-4c3e-a261-1aa0d39caff0">
+                    <Name>
+                        <CharacterString>S2-1</CharacterString>
+                    </Name>
+                    <EdgeEnd uidRef="_2ca7d671-96bc-4254-8f0a-46744beef9f2"></EdgeEnd>
+                    <EdgeStart uidRef="_d772bc3d-43ee-437b-9a7a-cc73933b6110"></EdgeStart>
+                    <ParentEdge uidRef="_a60ce93b-ce98-44ef-ba93-baff2260eada"></ParentEdge>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:SubEdge" uid="_e2a06939-2a5a-4ef8-95f1-da3ee17d479d">
+                    <Name>
+                        <CharacterString>S3-1</CharacterString>
+                    </Name>
+                    <EdgeEnd uidRef="_2ca7d671-96bc-4254-8f0a-46744beef9f2"></EdgeEnd>
+                    <EdgeStart uidRef="_b44c7875-e0d4-4ccc-9e19-11f231d198c3"></EdgeStart>
+                    <ParentEdge uidRef="_d9ca7dae-2ed9-4c32-b2d1-ed7ffdb9d654"></ParentEdge>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:VertexPoint" uid="_b44c7875-e0d4-4ccc-9e19-11f231d198c3">
+                    <Name>
+                        <CharacterString>X1</CharacterString>
+                    </Name>
+                    <VertexGeometry uidRef="_0480dac5-6e04-4bb3-a8ca-a220a2c43c7e"></VertexGeometry>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:PointOnCurve" uid="_0480dac5-6e04-4bb3-a8ca-a220a2c43c7e">
+                    <BasicCurve uidRef="_b1e21189-8d99-4b76-a296-810022b5556c"></BasicCurve>
+                    <Parameter>0.8</Parameter>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:BoundedCurveWithLength" uid="_b1e21189-8d99-4b76-a296-810022b5556c">
+                    <CurveLength>2</CurveLength>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:EdgeBoundedCurveWithLength" uid="_d9ca7dae-2ed9-4c32-b2d1-ed7ffdb9d654">
+                    <Name>
+                        <CharacterString>S3</CharacterString>
+                    </Name>
+                    <EdgeEnd uidRef="_2ca7d671-96bc-4254-8f0a-46744beef9f2"></EdgeEnd>
+                    <EdgeStart uidRef="_abf27c9b-0229-4ee5-aed1-8cfd60f9e6f6"></EdgeStart>
+                    <EdgeGeometry uidRef="_b1e21189-8d99-4b76-a296-810022b5556c"></EdgeGeometry>
+                    <SameSense>true</SameSense>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:VertexPoint" uid="_abf27c9b-0229-4ee5-aed1-8cfd60f9e6f6">
+                    <Name>
+                        <CharacterString>N4</CharacterString>
+                    </Name>
+                    <VertexGeometry uidRef="_c29c6b40-abba-4b56-8bdc-9f211265b541"></VertexGeometry>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:Point" uid="_c29c6b40-abba-4b56-8bdc-9f211265b541"></RepresentationItem>
+                <RepresentationItem xsi:type="n0:Path" uid="_1755b3e4-ed9a-456b-ac1e-edb9be239b11">
+                    <Name>
+                        <CharacterString>S2-S3</CharacterString>
+                    </Name>
+                    <EdgeList>
+                        <Edge uidRef="_eeafc35f-d69c-452b-b392-78354e42d7c8"></Edge>
+                        <Edge uidRef="_f3599ce2-e3cd-45e5-a51d-b2217552dc89"></Edge>
+                    </EdgeList>
+                    <OrientationList>
+                        <Boolean>true</Boolean>
+                        <Boolean>false</Boolean>
+                    </OrientationList>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:VertexPoint" uid="_3705bb40-0745-4fc7-92e7-707f2227e2c8">
+                    <Name>
+                        <CharacterString>X6</CharacterString>
+                    </Name>
+                    <VertexGeometry uidRef="_4e8611ba-4d2b-44da-bae9-a90159d624f4"></VertexGeometry>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:PointOnCurve" uid="_4e8611ba-4d2b-44da-bae9-a90159d624f4">
+                    <BasicCurve uidRef="_e7dfd6df-e9cb-4f54-8907-fbc835364f20"></BasicCurve>
+                    <Parameter>0.3</Parameter>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:BoundedCurveWithLength" uid="_e7dfd6df-e9cb-4f54-8907-fbc835364f20">
+                    <CurveLength>0.7</CurveLength>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:ConnectedEdgeSet" uid="_6f2d6bbf-cfe3-4b80-85cf-25e5951e787e">
+                    <ConnectedEdges>
+                        <Edge uidRef="_2dfcbf1f-15da-416c-b007-3c6b7919d45a"></Edge>
+                        <Edge uidRef="_7d55cb7a-3ac5-494a-9731-4ef7d977030d"></Edge>
+                        <Edge uidRef="_8f41e0e1-393a-4aba-92f3-4f46e4271139"></Edge>
+                        <Edge uidRef="_a60ce93b-ce98-44ef-ba93-baff2260eada"></Edge>
+                        <Edge uidRef="_d9ca7dae-2ed9-4c32-b2d1-ed7ffdb9d654"></Edge>
+                    </ConnectedEdges>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:EdgeBoundedCurveWithLength" uid="_2dfcbf1f-15da-416c-b007-3c6b7919d45a">
+                    <Name>
+                        <CharacterString>S1</CharacterString>
+                    </Name>
+                    <EdgeEnd uidRef="_dddee560-45a6-4486-928b-4ae6b0053403"></EdgeEnd>
+                    <EdgeStart uidRef="_2ca7d671-96bc-4254-8f0a-46744beef9f2"></EdgeStart>
+                    <EdgeGeometry uidRef="_dd2d16f7-8ed6-4422-b315-acad1a1ead22"></EdgeGeometry>
+                    <SameSense>true</SameSense>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:VertexPoint" uid="_dddee560-45a6-4486-928b-4ae6b0053403">
+                    <Name>
+                        <CharacterString>N1</CharacterString>
+                    </Name>
+                    <VertexGeometry uidRef="_adee7c3f-3c43-45af-a51d-42062ac4837c"></VertexGeometry>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:Point" uid="_adee7c3f-3c43-45af-a51d-42062ac4837c"></RepresentationItem>
+                <RepresentationItem xsi:type="n0:BoundedCurveWithLength" uid="_dd2d16f7-8ed6-4422-b315-acad1a1ead22">
+                    <CurveLength>1.5</CurveLength>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:EdgeBoundedCurveWithLength" uid="_7d55cb7a-3ac5-494a-9731-4ef7d977030d">
+                    <Name>
+                        <CharacterString>S4</CharacterString>
+                    </Name>
+                    <EdgeEnd uidRef="_abf27c9b-0229-4ee5-aed1-8cfd60f9e6f6"></EdgeEnd>
+                    <EdgeStart uidRef="_a506b231-78cb-4529-a9f9-eeec8adb7097"></EdgeStart>
+                    <EdgeGeometry uidRef="_9e64ee31-6c83-46af-b04e-450129e28c18"></EdgeGeometry>
+                    <SameSense>true</SameSense>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:BoundedCurveWithLength" uid="_9e64ee31-6c83-46af-b04e-450129e28c18">
+                    <CurveLength>0.5</CurveLength>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:VertexPoint" uid="_a506b231-78cb-4529-a9f9-eeec8adb7097">
+                    <Name>
+                        <CharacterString>N5</CharacterString>
+                    </Name>
+                    <VertexGeometry uidRef="_3e5c4e06-8d49-4db2-88fd-1d9d5658722f"></VertexGeometry>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:Point" uid="_3e5c4e06-8d49-4db2-88fd-1d9d5658722f"></RepresentationItem>
+                <RepresentationItem xsi:type="n0:EdgeBoundedCurveWithLength" uid="_8f41e0e1-393a-4aba-92f3-4f46e4271139">
+                    <Name>
+                        <CharacterString>S5</CharacterString>
+                    </Name>
+                    <EdgeEnd uidRef="_abf27c9b-0229-4ee5-aed1-8cfd60f9e6f6"></EdgeEnd>
+                    <EdgeStart uidRef="_cd0328a9-cb95-4430-aec1-4424d0f72054"></EdgeStart>
+                    <EdgeGeometry uidRef="_e7dfd6df-e9cb-4f54-8907-fbc835364f20"></EdgeGeometry>
+                    <SameSense>true</SameSense>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:VertexPoint" uid="_cd0328a9-cb95-4430-aec1-4424d0f72054">
+                    <Name>
+                        <CharacterString>N6</CharacterString>
+                    </Name>
+                    <VertexGeometry uidRef="_8b93af63-e5c5-45ee-96be-aa9a5808b3e2"></VertexGeometry>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:Point" uid="_8b93af63-e5c5-45ee-96be-aa9a5808b3e2"></RepresentationItem>
+                <RepresentationItem xsi:type="n0:Path" uid="_8df7dac2-1e6e-4455-bf65-d82827b5af88">
+                    <Name>
+                        <CharacterString>C1</CharacterString>
+                    </Name>
+                    <EdgeList>
+                        <Edge uidRef="_3e0bdb1f-1c4e-4fc0-a84b-868b44c53396"></Edge>
+                        <Edge uidRef="_6cc64469-2505-4f2b-b257-094ff82bc0ef"></Edge>
+                    </EdgeList>
+                    <OrientationList>
+                        <Boolean>false</Boolean>
+                        <Boolean>true</Boolean>
+                    </OrientationList>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:VertexPoint" uid="_a820da3b-9f40-4b3e-8f88-80244bb1df73">
+                    <Name>
+                        <CharacterString>X7</CharacterString>
+                    </Name>
+                    <VertexGeometry uidRef="_97eb6381-1d9a-49bb-8640-a90dd8e31692"></VertexGeometry>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:PointOnCurve" uid="_97eb6381-1d9a-49bb-8640-a90dd8e31692">
+                    <BasicCurve uidRef="_e7dfd6df-e9cb-4f54-8907-fbc835364f20"></BasicCurve>
+                    <Parameter>0.7</Parameter>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:Path" uid="_acc6e3b7-5f6e-4787-ad22-54e260805063">
+                    <Name>
+                        <CharacterString>S2-S3-S4</CharacterString>
+                    </Name>
+                    <EdgeList>
+                        <Edge uidRef="_7c352a12-1c25-4fa9-bf4f-2b5b7dcb4454"></Edge>
+                        <Edge uidRef="_7833e36b-b240-44df-9512-c57628aebcd0"></Edge>
+                        <Edge uidRef="_eb20f884-9890-4cbf-8dda-3693c71bdb31"></Edge>
+                    </EdgeList>
+                    <OrientationList>
+                        <Boolean>false</Boolean>
+                        <Boolean>true</Boolean>
+                        <Boolean>true</Boolean>
+                    </OrientationList>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:Path" uid="_edee0c11-c32c-42c4-ae90-b1584645dc06">
+                    <Name>
+                        <CharacterString>S3-S5</CharacterString>
+                    </Name>
+                    <EdgeList>
+                        <Edge uidRef="_f3599ce2-e3cd-45e5-a51d-b2217552dc89"></Edge>
+                        <Edge uidRef="_a733167e-40dd-4d4a-a753-77b9c8894463"></Edge>
+                    </EdgeList>
+                    <OrientationList>
+                        <Boolean>false</Boolean>
+                        <Boolean>true</Boolean>
+                    </OrientationList>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:Path" uid="_f1a2337b-ddfb-4407-bbd7-78edcac26f7c">
+                    <Name>
+                        <CharacterString>S2-S3-S5</CharacterString>
+                    </Name>
+                    <EdgeList>
+                        <Edge uidRef="_7c352a12-1c25-4fa9-bf4f-2b5b7dcb4454"></Edge>
+                        <Edge uidRef="_7833e36b-b240-44df-9512-c57628aebcd0"></Edge>
+                        <Edge uidRef="_a733167e-40dd-4d4a-a753-77b9c8894463"></Edge>
+                    </EdgeList>
+                    <OrientationList>
+                        <Boolean>false</Boolean>
+                        <Boolean>true</Boolean>
+                        <Boolean>true</Boolean>
+                    </OrientationList>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:ConnectedEdgeSubSet" uid="_7703580d-3754-4d84-a283-37be622734d7">
+                    <ConnectedEdges>
+                        <Edge uidRef="_2dfcbf1f-15da-416c-b007-3c6b7919d45a"></Edge>
+                        <Edge uidRef="_a60ce93b-ce98-44ef-ba93-baff2260eada"></Edge>
+                        <Edge uidRef="_e2a06939-2a5a-4ef8-95f1-da3ee17d479d"></Edge>
+                    </ConnectedEdges>
+                    <ParentEdgeSet uidRef="_6f2d6bbf-cfe3-4b80-85cf-25e5951e787e"></ParentEdgeSet>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:ConnectedEdgeSubSet" uid="_a27f0f11-79b5-4590-bfec-75d198bd0e2c">
+                    <ConnectedEdges>
+                        <Edge uidRef="_7d55cb7a-3ac5-494a-9731-4ef7d977030d"></Edge>
+                        <Edge uidRef="_8f41e0e1-393a-4aba-92f3-4f46e4271139"></Edge>
+                        <Edge uidRef="_ebde66c3-7f15-4517-a25e-3a53cadd8df7"></Edge>
+                    </ConnectedEdges>
+                    <ParentEdgeSet uidRef="_6f2d6bbf-cfe3-4b80-85cf-25e5951e787e"></ParentEdgeSet>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:SubEdge" uid="_ebde66c3-7f15-4517-a25e-3a53cadd8df7">
+                    <Name>
+                        <CharacterString>S3-a</CharacterString>
+                    </Name>
+                    <EdgeEnd uidRef="_2ca7d671-96bc-4254-8f0a-46744beef9f2"></EdgeEnd>
+                    <EdgeStart uidRef="_8c24cf5d-c00c-42cd-92d9-55e1005f7565"></EdgeStart>
+                    <ParentEdge uidRef="_d9ca7dae-2ed9-4c32-b2d1-ed7ffdb9d654"></ParentEdge>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:VertexPoint" uid="_8c24cf5d-c00c-42cd-92d9-55e1005f7565">
+                    <Name>
+                        <CharacterString>X4</CharacterString>
+                    </Name>
+                    <VertexGeometry uidRef="_4d72b08f-e9d7-4b1a-96e0-b2ab838292d3"></VertexGeometry>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:PointOnCurve" uid="_4d72b08f-e9d7-4b1a-96e0-b2ab838292d3">
+                    <BasicCurve uidRef="_b1e21189-8d99-4b76-a296-810022b5556c"></BasicCurve>
+                    <Parameter>0.3</Parameter>
+                </RepresentationItem>
+            </Items>
+            <DimensionCount>1</DimensionCount>
+        </RepresentationContext>
+        <RepresentationContext xsi:type="n0:GeometricCoordinateSpace" uid="_294378cb-bb02-4ad1-b25e-39048cd7f08f">
+            <Id id="/NULL"></Id>
+            <Representations>
+                <Representation xsi:type="n0:ExternalAdvancedBrepShapeRepresentation" uid="_b45c1303-f9cd-4900-940b-04dd83f6685e">
+                    <Id id="xxx"></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_164032ec-a181-4749-9929-14c927cb475e"></RepresentationItem>
+                        <RepresentationItem uidRef="_a4010a03-d2cf-4374-9859-f1977854c192"></RepresentationItem>
+                    </Items>
+                    <RepresentationRelationship xsi:type="n0:TopologyToGeometryModelAssociation" uid="_264240b2-a728-437e-bb5f-da45d48a15b5">
+                        <Definitional>false</Definitional>
+                        <Related uidRef="_1653ca5b-5e62-4f59-b361-4c73ca267898"></Related>
+                        <Origin>
+                            <Edge uidRef="_2dfcbf1f-15da-416c-b007-3c6b7919d45a"></Edge>
+                            <Vertex uidRef="_dddee560-45a6-4486-928b-4ae6b0053403"></Vertex>
+                        </Origin>
+                        <Target>
+                            <AxisPlacement uidRef="_c9226678-3cf5-415a-ac24-522a5d05f5d7"></AxisPlacement>
+                            <AxisPlacement uidRef="_164032ec-a181-4749-9929-14c927cb475e"></AxisPlacement>
+                        </Target>
+                    </RepresentationRelationship>
+                    <RepresentationRelationship xsi:type="n0:GeometricRepresentationRelationshipWithPlacementTransformation" uid="_4b2d40af-0a3e-4fa9-ae9c-63fb36095e48">
+                        <Definitional>false</Definitional>
+                        <Related uidRef="_c5a25b70-b0c2-4e37-88ec-fce23456318c"></Related>
+                        <Origin uidRef="_c9226678-3cf5-415a-ac24-522a5d05f5d7"></Origin>
+                        <Target uidRef="_ca814420-ea50-4540-89b7-3d04dd37af0e"></Target>
+                    </RepresentationRelationship>
+                </Representation>
+            </Representations>
+            <Items>
+                <RepresentationItem xsi:type="n0:AxisPlacement" uid="_164032ec-a181-4749-9929-14c927cb475e">
+                    <Name>
+                        <CharacterString>dummy position value as it has be be taken from external file</CharacterString>
+                    </Name>
+                    <Position>0 0 0</Position>
+                </RepresentationItem>
+                <RepresentationItem xsi:type="n0:ExternalRepresentationItem" uid="_a4010a03-d2cf-4374-9859-f1977854c192"></RepresentationItem>
+            </Items>
+            <DimensionCount>3</DimensionCount>
+        </RepresentationContext>
+        <RepresentationContext xsi:type="n0:GeometricCoordinateSpace" uid="_6891d288-0362-479b-a634-61a2794e91e8">
+            <Id id="/NULL"></Id>
+            <Representations>
+                <Representation xsi:type="n0:GeometricModel" uid="_7747c5dc-6e00-4a2f-a46a-665f5e522440">
+                    <Id id="xxx"></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_99997f99-dc9c-4b88-9e04-37fef13e50f2"></RepresentationItem>
+                    </Items>
+                </Representation>
+            </Representations>
+            <Items>
+                <RepresentationItem xsi:type="n0:AxisPlacement" uid="_99997f99-dc9c-4b88-9e04-37fef13e50f2">
+                    <Position>0 0 0</Position>
+                </RepresentationItem>
+            </Items>
+            <DimensionCount>2</DimensionCount>
+        </RepresentationContext>
+        <RepresentationContext xsi:type="n0:GeometricCoordinateSpace" uid="_5bc90c2a-4e2a-4ef9-823b-5b525977969f">
+            <Id id="/NULL"></Id>
+            <Representations>
+                <Representation xsi:type="n0:ExternalAdvancedBrepShapeRepresentation" uid="_c5a25b70-b0c2-4e37-88ec-fce23456318c">
+                    <Id id="c-51864-1-af-3d.stp"></Id>
+                    <Items>
+                        <RepresentationItem uidRef="_44b055f9-3fab-4d50-965d-4facea000e8b"></RepresentationItem>
+                        <RepresentationItem uidRef="_8650f54b-93ab-4f0f-b8c0-fbd19f014453"></RepresentationItem>
+                        <RepresentationItem uidRef="_ca814420-ea50-4540-89b7-3d04dd37af0e"></RepresentationItem>
+                    </Items>
+                </Representation>
+            </Representations>
+            <Items>
+                <RepresentationItem xsi:type="n0:ExternalRepresentationItem" uid="_44b055f9-3fab-4d50-965d-4facea000e8b"></RepresentationItem>
+                <RepresentationItem xsi:type="n0:ExternalRepresentationItem" uid="_8650f54b-93ab-4f0f-b8c0-fbd19f014453"></RepresentationItem>
+                <RepresentationItem xsi:type="n0:AxisPlacement" uid="_ca814420-ea50-4540-89b7-3d04dd37af0e">
+                    <Position>0 0 0</Position>
+                </RepresentationItem>
+            </Items>
+            <DimensionCount>3</DimensionCount>
+        </RepresentationContext>
+    </DataContainer>
+</n0:Uos>

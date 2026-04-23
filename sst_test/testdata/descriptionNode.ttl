@@ -1,0 +1,22 @@
+@prefix color:	<http://ontology.semanticstep.net/color#> .
+@prefix countrycodes:	<http://ontology.semanticstep.net/countrycodes#> .
+@prefix currencycodes:	<http://ontology.semanticstep.net/currencycodes#> .
+@prefix eed:	<http://ontology.semanticstep.net/eed#> .
+@prefix lci:	<http://ontology.semanticstep.net/lci#> .
+@prefix qau:	<http://ontology.semanticstep.net/qau#> .
+@prefix rep:	<http://ontology.semanticstep.net/rep#> .
+@prefix ssmeta:	<http://ontology.semanticstep.net/ssmeta#> .
+@prefix sso:	<http://ontology.semanticstep.net/sso#> .
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:	<http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:	<http://www.w3.org/2002/07/owl#> .
+@prefix skos:	<http://www.w3.org/2004/02/skos/core#> .
+@prefix :	<urn:uuid:fe38b61d-9b71-400c-bcc8-1bc62438371d#> .
+
+<urn:uuid:fe38b61d-9b71-400c-bcc8-1bc62438371d>	a	owl:Ontology ;
+	owl:versionInfo "0.01" .
+
+:main	a	lci:Individual ;
+	rdfs:label	"hello world" ;
+	rdfs:comment	( "comment line 1" "comment line 2" ) .

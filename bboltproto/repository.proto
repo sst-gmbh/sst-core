@@ -1,0 +1,678 @@
+// Copyright Semantic STEP Technology GmbH, Germany & DCT Co., Ltd. Tianjin, China
+syntax = "proto3";
+
+option go_package = "git.semanticstep.net/x/sst/bboltproto";
+
+package sst.repository;
+
+import "google/protobuf/field_mask.proto";
+import "google/protobuf/timestamp.proto";
+import "fieldmask/option.proto";
+
+
+service RepoManagerService {
+  rpc ListRepos(ListReposRequest) returns (ListReposReply);
+  rpc CreateRepo(CreateRepoRequest) returns (CreateRepoReply);
+  rpc DeleteRepo(DeleteRepoRequest) returns (DeleteRepoReply);
+}
+
+message ListReposRequest {}
+
+message ListReposReply {
+  repeated string names = 1;
+}
+
+message CreateRepoRequest {
+  string name = 1;
+}
+
+message CreateRepoReply {
+  string name = 1;
+}
+
+message DeleteRepoRequest {
+  string name = 1;
+}
+
+message DeleteRepoReply {}
+
+
+service DatasetService {
+  rpc RemoveBranch(RemoveBranchRequest) returns (RemoveBranchResponse) {}
+
+  rpc SetBranch(SetBranchRequest) returns (SetBranchResponse) {}
+
+  rpc GetBranches(GetBranchesRequest) returns (GetBranchesResponse) {}
+
+  rpc GetLeafCommits(GetLeafCommitsRequest) returns (GetLeafCommitsResponse) {}
+
+  rpc GetBleveInfo(GetRepoBleveInfoRequest) returns (GetRepoBleveInfoResponse) {}
+
+  rpc ListDatasets(ListDatasetsRequest) returns (ListDatasetsResponse) {}
+
+  rpc GetDataset(stream GetDatasetRequest) returns (Dataset) {}
+
+  rpc CreateDataset(CreateDatasetRequest) returns (Dataset) {}
+
+  rpc FetchDatasets(stream DatasetInquiry) returns (stream DatasetObject) {}
+
+  rpc PushDatasets(stream DatasetSuggestion) returns (stream DatasetInquiry) {}
+
+  rpc GetRepositoryInfo(GetRepositoryInfoRequest) returns (GetRepositoryInfoResponse) {}
+
+  rpc GetRepositoryLog(GetRepositoryLogRequest) returns (GetRepositoryLogResponse) {}
+
+  rpc DocumentSet(stream DocumentSetRequest) returns (DocumentSetResponse) {}
+
+  rpc Document(DocumentRequest) returns (stream DocumentResponse) {}
+
+  rpc Documents(DocumentsListRequest) returns (DocumentsListResponse);
+
+  rpc DocumentDelete(DocumentDeleteRequest) returns (DocumentDeleteResponse);
+
+  rpc DownloadNamedGraphRevision(DownloadNamedGraphRevisionRequest) returns (stream DownloadNamedGraphRevisionResponse);
+
+  rpc FindCommonParentRevision(FindCommonParentRevisionRequest) returns (FindCommonParentRevisionResponse);
+
+  rpc SyncFrom(stream SyncFromRequest) returns (SyncFromResponse);
+
+  // SyncTo streams bucket data from server to client (for remote to local sync)
+  rpc SyncTo(SyncToRequest) returns (stream SyncToResponse);
+}
+
+message FindCommonParentRevisionRequest {
+  bytes dataset_id = 1;
+  bytes dataset_commit_rv1 = 2;
+  bytes dataset_commit_rv2 = 3;
+  string repoName = 4;
+}
+
+message FindCommonParentRevisionResponse {
+  bytes common_parent_commit_rv = 1;
+}
+
+message RemoveBranchRequest {
+  bytes uuid = 1;
+  string branch = 2;
+  string repoName = 3;
+}
+
+message RemoveBranchResponse {
+
+}
+
+message SetBranchRequest {
+  bytes uuid = 1;
+  string branch = 2;
+  bytes commitHash = 3;
+  string repoName = 4;
+}
+
+message SetBranchResponse {
+
+}
+
+message GetBranchesRequest {
+  bytes uuid = 1;
+  string repoName = 2;
+}
+
+message GetBranchesResponse {
+  repeated BranchRef BranchRefs = 1;
+}
+
+message BranchRef {
+  string branch = 1;
+  bytes  commitHash = 2;
+}
+
+
+
+message GetLeafCommitsRequest {
+  bytes uuid = 1;
+  string repoName = 2;
+}
+
+message GetLeafCommitsResponse {
+  repeated bytes commitHashes = 1;
+}
+
+message GetRepoBleveInfoRequest {
+
+}
+
+message GetRepoBleveInfoResponse {
+  string name = 1;
+  string version = 2;
+}
+
+
+message Dataset {
+  bytes uuid = 1;
+  optional string iri = 2;  // eg. urn:uuid:...
+}
+
+message ListDatasetsRequest {
+  int32 page_size = 1;
+
+  string page_token = 2;
+
+  // Read mask that optionally specifies which Dataset fields to return.
+  // If empty, all Dataset fields will be returned.
+  google.protobuf.FieldMask read_mask = 3 [(fieldmask.option.Option).out = { gen: true, message: "Dataset" }];
+
+  string repoName = 4;
+}
+
+message ListDatasetsResponse {
+  repeated Dataset datasets = 2;
+
+  // Token to retrieve the next page of results, or empty if there are no more
+  // results in the list.
+  string next_page_token = 3;
+
+  message NextPageToken {
+    bytes next_id = 1;
+  }
+}
+
+message GetDatasetRequest {
+  oneof dataset_id {
+    bytes dataset_uuid = 1;
+    string dataset_iri = 2;
+  }
+
+  google.protobuf.FieldMask read_mask = 3 [(fieldmask.option.Option).out = { gen: true, message: "Dataset" }];
+  string repoName = 4;
+}
+
+message CreateDatasetRequest {
+  bytes dataset_uuid = 1;
+
+  google.protobuf.FieldMask read_mask = 3 [(fieldmask.option.Option).out = { gen: true, message: "Dataset" }];
+}
+
+message RefName {
+  oneof dataset_id {
+    bytes dataset_uuid = 1;
+    string dataset_iri = 2;
+  }
+  // ref_name is one of following:
+  //  - branch => refers to the tip commit of this branch
+  //  - tag (not implemented yet)
+  //  - leaf or individual commit id (sha hash)
+  oneof ref_name {
+    string branch = 8;
+    bytes leaf = 10;
+  }
+}
+
+// `Ref` stands for Dataset Reference that can indirectly identify the Dataset revision of any commit.
+// Refs aer not limited to the data in Dataset bucket. A Ref is either:
+//  - branch => refers to the tip commit of this branch
+//  - tag (not done yet)
+//  - lead/individual commit id (sha hash)
+message Ref {
+  RefName ref = 1;
+  bytes commit_id = 2;
+}
+
+// `DatasetInquiry` provides either the items client already has
+// available on the client side or the items it wants to have available. Request
+// pertains to single identified Dataset where the revision is identified
+// through a commit or a branch. Use case of single identified
+// NamedGraphRevision should be considered.
+message DatasetInquiry {
+  // When streaming has fields have to precede related want fields
+  oneof inq {
+    bytes has_commit_id_with_parents = 1;
+    bytes has_commit_id_no_parents = 2;
+
+    RefName want_dataset_with_commit_parents = 8;
+    RefName want_dataset_no_commit_parents = 9;
+    bytes want_dataset_revision = 14;
+    // TODO: Add support for following want requests
+    // bytes want_commit_id_with_parents = 10;
+    // bytes want_commit_id_no_parents = 11;
+    // bytes want_dataset_hash = 12;
+  }
+  string repoName = 13;
+}
+
+message NamedGraphRevision {
+  bytes hash = 1;
+  bytes content = 2;  // binary NamedGraph format
+}
+
+message DatasetRevision {
+  message Import {
+    bytes dataset_uuid = 1;
+    bytes dataset_hash = 2;
+  }
+  bytes hash = 1;
+  bytes default_named_graph_hash = 2;
+  repeated Import imported_datasets = 3;
+}
+
+message CommittedDatasetRevision {
+  bytes dataset_uuid = 1;
+  bytes dataset_hash = 2;
+  repeated bytes parent_commit_ids = 3;
+}
+
+message CommittedNamedGraphRevision {
+  bytes namedGraph_uuid = 1;
+  bytes namedGraph_hash = 2;
+}
+
+message Commit {
+  bytes commit_id = 1;
+  repeated CommittedDatasetRevision datasets = 2;
+  repeated CommittedNamedGraphRevision namedGraphs = 3;
+  string author_uri = 4;
+  google.protobuf.Timestamp author_timestamp = 5;
+  // string committer_uri = 6;
+  // google.protobuf.Timestamp committer_timestamp = 7;
+  oneof message_or_reason {
+    string message = 8;
+    string reason = 9;
+  }
+  
+}
+
+message ParentCommit {
+  bytes dataset_uuid = 1;
+  bytes commit_id = 2;
+}
+
+message DatasetRevisionToCommitHash {
+  bytes dataset_revision = 1;
+  bytes commit_hash = 2;
+}
+
+// DatasetObject represents streamed responses from Dataset fetch call.
+message DatasetObject {
+  oneof obj {
+    bytes pending_commit_id = 1;
+    NamedGraphRevision named_graph_revision = 2;
+    DatasetRevision dataset_revision = 3;
+    Commit commit = 4;
+    DatasetRevisionToCommitHash dataset_revision_commit_hash = 5;
+
+    Ref wanted_dataset_with_commit_parents = 8;
+    Ref wanted_dataset_no_commit_parents = 9;
+    bytes wanted_dataset_revision = 14;
+    // TODO: Add support for following wanted responses
+    // bytes wanted_commit_id_with_parents = 10;
+    // bytes wanted_commit_id_no_parents = 11;
+    // bytes wanted_dataset_hash = 12;
+  }
+}
+
+message DatasetSuggestion {
+  oneof sgg {
+    RefName suggest_dataset_with_commit_parents = 1;
+    RefName suggest_dataset_no_commit_parents = 2;
+    // TODO: Add support for following want requests
+    // bytes suggest_commit_id_with_parents = 3;
+    // bytes suggest_commit_id_no_parents = 4;
+    // bytes suggest_dataset_hash = 5;
+    DatasetObject obj = 8;
+  }
+}
+
+service RefService {
+  rpc ListRefs(ListRefsRequest) returns (ListRefsResponse);
+
+  rpc GetRef(stream GetRefRequest) returns (Ref);
+
+  // TODO: Implement
+  // rpc CreateRef(CreateRefRequest) returns (google.protobuf.Empty);
+
+  // rpc UpdateRef(UpdateRefRequest) returns (Ref);
+
+  // rpc DeleteRef(DeleteRefRequest) returns (google.protobuf.Empty);
+}
+
+message ListRefsRequest {
+  oneof dataset_id {
+    bytes dataset_uuid = 1;
+    string dataset_iri = 2;
+  }
+
+  int32 page_size = 3;
+
+  string page_token = 4;
+
+  // Read mask that optionally specifies which Ref fields to return.
+  // If empty, all Ref fields will be returned.
+  google.protobuf.FieldMask read_mask = 5 [(fieldmask.option.Option).out = { gen: true, message: "Ref" }];
+}
+
+message ListRefsResponse {
+  repeated Ref refs = 1;
+
+  string next_page_token = 2;
+
+  message NextPageToken {
+    bytes next_dataset_uuid = 1;
+    oneof next_ref_name {
+      string next_branch = 2;
+      bytes next_leaf = 3;
+    }
+  }
+}
+
+message GetRefRequest {
+  RefName ref_name = 1;
+
+  // Read mask that optionally specifies which Ref fields to return.
+  // If empty, all Ref fields will be returned.
+  google.protobuf.FieldMask read_mask = 2 [(fieldmask.option.Option).out = { gen: true, message: "Ref" }];
+  string repoName = 3;
+}
+
+// TODO: Implement
+// message CreateRefRequest {
+//   Ref ref = 1;
+// }
+
+// message UpdateRefRequest {
+//   Ref ref = 1;
+// }
+
+// message DeleteRefRequest {
+//   RefName ref_name = 1;
+// }
+
+service CommitService {
+  rpc ListCommits(stream ListCommitsRequest) returns (ListCommitsResponse);
+
+  rpc GetCommit(stream GetCommitRequest) returns (Commit);
+
+  rpc CreateCommit(CreateCommitRequest) returns (CreateCommitResponse);
+
+  rpc CompareCommits(CompareCommitsRequest) returns (CompareCommitsResponse);
+
+  rpc GetCommitDetailsBatch(GetCommitDetailsBatchRequest) returns (GetCommitDetailsBatchResponse);
+}
+
+message ListCommitsRequest {
+  RefName ref_name = 1;
+
+  int32 page_size = 2;
+
+  string page_token = 3;
+
+  // Read mask that optionally specifies which Commit fields to return.
+  // If empty, all Commit fields will be returned.
+  google.protobuf.FieldMask read_mask = 4 [(fieldmask.option.Option).out = { gen: true, message: "Commit" }];
+}
+
+message ListCommitsResponse {
+  repeated Commit commits = 1;
+
+  string next_page_token = 2;
+
+  message NextPageToken {
+    bytes next_commit_id = 1;
+  }
+}
+
+message GetCommitRequest {
+  bytes dataset_uuid = 1;
+  bytes commit_id = 2;
+
+  // Read mask that optionally specifies which Commit fields to return.
+  // If empty, all Commit fields will be returned.
+  google.protobuf.FieldMask read_mask = 3 [(fieldmask.option.Option).out = { gen: true, message: "Commit" }];
+   string repoName = 4; 
+}
+
+message NamedGraphSignature {
+  bytes ng_uuid = 1;
+  bytes ng_hash = 2;
+}
+
+message DatasetSignature {
+  bytes DS_uuid = 1;
+  bytes DS_hash = 2;
+}
+
+message CreateCommitRequest {
+  enum Flag {
+    default = 0x00;
+    skipRootDataset = 0x01;
+    forbidDatasetBranchDivergence = 0x02;
+    createFirstLevelDatasetsOnly = 0x03;
+  }
+  RefName ref_name = 1;
+  bytes base_commit = 2;
+  repeated bytes named_graphs = 3;
+  repeated ParentCommit parent_commit_overrides = 4;
+  repeated Flag flags = 5;
+  string message = 8;
+  repeated bytes modifiedNGs= 9;
+  repeated NamedGraphSignature CheckoutNamedGraphSignatures = 10;
+  repeated DatasetSignature CheckoutDatasetSignatures = 11;
+  string repoName = 12;
+}
+
+message CreateCommitResponse {
+  bytes commit_id = 1;
+  repeated NamedGraphSignature CheckoutNamedGraphSignatures = 2;
+  repeated DatasetSignature CheckoutDatasetSignatures = 3;
+  repeated bytes modifiedDatasets= 4;
+}
+
+message CompareCommitsRequest {
+  message DatasetCommitPair {
+    repeated bytes dataset_id = 1;
+    bytes commit1 = 2;
+    bytes commit2 = 3;
+  }
+  repeated DatasetCommitPair dataset_commit_pair = 1;
+  string repoName = 4;
+}
+
+message CompareCommitsResponse {
+  // relationship_and_count consists of relationship+count sequence as byte values
+  // relationship corresponds to storagerepo.CommitRelationship and is one of:
+  //   0 - commits are unrelated;
+  //   1 - commit2 is older than commit1;
+  //   2 - commit2 is same as commit1;
+  //   3 - commit2 is newer than commit1;
+  // count denotes the number of datasets from the request the relationship applies to.
+  bytes relationship_and_count = 1;
+}
+
+message GetRepositoryInfoRequest {
+  string branchName = 1;
+  string repoName = 2;
+}
+
+message GetRepositoryInfoResponse {
+    int32 bbolt_size = 1;
+    int32 bleve_size = 2;
+    int32 number_of_datasets = 3;
+    int32 number_of_dataset_revisions = 4;
+    int32 number_of_named_graph_revisions = 5;
+    int32 number_of_commits = 6;
+    int32 number_of_repository_logs = 7;
+    int32 number_of_datasets_in_branch = 8;
+    int32 document_db_size = 9;
+    int32 number_of_documents = 10;
+    string access_right = 11;
+    string version_hash = 12;
+}
+
+message RepositoryLogEntry {
+  uint64 log_key = 1;
+  map<string, string> fields = 2;
+}
+
+message GetRepositoryLogRequest {
+  optional int64 start = 1;
+  optional int64 end = 2;
+  string repoName = 3;
+}
+
+message GetRepositoryLogResponse {
+  repeated RepositoryLogEntry entries = 1;
+}
+
+// Request for batch commit detail retrieval
+message GetCommitDetailsBatchRequest {
+  repeated bytes CommitIds = 1;
+  string repoName = 2;
+}
+
+// Response containing commit details
+message GetCommitDetailsBatchResponse {
+  repeated CommitDetail Details = 1;
+}
+
+// A single commit detail
+message CommitDetail {
+  bytes CommitId = 1;                      // Commit hash
+  string Author = 2;                       // Commit author
+  string Message = 3;                      // Commit message
+  int64 Timestamp = 4;                     // Commit time (Unix timestamp)
+  map<string, ParentHashes> ParentCommits = 5; // map<DatasetID string, list of parent commit hash>
+  map<string, bytes> DatasetRevisions = 6;      // UUID string → DS Hash
+  map<string, bytes> NamedGraphRevisions = 7;   // UUID string → NG Hash
+}
+
+message ParentHashes {
+  repeated bytes Hashes = 1;
+}
+
+
+message DocumentInfo {
+  bytes hash = 1;
+  string mime_type = 2;
+  string author = 3;
+  google.protobuf.Timestamp timestamp = 4;
+  int64 size_bytes = 5;
+}
+
+message DocumentSetRequest {
+  oneof event {
+    DocumentInfo info = 1;
+    bytes content = 2;
+  }
+  string repoName = 3;
+}
+
+message DocumentSetResponse {
+  bytes hash = 1;
+}
+
+message DocumentRequest {
+  bytes hash = 1;
+  string repoName = 2;
+}
+
+message DocumentResponse {
+  oneof event {
+    DocumentInfo info = 1;
+    bytes chunk = 2;
+  }
+}
+
+message DocumentDeleteRequest {
+  bytes hash = 1;
+  string repoName = 2; 
+}
+
+message DocumentDeleteResponse {}
+
+message DocumentsListRequest {
+  string repoName = 1;
+}
+
+message DocumentsListResponse {
+  repeated DocumentInfo documents = 1;
+}
+
+message DownloadNamedGraphRevisionRequest {
+	bytes hash = 1;
+  string repoName = 2;
+}
+
+message DownloadNamedGraphRevisionResponse {
+	bytes chunk = 1;
+}
+
+message SyncFromRequest {
+  oneof data {
+    SyncFromMetadata metadata = 1;
+    SyncFromBucketData bucket_data = 2;
+  }
+}
+
+message SyncFromMetadata {
+  // Initial metadata sent at the start of sync
+  string repoName = 1;
+  // Optional: list of dataset UUIDs to sync. If empty, sync all datasets.
+  repeated bytes dataset_ids = 2;
+  // Optional: branch name to sync. If empty or "*", sync all branches.
+  string branch_name = 3;
+}
+
+message SyncFromBucketData {
+  string bucket_name = 1;  // "ngr", "dsr", "c", "ds", "document_info"
+  bytes key = 2;
+  bytes value = 3;
+  bool is_bucket = 4;  // true if this is a sub-bucket entry
+  bytes sub_key = 5;   // sub-key if is_bucket is true
+  bytes sub_value = 6; // sub-value if is_bucket is true
+}
+
+message SyncFromResponse {
+  // Statistics about what was synced
+  int32 named_graph_revisions_synced = 1;
+  int32 dataset_revisions_synced = 2;
+  int32 datasets_synced = 3;
+  int32 commits_synced = 4;
+  int32 document_info_synced = 5;
+}
+
+// SyncTo is used for remote to local sync (server streams data to client)
+message SyncToRequest {
+  // Initial request to start sync
+  SyncToMetadata metadata = 1;
+}
+
+message SyncToMetadata {
+  // Metadata for sync request
+  // Optional: list of dataset UUIDs to sync. If empty, sync all datasets.
+  repeated bytes dataset_ids = 1;
+  // Optional: branch name to sync. If empty or "*", sync all branches.
+  string branch_name = 2;
+}
+
+message SyncToResponse {
+  oneof data {
+    SyncToBucketData bucket_data = 1;
+    SyncToComplete complete = 2;
+  }
+}
+
+message SyncToBucketData {
+  string bucket_name = 1;  // "ngr", "dsr", "c", "ds", "document_info"
+  bytes key = 2;
+  bytes value = 3;
+  bool is_bucket = 4;  // true if this is a sub-bucket entry
+  bytes sub_key = 5;   // sub-key if is_bucket is true
+  bytes sub_value = 6; // sub-value if is_bucket is true
+}
+
+message SyncToComplete {
+  // Statistics about what was synced
+  int32 named_graph_revisions_synced = 1;
+  int32 dataset_revisions_synced = 2;
+  int32 datasets_synced = 3;
+  int32 commits_synced = 4;
+  int32 document_info_synced = 5;
+}
