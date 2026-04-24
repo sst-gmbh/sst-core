@@ -28,7 +28,7 @@ Other main features of SST-Core:
   * late binding; generic, IRIs are checked only during run time
   * early binding; IRIs are checked at compile time using pre-compiled higher level ontologies; ideally suited for converter and GUI development
 
-See https://semanticstep.com/overview/
+For further details see https://semanticstep.com/overview/
 
 
 ## Licenses
