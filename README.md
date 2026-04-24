@@ -12,4 +12,4 @@ Key point: **PolyForm Noncommercial** explicitly prohibits commercial use, which
 For commercial licenses contacts either:
 * Semantic STEP Technology GmbH, Germany,
   info@semanticstep.com
-* DCT Co., Ltd. Tianjin, China; 
+* DCT Co., Ltd. Tianjin, China; sst@dct-china.cn
