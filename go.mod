@@ -1,4 +1,4 @@
-module git.semanticstep.net/x/sst
+module github.com/semanticstep/sst-core
 
 go 1.22
 
