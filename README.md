@@ -11,7 +11,7 @@ of SST-Core is to effectively support the <ins>integration of industrial product
 as used by CAD, CAM, PDM, PLM, ERP, LSA and other CAx system.
 A particular focus is on the support of international standards in this area by providing 
 higher level **SST Ontologies** that are optimized for AI integration, including:
-* **Life-cycle Integration (LCI)** data as defined in the ISO 15926 series for process plants
+* **Life-cycle Integration (LCI)** as defined in the ISO 15926 series for process plants
   including oil and gas production facilities
 * **STEP**, the STandard for the Exchange of Product model data, ISO 10303 series;
 * IEC **Common Data Dictionary (CDD)**, including IEC 61360-4 for electric/electronic components
@@ -25,8 +25,8 @@ Other main features of SST-Core:
 * GIT like functionality for RDF NamedGraphs and Datasets including Commit, Branches, Diff & Merge
 * access control via OAUTH 2
 * data analysis and manipulation of semantic web data via both
-  * late binding; generic, IRIs are checked only during run time
-  * early binding; IRIs are checked at compile time using pre-compiled higher level ontologies; ideally suited for converter and GUI development
+  * late binding: generic, IRIs are checked only during run time
+  * early binding: IRIs are checked at compile time by using pre-compiled higher level ontologies; ideally suited for converter and GUI development
 
 For further details see https://semanticstep.com/overview/
 
