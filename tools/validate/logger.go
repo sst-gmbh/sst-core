@@ -5,7 +5,7 @@ package validate
 import (
 	"fmt"
 
-	"git.semanticstep.net/x/sst/sst"
+	"github.com/semanticstep/sst-core/sst"
 )
 
 type LogLevel int

@@ -8,10 +8,10 @@ import (
 	"math"
 	"strings"
 
-	"git.semanticstep.net/x/sst/sst"
-	_ "git.semanticstep.net/x/sst/vocabularies/dict"
-	"git.semanticstep.net/x/sst/vocabularies/rep"
-	"git.semanticstep.net/x/sst/vocabularies/sso"
+	"github.com/semanticstep/sst-core/sst"
+	_ "github.com/semanticstep/sst-core/vocabularies/dict"
+	"github.com/semanticstep/sst-core/vocabularies/rep"
+	"github.com/semanticstep/sst-core/vocabularies/sso"
 	"github.com/google/uuid"
 )
 

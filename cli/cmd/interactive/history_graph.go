@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"git.semanticstep.net/x/sst/sst"
+	"github.com/semanticstep/sst-core/sst"
 )
 
 type bfsNode struct {

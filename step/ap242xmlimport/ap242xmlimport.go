@@ -13,16 +13,16 @@ import (
 	"strconv"
 	"strings"
 
-	"git.semanticstep.net/x/sst/sst"
-	_ "git.semanticstep.net/x/sst/vocabularies/dict" // register vocabulary map
-	"git.semanticstep.net/x/sst/vocabularies/lci"
-	"git.semanticstep.net/x/sst/vocabularies/owl"
-	"git.semanticstep.net/x/sst/vocabularies/qau"
-	"git.semanticstep.net/x/sst/vocabularies/rdf"
-	"git.semanticstep.net/x/sst/vocabularies/rdfs"
-	"git.semanticstep.net/x/sst/vocabularies/rep"
-	"git.semanticstep.net/x/sst/vocabularies/ssmeta"
-	"git.semanticstep.net/x/sst/vocabularies/sso"
+	"github.com/semanticstep/sst-core/sst"
+	_ "github.com/semanticstep/sst-core/vocabularies/dict" // register vocabulary map
+	"github.com/semanticstep/sst-core/vocabularies/lci"
+	"github.com/semanticstep/sst-core/vocabularies/owl"
+	"github.com/semanticstep/sst-core/vocabularies/qau"
+	"github.com/semanticstep/sst-core/vocabularies/rdf"
+	"github.com/semanticstep/sst-core/vocabularies/rdfs"
+	"github.com/semanticstep/sst-core/vocabularies/rep"
+	"github.com/semanticstep/sst-core/vocabularies/ssmeta"
+	"github.com/semanticstep/sst-core/vocabularies/sso"
 )
 
 const (

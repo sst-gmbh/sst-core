@@ -7,10 +7,10 @@ import (
 	"fmt"
 	"strings"
 
-	"git.semanticstep.net/x/sst/cli/cmd/utils"
-	"git.semanticstep.net/x/sst/defaultderive"
-	"git.semanticstep.net/x/sst/sst"
-	"git.semanticstep.net/x/sst/sstauth"
+	"github.com/semanticstep/sst-core/cli/cmd/utils"
+	"github.com/semanticstep/sst-core/defaultderive"
+	"github.com/semanticstep/sst-core/sst"
+	"github.com/semanticstep/sst-core/sstauth"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 )

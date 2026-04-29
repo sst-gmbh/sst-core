@@ -15,8 +15,8 @@ import (
 	"sync"
 	"time"
 
-	"git.semanticstep.net/x/sst/bboltproto"
-	"git.semanticstep.net/x/sst/bleveproto"
+	"github.com/semanticstep/sst-core/bboltproto"
+	"github.com/semanticstep/sst-core/bleveproto"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/reflection"

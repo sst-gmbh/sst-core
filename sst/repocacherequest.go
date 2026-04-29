@@ -5,7 +5,7 @@ package sst
 import (
 	"context"
 
-	"git.semanticstep.net/x/sst/bboltproto"
+	"github.com/semanticstep/sst-core/bboltproto"
 	cache "github.com/go-pkgz/expirable-cache/v2"
 	"github.com/google/uuid"
 	"google.golang.org/grpc"

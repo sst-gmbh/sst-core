@@ -9,7 +9,7 @@ import (
 	"testing"
 	"unicode"
 
-	"git.semanticstep.net/x/sst/sst"
+	"github.com/semanticstep/sst-core/sst"
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

@@ -6,9 +6,9 @@ import (
 	"context"
 	"net/url"
 
-	"git.semanticstep.net/x/sst/bboltproto"
-	"git.semanticstep.net/x/sst/bleveproto"
-	"git.semanticstep.net/x/sst/sstauth"
+	"github.com/semanticstep/sst-core/bboltproto"
+	"github.com/semanticstep/sst-core/bleveproto"
+	"github.com/semanticstep/sst-core/sstauth"
 	"go.uber.org/zap"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/oauth"

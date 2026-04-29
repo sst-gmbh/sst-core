@@ -12,7 +12,7 @@ import (
 	"context"
 	"fmt"
 
-	"git.semanticstep.net/x/sst/sst"
+	"github.com/semanticstep/sst-core/sst"
 	"github.com/blevesearch/bleve/v2"
 	"github.com/blevesearch/bleve/v2/search/query"
 	"github.com/google/uuid"

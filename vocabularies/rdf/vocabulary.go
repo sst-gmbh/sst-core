@@ -6,7 +6,7 @@ package rdf
 
 import (
 	"reflect"
-	"git.semanticstep.net/x/sst/sst"
+	"github.com/semanticstep/sst-core/sst"
 )
 
 type pkg struct{ sst.ElementInfo }

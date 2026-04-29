@@ -5,7 +5,7 @@ package interactive
 import (
 	"context"
 
-	"git.semanticstep.net/x/sst/sst"
+	"github.com/semanticstep/sst-core/sst"
 )
 
 type InteractiveConfig struct {

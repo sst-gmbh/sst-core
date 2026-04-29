@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"io"
 
-	"git.semanticstep.net/x/sst/sst"
+	"github.com/semanticstep/sst-core/sst"
 )
 
 // Read the raw SST bytes of a NamedGraphRevision (NGR)

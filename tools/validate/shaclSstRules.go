@@ -3,10 +3,10 @@
 package validate
 
 import (
-	"git.semanticstep.net/x/sst/sst"
-	"git.semanticstep.net/x/sst/vocabularies/owl"
-	"git.semanticstep.net/x/sst/vocabularies/rdf"
-	"git.semanticstep.net/x/sst/vocabularies/sh"
+	"github.com/semanticstep/sst-core/sst"
+	"github.com/semanticstep/sst-core/vocabularies/owl"
+	"github.com/semanticstep/sst-core/vocabularies/rdf"
+	"github.com/semanticstep/sst-core/vocabularies/sh"
 )
 
 // the extracted Node and Property Shapes

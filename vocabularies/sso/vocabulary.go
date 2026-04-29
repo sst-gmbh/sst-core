@@ -6,12 +6,12 @@ package sso
 
 import (
 	"reflect"
-	"git.semanticstep.net/x/sst/sst"
-	"git.semanticstep.net/x/sst/vocabularies/lci"
-	"git.semanticstep.net/x/sst/vocabularies/rdf"
-	"git.semanticstep.net/x/sst/vocabularies/rep"
-	"git.semanticstep.net/x/sst/vocabularies/ssmeta"
-	"git.semanticstep.net/x/sst/vocabularies/xsd"
+	"github.com/semanticstep/sst-core/sst"
+	"github.com/semanticstep/sst-core/vocabularies/lci"
+	"github.com/semanticstep/sst-core/vocabularies/rdf"
+	"github.com/semanticstep/sst-core/vocabularies/rep"
+	"github.com/semanticstep/sst-core/vocabularies/ssmeta"
+	"github.com/semanticstep/sst-core/vocabularies/xsd"
 )
 
 type pkg struct{ sst.ElementInfo }

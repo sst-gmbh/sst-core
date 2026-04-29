@@ -9,12 +9,12 @@ import (
 	"path/filepath"
 	"testing"
 
-	"git.semanticstep.net/x/sst/sst"
-	_ "git.semanticstep.net/x/sst/vocabularies/dict"
-	"git.semanticstep.net/x/sst/vocabularies/lci"
-	"git.semanticstep.net/x/sst/vocabularies/rdf"
-	"git.semanticstep.net/x/sst/vocabularies/rdfs"
-	"git.semanticstep.net/x/sst/vocabularies/rep"
+	"github.com/semanticstep/sst-core/sst"
+	_ "github.com/semanticstep/sst-core/vocabularies/dict"
+	"github.com/semanticstep/sst-core/vocabularies/lci"
+	"github.com/semanticstep/sst-core/vocabularies/rdf"
+	"github.com/semanticstep/sst-core/vocabularies/rdfs"
+	"github.com/semanticstep/sst-core/vocabularies/rep"
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/assert"
 )

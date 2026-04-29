@@ -10,8 +10,8 @@ import (
 	"log"
 	"sort"
 
-	"git.semanticstep.net/x/sst/bboltproto"
-	"git.semanticstep.net/x/sst/sstauth"
+	"github.com/semanticstep/sst-core/bboltproto"
+	"github.com/semanticstep/sst-core/sstauth"
 	"github.com/google/uuid"
 	"go.uber.org/zap"
 )

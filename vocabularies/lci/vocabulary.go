@@ -6,11 +6,11 @@ package lci
 
 import (
 	"reflect"
-	"git.semanticstep.net/x/sst/sst"
-	"git.semanticstep.net/x/sst/vocabularies/owl"
-	"git.semanticstep.net/x/sst/vocabularies/rdf"
-	"git.semanticstep.net/x/sst/vocabularies/rdfs"
-	"git.semanticstep.net/x/sst/vocabularies/xsd"
+	"github.com/semanticstep/sst-core/sst"
+	"github.com/semanticstep/sst-core/vocabularies/owl"
+	"github.com/semanticstep/sst-core/vocabularies/rdf"
+	"github.com/semanticstep/sst-core/vocabularies/rdfs"
+	"github.com/semanticstep/sst-core/vocabularies/xsd"
 )
 
 type pkg struct{ sst.ElementInfo }

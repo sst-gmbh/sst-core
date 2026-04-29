@@ -6,7 +6,7 @@ package detailedToSimplified
 import (
 	"fmt"
 
-	"git.semanticstep.net/x/sst/sst"
+	"github.com/semanticstep/sst-core/sst"
 )
 
 func DetailedToSimplified(graph sst.NamedGraph) (sst.NamedGraph, error) {

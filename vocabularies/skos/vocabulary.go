@@ -6,9 +6,9 @@ package skos
 
 import (
 	"reflect"
-	"git.semanticstep.net/x/sst/sst"
-	"git.semanticstep.net/x/sst/vocabularies/rdf"
-	"git.semanticstep.net/x/sst/vocabularies/rdfs"
+	"github.com/semanticstep/sst-core/sst"
+	"github.com/semanticstep/sst-core/vocabularies/rdf"
+	"github.com/semanticstep/sst-core/vocabularies/rdfs"
 )
 
 type pkg struct{ sst.ElementInfo }

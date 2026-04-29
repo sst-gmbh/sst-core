@@ -15,10 +15,10 @@ import (
 	"strings"
 	"time"
 
-	"git.semanticstep.net/x/sst/sst"
+	"github.com/semanticstep/sst-core/sst"
 	"go.uber.org/zap"
 
-	// _ "git.semanticstep.net/x/sst/vocabularies/dict" // include vocabularies
+	// _ "github.com/semanticstep/sst-core/vocabularies/dict" // include vocabularies
 	flag "github.com/spf13/pflag"
 )
 

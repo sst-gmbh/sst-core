@@ -4,7 +4,7 @@
 // for debugging and testing the SST-Core and -Repositories.
 package main
 
-import cli "git.semanticstep.net/x/sst/cli/cmd"
+import cli "github.com/semanticstep/sst-core/cli/cmd"
 
 // main function to execute the CLI commands
 // go build -o ./cli/sst ./cli/main.go

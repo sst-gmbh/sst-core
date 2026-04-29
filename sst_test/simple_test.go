@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"log"
 
-	"git.semanticstep.net/x/sst/sst"
+	"github.com/semanticstep/sst-core/sst"
 )
 
 func simpleNamedGraph() sst.NamedGraph {

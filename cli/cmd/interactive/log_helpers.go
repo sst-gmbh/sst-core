@@ -10,8 +10,8 @@ import (
 	"strings"
 	"time"
 
-	"git.semanticstep.net/x/sst/cli/cmd/utils"
-	"git.semanticstep.net/x/sst/sst"
+	"github.com/semanticstep/sst-core/cli/cmd/utils"
+	"github.com/semanticstep/sst-core/sst"
 )
 
 // buildVerboseEntryGroups constructs full verbose log display blocks in original order.

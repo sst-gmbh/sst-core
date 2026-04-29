@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"io"
 
-	"git.semanticstep.net/x/sst/cli/cmd/interactive"
+	"github.com/semanticstep/sst-core/cli/cmd/interactive"
 	"github.com/spf13/cobra"
 )
 

@@ -13,8 +13,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"git.semanticstep.net/x/sst/sst"
-	_ "git.semanticstep.net/x/sst/vocabularies/dict"
+	"github.com/semanticstep/sst-core/sst"
+	_ "github.com/semanticstep/sst-core/vocabularies/dict"
 	"github.com/google/uuid"
 	"go.etcd.io/bbolt"
 	"go.uber.org/zap"

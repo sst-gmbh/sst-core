@@ -7,9 +7,9 @@ import (
 	"os"
 	"strings"
 
-	"git.semanticstep.net/x/sst/cli/cmd/utils"
-	"git.semanticstep.net/x/sst/sst"
-	"git.semanticstep.net/x/sst/tools/validate"
+	"github.com/semanticstep/sst-core/cli/cmd/utils"
+	"github.com/semanticstep/sst-core/sst"
+	"github.com/semanticstep/sst-core/tools/validate"
 	"go.uber.org/zap"
 )
 

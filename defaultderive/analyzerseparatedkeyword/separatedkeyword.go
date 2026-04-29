@@ -3,7 +3,7 @@
 package separatedkeyword
 
 import (
-	separated "git.semanticstep.net/x/sst/defaultderive/tokenizerseparated"
+	separated "github.com/semanticstep/sst-core/defaultderive/tokenizerseparated"
 	"github.com/blevesearch/bleve/v2/analysis"
 	"github.com/blevesearch/bleve/v2/analysis/token/lowercase"
 	"github.com/blevesearch/bleve/v2/registry"

@@ -34,7 +34,7 @@ import (
 	"path/filepath"
 	"time"
 
-	"git.semanticstep.net/x/sst/sst"
+	"github.com/semanticstep/sst-core/sst"
 	"github.com/google/uuid"
 	"go.etcd.io/bbolt"
 )

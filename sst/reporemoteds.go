@@ -17,7 +17,7 @@ import (
 	"strings"
 	"time"
 
-	"git.semanticstep.net/x/sst/bboltproto"
+	"github.com/semanticstep/sst-core/bboltproto"
 	"github.com/google/uuid"
 	"go.etcd.io/bbolt"
 	"go.uber.org/zap"

@@ -5,7 +5,7 @@ package interactive
 import (
 	"fmt"
 
-	"git.semanticstep.net/x/sst/sst"
+	"github.com/semanticstep/sst-core/sst"
 )
 
 func handleForAllTriples(alias string) {

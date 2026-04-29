@@ -8,7 +8,7 @@ import (
 	"sort"
 	"time"
 
-	"git.semanticstep.net/x/sst/sst"
+	"github.com/semanticstep/sst-core/sst"
 	"github.com/blevesearch/bleve/v2"
 )
 

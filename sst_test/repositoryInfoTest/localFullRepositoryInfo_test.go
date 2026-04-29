@@ -8,10 +8,10 @@ import (
 	"os"
 	"testing"
 
-	"git.semanticstep.net/x/sst/defaultderive"
-	"git.semanticstep.net/x/sst/sst"
-	"git.semanticstep.net/x/sst/vocabularies/rdf"
-	"git.semanticstep.net/x/sst/vocabularies/rep"
+	"github.com/semanticstep/sst-core/defaultderive"
+	"github.com/semanticstep/sst-core/sst"
+	"github.com/semanticstep/sst-core/vocabularies/rdf"
+	"github.com/semanticstep/sst-core/vocabularies/rep"
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/assert"
 )

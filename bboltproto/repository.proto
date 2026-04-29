@@ -1,7 +1,7 @@
 // Copyright Semantic STEP Technology GmbH, Germany & DCT Co., Ltd. Tianjin, China
 syntax = "proto3";
 
-option go_package = "git.semanticstep.net/x/sst/bboltproto";
+option go_package = "github.com/semanticstep/sst-core/bboltproto";
 
 package sst.repository;
 

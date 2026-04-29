@@ -7,7 +7,7 @@ import (
 	"os"
 	"testing"
 
-	"git.semanticstep.net/x/sst/sst_test/testutil"
+	"github.com/semanticstep/sst-core/sst_test/testutil"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

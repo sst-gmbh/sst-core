@@ -9,12 +9,12 @@ import (
 	"reflect"
 	"strings"
 
-	"git.semanticstep.net/x/sst/sst"
-	_ "git.semanticstep.net/x/sst/vocabularies/dict"
-	"git.semanticstep.net/x/sst/vocabularies/owl"
-	"git.semanticstep.net/x/sst/vocabularies/rdf"
-	"git.semanticstep.net/x/sst/vocabularies/rdfs"
-	"git.semanticstep.net/x/sst/vocabularies/xsd"
+	"github.com/semanticstep/sst-core/sst"
+	_ "github.com/semanticstep/sst-core/vocabularies/dict"
+	"github.com/semanticstep/sst-core/vocabularies/owl"
+	"github.com/semanticstep/sst-core/vocabularies/rdf"
+	"github.com/semanticstep/sst-core/vocabularies/rdfs"
+	"github.com/semanticstep/sst-core/vocabularies/xsd"
 	"go.uber.org/zap"
 )
 

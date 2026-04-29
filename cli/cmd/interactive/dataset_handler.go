@@ -8,8 +8,8 @@ import (
 	"sort"
 	"strings"
 
-	"git.semanticstep.net/x/sst/cli/cmd/utils"
-	"git.semanticstep.net/x/sst/sst"
+	"github.com/semanticstep/sst-core/cli/cmd/utils"
+	"github.com/semanticstep/sst-core/sst"
 	"github.com/blevesearch/bleve/v2"
 )
 

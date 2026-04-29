@@ -10,9 +10,9 @@ import (
 	"testing"
 	"time"
 
-	"git.semanticstep.net/x/sst/sst"
-	"git.semanticstep.net/x/sst/sstauth"
-	"git.semanticstep.net/x/sst/sst_test/testutil"
+	"github.com/semanticstep/sst-core/sst"
+	"github.com/semanticstep/sst-core/sstauth"
+	"github.com/semanticstep/sst-core/sst_test/testutil"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"golang.org/x/oauth2"

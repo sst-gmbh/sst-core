@@ -7,8 +7,8 @@ import (
 	"bytes"
 	"testing"
 
-	"git.semanticstep.net/x/sst/sst"
-	"git.semanticstep.net/x/sst/vocabularies/rdfs"
+	"github.com/semanticstep/sst-core/sst"
+	"github.com/semanticstep/sst-core/vocabularies/rdfs"
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/assert"
 )

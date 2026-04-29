@@ -4,7 +4,7 @@
 
 package currencycodes
 
-import "git.semanticstep.net/x/sst/sst"
+import "github.com/semanticstep/sst-core/sst"
 
 type pkg struct{ sst.ElementInfo }
 

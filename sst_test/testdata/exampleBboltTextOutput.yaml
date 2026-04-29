@@ -1,4 +1,4 @@
-Running tool: C:\Program Files\Go\bin\go.exe test -test.fullpath=true -timeout 120s -run ^TestTraversal$ git.semanticstep.net/x/sst/sst_test_realvoc -count=1 -v
+Running tool: C:\Program Files\Go\bin\go.exe test -test.fullpath=true -timeout 120s -run ^TestTraversal$ github.com/semanticstep/sst-core/sst_test_realvoc -count=1 -v
 
 === RUN   TestTraversal
 HashNil GKot5hBsd81kMupNCXHaqbhv3huEbxAFMLnpcX2hniwn
@@ -290,4 +290,4 @@ Value: @prefix sso:	<http://ontology.semanticstep.net/sso#> .
 	ns2:84865a29-3282-4b9e-bb14-0d44e5d6e9c0	"Size 20 Contact" .
 --- PASS: TestTraversal (0.01s)
 PASS
-ok  	git.semanticstep.net/x/sst/sst_test_realvoc	4.812s
+ok  	github.com/semanticstep/sst-core/sst_test_realvoc	4.812s

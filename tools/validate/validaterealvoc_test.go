@@ -10,11 +10,11 @@ import (
 	"strings"
 	"testing"
 
-	"git.semanticstep.net/x/sst/sst"
-	"git.semanticstep.net/x/sst/tools/validate"
+	"github.com/semanticstep/sst-core/sst"
+	"github.com/semanticstep/sst-core/tools/validate"
 
 	// This need to be manually added.
-	_ "git.semanticstep.net/x/sst/vocabularies/dict"
+	_ "github.com/semanticstep/sst-core/vocabularies/dict"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

@@ -10,12 +10,12 @@ import (
 	"testing"
 	"time"
 
-	"git.semanticstep.net/x/sst/sst"
-	_ "git.semanticstep.net/x/sst/vocabularies/dict" // Register vocabularies for pretty TTL output
-	"git.semanticstep.net/x/sst/vocabularies/lci"
-	"git.semanticstep.net/x/sst/vocabularies/owl"
-	"git.semanticstep.net/x/sst/vocabularies/rdf"
-	"git.semanticstep.net/x/sst/vocabularies/rdfs"
+	"github.com/semanticstep/sst-core/sst"
+	_ "github.com/semanticstep/sst-core/vocabularies/dict" // Register vocabularies for pretty TTL output
+	"github.com/semanticstep/sst-core/vocabularies/lci"
+	"github.com/semanticstep/sst-core/vocabularies/owl"
+	"github.com/semanticstep/sst-core/vocabularies/rdf"
+	"github.com/semanticstep/sst-core/vocabularies/rdfs"
 	"github.com/google/uuid"
 )
 

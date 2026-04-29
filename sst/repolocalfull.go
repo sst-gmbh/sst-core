@@ -22,8 +22,6 @@ import (
 	"sync"
 	"time"
 
-	"git.semanticstep.net/x/sst/bboltproto"
-	"git.semanticstep.net/x/sst/sstauth"
 	"github.com/blevesearch/bleve/v2"
 	"github.com/blevesearch/bleve/v2/document"
 	"github.com/blevesearch/bleve/v2/search/query"
@@ -31,6 +29,8 @@ import (
 	index "github.com/blevesearch/bleve_index_api"
 	"github.com/google/uuid"
 	fs "github.com/relab/wrfs"
+	"github.com/semanticstep/sst-core/bboltproto"
+	"github.com/semanticstep/sst-core/sstauth"
 	"go.etcd.io/bbolt"
 	"go.uber.org/multierr"
 	"go.uber.org/zap"

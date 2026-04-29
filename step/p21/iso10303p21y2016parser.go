@@ -15,9 +15,9 @@ package p21
 import __yyfmt__ "fmt"
 
 import (
-	"git.semanticstep.net/x/sst/sst"
-	"git.semanticstep.net/x/sst/vocabularies/ssmeta"
-	"git.semanticstep.net/x/sst/vocabularies/rdfs"
+	"github.com/semanticstep/sst-core/sst"
+	"github.com/semanticstep/sst-core/vocabularies/ssmeta"
+	"github.com/semanticstep/sst-core/vocabularies/rdfs"
 )
 
 type (

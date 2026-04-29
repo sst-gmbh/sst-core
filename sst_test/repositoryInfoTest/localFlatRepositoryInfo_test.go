@@ -6,7 +6,7 @@ import (
 	"context"
 	"testing"
 
-	"git.semanticstep.net/x/sst/sst"
+	"github.com/semanticstep/sst-core/sst"
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/assert"
 )

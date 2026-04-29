@@ -19,9 +19,9 @@ import (
 	"sync"
 	"time"
 
-	"git.semanticstep.net/x/sst/bboltproto"
-	"git.semanticstep.net/x/sst/bleveproto"
-	"git.semanticstep.net/x/sst/sstauth"
+	"github.com/semanticstep/sst-core/bboltproto"
+	"github.com/semanticstep/sst-core/bleveproto"
+	"github.com/semanticstep/sst-core/sstauth"
 	"github.com/blevesearch/bleve/v2"
 	"github.com/blevesearch/bleve/v2/document"
 	"github.com/google/uuid"

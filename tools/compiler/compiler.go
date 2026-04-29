@@ -20,7 +20,7 @@ import (
 	"strings"
 	"unicode"
 
-	"git.semanticstep.net/x/sst/sst"
+	"github.com/semanticstep/sst-core/sst"
 	fs "github.com/relab/wrfs"
 )
 
@@ -504,7 +504,7 @@ func compileSSTtoGO(graph sst.NamedGraph, output string, vocab sst.Vocabulary, v
 	fprintf(out, "package %s\n", pkg.pkg)
 	fprintf(out, "\n")
 	fprint(out, "import (\n\t\"reflect\"\n")
-	fprint(out, "\t\"git.semanticstep.net/x/sst/sst\"\n")
+	fprint(out, "\t\"github.com/semanticstep/sst-core/sst\"\n")
 	imports := make([]string, 0, len(urlImportsMap[vocab.BaseIRI]))
 	for i := range urlImportsMap[vocab.BaseIRI] {
 		imports = append(imports, i)
@@ -513,7 +513,7 @@ func compileSSTtoGO(graph sst.NamedGraph, output string, vocab sst.Vocabulary, v
 	sort.Strings(imports)
 
 	for _, i := range imports {
-		fprintf(out, "\t\"git.semanticstep.net/x/sst/vocabularies/%s\"\n", i)
+		fprintf(out, "\t\"github.com/semanticstep/sst-core/vocabularies/%s\"\n", i)
 	}
 	fprint(out, ")\n\ntype pkg struct{ sst.ElementInfo }\n\n")
 
@@ -709,7 +709,7 @@ func dictSSTtoGO(graph sst.NamedGraph, output string, vocab sst.Vocabulary, data
 	writeHeader(out)
 	fprintf(out, "package %s\n", pkg.pkg)
 	fprintf(out, "\n")
-	fprint(out, "import \"git.semanticstep.net/x/sst/sst\"\n\ntype pkg struct{ sst.ElementInfo }\n\n")
+	fprint(out, "import \"github.com/semanticstep/sst-core/sst\"\n\ntype pkg struct{ sst.ElementInfo }\n\n")
 	prefix := maybeReplaceKnownPrefix(strings.TrimSuffix(path.Base(vocab.BaseIRI), "#"))
 	vocabularyPKG := strings.ToUpper(prefix)
 	fprintf(out, "var %sVocabulary = sst.Vocabulary{BaseIRI: \"%s\"}\n\n", vocabularyPKG, vocab.BaseIRI)
@@ -815,12 +815,12 @@ func writeVocabMap(vocabMaps []vocabMapPkg, data vocabData) error {
 	fprintf(vocabmap, "\n")
 	fprint(vocabmap, "import (\n")
 	fprintf(vocabmap, "\t\"embed\"\n")
-	fprintf(vocabmap, "\t\"git.semanticstep.net/x/sst/sst\"\n")
+	fprintf(vocabmap, "\t\"github.com/semanticstep/sst-core/sst\"\n")
 	sort.Strings(data.imports)
 	var prevVocabImport string
 	for _, vocabImport := range data.imports {
 		if prevVocabImport != vocabImport {
-			fprintf(vocabmap, "\t\"git.semanticstep.net/x/sst/%s\"\n", vocabImport)
+			fprintf(vocabmap, "\t\"github.com/semanticstep/sst-core/%s\"\n", vocabImport)
 		}
 		prevVocabImport = vocabImport
 	}

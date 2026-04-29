@@ -12,7 +12,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"git.semanticstep.net/x/sst/sst"
+	"github.com/semanticstep/sst-core/sst"
 )
 
 type Polyline struct {

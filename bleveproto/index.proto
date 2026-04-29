@@ -2,7 +2,7 @@
 
 syntax = "proto3";
 
-option go_package = "git.semanticstep.net/x/sst/bleveproto";
+option go_package = "github.com/semanticstep/sst-core/bleveproto";
 
 package sst.ssquery;
 

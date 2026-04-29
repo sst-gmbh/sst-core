@@ -11,7 +11,7 @@ import (
 	"log"
 	"time"
 
-	"git.semanticstep.net/x/sst/bboltproto"
+	"github.com/semanticstep/sst-core/bboltproto"
 	"github.com/google/uuid"
 	"go.etcd.io/bbolt"
 	"google.golang.org/protobuf/types/known/timestamppb"

@@ -28,12 +28,12 @@ import (
 	"log"
 	"os"
 
-	"git.semanticstep.net/x/sst/sst"
+	"github.com/semanticstep/sst-core/sst"
 	// This fixed import with "_" is essential to intialize the SST dictionary.
 	// This need to be manually added.
-	_ "git.semanticstep.net/x/sst/vocabularies/dict"
-	"git.semanticstep.net/x/sst/vocabularies/lci"
-	"git.semanticstep.net/x/sst/vocabularies/rdfs"
+	_ "github.com/semanticstep/sst-core/vocabularies/dict"
+	"github.com/semanticstep/sst-core/vocabularies/lci"
+	"github.com/semanticstep/sst-core/vocabularies/rdfs"
 )
 
 func main() {

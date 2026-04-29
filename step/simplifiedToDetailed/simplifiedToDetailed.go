@@ -6,13 +6,13 @@ package simplifiedToDetailed
 import (
 	"fmt"
 
-	"git.semanticstep.net/x/sst/sst"
-	"git.semanticstep.net/x/sst/vocabularies/lci"
-	"git.semanticstep.net/x/sst/vocabularies/owl"
-	"git.semanticstep.net/x/sst/vocabularies/rdf"
-	"git.semanticstep.net/x/sst/vocabularies/rdfs"
-	"git.semanticstep.net/x/sst/vocabularies/rep"
-	"git.semanticstep.net/x/sst/vocabularies/sso"
+	"github.com/semanticstep/sst-core/sst"
+	"github.com/semanticstep/sst-core/vocabularies/lci"
+	"github.com/semanticstep/sst-core/vocabularies/owl"
+	"github.com/semanticstep/sst-core/vocabularies/rdf"
+	"github.com/semanticstep/sst-core/vocabularies/rdfs"
+	"github.com/semanticstep/sst-core/vocabularies/rep"
+	"github.com/semanticstep/sst-core/vocabularies/sso"
 )
 
 type UIDRef struct {

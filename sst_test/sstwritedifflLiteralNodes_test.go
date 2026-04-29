@@ -12,9 +12,9 @@ import (
 	"strings"
 	"testing"
 
-	"git.semanticstep.net/x/sst/sst"
-	"git.semanticstep.net/x/sst/vocabularies/lci"
-	"git.semanticstep.net/x/sst/vocabularies/rdfs"
+	"github.com/semanticstep/sst-core/sst"
+	"github.com/semanticstep/sst-core/vocabularies/lci"
+	"github.com/semanticstep/sst-core/vocabularies/rdfs"
 	"github.com/google/go-cmp/cmp"
 	"github.com/stretchr/testify/assert"
 )

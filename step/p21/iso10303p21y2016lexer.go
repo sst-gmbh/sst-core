@@ -11,7 +11,7 @@ import (
 	"strconv"
 	"unicode"
 
-	"git.semanticstep.net/x/sst/vocabularies/ssmeta"
+	"github.com/semanticstep/sst-core/vocabularies/ssmeta"
 )
 
 const maxInt = ^uint64(0) >> 1

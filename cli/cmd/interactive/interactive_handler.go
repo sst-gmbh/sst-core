@@ -11,12 +11,12 @@ import (
 	"path/filepath"
 	"strings"
 
-	"git.semanticstep.net/x/sst/cli/cmd/utils"
-	"git.semanticstep.net/x/sst/sst"
-	"git.semanticstep.net/x/sst/sstauth"
-	"git.semanticstep.net/x/sst/step/ap242xmlexport"
-	"git.semanticstep.net/x/sst/step/ap242xmlimport"
-	"git.semanticstep.net/x/sst/step/p21"
+	"github.com/semanticstep/sst-core/cli/cmd/utils"
+	"github.com/semanticstep/sst-core/sst"
+	"github.com/semanticstep/sst-core/sstauth"
+	"github.com/semanticstep/sst-core/step/ap242xmlexport"
+	"github.com/semanticstep/sst-core/step/ap242xmlimport"
+	"github.com/semanticstep/sst-core/step/p21"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 )

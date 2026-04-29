@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"git.semanticstep.net/x/sst/sst"
+	"github.com/semanticstep/sst-core/sst"
 	"github.com/stretchr/testify/require"
 )
 

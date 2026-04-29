@@ -5718,7 +5718,7 @@ const file_repository_proto_rawDesc = "" +
 	"\tGetCommit\x12 .sst.repository.GetCommitRequest\x1a\x16.sst.repository.Commit(\x01\x12Y\n" +
 	"\fCreateCommit\x12#.sst.repository.CreateCommitRequest\x1a$.sst.repository.CreateCommitResponse\x12_\n" +
 	"\x0eCompareCommits\x12%.sst.repository.CompareCommitsRequest\x1a&.sst.repository.CompareCommitsResponse\x12t\n" +
-	"\x15GetCommitDetailsBatch\x12,.sst.repository.GetCommitDetailsBatchRequest\x1a-.sst.repository.GetCommitDetailsBatchResponseB'Z%git.semanticstep.net/x/sst/bboltprotob\x06proto3"
+	"\x15GetCommitDetailsBatch\x12,.sst.repository.GetCommitDetailsBatchRequest\x1a-.sst.repository.GetCommitDetailsBatchResponseB-Z+github.com/semanticstep/sst-core/bboltprotob\x06proto3"
 
 var (
 	file_repository_proto_rawDescOnce sync.Once

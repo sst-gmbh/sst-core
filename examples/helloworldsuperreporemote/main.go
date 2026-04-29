@@ -19,9 +19,9 @@ import (
 	"os/signal"
 	"path/filepath"
 
-	"git.semanticstep.net/x/sst/defaultderive"
-	"git.semanticstep.net/x/sst/sst"
-	_ "git.semanticstep.net/x/sst/vocabularies/dict"
+	"github.com/semanticstep/sst-core/defaultderive"
+	"github.com/semanticstep/sst-core/sst"
+	_ "github.com/semanticstep/sst-core/vocabularies/dict"
 	flag "github.com/spf13/pflag"
 )
 

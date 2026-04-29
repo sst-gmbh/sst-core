@@ -6,7 +6,7 @@ import (
 	"context"
 	"errors"
 
-	"git.semanticstep.net/x/sst/bboltproto"
+	"github.com/semanticstep/sst-core/bboltproto"
 	"github.com/google/uuid"
 )
 

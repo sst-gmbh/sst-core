@@ -7,7 +7,7 @@ import (
 	"log"
 	"testing"
 
-	"git.semanticstep.net/x/sst/sst"
+	"github.com/semanticstep/sst-core/sst"
 	fs "github.com/relab/wrfs"
 	"github.com/stretchr/testify/assert"
 )

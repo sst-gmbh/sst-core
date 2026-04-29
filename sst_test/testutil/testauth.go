@@ -17,8 +17,8 @@ import (
 	"testing"
 	"time"
 
-	"git.semanticstep.net/x/sst/defaultderive"
-	"git.semanticstep.net/x/sst/sst"
+	"github.com/semanticstep/sst-core/defaultderive"
+	"github.com/semanticstep/sst-core/sst"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"golang.org/x/oauth2"

@@ -24,7 +24,7 @@ import (
 	"log"
 	"os"
 
-	"git.semanticstep.net/x/sst/sst"
+	"github.com/semanticstep/sst-core/sst"
 )
 
 func main() {
